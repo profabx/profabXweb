@@ -6,6 +6,7 @@
 - 积累
 - 创新
 - 数据
+- 分享
 
 [NexMaker-Fab课程](https://www.nexmaker.com/)
 [Fab 实验室方案](lab/lab.md)
