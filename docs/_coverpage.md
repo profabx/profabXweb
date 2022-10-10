@@ -1,15 +1,14 @@
 
-# ProFab <small>X</small>
+![logo](_media/icon.svg)
+# 个人文档网站
+## 我的文档网站
+> 一个神奇的文档网站生成巩固
 
-> 硬件创新过程中的几颗微星
+* Simple and lightweight (~12kb gzipped)
+* Multiple themes
+* Not build static html files
 
-- 积累
-- 创新
-- 数据
-- 分享
-
-[NexMaker-Fab课程](https://www.nexmaker.com/)
-[Fab 实验室方案](lab/lab.md)
-[AGV入门方案](agv/agv.md)
-[原型开发服务](prototype/prototype.md)
+[GitHub](https://github.com/docsifyjs/docsify/)
+[Get Started](#quick-start)
+[Get Started](#quick-start)
 
