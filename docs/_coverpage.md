@@ -13,9 +13,5 @@
 [AGV入门方案](agv/agv.md)
 [原型开发服务](prototype/prototype.md)
 
-<<<<<<< HEAD
 
-=======
 ![color](#ffffff)
-hi
->>>>>>> 5168933be1675c467be4af38f7f425bf61d6f05f
