@@ -11,3 +11,5 @@
 * 联系我们
   * [邮箱](contacts/email.md)
   * [电话](zh-contacts/phone.md)
+  * [邮箱](contacts/email.md)
+  * [电话](zh-contacts/phone.md)
