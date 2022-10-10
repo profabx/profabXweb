@@ -1,16 +1,14 @@
 
-# docsify <small>3.5</small>
+# ProFab <small>X</small>
 
-> 一个神奇的文档网站生成器。
+> 硬件创新过程中的几颗微星
 
-- 简单、轻便 (压缩后 ~21kB)
-- 无需生成 html 文件
-- 众多主题
+- 积累
+- 创新
+- 数据
 
-[GitHub](https://github.com/docsifyjs/docsify/)
-[Get Started](#docsify)
-[fabclass]()
-[risc-v solution]()
-[3d printing lab solution]()
-[AGV solution]()
+[NexMaker-Fab课程](www.nexmaker.com)
+[Fab 实验室方案](lab/lab.md)
+[AGV入门方案](agv/agv.md)
+[原型开发服务](prototype/prototype.md)
 
