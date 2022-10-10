@@ -12,4 +12,4 @@
 [AGV入门方案](agv/agv.md)
 [原型开发服务](prototype/prototype.md)
 
-![color](#FFFFFF)
+![color](0xFFFFFF)
