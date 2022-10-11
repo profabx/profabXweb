@@ -14,8 +14,5 @@
 [原型开发服务](prototype/prototype.md)
 
 
-<!-- 背景色 -->
-
-![logo](pic/logo.jpeg )
 
 <!-- ![color](#ffffff) -->
