@@ -1,15 +1,9 @@
 <!-- 侧边栏 docs/_sidebar.md -->
-* 我的平台
-
-  * [知行达摩院](https://www.zxdmy.com)
-  * [微信公众号](https://img.zxdmy.com/md/20210129164325.jpg)
-  * [CSDN](https://cxhit.blog.csdn.net/)
-  * [Gitee](https://gitee.com/ZXAcademy)
-  * [GitHub](https://github.com/ZXAcademy)
+* [NexMaker-Fab 课程](www.nexmaker.com)
+* [Fab实验室方案](lab/lab.md)
+* [AGV入门方案](agv/agv.md)
+* [原型开发服务](prototype/prototype.md)
 
 
-* 联系我们
-  * [邮箱](contacts/email.md)
-  * [电话](zh-contacts/phone.md)
-  * [邮箱](contacts/email.md)
-  * [电话](zh-contacts/phone.md)
+* [关于我们](README.md)
+  
