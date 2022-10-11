@@ -1,5 +1,5 @@
 
-![logo](pic/logo.jpeg =250x)
+
 # ProFabX
 
 > 硬件创新过程中的几颗微星
@@ -16,4 +16,6 @@
 
 <!-- 背景色 -->
 
-![color](#ffffff)
+![logo](pic/logo.jpeg )
+
+<!-- ![color](#ffffff) -->
