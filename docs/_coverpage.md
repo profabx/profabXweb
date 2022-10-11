@@ -1,5 +1,6 @@
 
-# ProFab <small>X</small>
+![logo](pic/logo.jpeg)
+# ProFabX
 
 > 硬件创新过程中的几颗微星
 
@@ -11,3 +12,8 @@
 [Fab 实验室方案](lab/lab.md)
 [AGV入门方案](agv/agv.md)
 [原型开发服务](prototype/prototype.md)
+
+
+<!-- 背景色 -->
+
+![color](#ffffff)
