@@ -1,4 +1,6 @@
+<img src="pic/logo.png"  align=“center”, width= 30%/>
 # <center> 关于ProFabX
+
 ProFabX致力于为硬件创新提供基础的能量，目前主要为以下业务
 * [NexMaker-Fab课程](https://www.nexmaker.com/)：基于[MIT Fab Lab](https://www.fablabs.io/)的[Fab Academy](https://fabacademy.org/)课程，做了本地化延伸，从而适合大学生的基础跨界学习和企事业人员的硬件开发基础能力培养。
 * Fab实验室方案：给学校和企业在有限的空间内完成的实验室搭建，便于系统性学习硬件开发相关知识点，并且高效进行硬件设计、开发、调试相关工作；
