@@ -1,4 +1,7 @@
-<img src="pic/logo.png"  align=“center”, width= 30%/>
+
+<div align=center>
+	<img src="pic/logo.png" width=30%>
+</div>
 
 # <center> 关于ProFabX
 
