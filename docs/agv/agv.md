@@ -1,6 +1,6 @@
 
 
-# AGV入门教育方案
+# AGV教育方案
 此方案面对无人驾驶、智能网联汽车相关的软硬件、教程，便于相关学校作为入门教程使用。
 
 ![](https://raw.githubusercontent.com/bobwu0214/imageuploadservice/main/img/202210111958169.png)
