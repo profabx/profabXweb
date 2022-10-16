@@ -27,7 +27,7 @@ figure.thumbnails img {
     @supports (display: flex) {
         figure.thumbnails {
             display: flex;
-            align-items: center;
+            align-items: left;
         }
 
         figure.thumbnails img {
