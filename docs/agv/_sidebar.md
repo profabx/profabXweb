@@ -1,5 +1,5 @@
 <!-- 侧边栏 docs/_sidebar.md -->
-* [概念与趋势]（agv/basic.md）
+* [概念与趋势](agv/basic.md）
 * [参数定义](agv/parameters.md)
 * [电控](agv/eee.md)
 * [算法](agv/algorithm.md)
