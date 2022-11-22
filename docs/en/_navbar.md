@@ -5,6 +5,6 @@
   * [AGV soultion](en/agv/agv.md)
 * [prototype making](en/prototype/prototype.md)
 * [about ProFabX](en/about/introduce.md)
-* [cn](cn/_navbar.md)
+* [cn](./cn/)
 
 
