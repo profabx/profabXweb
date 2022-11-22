@@ -7,4 +7,4 @@
 * [原型开发服务](cn/prototype/prototype.md)
 * [关于ProFabX](cn/about/introduce.md)
 * [En](./en/)
-* * [cn](cn/_navbar.md)
+* [cn](cn/_navbar.md)
