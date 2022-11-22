@@ -3,7 +3,7 @@
 	<img src="pic/logo.png" width=30%>
 </div>
 
-# <center> 关于ProFabX
+# <center> <font color=#002FA7>ProFabX</font>
 
 ProFabX致力于为硬件创新提供基础的能量，目前主要为以下业务
 * [NexMaker-Fab课程](https://www.nexmaker.com/)：基于[MIT Fab Lab](https://www.fablabs.io/)的[Fab Academy](https://fabacademy.org/)课程，做了本地化延伸，从而适合大学生的基础跨界学习和企事业人员的硬件开发基础能力培养。
