@@ -5,7 +5,7 @@
   * [AGV soultion](agv/agv.md)
 * [prototype making](prototype/prototype.md)
 * [about ProFabX](about/introduce.md)
-* [en](./en/)
+* [en](docs/../../README.md)
 
 
   
