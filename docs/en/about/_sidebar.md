@@ -1,7 +1,7 @@
 <!-- 侧边栏 docs/_sidebar.md -->
-* [aim](about/aim.md)
-* [team](about/team.md)
-* [contact](about/contact.md)
+* [aim](en/about/aim.md)
+* [team](en/about/team.md)
+* [contact](en/about/contact.md)
 
 
 
