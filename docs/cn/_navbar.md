@@ -6,4 +6,4 @@
   * [硬创库](https://shop110612716.taobao.com/?spm=a230r.7195193.1997079397.2.6b44cefdk1yzxd)
 * [原型开发服务](cn/prototype/prototype.md)
 * [关于ProFabX](cn/about/introduce.md)
-* [en](en/_navbar.md)
+* [英语](./en/)

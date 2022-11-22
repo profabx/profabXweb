@@ -13,8 +13,8 @@
 
 
 
-[NexMaker-Fab](https://www.nexmaker.com/)
-[Fab solution](en/lab/lab.md)
+[NexMaker-Fab class ](https://www.nexmaker.com/)
+[fab space solution](en/lab/lab.md)
 [AGV solution](en/agv/agv.md)
 [prototype service](en/prototype/prototype.md)
 
