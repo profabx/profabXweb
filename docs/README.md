@@ -1,6 +1,6 @@
 
 <div align=center>
-	<img src="pic/logo.png" width=30%>
+	<img src="pic/logo.png" width=100%>
 </div>
 
 ProFabX致力于为硬件创新提供基础的能量，目前主要为以下业务
