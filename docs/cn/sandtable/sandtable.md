@@ -1,4 +1,5 @@
-# 案例展示
+# 效果
+## 案例展示
 ![](https://raw.githubusercontent.com/bobwu0214/imageuploadservice/main/img/WX20221211-222241@2x.png)
 ![](https://raw.githubusercontent.com/bobwu0214/imageuploadservice/main/img/WX20221211-222336@2x.png)
 * 工艺：3D打印/激光切割/UV打印/喷漆/丝印
@@ -13,7 +14,7 @@
 ![](https://raw.githubusercontent.com/bobwu0214/imageuploadservice/main/img/WX20221211-223000@2x.png)
 * 工艺：3D打印/激光切割/打磨/喷漆/UV打印
 * 互动：灯光交互核心内容（沙盘&文化墙）
-# 工艺和材料
+## 工艺和材料
 * 展示效果：实验室模型，地形地貌沙盘模型，数字多媒体展厅，机械模型……
 * 电控：电机运动控制，灯光、投影光效，传感器数据采集展示，无线遥控……
 * 互动：基于Leap Motion，Kinect ,processing,Touch Designer等做相应控制或者互动配套……
