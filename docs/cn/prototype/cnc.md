@@ -1,7 +1,7 @@
 
-## 1.CNC介绍（CNC introduction）
-#### 1.1CNC的产生与发展（CNC development）
-#### 1.2分类（classification）
+## 1.CNC介绍
+## 2.产生与发展
+## 3.分类
 * 三轴数控机床（Three-axis CNC machine tool）
   * 数控车（lathe）
   * 数控铣（ milling ）
@@ -13,22 +13,22 @@
   * 五轴数控机床（ Five-axis CNC Machine tool）
   * 车铣一体数控机床（ Integrated CNC Machine tool）
   * 多轴加工优势（Advantages of multi-axis machining）
-#### 1.3功能特点（Functional characteristics）
+## 4.功能特点
   * CNC功能（CNC function）
   * CNC加工特点（ Function features of CNC ）
-#### 1.4品牌型号（Brand Model）
+## 5.品牌型号
 * 国内品牌（Domestic Brands）
 * 国外品牌（ Foreign Brands ）
-#### 1.5控制面板介绍（Control Panel Introduction）
+## 6.控制面板介绍
 * 按键介绍（Key Introduction）
 * 功能介绍（Function Introduction ）
-## 2设计规则（Design rules）
+## 7.设计规则（Design rules）
 * 壁厚大小（ Wall thickness ）
 * R角（R Angle）
 * 孔的直径大小（Diameter of hole）
 * 孔深（Hole depth）
 * 螺纹（Thread）
-## 3CNC编程（CNC programming ）？？
+## 8.CNC编程
 * 编程软件（Programming software）
   * Autodesk fusion CAM
   * UG CAM
@@ -43,17 +43,17 @@
 * 编程注意事项（Programming Considerations）
   * 坐标系设定（coordinate system setting）
   * 刀具参数（Tool parameters）
-  * 检查程序（Inspection procedure ）？
+  * 检查程序（Inspection programming ）
   * 加工方向（Machining direction ）
 * 刀具选择（ Tool selection）
   * 刀具大小（Tool size）
   * 刀具材料（Tool material）
-## 4CNC 安全规范操作（CNC safe operation）
-* 上机前（Before boarding the plane）？
+## 9. 安全规范操作
+* 上机前（Before running）
   * 检查机床（Check machine tools ）
   * 正确佩戴劳保用品（Wear labor protection products correctly ）
   * 检查保养记录（Check maintenance records）
-* 上机时（When boarding the plane）？
+* 上机时（during running）
   * 关好防护门（Close protective door）
   * 不可私自修改机床参数（ Do not modify machine tool parameters without permission ）
   * 清理切削屑，不可用手（ Clean cuttings without hand）
@@ -64,7 +64,7 @@
   * 加工完成，切掉电源（Finish machining, cut off the power supply）
   * 清理机床切削屑（Clean machine tool cuttings ）
   * 加工完成，机床保养和维护（Finish machining, maintenance and maintenance of machine tools ）
-## 5CNC的材料加工（CNC material processing）
+## 10.CNC的材料加工
 * ABS加工方式（ABS processing mode）
 * 尼龙加工方式（Nylon processing method）
 * 铝合金加工方式（Aluminum alloy processing method）
@@ -75,6 +75,6 @@
 * 其他材料（ Other Materials ）
 
 
-## 6CNC的优缺点（CNC advantages and disadvantages ）
+## 11.CNC的优缺点
 * 优点（Advantages）
 * 缺点（Disadvantages ）
