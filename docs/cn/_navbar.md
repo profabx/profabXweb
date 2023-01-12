@@ -6,5 +6,5 @@
   * [AGV教育方案](cn/agv/agv.md)
 * [原型开发服务](cn/prototype/prototype.md)
 * [沙盘开发](cn/sandtable/sandtable.md)
-* [关于ProFabX](cn/about/introduce.md)
+* [关于ProFabX](cn/README.md)
 * [英语](en/README.md)

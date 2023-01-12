@@ -4,7 +4,7 @@
   * [Fab solution](en/lab/lab.md)
   * [AGV soultion](en/agv/agv.md)
 * [Prototype making](en/prototype/prototype.md)
-* [About ProFabX](en/about/introduce.md)
+* [About ProFabX](en/README.md)
 * [CN](cn/README.md)
 
 
