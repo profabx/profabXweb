@@ -8,6 +8,7 @@
 4. 主页内容宽度最大化
 5. 背景gif/png
    
+   
 
 
 
@@ -25,7 +26,6 @@
 fatal: unable to access 'https://github.com/profabx/web.git/': HTTP/2 stream 1 was not closed cleanly before end of the underlying stream
 wubo@BobsMacBook-Pro web % git push origin main
 fatal: unable to access 'https://github.com/profabx/web.git/': LibreSSL SSL_read: error:02FFF03C:system library:func(4095):Operation timed out, errno 60
-解决方式
 
 //取消http代理或取消https代理 
 
