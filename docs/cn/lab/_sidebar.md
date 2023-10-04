@@ -1,5 +1,5 @@
-<!-- 侧边栏 docs/_sidebar.md -->
-* [目标](cn/lab/aim.md)
-* [建立](cn/lab/build.md)
-* [管理](cn/lab/manage.md)
-
+* [NexMaker-Fab 课程](https://www.nexmaker.com)
+* [Fab实验室方案](cn/lab/lab.md)
+* [Fab Academy](http://fabacademy.org/)
+* [MIT Fab Lab认证](https://www.fablabs.io/) 
+* [AGV教育方案](cn/agv/agv.md)
