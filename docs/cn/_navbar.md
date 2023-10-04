@@ -8,4 +8,5 @@
 * [沙盘](cn/sandtable/sandtable.md)
 * [关于ProFabX](cn/README.md)
   * [探索](cn/explore/readme.md)
+  * [AGV-CASE](cn/agv/agv.md)
 * [英语](en/README.md)
