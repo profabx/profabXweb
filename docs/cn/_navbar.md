@@ -5,7 +5,7 @@
   * [Fab实验室方案](cn/lab/lab.md)
   * [AGV教育方案](cn/agv/agv.md)
 * [原型开发服务](cn/prototype/prototype.md)
-* [沙盘开发](cn/sandtable/sandtable.md)
+* [沙盘](cn/sandtable/sandtable.md)
 * [关于ProFabX](cn/README.md)
   * [探索](cn/explore/readme.md)
 * [英语](en/README.md)
