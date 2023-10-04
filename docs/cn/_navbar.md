@@ -5,9 +5,6 @@
   * [Fab Academy](http://fabacademy.org/)
   * [MIT Fab Lab认证](https://www.fablabs.io/) 
   * [AGV教育方案](cn/agv/agv.md)
-
-
-
 * [工程样机开发](cn/prototype/prototype.md)
 * [探索](cn/explore/readme.md)
   * [沙盘](cn/sandtable/sandtable.md)
