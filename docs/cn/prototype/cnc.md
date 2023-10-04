@@ -1,6 +1,8 @@
 
 ## 1.CNC介绍
+
 ## 2.产生与发展
+
 ## 3.分类
 * 三轴数控机床（Three-axis CNC machine tool）
   * 数控车（lathe）
@@ -13,21 +15,26 @@
   * 五轴数控机床（ Five-axis CNC Machine tool）
   * 车铣一体数控机床（ Integrated CNC Machine tool）
   * 多轴加工优势（Advantages of multi-axis machining）
+
 ## 4.功能特点
   * CNC功能（CNC function）
   * CNC加工特点（ Function features of CNC ）
+
 ## 5.品牌型号
 * 国内品牌（Domestic Brands）
 * 国外品牌（ Foreign Brands ）
+
 ## 6.控制面板介绍
 * 按键介绍（Key Introduction）
 * 功能介绍（Function Introduction ）
+
 ## 7.设计规则（Design rules）
 * 壁厚大小（ Wall thickness ）
 * R角（R Angle）
 * 孔的直径大小（Diameter of hole）
 * 孔深（Hole depth）
 * 螺纹（Thread）
+
 ## 8.CNC编程
 * 编程软件（Programming software）
   * Autodesk fusion CAM
@@ -48,6 +55,7 @@
 * 刀具选择（ Tool selection）
   * 刀具大小（Tool size）
   * 刀具材料（Tool material）
+
 ## 9. 安全规范操作
 * 上机前（Before running）
   * 检查机床（Check machine tools ）
@@ -64,6 +72,7 @@
   * 加工完成，切掉电源（Finish machining, cut off the power supply）
   * 清理机床切削屑（Clean machine tool cuttings ）
   * 加工完成，机床保养和维护（Finish machining, maintenance and maintenance of machine tools ）
+
 ## 10.CNC的材料加工
 * ABS加工方式（ABS processing mode）
 * 尼龙加工方式（Nylon processing method）
@@ -73,7 +82,6 @@
 * 亚克力加工方式（Acrylic processing method ）
 * MDF加工方式（MDF processing mode）
 * 其他材料（ Other Materials ）
-
 
 ## 11.CNC的优缺点
 * 优点（Advantages）
