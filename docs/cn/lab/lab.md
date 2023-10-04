@@ -1,4 +1,4 @@
-introduce lab build method
+介绍相关课程和实验室方案
 
 ![](https://raw.githubusercontent.com/bobwu0214/imageuploadservice/main/img/202210111952896.png)
 ![](https://raw.githubusercontent.com/bobwu0214/imageuploadservice/main/img/202210111952516.png)
