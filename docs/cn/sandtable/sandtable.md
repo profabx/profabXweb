@@ -1,4 +1,6 @@
 # 效果
+我们将逐步分享我们在数字化沙盘方面的案例
+随着数字化、数字孪生、云计算的不断发展，沙盘的场景和技术手段会不断升级
 ## 案例展示
 ![](https://raw.githubusercontent.com/bobwu0214/imageuploadservice/main/img/WX20221211-222241@2x.png)
 ![](https://raw.githubusercontent.com/bobwu0214/imageuploadservice/main/img/WX20221211-222336@2x.png)

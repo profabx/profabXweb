@@ -3,7 +3,7 @@
 * [加工](cn/sandtable/manufacure.md)
 * [电控](cn/sandtable/control.md)
 * [数字化](cn/sandtable/digital.md)
-* [维护与升级](maintain.md)
+* [维护与升级](cn/sandtable/maintain.md)
 
 
 
