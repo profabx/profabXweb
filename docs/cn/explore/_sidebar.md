@@ -5,6 +5,7 @@
   * 算法
   * 结构
   * 电控
-* XR
+* [数字化沙盘](cn/explore/digitalmodel/digitalmodel.md)
+* [XR](cn/explore/XR/readme.md)
 * [3D打印](3dprinting/3dprinting.md)
   
