@@ -4,4 +4,4 @@
  * [Fab实验室方案](cn/lab/lab.md)
  * [Fab Academy](http://fabacademy.org/)
  * [MIT Fab Lab认证](https://www.fablabs.io/) 
- * [AGV教育方案](cn/agv/agv.md)
+ * [AGV教育方案](cn/agvedu/agv.md)
