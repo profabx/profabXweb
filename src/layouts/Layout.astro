@@ -1,0 +1,62 @@
+---
+interface Props {
+  title: string;
+}
+import { ViewTransitions } from "astro:transitions";
+
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <ViewTransitions />
+  </head>
+  <body>
+    <slot />
+    <style is:global>
+      :root {
+        --accent: 136, 58, 234;
+        --pro-accent: 16, 46, 237;
+        --accent-light: 224, 204, 250;
+        --pro-accent-light: 174, 2197, 229;
+        --accent-dark: 49, 10, 101;
+        --pro-accent-dark: 14, 14, 86;
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          rgb(var(--accent-light)) 30%,
+          white 60%
+        );
+        --pro-accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--pro-accent)),
+          rgb(var(--pro-accent-light)) 30%,
+          white 60%
+        );
+      }
+      html {
+        font-family: system-ui, sans-serif;
+        /* background: #13151a; */
+        background: #ffffff;
+        background-size: 224px;
+      }
+      code {
+        font-family:
+          Menlo,
+          Monaco,
+          Lucida Console,
+          Liberation Mono,
+          DejaVu Sans Mono,
+          Bitstream Vera Sans Mono,
+          Courier New,
+          monospace;
+      }
+    </style>
+  </body>
+</html>
