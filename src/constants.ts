@@ -231,4 +231,26 @@ const mockData = [
   },
 ];
 
-export { mockData };
+const MenuData = [
+  {
+    key: "fab",
+    label: "Fab 课程方案",
+    items: [
+      {
+        label: "NexMaker Fab 实验室",
+        link: "https://www.nexmaker.com/",
+      },
+      { label: "Fab 实验室", link: "/zh-cn/lab/lab" },
+      { label: "Fab Academy", link: "http://fabacademy.org/" },
+      { label: "MIT Fab Lab 认证", link: "https://www.fablabs.io/" },
+      { label: "AGV 教育方案", link: "/zh-cn/agvedu/agv" },
+    ],
+  },
+  // {
+  //   key: "/prototype",
+  //   label: "工程样机开发",
+  //   link: "/zh-cn/prototype/prototype",
+  // },
+];
+
+export { mockData, MenuData };
