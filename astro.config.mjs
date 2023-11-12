@@ -37,6 +37,27 @@ export default defineConfig({
         // Relative path to your custom CSS file
         "./src/styles/custom.css",
       ],
+      // sidebar: [
+      //   // A single link item labelled “Home”.
+      //   { label: "Home", link: "/" },
+      //   // A group labelled “Start Here” containing two links.
+      //   {
+      //     label: "Start Here",
+      //     items: [
+      //       { label: "Introduction", link: "/intro" },
+      //       { label: "Next Steps", link: "/next-steps" },
+      //     ],
+      //   },
+      //   // A group linking to all pages in the reference directory.
+      //   {
+      //     label: "Reference",
+      //     autogenerate: { directory: "reference" },
+      //   },
+      // ],
+      components: {
+        // Override the default `SocialIcons` component.
+        SocialIcons: "./src/components/NavBarLink.astro",
+      },
     }),
     tailwind(),
     react(),
