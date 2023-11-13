@@ -35,7 +35,7 @@ export default defineConfig({
       },
       customCss: [
         // Relative path to your custom CSS file
-        "./src/styles/custom.css",
+        "./src/tailwind.css",
       ],
       // sidebar: [
       //   // A single link item labelled “Home”.
@@ -59,7 +59,10 @@ export default defineConfig({
         SocialIcons: "./src/components/NavBarLink.astro",
       },
     }),
-    tailwind(),
+    tailwind({
+      // Disable the default base styles:
+      applyBaseStyles: false,
+    }),
     react(),
   ],
 });
