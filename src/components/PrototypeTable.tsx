@@ -1,22 +1,14 @@
-import { useEffect, useMemo, useReducer, useState } from "react";
-import { mockData } from "../constants";
+import { useMemo, useReducer, useState } from "react";
+import { MetallicMaterialsData, NonMetallicMaterialsData } from "../constants";
 
 import {
   useReactTable,
   getCoreRowModel,
-  getFilteredRowModel,
-  getFacetedRowModel,
-  getFacetedUniqueValues,
-  getFacetedMinMaxValues,
-  getPaginationRowModel,
   sortingFns,
-  getSortedRowModel,
   flexRender,
 } from "@tanstack/react-table";
 
 import type {
-  Column,
-  Table,
   ColumnFiltersState,
   FilterFn,
   SortingFn,
@@ -25,104 +17,7 @@ import type {
 
 import { rankItem } from "@tanstack/match-sorter-utils";
 
-const fuzzyFilter: FilterFn<any> = (row, columnId, value, addMeta) => {
-  // Rank the item
-  const itemRank = rankItem(row.getValue(columnId), value);
-
-  // Store the itemRank info
-  addMeta({
-    itemRank,
-  });
-
-  // Return if the item should be filtered in/out
-  return itemRank.passed;
-};
-
-const fuzzySort: SortingFn<any> = (rowA, rowB, columnId) => {
-  let dir = 0;
-
-  // Only sort by rank if the column has ranking information
-  // if (rowA.columnFiltersMeta[columnId]) {
-  //   dir = compareItems(
-  //     rowA.columnFiltersMeta[columnId]?.itemRank!,
-  //     rowB.columnFiltersMeta[columnId]?.itemRank!
-  //   );
-  // }
-
-  // Provide an alphanumeric fallback for when the item ranks are equal
-  return dir === 0 ? sortingFns.alphanumeric(rowA, rowB, columnId) : dir;
-};
-
 function PrototypeTable() {
-  const rerender = useReducer(() => ({}), {})[1];
-
-  const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>([]);
-  const [globalFilter, setGlobalFilter] = useState("");
-
-  // const columns = useMemo<ColumnDef<any, any>[]>(
-  //   () => [
-  //     {
-  //       header: "材料/工艺/后处理",
-  //       footer: (props) => props.column.id,
-  //       columns: [
-  //         {
-  //           accessorKey: "firstName",
-  //           cell: (info) => info.getValue(),
-  //           footer: (props) => props.column.id,
-  //         },
-  //         {
-  //           accessorFn: (row) => row.lastName,
-  //           id: "lastName",
-  //           cell: (info) => info.getValue(),
-  //           header: () => <span>Last Name</span>,
-  //           footer: (props) => props.column.id,
-  //         },
-  //         {
-  //           accessorFn: (row) => `${row.firstName} ${row.lastName}`,
-  //           id: "fullName",
-  //           header: "Full Name",
-  //           cell: (info) => info.getValue(),
-  //           footer: (props) => props.column.id,
-  //           filterFn: "fuzzy",
-  //           sortingFn: fuzzySort,
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       header: "手工",
-  //       footer: (props) => props.column.id,
-  //       columns: [
-  //         {
-  //           accessorKey: "age",
-  //           header: () => "Age",
-  //           footer: (props) => props.column.id,
-  //         },
-  //         {
-  //           header: "More Info",
-  //           columns: [
-  //             {
-  //               accessorKey: "visits",
-  //               header: () => <span>Visits</span>,
-  //               footer: (props) => props.column.id,
-  //             },
-  //             {
-  //               accessorKey: "status",
-  //               header: "Status",
-  //               footer: (props) => props.column.id,
-  //             },
-  //             {
-  //               accessorKey: "progress",
-  //               header: "Profile Progress",
-  //               footer: (props) => props.column.id,
-  //             },
-  //           ],
-  //         },
-  //       ],
-  //     },
-  //   ],
-  //   []
-  // );
-
   const columns = useMemo<ColumnDef<any, any>[]>(
     () => [
       {
@@ -130,15 +25,15 @@ function PrototypeTable() {
         footer: (props) => props.column.id,
         columns: [
           {
-            id: "metal materials",
-            header: "金属材料",
+            accessorKey: "materials",
+            header: "",
             cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
             minSize: 500,
           },
           {
-            id: "iron steel",
-            header: "铁/钢",
+            accessorKey: "type",
+            header: "",
             cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
@@ -149,15 +44,15 @@ function PrototypeTable() {
         footer: (props) => props.column.id,
         columns: [
           {
-            id: "handmade",
+            accessorKey: "handmade",
             header: "纯手工",
             cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
           {
-            id: "tools",
+            accessorKey: "tools",
             header: "工具",
-            cell: (info) => "",
+            cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
         ],
@@ -167,51 +62,51 @@ function PrototypeTable() {
         footer: (props) => props.column.id,
         columns: [
           {
-            id: "fdm",
+            accessorKey: "fdm",
             header: "FDM",
             cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
           {
-            id: "sla",
+            accessorKey: "sla",
             header: "SLA",
-            cell: (info) => "",
+            cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
           {
-            id: "mjf",
+            accessorKey: "mjf",
             header: "MJF",
-            cell: (info) => "",
+            cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
           {
-            id: "polyjet",
+            accessorKey: "polyjet",
             header: "POLYJET",
-            cell: (info) => "",
+            cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
           {
-            id: "slm",
+            accessorKey: "slm",
             header: "SLM",
-            cell: (info) => "",
+            cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
           {
-            id: "dlp/lcd",
+            accessorKey: "dlp_lcd",
             header: "DLP/LCD",
-            cell: (info) => "",
+            cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
           {
-            id: "sls",
+            accessorKey: "sls",
             header: "SLS",
-            cell: (info) => "",
+            cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
           {
-            id: "more",
+            accessorKey: "more",
             header: "......",
-            cell: (info) => "",
+            cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
         ],
@@ -221,31 +116,31 @@ function PrototypeTable() {
         footer: (props) => props.column.id,
         columns: [
           {
-            id: "cnc",
+            accessorKey: "cnc",
             header: "CNC",
             cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
           {
-            id: "iron",
+            accessorKey: "iron",
             header: "铁",
             cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
           {
-            id: "lathe",
+            accessorKey: "lathe",
             header: "车",
             cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
           {
-            id: "laser",
+            accessorKey: "laser",
             header: "激光切割",
             cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
           {
-            id: "more",
+            accessorKey: "another-more",
             header: "......",
             cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
@@ -257,19 +152,19 @@ function PrototypeTable() {
         footer: (props) => props.column.id,
         columns: [
           {
-            id: "injection molding",
+            accessorKey: "injection_molding",
             header: "注塑",
             cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
           {
-            id: "silicone coating",
+            accessorKey: "silicone_coating",
             header: "硅胶覆膜",
             cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
           },
           {
-            id: "sheet metal",
+            accessorKey: "sheet_metal",
             header: "钣金",
             cell: (info) => info.getValue(),
             footer: (props) => props.column.id,
@@ -281,81 +176,51 @@ function PrototypeTable() {
   );
 
   const table = useReactTable({
-    data: mockData,
+    data: [...MetallicMaterialsData, ...NonMetallicMaterialsData],
     columns,
-    filterFns: {
-      fuzzy: fuzzyFilter,
-    },
-    state: {
-      columnFilters,
-      globalFilter,
-    },
-    onColumnFiltersChange: setColumnFilters,
-    onGlobalFilterChange: setGlobalFilter,
-    globalFilterFn: fuzzyFilter,
+    enableColumnResizing: true,
+    columnResizeMode: "onChange",
     getCoreRowModel: getCoreRowModel(),
-    getFilteredRowModel: getFilteredRowModel(),
-    getSortedRowModel: getSortedRowModel(),
-    getPaginationRowModel: getPaginationRowModel(),
-    getFacetedRowModel: getFacetedRowModel(),
-    getFacetedUniqueValues: getFacetedUniqueValues(),
-    getFacetedMinMaxValues: getFacetedMinMaxValues(),
     debugTable: true,
     debugHeaders: true,
-    debugColumns: false,
+    debugColumns: true,
   });
 
-  useEffect(() => {
-    if (table.getState().columnFilters[0]?.id === "fullName") {
-      if (table.getState().sorting[0]?.id !== "fullName") {
-        table.setSorting([{ id: "fullName", desc: false }]);
-      }
-    }
-  }, [table.getState().columnFilters[0]?.id]);
-
   return (
-    <div className="p-2">
-      <div>
-        <DebouncedInput
-          value={globalFilter ?? ""}
-          onChange={(value) => setGlobalFilter(String(value))}
-          className="p-2 font-lg shadow border border-block"
-          placeholder="Search all columns..."
-        />
-      </div>
+    <div className="p-2 block max-w-full overflow-x-scroll overflow-y-hidden">
       <div className="h-2" />
-      <table>
+      <table
+        className="w-full"
+        {...{
+          style: {
+            width: table.getCenterTotalSize(),
+          },
+        }}
+      >
         <thead>
           {table.getHeaderGroups().map((headerGroup) => (
             <tr key={headerGroup.id}>
               {headerGroup.headers.map((header) => {
                 return (
-                  <th key={header.id} colSpan={header.colSpan}>
-                    {header.isPlaceholder ? null : (
-                      <>
-                        <div
-                          {...{
-                            className: header.column.getCanSort()
-                              ? "cursor-pointer select-none"
-                              : "",
-                            onClick: header.column.getToggleSortingHandler(),
-                          }}
-                        >
-                          {flexRender(
-                            header.column.columnDef.header,
-                            header.getContext()
-                          )}
-                          {{
-                            asc: " 🔼",
-                            desc: " 🔽",
-                          }[header.column.getIsSorted() as string] ?? null}
-                        </div>
-                        {header.column.getCanFilter() ? (
-                          <div>
-                            <Filter column={header.column} table={table} />
-                          </div>
-                        ) : null}
-                      </>
+                  <th
+                    key={header.id}
+                    colSpan={header.colSpan}
+                    style={{ position: "relative", width: header.getSize() }}
+                  >
+                    {header.isPlaceholder
+                      ? null
+                      : flexRender(
+                          header.column.columnDef.header,
+                          header.getContext()
+                        )}
+                    {header.column.getCanResize() && (
+                      <div
+                        onMouseDown={header.getResizeHandler()}
+                        onTouchStart={header.getResizeHandler()}
+                        className={`resizer ${
+                          header.column.getIsResizing() ? "isResizing" : ""
+                        }`}
+                      ></div>
                     )}
                   </th>
                 );
@@ -369,7 +234,7 @@ function PrototypeTable() {
               <tr key={row.id}>
                 {row.getVisibleCells().map((cell) => {
                   return (
-                    <td key={cell.id}>
+                    <td key={cell.id} style={{ width: cell.column.getSize() }}>
                       {flexRender(
                         cell.column.columnDef.cell,
                         cell.getContext()
@@ -383,117 +248,6 @@ function PrototypeTable() {
         </tbody>
       </table>
     </div>
-  );
-}
-
-function Filter({
-  column,
-  table,
-}: {
-  column: Column<any, unknown>;
-  table: Table<any>;
-}) {
-  const firstValue = table
-    .getPreFilteredRowModel()
-    .flatRows[0]?.getValue(column.id);
-
-  const columnFilterValue = column.getFilterValue();
-
-  const sortedUniqueValues = useMemo(
-    () =>
-      typeof firstValue === "number"
-        ? []
-        : Array.from(column.getFacetedUniqueValues().keys()).sort(),
-    [column.getFacetedUniqueValues()]
-  );
-
-  return typeof firstValue === "number" ? (
-    <div>
-      <div className="flex space-x-2">
-        <DebouncedInput
-          type="number"
-          min={Number(column.getFacetedMinMaxValues()?.[0] ?? "")}
-          max={Number(column.getFacetedMinMaxValues()?.[1] ?? "")}
-          value={(columnFilterValue as [number, number])?.[0] ?? ""}
-          onChange={(value) =>
-            column.setFilterValue((old: [number, number]) => [value, old?.[1]])
-          }
-          placeholder={`Min ${
-            column.getFacetedMinMaxValues()?.[0]
-              ? `(${column.getFacetedMinMaxValues()?.[0]})`
-              : ""
-          }`}
-          className="w-24 border shadow rounded"
-        />
-        <DebouncedInput
-          type="number"
-          min={Number(column.getFacetedMinMaxValues()?.[0] ?? "")}
-          max={Number(column.getFacetedMinMaxValues()?.[1] ?? "")}
-          value={(columnFilterValue as [number, number])?.[1] ?? ""}
-          onChange={(value) =>
-            column.setFilterValue((old: [number, number]) => [old?.[0], value])
-          }
-          placeholder={`Max ${
-            column.getFacetedMinMaxValues()?.[1]
-              ? `(${column.getFacetedMinMaxValues()?.[1]})`
-              : ""
-          }`}
-          className="w-24 border shadow rounded"
-        />
-      </div>
-      <div className="h-1" />
-    </div>
-  ) : (
-    <>
-      <datalist id={column.id + "list"}>
-        {sortedUniqueValues.slice(0, 5000).map((value: any) => (
-          <option value={value} key={value} />
-        ))}
-      </datalist>
-      <DebouncedInput
-        type="text"
-        value={(columnFilterValue ?? "") as string}
-        onChange={(value) => column.setFilterValue(value)}
-        placeholder={`Search... (${column.getFacetedUniqueValues().size})`}
-        className="w-36 border shadow rounded"
-        list={column.id + "list"}
-      />
-      <div className="h-1" />
-    </>
-  );
-}
-
-// A debounced input react component
-function DebouncedInput({
-  value: initialValue,
-  onChange,
-  debounce = 500,
-  ...props
-}: {
-  value: string | number;
-  onChange: (value: string | number) => void;
-  debounce?: number;
-} & Omit<React.InputHTMLAttributes<HTMLInputElement>, "onChange">) {
-  const [value, setValue] = useState(initialValue);
-
-  useEffect(() => {
-    setValue(initialValue);
-  }, [initialValue]);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      onChange(value);
-    }, debounce);
-
-    return () => clearTimeout(timeout);
-  }, [value]);
-
-  return (
-    <input
-      {...props}
-      value={value}
-      onChange={(e) => setValue(e.target.value)}
-    />
   );
 }
 
