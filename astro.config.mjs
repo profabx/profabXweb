@@ -10,12 +10,14 @@ import starlight from "@astrojs/starlight";
 import tailwind from "@astrojs/tailwind";
 
 import react from "@astrojs/react";
+import { SideBarData } from "./src/constants";
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
     starlight({
       title: "ProFabX",
+      tableOfContents: false,
       logo: {
         src: "./src/assets/logo.svg",
       },
@@ -37,23 +39,7 @@ export default defineConfig({
         // Relative path to your custom CSS file
         "./src/tailwind.css",
       ],
-      // sidebar: [
-      //   // A single link item labelled “Home”.
-      //   { label: "Home", link: "/" },
-      //   // A group labelled “Start Here” containing two links.
-      //   {
-      //     label: "Start Here",
-      //     items: [
-      //       { label: "Introduction", link: "/intro" },
-      //       { label: "Next Steps", link: "/next-steps" },
-      //     ],
-      //   },
-      //   // A group linking to all pages in the reference directory.
-      //   {
-      //     label: "Reference",
-      //     autogenerate: { directory: "reference" },
-      //   },
-      // ],
+      sidebar: SideBarData,
       components: {
         // Override the default `SocialIcons` component.
         SocialIcons: "./src/components/NavBarLink.astro",
