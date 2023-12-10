@@ -1,21 +1,13 @@
-import { useMemo, useReducer, useState } from "react";
+import { useMemo } from "react";
 import { MetallicMaterialsData, NonMetallicMaterialsData } from "../constants";
 
 import {
   useReactTable,
   getCoreRowModel,
-  sortingFns,
   flexRender,
 } from "@tanstack/react-table";
 
-import type {
-  ColumnFiltersState,
-  FilterFn,
-  SortingFn,
-  ColumnDef,
-} from "@tanstack/react-table";
-
-import { rankItem } from "@tanstack/match-sorter-utils";
+import type { ColumnDef } from "@tanstack/react-table";
 
 function PrototypeTable() {
   const columns = useMemo<ColumnDef<any, any>[]>(
