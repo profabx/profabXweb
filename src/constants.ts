@@ -1,3 +1,4 @@
+// 金属数据
 const MetallicMaterialsData = [
   {
     id: "0",
@@ -442,27 +443,45 @@ const NonMetallicMaterialsData = [
   },
 ];
 
+const FabMenuItems = [
+  {
+    label: "NexMaker Fab 实验室",
+    link: "https://www.nexmaker.com/",
+  },
+  { label: "Fab 实验室", link: "/lab/lab" },
+  { label: "Fab Academy", link: "http://fabacademy.org/" },
+  { label: "MIT Fab Lab 认证", link: "https://www.fablabs.io/" },
+  { label: "AGV 教育方案", link: "/agvedu/agv" },
+];
+
+const PrototypeMenuItems = [
+  { label: "材料", link: "/zh-cn/prototype/material" },
+  {
+    label: "制造工艺",
+    link: "/zh-cn/prototype/manufacture",
+    items: [
+      { label: "增材制造", link: "/zh-cn/prototype/add" },
+      { label: "等材制造", link: "/zh-cn/prototype/equal" },
+      { label: "减材制造", link: "/zh-cn/prototype/cnc" },
+    ],
+  },
+  { label: "后处理", link: "/zh-cn/prototype/postprocess" },
+  { label: "测试", link: "/zh-cn/prototype/test" },
+];
+
 // 顶部菜单
 const MenuData = [
   {
     key: "fab",
     label: "Fab 课程方案",
     link: "/zh-cn/fab/fab",
-    items: [
-      {
-        label: "NexMaker Fab 实验室",
-        link: "https://www.nexmaker.com/",
-      },
-      { label: "Fab 实验室", link: "/zh-cn/lab/lab" },
-      { label: "Fab Academy", link: "http://fabacademy.org/" },
-      { label: "MIT Fab Lab 认证", link: "https://www.fablabs.io/" },
-      { label: "AGV 教育方案", link: "/zh-cn/agvedu/agv" },
-    ],
+    items: FabMenuItems,
   },
   {
     key: "prototype",
     label: "工程样机开发",
     link: "/zh-cn/prototype",
+    items: PrototypeMenuItems,
   },
   {
     key: "explore",
@@ -480,27 +499,28 @@ const MenuData = [
   {
     key: "prototype",
     label: "关于 ProFabX",
-    link: "/zh-cn/README",
+    link: "/zh-cn/readme",
   },
 ];
 
-// 侧边栏侧栏
+// 侧边栏侧栏（不完整）
 const SideBarData = [
-  // A single link item labelled “Home”.
-  { label: "Home", link: "/" },
+  {
+    key: "fab",
+    label: "Fab 课程方案",
+    items: [...FabMenuItems],
+  },
+  { key: "prototype", label: "材料", items: [...PrototypeMenuItems] },
+
   // A group labelled “Start Here” containing two links.
-  {
-    label: "Start Here",
-    items: [
-      { label: "Introduction", link: "/intro" },
-      { label: "Next Steps", link: "/next-steps" },
-    ],
-  },
+  // {
+  //   label: "Start Here",
+  //   items: [
+  //     { label: "Introduction", link: "/intro" },
+  //     { label: "Next Steps", link: "/next-steps" },
+  //   ],
+  // },
   // A group linking to all pages in the reference directory.
-  {
-    label: "Reference",
-    autogenerate: { directory: "reference" },
-  },
 ];
 
 export {
