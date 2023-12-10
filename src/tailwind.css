@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 :root {
-  --sl-content-width: 50rem;
+  --sl-content-width: 90rem;
 }
