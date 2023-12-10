@@ -43,6 +43,7 @@ export default defineConfig({
       components: {
         // Override the default `SocialIcons` component.
         SocialIcons: "./src/components/NavBarLink.astro",
+        Sidebar: "./src/components/Sidebar.astro",
       },
     }),
     tailwind({
