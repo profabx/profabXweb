@@ -4,25 +4,33 @@ import { MenuData } from "../constants";
 ---
 
 <section>
-  {
-    MenuData.map((menu) => {
-      // let slot = null;
-      // if (menu?.link) {
-      //   slot = <a href={menu.link}>{menu.label}</a>;
-      // }
+  <div class="flex flex-row gap-4">
+    {
+      MenuData.map((menu) => {
+        return (
+          <div class="dropdown">
+            <button class="dropdown-button">
+              {menu?.link ? (
+                <a href={menu.link} class="no-underline text-black">
+                  {menu.label}
+                </a>
+              ) : (
+                <>{menu.label}</>
+              )}
+            </button>
 
-      return (
-        <div class="dropdown">
-          <button class="dropbtn">{menu.label}</button>
-          <div class="dropdown-content">
-            {menu.items.map((item) => (
-              <a href={item.link}>{item.label}</a>
-            ))}
+            {menu?.items && (
+              <div class="dropdown-content">
+                {(menu?.items ?? []).map((item) => (
+                  <a href={item.link}>{item.label}</a>
+                ))}
+              </div>
+            )}
           </div>
-        </div>
-      );
-    })
-  }
+        );
+      })
+    }
+  </div>
 </section>
 
 <style>
@@ -31,10 +39,15 @@ import { MenuData } from "../constants";
     display: inline-block;
   }
 
-  .dropbtn {
-    padding: 10px;
+  .dropdown-button {
+    padding: 8px;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
+    background-color: var(--sl-color-bg-nav);
+  }
+  .dropdown-button a {
+    color: var(--sl-color-white);
   }
 
   .dropdown-content {
@@ -42,7 +55,7 @@ import { MenuData } from "../constants";
     position: absolute;
     background-color: #fff;
     min-width: 12rem;
-    border: 1px solid var(--sl-color-gray-5);
+    border: 1px solid var(--sl-color-accent);
     border-radius: 0.375rem;
     z-index: 1;
   }
@@ -64,7 +77,7 @@ import { MenuData } from "../constants";
     display: block;
   }
 
-  .dropdown:hover .dropbtn {
+  .dropdown:hover .dropdown-button {
     background-color: var(--sl-color-accent-low);
     border-radius: 0.375rem;
   }

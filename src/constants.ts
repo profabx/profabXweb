@@ -442,10 +442,12 @@ const NonMetallicMaterialsData = [
   },
 ];
 
+// 顶部菜单
 const MenuData = [
   {
     key: "fab",
     label: "Fab 课程方案",
+    link: "/zh-cn/fab/fab",
     items: [
       {
         label: "NexMaker Fab 实验室",
@@ -457,11 +459,29 @@ const MenuData = [
       { label: "AGV 教育方案", link: "/zh-cn/agvedu/agv" },
     ],
   },
-  // {
-  //   key: "/prototype",
-  //   label: "工程样机开发",
-  //   link: "/zh-cn/prototype/prototype",
-  // },
+  {
+    key: "prototype",
+    label: "工程样机开发",
+    link: "/zh-cn/prototype",
+  },
+  {
+    key: "explore",
+    label: "探索",
+    items: [
+      {
+        label: "NexMaker Fab 实验室",
+        link: "/zh-cn/explore/readme",
+      },
+      { label: "沙盘", link: "/zh-cn/sandtable/sandtable" },
+      { label: "AGV", link: "/zh-cn/agvedu/agvcase" },
+      { label: "文章", link: "/zh-cn/explore/readme" },
+    ],
+  },
+  {
+    key: "prototype",
+    label: "关于 ProFabX",
+    link: "/zh-cn/README",
+  },
 ];
 
 export { MetallicMaterialsData, NonMetallicMaterialsData, MenuData };
