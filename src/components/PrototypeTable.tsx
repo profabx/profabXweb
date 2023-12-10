@@ -179,13 +179,12 @@ function PrototypeTable() {
   });
 
   return (
-    <div className="p-2 block max-w-full overflow-x-scroll overflow-y-hidden">
+    <div className="block overflow-x-scroll overflow-y-hidden">
       <div className="h-2" />
       <table
-        className="w-full"
         {...{
           style: {
-            width: table.getCenterTotalSize(),
+            // width: table.getCenterTotalSize(),
           },
         }}
       >
@@ -226,7 +225,11 @@ function PrototypeTable() {
               <tr key={row.id}>
                 {row.getVisibleCells().map((cell) => {
                   return (
-                    <td key={cell.id} style={{ width: cell.column.getSize() }}>
+                    <td
+                      key={cell.id}
+                      style={{ width: cell.column.getSize() }}
+                      className="hover:scale-120"
+                    >
                       {flexRender(
                         cell.column.columnDef.cell,
                         cell.getContext()
