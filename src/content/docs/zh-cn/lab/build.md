@@ -1,5 +1,7 @@
 ---
 title: Build
+sidebar:
+  attrs: { key: fab }
 ---
 
 如何建立

@@ -1,5 +1,7 @@
 ---
 title: Manage
+sidebar:
+  attrs: { key: fab }
 ---
 
 日常运维
