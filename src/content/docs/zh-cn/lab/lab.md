@@ -1,7 +1,7 @@
 ---
 title: Lab
 sidebar:
-  attrs: { key: fab }
+  attrs: { id: fab }
 ---
 
 # 介绍相关课程和实验室方案

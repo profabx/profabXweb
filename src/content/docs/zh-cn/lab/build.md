@@ -1,7 +1,7 @@
 ---
 title: Build
 sidebar:
-  attrs: { key: fab }
+  attrs: { id: fab }
 ---
 
 如何建立

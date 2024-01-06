@@ -443,32 +443,33 @@ const NonMetallicMaterialsData = [
   },
 ];
 
-// 侧边菜单
+// 侧边菜单项 - Fab
 const FabMenuItems = [
   {
     label: "NexMaker Fab 实验室",
     link: "https://www.nexmaker.com/",
-    attrs: { key: "fab" },
+    attrs: { id: "fab" },
   },
-  { label: "Fab 实验室", link: "/lab/lab", attrs: { key: "fab" } },
+  { label: "Fab 实验室", link: "/lab/lab", attrs: { id: "fab" } },
   {
     label: "Fab Academy",
     link: "http://fabacademy.org/",
-    attrs: { key: "fab" },
+    attrs: { id: "fab" },
   },
   {
     label: "MIT Fab Lab 认证",
     link: "https://www.fablabs.io/",
-    attrs: { key: "fab" },
+    attrs: { id: "fab" },
   },
-  { label: "AGV 教育方案", link: "agvedu/agv", attrs: { key: "fab" } },
+  { label: "AGV 教育方案", link: "agvedu/agv", attrs: { id: "fab" } },
 ];
 
+// 侧边菜单项 - Prototype
 const PrototypeMenuItems = [
   {
     label: "材料",
     link: "prototype/material",
-    attrs: { key: "prototype" },
+    attrs: { id: "prototype" },
   },
   {
     label: "制造工艺",
@@ -478,41 +479,42 @@ const PrototypeMenuItems = [
       { label: "等材制造", link: "/prototype/equal" },
       { label: "减材制造", link: "/prototype/cnc" },
     ],
-    attrs: { key: "prototype" },
+    attrs: { id: "prototype" },
   },
   {
     label: "后处理",
     link: "/prototype/postprocess",
-    attrs: { key: "prototype" },
+    attrs: { id: "prototype" },
   },
-  { label: "测试", link: "/prototype/test", attrs: { key: "prototype" } },
+  { label: "测试", link: "/prototype/test", attrs: { id: "prototype" } },
 ];
 
+// 侧边菜单项 - Sandtable
 const SandtableMenuItems = [
   {
     label: "沙盘",
     link: "/sandtable/sandtable",
-    attrs: { key: "sandtable" },
+    attrs: { id: "sandtable" },
   },
   {
     label: "加工",
     link: "/sandtable/manufacure",
-    attrs: { key: "sandtable" },
+    attrs: { id: "sandtable" },
   },
   {
     label: "电控",
     link: "/sandtable/control",
-    attrs: { key: "sandtable" },
+    attrs: { id: "sandtable" },
   },
   {
     label: "数字化",
     link: "/sandtable/digital",
-    attrs: { key: "sandtable" },
+    attrs: { id: "sandtable" },
   },
   {
     label: "维护与升级",
     link: "/sandtable/maintain",
-    attrs: { key: "sandtable" },
+    attrs: { id: "sandtable" },
   },
 ];
 
@@ -557,8 +559,8 @@ const SideBarData = [
     label: "Fab 课程方案",
     items: [...FabMenuItems],
   },
-  { key: "prototype", label: "材料", items: [...PrototypeMenuItems] },
-  { key: "sandtable", label: "沙盘", items: [...SandtableMenuItems] },
+  { id: "prototype", label: "材料", items: [...PrototypeMenuItems] },
+  { id: "sandtable", label: "沙盘", items: [...SandtableMenuItems] },
 
   // A group labelled “Start Here” containing two links.
   // {

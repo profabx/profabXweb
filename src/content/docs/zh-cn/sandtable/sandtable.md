@@ -1,7 +1,7 @@
 ---
 title: Sandtable
 sidebar:
-  attrs: { key: sandtable }
+  attrs: { id: sandtable }
 ---
 
 # 效果

@@ -9,11 +9,12 @@ const { slug } = Astro.params;
 
 const filterSidebar = sidebar.filter((item: any) => {
   if (
-    item?.entries?.[0]?.attrs?.key ===
-    Astro?.props?.entry?.data?.sidebar?.attrs?.key
+    item?.entries?.[0]?.attrs?.id ===
+    Astro.props.entry?.data?.sidebar?.attrs?.id
   ) {
     return slug;
   }
+
   return null;
 });
 ---

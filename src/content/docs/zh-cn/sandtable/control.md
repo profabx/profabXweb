@@ -1,7 +1,7 @@
 ---
 title: Control
 sidebar:
-  attrs: { key: sandtable }
+  attrs: { id: sandtable }
 ---
 
 我们使用成熟的电控方案和物联网方案进行对应、交互

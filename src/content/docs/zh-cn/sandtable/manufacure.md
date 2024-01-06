@@ -1,7 +1,7 @@
 ---
 title: Manufacture
 sidebar:
-  attrs: { key: sandtable }
+  attrs: { id: sandtable }
 ---
 
 在以下不同部分使用不同工艺和后处理方式去加工

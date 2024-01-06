@@ -1,7 +1,7 @@
 ---
 title: Digital
 sidebar:
-  attrs: { key: sandtable }
+  attrs: { id: sandtable }
 ---
 
 使用者使用 AR,pad，投影等与沙盘交互，交互内容有以下
