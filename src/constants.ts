@@ -468,7 +468,7 @@ const FabMenuItems = [
 const PrototypeMenuItems = [
   {
     label: "材料",
-    link: "prototype/material",
+    link: "/prototype/material",
     attrs: { id: "prototype" },
   },
   {
@@ -540,9 +540,9 @@ const MenuData = [
         label: "NexMaker Fab 实验室",
         link: "/explore/readme",
       },
-      { label: "沙盘", link: "/zh-cn/sandtable/sandtable" },
-      { label: "AGV", link: "/zh-cn/agvedu/agvcase" },
-      { label: "文章", link: "/zh-cn/explore/readme" },
+      { label: "沙盘", link: "/sandtable/sandtable" },
+      { label: "AGV", link: "/agvedu/agvcase" },
+      { label: "文章", link: "/explore/readme" },
     ],
   },
   {

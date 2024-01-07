@@ -21,16 +21,23 @@ export default defineConfig({
       logo: {
         src: "./src/assets/logo.svg",
       },
-      defaultLocale: "en",
+      defaultLocale: "root", // optional
+      // defaultLocale: "en",
+
       locales: {
         // English docs in `src/content/docs/en/`
         en: {
           label: "English",
         },
         // Simplified Chinese docs in `src/content/docs/zh-cn/`
-        "zh-cn": {
+        // "zh-cn": {
+        //   label: "简体中文",
+        //   lang: "zh-CN",
+        // },
+
+        root: {
           label: "简体中文",
-          lang: "zh-CN",
+          lang: "zh-CN", // lang is required for root locales
         },
 
         // Arabic docs in `src/content/docs/ar/`
@@ -38,10 +45,12 @@ export default defineConfig({
       customCss: [
         // Relative path to your custom CSS file
         "./src/tailwind.css",
+        // "./src/assets/landing.css",
       ],
       sidebar: SideBarData,
       components: {
         // Override the default `SocialIcons` component.
+        // Hero: "./src/components/Hero.astro",
         SocialIcons: "./src/components/NavBarLink.astro",
         Sidebar: "./src/components/Sidebar.astro",
       },

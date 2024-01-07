@@ -1,0 +1,16 @@
+---
+layout: ../../layouts/Layout.astro
+title: 工程样机开发
+tableOfContents: false
+---
+
+import PrototypeTable from "../../components/PrototypeTable.tsx";
+import ContentCard from "../../components/ContentCard.astro";
+
+<section>
+  <ContentCard link="/readme" label="Seeed Studio 类似活动卡片" />
+
+我们提供批量生产前的相关服务！
+
+  <PrototypeTable client:load />
+</section>
