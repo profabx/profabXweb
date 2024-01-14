@@ -1,9 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
+import LanguageSelect from "../components/LanguageSelect.astro";
 ---
 
 <Layout title="Welcome to ProFabX.">
+  <LanguageSelect {...Astro.props} />
   <main>
     <div class="container">
       <img src="http://profabx.com/pic/logo.png" alt="logo" />
@@ -12,22 +14,22 @@ import Card from "../components/Card.astro";
 
     <ul role="list" class="link-card-grid">
       <Card
-        href="/zh-cn/lab/lab"
+        href="/lab/lab"
         title="NexMaker-Fab 课程"
         body="相关课程和实验室方案介绍"
       />
       <Card
-        href="/zh-cn/prototype"
+        href="/prototype"
         title="工程样机开发"
         body="我们提供批量生产前的相关服务"
       />
       <Card
-        href="/zh-cn/agvedu/agvcase"
+        href="/agvedu/agvcase"
         title="无人小车方案"
         body="coming soon"
       />
       <Card
-        href="/zh-cn/sandtable/sandtable"
+        href="/sandtable/sandtable"
         title="数字沙盘方案"
         body="我们将逐步分享我们在数字化沙盘方面的案例"
       />
