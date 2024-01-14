@@ -19,7 +19,8 @@ export default defineConfig({
       title: "ProFabX",
       tableOfContents: false,
       logo: {
-        src: "./src/assets/logo.svg",
+        light: "./src/assets/light.png",
+        dark: "./src/assets/dark.png",
       },
       defaultLocale: "root", // optional
       // defaultLocale: "en",
@@ -51,6 +52,7 @@ export default defineConfig({
       components: {
         // Override the default `SocialIcons` component.
         // Hero: "./src/components/Hero.astro",
+        SiteTitle: "./src/components/SiteTitle.astro",
         SocialIcons: "./src/components/NavBarLink.astro",
         Sidebar: "./src/components/Sidebar.astro",
       },
