@@ -4,5 +4,6 @@
 
 :root {
   --sl-content-width: 90rem;
-  --sl-color-text-accent: 16, 46, 237;
+  --sl-color-accent: 0, 84, 255;
+  --sl-color-text-accent: var(--sl-color-accent);
 }

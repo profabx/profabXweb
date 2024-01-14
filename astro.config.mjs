@@ -19,8 +19,8 @@ export default defineConfig({
       title: "ProFabX",
       tableOfContents: false,
       logo: {
-        light: "./src/assets/light.png",
-        dark: "./src/assets/dark.png",
+        light: "./src/assets/dark.png",
+        dark: "./src/assets/light.png",
       },
       defaultLocale: "root", // optional
       // defaultLocale: "en",
