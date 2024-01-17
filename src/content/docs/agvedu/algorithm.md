@@ -1,5 +1,7 @@
 ---
 title: Algorithm
+sidebar:
+  attrs: { id: agv }
 ---
 
 test web3

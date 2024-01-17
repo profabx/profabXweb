@@ -41,7 +41,6 @@ export function flattenSidebar(sidebar: SidebarEntry[]): Link[] {
           <a
             href={entry.href}
             aria-current={entry.isCurrent && "page"}
-            class="hover:ring-1 hover:ring-blue-500 focus:ring-2"
             class:list={[{ large: !nested }, entry.attrs.class]}
             {...entry.attrs}
           >

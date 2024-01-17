@@ -1,5 +1,7 @@
 ---
 title: Basic
+sidebar:
+  attrs: { id: agv }
 ---
 
 # 概念与趋势

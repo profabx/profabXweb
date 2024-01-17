@@ -1,5 +1,7 @@
 ---
 title: AGV
+sidebar:
+  attrs: { id: agv }
 ---
 
 # AGV教育方案

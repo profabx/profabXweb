@@ -6,17 +6,21 @@ type Props = {
 const { label, link } = Astro.props;
 ---
 
-<a
-  target="_blank"
-  rel="noopener noreferrer"
-  href={link}
-  class="content-bg inline-block px-2 py-4 rounded-lg h-32 w-64 transition ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 no-underline border border-slate-200"
->
-  {label}
-</a>
-
+<span class="content-bg not-content">
+  <a
+    target="_blank"
+    rel="noopener noreferrer"
+    href={link}
+    class="accent-600 inline-block px-2 py-4 rounded-lg h-32 w-64 transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 no-underline border border-accent-600"
+  >
+    {label}
+  </a>
+</span>
 <style>
   .content-bg {
     background-color: var(--sl-color-black);
+  }
+  .content-bg a {
+    color: var(--sl-color-text-accent) !important;
   }
 </style>

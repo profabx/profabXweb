@@ -1,5 +1,7 @@
 ---
 title: README
+sidebar:
+  attrs: { id: about }
 ---
 
 <div align=center>

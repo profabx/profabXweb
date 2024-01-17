@@ -1,5 +1,7 @@
 ---
 title: AGV Case
+sidebar:
+  attrs: { id: agv }
 ---
 
 coming soon

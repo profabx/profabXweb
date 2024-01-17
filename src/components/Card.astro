@@ -26,7 +26,7 @@ const { href, title, body } = Astro.props;
     display: flex;
     padding: 1px;
     background-color: white;
-    border: 1px solid rgb(var( --blue-ribbon-500));
+    border: 1px solid rgba(var(--pro-accent));
     background-size: 400%;
     border-radius: 7px;
     background-position: 100%;
@@ -43,19 +43,18 @@ const { href, title, body } = Astro.props;
   }
   h2 {
     margin: 0;
-    font-size: 1.25rem !important;
-    color: rgb(var(--pro-accent)) !important;
-    transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    font-size: 1.25rem;
+    color: rgba(var(--pro-accent));
   }
 
   p {
-    color: rgb(var(--pro-accent));
+    color: rgba(var(--pro-accent));
     margin-top: 0.5rem;
     margin-bottom: 0;
   }
   .link-card:is(:hover, :focus-within) {
     background-position: 0;
-    background-color: rgb(var(--pro-accent-1));
+    background-color: rgba(var(--pro-accent-1));
     color: white;
     transition: ease-in-out;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -64,6 +63,6 @@ const { href, title, body } = Astro.props;
     scale: 1.1;
   }
   .link-card:is(:hover, :focus-within) h2 {
-    color: rgb(var(--pro-accent-8));
+    color: rgba(var(--pro-accent));
   }
 </style>

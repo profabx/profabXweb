@@ -443,6 +443,49 @@ const NonMetallicMaterialsData = [
   },
 ];
 
+// 金属数据 V2
+const NewtMetallicMaterialsData = [
+  { label: "铁/钢", color: "#C8E709" },
+  { label: "铝/合金", color: "#E3E709" },
+  {
+    label: "铜/合金",
+    color: "#E7D109",
+  },
+
+  { label: "钛/合金", color: "#E7D109" },
+];
+
+// 非金属数据 V2
+const NewtNonMetallicMaterialsData = [
+  { label: "石英", color: "#17F47D" },
+  { label: "PC", color: "#17F47D" },
+  {
+    label: "PP",
+    color: "#17F4DA",
+  },
+
+  { label: "peek", color: "#1F6ADC" },
+  { label: "树脂", color: "#8CE21F" },
+  { label: "TPU", color: "#2320A4" },
+  { label: "尼龙", color: "#0C0B13" },
+  { label: "ABS", color: "#A5A3AE" },
+];
+
+const TableData = [
+  {
+    title: "FDM",
+    color: "#D9D9D9",
+    left: NewtNonMetallicMaterialsData.slice(1),
+    right: NewtMetallicMaterialsData.slice(0, 1),
+  },
+  {
+    title: "FDM",
+    color: "#D9D9D9",
+    left: NewtNonMetallicMaterialsData,
+    right: NewtMetallicMaterialsData.slice(0, 2),
+  },
+];
+
 // 侧边菜单项 - Fab
 const FabMenuItems = [
   {
@@ -473,11 +516,20 @@ const PrototypeMenuItems = [
   },
   {
     label: "制造工艺",
-    link: "/prototype/manufacture",
     items: [
-      { label: "增材制造", link: "/prototype/add" },
-      { label: "等材制造", link: "/prototype/equal" },
-      { label: "减材制造", link: "/prototype/cnc" },
+      {
+        label: "说明",
+        link: "/prototype/manufacture",
+        attrs: { id: "prototype" },
+      },
+
+      { label: "增材制造", link: "/prototype/add", attrs: { id: "prototype" } },
+      {
+        label: "等材制造",
+        link: "/prototype/equal",
+        attrs: { id: "prototype" },
+      },
+      { label: "减材制造", link: "/prototype/cnc", attrs: { id: "prototype" } },
     ],
     attrs: { id: "prototype" },
   },
@@ -492,7 +544,7 @@ const PrototypeMenuItems = [
 // 侧边菜单项 - Sandtable
 const SandtableMenuItems = [
   {
-    label: "沙盘",
+    label: "效果",
     link: "/sandtable/sandtable",
     attrs: { id: "sandtable" },
   },
@@ -515,6 +567,67 @@ const SandtableMenuItems = [
     label: "维护与升级",
     link: "/sandtable/maintain",
     attrs: { id: "sandtable" },
+  },
+];
+
+// 侧边菜单项 - AGV
+const AGVMenuItems = [
+  {
+    label: "概念与趋势",
+    link: "/agvedu/basic",
+    attrs: { id: "agv" },
+  },
+  {
+    label: "参数定义",
+    link: "/agvedu/parameters",
+    attrs: { id: "agv" },
+  },
+  {
+    label: "电控",
+    link: "/agvedu/eee",
+    attrs: { id: "agv" },
+  },
+  {
+    label: "算法",
+    link: "/agvedu/algorithm",
+    attrs: { id: "agv" },
+  },
+  {
+    label: "结构",
+    link: "/agvedu/me",
+    attrs: { id: "agv" },
+  },
+  {
+    label: "调试",
+    link: "/agvedu/debug",
+    attrs: { id: "agv" },
+  },
+  {
+    label: "认证",
+    link: "/agvedu/authentication",
+    attrs: { id: "agv" },
+  },
+];
+
+// 侧边菜单项 - About
+const AboutItems = [
+  // /about/aim
+  {
+    label: "目标",
+    link: "/about/aim",
+    attrs: { id: "about" },
+  },
+  //
+  {
+    label: "团队",
+    link: "/about/team",
+    attrs: { id: "about" },
+  },
+
+  {
+    label: "联系方式",
+    link: "/about/contact",
+    attrs: { id: "about" },
   },
 ];
 
@@ -548,7 +661,7 @@ const MenuData = [
   {
     key: "prototype",
     label: "关于 ProFabX",
-    link: "/readme",
+    link: "/about/introduce",
   },
 ];
 
@@ -561,6 +674,8 @@ const SideBarData = [
   },
   { id: "prototype", label: "材料", items: [...PrototypeMenuItems] },
   { id: "sandtable", label: "沙盘", items: [...SandtableMenuItems] },
+  { id: "agv", label: "agv", items: [...AGVMenuItems] },
+  { id: "about", label: "关于", items: [...AboutItems] },
 
   // A group labelled “Start Here” containing two links.
   // {
@@ -578,4 +693,5 @@ export {
   NonMetallicMaterialsData,
   MenuData,
   SideBarData,
+  TableData,
 };

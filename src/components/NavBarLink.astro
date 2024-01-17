@@ -9,12 +9,9 @@ import { MenuData } from "../constants";
       MenuData.map((menu) => {
         return (
           <div class="dropdown">
-            <button class="dropdown-button hover:ring-1 hover:ring-blue-500 focus:ring-2">
+            <button class="dropdown-button">
               {menu?.link ? (
-                <a
-                  href={menu.link}
-                  class="no-underline text-black dark:text-white"
-                >
+                <a href={menu.link} class="no-underline ">
                   {menu.label}
                 </a>
               ) : (
@@ -37,19 +34,6 @@ import { MenuData } from "../constants";
 </section>
 
 <style>
-  :root {
-    --blue-ribbon-50: 237 247 255;
-    --blue-ribbon-100: 214 236 255;
-    --blue-ribbon-200: 181 223 255;
-    --blue-ribbon-300: 131 204 255;
-    --blue-ribbon-400: 72 175 255;
-    --blue-ribbon-500: 30 138 255;
-    --blue-ribbon-600: 6 105 255;
-    --blue-ribbon-700: 0 84 255;
-    --blue-ribbon-800: 8 65 197;
-    --blue-ribbon-900: 13 60 155;
-    --blue-ribbon-950: 14 37 93;
-  }
   .dropdown {
     position: relative;
     display: inline-block;
@@ -57,22 +41,32 @@ import { MenuData } from "../constants";
 
   .dropdown-button {
     padding: 8px;
-    border-radius: 8px;
+    border-radius: 0.375rem;
     border: none;
     cursor: pointer;
     background-color: var(--sl-color-bg-nav);
   }
-  .dropdown-button a {
+  .dropdown-button {
     color: var(--sl-color-white);
+  }
+
+  .dropdown-button a {
+    color: inherit;
+  }
+
+  .dropdown-button:hover {
+    border-radius: 0.375rem;
+    color: var(--sl-color-text-invert);
+    background-color: var(--sl-color-text-accent);
   }
 
   .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--sl-color-black);
+    background-color: var(--sl-color-bg-sidebar);
     min-width: 12rem;
-    border: 1px solid rgb(var(--blue-ribbon-200));
     border-radius: 0.375rem;
+    border: 1px solid var(--sl-color-gray-5);
     z-index: 1;
   }
 
@@ -81,22 +75,17 @@ import { MenuData } from "../constants";
     padding: 0.5rem;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 0.375rem;
+    /* 优化 */
+    border-radius: 0.3rem;
     color: inherit;
   }
 
   .dropdown-content a:hover {
-    color: var(--sl-color-black);
-    background-color: rgba(var(--blue-ribbon-700));
+    color: var(--sl-color-text-invert);
+    background-color: var(--sl-color-text-accent);
   }
 
   .dropdown:hover .dropdown-content {
     display: block;
-  }
-
-  .dropdown:hover .dropdown-button {
-    background-color: rgb(var(--blue-ribbon-100));
-    color: var(--sl-color-white);
-    border-radius: 0.375rem;
   }
 </style>
