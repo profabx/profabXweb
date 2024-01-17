@@ -445,30 +445,32 @@ const NonMetallicMaterialsData = [
 
 // 金属数据 V2
 const NewtMetallicMaterialsData = [
-  { label: "铁/钢", color: "#C8E709" },
-  { label: "铝/合金", color: "#E3E709" },
+  { label: "铁/钢", color: "#C8E709", href: "/" },
+  { label: "铝/合金", color: "#E3E709", href: "/" },
   {
     label: "铜/合金",
     color: "#E7D109",
+    href: "/",
   },
 
-  { label: "钛/合金", color: "#E7D109" },
+  { label: "钛/合金", color: "#E7D109", href: "/" },
 ];
 
 // 非金属数据 V2
 const NewtNonMetallicMaterialsData = [
-  { label: "石英", color: "#17F47D" },
-  { label: "PC", color: "#17F47D" },
+  { label: "石英", color: "#17F47D", href: "/" },
+  { label: "PC", color: "#17F47D", href: "/" },
   {
     label: "PP",
     color: "#17F4DA",
+    href: "/",
   },
 
-  { label: "peek", color: "#1F6ADC" },
-  { label: "树脂", color: "#8CE21F" },
-  { label: "TPU", color: "#2320A4" },
-  { label: "尼龙", color: "#0C0B13" },
-  { label: "ABS", color: "#A5A3AE" },
+  { label: "peek", color: "#1F6ADC", href: "/" },
+  { label: "树脂", color: "#8CE21F", href: "/" },
+  { label: "TPU", color: "#2320A4", href: "/" },
+  { label: "尼龙", color: "#0C0B13", href: "/" },
+  { label: "ABS", color: "#A5A3AE", href: "/" },
 ];
 
 const TableData = [
@@ -479,9 +481,81 @@ const TableData = [
     right: NewtMetallicMaterialsData.slice(0, 1),
   },
   {
-    title: "FDM",
+    title: "SLA",
+    color: "#D9D9D9",
+    left: NewtNonMetallicMaterialsData.slice(0, 2),
+    right: [],
+  },
+  {
+    title: "LCD/DLP",
+    color: "#D9D9D9",
+    left: NewtNonMetallicMaterialsData.slice(0, 1),
+    right: [],
+  },
+  {
+    title: "SLS",
+    color: "#D9D9D9",
+    left: NewtNonMetallicMaterialsData.slice(0, 3),
+    right: [],
+  },
+  {
+    title: "MJF",
+    color: "#D9D9D9",
+    left: NewtNonMetallicMaterialsData.slice(0, 2),
+    right: NewtMetallicMaterialsData.slice(0, 2),
+  },
+  {
+    title: "SLM",
+    color: "#D9D9D9",
+    left: [],
+    right: NewtMetallicMaterialsData.slice(0, 4),
+  },
+  {
+    title: "Polyjet",
+    color: "#D9D9D9",
+    left: NewtNonMetallicMaterialsData.slice(0, 1),
+    right: [],
+  },
+  {
+    title: "CNC",
     color: "#D9D9D9",
     left: NewtNonMetallicMaterialsData,
+    right: NewtMetallicMaterialsData,
+  },
+  {
+    title: "铣",
+    color: "#D9D9D9",
+    left: NewtNonMetallicMaterialsData,
+    right: NewtMetallicMaterialsData,
+  },
+  {
+    title: "车",
+    color: "#D9D9D9",
+    left: NewtNonMetallicMaterialsData,
+    right: NewtMetallicMaterialsData,
+  },
+  {
+    title: "激光切割",
+    color: "#D9D9D9",
+    left: [],
+    right: NewtMetallicMaterialsData.slice(0, 2),
+  },
+  {
+    title: "注塑",
+    color: "#D9D9D9",
+    left: NewtNonMetallicMaterialsData,
+    right: [],
+  },
+  {
+    title: "硅胶覆膜",
+    color: "#D9D9D9",
+    left: NewtNonMetallicMaterialsData.slice(0, 2),
+    right: [],
+  },
+  {
+    title: "钣金",
+    color: "#D9D9D9",
+    left: [],
     right: NewtMetallicMaterialsData.slice(0, 2),
   },
 ];
