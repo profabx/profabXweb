@@ -11,6 +11,7 @@ import TableCardElement from "./TableCardElement";
           <div class="flex flex-row justify-end gap-4 items-center">
             {item.left.map((it) => (
               <TableCardElement
+                className="hover:scale-[1.5]"
                 label={it.label}
                 href={it.href}
                 style={{ background: it.color }}
@@ -30,6 +31,7 @@ import TableCardElement from "./TableCardElement";
           <div class="flex flex-row gap-4 items-center">
             {item.right.map((it) => (
               <TableCardElement
+                className="hover:scale-[1.5]"
                 label={it.label}
                 href={it.href}
                 style={{ background: it.color }}
