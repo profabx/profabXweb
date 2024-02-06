@@ -22,3 +22,12 @@ TODO
 
 TODO
 
+## SEO 优化
+
+### 文章
+- [通过文章结构优化 SEO](https://starlight.astro.build/reference/frontmatter/#title-required)
+- [使用 astro-seo 插件](https://github.com/jonasmerlin/astro-seo#readme)
+- [配置通用的 layout](https://docs.astro.build/en/basics/layouts/#nesting-layouts)
+
+### 视频
+- [Youtube 视频参考](https://www.youtube.com/watch?v=fPifaHiKzz4)
