@@ -1,11 +1,11 @@
+import { twMerge } from "tailwind-merge";
+
 type Props = {
   href: string;
   label: string;
   style: Record<string, any>;
   className?: string;
 };
-
-import { twMerge } from "tailwind-merge";
 
 export default function TableCardElement({
   className,
@@ -16,7 +16,7 @@ export default function TableCardElement({
   return (
     <div
       className={twMerge(
-        "flex justify-center items-center w-16 h-16 transition ease-in-out hover:-translate-y-1 duration-300 group",
+        "flex justify-center items-center w-16 h-16 rounded-lg transition ease-in-out hover:-translate-y-1 duration-300 group",
         // `hover:scale-[${+scale}]`,
         className
       )}

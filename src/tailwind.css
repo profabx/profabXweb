@@ -6,7 +6,8 @@
 :root {
   --sl-content-width: 90rem;
   --sl-color-accent-low: #0b214d;
-  --sl-color-accent: #0052f9;
+  /* 全局主题色 */
+  --sl-color-accent: #0054ff; 
   --sl-color-accent-high: #acc9ff;
   --sl-color-white: #ffffff;
   --sl-color-gray-1: #eceef2;

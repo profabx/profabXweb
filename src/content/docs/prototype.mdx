@@ -6,14 +6,9 @@ sidebar:
   attrs: { id: prototype }
 ---
 
-import PrototypeTable from "../../components/PrototypeTable.tsx";
-import ContentCard from "../../components/ContentCard.astro";
 import Table from "../../components/Table.astro";
 
 <section>
-  <Table />
-
-我们提供批量生产前的相关服务！
-
-  <PrototypeTable client:load />
+  <Table client:load />
+  <div>我们提供批量生产前的相关服务！</div>
 </section>

@@ -2,10 +2,17 @@ import starlightPlugin from "@astrojs/starlight-tailwind";
 
 // Generated color palettes
 const accent = {
-  200: "#acc9ff",
-  600: "#0054fe",
-  900: "#092b73",
-  950: "#0b214d",
+  50: "#edf7ff",
+  100: "#d6ecff",
+  200: "#b5dfff",
+  300: "#83ccff",
+  400: "#48afff",
+  500: "#1e8aff",
+  600: "#0669ff",
+  700: "#0054ff",
+  800: "#0841c5",
+  900: "#0d3c9b",
+  950: "#0e255d",
 };
 const gray = {
   100: "#f5f6f8",
@@ -24,6 +31,12 @@ export default {
   theme: {
     extend: {
       colors: { accent, gray },
+      extends: {
+        gridTemplateColumns: {
+          // Simple 16 column grid
+          16: "repeat(16, minmax(0, 1fr))",
+        },
+      },
     },
   },
   plugins: [starlightPlugin()],
