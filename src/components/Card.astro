@@ -41,6 +41,12 @@ const { href, title, body } = Astro.props;
     border-radius: 8px;
     opacity: 0.8;
   }
+
+  @media (max-width: 640px) {
+    .link-card > a {
+      padding: calc(1rem - 1px);
+    }
+  }
   h2 {
     margin: 0;
     font-size: 1.25rem;
