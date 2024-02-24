@@ -17,6 +17,7 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "ProFabX",
+      site: "https://beta-profabx.github.io",
       tableOfContents: false,
       logo: {
         light: "./src/assets/dark.png",
