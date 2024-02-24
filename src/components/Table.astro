@@ -1,6 +1,14 @@
 ---
 import { TableData } from "../constants";
-import TableCardElement from "./TableCardElement";
+import { LeftSide, RightSide, CenterSide } from "./TableCardElement";
+
+// 这个只是开发提醒，可以忽略
+type ItemType = {
+  title: string;
+  color: string;
+  left: { label: string; color: string; href: string }[];
+  right: { label: string; color: string; href: string }[];
+};
 ---
 
 <div class="not-content flex flex-col gap-12 items-center">
@@ -8,38 +16,13 @@ import TableCardElement from "./TableCardElement";
     TableData.map((item) => (
       <div class="w-full grid xl:grid-cols-10 grid-cols-3 gap-4 items-center">
         <div class="xl:col-span-4 col-span-1">
-          <div class="flex flex-row flex-wrap justify-end gap-4 items-center">
-            {item.left.map((it) => (
-              <TableCardElement
-                className="hover:scale-[1.5]"
-                label={it.label}
-                href={it.href}
-                style={{ background: it.color }}
-              />
-            ))}
-          </div>
+          <LeftSide item={item} />
         </div>
         <div class="xl:col-span-2 col-span-1 h-full">
-          <div
-            class="flex justify-center items-center h-full w-full rounded-lg border"
-            style={{
-              background: item.color,
-            }}
-          >
-            <span class="text-black text-center">{item.title}</span>
-          </div>
+          {<CenterSide item={item} />}
         </div>
         <div class="xl:col-span-4 col-span-1">
-          <div class="flex flex-row flex-wrap gap-4 items-center">
-            {item.right.map((it) => (
-              <TableCardElement
-                className="hover:scale-[1.5]"
-                label={it.label}
-                href={it.href}
-                style={{ background: it.color }}
-              />
-            ))}
-          </div>
+          <RightSide item={item} />
         </div>
       </div>
     ))
