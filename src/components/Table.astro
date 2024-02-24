@@ -1,0 +1,30 @@
+---
+import { TableData } from "../constants";
+import { LeftSide, RightSide, CenterSide } from "./TableCardElement";
+
+// 这个只是开发提醒，可以忽略
+type ItemType = {
+  title: string;
+  color: string;
+  left: { label: string; color: string; href: string }[];
+  right: { label: string; color: string; href: string }[];
+};
+---
+
+<div class="not-content flex flex-col gap-12 items-center">
+  {
+    TableData.map((item) => (
+      <div class="w-full grid xl:grid-cols-10 grid-cols-3 gap-4 items-center">
+        <div class="xl:col-span-4 col-span-1">
+          <LeftSide item={item} />
+        </div>
+        <div class="xl:col-span-2 col-span-1 h-full">
+          {<CenterSide item={item} />}
+        </div>
+        <div class="xl:col-span-4 col-span-1">
+          <RightSide item={item} />
+        </div>
+      </div>
+    ))
+  }
+</div>

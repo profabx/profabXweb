@@ -1,0 +1,25 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+
+import MobileMenuFooter from "@astrojs/starlight/components/MobileMenuFooter.astro";
+import SidebarSublist from "./SidebarSublist.astro";
+
+const { sidebar } = Astro.props;
+const { slug } = Astro.params;
+
+const filterSidebar = sidebar.filter((item: any) => {
+  if (
+    item?.entries?.[0]?.attrs?.id ===
+    Astro.props.entry?.data?.sidebar?.attrs?.id
+  ) {
+    return slug;
+  }
+
+  return null;
+});
+---
+
+<SidebarSublist sublist={filterSidebar} />
+<div class="md:sl-hidden">
+  <MobileMenuFooter {...Astro.props} />
+</div>

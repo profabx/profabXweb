@@ -1,3 +1,9 @@
+---
+title: AGV Case
+sidebar:
+  attrs: { id: agv }
+---
+
 coming soon
 我们一步步的进行相关项目开发，
 阶段1:AGV教育套件开发

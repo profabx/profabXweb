@@ -1,0 +1,58 @@
+---
+import config from "virtual:starlight/user-config";
+import Select from "@astrojs/starlight/components/Select.astro";
+import { localizedUrl } from "../utils/localizedUrl";
+
+// import { LanguageData } from "../constants";
+
+interface Props {
+  labels?: any;
+  locale?: any;
+}
+
+/**
+ * Get the equivalent of the current page path for the passed locale.
+ */
+function localizedPathname(locale: string | undefined): string {
+  return localizedUrl(Astro.url, locale).pathname;
+}
+
+const { labels } = Astro.props;
+---
+
+<section style="position: fixed; top: 0; right: 20px; width: 7em; z-index: 10;">
+  {
+    config.isMultilingual && (
+      <starlight-lang-select>
+        <Select
+          icon="translate"
+          label={labels?.["languageSelect.accessibleLabel"]}
+          value={localizedPathname(Astro.props.locale)}
+          options={Object.entries(config.locales).map(([code, locale]) => ({
+            value: localizedPathname(code),
+            selected: code === Astro.props.locale,
+            label: locale!.label,
+          }))}
+          width="7em"
+        />
+      </starlight-lang-select>
+    )
+  }
+</section>
+
+<script>
+  class StarlightLanguageSelect extends HTMLElement {
+    constructor() {
+      super();
+      const select = this.querySelector("select");
+      if (select) {
+        select.addEventListener("change", (e) => {
+          if (e.currentTarget instanceof HTMLSelectElement) {
+            window.location.pathname = e.currentTarget.value;
+          }
+        });
+      }
+    }
+  }
+  customElements.define("starlight-lang-select", StarlightLanguageSelect);
+</script>

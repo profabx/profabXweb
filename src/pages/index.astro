@@ -1,0 +1,87 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import LanguageSelect from "../components/LanguageSelect.astro";
+---
+
+<Layout title="Welcome to ProFabX.">
+  <LanguageSelect />
+  <main>
+    <div class="container">
+      <img src="/hero.png" alt="logo" />
+    </div>
+    <h1>欢迎来到 <span class="text-gradient">ProFabX</span></h1>
+
+    <ul role="list" class="link-card-grid">
+      <Card
+        href="/lab/lab"
+        title="NexMaker-Fab 课程"
+        body="相关课程和实验室方案介绍"
+      />
+      <Card
+        href="/prototype"
+        title="工程样机开发"
+        body="我们提供批量生产前的相关服务"
+      />
+      <Card href="/agvedu/agvcase" title="无人小车方案" body="coming soon" />
+      <Card
+        href="/sandtable/sandtable"
+        title="数字沙盘方案"
+        body="我们将逐步分享我们在数字化沙盘方面的案例"
+      />
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: var(--pro-accent-light);
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .astro-a {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 220px;
+    height: auto;
+    z-index: -1;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .text-gradient {
+    color: rgba(var(--pro-accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    padding: 0;
+  }
+
+  @media (max-width: 640px) {
+    .link-card-grid {
+      gap: 1rem;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .container img {
+    width: 80%;
+  }
+</style>
