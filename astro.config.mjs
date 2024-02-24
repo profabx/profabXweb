@@ -14,10 +14,10 @@ import { SideBarData } from "./src/constants";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://beta-profabx.github.io",
   integrations: [
     starlight({
       title: "ProFabX",
-      site: "https://beta-profabx.github.io",
       tableOfContents: false,
       logo: {
         light: "./src/assets/dark.png",
