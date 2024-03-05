@@ -1,29 +1,62 @@
 ---
-import type { Props } from "@astrojs/starlight/props";
+import config from "virtual:starlight/user-config";
+
 import { MenuData } from "../constants";
+import type { Props } from "@astrojs/starlight/props";
+
+const getCurrrentLanguageParam = (type = "label") => {
+  let text = "";
+  const [_leadingSlash, baseSegment] = Astro.url.pathname.split("/");
+  if (baseSegment && baseSegment in (config?.locales ?? {})) {
+    text = config?.locales?.[baseSegment].lang ?? "";
+
+    // 英文时候从 en 变成 En
+    const capitalized = text.charAt(0).toUpperCase() + text.slice(1);
+
+    return `${type}${capitalized}`;
+  }
+
+  return `${type}`;
+};
+
+const currentLanguageLabel: string = getCurrrentLanguageParam("label");
+const currentLanguageLink: string = getCurrrentLanguageParam("link");
 ---
 
 <section>
   <div class="flex flex-row gap-4">
     {
       MenuData.map((menu) => {
+        const menuLabel =
+          currentLanguageLabel === "labelEn" ? menu.labelEn : menu.label;
+        const menuLink =
+          currentLanguageLink === "linkEn" ? menu.linkEn : menu.link;
+
         return (
           <div class="dropdown">
             <button class="dropdown-button">
               {menu?.link ? (
-                <a href={menu.link} class="no-underline">
-                  {menu.label}
+                <a href={menuLink} class="no-underline">
+                  {menuLabel}
                 </a>
               ) : (
-                <>{menu.label}</>
+                <> {menuLabel}</>
               )}
             </button>
 
             {menu?.items && (
               <div class="dropdown-content">
-                {(menu?.items ?? []).map((item) => (
-                  <a href={item.link}>{item.label}</a>
-                ))}
+                {(menu?.items ?? []).map((item) => {
+                  const itemLabel =
+                    currentLanguageLabel === "labelEn"
+                      ? item.labelEn
+                      : item.label;
+                  const itemLink =
+                    currentLanguageLink === "linkEn"
+                      ? item.linkEn
+                      : item.link;
+                  return <a href={itemLink}>{itemLabel}</a>;
+                })}
               </div>
             )}
           </div>
