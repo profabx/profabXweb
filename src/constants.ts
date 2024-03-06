@@ -1,3 +1,15 @@
+type NavItemBasicProps = {
+  key: string;
+  label: string;
+  labelEn?: string;
+  link?: string;
+  linkEn?: string;
+};
+
+type NavItemProps = {
+  items?: any[];
+} & NavItemBasicProps;
+
 // 金属数据 V2
 const NewtMetallicMaterialsData = [
   { label: "铁/钢", color: "#C8E709", href: "/" },
@@ -118,36 +130,51 @@ const TableData = [
 const FabMenuItems = [
   {
     label: "NexMaker Fab 实验室",
-    labelEn: "NexMaker Fab 实验室",
     link: "https://www.nexmaker.com/",
+    labelEn: "NexMaker Fab",
+    translations: {
+      en: "NexMaker Fab",
+    },
     linkEn: "https://www.nexmaker.com/",
     attrs: { id: "fab" },
   },
   {
     label: "Fab 实验室",
-    labelEn: "Fab 实验室",
     link: "/lab/lab",
+    labelEn: "Fab",
+    translations: {
+      en: "Fab",
+    },
     linkEn: "/en/lab/lab",
     attrs: { id: "fab" },
   },
   {
     label: "Fab Academy",
-    labelEn: "Fab Academy",
     link: "http://fabacademy.org/",
+    labelEn: "Fab Academy",
+    translations: {
+      en: "Fab Academy",
+    },
     linkEn: "http://fabacademy.org/",
     attrs: { id: "fab" },
   },
   {
     label: "MIT Fab Lab 认证",
-    labelEn: "MIT Fab Lab 认证",
     link: "https://www.fablabs.io/",
+    labelEn: "MIT Fab Lab",
+    translations: {
+      en: "MIT Fab Lab",
+    },
     linkEn: "https://www.fablabs.io/",
     attrs: { id: "fab" },
   },
   {
     label: "AGV 教育方案",
-    labelEn: "AGV 教育方案",
     link: "/agvedu/agv",
+    labelEn: "AGV",
+    translations: {
+      en: "AGV",
+    },
     linkEn: "/en/agvedu/agv",
     attrs: { id: "fab" },
   },
@@ -157,53 +184,82 @@ const FabMenuItems = [
 const PrototypeMenuItems = [
   {
     label: "材料",
-    labelEn: "材料",
     link: "/prototype/material",
+    labelEn: "material",
+    translations: {
+      en: "material",
+    },
     linkEn: "/en/prototype/material",
     attrs: { id: "prototype" },
   },
   {
     label: "制造工艺",
-    labelEn: "制造工艺",
+    labelEn: "manufacture",
+    translations: {
+      en: "manufacture",
+    },
     items: [
       {
         label: "说明",
-        labelEn: "说明",
         link: "/prototype/manufacture",
+        linkEn: "/en/prototype/manufacture",
+        labelEn: "about",
+        translations: {
+          en: "about",
+        },
         attrs: { id: "prototype" },
       },
 
       {
         label: "增材制造",
-        labelEn: "增材制造",
         link: "/prototype/add",
+        linkEn: "/en/prototype/add",
+        labelEn: "add",
+        translations: {
+          en: "add",
+        },
         attrs: { id: "prototype" },
       },
       {
         label: "等材制造",
-        labelEn: "等材制造",
         link: "/prototype/equal",
+        linkEn: "/en/prototype/equal",
+        labelEn: "equal",
+        translations: {
+          en: "equal",
+        },
         attrs: { id: "prototype" },
       },
       {
         label: "减材制造",
-        labelEn: "减材制造",
+        labelEn: "cnc",
+        translations: {
+          en: "cnc",
+        },
         link: "/prototype/cnc",
+        linkEn: "/en/prototype/cnc",
         attrs: { id: "prototype" },
       },
     ],
-    attrs: { id: "prototype" },
   },
   {
     label: "后处理",
-    labelEn: "后处理",
     link: "/prototype/postprocess",
+    labelEn: "postprocess",
+    translations: {
+      en: "postprocess",
+    },
+    linkEn: "/en/prototype/postprocess",
     attrs: { id: "prototype" },
   },
   {
     label: "测试",
-    labelEn: "测试",
     link: "/prototype/test",
+    labelEn: "test",
+    translations: {
+      en: "test",
+    },
+    linkEn: "/en/prototype/test",
     attrs: { id: "prototype" },
   },
 ];
@@ -212,36 +268,51 @@ const PrototypeMenuItems = [
 const SandtableMenuItems = [
   {
     label: "效果",
-    labelEn: "效果",
     link: "/sandtable/sandtable",
+    labelEn: "effect",
+    translations: {
+      en: "effect",
+    },
     linkEn: "/en/sandtable/sandtable",
     attrs: { id: "sandtable" },
   },
   {
     label: "加工",
-    labelEn: "加工",
     link: "/sandtable/manufacure",
+    labelEn: "processing",
+    translations: {
+      en: "processing",
+    },
     linkEn: "/en/sandtable/manufacure",
     attrs: { id: "sandtable" },
   },
   {
     label: "电控",
-    labelEn: "电控",
     link: "/sandtable/control",
+    labelEn: "control",
+    translations: {
+      en: "control",
+    },
     linkEn: "/en/sandtable/control",
     attrs: { id: "sandtable" },
   },
   {
     label: "数字化",
-    labelEn: "数字化",
     link: "/sandtable/digital",
+    labelEn: "digital",
+    translations: {
+      en: "digital",
+    },
     linkEn: "/en/sandtable/digital",
     attrs: { id: "sandtable" },
   },
   {
     label: "维护与升级",
-    labelEn: "维护与升级",
     link: "/sandtable/maintain",
+    labelEn: "maintain",
+    translations: {
+      en: "maintain",
+    },
     linkEn: "/en/sandtable/maintain",
     attrs: { id: "sandtable" },
   },
@@ -251,50 +322,70 @@ const SandtableMenuItems = [
 const AGVMenuItems = [
   {
     label: "概念与趋势",
-    labelEn: "概念与趋势",
     link: "/agvedu/basic",
+    labelEn: "basic",
+    translations: {
+      en: "basic",
+    },
     linkEn: "/en/agvedu/basic",
     attrs: { id: "agv" },
   },
   {
     label: "参数定义",
-    labelEn: "参数定义",
     link: "/agvedu/parameters",
+    labelEn: "parameters",
+    translations: {
+      en: "parameters",
+    },
     linkEn: "/en/agvedu/parameters",
     attrs: { id: "agv" },
   },
   {
     label: "电控",
-    labelEn: "电控",
     link: "/agvedu/eee",
+    labelEn: "eee",
+    translations: {
+      en: "eee",
+    },
     linkEn: "/en/agvedu/eee",
     attrs: { id: "agv" },
   },
   {
     label: "算法",
-    labelEn: "算法",
     link: "/agvedu/algorithm",
+    labelEn: "algorithm",
+    translations: {
+      en: "algorithm",
+    },
     linkEn: "/en/agvedu/algorithm",
     attrs: { id: "agv" },
   },
   {
     label: "结构",
-    labelEn: "结构",
     link: "/agvedu/me",
+    translations: {
+      en: "me",
+    },
     linkEn: "/en/agvedu/me",
     attrs: { id: "agv" },
   },
   {
     label: "调试",
-    labelEn: "调试",
     link: "/agvedu/debug",
+    labelEn: "debug",
+    translations: {
+      en: "debug",
+    },
     linkEn: "/en/agvedu/debug",
     attrs: { id: "agv" },
   },
   {
     label: "认证",
-    labelEn: "认证",
     link: "/agvedu/authentication",
+    labelEn: "authentication",
+    translations: {
+      en: "authentication",
+    },
     linkEn: "/en/agvedu/authentication",
     attrs: { id: "agv" },
   },
@@ -305,31 +396,84 @@ const AboutItems = [
   // /about/aim
   {
     label: "目标",
-    labelEn: "目标",
     link: "/about/aim",
+    labelEn: "aim",
+    translations: {
+      en: "aim",
+    },
     linkEn: "/en/about/aim",
     attrs: { id: "about" },
   },
   //
   {
     label: "团队",
-    labelEn: "团队",
     link: "/about/team",
+    labelEn: "team",
+    translations: {
+      en: "team",
+    },
     linkEn: "/en/about/team",
     attrs: { id: "about" },
   },
 
   {
     label: "联系方式",
-    labelEn: "联系方式",
     link: "/about/contact",
+    labelEn: "contact",
+    translations: {
+      en: "team",
+    },
     linkEn: "/en/about/contact",
     attrs: { id: "about" },
   },
 ];
 
+// 侧边栏侧栏
+const SideBarData = [
+  {
+    key: "fab",
+    label: "Fab 课程方案",
+    translations: {
+      en: "fab",
+    },
+    items: [...FabMenuItems],
+  },
+  {
+    id: "prototype",
+    label: "材料",
+    translations: {
+      en: "prototype",
+    },
+    items: [...PrototypeMenuItems],
+  },
+  {
+    id: "sandtable",
+    label: "沙盘",
+    translations: {
+      en: "sandtable",
+    },
+    items: [...SandtableMenuItems],
+  },
+  {
+    id: "agv",
+    label: "agv",
+    translations: {
+      en: "agv",
+    },
+    items: [...AGVMenuItems],
+  },
+  {
+    id: "about",
+    label: "关于",
+    translations: {
+      en: "about",
+    },
+    items: [...AboutItems],
+  },
+];
+
 // 顶部菜单
-const MenuData = [
+const MenuData: NavItemProps[] = [
   {
     key: "fab",
     label: "Fab 课程方案",
@@ -382,40 +526,7 @@ const MenuData = [
     label: "关于 ProFabX",
     labelEn: "anbout ProFabX",
     link: "/about/introduce",
-  },
-];
-
-// 侧边栏侧栏
-const SideBarData = [
-  {
-    key: "fab",
-    label: "Fab 课程方案",
-    labelEn: "Fab 课程方案",
-    items: [...FabMenuItems],
-  },
-  {
-    id: "prototype",
-    label: "材料",
-    labelEn: "材料",
-    items: [...PrototypeMenuItems],
-  },
-  {
-    id: "sandtable",
-    label: "沙盘",
-    labelEn: "沙盘",
-    items: [...SandtableMenuItems],
-  },
-  {
-    id: "agv",
-    label: "agv",
-    labelEn: "agv",
-    items: [...AGVMenuItems],
-  },
-  {
-    id: "about",
-    label: "关于",
-    labelEn: "关于",
-    items: [...AboutItems],
+    linkEn: "/en/about/introduce",
   },
 ];
 
