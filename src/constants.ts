@@ -191,9 +191,9 @@ const PrototypeMenuItems = [
     linkEn: "/en/prototype/material",
     attrs: { id: "prototype" },
   },
+  //材料
   {
-    label: "制造工艺",
-    link: "/prototype/manufacture",
+    label: "材料",
     labelEn: "manufacture",
     translations: {
       en: "manufacture",
@@ -202,7 +202,7 @@ const PrototypeMenuItems = [
       
 
       {
-        label: "增材制造",
+        label: "金属",
         link: "/prototype/add",
         linkEn: "/en/prototype/add",
         labelEn: "add",
@@ -212,7 +212,7 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
       {
-        label: "等材制造",
+        label: "无机非金属材料",
         link: "/prototype/equal",
         linkEn: "/en/prototype/equal",
         labelEn: "equal",
@@ -222,7 +222,17 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
       {
-        label: "减材制造",
+        label: "高分子材料",
+        labelEn: "cnc",
+        translations: {
+          en: "cnc",
+        },
+        link: "/prototype/cnc",
+        linkEn: "/en/prototype/cnc",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "复合材料",
         labelEn: "cnc",
         translations: {
           en: "cnc",
