@@ -183,15 +183,66 @@ const FabMenuItems = [
 // 侧边菜单项 - Prototype
 const PrototypeMenuItems = [
   {
-    label: "材料测试",
-    link: "/prototype/material",
-    labelEn: "material",
+    label: "材料",
+    labelEn: "manufacture",
     translations: {
-      en: "material",
+      en: "manufacture",
     },
-    linkEn: "/en/prototype/material",
-    attrs: { id: "prototype" },
+    items: [
+      {
+        label: "金属",
+        link: "/prototype/manufacture",
+        linkEn: "/en/prototype/manufacture",
+        labelEn: "about",
+        translations: {
+          en: "about",
+        },
+        attrs: { id: "prototype" },
+      },
+
+      {
+        label: "无机非金属",
+        link: "/prototype/add",
+        linkEn: "/en/prototype/add",
+        labelEn: "add",
+        translations: {
+          en: "add",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "高分子材料",
+        link: "/prototype/equal",
+        linkEn: "/en/prototype/equal",
+        labelEn: "equal",
+        translations: {
+          en: "equal",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "复合材料",
+        labelEn: "cnc",
+        translations: {
+          en: "cnc",
+        },
+        link: "/prototype/cnc",
+        linkEn: "/en/prototype/cnc",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "其他材料",
+        labelEn: "cnc",
+        translations: {
+          en: "cnc",
+        },
+        link: "/prototype/cnc",
+        linkEn: "/en/prototype/cnc",
+        attrs: { id: "prototype" },
+      },
+    ],
   },
+  //begin
   {
     label: "制造工艺",
     labelEn: "manufacture",
@@ -297,24 +348,54 @@ const PrototypeMenuItems = [
   // end
 
   {
-    label: "后处理",
-    link: "/prototype/postprocess",
-    labelEn: "postprocess",
-    translations: {
-      en: "postprocess",
-    },
-    linkEn: "/en/prototype/postprocess",
-    attrs: { id: "prototype" },
-  },
-  {
     label: "测试",
-    link: "/prototype/test",
-    labelEn: "test",
+    labelEn: "manufacture",
     translations: {
-      en: "test",
+      en: "manufacture",
     },
-    linkEn: "/en/prototype/test",
-    attrs: { id: "prototype" },
+    items: [
+      {
+        label: "硬度测试",
+        link: "/prototype/manufacture",
+        linkEn: "/en/prototype/manufacture",
+        labelEn: "about",
+        translations: {
+          en: "about",
+        },
+        attrs: { id: "prototype" },
+      },
+
+      {
+        label: "盐雾测试",
+        link: "/prototype/add",
+        linkEn: "/en/prototype/add",
+        labelEn: "add",
+        translations: {
+          en: "add",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "耐温测试",
+        link: "/prototype/equal",
+        linkEn: "/en/prototype/equal",
+        labelEn: "equal",
+        translations: {
+          en: "equal",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "IP等级测试",
+        labelEn: "cnc",
+        translations: {
+          en: "cnc",
+        },
+        link: "/prototype/cnc",
+        linkEn: "/en/prototype/cnc",
+        attrs: { id: "prototype" },
+      },
+    ],
   },
 ];
 
