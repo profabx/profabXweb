@@ -183,6 +183,16 @@ const FabMenuItems = [
 // 侧边菜单项 - Prototype
 const PrototypeMenuItems = [
   {
+    label: "NexMaker Fab 实验室",
+    link: "https://www.nexmaker.com/",
+    labelEn: "NexMaker Fab",
+    translations: {
+      en: "NexMaker Fab",
+    },
+    linkEn: "https://www.nexmaker.com/",
+    attrs: { id: "prototype" },
+  },
+  {
     label: "材料",
     labelEn: "manufacture",
     translations: {
