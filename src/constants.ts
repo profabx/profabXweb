@@ -242,6 +242,60 @@ const PrototypeMenuItems = [
       },
     ],
   },
+  // begin
+
+  {
+    label: "后处理",
+    labelEn: "manufacture",
+    translations: {
+      en: "manufacture",
+    },
+    items: [
+      {
+        label: "喷漆",
+        link: "/prototype/manufacture",
+        linkEn: "/en/prototype/manufacture",
+        labelEn: "about",
+        translations: {
+          en: "about",
+        },
+        attrs: { id: "prototype" },
+      },
+
+      {
+        label: "电镀",
+        link: "/prototype/add",
+        linkEn: "/en/prototype/add",
+        labelEn: "add",
+        translations: {
+          en: "add",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "热处理",
+        link: "/prototype/equal",
+        linkEn: "/en/prototype/equal",
+        labelEn: "equal",
+        translations: {
+          en: "equal",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "喷砂",
+        labelEn: "cnc",
+        translations: {
+          en: "cnc",
+        },
+        link: "/prototype/cnc",
+        linkEn: "/en/prototype/cnc",
+        attrs: { id: "prototype" },
+      },
+    ],
+  },
+  // end
+
   {
     label: "后处理",
     link: "/prototype/postprocess",
