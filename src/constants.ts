@@ -181,16 +181,16 @@ const FabMenuItems = [
 ];
 // 侧边栏菜单项 - Prototype
 const PrototypeMenuItems = [
-  {
-    label: "材料",
-    link: "/prototype/material",
-    labelEn: "material",
-    translations: {
-      en: "material",
-    },
-    linkEn: "/en/prototype/material",
-    attrs: { id: "prototype" },
-  },
+ // {
+ //   label: "材料",
+ //   link: "/prototype/material",
+ //   labelEn: "material",
+ //   translations: {
+ //     en: "material",
+ //   },
+ //   linkEn: "/en/prototype/material",
+ //   attrs: { id: "prototype" },
+ // },
   //材料
   {
     label: "材料",
@@ -245,7 +245,7 @@ const PrototypeMenuItems = [
   },
 
   {
-    label: "制造工艺测试无链接",
+    label: "制造工艺",
     labelEn: "manufacture",
     translations: {
       en: "manufacture",
@@ -287,23 +287,85 @@ const PrototypeMenuItems = [
   },
   {
     label: "后处理",
-    link: "/prototype/postprocess",
-    labelEn: "postprocess",
+    labelEn: "manufacture",
     translations: {
-      en: "postprocess",
+      en: "manufacture",
     },
-    linkEn: "/en/prototype/postprocess",
-    attrs: { id: "prototype" },
+    items: [
+      
+
+      {
+        label: "打磨",
+        link: "/prototype/add",
+        linkEn: "/en/prototype/add",
+        labelEn: "add",
+        translations: {
+          en: "add",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "喷漆",
+        link: "/prototype/equal",
+        linkEn: "/en/prototype/equal",
+        labelEn: "equal",
+        translations: {
+          en: "equal",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "热处理",
+        labelEn: "cnc",
+        translations: {
+          en: "cnc",
+        },
+        link: "/prototype/cnc",
+        linkEn: "/en/prototype/cnc",
+        attrs: { id: "prototype" },
+      },
+    ],
   },
   {
     label: "测试",
-    link: "/prototype/test",
-    labelEn: "test",
+    labelEn: "manufacture",
     translations: {
-      en: "test",
+      en: "manufacture",
     },
-    linkEn: "/en/prototype/test",
-    attrs: { id: "prototype" },
+    items: [
+      
+
+      {
+        label: "硬度",
+        link: "/prototype/add",
+        linkEn: "/en/prototype/add",
+        labelEn: "add",
+        translations: {
+          en: "add",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "IP等级",
+        link: "/prototype/equal",
+        linkEn: "/en/prototype/equal",
+        labelEn: "equal",
+        translations: {
+          en: "equal",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "耐温",
+        labelEn: "cnc",
+        translations: {
+          en: "cnc",
+        },
+        link: "/prototype/cnc",
+        linkEn: "/en/prototype/cnc",
+        attrs: { id: "prototype" },
+      },
+    ],
   },
 ];
 // 侧边菜单项 - Sandtable
