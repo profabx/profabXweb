@@ -181,16 +181,16 @@ const FabMenuItems = [
 ];
 // 侧边栏菜单项 - Prototype
 const PrototypeMenuItems = [
- // {
- //   label: "材料",
- //   link: "/prototype/material",
- //   labelEn: "material",
- //   translations: {
- //     en: "material",
- //   },
- //   linkEn: "/en/prototype/material",
- //   attrs: { id: "prototype" },
- // },
+  {
+    label: "材料",
+    link: "/prototype/material",
+    labelEn: "material",
+    translations: {
+      en: "material",
+    },
+    linkEn: "/en/prototype/material",
+    attrs: { id: "prototype" },
+  },
   //材料
  
 
