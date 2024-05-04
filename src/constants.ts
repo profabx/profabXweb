@@ -183,7 +183,7 @@ const FabMenuItems = [
 // 侧边菜单项 - Prototype
 const PrototypeMenuItems = [
   {
-    label: "材料",
+    label: "材料测试",
     link: "/prototype/material",
     labelEn: "material",
     translations: {
