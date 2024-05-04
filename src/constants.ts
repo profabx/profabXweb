@@ -193,21 +193,13 @@ const PrototypeMenuItems = [
   },
   {
     label: "制造工艺",
+    link: "/prototype/manufacture",
     labelEn: "manufacture",
     translations: {
       en: "manufacture",
     },
     items: [
-      {
-        label: "说明",
-        link: "/prototype/manufacture",
-        linkEn: "/en/prototype/manufacture",
-        labelEn: "about",
-        translations: {
-          en: "about",
-        },
-        attrs: { id: "prototype" },
-      },
+      
 
       {
         label: "增材制造",
