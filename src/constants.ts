@@ -233,6 +233,48 @@ const PrototypeMenuItems = [
       },
     ],
   },
+
+  {
+    label: "制造工艺测试无链接",
+    labelEn: "manufacture",
+    translations: {
+      en: "manufacture",
+    },
+    items: [
+      
+
+      {
+        label: "增材制造",
+        link: "/prototype/add",
+        linkEn: "/en/prototype/add",
+        labelEn: "add",
+        translations: {
+          en: "add",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "等材制造",
+        link: "/prototype/equal",
+        linkEn: "/en/prototype/equal",
+        labelEn: "equal",
+        translations: {
+          en: "equal",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "减材制造",
+        labelEn: "cnc",
+        translations: {
+          en: "cnc",
+        },
+        link: "/prototype/cnc",
+        linkEn: "/en/prototype/cnc",
+        attrs: { id: "prototype" },
+      },
+    ],
+  },
   {
     label: "后处理",
     link: "/prototype/postprocess",
