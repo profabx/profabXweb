@@ -183,77 +183,6 @@ const FabMenuItems = [
 // 侧边菜单项 - Prototype
 const PrototypeMenuItems = [
   {
-    label: "NexMaker Fab 实验室",
-    link: "https://www.nexmaker.com/",
-    labelEn: "NexMaker Fab",
-    translations: {
-      en: "NexMaker Fab",
-    },
-    linkEn: "https://www.nexmaker.com/",
-    attrs: { id: "prototype" },
-  },
-  {
-    label: "材料",
-    labelEn: "manufacture",
-    translations: {
-      en: "manufacture",
-    },
-    items: [
-      {
-        label: "金属",
-        link: "/prototype/manufacture",
-        linkEn: "/en/prototype/manufacture",
-        labelEn: "about",
-        translations: {
-          en: "about",
-        },
-        attrs: { id: "prototype" },
-      },
-
-      {
-        label: "无机非金属",
-        link: "/prototype/add",
-        linkEn: "/en/prototype/add",
-        labelEn: "add",
-        translations: {
-          en: "add",
-        },
-        attrs: { id: "prototype" },
-      },
-      {
-        label: "高分子材料",
-        link: "/prototype/equal",
-        linkEn: "/en/prototype/equal",
-        labelEn: "equal",
-        translations: {
-          en: "equal",
-        },
-        attrs: { id: "prototype" },
-      },
-      {
-        label: "复合材料",
-        labelEn: "cnc",
-        translations: {
-          en: "cnc",
-        },
-        link: "/prototype/cnc",
-        linkEn: "/en/prototype/cnc",
-        attrs: { id: "prototype" },
-      },
-      {
-        label: "其他材料",
-        labelEn: "cnc",
-        translations: {
-          en: "cnc",
-        },
-        link: "/prototype/cnc",
-        linkEn: "/en/prototype/cnc",
-        attrs: { id: "prototype" },
-      },
-    ],
-  },
-  //begin
-  {
     label: "制造工艺",
     labelEn: "manufacture",
     translations: {
@@ -303,7 +232,7 @@ const PrototypeMenuItems = [
       },
     ],
   },
-  // begin
+
 
   {
     label: "后处理",
@@ -355,7 +284,7 @@ const PrototypeMenuItems = [
       },
     ],
   },
-  // end
+
 
   {
     label: "测试",
