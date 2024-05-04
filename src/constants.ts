@@ -179,9 +179,18 @@ const FabMenuItems = [
     attrs: { id: "fab" },
   },
 ];
-
-// 侧边菜单项 - Prototype
+// 侧边栏菜单项 - Prototype
 const PrototypeMenuItems = [
+  {
+    label: "材料",
+    link: "/prototype/material",
+    labelEn: "material",
+    translations: {
+      en: "material",
+    },
+    linkEn: "/en/prototype/material",
+    attrs: { id: "prototype" },
+  },
   {
     label: "制造工艺",
     labelEn: "manufacture",
@@ -232,112 +241,27 @@ const PrototypeMenuItems = [
       },
     ],
   },
-
-
   {
     label: "后处理",
-    labelEn: "manufacture",
+    link: "/prototype/postprocess",
+    labelEn: "postprocess",
     translations: {
-      en: "manufacture",
+      en: "postprocess",
     },
-    items: [
-      {
-        label: "喷漆",
-        link: "/prototype/manufacture",
-        linkEn: "/en/prototype/manufacture",
-        labelEn: "about",
-        translations: {
-          en: "about",
-        },
-        attrs: { id: "prototype" },
-      },
-
-      {
-        label: "电镀",
-        link: "/prototype/add",
-        linkEn: "/en/prototype/add",
-        labelEn: "add",
-        translations: {
-          en: "add",
-        },
-        attrs: { id: "prototype" },
-      },
-      {
-        label: "热处理2",
-        link: "/prototype/equal",
-        linkEn: "/en/prototype/equal",
-        labelEn: "equal",
-        translations: {
-          en: "equal",
-        },
-        attrs: { id: "prototype" },
-      },
-      {
-        label: "喷砂",
-        labelEn: "cnc",
-        translations: {
-          en: "cnc",
-        },
-        link: "/prototype/cnc",
-        linkEn: "/en/prototype/cnc",
-        attrs: { id: "prototype" },
-      },
-    ],
+    linkEn: "/en/prototype/postprocess",
+    attrs: { id: "prototype" },
   },
-
-
   {
     label: "测试",
-    labelEn: "manufacture",
+    link: "/prototype/test",
+    labelEn: "test",
     translations: {
-      en: "manufacture",
+      en: "test",
     },
-    items: [
-      {
-        label: "硬度测试",
-        link: "/prototype/manufacture",
-        linkEn: "/en/prototype/manufacture",
-        labelEn: "about",
-        translations: {
-          en: "about",
-        },
-        attrs: { id: "prototype" },
-      },
-
-      {
-        label: "盐雾测试",
-        link: "/prototype/add",
-        linkEn: "/en/prototype/add",
-        labelEn: "add",
-        translations: {
-          en: "add",
-        },
-        attrs: { id: "prototype" },
-      },
-      {
-        label: "耐温测试",
-        link: "/prototype/equal",
-        linkEn: "/en/prototype/equal",
-        labelEn: "equal",
-        translations: {
-          en: "equal",
-        },
-        attrs: { id: "prototype" },
-      },
-      {
-        label: "IP等级测试",
-        labelEn: "cnc",
-        translations: {
-          en: "cnc",
-        },
-        link: "/prototype/cnc",
-        linkEn: "/en/prototype/cnc",
-        attrs: { id: "prototype" },
-      },
-    ],
+    linkEn: "/en/prototype/test",
+    attrs: { id: "prototype" },
   },
 ];
-
 // 侧边菜单项 - Sandtable
 const SandtableMenuItems = [
   {
