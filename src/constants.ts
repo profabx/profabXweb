@@ -199,8 +199,6 @@ const PrototypeMenuItems = [
       en: "manufacture",
     },
     items: [
-      
-
       {
         label: "金属",
         link: "/prototype/add",
@@ -251,8 +249,6 @@ const PrototypeMenuItems = [
       en: "manufacture",
     },
     items: [
-      
-
       {
         label: "增材制造",
         link: "/prototype/add",
@@ -285,6 +281,7 @@ const PrototypeMenuItems = [
       },
     ],
   },
+
   {
     label: "后处理",
     labelEn: "manufacture",
@@ -292,8 +289,6 @@ const PrototypeMenuItems = [
       en: "manufacture",
     },
     items: [
-      
-
       {
         label: "打磨",
         link: "/prototype/add",
