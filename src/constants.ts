@@ -273,7 +273,7 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
       {
-        label: "热处理",
+        label: "热处理2",
         link: "/prototype/equal",
         linkEn: "/en/prototype/equal",
         labelEn: "equal",
