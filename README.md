@@ -113,3 +113,79 @@ h2 {
 ### 视频
 
 - [Youtube 视频参考](https://www.youtube.com/watch?v=fPifaHiKzz4)
+
+## 配置侧边栏
+
+### 增加路由信息的配置
+
+在 `constants.ts` 增加路由信息，比如在 `PrototypeMenuItems` 下增加路由信息
+
+```tsx
+const PrototypeMenuItems = [
+  ...{
+    label: "示例",
+    labelEn: "demo", // 用于侧边栏展示的翻译
+    translations: {
+      en: "demo", // 用于标题的翻译
+    },
+    collapsed: true, // 处理分组折叠，当为 true 时，默认为折叠状态
+    items: [
+      {
+        label: "硬度",
+        link: "/demo/1",
+        linkEn: "/en/demo/2",
+        labelEn: "demo-1",
+        translations: {
+          en: "demo-1",
+        },
+        attrs: { id: "demo" }, // 需要设置路由的对应 id，这样才能在访问文章时候展示正确的侧边栏
+      },
+    ],
+  },
+];
+```
+
+#### 增加相应 id 和路由地址的文章
+
+在 `content/docs/demo/1.mdx` 中增加对应的 id，如下
+
+```mdx
+---
+title: Control
+sidebar:
+  attrs: { id: demo }
+---
+
+具体的文章内容
+```
+
+#### 如何折叠分组
+
+- [官方文档](https://starlight.astro.build/zh-cn/guides/sidebar/#%E6%8A%98%E5%8F%A0%E5%88%86%E7%BB%84)
+
+在有 items 的路由中吗，增加一个 `collapsed: true` 即可
+
+```tsx
+const PrototypeMenuItems = [
+  ...{
+    label: "示例",
+    labelEn: "demo", // 用于侧边栏展示的翻译
+    translations: {
+      en: "demo", // 用于标题的翻译
+    },
+    collapsed: true, // 处理分组折叠，当为 true 时，默认为折叠状态
+    items: [
+      {
+        label: "硬度",
+        link: "/demo/1",
+        linkEn: "/en/demo/2",
+        labelEn: "demo-1",
+        translations: {
+          en: "demo-1",
+        },
+        attrs: { id: "demo" }, // 需要设置路由的对应 id，这样才能在访问文章时候展示正确的侧边栏
+      },
+    ],
+  },
+];
+```
