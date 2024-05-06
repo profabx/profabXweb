@@ -1,14 +1,4 @@
-type NavItemBasicProps = {
-  key: string;
-  label: string;
-  labelEn?: string;
-  link?: string;
-  linkEn?: string;
-};
-
-type NavItemProps = {
-  items?: any[];
-} & NavItemBasicProps;
+import type { NavItemProps } from "./type";
 
 // 金属数据 V2
 const NewtMetallicMaterialsData = [
@@ -40,6 +30,7 @@ const NewtNonMetallicMaterialsData = [
   { label: "ABS", color: "#A5A3AE", href: "/" },
 ];
 
+// 表格数据
 const TableData = [
   {
     title: "FDM",
@@ -126,6 +117,7 @@ const TableData = [
     right: NewtMetallicMaterialsData.slice(0, 2),
   },
 ];
+
 // 侧边菜单项 - Fab
 const FabMenuItems = [
   {
@@ -179,6 +171,7 @@ const FabMenuItems = [
     attrs: { id: "fab" },
   },
 ];
+
 // 侧边栏菜单项 - Prototype
 const PrototypeMenuItems = [
   {
@@ -191,15 +184,13 @@ const PrototypeMenuItems = [
     linkEn: "/en/prototype/material",
     attrs: { id: "prototype" },
   },
-  //材料
- 
-
   {
     label: "制造工艺",
     labelEn: "manufacture",
     translations: {
       en: "manufacture",
     },
+    collapsed: true,
     items: [
       {
         label: "增材制造",
@@ -233,13 +224,13 @@ const PrototypeMenuItems = [
       },
     ],
   },
-
   {
     label: "后处理",
     labelEn: "manufacture",
     translations: {
       en: "manufacture",
     },
+    collapsed: true,
     items: [
       {
         label: "打磨",
@@ -279,9 +270,8 @@ const PrototypeMenuItems = [
     translations: {
       en: "manufacture",
     },
+    collapsed: true,
     items: [
-      
-
       {
         label: "硬度",
         link: "/prototype/add",
@@ -315,6 +305,7 @@ const PrototypeMenuItems = [
     ],
   },
 ];
+
 // 侧边菜单项 - Sandtable
 const SandtableMenuItems = [
   {
@@ -479,7 +470,7 @@ const AboutItems = [
   },
 ];
 
-// 侧边栏侧栏
+// 侧边栏菜单
 const SideBarData = [
   {
     key: "fab",
@@ -490,8 +481,7 @@ const SideBarData = [
     items: [...FabMenuItems],
   },
   {
-    id: "prototype",
-    label: "材料",
+    label: "工程样机开发",
     translations: {
       en: "prototype",
     },
@@ -539,7 +529,45 @@ const MenuData: NavItemProps[] = [
     labelEn: "prototype",
     link: "/prototype",
     linkEn: "/en/prototype",
-    items: PrototypeMenuItems,
+    items: [
+      {
+        label: "材料",
+        link: "/prototype/material",
+        labelEn: "material",
+        translations: {
+          en: "material",
+        },
+        linkEn: "/en/prototype/material",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "制造工艺",
+        labelEn: "manufacture",
+        link: "/prototype/add",
+        linkEn: "/en/prototype/add",
+        translations: {
+          en: "manufacture",
+        },
+      },
+      {
+        label: "后处理",
+        labelEn: "manufacture", // FIXME 记得调整成实际的内容
+        link: "/prototype/add", // FIXME 记得调整成实际的路由
+        linkEn: "/en/prototype/add", // FIXME 记得调整成实际的路由
+        translations: {
+          en: "manufacture", // FIXME 记得调整成实际的内容
+        },
+      },
+      {
+        label: "测试",
+        labelEn: "manufacture", // FIXME 记得调整成实际的内容
+        link: "/prototype/add", // FIXME 记得调整成实际的路由
+        linkEn: "/en/prototype/add", // FIXME 记得调整成实际的路由
+        translations: {
+          en: "manufacture", // FIXME 记得调整成实际的内容
+        },
+      },
+    ],
   },
   {
     key: "explore",
