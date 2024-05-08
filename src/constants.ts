@@ -276,80 +276,80 @@ const PrototypeMenuItems = [
   },
   {
     label: "后处理",
-    labelEn: "manufacture",
+    labelEn: "Post-processing",
     translations: {
-      en: "manufacture",
+      en: "Post-processing",
     },
     collapsed: true,
     items: [
       {
         label: "打磨",
-        link: "/prototype/add",
-        linkEn: "/en/prototype/add",
-        labelEn: "add",
+        link: "/prototype/polishing",
+        linkEn: "/en/prototype/polishing",
+        labelEn: "polishing",
         translations: {
-          en: "add",
+          en: "polishing",
         },
         attrs: { id: "prototype" },
       },
       {
         label: "喷漆",
-        link: "/prototype/equal",
-        linkEn: "/en/prototype/equal",
-        labelEn: "equal",
+        link: "/prototype/paint",
+        linkEn: "/en/prototype/paint",
+        labelEn: "paint",
         translations: {
-          en: "equal",
+          en: "paint",
         },
         attrs: { id: "prototype" },
       },
       {
         label: "热处理",
-        labelEn: "cnc",
+        labelEn: "heat-treatment",
         translations: {
-          en: "cnc",
+          en: "heat-treatment",
         },
-        link: "/prototype/cnc",
-        linkEn: "/en/prototype/cnc",
+        link: "/prototype/heat-treatment",
+        linkEn: "/en/prototype/heat-treatment",
         attrs: { id: "prototype" },
       },
     ],
   },
   {
     label: "测试",
-    labelEn: "manufacture",
+    labelEn: "Test",
     translations: {
-      en: "manufacture",
+      en: "Test",
     },
     collapsed: true,
     items: [
       {
         label: "硬度",
-        link: "/prototype/add",
-        linkEn: "/en/prototype/add",
-        labelEn: "add",
+        link: "/prototype/hardness",
+        linkEn: "/en/prototype/hardness",
+        labelEn: "Hardness",
         translations: {
-          en: "add",
+          en: "Hardness",
         },
         attrs: { id: "prototype" },
       },
       {
-        label: "IP等级",
-        link: "/prototype/equal",
-        linkEn: "/en/prototype/equal",
-        labelEn: "equal",
+        label: "IP 等级",
+        link: "/prototype/ip-level",
+        linkEn: "/en/prototype/ip-level",
+        labelEn: "IP Level",
         translations: {
-          en: "equal",
+          en: "IP Level",
         },
         attrs: { id: "prototype" },
       },
       {
         label: "耐温",
-        labelEn: "cnc",
+        labelEn: "Temperature Resistant",
         translations: {
-          en: "cnc",
+          en: "Temperature Resistant",
         },
-        link: "/prototype/cnc",
-        linkEn: "/en/prototype/cnc",
+        link: "/prototype/temperature-resistant",
+        linkEn: "/en/prototype/temperature-resistant",
         attrs: { id: "prototype" },
       },
     ],
@@ -601,20 +601,20 @@ const MenuData: NavItemProps[] = [
       },
       {
         label: "后处理",
-        labelEn: "manufacture", // FIXME 记得调整成实际的内容
-        link: "/prototype/add", // FIXME 记得调整成实际的路由
-        linkEn: "/en/prototype/add", // FIXME 记得调整成实际的路由
+        labelEn: "Post-processing",
+        link: "/prototype/polishing", 
+        linkEn: "/en/prototype/polishing",
         translations: {
-          en: "manufacture", // FIXME 记得调整成实际的内容
+          en: "Post-processing",
         },
       },
       {
         label: "测试",
-        labelEn: "manufacture", // FIXME 记得调整成实际的内容
-        link: "/prototype/add", // FIXME 记得调整成实际的路由
-        linkEn: "/en/prototype/add", // FIXME 记得调整成实际的路由
+        labelEn: "Test",
+        link: "/prototype/hardness",
+        linkEn: "/en/prototype/hardness",
         translations: {
-          en: "manufacture", // FIXME 记得调整成实际的内容
+          en: "test",
         },
       },
     ],
