@@ -582,12 +582,12 @@ const MenuData: NavItemProps[] = [
     items: [
       {
         label: "材料",
-        link: "/prototype/material",
-        labelEn: "material",
+        link: "/prototype/metall",
+        labelEn: "Metall",
         translations: {
-          en: "material",
+          en: "Metall",
         },
-        linkEn: "/en/prototype/material",
+        linkEn: "/en/prototype/metall",
         attrs: { id: "prototype" },
       },
       {
