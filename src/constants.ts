@@ -175,14 +175,64 @@ const FabMenuItems = [
 // 侧边栏菜单项 - Prototype
 const PrototypeMenuItems = [
   {
+    label: "说明",
+    link: "/prototype/about",
+    labelEn: "about",
+    translations: {
+      en: "about",
+    },
+    linkEn: "/en/prototype/about",
+    attrs: { id: "prototype" },
+  },
+  {
     label: "材料",
-    link: "/prototype/material",
     labelEn: "material",
     translations: {
       en: "material",
     },
-    linkEn: "/en/prototype/material",
-    attrs: { id: "prototype" },
+    collapsed: true,
+    items: [
+      {
+        label: "金属",
+        link: "/prototype/metall",
+        linkEn: "/en/prototype/metall",
+        labelEn: "metall",
+        translations: {
+          en: "metall",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "无机非金属材料",
+        link: "/prototype/inorganic",
+        linkEn: "/en/prototype/inorganic",
+        labelEn: "inorganic",
+        translations: {
+          en: "inorganic",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "高分子材料",
+        labelEn: "polymers",
+        translations: {
+          en: "polymers",
+        },
+        link: "/prototype/polymers",
+        linkEn: "/en/prototype/polymers",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "复合材料",
+        labelEn: "composites",
+        translations: {
+          en: "composites",
+        },
+        link: "/prototype/composites",
+        linkEn: "/en/prototype/composites",
+        attrs: { id: "prototype" },
+      },
+    ],
   },
   {
     label: "制造工艺",
