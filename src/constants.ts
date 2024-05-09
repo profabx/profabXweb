@@ -186,7 +186,6 @@ const PrototypeMenuItems = [
   },
   {
     label: "材料",
-    link: "/prototype/materials",
     labelEn: "material",
     translations: {
       en: "material",
