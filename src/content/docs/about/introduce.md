@@ -1,5 +1,5 @@
 ---
-title: introduce
+title: introduce介绍
 sidebar:
   attrs: { id: about }
 ---
