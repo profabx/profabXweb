@@ -193,7 +193,7 @@ const PrototypeMenuItems = [
     collapsed: true,
     items: [
       {
-        label: "金属",
+        label: "金属2",
         link: "/prototype/metall",
         linkEn: "/en/prototype/metall",
         labelEn: "metall",
