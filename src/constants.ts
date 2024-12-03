@@ -239,14 +239,14 @@ const PrototypeMenuItems = [
   //ploymer
   {
     label: "金属材料",
-    labelEn: "material",
+    labelEn: "metal",
     translations: {
       en: "material",
     },
     collapsed: true,
     items: [
       {
-        label: "金属2",
+        label: "铝",
         link: "/prototype/metall",
         linkEn: "/en/prototype/metall",
         labelEn: "metall",
@@ -256,7 +256,7 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
       {
-        label: "无机非金属材料",
+        label: "钢",
         link: "/prototype/inorganic",
         linkEn: "/en/prototype/inorganic",
         labelEn: "inorganic",
@@ -266,7 +266,7 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
       {
-        label: "高分子材料",
+        label: "铜",
         labelEn: "polymers",
         translations: {
           en: "polymers",
@@ -276,7 +276,7 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
       {
-        label: "复合材料",
+        label: "钛",
         labelEn: "composites",
         translations: {
           en: "composites",
