@@ -173,6 +173,27 @@ const FabMenuItems = [
 ];
 
 // 侧边栏菜单项 - Prototype
+const PrototypesMenuItems = {
+  "材料": {
+      "金属": {
+          "al.md": "Aluminum Documentation"
+      },
+      "塑料": {
+          "plastic.md": "Plastic Documentation"
+      }
+  },
+  "电子元件": {
+      "电阻": {
+          "resistor.md": "Resistor Documentation"
+      },
+      "电容": {
+          "capacitor.md": "Capacitor Documentation"
+      }
+  }
+};
+
+export default PrototypesMenuItems;
+//test
 const PrototypeMenuItems = [
   //shu
   {
