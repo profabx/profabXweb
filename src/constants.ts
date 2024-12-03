@@ -185,6 +185,7 @@ const PrototypeMenuItems = [
     linkEn: "/en/prototype/about",
     attrs: { id: "prototype" },
   },
+  //材料
   {
     label: "材料",
     labelEn: "material",
@@ -194,15 +195,43 @@ const PrototypeMenuItems = [
     collapsed: true,
     items: [
       {
-        label: "金属2",
+        label: "金属",
         link: "/prototype/metall",
         linkEn: "/en/prototype/metall",
         labelEn: "metall",
         translations: {
           en: "metall",
         },
-        attrs: { id: "prototype" },
+        items:[
+          {
+          label: "al",
+          link: "/prototype/metall",
+          linkEn: "/en/prototype/metall",
+          labelEn: "metall",
+          translations: {
+          en: "metall",
+          },
+          attrs: { id: "prototype" },
+          },
+          {
+          label: "cu",
+          link: "/prototype/alloy",
+          linkEn: "/en/prototype/alloy",
+          labelEn: "alloy",
+          translations: {
+          en: "alloy",
+          },
+          attrs: { id: "prototype" },
+          },
+        
+
+
+        ]
+       
       },
+
+
+
       {
         label: "无机非金属材料",
         link: "/prototype/inorganic",
@@ -235,6 +264,8 @@ const PrototypeMenuItems = [
       },
     ],
   },
+
+//材料结束
   {
     label: "制造工艺",
     labelEn: "manufacture",
