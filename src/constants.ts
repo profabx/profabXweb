@@ -173,27 +173,6 @@ const FabMenuItems = [
 ];
 
 // 侧边栏菜单项 - Prototype
-const PrototypesMenuItems = {
-  "材料": {
-      "金属": {
-          "al.md": "Aluminum Documentation"
-      },
-      "塑料": {
-          "plastic.md": "Plastic Documentation"
-      }
-  },
-  "电子元件": {
-      "电阻": {
-          "resistor.md": "Resistor Documentation"
-      },
-      "电容": {
-          "capacitor.md": "Capacitor Documentation"
-      }
-  }
-};
-
-export default PrototypesMenuItems;
-//test
 const PrototypeMenuItems = [
   //shu
   {
@@ -206,7 +185,6 @@ const PrototypeMenuItems = [
     linkEn: "/en/prototype/about",
     attrs: { id: "prototype" },
   },
-  //材料
   {
     label: "材料",
     labelEn: "material",
@@ -216,40 +194,15 @@ const PrototypeMenuItems = [
     collapsed: true,
     items: [
       {
-        label: "金属",
+        label: "金属2",
         link: "/prototype/metall",
         linkEn: "/en/prototype/metall",
         labelEn: "metall",
         translations: {
           en: "metall",
         },
-        collapsed: true,
-        items:[
-          {
-            label: "al",
-            link: "/prototype/metall",
-            linkEn: "/en/prototype/metall",
-            labelEn: "metall",
-            translations: {
-            en: "metall",
-            },
-            attrs: { id: "prototype" },
-          },
-          {
-            label: "cu",
-            link: "/prototype/alloy",
-            linkEn: "/en/prototype/alloy",
-            labelEn: "alloy",
-            translations: {
-            en: "alloy",
-            },
-            attrs: { id: "prototype" },
-          },
-        ]
+        attrs: { id: "prototype" },
       },
-
-
-
       {
         label: "无机非金属材料",
         link: "/prototype/inorganic",
@@ -283,7 +236,209 @@ const PrototypeMenuItems = [
     ],
   },
 
-//材料结束
+  //ploymer
+  {
+    label: "金属材料",
+    labelEn: "material",
+    translations: {
+      en: "material",
+    },
+    collapsed: true,
+    items: [
+      {
+        label: "金属2",
+        link: "/prototype/metall",
+        linkEn: "/en/prototype/metall",
+        labelEn: "metall",
+        translations: {
+          en: "metall",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "无机非金属材料",
+        link: "/prototype/inorganic",
+        linkEn: "/en/prototype/inorganic",
+        labelEn: "inorganic",
+        translations: {
+          en: "inorganic",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "高分子材料",
+        labelEn: "polymers",
+        translations: {
+          en: "polymers",
+        },
+        link: "/prototype/polymers",
+        linkEn: "/en/prototype/polymers",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "复合材料",
+        labelEn: "composites",
+        translations: {
+          en: "composites",
+        },
+        link: "/prototype/composites",
+        linkEn: "/en/prototype/composites",
+        attrs: { id: "prototype" },
+      },
+    ],
+  },
+  //cerma
+  {
+    label: "塑料",
+    labelEn: "material",
+    translations: {
+      en: "material",
+    },
+    collapsed: true,
+    items: [
+      {
+        label: "金属2",
+        link: "/prototype/metall",
+        linkEn: "/en/prototype/metall",
+        labelEn: "metall",
+        translations: {
+          en: "metall",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "无机非金属材料",
+        link: "/prototype/inorganic",
+        linkEn: "/en/prototype/inorganic",
+        labelEn: "inorganic",
+        translations: {
+          en: "inorganic",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "高分子材料",
+        labelEn: "polymers",
+        translations: {
+          en: "polymers",
+        },
+        link: "/prototype/polymers",
+        linkEn: "/en/prototype/polymers",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "复合材料",
+        labelEn: "composites",
+        translations: {
+          en: "composites",
+        },
+        link: "/prototype/composites",
+        linkEn: "/en/prototype/composites",
+        attrs: { id: "prototype" },
+      },
+    ],
+  },
+  //componsites
+  {
+    label: "复合材料",
+    labelEn: "material",
+    translations: {
+      en: "material",
+    },
+    collapsed: true,
+    items: [
+      {
+        label: "金属2",
+        link: "/prototype/metall",
+        linkEn: "/en/prototype/metall",
+        labelEn: "metall",
+        translations: {
+          en: "metall",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "无机非金属材料",
+        link: "/prototype/inorganic",
+        linkEn: "/en/prototype/inorganic",
+        labelEn: "inorganic",
+        translations: {
+          en: "inorganic",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "高分子材料",
+        labelEn: "polymers",
+        translations: {
+          en: "polymers",
+        },
+        link: "/prototype/polymers",
+        linkEn: "/en/prototype/polymers",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "复合材料",
+        labelEn: "composites",
+        translations: {
+          en: "composites",
+        },
+        link: "/prototype/composites",
+        linkEn: "/en/prototype/composites",
+        attrs: { id: "prototype" },
+      },
+    ],
+  },
+  {
+    label: "复合材料",
+    labelEn: "material",
+    translations: {
+      en: "material",
+    },
+    collapsed: true,
+    items: [
+      {
+        label: "金属2",
+        link: "/prototype/metall",
+        linkEn: "/en/prototype/metall",
+        labelEn: "metall",
+        translations: {
+          en: "metall",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "无机非金属材料",
+        link: "/prototype/inorganic",
+        linkEn: "/en/prototype/inorganic",
+        labelEn: "inorganic",
+        translations: {
+          en: "inorganic",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "高分子材料",
+        labelEn: "polymers",
+        translations: {
+          en: "polymers",
+        },
+        link: "/prototype/polymers",
+        linkEn: "/en/prototype/polymers",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "复合材料",
+        labelEn: "composites",
+        translations: {
+          en: "composites",
+        },
+        link: "/prototype/composites",
+        linkEn: "/en/prototype/composites",
+        attrs: { id: "prototype" },
+      },
+    ],
+  },
   {
     label: "制造工艺",
     labelEn: "manufacture",
