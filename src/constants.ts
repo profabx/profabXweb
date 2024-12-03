@@ -202,32 +202,29 @@ const PrototypeMenuItems = [
         translations: {
           en: "metall",
         },
+        collapsed: true,
         items:[
           {
-          label: "al",
-          link: "/prototype/metall",
-          linkEn: "/en/prototype/metall",
-          labelEn: "metall",
-          translations: {
-          en: "metall",
-          },
-          attrs: { id: "prototype" },
+            label: "al",
+            link: "/prototype/metall",
+            linkEn: "/en/prototype/metall",
+            labelEn: "metall",
+            translations: {
+            en: "metall",
+            },
+            attrs: { id: "prototype" },
           },
           {
-          label: "cu",
-          link: "/prototype/alloy",
-          linkEn: "/en/prototype/alloy",
-          labelEn: "alloy",
-          translations: {
-          en: "alloy",
+            label: "cu",
+            link: "/prototype/alloy",
+            linkEn: "/en/prototype/alloy",
+            labelEn: "alloy",
+            translations: {
+            en: "alloy",
+            },
+            attrs: { id: "prototype" },
           },
-          attrs: { id: "prototype" },
-          },
-        
-
-
         ]
-       
       },
 
 
