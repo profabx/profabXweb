@@ -208,11 +208,11 @@ const PrototypeMenuItems = [
       //ALEND CU BEGIN
       {
         label: "铜",
-        link: "/prototype/inorganic",
-        linkEn: "/en/prototype/inorganic",
-        labelEn: "Inorganic",
+        link: "/prototype/cu",
+        linkEn: "/en/prototype/cu",
+        labelEn: "Copper",
         translations: {
-          en: "inorganic",
+          en: "Copper",
         },
         attrs: { id: "prototype" },
       },
