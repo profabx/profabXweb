@@ -193,17 +193,18 @@ const PrototypeMenuItems = [
     },
     collapsed: true,
     items: [
+      //AL
       {
         label: "铝",
         link: "/prototype/al",
-        labelEn: "Aluminum",
         linkEn: "/en/prototype/al-en",
-        
+        labelEn: "Aluminum",
         translations: {
           en: "Aluminum",
         },
         attrs: { id: "prototype" },
       },
+      //ALEND CU BEGIN
       {
         label: "铜",
         link: "/prototype/inorganic",
@@ -214,6 +215,7 @@ const PrototypeMenuItems = [
         },
         attrs: { id: "prototype" },
       },
+      //CU END
       {
         label: "铁/钢",
         labelEn: "polymers",
