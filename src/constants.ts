@@ -195,15 +195,16 @@ const PrototypeMenuItems = [
     items: [
       //AL
       {
-        label: "铝",
+        label: "铜",
         link: "/prototype/al",
         linkEn: "/en/prototype/al-en",
-        labelEn: "aluminum",
+        labelEn: "Inorganic",
         translations: {
-          en: "aluminum",
+          en: "inorganic",
         },
         attrs: { id: "prototype" },
       },
+ 
       //ALEND CU BEGIN
       {
         label: "铜",
