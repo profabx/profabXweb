@@ -368,34 +368,25 @@ const PrototypeMenuItems = [
     items: [
       {
         label: "陶瓷",
-        link: "/prototype/metall",
-        linkEn: "/en/prototype/metall",
-        labelEn: "metall",
+        link: "/prototype/ceramics",
+        linkEn: "/en/prototype/ceramics",
+        labelEn: "Ceramics",
         translations: {
-          en: "metall",
+          en: "Ceramics",
         },
         attrs: { id: "prototype" },
       },
       {
         label: "玻璃",
-        link: "/prototype/inorganic",
-        linkEn: "/en/prototype/inorganic",
-        labelEn: "inorganic",
+        link: "/prototype/glass",
+        linkEn: "/en/prototype/glass",
+        labelEn: "Glass",
         translations: {
-          en: "inorganic",
+          en: "Glass",
         },
         attrs: { id: "prototype" },
       },
-      {
-        label: "石英",
-        labelEn: "polymers",
-        translations: {
-          en: "polymers",
-        },
-        link: "/prototype/polymers",
-        linkEn: "/en/prototype/polymers",
-        attrs: { id: "prototype" },
-      },
+      
       {
         label: "复合材料",
         labelEn: "composites",
