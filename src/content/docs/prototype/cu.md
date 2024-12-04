@@ -3,8 +3,18 @@ title: 铜
 sidebar:
   attrs: { id: prototype }
 ---
-
-
 [Copper](https://waykenrm.com/blogs/differences-between-brass-bronze-and-copper/#/)
 ![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img/applications-of-brass-bronze-and-copper-optimized.jpg)
 ![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img/WX20240602-230239.png)
+# 加工方式
+* CNC:CNC加工是一种减材制造技术，通过切削去除材料来制造零件。包括铣削、车削、钻孔CNC加工能够实现高精度和一致的零件。
+* 3D打印：铜3D打印是一种增材制造技术，它允许直接从数字模型构建复杂的铜制零件。由于铜的高导电性和导热性，这种技术在电子、热管理应用和艺术领域特别有用。
+    * 直接能源沉积（DED）：通过集中的热源（如激光或电子束）将铜粉末熔化并逐层沉积，构建三维物体。
+    * 粘合剂喷射：将铜粉末与粘合剂混合，通过打印头喷射并逐层固化，形成零件。
+    * 选择性激光熔化（SLM）：使用高功率激光束选择性地熔化铜粉末床，逐层构建零件。
+# 后处理
+* 抛光：使用抛光轮或抛光膏对铜表面进行抛光，以获得光滑的表面。
+* 钝化处理：通过化学处理在铜表面形成一层保护膜，防止氧化。
+* 电镀：在铜表面镀上一层其他金属，如镍、铬或金，以增强耐磨性、耐腐蚀性或改善外观。
+* 涂装：在铜表面涂覆一层保护漆或装饰漆。
+* 热处理：通过加热和冷却过程改变铜的微观结构，提高其机械性能。
