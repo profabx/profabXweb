@@ -1,5 +1,5 @@
 ---
-title: 铝合金
+title: 铝
 sidebar:
   attrs: { id: prototype }
 ---

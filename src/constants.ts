@@ -178,9 +178,9 @@ const PrototypeMenuItems = [
   {
     label: "说明",
     link: "/prototype/about",
-    labelEn: "about",
+    labelEn: "About",
     translations: {
-      en: "about",
+      en: "About",
     },
     linkEn: "/en/prototype/about",
     attrs: { id: "prototype" },
@@ -197,7 +197,7 @@ const PrototypeMenuItems = [
       {
         label: "铝",
         link: "/prototype/al",
-        linkEn: "/en/prototype/al-en",
+        linkEn: "/en/prototype/alen",
         labelEn: "Aluminum",
         translations: {
           en: "Aluminum",
