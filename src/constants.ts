@@ -197,7 +197,7 @@ const PrototypeMenuItems = [
       {
         label: "铝",
         link: "/prototype/al",
-        linkEn: "/en/prototype/alen",
+        linkEn: "/en/prototype/al",
         labelEn: "Aluminum",
         translations: {
           en: "Aluminum",
