@@ -1,7 +1,7 @@
 ---
 title: 铝
 sidebar:
-  attrs: { id: prototype/material/metal }
+  attrs: { id: prototype }
 ---
 
 

@@ -1,7 +1,7 @@
 ---
 title: Aluminum
 sidebar:
-  attrs: { id: prototype/material/metal }
+  attrs: { id: prototype }
 ---
 
 
