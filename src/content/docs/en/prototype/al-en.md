@@ -1,8 +1,9 @@
 ---
-title: aluminum
+title: Aluminum
 sidebar:
   attrs: { id: prototype }
 ---
 
+
 al-en.md
-TEST NO FOLDER
+测试无文件夹形式
