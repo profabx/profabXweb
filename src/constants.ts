@@ -241,56 +241,79 @@ const PrototypeMenuItems = [
    
     ],
   },
-
-  //ploymer
+//塑料
   {
     label: "塑料",
-    labelEn: "metal",
+    labelEn: "Polymers",
     translations: {
-      en: "material",
+      en: "Polymers",
     },
     collapsed: true,
     items: [
       {
         label: "ABS",
-        link: "/prototype/metall",
-        linkEn: "/en/prototype/metall",
-        labelEn: "metall",
+        link: "/prototype/abs",
+        linkEn: "/en/prototype/abs",
+        labelEn: "ABS",
         translations: {
-          en: "metall",
+          en: "ABS",
+        },
+        attrs: { id: "prototype" },
+      },
+ 
+      {
+        label: "尼龙",
+        link: "/prototype/pa",
+        linkEn: "/en/prototype/pa",
+        labelEn: "PA",
+        translations: {
+          en: "PA",
         },
         attrs: { id: "prototype" },
       },
       {
-        label: "PP",
-        link: "/prototype/inorganic",
-        linkEn: "/en/prototype/inorganic",
-        labelEn: "inorganic",
+        label: "尼龙玻纤",
+        link: "/prototype/pagf",
+        linkEn: "/en/prototype/gb",
+        labelEn: "PA-GF",
         translations: {
-          en: "inorganic",
+          en: "PA-GF",
         },
         attrs: { id: "prototype" },
       },
       {
-        label: "PC",
-        labelEn: "polymers",
+        label: "尼龙碳纤维",
+        link: "/prototype/pacf",
+        linkEn: "/en/prototype/pacf",
+        labelEn: "PA-CF",
         translations: {
-          en: "polymers",
+          en: "PA-CF",
         },
-        link: "/prototype/polymers",
-        linkEn: "/en/prototype/polymers",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "PLA",
+        link: "/prototype/pla",
+        linkEn: "/en/prototype/pla",
+        labelEn: "PLA",
+        translations: {
+          en: "PLA",
+        },
         attrs: { id: "prototype" },
       },
       {
         label: "POM",
-        labelEn: "composites",
+        link: "/prototype/pom",
+        linkEn: "/en/prototype/pom",
+        labelEn: "POM",
         translations: {
-          en: "composites",
+          en: "POM",
         },
-        link: "/prototype/composites",
-        linkEn: "/en/prototype/composites",
         attrs: { id: "prototype" },
       },
+      
+      
+   
     ],
   },
   //cerma
