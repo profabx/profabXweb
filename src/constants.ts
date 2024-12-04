@@ -208,7 +208,7 @@ const PrototypeMenuItems = [
         label: "铜",
         link: "/prototype/inorganic",
         linkEn: "/en/prototype/inorganic",
-        labelEn: "inorganic",
+        labelEn: "Inorganic",
         translations: {
           en: "inorganic",
         },

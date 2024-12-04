@@ -1,5 +1,5 @@
 ---
-title: 无机非金属材料
+title: inorganic
 sidebar:
   attrs: { id: prototype }
 ---
