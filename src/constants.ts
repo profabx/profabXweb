@@ -216,27 +216,29 @@ const PrototypeMenuItems = [
         },
         attrs: { id: "prototype" },
       },
-      //CU END
       {
         label: "铁/钢",
-        labelEn: "polymers",
+        link: "/prototype/ss",
+        linkEn: "/en/prototype/ss",
+        labelEn: "Iron/Steel",
         translations: {
-          en: "polymers",
+          en: "Iron/Steel",
         },
-        link: "/prototype/polymers",
-        linkEn: "/en/prototype/polymers",
         attrs: { id: "prototype" },
       },
       {
         label: "钛",
-        labelEn: "composites",
+        link: "/prototype/ti",
+        linkEn: "/en/prototype/ti",
+        labelEn: "Titanium",
         translations: {
-          en: "composites",
+          en: "Titanium",
         },
-        link: "/prototype/composites",
-        linkEn: "/en/prototype/composites",
         attrs: { id: "prototype" },
       },
+      
+      
+   
     ],
   },
 
