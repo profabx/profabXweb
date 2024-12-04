@@ -4,7 +4,7 @@ sidebar:
   attrs: { id: prototype }
 ---
 
-## [Aluminum](https://www.iqsdirectory.com/articles/aluminum-metal/types-of-aluminum.html#/)
+
 ![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img/iqsdirectory.png)
 
 | Serial | Main alloying elements  |Principal |  Example application  | 

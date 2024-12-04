@@ -4,7 +4,6 @@ sidebar:
   attrs: { id: prototype }
 ---
 
-## [钢](https://www.britannica.com/technology/steel/Wear-resistant-steels)
 
 |元素| 效果|
 | ------------- | :-----:|

@@ -5,7 +5,7 @@ sidebar:
 ---
 
 
-## [Aluminum](https://www.iqsdirectory.com/articles/aluminum-metal/types-of-aluminum.html#/)
+
 ![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img/iqsdirectory.png)
 | 序号 |主要合金元素 |特点|   典型应用 | 
 | ------------- | :-----:| :-----:|:-----:|
