@@ -1,5 +1,5 @@
 ---
-title: Aluminum
+title: aluminum
 sidebar:
   attrs: { id: prototype }
 ---
