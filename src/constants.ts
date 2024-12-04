@@ -187,20 +187,20 @@ const PrototypeMenuItems = [
   },
   {
     label: "金属",
-    labelEn: "material",
+    labelEn: "Metal",
     translations: {
-      en: "material",
+      en: "Metal",
     },
     collapsed: true,
     items: [
       //AL
       {
-        label: "铜",
+        label: "铝",
         link: "/prototype/al",
         linkEn: "/en/prototype/al-en",
-        labelEn: "Inorganic",
+        labelEn: "Aluminum",
         translations: {
-          en: "inorganic",
+          en: "Aluminum",
         },
         attrs: { id: "prototype" },
       },
