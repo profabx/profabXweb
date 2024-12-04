@@ -311,6 +311,47 @@ const PrototypeMenuItems = [
         },
         attrs: { id: "prototype" },
       },
+      {
+        label: "PP",
+        link: "/prototype/pp",
+        linkEn: "/en/prototype/pp",
+        labelEn: "PP",
+        translations: {
+          en: "PP",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "树脂",
+        link: "/prototype/resin",
+        linkEn: "/en/prototype/resin",
+        labelEn: "Resin",
+        translations: {
+          en: "Resin",
+        },
+        attrs: { id: "prototype" },
+      },
+      
+      {
+        label: "TPU",
+        link: "/prototype/tpu",
+        linkEn: "/en/prototype/tpu",
+        labelEn: "TPU",
+        translations: {
+          en: "TPU",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "PC",
+        link: "/prototype/pc",
+        linkEn: "/en/prototype/pc",
+        labelEn: "PC",
+        translations: {
+          en: "PC",
+        },
+        attrs: { id: "prototype" },
+      },
       
       
    
