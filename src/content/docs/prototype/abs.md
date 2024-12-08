@@ -3,7 +3,7 @@ title: ABS
 sidebar:
   attrs: { id: prototype }
 ---
-
+test
 ABS是由丙烯腈（Acrylonitrile）、丁二烯（Butadiene）、苯乙烯（Styrene）三种单体的接枝共聚物。它的分子式可以写为（C8H8·C4H6·C3H3N）x，但实际上往往是含丁二烯的接枝共聚物与丙烯腈-苯乙烯共聚物的混合物，其中，丙烯腈占15%~35%，丁二烯占5%~30%，苯乙烯占40%~60%，乳液法ABS最常见的比例是A:B:S=22:17:61，而本体法ABS中B的比例往往较低，约为13%。ABS塑料的成型温度为180-250℃，但是最好不要超过240℃，此时树脂会有分解。
 ![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img-hwj/424a21df69b0cd6d8828ce4a0b2ad843.jpg)
 ## 加工方式
