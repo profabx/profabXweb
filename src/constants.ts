@@ -531,6 +531,17 @@ const PrototypeMenuItems = [
         linkEn: "/en/prototype/heat-treatment",
         attrs: { id: "prototype" },
       },
+      {
+        label: "金属后处理",
+        labelEn: "Metal-post-processing",
+        translations: {
+          en: "Metal post processing",
+        },
+        link: "/postprocess/metalpost",
+        linkEn: "/en/postprocess/metalpost",
+        attrs: { id: "postprocess" },
+      },
+      
     ],
   },
   {
