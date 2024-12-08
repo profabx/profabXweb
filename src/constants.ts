@@ -354,6 +354,16 @@ const PrototypeMenuItems = [
         },
         attrs: { id: "prototype" },
       },
+      {
+        label: "PEEK",
+        link: "/prototype/peek",
+        linkEn: "/en/prototype/peek",
+        labelEn: "PEEK",
+        translations: {
+          en: "PEEK",
+        },
+        attrs: { id: "prototype" },
+      },
       
       
    
@@ -503,8 +513,8 @@ const PrototypeMenuItems = [
     items: [
       {
         label: "打磨",
-        link: "/prototype/polishing",
-        linkEn: "/en/prototype/polishing",
+        link: "/postprocess/polishing",
+        linkEn: "/en/postprocess/polishing",
         labelEn: "polishing",
         translations: {
           en: "polishing",
@@ -513,8 +523,8 @@ const PrototypeMenuItems = [
       },
       {
         label: "喷漆",
-        link: "/prototype/paint",
-        linkEn: "/en/prototype/paint",
+        link: "/postprocess/paint",
+        linkEn: "/en/postprocess/paint",
         labelEn: "paint",
         translations: {
           en: "paint",
@@ -527,8 +537,8 @@ const PrototypeMenuItems = [
         translations: {
           en: "heat-treatment",
         },
-        link: "/prototype/heat-treatment",
-        linkEn: "/en/prototype/heat-treatment",
+        link: "/postprocess/heat-treatment",
+        linkEn: "/en/postprocess/heat-treatment",
         attrs: { id: "prototype" },
       },
       {
