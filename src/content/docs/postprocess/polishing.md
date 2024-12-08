@@ -1,7 +1,7 @@
 ---
-title: paint
+title: polish
 sidebar:
   attrs: { id: prototype }
 ---
 
-喷漆 内容
+打磨 内容

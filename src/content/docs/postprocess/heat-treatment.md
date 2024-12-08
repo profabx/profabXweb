@@ -1,7 +1,7 @@
 ---
-title: paint
+title: 热处理
 sidebar:
   attrs: { id: prototype }
 ---
 
-喷漆 内容
+热处理 内容

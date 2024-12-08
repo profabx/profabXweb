@@ -1,5 +1,5 @@
 ---
-title: paint
+title: 喷漆
 sidebar:
   attrs: { id: prototype }
 ---
