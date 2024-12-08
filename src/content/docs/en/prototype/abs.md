@@ -4,28 +4,27 @@ sidebar:
   attrs: { id: prototype }
 ---
 
-
-ABS material is a graft copolymer of acrylonitrile (Acrylonitrile), 1,3-butadiene (Butadiene), and styrene (Styrene). Its molecular formula can be written as (C8H8·C4H6·C3H3N)x, but in practice, it is often a mixture of butadiene graft copolymers and acrylonitrile-styrene copolymers, in which acrylonitrile accounts for 15% to 35%, butadiene accounts for 5% to 30%, and styrene accounts for 40% to 60%. The most common ratio for emulsion ABS is A:B:S=22:17:61, while in bulk ABS, the proportion of B is often lower, around 13%. The molding temperature for ABS plastic is 180-250°C, but it is best not to exceed 240°C to avoid decomposition of the resin.
+ABS plastic, full name acrylonitrile-butadiene-styrene copolymer, is a thermoplastic engineering plastic synthesized by copolymerization of three monomers: acrylonitrile (Acrylonitrile), butadiene (Butadiene), and styrene (Styrene). This material is known for its balanced toughness, hardness and rigidity, and is widely used in many fields such as automobiles, electronic appliances, office equipment and communication equipment.
 ![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img-hwj/424a21df69b0cd6d8828ce4a0b2ad843.jpg)
-## Processing Methods
-### Injection Molding
-Injection molding is one of the most commonly used processing methods for ABS materials. In the injection molding process, ABS plastic is melted at high temperatures and then injected into closed molds to form the desired shape after cooling. Injection molding is suitable for producing complex-shaped parts, such as toys, appliance casings, automotive parts, etc. The drying conditions before injection molding are: in dry winter at 75～80°C for 2～3 hours, and in rainy summer at 80～90°C for 4～8 hours.
-
+## Material properties
+* High strength: ABS plastic has excellent mechanical properties, including high strength.
+* Good toughness: It can absorb impact without breaking, showing good toughness.
+* Easy to process: ABS plastic is easy to process by injection molding, machining and 3D printing.
+* Beautiful appearance: The surface of the product is smooth and has a good appearance.
+## Application fields
+* Automotive industry: ABS plastics are used to manufacture dashboards, body panels, interior trim panels, steering wheels, sound insulation panels, door locks, bumpers and ventilation ducts, etc.
+* Electronic appliances: ABS plastics are often used to manufacture housings and components in products such as refrigerators, televisions, washing machines, air conditioners, computers and copiers.
+* Office equipment: printer housings, copier housings, scanner housings, keyboards, mice, etc.
+* ![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img-hwj/20241207232550054.png)
+## Processing characteristics
+* Melting temperature: The melting temperature range of ABS plastics is approximately 190 to 240°C.
+* Thermal decomposition temperature: The thermal decomposition temperature is greater than 250°C, indicating that ABS has good thermal stability during processing.
+* Amorphous polymer: Since ABS is an amorphous polymer, it has no obvious melting point and maintains good performance in the temperature range above -25℃.
+* Dimensional stability: ABS products have good dimensional stability and low shrinkage.
+## Processing method
+### Injection molding
+Injection molding is one of the most commonly used processing methods for ABS materials. During the injection molding process, ABS plastic is melted at high temperature and then injected into a closed mold, and the desired shape is formed after cooling. Injection molding is suitable for the production of parts with complex shapes, such as toys, home appliance housings, automotive parts, etc. The drying conditions before injection molding are: below 75-80℃ in dry winter, drying for 2-3 hours, and 80-90℃ in rainy summer days, drying for 4-8 hours.
 ### CNC
-ABS material is shaped through mechanical processing such as milling, turning, and drilling. This method is suitable for producing parts with precise size and surface finish requirements, such as molds, mechanical parts, etc.
-
-### 3D Printing
-ABS engineering plastic is one of the main materials for 3D printing. Its ability to become a 3D printing consumable is determined by its characteristics, such as heat resistance, impact resistance, low-temperature resistance, chemical resistance, and excellent electrical performance, as well as stable product dimensions.
-
-## Post-processing
-### Sanding
-Using sandpaper of different grits to sand the surface of ABS models can remove layer lines and make the surface smooth, laying the foundation for subsequent painting or other treatments.
-
-### Surface Blasting
-Polishing the surface by high-speed jet medium beads, making the product surface smooth and with a uniform matte effect.
-
-### Painting
-After sanding and primer treatment, ABS models can be painted to enhance the appearance and feel of the parts, providing a smooth surface.
-
-### Chemical Polishing
-Using acetone vapor for polishing can melt the ABS surface, thereby achieving a smooth effect.
+ABS materials are molded by mechanical processing such as milling, turning, drilling and other methods. This method is suitable for the production of parts with precise size and surface finish requirements, such as molds, mechanical parts, etc.
+### 3D printing
+ABS engineering plastic is one of the main materials for 3D printing. The reason why it can become a consumable material for 3D printing is determined by its characteristics. ABS plastic has the characteristics of heat resistance, impact resistance, low temperature resistance, chemical resistance, excellent electrical properties, and stable product size.

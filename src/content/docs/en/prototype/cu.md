@@ -4,18 +4,24 @@ sidebar:
   attrs: { id: prototype }
 ---
 
-
+Copper (chemical code Cu) is a transition metal, atomic number is 29, atomic volume is 63.546. Copper has a purple-red color, it is a tough, wear-resistant metal, and has good extension, thermal conductivity, and conductivity.和 corrosion resistance ability
+。 Copper is rich in storage, excellent performance, convenient processing, and is widely used in the fields of electricity, machinery manufacturing, construction industry, transportation, etc.
 ![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img/applications-of-brass-bronze-and-copper-optimized.jpg)
 ![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img/WX20240602-230239.png)
-# Processing method
-* CNC: CNC machining is a subtractive manufacturing technology that manufactures parts by removing material through cutting. Including milling, turning, drilling CNC machining can achieve high-precision and consistent parts.
-* 3D printing: Copper 3D printing is an additive manufacturing technology that allows complex copper parts to be built directly from digital models. Due to copper's high electrical and thermal conductivity, this technique is particularly useful in electronics, thermal management applications and art.
-* Direct Energy Deposition (DED): Copper powder is melted and deposited layer by layer by a concentrated heat source (such as a laser or electron beam) to build a three-dimensional object.
-* Binder Jetting: Copper powder is mixed with a binder, sprayed through a print head and solidified layer by layer to form a part.
-* Selective Laser Melting (SLM): A high-powered laser beam is used to selectively melt a bed of copper powder to build a part layer by layer.
-# Post-processing
-* Polishing: The copper surface is polished using a polishing wheel or polishing paste to obtain a smooth surface.
-* Passivation: A protective film is formed on the copper surface through chemical treatment to prevent oxidation.
-* Electroplating: A layer of other metals such as nickel, chromium or gold is plated on the copper surface to enhance wear resistance, corrosion resistance or improve appearance.
-* Coating: A protective or decorative paint is applied to the copper surface.
-* Heat Treatment: The microstructure of copper is changed through a heating and cooling process to improve its mechanical properties.
+# Field application
+* Electrical equipment: Due to the high conductivity of copper, it is widely used in the manufacture of electrical wire, cable, electrical brush, etc.
+* Building materials: copper因其美观和durability，Used as building materials，such as pipes and decoration pieces。
+* Craftsmanship: Copper's malleability and corrosion resistance make it occupy one place in craftsmanship.
+* Machinery manufacturing: copper alloy 因其 excellent mechanical properties, used to manufacture various mechanical parts.
+* Transportation: Copper alloys are used in the manufacture of transportation tools, such as ship propellers, etc.
+
+# processing method
+ ## CNC
+ CNC processing is a cutting-edge manufacturing technology that removes materials and manufactures parts by cutting. It includes milling, car cutting, and drilling. CNC processing can achieve high precision and consistent parts.
+## 3D printing
+Copper 3D printing is an additive manufacturing technology, it allows the construction of complex copper system parts directly from digital models. Due to the high conductivity and thermal conductivity of copper, this technology is particularly useful in the fields of electronics, heat management applications and art. Laser melting (SLM), using a high-power laser beam to selectively melt copper powder bed, layer by layer to build parts.
+# after treatment
+* Polishing: Use polishing wheels or polishing plaster to polish the copper surface, to obtain a smooth surface.
+ ![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img-hwj/20241208164757041.png)
+* Electroplating: Plating a layer of other metals on the copper surface, such as nickel, chrome or gold, to enhance wear resistance, corrosion resistance or improve appearance.
+![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img-hwj/20241208170125985.png)
