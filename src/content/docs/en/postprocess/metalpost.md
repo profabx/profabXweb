@@ -1,7 +1,7 @@
 ---
 title: Metal-post-processing
 sidebar:
-  attrs: { id: postprocess }
+  attrs: { id: prototype }
 ---
 
 
