@@ -7,6 +7,7 @@ sidebar:
 
 ## 1.CNC介绍
 
+
 ## 2.产生与发展
 
 ## 3.分类
@@ -80,6 +81,7 @@ sidebar:
   * 加工完成，机床保养和维护（Finish machining, maintenance and maintenance of machine tools ）
 
 ## 10.CNC的材料加工
+![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img/CNCmaterial.png)
 * ABS加工方式（ABS processing mode）
 * 尼龙加工方式（Nylon processing method）
 * 铝合金加工方式（Aluminum alloy processing method）
@@ -88,6 +90,8 @@ sidebar:
 * 亚克力加工方式（Acrylic processing method ）
 * MDF加工方式（MDF processing mode）
 * 其他材料（ Other Materials ）
+  
+   [参考链接](https://www.yungongchang.com/processcnc)
 
 ## 11.CNC的优缺点
 * 优点（Advantages）
