@@ -187,9 +187,9 @@ const PrototypeMenuItems = [
   },
   {
     label: "金属",
-    link: "/prototype/material/metal",
+    link: "/prototype/metal",
     labelEn: "Metal",
-    linkEn: "/en/prototype/material/metal",
+    linkEn: "/en/prototype/material/metal/metal",
     translations: {
       en: "Metal",
     },
