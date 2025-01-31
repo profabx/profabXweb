@@ -23,13 +23,14 @@ export default defineConfig({
         light: "./src/assets/dark.png",
         dark: "./src/assets/light.png",
       },
-      defaultLocale: "root", // optional
+      defaultLocale: "zh", // optional
       // defaultLocale: "en",
 
       locales: {
         // English docs in `src/content/docs/en/`
         en: {
           label: "English",
+          lang: 'en'
         },
         // Simplified Chinese docs in `src/content/docs/zh-cn/`
         // "zh-cn": {
@@ -37,7 +38,7 @@ export default defineConfig({
         //   lang: "zh-CN",
         // },
 
-        root: {
+        zh: {
           label: "简体中文",
           lang: "zh-CN", // lang is required for root locales
         },
