@@ -56,7 +56,7 @@ const TableData = [
     title: "SLM",
     color: "#ffffff",
     left: [],
-    right: [NewtMetallicMaterialsData[0],NewtMetallicMaterialsData[2]] 
+    right: [NewtMetallicMaterialsData[0],NewtMetallicMaterialsData[1]] 
   },
   {
     title: "Polyjet",
