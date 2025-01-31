@@ -950,7 +950,7 @@ const MenuData: NavItemProps[] = [
   {
     key: "prototype",
     label: "工程样机开发",
-    labelEn: "prototype",
+    labelEn: "Prototype",
     link: "/prototype",
     linkEn: "/en/prototype",
     items: [
@@ -996,7 +996,7 @@ const MenuData: NavItemProps[] = [
   {
     key: "Explore",
     label: "探索",
-    labelEn: "explore",
+    labelEn: "Explore",
     items: [
       {
         label: "NexMaker Fab 实验室",
