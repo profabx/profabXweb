@@ -33,16 +33,16 @@ const NewtNonMetallicMaterialsData = [
 // 表格数据
 const TableData = [
   {
-    title: "FDM",
-    color: "#ffffff",
-    left: NewtNonMetallicMaterialsData.slice(1),
-    right: NewtMetallicMaterialsData.slice(0, 1),
-  },
-  {
     title: "SLA",
     color: "#ffffff",
     left: NewtNonMetallicMaterialsData.slice(0, 2),
     right: [],
+  },
+  {
+    title: "FDM",
+    color: "#ffffff",
+    left: NewtNonMetallicMaterialsData.slice(1),
+    right: NewtMetallicMaterialsData.slice(0, 1),
   },
   {
     title: "LCD/DLP",
@@ -51,17 +51,18 @@ const TableData = [
     right: [],
   },
   {
-    title: "SLS",
-    color: "#ffffff",
-    left: NewtNonMetallicMaterialsData.slice(0, 3),
-    right: [],
-  },
-  {
     title: "MJF",
     color: "#ffffff",
     left: NewtNonMetallicMaterialsData.slice(0, 2),
     right: NewtMetallicMaterialsData.slice(0, 2),
   },
+  {
+    title: "SLS",
+    color: "#ffffff",
+    left: NewtNonMetallicMaterialsData.slice(0, 3),
+    right: [],
+  },
+
   {
     title: "SLM",
     color: "#ffffff",
@@ -75,7 +76,7 @@ const TableData = [
     right: [],
   },
   {
-    title: "CNC",
+    title: "数控加工",
     color: "#ffffff",
     left: NewtNonMetallicMaterialsData,
     right: NewtMetallicMaterialsData,
