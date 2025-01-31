@@ -506,9 +506,9 @@ const PrototypeMenuItems = [
   //cerma
   {
     label: "陶瓷材料",
-    labelEn: "material",
+    labelEn: "Ceramics",
     translations: {
-      en: "material",
+      en: "Ceramics",
     },
     collapsed: true,
     items: [
@@ -548,9 +548,9 @@ const PrototypeMenuItems = [
   //componsites
   {
     label: "复合材料",
-    labelEn: "material",
+    labelEn: "Composites",
     translations: {
-      en: "material",
+      en: "composites",
     },
     collapsed: true,
     items: [
@@ -994,7 +994,7 @@ const MenuData: NavItemProps[] = [
     ],
   },
   {
-    key: "explore",
+    key: "Explore",
     label: "探索",
     labelEn: "explore",
     items: [
@@ -1006,7 +1006,7 @@ const MenuData: NavItemProps[] = [
       },
       {
         label: "沙盘",
-        labelEn: "sandtable",
+        labelEn: "Sandtable",
         link: "/sandtable/sandtable",
         linkEn: "/en/sandtable/sandtable",
       },
@@ -1018,7 +1018,7 @@ const MenuData: NavItemProps[] = [
       },
       {
         label: "文章",
-        labelEn: "readme",
+        labelEn: "Readme",
         link: "/explore/readme",
         linkEn: "/en/explore/readme",
       },
@@ -1027,7 +1027,7 @@ const MenuData: NavItemProps[] = [
   {
     key: "prototype",
     label: "关于 ProFabX",
-    labelEn: "anbout ProFabX",
+    labelEn: "About ProFabX",
     link: "/about/introduce",
     linkEn: "/en/about/introduce",
   },
