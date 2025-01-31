@@ -1,5 +1,11 @@
 import type { NavItemProps } from "./type";
 
+// 定义材料类型
+interface MaterialItem {
+  label: string;
+  color: string;
+  href: string;
+}
 
 // 金属数据 V2 - 改写成字典
 export const NewtMetallicMaterialsData = {
@@ -26,7 +32,7 @@ export const NewtMetallicMaterialsData = {
 };
 
 // 非金属数据 V2 - 改写成字典
-export const NewtNonMetallicMaterialsData = {
+export const NewtNonMetallicMaterialsData: Record<string, MaterialItem> = {
   "石英": {
     label: "石英",
     color: "#17F47D",
