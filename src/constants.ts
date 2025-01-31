@@ -72,12 +72,11 @@ export const NewtNonMetallicMaterialsData = {
 const TableData = [
   {
     title: "SLA",
-    color: "#ffffff",
+    color: "#E7D109",
     // 直接用非金属「字典」中的 石英 / PC
-    left: [
-      NewtNonMetallicMaterialsData["石英"],
-      NewtNonMetallicMaterialsData["PC"],
-    ],
+    
+    left: ["石英", "PC"].map((key) => NewtNonMetallicMaterialsData[key]),
+    
     right: [],
   },
   {
@@ -246,8 +245,6 @@ const TableData = [
 
   
 ];
-
-  
 
 // 侧边菜单项 - Fab
 const FabMenuItems = [
