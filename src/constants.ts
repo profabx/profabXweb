@@ -31,7 +31,7 @@ export const NewtMetallicMaterialsData = {
   },
 };
 
-// 非金属数据 V2 - 改写成字典
+// 非金属数据 V2
 export const NewtNonMetallicMaterialsData: Record<string, MaterialItem> = {
   "石英": {
     label: "石英",
