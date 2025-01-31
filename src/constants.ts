@@ -1,54 +1,122 @@
 import type { NavItemProps } from "./type";
 
-// 金属数据 V2
-const NewtMetallicMaterialsData = [
-  { label: "铁/钢", color: "#C8E709", href: "/" },
-  { label: "铝/合金", color: "#E3E709", href: "/prototype/al" },
-  {label: "铜/合金",color: "#E7D109",href: "/",},
-  { label: "钛/合金", color: "#E7D109", href: "/" },
-];
 
-// 非金属数据 V2
-const NewtNonMetallicMaterialsData = [
-  { label: "石英", color: "#17F47D", href: "/" },
-  { label: "PC", color: "#17F47D", href: "/" },
-  {label: "PP",color: "#17F4DA",href: "/",},
-  { label: "peek", color: "#1F6ADC", href: "/" },
-  { label: "树脂", color: "#8CE21F", href: "/" },
-  { label: "TPU", color: "#2320A4", href: "/" },
-  { label: "尼龙", color: "#0C0B13", href: "/" },
-  { label: "ABS", color: "#A5A3AE", href: "/" },
-];
+// 金属数据 V2 - 改写成字典
+export const NewtMetallicMaterialsData = {
+  "铁/钢": {
+    label: "铁/钢",
+    color: "#C8E709",
+    href: "/prototype/ss",
+  },
+  "铝/合金": {
+    label: "铝/合金",
+    color: "#E3E709",
+    href: "/prototype/al",
+  },
+  "铜/合金": {
+    label: "铜/合金",
+    color: "#E7D109",
+    href: "/prototype/cu",
+  },
+  "钛/合金": {
+    label: "钛/合金",
+    color: "#E7D109",
+    href: "/prototype/ti",
+  },
+};
+
+// 非金属数据 V2 - 改写成字典
+export const NewtNonMetallicMaterialsData = {
+  "石英": {
+    label: "石英",
+    color: "#17F47D",
+    href: "/prototype/quartz",
+  },
+  "PC": {
+    label: "PC",
+    color: "#17F47D",
+    href: "/prototype/pc",
+  },
+  "PP": {
+    label: "PP",
+    color: "#17F4DA",
+    href: "/prototype/pp",
+  },
+  "peek": {
+    label: "peek",
+    color: "#1F6ADC",
+    href: "/prototype/peek",
+  },
+  "树脂": {
+    label: "树脂",
+    color: "#8CE21F",
+    href: "/prototype/resin",
+  },
+  "TPU": {
+    label: "TPU",
+    color: "#2320A4",
+    href: "/prototype/tpu",
+  },
+  "尼龙": {
+    label: "尼龙",
+    color: "#0C0B13",
+    href: "/prototype/nylon",
+  },
+  "ABS": {
+    label: "ABS",
+    color: "#A5A3AE",
+    href: "/prototype/abs",
+  },
+};
 // 表格数据
-const TableData = [
+export const TableData = [
   {
     title: "SLA",
     color: "#ffffff",
-    left: NewtNonMetallicMaterialsData.slice(0, 2),
+    // 直接用非金属「字典」中的 石英 / PC
+    left: [
+      NewtNonMetallicMaterialsData["石英"],
+      NewtNonMetallicMaterialsData["PC"],
+    ],
     right: [],
   },
   {
     title: "FDM",
     color: "#ffffff",
-    left: NewtNonMetallicMaterialsData.slice(1),
-    right: NewtMetallicMaterialsData.slice(0, 1),
+    left: [
+      // 比如这里放 PC / PP / 树脂 ...
+      NewtNonMetallicMaterialsData["PC"],
+      NewtNonMetallicMaterialsData["PP"],
+      NewtNonMetallicMaterialsData["树脂"],
+    ],
+    right: [NewtMetallicMaterialsData["铁/钢"]],
   },
   {
     title: "LCD/DLP",
     color: "#ffffff",
-    left: NewtNonMetallicMaterialsData.slice(0, 1),
+    left: [NewtNonMetallicMaterialsData["石英"]],
     right: [],
   },
   {
     title: "MJF",
     color: "#ffffff",
-    left: NewtNonMetallicMaterialsData.slice(0, 2),
-    right: NewtMetallicMaterialsData.slice(0, 2),
+    left: [
+      NewtNonMetallicMaterialsData["石英"],
+      NewtNonMetallicMaterialsData["PC"],
+    ],
+    right: [
+      NewtMetallicMaterialsData["铁/钢"],
+      NewtMetallicMaterialsData["铝/合金"],
+    ],
   },
   {
     title: "SLS",
     color: "#ffffff",
-    left: NewtNonMetallicMaterialsData.slice(0, 3),
+    left: [
+      NewtNonMetallicMaterialsData["石英"],
+      NewtNonMetallicMaterialsData["PC"],
+      NewtNonMetallicMaterialsData["PP"],
+    ],
     right: [],
   },
 
@@ -56,57 +124,130 @@ const TableData = [
     title: "SLM",
     color: "#ffffff",
     left: [],
-    right: [NewtMetallicMaterialsData[0],NewtMetallicMaterialsData[1]] 
+    right: [
+      NewtMetallicMaterialsData["铁/钢"],
+      NewtMetallicMaterialsData["铝/合金"],
+    ],
   },
-  {
-    title: "Polyjet",
-    color: "#ffffff",
-    left: NewtNonMetallicMaterialsData.slice(0, 1),
-    right: [],
-  },
+  // ...
   {
     title: "数控加工",
     color: "#ffffff",
-    left: NewtNonMetallicMaterialsData,
-    right: NewtMetallicMaterialsData,
+    left: [
+      NewtNonMetallicMaterialsData["石英"],
+      NewtNonMetallicMaterialsData["PC"],
+      NewtNonMetallicMaterialsData["PP"],
+      NewtNonMetallicMaterialsData["peek"],
+      NewtNonMetallicMaterialsData["树脂"],
+      NewtNonMetallicMaterialsData["TPU"],
+      NewtNonMetallicMaterialsData["尼龙"],
+      NewtNonMetallicMaterialsData["ABS"],
+    ],
+    right: [
+      NewtMetallicMaterialsData["铁/钢"],
+      NewtMetallicMaterialsData["铝/合金"],
+      NewtMetallicMaterialsData["铜/合金"],
+      NewtMetallicMaterialsData["钛/合金"],
+    ],
   },
+
   {
     title: "铣",
     color: "#ffffff",
-    left: NewtNonMetallicMaterialsData,
-    right: NewtMetallicMaterialsData,
+    // 原先写法: left: NewtNonMetallicMaterialsData, right: NewtMetallicMaterialsData
+    // 现在改为：手动列出所有需要的非金属、金属（逐个写键名）
+    left: [
+      NewtNonMetallicMaterialsData["石英"],
+      NewtNonMetallicMaterialsData["PC"],
+      NewtNonMetallicMaterialsData["PP"],
+      NewtNonMetallicMaterialsData["peek"],
+      NewtNonMetallicMaterialsData["树脂"],
+      NewtNonMetallicMaterialsData["TPU"],
+      NewtNonMetallicMaterialsData["尼龙"],
+      NewtNonMetallicMaterialsData["ABS"],
+    ],
+    right: [
+      NewtMetallicMaterialsData["铁/钢"],
+      NewtMetallicMaterialsData["铝/合金"],
+      NewtMetallicMaterialsData["铜/合金"],
+      NewtMetallicMaterialsData["钛/合金"],
+    ],
   },
   {
     title: "车",
     color: "#ffffff",
-    left: NewtNonMetallicMaterialsData,
-    right: NewtMetallicMaterialsData,
+    left: [
+      NewtNonMetallicMaterialsData["石英"],
+      NewtNonMetallicMaterialsData["PC"],
+      NewtNonMetallicMaterialsData["PP"],
+      NewtNonMetallicMaterialsData["peek"],
+      NewtNonMetallicMaterialsData["树脂"],
+      NewtNonMetallicMaterialsData["TPU"],
+      NewtNonMetallicMaterialsData["尼龙"],
+      NewtNonMetallicMaterialsData["ABS"],
+    ],
+    right: [
+      NewtMetallicMaterialsData["铁/钢"],
+      NewtMetallicMaterialsData["铝/合金"],
+      NewtMetallicMaterialsData["铜/合金"],
+      NewtMetallicMaterialsData["钛/合金"],
+    ],
   },
   {
     title: "激光切割",
     color: "#ffffff",
+    // 原先是 left: [], right: NewtMetallicMaterialsData.slice(0,2)
+    // 即只包含 金属数组的前2项 => “铁/钢” & “铝/合金”
     left: [],
-    right: NewtMetallicMaterialsData.slice(0, 2),
+    right: [
+      NewtMetallicMaterialsData["铁/钢"],
+      NewtMetallicMaterialsData["铝/合金"],
+    ],
   },
   {
     title: "注塑",
     color: "#ffffff",
-    left: NewtNonMetallicMaterialsData,
+    // 原先 left: NewtNonMetallicMaterialsData, right: []
+    // 这里假设你想用全部非金属
+    left: [
+      NewtNonMetallicMaterialsData["石英"],
+      NewtNonMetallicMaterialsData["PC"],
+      NewtNonMetallicMaterialsData["PP"],
+      NewtNonMetallicMaterialsData["peek"],
+      NewtNonMetallicMaterialsData["树脂"],
+      NewtNonMetallicMaterialsData["TPU"],
+      NewtNonMetallicMaterialsData["尼龙"],
+      NewtNonMetallicMaterialsData["ABS"],
+    ],
     right: [],
   },
   {
     title: "硅胶覆膜",
     color: "#ffffff",
-    left: NewtNonMetallicMaterialsData.slice(0, 2),
+    // 原先 left: NewtNonMetallicMaterialsData.slice(0,2), right: []
+    // slice(0,2) 表示非金属前2项 => “石英” & “PC”
+    left: [
+      NewtNonMetallicMaterialsData["石英"],
+      NewtNonMetallicMaterialsData["PC"],
+    ],
     right: [],
   },
   {
     title: "钣金",
     color: "#ffffff",
     left: [],
-    right: NewtMetallicMaterialsData.slice(0, 2),
+    // 原先 right: NewtMetallicMaterialsData.slice(0,2)
+    // => “铁/钢”、“铝/合金”
+    right: [
+      NewtMetallicMaterialsData["铁/钢"],
+      NewtMetallicMaterialsData["铝/合金"],
+    ],
   },
+
+  
 ];
+
+  
 
 // 侧边菜单项 - Fab
 const FabMenuItems = [
