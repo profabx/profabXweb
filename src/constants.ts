@@ -3,13 +3,8 @@ import type { NavItemProps } from "./type";
 // 金属数据 V2
 const NewtMetallicMaterialsData = [
   { label: "铁/钢", color: "#C8E709", href: "/" },
-  { label: "铝/合金", color: "#E3E709", href: "/" },
-  {
-    label: "铜/合金",
-    color: "#E7D109",
-    href: "/",
-  },
-
+  { label: "铝/合金", color: "#E3E709", href: "/prototype/al" },
+  {label: "铜/合金",color: "#E7D109",href: "/",},
   { label: "钛/合金", color: "#E7D109", href: "/" },
 ];
 
@@ -17,19 +12,13 @@ const NewtMetallicMaterialsData = [
 const NewtNonMetallicMaterialsData = [
   { label: "石英", color: "#17F47D", href: "/" },
   { label: "PC", color: "#17F47D", href: "/" },
-  {
-    label: "PP",
-    color: "#17F4DA",
-    href: "/",
-  },
-
+  {label: "PP",color: "#17F4DA",href: "/",},
   { label: "peek", color: "#1F6ADC", href: "/" },
   { label: "树脂", color: "#8CE21F", href: "/" },
   { label: "TPU", color: "#2320A4", href: "/" },
   { label: "尼龙", color: "#0C0B13", href: "/" },
   { label: "ABS", color: "#A5A3AE", href: "/" },
 ];
-
 // 表格数据
 const TableData = [
   {
@@ -67,7 +56,7 @@ const TableData = [
     title: "SLM",
     color: "#ffffff",
     left: [],
-    right: NewtMetallicMaterialsData.slice(0, 4),
+    right: [NewtMetallicMaterialsData[0],NewtMetallicMaterialsData[2]] 
   },
   {
     title: "Polyjet",
