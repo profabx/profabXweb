@@ -189,4 +189,4 @@ const PrototypeMenuItems = [
   },
 ];
 ```
-## 其他(others)
+## 其他(other)
