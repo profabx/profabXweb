@@ -69,7 +69,7 @@ export const NewtNonMetallicMaterialsData = {
   },
 };
 // 表格数据
-export const TableData = [
+const TableData = [
   {
     title: "SLA",
     color: "#ffffff",
