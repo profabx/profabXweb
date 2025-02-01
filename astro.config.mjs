@@ -14,7 +14,7 @@ import { SideBarData } from "./src/constants";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://beta-profabx.github.io",
+  site: "https://profabx.com",
   integrations: [
     starlight({
       title: "ProFabX",
@@ -23,9 +23,7 @@ export default defineConfig({
         light: "./src/assets/dark.png",
         dark: "./src/assets/light.png",
       },
-      defaultLocale: "zh", // optional
-      // defaultLocale: "en",
-
+      defaultLocale: "root", // NOTE 这个是多语言的默认配置。不能修改
       locales: {
         // English docs in `src/content/docs/en/`
         en: {
@@ -37,13 +35,10 @@ export default defineConfig({
         //   label: "简体中文",
         //   lang: "zh-CN",
         // },
-
-        zh: {
+        root: { // NOTE root 为默认语言设置，不能修改
           label: "简体中文",
           lang: "zh-CN", // lang is required for root locales
         },
-
-        // Arabic docs in `src/content/docs/ar/`
       },
       customCss: [
         // Relative path to your custom CSS file
