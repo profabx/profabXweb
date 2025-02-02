@@ -1,5 +1,7 @@
 ---
 title: "3D 打印工程师"
+sidebar:
+  attrs: { id: about }
 description: "我们正在寻找一位对3D打印技术充满热情的工艺工程师，加入我们的工程样机开发团队。"
 date: 2025-02-03
 author: "ProFabX Team"
