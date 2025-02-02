@@ -1,14 +1,18 @@
 ---
-title: <h1 style="text-align:center; color:#0057f1;">关于ProFabX</h1>
-
+title:“ProFabx”
 sidebar:
   attrs: { id: about }
+
+
 ---
 
-<div align=center>
-    <img src="/src/assets/logo.svg" />
-</div>
 
+<style>
+h1 {
+  text-align: center;
+  color: #0057f1;
+}
+</style>
 
 ![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img/whatwedozh.001.png)
 
