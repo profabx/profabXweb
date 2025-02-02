@@ -10,5 +10,13 @@ import { docsSchema, i18nSchema } from "@astrojs/starlight/schema";
 
 export const collections = {
   docs: defineCollection({ schema: docsSchema() }),
-  i18n: defineCollection({ type: "data", schema: i18nSchema() }),
+  i18n: defineCollection({ 
+    type: "content", // 确保是内容集合 (content collection)
+    schema: z.object({
+      title: z.string(),
+      description: z.string().optional(),
+      date: z.string().optional(),
+      author: z.string().optional(),
+   }),
+   }),
 };
