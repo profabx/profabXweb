@@ -294,16 +294,7 @@ const FabMenuItems = [
     linkEn: "https://www.fablabs.io/",
     attrs: { id: "fab" },
   },
-  {
-    label: "探索 Fab",
-    link: "/lab/explorefab/",
-    labelEn: "Explore Fab",
-    translations: {
-      en: "Explore Fab",
-    },
-    linkEn: "/en/lab/explorefab/",
-    attrs: { id: "fab" },
-  },
+
 
 ];
 
@@ -840,6 +831,16 @@ const AGVMenuItems = [
     linkEn: "/en/agvedu/henosv",
     attrs: { id: "agv" },
   },
+  {
+    label: "AGV Case",
+    link: "/agvedu/agvcase",
+    translations: {
+      en: "agvcase",
+    },
+    linkEn: "/en/agvedu/agvcase",
+    attrs: { id: "agv" },
+  },
+  
   
   {
     label: "行业标准",
@@ -1027,7 +1028,60 @@ const MenuData: NavItemProps[] = [
     labelEn: "Fab",
     link: "/fab/fab",
     linkEn: "/en/fab/fab",
-    items: FabMenuItems,
+//    items: FabMenuItems, 
+    items:[
+      {
+        label: "NexMaker Fab 课程",
+        link: "https://www.nexmaker.com/",
+        labelEn: "NexMaker Fab",
+        translations: {
+          en: "NexMaker Fab",
+        },
+        linkEn: "https://www.nexmaker.com/",
+        attrs: { id: "fab" },
+      },
+      {
+        label: "Fab 实验室",
+        link: "/lab/lab",
+        labelEn: "Fab",
+        translations: {
+          en: "Fab",
+        },
+        linkEn: "/en/lab/lab",
+        attrs: { id: "fab" },
+      },
+      {
+        label: "Fab Academy",
+        link: "http://fabacademy.org/",
+        labelEn: "Fab Academy",
+        translations: {
+          en: "Fab Academy",
+        },
+        linkEn: "http://fabacademy.org/",
+        attrs: { id: "fab" },
+      },
+      {
+        label: "MIT Fab Lab 认证",
+        link: "https://www.fablabs.io/",
+        labelEn: "MIT Fab Lab",
+        translations: {
+          en: "MIT Fab Lab",
+        },
+        linkEn: "https://www.fablabs.io/",
+        attrs: { id: "fab" },
+      },
+      {
+        label: "探索 Fab",
+        link: "/lab/explorefab/",
+        labelEn: "Explore Fab",
+        linkEn: "/en/lab/explorefab/",
+        translations: {
+          en: "Explore Fab",
+        },
+        attrs: { id: "fab" },
+      },
+    ]  
+
   },
   {
     key: "prototype",
