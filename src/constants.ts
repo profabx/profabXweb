@@ -255,7 +255,7 @@ const TableData = [
 // 侧边菜单项 - Fab
 const FabMenuItems = [
   {
-    label: "NexMaker Fab 实验室",
+    label: "NexMaker Fab 课程",
     link: "https://www.nexmaker.com/",
     labelEn: "NexMaker Fab",
     translations: {
@@ -294,16 +294,7 @@ const FabMenuItems = [
     linkEn: "https://www.fablabs.io/",
     attrs: { id: "fab" },
   },
-  {
-    label: "AGV 教育方案",
-    link: "/agvedu/agv",
-    labelEn: "AGV",
-    translations: {
-      en: "AGV",
-    },
-    linkEn: "/en/agvedu/agv",
-    attrs: { id: "fab" },
-  },
+
 ];
 
 // 侧边栏菜单项 - Prototype
@@ -321,9 +312,9 @@ const PrototypeMenuItems = [
   },
   {
     label: "金属",
-    link: "/prototype/metal",
+    //link: "/prototype/metal",
     labelEn: "Metal",
-    linkEn: "/en/prototype/material/metal/metal",
+    //linkEn: "/en/prototype/material/metal/metal",
     translations: {
       en: "Metal",
     },
@@ -895,23 +886,13 @@ const AboutItems = [
   {
     
     label: "加入我们",
-    link: "/about/add",
+    //link: "/about/add",
     labelEn: "joinus",
-    linkEn: "/en/about/add",
+    //linkEn: "/en/about/add",
     translations: {
       en: "joinus",
     },
     collapsed: true,
-
-
-
-
-
-
-
-
-
-
 
     items: [
       {
@@ -1037,7 +1018,7 @@ const SideBarData = [
 const MenuData: NavItemProps[] = [
   {
     key: "fab",
-    label: "Fab 课程方案",
+    label: "Fab 方案",
     labelEn: "Fab",
     link: "/fab/fab",
     linkEn: "/en/fab/fab",
@@ -1045,8 +1026,8 @@ const MenuData: NavItemProps[] = [
   },
   {
     key: "prototype",
-    label: "工程样机开发",
-    labelEn: "Prototype",
+    label: "数字制造",
+    labelEn: "digital fabrication",
     link: "/prototype",
     linkEn: "/en/prototype",
     items: [
@@ -1087,39 +1068,69 @@ const MenuData: NavItemProps[] = [
           en: "test",
         },
       },
+      {
+        label: "探索数字制造",
+        labelEn: "explore digital fabrication",
+        link: "/prototype/exploredigitalfabrication",
+        linkEn: "/en/prototype/exploredigitalfabrication",
+        translations: {
+          en: "exploredigitalfabrication",
+        },
+      },
     ],
   },
   {
-    key: "Explore",
-    label: "探索",
-    labelEn: "Explore",
+    key: "traffic",
+    label: "未来交通",
+    labelEn: "futuretraffic",
     items: [
       {
-        label: "NexMaker Fab 实验室",
-        labelEn: "NexMaker Fab",
-        link: "/explore/readme",
-        linkEn: "/en/explore/readme",
+        label: "AGV教育方案",
+        labelEn: "AGV edu",
+        link: "/agvedu/agv",
+        linkEn: "/en/agvedu/agv",
       },
       {
-        label: "沙盘",
-        labelEn: "Sandtable",
-        link: "/sandtable/sandtable",
-        linkEn: "/en/sandtable/sandtable",
+        label: "小车平台",
+        labelEn: "AGV edu",
+        link: "/agvedu/agvplatform",
+        linkEn: "/en/agvedu/agvplatform",
       },
       {
-        label: "AGV",
-        labelEn: "AGV",
-        link: "/agvedu/agvcase",
-        linkEn: "/en/agvedu/agvcase",
+        label: "模拟器",
+        labelEn: "agvsimulator",
+        link: "/agvedu/simulator",
+        linkEn: "/en/agvedu/simulator",
       },
       {
-        label: "文章",
-        labelEn: "Readme",
-        link: "/explore/readme",
-        linkEn: "/en/explore/readme",
+        label: "HenOSV",
+        labelEn: "HenOSV",
+        link: "/agvedu/henosv",
+        linkEn: "/en/agvedu/henosv",
       },
+      {
+        label: "探索未来出行",
+        labelEn: "Explore future traffic",
+        link: "/agvedu/exploretraffic",
+        linkEn: "/en/agvedu/exploretraffic",
+      },
+  
     ],
   },
+
+
+  {
+    label: "AGV 教育方案",
+    link: "/agvedu/agv",
+    labelEn: "AGV",
+    translations: {
+      en: "AGV",
+    },
+    linkEn: "/en/agvedu/agv",
+    attrs: { id: "fab" },
+  },
+
+  111111111
   {
     key: "prototype",
     label: "关于 ProFabX",
