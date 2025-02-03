@@ -33,3 +33,6 @@
   --sl-color-gray-7: #f5f6f8;
   --sl-color-black: #ffffff;
 }
+.page-title {
+  @apply text-center text-[#0057f1] text-3xl font-bold;
+}
