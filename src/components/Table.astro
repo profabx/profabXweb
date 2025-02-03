@@ -1,11 +1,15 @@
 ---
-import { TableData } from "../constants";
+import TableData from "../datas/TableData";
+import EN_TableData from "../datas/en/TableData";
 import { LeftSide, RightSide, CenterSide } from "./TableCardElement";
+
+const { lang } = Astro.props;
+const tableData = lang === "en" ? EN_TableData : TableData;
 ---
 
 <div class="not-content flex flex-col gap-12 items-center">
   {
-    TableData.map((item) => (
+    tableData.map((item) => (
       <div class="w-full grid xl:grid-cols-10 grid-cols-3 gap-4 items-center">
         <div class="xl:col-span-4 col-span-1">
           <LeftSide item={item} />

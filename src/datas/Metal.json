@@ -1,0 +1,22 @@
+{
+  "铁/钢": {
+    "label": "铁钢",
+    "color": "#C8E709",
+    "href": "/prototype/ss"
+  },
+  "铝/合金": {
+    "label": "铝/合金",
+    "color": "#E3E709",
+    "href": "/prototype/al"
+  },
+  "铜/合金": {
+    "label": "铜/合金",
+    "color": "#E7D109",
+    "href": "/prototype/cu"
+  },
+  "钛/合金": {
+    "label": "钛/合金",
+    "color": "#E7D109",
+    "href": "/prototype/ti"
+  }
+}

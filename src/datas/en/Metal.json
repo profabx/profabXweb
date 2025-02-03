@@ -1,0 +1,22 @@
+{
+  "iron/steel": {
+    "label": "Iron/Steel",
+    "color": "#C8E709",
+    "href": "/en/prototype/ss"
+  },
+  "aluminum/alloy": {
+    "label": "Aluminum/Alloy",
+    "color": "#E3E709",
+    "href": "/en/prototype/al"
+  },
+  "copper/alloy": {
+    "label": "Copper/Alloy",
+    "color": "#E7D109",
+    "href": "/en/prototype/cu"
+  },
+  "titanium/alloy": {
+    "label": "Titanium/Alloy",
+    "color": "#E7D109",
+    "href": "/en/prototype/ti"
+  }
+}

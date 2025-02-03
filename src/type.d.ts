@@ -9,3 +9,9 @@ export type NavItemBasicProps = {
 export type NavItemProps = {
   items?: any[];
 } & NavItemBasicProps;
+
+export interface MaterialItem {
+  label: string;
+  color: string;
+  href: string;
+}

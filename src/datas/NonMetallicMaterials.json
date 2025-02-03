@@ -1,0 +1,42 @@
+{
+  "石英": {
+    "label": "石英",
+    "color": "#17F47D",
+    "href": "/prototype/quartz"
+  },
+  "PC": {
+    "label": "PC",
+    "color": "#17F47D",
+    "href": "/prototype/pc"
+  },
+  "PP": {
+    "label": "PP",
+    "color": "#17F4DA",
+    "href": "/prototype/pp"
+  },
+  "peek": {
+    "label": "peek",
+    "color": "#1F6ADC",
+    "href": "/prototype/peek"
+  },
+  "树脂": {
+    "label": "树脂",
+    "color": "#8CE21F",
+    "href": "/prototype/resin"
+  },
+  "TPU": {
+    "label": "TPU",
+    "color": "#2320A4",
+    "href": "/prototype/tpu"
+  },
+  "尼龙": {
+    "label": "尼龙",
+    "color": "#0C0B13",
+    "href": "/prototype/nylon"
+  },
+  "ABS": {
+    "label": "ABS",
+    "color": "#A5A3AE",
+    "href": "/prototype/abs"
+  }
+}
