@@ -4,5 +4,5 @@ sidebar:
   attrs: { id: about }
 ---
 
-* 地址：中国浙江省宁波市鄞州区下应街道汇聚里创业园1-120
-* 邮箱：bobwu@profabx.com
+邮箱：service@profabx.com
+地址：浙江省宁波市鄞州区清逸路218弄‌‌D3 5楼

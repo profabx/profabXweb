@@ -55,24 +55,20 @@ ProFabX 的初心始终未变。从四驱兄弟的童年梦想，到 2014 年开
 
 一个不安分的 maker，做过电动车研发，做过3D打印，做过创客空间，做过老师，搬过砖，学并运营过 Fab Academy。现在和小伙伴一起运维ProFabX。
 
-## 加入我们
-
-加入 ProFabX 的创新探险！如果你是一名工程师、设计师、算法专家，或是对硬件创新充满热情的创客，欢迎加入我们。我们正在寻找那些敢于挑战现状、勇于突破边界的创新者。让我们一起，用技术的力量重塑未来！
-
-我们需要更多的全职、实习人员加入ProFabX，可以通过[邮箱](bobwu@profabx.com)联系
-* [工艺工程师（3D打印方向）](/src/content/docs/people/3dprinting.md)
-* [工艺工程师（CNC方向）](/src/content/docs/people/cnc.md)
-* [工艺工程师（模具方向）]()
-* [CMF设计师](/src/content/docs/people/cmf.md)
-* [车辆结构工程师](/src/content/docs/people/vehicle.md)
-* [设计仿真平台工程师](/src/content/docs/people/api.md)
-* [机器人工程师（传感方向）](/src/content/docs/people/sensor.md)
-* [机器人工程师（动力域方向）](/src/content/docs/people/motor.md)
-* [机器人工程师（嵌入式硬件）]()
-* [新媒体运营]()
-
-## 联系我们
-
-* 邮箱：[service@profabx.com](service@profabx.com)
-* 地址：浙江省宁波市鄞州区清逸路218弄‌‌D3 5楼
-
+ 
+ // * [工艺工程师（3D打印方向）](/about/3dprinting/)
+ // * [工艺工程师（CNC方向）](/about/cnc/)
+ // * [CMF设计师](/about/cmf/)
+ // * [车辆结构工程师](/about/vehicle/)
+ // * [设计仿真平台工程师](/about/api/)
+ // * [机器人工程师（传感方向）](/about/sensor/)
+ // * [机器人工程师（动力域方向）](/about/motor/)
+ // * [机器人工程师（嵌入式硬件）](#)
+ // * [新媒体运营](#)
+ 
+ ## 联系我们
+ 
+ * 邮箱：[service@profabx.com](service@profabx.com)
+ * 地址：浙江省宁波市鄞州区清逸路218弄‌‌D3 5楼
+ 
+ 

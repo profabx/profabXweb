@@ -56,18 +56,5 @@ ProFabX 的初心始终未变。从四驱兄弟的童年梦想，到 2014 年开
 
 我们需要更多的全职、实习人员加入ProFabX，可以通过[邮箱](bobwu@profabx.com)联系
 
-* [工艺工程师（3D打印方向）](/about/3dprinting/)
-* [工艺工程师（CNC方向）](/about/cnc/)
-* [CMF设计师](/about/cmf/)
-* [车辆结构工程师](/about/vehicle/)
-* [设计仿真平台工程师](/about/api/)
-* [机器人工程师（传感方向）](/about/sensor/)
-* [机器人工程师（动力域方向）](/about/motor/)
-* [机器人工程师（嵌入式硬件）](#)
-* [新媒体运营](#)
 
-## 联系我们
-
-* 邮箱：[service@profabx.com](service@profabx.com)
-* 地址：浙江省宁波市鄞州区清逸路218弄‌‌D3 5楼
 
