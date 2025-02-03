@@ -18,6 +18,10 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "ProFabX",
+      sidebar: SideBarData,
+      content: {
+        collections: ["docs"], // ✅ 让 Starlight 解析 `docs`
+      },
       tableOfContents: false,
       logo: {
         light: "./src/assets/dark.png",
