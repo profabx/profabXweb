@@ -8,7 +8,7 @@ interface MaterialItem {
 }
 
 // 金属数据 V2 - 改写成字典
-export const NewtMetallicMaterialsData = {
+export const metalData = {
   "铁/钢": {
     label: "铁钢",
     color: "#C8E709",
@@ -30,6 +30,11 @@ export const NewtMetallicMaterialsData = {
     href: "/prototype/ti",
   },
 };
+
+//塑料
+//陶瓷
+//复合材料
+//木头
 
 // 非金属数据 V2
 export const NewtNonMetallicMaterialsData: Record<string, MaterialItem> = {
@@ -76,6 +81,8 @@ export const NewtNonMetallicMaterialsData: Record<string, MaterialItem> = {
 };
 // prototype表格数据
 const TableData = [
+
+  //sla
   {
     title: "SLA",
     color: "#E7D109",
@@ -85,6 +92,7 @@ const TableData = [
     
     right: [],
   },
+  //fdm
   {
     title: "FDM",
     color: "#ffffff",
@@ -96,12 +104,14 @@ const TableData = [
     ],
     right: [NewtMetallicMaterialsData["铁/钢"]],
   },
+  //lcd/dlp
   {
     title: "LCD/DLP",
     color: "#ffffff",
     left: [NewtNonMetallicMaterialsData["石英"]],
     right: [],
   },
+  //mjf
   {
     title: "MJF",
     color: "#ffffff",
@@ -114,6 +124,7 @@ const TableData = [
       NewtMetallicMaterialsData["铝/合金"],
     ],
   },
+  //sls
   {
     title: "SLS",
     color: "#ffffff",
@@ -124,7 +135,7 @@ const TableData = [
     ],
     right: [],
   },
-
+  //slm
   {
     title: "SLM",
     color: "#ffffff",
@@ -133,6 +144,13 @@ const TableData = [
       NewtMetallicMaterialsData["铁/钢"],
       NewtMetallicMaterialsData["铝/合金"],
     ],
+  },
+//polyjet
+  {
+    title: "PolyJet",
+    color: "#ffffff",
+    left: [ NewtNonMetallicMaterialsData["树脂"],],
+    right: [],
   },
   // ...
   {
@@ -192,7 +210,7 @@ const TableData = [
       NewtNonMetallicMaterialsData["ABS"],
     ],
     right: [
-      NewtMetallicMaterialsData["铁/钢"],
+      metalData["铁/钢"],
       NewtMetallicMaterialsData["铝/合金"],
       NewtMetallicMaterialsData["铜/合金"],
       NewtMetallicMaterialsData["钛/合金"],
