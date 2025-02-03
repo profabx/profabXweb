@@ -38,42 +38,42 @@ export const metalData = {
 
 // 非金属数据 V2
 export const NewtNonMetallicMaterialsData: Record<string, MaterialItem> = {
-  "石英": {
+  石英: {
     label: "石英",
     color: "#17F47D",
     href: "/prototype/quartz",
   },
-  "PC": {
+  PC: {
     label: "PC",
     color: "#17F47D",
     href: "/prototype/pc",
   },
-  "PP": {
+  PP: {
     label: "PP",
     color: "#17F4DA",
     href: "/prototype/pp",
   },
-  "peek": {
+  peek: {
     label: "peek",
     color: "#1F6ADC",
     href: "/prototype/peek",
   },
-  "树脂": {
+  树脂: {
     label: "树脂",
     color: "#8CE21F",
     href: "/prototype/resin",
   },
-  "TPU": {
+  TPU: {
     label: "TPU",
     color: "#2320A4",
     href: "/prototype/tpu",
   },
-  "尼龙": {
+  尼龙: {
     label: "尼龙",
     color: "#0C0B13",
     href: "/prototype/nylon",
   },
-  "ABS": {
+  ABS: {
     label: "ABS",
     color: "#A5A3AE",
     href: "/prototype/abs",
@@ -81,15 +81,14 @@ export const NewtNonMetallicMaterialsData: Record<string, MaterialItem> = {
 };
 // prototype表格数据
 const TableData = [
-
   //sla
   {
     title: "SLA",
     color: "#E7D109",
     // 直接用非金属「字典」中的 石英 / PC
-    
+
     left: ["石英", "PC"].map((key) => NewtNonMetallicMaterialsData[key]),
-    
+
     right: [],
   },
   //fdm
@@ -102,7 +101,7 @@ const TableData = [
       NewtNonMetallicMaterialsData["PP"],
       NewtNonMetallicMaterialsData["树脂"],
     ],
-    right: [NewtMetallicMaterialsData["铁/钢"]],
+    right: [metalData["铁/钢"]],
   },
   //lcd/dlp
   {
@@ -120,8 +119,8 @@ const TableData = [
       NewtNonMetallicMaterialsData["PC"],
     ],
     right: [
-      NewtMetallicMaterialsData["铁/钢"],
-      NewtMetallicMaterialsData["铝/合金"],
+      metalData["铁/钢"],
+      metalData["铝/合金"],
     ],
   },
   //sls
@@ -141,15 +140,15 @@ const TableData = [
     color: "#ffffff",
     left: [],
     right: [
-      NewtMetallicMaterialsData["铁/钢"],
-      NewtMetallicMaterialsData["铝/合金"],
+      metalData["铁/钢"],
+      metalData["铝/合金"],
     ],
   },
-//polyjet
+  //polyjet
   {
     title: "PolyJet",
     color: "#ffffff",
-    left: [ NewtNonMetallicMaterialsData["树脂"],],
+    left: [NewtNonMetallicMaterialsData["树脂"]],
     right: [],
   },
   // ...
@@ -167,17 +166,17 @@ const TableData = [
       NewtNonMetallicMaterialsData["ABS"],
     ],
     right: [
-      NewtMetallicMaterialsData["铁/钢"],
-      NewtMetallicMaterialsData["铝/合金"],
-      NewtMetallicMaterialsData["铜/合金"],
-      NewtMetallicMaterialsData["钛/合金"],
+      metalData["铁/钢"],
+      metalData["铝/合金"],
+      metalData["铜/合金"],
+      metalData["钛/合金"],
     ],
   },
 
   {
     title: "铣",
     color: "#ffffff",
-    // 原先写法: left: NewtNonMetallicMaterialsData, right: NewtMetallicMaterialsData
+    // 原先写法: left: NewtNonMetallicMaterialsData, right: metalData
     // 现在改为：手动列出所有需要的非金属、金属（逐个写键名）
     left: [
       NewtNonMetallicMaterialsData["石英"],
@@ -190,10 +189,10 @@ const TableData = [
       NewtNonMetallicMaterialsData["ABS"],
     ],
     right: [
-      NewtMetallicMaterialsData["铁/钢"],
-      NewtMetallicMaterialsData["铝/合金"],
-      NewtMetallicMaterialsData["铜/合金"],
-      NewtMetallicMaterialsData["钛/合金"],
+      metalData["铁/钢"],
+      metalData["铝/合金"],
+      metalData["铜/合金"],
+      metalData["钛/合金"],
     ],
   },
   {
@@ -211,20 +210,20 @@ const TableData = [
     ],
     right: [
       metalData["铁/钢"],
-      NewtMetallicMaterialsData["铝/合金"],
-      NewtMetallicMaterialsData["铜/合金"],
-      NewtMetallicMaterialsData["钛/合金"],
+      metalData["铝/合金"],
+      metalData["铜/合金"],
+      metalData["钛/合金"],
     ],
   },
   {
     title: "激光切割",
     color: "#ffffff",
-    // 原先是 left: [], right: NewtMetallicMaterialsData.slice(0,2)
+    // 原先是 left: [], right: metalData.slice(0,2)
     // 即只包含 金属数组的前2项 => “铁/钢” & “铝/合金”
     left: [],
     right: [
-      NewtMetallicMaterialsData["铁/钢"],
-      NewtMetallicMaterialsData["铝/合金"],
+      metalData["铁/钢"],
+      metalData["铝/合金"],
     ],
   },
   {
@@ -259,15 +258,13 @@ const TableData = [
     title: "钣金",
     color: "#ffffff",
     left: [],
-    // 原先 right: NewtMetallicMaterialsData.slice(0,2)
+    // 原先 right: metalData.slice(0,2)
     // => “铁/钢”、“铝/合金”
     right: [
-      NewtMetallicMaterialsData["铁/钢"],
-      NewtMetallicMaterialsData["铝/合金"],
+      metalData["铁/钢"],
+      metalData["铝/合金"],
     ],
   },
-
-  
 ];
 
 // 侧边菜单项 - Fab
@@ -312,8 +309,6 @@ const FabMenuItems = [
     linkEn: "https://www.fablabs.io/",
     attrs: { id: "fab" },
   },
-
-
 ];
 
 // 侧边栏菜单项 - Prototype
@@ -350,7 +345,7 @@ const PrototypeMenuItems = [
         },
         attrs: { id: "prototype" },
       },
- 
+
       //ALEND CU BEGIN
       {
         label: "铜",
@@ -382,12 +377,9 @@ const PrototypeMenuItems = [
         },
         attrs: { id: "prototype" },
       },
-      
-      
-   
     ],
   },
-//塑料
+  //塑料
   {
     label: "塑料",
     labelEn: "Polymers",
@@ -406,7 +398,7 @@ const PrototypeMenuItems = [
         },
         attrs: { id: "prototype" },
       },
- 
+
       {
         label: "尼龙",
         link: "/prototype/pa",
@@ -477,7 +469,7 @@ const PrototypeMenuItems = [
         },
         attrs: { id: "prototype" },
       },
-      
+
       {
         label: "TPU",
         link: "/prototype/tpu",
@@ -508,9 +500,6 @@ const PrototypeMenuItems = [
         },
         attrs: { id: "prototype" },
       },
-      
-      
-   
     ],
   },
   //cerma
@@ -542,7 +531,7 @@ const PrototypeMenuItems = [
         },
         attrs: { id: "prototype" },
       },
-      
+
       {
         label: "复合材料",
         labelEn: "composites",
@@ -606,7 +595,7 @@ const PrototypeMenuItems = [
       },
     ],
   },
-  
+
   {
     label: "制造工艺",
     labelEn: "manufacture",
@@ -695,7 +684,6 @@ const PrototypeMenuItems = [
         linkEn: "/en/postprocess/metalpost",
         attrs: { id: "prototype" },
       },
-      
     ],
   },
   {
@@ -815,7 +803,6 @@ const AGVMenuItems = [
     },
     linkEn: "/en/agvedu/agv",
     attrs: { id: "agv" },
-
   },
   {
     label: "概念与趋势",
@@ -837,7 +824,6 @@ const AGVMenuItems = [
     },
     linkEn: "/en/agvedu/agvplatform",
     attrs: { id: "agv" },
-
   },
   {
     label: "模拟器",
@@ -848,8 +834,6 @@ const AGVMenuItems = [
     },
     linkEn: "/en/agvedu/simulator",
     attrs: { id: "agv" },
-
-
   },
   {
     label: "HenOSV",
@@ -869,8 +853,7 @@ const AGVMenuItems = [
     linkEn: "/en/agvedu/agvcase",
     attrs: { id: "agv" },
   },
-  
-  
+
   {
     label: "行业标准",
     link: "/agvedu/authentication",
@@ -919,7 +902,6 @@ const AboutItems = [
     attrs: { id: "about" },
   },
   {
-    
     label: "加入我们",
     //link: "/about/add",
     labelEn: "joinus",
@@ -1003,7 +985,6 @@ const AboutItems = [
       // ... 其他职位可以继续添加 ...
     ],
   },
-
 ];
 
 // 侧边栏菜单
@@ -1051,14 +1032,14 @@ const SideBarData = [
 
 // 顶部菜单
 const MenuData: NavItemProps[] = [
-//nav-fab
+  //nav-fab
   {
     key: "fab",
     label: "Fab 方案",
     labelEn: "Fab",
     link: "/fab/fab",
     linkEn: "/en/fab/fab",
-    items:[
+    items: [
       {
         label: "NexMaker Fab 课程",
         link: "https://www.nexmaker.com/",
@@ -1109,10 +1090,9 @@ const MenuData: NavItemProps[] = [
         },
         attrs: { id: "fab" },
       },
-    ]  
-
+    ],
   },
-//nav-prototype
+  //nav-prototype
   {
     key: "prototype",
     label: "数字制造",
@@ -1142,7 +1122,7 @@ const MenuData: NavItemProps[] = [
       {
         label: "后处理",
         labelEn: "Post-processing",
-        link: "/prototype/polishing", 
+        link: "/prototype/polishing",
         linkEn: "/en/prototype/polishing",
         translations: {
           en: "Post-processing",
@@ -1178,7 +1158,7 @@ const MenuData: NavItemProps[] = [
       },
     ],
   },
-//nav-traffic  
+  //nav-traffic
   {
     key: "traffic",
     label: "未来交通",
@@ -1216,11 +1196,10 @@ const MenuData: NavItemProps[] = [
         link: "/agvedu/exploretraffic",
         linkEn: "/en/agvedu/exploretraffic",
       },
-  
     ],
   },
 
-//nav-about
+  //nav-about
   {
     key: "prototype",
     label: "关于 ProFabX",
