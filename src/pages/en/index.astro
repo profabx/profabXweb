@@ -1,0 +1,91 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Card from "../../components/Card.astro";
+import LanguageSelect from "../../components/LanguageSelect.astro";
+---
+
+<Layout title="Welcome to ProFabX.">
+  <LanguageSelect />
+  <main>
+    <div class="container">
+      <img src="/hero.png" alt="logo" />
+    </div>
+    <h1>Welcome to <span class="text-gradient">ProFabX</span></h1>
+
+    <ul role="list" class="link-card-grid">
+      <Card
+        href="/en/lab/lab"
+        title="NexMaker-Fab Course"
+        body="Introduction to related courses and laboratory solutions"
+      />
+      <Card
+        href="/en/prototype"
+        title="Engineering Prototype Development"
+        body="We provide services related to the production of prototypes"
+      />
+      <Card
+        href="/en/agvedu/agvcase"
+        title="Unmanned Vehicle Solution"
+        body="coming soon"
+      />
+      <Card
+        href="/en/sandtable/sandtable"
+        title="Digital Sandtable Solution"
+        body="We will gradually share our case studies in digital sandtable"
+      />
+    </ul>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: var(--pro-accent-light);
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .astro-a {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 220px;
+    height: auto;
+    z-index: -1;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .text-gradient {
+    color: rgba(var(--pro-accent));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    padding: 0;
+  }
+
+  @media (max-width: 640px) {
+    .link-card-grid {
+      gap: 1rem;
+    }
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .container img {
+    width: 80%;
+  }
+</style>
