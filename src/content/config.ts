@@ -1,30 +1,13 @@
-/*
- * @Describle:
- * @Author: Stan <stan4cy@gmail.com>
- * @Date: 2023-11-05 14:43:08
- * @LastEditors: Stan
- * @LastEditTime: 2023-11-05 14:43:15
- */
-import { defineCollection, z } from "astro:content"; // ✅ 添加 `z` 导入
+import { defineCollection } from "astro:content";
 import { docsSchema, i18nSchema } from "@astrojs/starlight/schema";
 
 export const collections = {
-  docs: defineCollection({ 
-    type: "content",  // ✅ 让 `docs` 目录解析 Markdown
-    schema: z.object({
-      title: z.string(),
-      description: z.string().optional(),
-      date: z.string().optional(),
-      author: z.string().optional(),
-    }),
-   }),
-  i18n: defineCollection({ 
-    type: "content", // 确保是内容集合 (content collection)
-    schema: z.object({  // ✅ 这里的 `z` 需要导入，否则报错
-      title: z.string(),
-      description: z.string().optional(),
-      date: z.string().optional(),
-      author: z.string().optional(),
-    }),
+  docs: defineCollection({
+    type: "content",  // 确保 docs 作为内容集合
+    schema: docsSchema(),  // 使用 docsSchema() 来定义 schema
+  }),
+  i18n: defineCollection({
+    type: "content", // 确保 i18n 作为内容集合
+    schema: i18nSchema(),  // 使用 i18nSchema() 来定义 schema
   }),
 };
