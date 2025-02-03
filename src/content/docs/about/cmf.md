@@ -1,9 +1,8 @@
 ---
 title: "CMF设计师"
-description: "我们正在寻找一位具有创新思维的CMF设计师。"
 sidebar:
-  label: "CMF设计师"
-  order: 3
+  attrs:
+    id: about
 ---
 1. 职位描述
 我们正在寻找一位对CMF充满热情的工程师，加入我们的创新团队。你将主要负责CMF工艺的研究、测试与应用，设计CMF工艺墙，制作交互装置，并通过操作相关设备制作高质量的模型。

@@ -1,9 +1,8 @@
 ---
 title: "工艺工程师（3D打印方向）"
-description: "我们正在寻找一位对3D打印技术充满热情的工艺工程师，加入我们的工程样机开发团队。"
 sidebar:
-  label: "工艺工程师(3D打印方向)"
-  order: 1
+  attrs:
+    id: about
 ---
 
 1. 职位描述
