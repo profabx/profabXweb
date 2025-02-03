@@ -294,6 +294,16 @@ const FabMenuItems = [
     linkEn: "https://www.fablabs.io/",
     attrs: { id: "fab" },
   },
+  {
+    label: "探索 Fab",
+    link: "/lab/explorefab/",
+    labelEn: "Explore Fab",
+    translations: {
+      en: "Explore Fab",
+    },
+    linkEn: "/en/lab/explorefab/",
+    attrs: { id: "fab" },
+  },
 
 ];
 
@@ -788,56 +798,51 @@ const AGVMenuItems = [
     attrs: { id: "agv" },
   },
   {
-    label: "参数定义",
-    link: "/agvedu/parameters",
-    labelEn: "parameters",
+    label: "AGV教育方案",
+    link: "/agvedu/agv",
+    labelEn: "AGV edu",
     translations: {
       en: "parameters",
     },
-    linkEn: "/en/agvedu/parameters",
+    linkEn: "/en/agvedu/agv",
     attrs: { id: "agv" },
+
   },
   {
-    label: "电控",
-    link: "/agvedu/eee",
-    labelEn: "eee",
+    label: "小车平台",
+    link: "/agvedu/agvplatform",
+    labelEn: "AGV edu",
     translations: {
       en: "eee",
     },
-    linkEn: "/en/agvedu/eee",
+    linkEn: "/en/agvedu/agvplatform",
     attrs: { id: "agv" },
+
   },
   {
-    label: "算法",
-    link: "/agvedu/algorithm",
-    labelEn: "algorithm",
+    label: "模拟器",
+    link: "/agvedu/simulator",
+    labelEn: "agvsimulator",
     translations: {
       en: "algorithm",
     },
-    linkEn: "/en/agvedu/algorithm",
+    linkEn: "/en/agvedu/simulator",
     attrs: { id: "agv" },
+
+
   },
   {
-    label: "结构",
-    link: "/agvedu/me",
+    label: "HenOSV",
+    link: "/agvedu/henosv",
     translations: {
-      en: "me",
+      en: "henosv",
     },
-    linkEn: "/en/agvedu/me",
+    linkEn: "/en/agvedu/henosv",
     attrs: { id: "agv" },
   },
+  
   {
-    label: "调试",
-    link: "/agvedu/debug",
-    labelEn: "debug",
-    translations: {
-      en: "debug",
-    },
-    linkEn: "/en/agvedu/debug",
-    attrs: { id: "agv" },
-  },
-  {
-    label: "认证",
+    label: "行业标准",
     link: "/agvedu/authentication",
     labelEn: "authentication",
     translations: {
@@ -1033,12 +1038,12 @@ const MenuData: NavItemProps[] = [
     items: [
       {
         label: "材料",
-        link: "/prototype/metall",
-        labelEn: "Metall",
+        link: "/prototype/metal",
+        labelEn: "Metal",
         translations: {
           en: "Metall",
         },
-        linkEn: "/en/prototype/metall",
+        linkEn: "/en/prototype/metal",
         attrs: { id: "prototype" },
       },
       {

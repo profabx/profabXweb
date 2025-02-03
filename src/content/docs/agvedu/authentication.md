@@ -1,5 +1,5 @@
 ---
-title: Authentication
+title: 行业标准
 sidebar:
   attrs: { id: agv }
 ---
