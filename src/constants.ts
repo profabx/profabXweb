@@ -892,6 +892,88 @@ const AboutItems = [
     linkEn: "/en/about/contact",
     attrs: { id: "about" },
   },
+  {
+    label: "加入我们",
+    labelEn: "Join Us",
+    translations: {
+      en: "Join Us",
+    },
+    collapsed: true,
+    items: [
+      {
+        label: "工艺工程师(3D打印方向)",
+        link: "/about/3dprinting",
+        linkEn: "/en/about/3dprinting",
+        labelEn: "Process Engineer (3D Printing)",
+        translations: {
+          en: "Process Engineer (3D Printing)",
+        },
+        attrs: { id: "about" },
+      },
+      {
+        label: "工艺工程师(CNC方向)",
+        link: "/about/cnc/",
+        linkEn: "/en/about/cnc/",
+        labelEn: "Process Engineer (CNC)",
+        translations: {
+          en: "Process Engineer (CNC)",
+        },
+        attrs: { id: "about" },
+      },
+      {
+        label: "CMF设计师",
+        link: "/about/cmf/",
+        linkEn: "/en/about/cmf/",
+        labelEn: "CMF designer",
+        translations: {
+          en: "CMF designer",
+        },
+        attrs: { id: "about" },
+      },
+      {
+        label: "车辆结构工程师",
+        link: "/about/vehicle/",
+        linkEn: "/en/about/vehicle/",
+        labelEn: "vehicle engineer",
+        translations: {
+          en: "vehicle engineer",
+        },
+        attrs: { id: "about" },
+      },
+      {
+        label: "设计仿真平台工程师",
+        link: "/about/api/",
+        linkEn: "/en/about/api/",
+        labelEn: "simulation engineer",
+        translations: {
+          en: "simulation engineer",
+        },
+        attrs: { id: "about" },
+      },
+      {
+        label: "机器人工程师（传感方向）",
+        link: "/about/sensor/",
+        linkEn: "/en/about/sensor/",
+        labelEn: "sensor engineer",
+        translations: {
+          en: "sensor engineer",
+        },
+        attrs: { id: "about" },
+      },
+      {
+        label: "机器人工程师（动力域）",
+        link: "/about/motor/",
+        linkEn: "/en/about/motor/",
+        labelEn: "motor engineer",
+        translations: {
+          en: "motor engineer",
+        },
+        attrs: { id: "about" },
+      },
+      // ... 其他职位可以继续添加 ...
+    ],
+  },
+
 ];
 
 // 侧边栏菜单
