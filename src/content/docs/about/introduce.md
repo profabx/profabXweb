@@ -5,10 +5,7 @@ sidebar:
     id: about
 ---
 
-
-![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img/whatwedozh.001.png)
-
-
+![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img/ProFabX%20.001.png)
 
 
 

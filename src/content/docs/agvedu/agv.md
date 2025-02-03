@@ -1,7 +1,6 @@
 ---
-title: AGV教育方案
+title: 汽车场景实验室
 sidebar:
   attrs: { id: agv }
 ---
-
-![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img/WX20250113-232828%402x.png)
+![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img/henosv2.001.png)

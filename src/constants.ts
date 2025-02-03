@@ -74,7 +74,7 @@ export const NewtNonMetallicMaterialsData: Record<string, MaterialItem> = {
     href: "/prototype/abs",
   },
 };
-// 表格数据
+// prototype表格数据
 const TableData = [
   {
     title: "SLA",
@@ -789,7 +789,7 @@ const SandtableMenuItems = [
 // 侧边菜单项 - AGV
 const AGVMenuItems = [
   {
-    label: "/",
+    label: "汽车场景实验室概况",
     link: "/agvedu/agv",
     labelEn: "AGV edu",
     translations: {
