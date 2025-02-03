@@ -57,14 +57,14 @@ ProFabX 的初心始终未变。从四驱兄弟的童年梦想，到 2014 年开
 加入 ProFabX 的创新探险！如果你是一名工程师、设计师、算法专家，或是对硬件创新充满热情的创客，欢迎加入我们。我们正在寻找那些敢于挑战现状、勇于突破边界的创新者。让我们一起，用技术的力量重塑未来！
 
 我们需要更多的全职、实习人员加入ProFabX，可以通过[邮箱](bobwu@profabx.com)联系
-* [工艺工程师（3D打印方向）](/src/content/docs/about/3dprinting.md)
-* [工艺工程师（CNC方向）](/src/content/docs/about/cnc.md)
+* [工艺工程师（3D打印方向）](/docs/about/3dprinting.md)
+* [工艺工程师（CNC方向）](/docs/about/cnc.md)
 * [工艺工程师（模具方向）](#加入我们)
-* [CMF设计师](/src/content/docs/about/cmf.md)
-* [车辆结构工程师](/src/content/docs/about/vehicle.md)
-* [设计仿真平台工程师](/src/content/docs/about/api.md)
-* [机器人工程师（传感方向）](/src/content/docs/about/sensor.md)
-* [机器人工程师（动力域方向）](/src/content/docs/about/motor.md)
+* [CMF设计师](/docs/about/cmf.md)
+* [车辆结构工程师](/docs/about/vehicle.md)
+* [设计仿真平台工程师](/docs/about/api.md)
+* [机器人工程师（传感方向）](/docs/about/sensor.md)
+* [机器人工程师（动力域方向）](/docs/about/motor.md)
 * [机器人工程师（嵌入式硬件）](#)
 * [新媒体运营](#)
 
