@@ -728,6 +728,7 @@ const PrototypeMenuItems = [
     translations: {
       en: "digital sandtabl",
     },
+    attrs: { id: "prototype" },
   },
 ];
 
@@ -1144,6 +1145,7 @@ const MenuData: NavItemProps[] = [
         translations: {
           en: "digital sandtabl",
         },
+        attrs: { id: "prototype" },
       },
       {
         label: "探索数字制造",
