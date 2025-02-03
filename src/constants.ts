@@ -720,6 +720,15 @@ const PrototypeMenuItems = [
       },
     ],
   },
+  {
+    label: "数字沙盘",
+    labelEn: "digital sandtable",
+    link: "/prototype/sandtable",
+    linkEn: "/en/prototype/sandtable",
+    translations: {
+      en: "digital sandtabl",
+    },
+  },
 ];
 
 // 侧边菜单项 - Sandtable
@@ -1072,9 +1081,9 @@ const MenuData: NavItemProps[] = [
       },
       {
         label: "探索 Fab",
-        link: "/lab/explorefab/",
+        link: "/lab/explorefab",
         labelEn: "Explore Fab",
-        linkEn: "/en/lab/explorefab/",
+        linkEn: "/en/lab/explorefab",
         translations: {
           en: "Explore Fab",
         },
@@ -1125,6 +1134,15 @@ const MenuData: NavItemProps[] = [
         linkEn: "/en/prototype/hardness",
         translations: {
           en: "test",
+        },
+      },
+      {
+        label: "数字沙盘",
+        labelEn: "digital sandtable",
+        link: "/prototype/sandtable",
+        linkEn: "/en/prototype/sandtable",
+        translations: {
+          en: "digital sandtabl",
         },
       },
       {

@@ -4,4 +4,6 @@ sidebar:
   attrs: { id: fab }
 ---
 
-we want to explore more from fab
+* 课程的可持续性
+* 课程的社会价值
+* Fab课程，STEAM,创客教育关系
