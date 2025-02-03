@@ -3,6 +3,8 @@ import TableData from "../datas/TableData";
 import EN_TableData from "../datas/en/TableData";
 import { LeftSide, RightSide, CenterSide } from "./TableCardElement";
 
+import type { Props } from "@astrojs/starlight/props";
+
 const { lang } = Astro.props;
 const tableData = lang === "en" ? EN_TableData : TableData;
 ---
