@@ -321,9 +321,9 @@ const PrototypeMenuItems = [
   },
   {
     label: "金属",
-    //link: "/prototype/metal",
+    link: "/prototype/metal",
     labelEn: "Metal",
-    //linkEn: "/en/prototype/material/metal/metal",
+    linkEn: "/en/prototype/material/metal/metal",
     translations: {
       en: "Metal",
     },
@@ -893,12 +893,26 @@ const AboutItems = [
     attrs: { id: "about" },
   },
   {
+    
     label: "加入我们",
-    labelEn: "Join Us",
+    link: "/about/add",
+    labelEn: "joinus",
+    linkEn: "/en/about/add",
     translations: {
-      en: "Join Us",
+      en: "joinus",
     },
     collapsed: true,
+
+
+
+
+
+
+
+
+
+
+
     items: [
       {
         label: "工艺工程师(3D打印方向)",
