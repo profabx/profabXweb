@@ -1119,16 +1119,7 @@ const MenuData: NavItemProps[] = [
   },
 
 
-  {
-    label: "AGV 教育方案",
-    link: "/agvedu/agv",
-    labelEn: "AGV",
-    translations: {
-      en: "AGV",
-    },
-    linkEn: "/en/agvedu/agv",
-    attrs: { id: "fab" },
-  },
+
 
 
   {
