@@ -789,17 +789,7 @@ const SandtableMenuItems = [
 // 侧边菜单项 - AGV
 const AGVMenuItems = [
   {
-    label: "概念与趋势",
-    link: "/agvedu/basic",
-    labelEn: "basic",
-    translations: {
-      en: "basic",
-    },
-    linkEn: "/en/agvedu/basic",
-    attrs: { id: "agv" },
-  },
-  {
-    label: "AGV教育方案",
+    label: "/",
     link: "/agvedu/agv",
     labelEn: "AGV edu",
     translations: {
@@ -809,6 +799,17 @@ const AGVMenuItems = [
     attrs: { id: "agv" },
 
   },
+  {
+    label: "概念与趋势",
+    link: "/agvedu/basic",
+    labelEn: "basic",
+    translations: {
+      en: "basic",
+    },
+    linkEn: "/en/agvedu/basic",
+    attrs: { id: "agv" },
+  },
+
   {
     label: "小车平台",
     link: "/agvedu/agvplatform",
@@ -1032,13 +1033,13 @@ const SideBarData = [
 
 // 顶部菜单
 const MenuData: NavItemProps[] = [
+//nav-fab
   {
     key: "fab",
     label: "Fab 方案",
     labelEn: "Fab",
     link: "/fab/fab",
     linkEn: "/en/fab/fab",
-//    items: FabMenuItems, 
     items:[
       {
         label: "NexMaker Fab 课程",
@@ -1093,6 +1094,7 @@ const MenuData: NavItemProps[] = [
     ]  
 
   },
+//nav-prototype
   {
     key: "prototype",
     label: "数字制造",
@@ -1158,13 +1160,16 @@ const MenuData: NavItemProps[] = [
       },
     ],
   },
+//nav-traffic  
   {
     key: "traffic",
     label: "未来交通",
     labelEn: "futuretraffic",
+    link: "/agvedu/agv",
+    linkEn: "/en/agvedu/agv",
     items: [
       {
-        label: "AGV教育方案",
+        label: "汽车场景实验室",
         labelEn: "AGV edu",
         link: "/agvedu/agv",
         linkEn: "/en/agvedu/agv",
@@ -1197,10 +1202,7 @@ const MenuData: NavItemProps[] = [
     ],
   },
 
-
-
-
-
+//nav-about
   {
     key: "prototype",
     label: "关于 ProFabX",
