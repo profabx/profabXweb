@@ -1,11 +1,28 @@
 import EN_NewtNonMetallicMaterialsData from "./NonMetallicMaterials.json";
 import EN_metalData from "./Metal.json";
 
+interface TableItem {
+  title: string;
+  color: string;
+  url?: string;  // 添加可选的 url 属性
+  left: {
+    label: string;
+    color: string;
+    href: string;
+  }[];
+  right: {
+    label: string;
+    color: string;
+    href: string;
+  }[];
+}
+
 const TableData = [
   //sla
   {
     title: "SLA",
     color: "#E7D109",
+    url: "/docs/prototype/sla",  // 添加url字段
     // 直接用非金属「字典」中的 石英 / PC
     left: [
       EN_NewtNonMetallicMaterialsData["quartz"],

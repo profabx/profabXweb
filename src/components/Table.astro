@@ -17,7 +17,9 @@ const tableData = lang === "en" ? EN_TableData : TableData;
           <LeftSide item={item} />
         </div>
         <div class="xl:col-span-2 col-span-1 h-full">
-          {<CenterSide item={item} />}
+          <a href={item.url ?? '#'} class={`block h-full ${!item.url && 'pointer-events-none'}`}>
+            <CenterSide item={item} />
+          </a>
         </div>
         <div class="xl:col-span-4 col-span-1">
           <RightSide item={item} />
