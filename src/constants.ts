@@ -48,7 +48,7 @@ const FabMenuItems = [
 const PrototypeMenuItems = [
   //shu
   {
-    label: "说明",
+    label: "材料",
     link: "/prototype/about",
     labelEn: "About",
     translations: {
@@ -328,30 +328,31 @@ const PrototypeMenuItems = [
       },
     ],
   },
-
   {
     label: "制造工艺",
-    labelEn: "manufacture",
+    link: "/prototype/manufacture",
+    labelEn: "Manufacture",
     translations: {
       en: "manufacture",
     },
+    linkEn: "/en/prototype/manufacture",
+    attrs: { id: "prototype" },
+  },
+  {
+    label: "增材制造",
+    labelEn: "Additive manufature",
+    translations: {
+      en: "add manufacture",
+    },
     collapsed: true,
     items: [
+      
+       
       {
-        label: "增材制造",
-        link: "/prototype/add",
-        linkEn: "/en/prototype/add",
-        labelEn: "add",
-        translations: {
-          en: "add",
-        },
-        attrs: { id: "prototype" },
-      },
-      {
-        label: "增材制造-SLA",
+        label: "SLA",
         link: "/prototype/sla",
         linkEn: "/en/prototype/sla",
-        labelEn: "sla",
+        labelEn: "SLA",
         translations: {
           en: "sla",
         },
@@ -381,6 +382,16 @@ const PrototypeMenuItems = [
   },
   {
     label: "后处理",
+    link: "/prototype/postprocess",
+    labelEn: "Post process",
+    translations: {
+      en: "post process",
+    },
+    linkEn: "/en/prototype/postprocess",
+    attrs: { id: "prototype" },
+  },
+  {
+    label: "喷砂",
     labelEn: "Post-processing",
     translations: {
       en: "Post-processing",
@@ -431,10 +442,13 @@ const PrototypeMenuItems = [
   },
   {
     label: "测试",
+    link: "/prototype/test",
     labelEn: "Test",
     translations: {
-      en: "Test",
+      en: "test",
     },
+    linkEn: "/en/prototype/test",
+    attrs: { id: "prototype" },
     collapsed: true,
     items: [
       {

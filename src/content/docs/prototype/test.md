@@ -1,5 +1,5 @@
 ---
-title: Test
+title: 测试
 sidebar:
   attrs: { id: prototype }
 ---
