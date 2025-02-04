@@ -21,7 +21,7 @@ const TableData = [
   {
     title: "SLA",
     color: "#E7D109",
-    url: "/docs/prototype/sla",  // 添加url字段
+    url: "/prototype/sla",  // 添加url字段
     // 直接用非金属「字典」中的 石英 / PC
     left: [
       NewtNonMetallicMaterialsData["石英"],
