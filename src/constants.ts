@@ -348,6 +348,16 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
       {
+        label: "增材制造-SLA",
+        link: "/prototype/sla",
+        linkEn: "/en/prototype/sla",
+        labelEn: "sla",
+        translations: {
+          en: "sla",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
         label: "等材制造",
         link: "/prototype/equal",
         linkEn: "/en/prototype/equal",
