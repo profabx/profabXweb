@@ -46,7 +46,19 @@ const FabMenuItems = [
 
 // 侧边栏菜单项 - Prototype
 const PrototypeMenuItems = [
-  //shu
+//颜色
+{
+  label: "颜色",
+  link: "/prototype/colour/colour",
+  labelEn: "Colour",
+  translations: {
+    en: "colour",
+  },
+  linkEn: "/en/prototype/clour/colour",
+  attrs: { id: "prototype" },
+},
+
+//材料
   {
     label: "材料",
     link: "/prototype/about",
