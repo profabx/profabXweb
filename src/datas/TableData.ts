@@ -26,7 +26,7 @@ const TableData = [
     // 直接用非金属「字典」中的 石英 / PC
     left: [
       NewtNonMetallicMaterialsData["石英"],
-      NewtNonMetallicMaterialsData["PC"],
+      polymersData["PC"],
     ],
     right: [],
   },

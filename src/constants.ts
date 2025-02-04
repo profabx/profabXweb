@@ -263,9 +263,19 @@ const PrototypeMenuItems = [
         },
         attrs: { id: "prototype" },
       },
+      {
+        label: "其他塑料",
+        link: "/prototype/material/polymers/polymers",
+        linkEn: "/en/prototype/material/polymers/polymers",
+        labelEn: "Other polymers",
+        translations: {
+          en: "Other polymers",
+        },
+        attrs: { id: "prototype" },
+      },
     ],
   },
-//cerma
+//ceramics
   {
     label: "陶瓷材料",
     labelEn: "Ceramics",
@@ -276,8 +286,8 @@ const PrototypeMenuItems = [
     items: [
       {
         label: "陶瓷",
-        link: "/prototype/ceramics",
-        linkEn: "/en/prototype/ceramics",
+        link: "/prototype/material/ceramics/ceramics",
+        linkEn: "/en/prototype/material/ceramics/ceramics",
         labelEn: "Ceramics",
         translations: {
           en: "Ceramics",
@@ -286,8 +296,8 @@ const PrototypeMenuItems = [
       },
       {
         label: "玻璃",
-        link: "/prototype/glass",
-        linkEn: "/en/prototype/glass",
+        link: "/prototype/material/ceramics/glass",
+        linkEn: "/en/prototype/material/ceramics/glass",
         labelEn: "Glass",
         translations: {
           en: "Glass",
@@ -296,68 +306,63 @@ const PrototypeMenuItems = [
       },
 
       {
-        label: "复合材料",
-        labelEn: "composites",
+        label: "其他陶瓷材料",
+        link: "/prototype/material/ceramics/ceramics",
+        linkEn: "/en/prototype/material/ceramics/ceramics",
+        labelEn: "Other ceramics",
         translations: {
-          en: "composites",
+          en: "Other ceramics",
         },
-        link: "/prototype/composites",
-        linkEn: "/en/prototype/composites",
         attrs: { id: "prototype" },
       },
     ],
   },
-  //componsites
-  {
+
+
+//componsites
+{
     label: "复合材料",
     labelEn: "Composites",
     translations: {
       en: "composites",
     },
-    collapsed: true,
-    items: [
+  collapsed: true,
+  items: [
       {
         label: "碳纤维",
-        link: "/prototype/metall",
-        linkEn: "/en/prototype/metall",
-        labelEn: "metall",
+        link: "/prototype/material/composites/cf",
+        linkEn: "/en/prototype/material/composites/cf",
+        labelEn: "cabon fiber",
         translations: {
-          en: "metall",
+          en: "cabon fiber",
         },
         attrs: { id: "prototype" },
       },
       {
         label: "玻璃纤维",
-        link: "/prototype/inorganic",
-        linkEn: "/en/prototype/inorganic",
-        labelEn: "inorganic",
+        link: "/prototype/material/composites/gf",
+        linkEn: "/en/prototype/material/composites/gf",
+        labelEn: "glass fiber",
         translations: {
-          en: "inorganic",
+          en: "Glass gf",
         },
         attrs: { id: "prototype" },
       },
+      
       {
-        label: "陶瓷基树脂",
-        labelEn: "polymers",
-        translations: {
-          en: "polymers",
-        },
-        link: "/prototype/polymers",
-        linkEn: "/en/prototype/polymers",
-        attrs: { id: "prototype" },
-      },
-      {
-        label: "待定",
-        labelEn: "composites",
+        label: "其他复合材料",
+        labelEn: "Composites",
         translations: {
           en: "composites",
         },
-        link: "/prototype/composites",
-        linkEn: "/en/prototype/composites",
+        link: "/prototype/material/composites",
+        linkEn: "/en/prototype/material/composites",
         attrs: { id: "prototype" },
       },
     ],
-  },
+},
+
+
   {
     label: "制造工艺",
     link: "/prototype/manufacture",

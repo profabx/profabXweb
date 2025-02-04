@@ -1,5 +1,5 @@
 ---
-title: peek
+title: PEEK
 sidebar:
   attrs: { id: prototype }
 ---
