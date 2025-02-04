@@ -130,9 +130,19 @@ const PrototypeMenuItems = [
         },
         attrs: { id: "prototype" },
       },
+      {
+        label: "其他金属",
+        link: "/prototype/material/metal/metal",
+        linkEn: "/en/prototype/material/metal/metal",
+        labelEn: "Other metal",
+        translations: {
+          en: "other metal",
+        },
+        attrs: { id: "prototype" },
+      },
     ],
   },
-  //塑料
+//塑料
   {
     label: "塑料",
     labelEn: "Polymers",
@@ -143,8 +153,8 @@ const PrototypeMenuItems = [
     items: [
       {
         label: "ABS",
-        link: "/prototype/abs",
-        linkEn: "/en/prototype/abs",
+        link: "/prototype/material/polymers/abs",
+        linkEn: "/en/prototype/material/polymers/abs",
         labelEn: "ABS",
         translations: {
           en: "ABS",
@@ -154,8 +164,8 @@ const PrototypeMenuItems = [
 
       {
         label: "尼龙",
-        link: "/prototype/pa",
-        linkEn: "/en/prototype/pa",
+        link: "/prototype/material/polymers/pa",
+        linkEn: "/en/prototype/material/polymers/pa",
         labelEn: "PA",
         translations: {
           en: "PA",
@@ -164,8 +174,8 @@ const PrototypeMenuItems = [
       },
       {
         label: "尼龙玻纤",
-        link: "/prototype/pagf",
-        linkEn: "/en/prototype/gb",
+        link: "/prototype/material/polymers/pagf",
+        linkEn: "/en/prototype/material/polymers/gb",
         labelEn: "PA-GF",
         translations: {
           en: "PA-GF",
@@ -174,8 +184,8 @@ const PrototypeMenuItems = [
       },
       {
         label: "尼龙碳纤维",
-        link: "/prototype/pacf",
-        linkEn: "/en/prototype/pacf",
+        link: "/prototype/material/polymers/pacf",
+        linkEn: "/en/prototype/material/polymers/pacf",
         labelEn: "PA-CF",
         translations: {
           en: "PA-CF",
@@ -184,8 +194,8 @@ const PrototypeMenuItems = [
       },
       {
         label: "PLA",
-        link: "/prototype/pla",
-        linkEn: "/en/prototype/pla",
+        link: "/prototype/material/polymers/pla",
+        linkEn: "/en/prototype/material/polymers/pla",
         labelEn: "PLA",
         translations: {
           en: "PLA",
@@ -194,8 +204,8 @@ const PrototypeMenuItems = [
       },
       {
         label: "POM",
-        link: "/prototype/pom",
-        linkEn: "/en/prototype/pom",
+        link: "/prototype/material/polymers/pom",
+        linkEn: "/en/prototype/material/polymers/pom",
         labelEn: "POM",
         translations: {
           en: "POM",
@@ -204,8 +214,8 @@ const PrototypeMenuItems = [
       },
       {
         label: "PP",
-        link: "/prototype/pp",
-        linkEn: "/en/prototype/pp",
+        link: "/prototype/material/polymers/pp",
+        linkEn: "/en/prototype/material/polymers/pp",
         labelEn: "PP",
         translations: {
           en: "PP",
@@ -214,8 +224,8 @@ const PrototypeMenuItems = [
       },
       {
         label: "树脂",
-        link: "/prototype/resin",
-        linkEn: "/en/prototype/resin",
+        link: "/prototype/material/polymers/resin",
+        linkEn: "/en/prototype/material/polymers/resin",
         labelEn: "Resin",
         translations: {
           en: "Resin",
@@ -225,8 +235,8 @@ const PrototypeMenuItems = [
 
       {
         label: "TPU",
-        link: "/prototype/tpu",
-        linkEn: "/en/prototype/tpu",
+        link: "/prototype/material/polymers/tpu",
+        linkEn: "/en/prototype/material/polymers/tpu",
         labelEn: "TPU",
         translations: {
           en: "TPU",
@@ -235,8 +245,8 @@ const PrototypeMenuItems = [
       },
       {
         label: "PC",
-        link: "/prototype/pc",
-        linkEn: "/en/prototype/pc",
+        link: "/prototype/material/polymers/pc",
+        linkEn: "/en/prototype/material/polymers/pc",
         labelEn: "PC",
         translations: {
           en: "PC",
@@ -245,8 +255,8 @@ const PrototypeMenuItems = [
       },
       {
         label: "PEEK",
-        link: "/prototype/peek",
-        linkEn: "/en/prototype/peek",
+        link: "/prototype/material/polymers/peek",
+        linkEn: "/en/prototype/material/polymers/peek",
         labelEn: "PEEK",
         translations: {
           en: "PEEK",
@@ -255,7 +265,7 @@ const PrototypeMenuItems = [
       },
     ],
   },
-  //cerma
+//cerma
   {
     label: "陶瓷材料",
     labelEn: "Ceramics",

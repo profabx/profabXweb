@@ -1,5 +1,6 @@
 import NewtNonMetallicMaterialsData from "./NonMetallicMaterials.json";
 import metalData from "./Metal.json";
+import polymersData from "./polymers.json";
 interface TableItem {
   title: string;
   color: string;
@@ -35,9 +36,9 @@ const TableData = [
     color: "#ffffff",
     left: [
       // 比如这里放 PC / PP / 树脂 ...
-      NewtNonMetallicMaterialsData["PC"],
-      NewtNonMetallicMaterialsData["PP"],
-      NewtNonMetallicMaterialsData["树脂"],
+      polymersData["PC"],
+      polymersData["PP"],
+      polymersData["树脂"],
     ],
     right: [metalData["铁/钢"]],
   },
@@ -54,7 +55,7 @@ const TableData = [
     color: "#ffffff",
     left: [
       NewtNonMetallicMaterialsData["石英"],
-      NewtNonMetallicMaterialsData["PC"],
+      polymersData["PC"],
     ],
     right: [metalData["铁/钢"], metalData["铝/合金"]],
   },
@@ -64,8 +65,8 @@ const TableData = [
     color: "#ffffff",
     left: [
       NewtNonMetallicMaterialsData["石英"],
-      NewtNonMetallicMaterialsData["PC"],
-      NewtNonMetallicMaterialsData["PP"],
+      polymersData["PC"],
+      polymersData["PP"],
     ],
     right: [],
   },
@@ -80,7 +81,7 @@ const TableData = [
   {
     title: "PolyJet",
     color: "#ffffff",
-    left: [NewtNonMetallicMaterialsData["树脂"]],
+    left: [ polymersData["树脂"]],
     right: [],
   },
   // ...
@@ -89,13 +90,13 @@ const TableData = [
     color: "#ffffff",
     left: [
       NewtNonMetallicMaterialsData["石英"],
-      NewtNonMetallicMaterialsData["PC"],
-      NewtNonMetallicMaterialsData["PP"],
-      NewtNonMetallicMaterialsData["peek"],
-      NewtNonMetallicMaterialsData["树脂"],
-      NewtNonMetallicMaterialsData["TPU"],
-      NewtNonMetallicMaterialsData["尼龙"],
-      NewtNonMetallicMaterialsData["ABS"],
+      polymersData["PC"],
+      polymersData["PP"],
+      polymersData["PEEK"],
+      polymersData["树脂"],
+      polymersData["TPU"],
+      polymersData["尼龙"],
+      polymersData["ABS"],
     ],
     right: [
       metalData["铁/钢"],
@@ -112,13 +113,13 @@ const TableData = [
     // 现在改为：手动列出所有需要的非金属、金属（逐个写键名）
     left: [
       NewtNonMetallicMaterialsData["石英"],
-      NewtNonMetallicMaterialsData["PC"],
-      NewtNonMetallicMaterialsData["PP"],
-      NewtNonMetallicMaterialsData["peek"],
-      NewtNonMetallicMaterialsData["树脂"],
-      NewtNonMetallicMaterialsData["TPU"],
-      NewtNonMetallicMaterialsData["尼龙"],
-      NewtNonMetallicMaterialsData["ABS"],
+      polymersData["PC"],
+      polymersData["PP"],
+      polymersData["PEEK"],
+      polymersData["树脂"],
+      polymersData["TPU"],
+      polymersData["尼龙"],
+      polymersData["ABS"],
     ],
     right: [
       metalData["铁/钢"],
@@ -132,13 +133,13 @@ const TableData = [
     color: "#ffffff",
     left: [
       NewtNonMetallicMaterialsData["石英"],
-      NewtNonMetallicMaterialsData["PC"],
-      NewtNonMetallicMaterialsData["PP"],
-      NewtNonMetallicMaterialsData["peek"],
-      NewtNonMetallicMaterialsData["树脂"],
-      NewtNonMetallicMaterialsData["TPU"],
-      NewtNonMetallicMaterialsData["尼龙"],
-      NewtNonMetallicMaterialsData["ABS"],
+      polymersData["PC"],
+      polymersData["PP"],
+      polymersData["PEEK"],
+      polymersData["树脂"],
+      polymersData["TPU"],
+      polymersData["尼龙"],
+      polymersData["ABS"],
     ],
     right: [
       metalData["铁/钢"],
@@ -161,14 +162,13 @@ const TableData = [
     // 原先 left: NewtNonMetallicMaterialsData, right: []
     // 这里假设你想用全部非金属
     left: [
-      NewtNonMetallicMaterialsData["石英"],
-      NewtNonMetallicMaterialsData["PC"],
-      NewtNonMetallicMaterialsData["PP"],
-      NewtNonMetallicMaterialsData["peek"],
-      NewtNonMetallicMaterialsData["树脂"],
-      NewtNonMetallicMaterialsData["TPU"],
-      NewtNonMetallicMaterialsData["尼龙"],
-      NewtNonMetallicMaterialsData["ABS"],
+      polymersData["PC"],
+      polymersData["PP"],
+      polymersData["PEEK"],
+      polymersData["树脂"],
+      polymersData["TPU"],
+      polymersData["尼龙"],
+      polymersData["ABS"],
     ],
     right: [],
   },
@@ -178,8 +178,8 @@ const TableData = [
     // 原先 left: NewtNonMetallicMaterialsData.slice(0,2), right: []
     // slice(0,2) 表示非金属前2项 => “石英” & “PC”
     left: [
-      NewtNonMetallicMaterialsData["石英"],
-      NewtNonMetallicMaterialsData["PC"],
+
+      polymersData["PC"],
     ],
     right: [],
   },

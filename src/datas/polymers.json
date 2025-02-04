@@ -1,0 +1,57 @@
+{
+  "PC": {
+    "label": "PC",
+    "color": "#17F47D",
+    "href": "/prototype/material/polymers/pc"
+  },
+  "PP": {
+    "label": "PP",
+    "color": "#17F4DA",
+    "href": "/prototype/material/polymers/pp"
+  },
+  "树脂": {
+    "label": "树脂",
+    "color": "#8CE21F",
+    "href": "/prototype/material/polymers/resin"
+  },
+  "TPU": {
+    "label": "TPU",
+    "color": "#2320A4",
+    "href": "/prototype/material/polymers/tpu"
+  },
+  "尼龙": {
+    "label": "尼龙",
+    "color": "#0C0B13",
+    "href": "/prototype/material/polymers/nylon"
+  },
+  "尼龙玻纤": {
+    "label": "尼龙玻纤",
+    "color": "#0C0B13",
+    "href": "/prototype/material/polymers/nylongf"
+  },
+  "尼龙碳纤": {
+    "label": "尼龙碳纤",
+    "color": "#0C0B13",
+    "href": "/prototype/material/polymers/nyloncf"
+  },
+  "ABS": {
+    "label": "ABS",
+    "color": "#A5A3AE",
+    "href": "/prototype/material/polymers/abs"
+  },
+  "PLA": {
+    "label": "PLA",
+    "color": "#A5A3AE",
+    "href": "/prototypematerial/polymers/PLA"
+  },
+  "POM": {
+    "label": "POM",
+    "color": "#A5A3AE",
+    "href": "/prototype/material/polymers/POM"
+  },
+  "PEEK": {
+    "label": "PEEK",
+    "color": "#A5A3AE",
+    "href": "/prototype/material/polymers/PEEK"
+  }
+}
