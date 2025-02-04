@@ -5,4 +5,4 @@ sidebar:
 ---
 
 
-我们将介绍不同的颜色
+coming soon

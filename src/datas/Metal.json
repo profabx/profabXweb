@@ -2,21 +2,26 @@
   "铁/钢": {
     "label": "铁钢",
     "color": "#C8E709",
-    "href": "/prototype/ss"
+    "href": "/prototype/material/metal/ss"
   },
   "铝/合金": {
     "label": "铝合金",
     "color": "#E3E709",
-    "href": "/prototype/al"
+    "href": "/prototype/material/metal/al"
   },
   "铜/合金": {
     "label": "铜合金",
     "color": "#E7D109",
-    "href": "/prototype/cu"
+    "href": "/prototype/material/metal/cu"
   },
   "钛/合金": {
     "label": "钛/合金",
     "color": "#E7D109",
-    "href": "/prototype/ti"
+    "href": "/prototype/material/metal/ti"
+  },
+  "钨/合金": {
+    "label": "钨/合金",
+    "color": "#E7D109",
+    "href": "/prototype/material/metal/tungsten"
   }
 }

@@ -69,6 +69,7 @@ const PrototypeMenuItems = [
     linkEn: "/en/prototype/about",
     attrs: { id: "prototype" },
   },
+//金属
   {
     label: "金属",
     //link: "/prototype/metal",
@@ -79,33 +80,10 @@ const PrototypeMenuItems = [
     },
     collapsed: true,
     items: [
-      //AL
-      {
-        label: "铝",
-        link: "/prototype/al",
-        linkEn: "/en/prototype/al",
-        labelEn: "Aluminum",
-        translations: {
-          en: "Aluminum",
-        },
-        attrs: { id: "prototype" },
-      },
-
-      //ALEND CU BEGIN
-      {
-        label: "铜",
-        link: "/prototype/cu",
-        linkEn: "/en/prototype/cu",
-        labelEn: "Copper",
-        translations: {
-          en: "Copper",
-        },
-        attrs: { id: "prototype" },
-      },
       {
         label: "铁/钢",
-        link: "/prototype/ss",
-        linkEn: "/en/prototype/ss",
+        link: "/prototype/material/metal/ss",
+        linkEn: "/en/prototype/material/metal/ss",
         labelEn: "Iron/Steel",
         translations: {
           en: "Iron/Steel",
@@ -113,12 +91,42 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
       {
+        label: "铝",
+        link: "/prototype/material/metal/al",
+        linkEn: "/en/prototype/material/metal/al",
+        labelEn: "Aluminum",
+        translations: {
+          en: "Aluminum",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "铜",
+        link: "/prototype/material/metal/cu",
+        linkEn: "/en/prototype/material/metal/cu",
+        labelEn: "Copper",
+        translations: {
+          en: "Copper",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
         label: "钛",
-        link: "/prototype/ti",
-        linkEn: "/en/prototype/ti",
+        link: "/prototype/material/metal/ti",
+        linkEn: "/en/prototype/material/metal/ti",
         labelEn: "Titanium",
         translations: {
           en: "Titanium",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "钨",
+        link: "/prototype/material/metal/tungsten",
+        linkEn: "/en/prototype/material/metal/tungsten",
+        labelEn: "Tungsten",
+        translations: {
+          en: "Tungsten",
         },
         attrs: { id: "prototype" },
       },

@@ -1,5 +1,5 @@
 ---
-title: 说明
+title: 材料
 sidebar:
   attrs: { id: prototype }
 ---
@@ -16,5 +16,3 @@ sidebar:
 * [塑料](https://mp.weixin.qq.com/s/6GAGR4if8UkOhWMaigMJKw),[塑料结构设计规范](https://mp.weixin.qq.com/s/nYmrSJ462iGhSkijIWYEug),[塑料成型工艺](https://mp.weixin.qq.com/s/kI53-KZJaWfrZQKhNgqW5A),[注塑成型知识](https://mp.weixin.qq.com/s/LerEn-c7WKf4tib7AE5JWw)
 * [木头](https://mp.weixin.qq.com/s/-pZwV2L-Tv0PCPs5WLlB6g),[特性](https://mp.weixin.qq.com/s?__biz=MzA5MTkzMzI4Mw==&mid=2247486304&idx=1&sn=e95d4ea20b409d190f83d56ea4061253&chksm=9075946ca7021d7a541de476f16e72cc33f2719952d47ffb85be5c6242725d721e6679ed9b33&scene=21#wechat_redirect)
 * [复合材料](https://mp.weixin.qq.com/s/HNxQlTGMw3UmFYbeco8_nw)
-* [wenext 参考信息]（https://www.wenext.cn/static/material）
-* [嘉立创CNC](https://www.jlc-cnc.com/materialIntroduced)
