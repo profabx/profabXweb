@@ -48,7 +48,7 @@ const FabMenuItems = [
 const PrototypeMenuItems = [
 //颜色
 {
-  label: "颜色",
+  label: "↓--------颜色--------↓",
   link: "/prototype/colour/colour",
   labelEn: "Colour",
   translations: {
@@ -60,7 +60,7 @@ const PrototypeMenuItems = [
 
 //材料
   {
-    label: "材料",
+    label: "↓--------材料--------↓",
     link: "/prototype/about",
     labelEn: "About",
     translations: {
@@ -362,7 +362,7 @@ const PrototypeMenuItems = [
 
 //制造工艺
   {
-    label: "制造工艺",
+    label: "↓--------制造工艺--------↓",
     link: "/prototype/manufacture",
     labelEn: "Manufacture",
     translations: {
@@ -612,7 +612,7 @@ const PrototypeMenuItems = [
 },
 //后处理
 {
-  label: "后处理----------------",
+  label: "↓--------后处理--------↓",
   link: "/prototype/postprocess/postprocess",
   labelEn: "Post process",
   translations: {
@@ -817,7 +817,7 @@ const PrototypeMenuItems = [
     },
   ],
 },
-//*功能性处理（Functional Treatment）**涂覆润滑层（Lubrication Coating），导电涂层（Conductive Coating），防锈处理（Rust Prevention）
+//功能性处理（Functional Treatment）**涂覆润滑层（Lubrication Coating），导电涂层（Conductive Coating），防锈处理（Rust Prevention）
  {
   label: "功能性处理",
   labelEn: "Functional Treatment",
@@ -891,7 +891,7 @@ const PrototypeMenuItems = [
   },    
 
   {
-    label: "测试",
+    label: "↓--------测试--------↓",
     link: "/prototype/test",
     labelEn: "Test",
     translations: {
