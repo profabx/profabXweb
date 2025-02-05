@@ -371,7 +371,7 @@ const PrototypeMenuItems = [
     linkEn: "/en/prototype/manufacture",
     attrs: { id: "prototype" },
   },
- //增材制造 
+//增材制造 
   {
     label: "增材制造",
     labelEn: "Additive manufature",
@@ -448,21 +448,11 @@ const PrototypeMenuItems = [
         translations: {
           en: "SLM",
         },
-        link: "/prototype/manufacture/add/SLM",
-        linkEn: "/en/prototype/manufacture/add/SLM",
+        link: "/prototype/manufacture/add/slm",
+        linkEn: "/en/prototype/manufacture/add/slm",
         attrs: { id: "prototype" },
       },
-          //SLM
-      {
-        label: "SLM",
-        labelEn: "SLM",
-        translations: {
-          en: "SLM",
-        },
-        link: "/prototype/manufacture/add/SLM",
-        linkEn: "/en/prototype/manufacture/add/SLM",
-        attrs: { id: "prototype" },
-      },
+        
       {
         label: "Polyjet",
         link: "/prototype/manufacture/add/polyjet",
