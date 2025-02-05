@@ -406,7 +406,7 @@ const PrototypeMenuItems = [
         linkEn: "/en/prototype/manufacture/add/fdm",
         labelEn: "FDM",
         translations: {
-          en: "FDM,",
+          en: "FDM",
         },
         attrs: { id: "prototype" },
       },
@@ -476,6 +476,144 @@ const PrototypeMenuItems = [
 
     ],
   },
+ //等材制造
+ {
+  label: "等材制造",
+  labelEn: "Equal manufature",
+  translations: {
+    en: "equal manufacture",
+  },
+  collapsed: true,
+  items: [ 
+    {
+      label: "等材制造概况",
+      link: "/prototype/manufacture/equal/equal",
+      linkEn: "/en/prototype/manufacture/equal/equa",
+      labelEn: "The condition of equal manufacture",
+      translations: {
+        en: "equal manufacture",
+      },
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "注塑",
+      link: "/prototype/manufacture/equal/injection",
+      linkEn: "/en/prototype/manufacture/equal/injection",
+      labelEn: "Injection molding",
+      translations: {
+        en: "injection molding",
+      },
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "硅胶覆膜",
+      link: "/prototype/manufacture/equal/siliconemold",
+      linkEn: "/en/prototype/manufacture/equal/siliconemold",
+      labelEn: "Silicone molding process",
+      translations: {
+        en: "Silicone molding proces",
+      },
+      attrs: { id: "prototype" },
+    },
+    
+    {
+      label: "钣金工艺",
+      labelEn: "Sheet metal process",
+      translations: {
+        en: "sheet metal",
+      },
+      link: "/prototype/manufacture/equal/sheetmetal",
+      linkEn: "/en/prototype/manufacture/equal/sheetmetal",
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "其他等材制造工艺",
+      link: "/prototype/manufacture/equal/otherequal",
+      linkEn: "/en/prototype/manufacture/equal/otherequal",
+      labelEn: "Other equal manufacture",
+      translations: {
+        en: "otherequal",
+      },
+      attrs: { id: "prototype" },
+    },
+  ],
+},
+//减材制造
+{
+  label: "减材制造",
+  labelEn: "Substractive manufature",
+  translations: {
+    en: "Substractive manufature",
+  },
+  collapsed: true,
+  items: [ 
+    {
+      label: "减材制造概况",
+      link: "/prototype/manufacture/substractive/substractive",
+      linkEn: "/en/prototype/manufacture/substractive/substractive",
+      labelEn: "The condition of substractive manufacture",
+      translations: {
+        en: "substractive manufacture",
+      },
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "CNC",
+      link: "/prototype/manufacture/substractive/cnc",
+      linkEn: "/en/prototype/manufacture/substractive/cnc",
+      labelEn: "CNC",
+      translations: {
+        en: "CNC",
+      },
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "车",
+      link: "/prototype/manufacture/substractive/lathing",
+      linkEn: "/en/prototype/manufacture/substractive/lathing",
+      labelEn: "lathiing",
+      translations: {
+        en: "lathing",
+      },
+      attrs: { id: "prototype" },
+    },
+    
+    {
+      label: "铣",
+      labelEn: "milling",
+      translations: {
+        en: "milling",
+      },
+      link: "/prototype/manufacture/substractive/milling",
+      linkEn: "/en/prototype/manufacture/substractive/milling",
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "激光切割",
+      labelEn: "lasercutter",
+      translations: {
+        en: "lasercutter",
+      },
+      link: "/prototype/manufacture/substractive/lasercutter",
+      linkEn: "/en/prototype/manufacture/substractive/lasercutter",
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "其他减材制造工艺",
+      link: "/prototype/manufacture/substractive/othersubstractive",
+      linkEn: "/en/prototype/manufacture/substractive/othersubstractive",
+      labelEn: "Other substractive manufacture",
+      translations: {
+        en: "other substractive",
+      },
+      attrs: { id: "prototype" },
+    },
+  ],
+},
+    
+
+ //后处理
+
   {
     label: "后处理",
     link: "/prototype/postprocess",
