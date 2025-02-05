@@ -791,8 +791,8 @@ const PrototypeMenuItems = [
       translations: {
         en: "Pickling",
       },
-      link: "/prototype/postprocess/chemical/Pickling",
-      linkEn: "/en/prototype/postprocess/chemical/Pickling",
+      link: "/prototype/postprocess/chemical/pickling",
+      linkEn: "/en/prototype/postprocess/chemical/pickling",
       attrs: { id: "prototype" },
     },
     {
