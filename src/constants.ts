@@ -636,8 +636,8 @@ const PrototypeMenuItems = [
     items: [
       {
         label: "喷涂",
-        link: "/postprocess/surface/coating",
-        linkEn: "/en/postprocess/surface/coating",
+        link: "/prototype/postprocess/surface/coating",
+        linkEn: "/en/prototype/postprocess/surface/coating",
         labelEn: "Coat",
         translations: {
           en: "Coat",
@@ -646,8 +646,8 @@ const PrototypeMenuItems = [
       },
       {
         label: "电镀",
-        link: "/postprocess/surface/electroplating",
-        linkEn: "/en/postprocess/surface/electroplating",
+        link: "/prototype/postprocess/surface/electroplating",
+        linkEn: "/en/prototype/postprocess/surface/electroplating",
         labelEn: "Electroplating",
         translations: {
           en: "electroplating",
@@ -660,8 +660,8 @@ const PrototypeMenuItems = [
         translations: {
           en: "Anodizing",
         },
-        link: "/postprocess/surface/anodizing",
-        linkEn: "/en/postprocess/surface/anodizing",
+        link: "/prototype/postprocess/surface/anodizing",
+        linkEn: "/en/prototype/postprocess/surface/anodizing",
         attrs: { id: "prototype" },
       },
       
@@ -679,8 +679,8 @@ const PrototypeMenuItems = [
     items: [
       {
         label: "淬火",
-        link: "/postprocess/heat/quenching",
-        linkEn: "/en/postprocess/heat/quenching",
+        link: "/prototype/postprocess/heat/quenching",
+        linkEn: "/en/prototype/postprocess/heat/quenching",
         labelEn: "Quenching",
         translations: {
           en: "Quenching",
@@ -689,8 +689,8 @@ const PrototypeMenuItems = [
       },
       {
         label: "回火",
-        link: "/postprocess/heat/tempering",
-        linkEn: "/en/postprocess/heat/tempering",
+        link: "/prototype/postprocess/heat/tempering",
+        linkEn: "/en/prototype/postprocess/heat/tempering",
         labelEn: "Tempering",
         translations: {
           en: "Tempering",
@@ -703,8 +703,8 @@ const PrototypeMenuItems = [
         translations: {
           en: "Annealing",
         },
-        link: "/postprocess/heat/annealing",
-        linkEn: "/en/postprocess/heat/annealing",
+        link: "/prototype/postprocess/heat/annealing",
+        linkEn: "/en/prototype/postprocess/heat/annealing",
         attrs: { id: "prototype" },
       },
       {
@@ -713,8 +713,8 @@ const PrototypeMenuItems = [
         translations: {
           en: "Normalizing",
         },
-        link: "/postprocess/heat/normalizing",
-        linkEn: "/en/postprocess/heat/normalizing",
+        link: "/prototype/postprocess/heat/normalizing",
+        linkEn: "/en/prototype/postprocess/heat/normalizing",
         attrs: { id: "prototype" },
       },
       {
@@ -723,8 +723,8 @@ const PrototypeMenuItems = [
         translations: {
           en: "Surface Hardening",
         },
-        link: "/postprocess/heat/Surface Hardening",
-        linkEn: "/en/postprocess/heat/Surface Hardening",
+        link: "/prototype/postprocess/heat/Surface Hardening",
+        linkEn: "/en/prototype/postprocess/heat/Surface Hardening",
         attrs: { id: "prototype" },
       },
     ],
@@ -745,8 +745,8 @@ const PrototypeMenuItems = [
           translations: {
             en: "Deburring",
           },
-          link: "/postprocess/mechanical/deburring",
-          linkEn: "/en/postprocess/mechanical/deburring",
+          link: "/prototype/postprocess/mechanical/deburring",
+          linkEn: "/en/prototype/postprocess/mechanical/deburring",
           attrs: { id: "prototype" },
         },
         {
@@ -755,14 +755,14 @@ const PrototypeMenuItems = [
           translations: {
             en: "Grinding",
           },
-          link: "/postprocess/mechanical/grinding",
-          linkEn: "/en/postprocess/mechanical/grinding",
+          link: "/prototype/postprocess/mechanical/grinding",
+          linkEn: "/en/prototype/postprocess/mechanical/grinding",
           attrs: { id: "prototype" },
         },
         {
           label: "喷砂",
-          link: "/postprocess/mechanical/sandblasting",
-          linkEn: "/en/postprocess/mechanical/sandblasting",
+          link: "/prototype/postprocess/mechanical/sandblasting",
+          linkEn: "/en/prototype/postprocess/mechanical/sandblasting",
           labelEn: "Sandblasting",
           translations: {
             en: "Sandblasting",
@@ -775,8 +775,8 @@ const PrototypeMenuItems = [
           translations: {
             en: "Polishing",
           },
-          link: "/postprocess/mechanical/polishing",
-          linkEn: "/en/postprocess/mechanical/polishing",
+          link: "/prototype/postprocess/mechanical/polishing",
+          linkEn: "/en/prototype/postprocess/mechanical/polishing",
           attrs: { id: "prototype" },
         },
  
@@ -798,8 +798,8 @@ const PrototypeMenuItems = [
         translations: {
           en: "Pickling",
         },
-        link: "/postprocess/chemical/Pickling",
-        linkEn: "/en/postprocess/chemical/Pickling",
+        link: "/prototype/postprocess/chemical/Pickling",
+        linkEn: "/en/prototype/postprocess/chemical/Pickling",
         attrs: { id: "prototype" },
       },
       {
@@ -808,14 +808,14 @@ const PrototypeMenuItems = [
         translations: {
           en: "Chemical cleaning",
         },
-        link: "/postprocess/chemical/cleaning",
-        linkEn: "/en/postprocess/chemical/cleaning",
+        link: "/prototype/postprocess/chemical/cleaning",
+        linkEn: "/en/prototype/postprocess/chemical/cleaning",
         attrs: { id: "prototype" },
       },
       {
         label: "化学抛光",
-        link: "/postprocess/chemical/polish",
-        linkEn: "/en/postprocess/chemical/polish",
+        link: "/prototype/postprocess/chemical/polish",
+        linkEn: "/en/prototype/postprocess/chemical/polish",
         labelEn: "Chemical polish",
         translations: {
           en: "Chemical polis",
@@ -841,8 +841,8 @@ const PrototypeMenuItems = [
         translations: {
           en: "Lubrication Coating",
         },
-        link: "/postprocess/functional/lubrication",
-        linkEn: "/en/postprocess/functional/lubrication",
+        link: "/prototype/postprocess/functional/lubrication",
+        linkEn: "/en/prototype/postprocess/functional/lubrication",
         attrs: { id: "prototype" },
       },
       {
@@ -851,14 +851,14 @@ const PrototypeMenuItems = [
         translations: {
           en: "Conductive Coating",
         },
-        link: "/postprocess/functional/conductive",
-        linkEn: "/en/postprocess/functional/conductive",
+        link: "/prototype/postprocess/functional/conductive",
+        linkEn: "/en/prototype/postprocess/functional/conductive",
         attrs: { id: "prototype" },
       },
       {
         label: "防锈处理",
-        link: "/postprocess/functional/rustprevention",
-        linkEn: "/en/postprocess/functional/rustprevention",
+        link: "/prototype/postprocess/functional/rustprevention",
+        linkEn: "/en/prototype/postprocess/functional/rustprevention",
         labelEn: "Rust Prevention",
         translations: {
           en: "Rust Prevention",
@@ -883,8 +883,8 @@ const PrototypeMenuItems = [
           translations: {
             en: "Laser Treatment",
           },
-          link: "/postprocess/special/laser",
-          linkEn: "/en/postprocess/special/laser",
+          link: "/prototype/postprocess/special/laser",
+          linkEn: "/en/prototype/postprocess/special/laser",
           attrs: { id: "prototype" },
         },
         {
@@ -893,8 +893,8 @@ const PrototypeMenuItems = [
           translations: {
             en: "Ultrasonic Treatment",
           },
-          link: "/postprocess/special/ultrasonic",
-          linkEn: "/en/postprocess/special/ultrasonic",
+          link: "/prototype/postprocess/special/ultrasonic",
+          linkEn: "/en/prototype/postprocess/special/ultrasonic",
           attrs: { id: "prototype" },
         },
       ],
