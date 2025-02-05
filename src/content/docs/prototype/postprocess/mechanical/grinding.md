@@ -1,5 +1,5 @@
 ---
-title: Grinding
+title: 打磨
 sidebar:
   attrs: { id: prototype }
 ---

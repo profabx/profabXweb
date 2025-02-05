@@ -1,5 +1,5 @@
 ---
-title: Polishing
+title: 抛光
 sidebar:
   attrs: { id: prototype }
 ---

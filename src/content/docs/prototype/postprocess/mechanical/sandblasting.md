@@ -1,5 +1,5 @@
 ---
-title: Sandblasting
+title: 喷砂
 sidebar:
   attrs: { id: prototype }
 ---

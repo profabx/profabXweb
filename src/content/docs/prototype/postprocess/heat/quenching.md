@@ -1,5 +1,5 @@
 ---
-title: Quenching
+title: 淬火
 sidebar:
   attrs: { id: prototype }
 ---

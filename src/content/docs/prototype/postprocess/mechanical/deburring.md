@@ -1,5 +1,5 @@
 ---
-title: deburring
+title: 去毛刺
 sidebar:
   attrs: { id: prototype }
 ---
