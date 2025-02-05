@@ -488,7 +488,7 @@ const PrototypeMenuItems = [
     {
       label: "等材制造概况",
       link: "/prototype/manufacture/equal/equal",
-      linkEn: "/en/prototype/manufacture/equal/equa",
+      linkEn: "/en/prototype/manufacture/equal/equal",
       labelEn: "The condition of equal manufacture",
       translations: {
         en: "equal manufacture",
@@ -610,7 +610,285 @@ const PrototypeMenuItems = [
     },
   ],
 },
+//后处理
+{
+  label: "后处理",
+  link: "/prototype/postprocess/postprocess",
+  labelEn: "Post process",
+  translations: {
+    en: "post process",
+  },
+  linkEn: "/en/prototype/postprocess/postprocess",
+  attrs: { id: "prototype" },
+},
+//表面处理：   - **电镀（Electroplating,阳极氧化（Anodizing）喷涂（Spray Coating）**：如喷漆、喷粉（粉末涂层）。
+{
+  label: "表面处理",
+  labelEn: "Surface treamtment",
+  translations: {
+    en: "Surface treamtment",
+  },
+  collapsed: true,
+  items: [
+    {
+      label: "喷涂",
+      link: "/prototype/postprocess/surface/coating",
+      linkEn: "/en/prototype/postprocess/surface/coating",
+      labelEn: "Coat",
+      translations: {
+        en: "Coat",
+      },
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "电镀",
+      link: "/prototype/postprocess/surface/electroplating",
+      linkEn: "/en/prototype/postprocess/surface/electroplating",
+      labelEn: "Electroplating",
+      translations: {
+        en: "electroplating",
+      },
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "阳极氧化",
+      labelEn: "Anodizing",
+      translations: {
+        en: "Anodizing",
+      },
+      link: "/prototype/postprocess/surface/anodizing",
+      linkEn: "/en/prototype/postprocess/surface/anodizing",
+      attrs: { id: "prototype" },
+    },
     
+  ],
+},
+//热处理（Heat Treatment）.淬火（Quenching）,回火（Tempering）,退火（Annealing）,正火（Normalizing）,表面硬化
+{
+  label: "热处理",
+  labelEn: "Heat treamtment",
+  translations: {
+    en: "Heat treamtment",
+  },
+  collapsed: true,
+  items: [
+    {
+      label: "淬火",
+      link: "/prototype/postprocess/heat/quenching",
+      linkEn: "/en/prototype/postprocess/heat/quenching",
+      labelEn: "Quenching",
+      translations: {
+        en: "Quenching",
+      },
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "回火",
+      link: "/prototype/postprocess/heat/tempering",
+      linkEn: "/en/prototype/postprocess/heat/tempering",
+      labelEn: "Tempering",
+      translations: {
+        en: "Tempering",
+      },
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "退火",
+      labelEn: "Annealing",
+      translations: {
+        en: "Annealing",
+      },
+      link: "/prototype/postprocess/heat/annealing",
+      linkEn: "/en/prototype/postprocess/heat/annealing",
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "正火",
+      labelEn: "Normalizing",
+      translations: {
+        en: "Normalizing",
+      },
+      link: "/prototype/postprocess/heat/normalizing",
+      linkEn: "/en/prototype/postprocess/heat/normalizing",
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "表面硬化",
+      labelEn: "Surface Hardening",
+      translations: {
+        en: "Surface Hardening",
+      },
+      link: "/prototype/postprocess/heat/Surface Hardening",
+      linkEn: "/en/prototype/postprocess/heat/Surface Hardening",
+      attrs: { id: "prototype" },
+    },
+  ],
+},
+//机械处理
+  {
+    label: "机械处理",
+    labelEn: "Mechanical treamtment",
+    translations: {
+      en: "Mechanical treamtment",
+    },
+    collapsed: true,
+    items: [
+      {
+        label: "去毛刺",
+        labelEn: "Deburring",
+        translations: {
+          en: "Deburring",
+        },
+        link: "/prototype/postprocess/mechanical/deburring",
+        linkEn: "/en/prototype/postprocess/mechanical/deburring",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "打磨",
+        labelEn: "Grinding",
+        translations: {
+          en: "Grinding",
+        },
+        link: "/prototype/postprocess/mechanical/grinding",
+        linkEn: "/en/prototype/postprocess/mechanical/grinding",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "喷砂",
+        link: "/prototype/postprocess/mechanical/sandblasting",
+        linkEn: "/en/prototype/postprocess/mechanical/sandblasting",
+        labelEn: "Sandblasting",
+        translations: {
+          en: "Sandblasting",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "抛光",
+        labelEn: "Polishing",
+        translations: {
+          en: "Polishing",
+        },
+        link: "/prototype/postprocess/mechanical/polishing",
+        linkEn: "/en/prototype/postprocess/mechanical/polishing",
+        attrs: { id: "prototype" },
+      },
+
+    ],
+  },
+//化学处理
+ {
+  label: "化学处理",
+  labelEn: "Chemical treamtment",
+  translations: {
+    en: "Chemical treamtment",
+  },
+  collapsed: true,
+  items: [
+    {
+      label: "酸洗",
+      labelEn: "Pickling",
+      translations: {
+        en: "Pickling",
+      },
+      link: "/prototype/postprocess/chemical/Pickling",
+      linkEn: "/en/prototype/postprocess/chemical/Pickling",
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "化学清洗",
+      labelEn: "Chemical cleaning",
+      translations: {
+        en: "Chemical cleaning",
+      },
+      link: "/prototype/postprocess/chemical/cleaning",
+      linkEn: "/en/prototype/postprocess/chemical/cleaning",
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "化学抛光",
+      link: "/prototype/postprocess/chemical/polish",
+      linkEn: "/en/prototype/postprocess/chemical/polish",
+      labelEn: "Chemical polish",
+      translations: {
+        en: "Chemical polis",
+      },
+      attrs: { id: "prototype" },
+    },
+  ],
+},
+//*功能性处理（Functional Treatment）**涂覆润滑层（Lubrication Coating），导电涂层（Conductive Coating），防锈处理（Rust Prevention）
+ {
+  label: "功能性处理",
+  labelEn: "Functional Treatment",
+  translations: {
+    en: "Functional Treatment",
+  },
+  collapsed: true,
+  items: [
+    {
+      label: "涂覆润滑层",
+      labelEn: "Lubrication Coating",
+      translations: {
+        en: "Lubrication Coating",
+      },
+      link: "/prototype/postprocess/functional/lubrication",
+      linkEn: "/en/prototype/postprocess/functional/lubrication",
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "导电涂层",
+      labelEn: "Conductive Coating",
+      translations: {
+        en: "Conductive Coating",
+      },
+      link: "/prototype/postprocess/functional/conductive",
+      linkEn: "/en/prototype/postprocess/functional/conductive",
+      attrs: { id: "prototype" },
+    },
+    {
+      label: "防锈处理",
+      link: "/prototype/postprocess/functional/rustprevention",
+      linkEn: "/en/prototype/postprocess/functional/rustprevention",
+      labelEn: "Rust Prevention",
+      translations: {
+        en: "Rust Prevention",
+      },
+      attrs: { id: "prototype" },
+    },
+  ],
+},
+//6other 
+  {
+    label: "其他特殊处理",
+    labelEn: "Other special Treatment",
+    translations: {
+      en: "Other special Treatment",
+    },
+    collapsed: true,
+    items: [
+      {
+        label: "激光处理",
+        labelEn: "Laser Treatment",
+        translations: {
+          en: "Laser Treatment",
+        },
+        link: "/prototype/postprocess/special/laser",
+        linkEn: "/en/prototype/postprocess/special/laser",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "超声波处理",
+        labelEn: "Ultrasonic Treatment",
+        translations: {
+          en: "Ultrasonic Treatment",
+        },
+        link: "/prototype/postprocess/special/ultrasonic",
+        linkEn: "/en/prototype/postprocess/special/ultrasonic",
+        attrs: { id: "prototype" },
+      },
+    ],
+  },    
 
   {
     label: "测试",
