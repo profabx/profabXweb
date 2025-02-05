@@ -891,8 +891,8 @@ const PrototypeMenuItems = [
   },    
 
   {
-    label: "↓--------测试--------↓",
-    link: "/prototype/test",
+    label: "--------测试--------",
+    link: "/prototype/test/test",
     labelEn: "Test",
     translations: {
       en: "test",
