@@ -1,5 +1,5 @@
 ---
-title:化学抛光
+title: 化学抛光
 sidebar:
   attrs: { id: prototype }
 ---
