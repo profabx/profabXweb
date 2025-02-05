@@ -933,8 +933,10 @@ const PrototypeMenuItems = [
       },
     ],
   },
+
+//沙盘
   {
-    label: "数字沙盘",
+    label: "--------数字沙盘--------",
     labelEn: "digital sandtable",
     link: "/prototype/sandtable",
     linkEn: "/en/prototype/sandtable",
