@@ -1,7 +1,7 @@
 ---
-title: 喷漆
+title:化学抛光
 sidebar:
   attrs: { id: prototype }
 ---
 
-喷漆 内容
+化学抛光工艺

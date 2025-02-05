@@ -1,7 +1,7 @@
 ---
-title: 耐温
+title: deburring
 sidebar:
   attrs: { id: prototype }
 ---
 
-耐温 内容
+去毛刺是第一步

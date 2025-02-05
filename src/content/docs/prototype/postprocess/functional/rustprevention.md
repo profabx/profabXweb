@@ -1,7 +1,6 @@
 ---
-title: 打磨
+title: 防锈涂层
 sidebar:
   attrs: { id: prototype }
 ---
-
-打磨 内容
+防锈涂层工艺
