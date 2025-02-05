@@ -317,10 +317,8 @@ const PrototypeMenuItems = [
       },
     ],
   },
-
-
 //componsites
-{
+  {
     label: "复合材料",
     labelEn: "Composites",
     translations: {
@@ -360,9 +358,9 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
     ],
-},
+  },
 
-
+//制造工艺
   {
     label: "制造工艺",
     link: "/prototype/manufacture",
@@ -373,6 +371,7 @@ const PrototypeMenuItems = [
     linkEn: "/en/prototype/manufacture",
     attrs: { id: "prototype" },
   },
+ //增材制造 
   {
     label: "增材制造",
     labelEn: "Additive manufature",
@@ -380,13 +379,21 @@ const PrototypeMenuItems = [
       en: "add manufacture",
     },
     collapsed: true,
-    items: [
-      
-       
+    items: [ 
+      {
+        label: "增材制造概况",
+        link: "/prototype/manufacture/add/add",
+        linkEn: "/en/prototype/manufacture/add/add",
+        labelEn: "The condition of add manufacture",
+        translations: {
+          en: "ADD",
+        },
+        attrs: { id: "prototype" },
+      },
       {
         label: "SLA",
-        link: "/prototype/sla",
-        linkEn: "/en/prototype/sla",
+        link: "/prototype/manufacture/add/sla",
+        linkEn: "/en/prototype/manufacture/add/sla",
         labelEn: "SLA",
         translations: {
           en: "sla",
@@ -394,25 +401,89 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
       {
-        label: "等材制造",
-        link: "/prototype/equal",
-        linkEn: "/en/prototype/equal",
-        labelEn: "equal",
+        label: "FDM",
+        link: "/prototype/manufacture/add/fdm",
+        linkEn: "/en/prototype/manufacture/add/fdm",
+        labelEn: "FDM",
         translations: {
-          en: "equal",
+          en: "FDM,",
+        },
+        attrs: { id: "prototype" },
+      },
+      //lcd/dlp
+      {
+        label: "LCD/DLP",
+        labelEn: "LCD/DLP",
+        translations: {
+          en: "LCD/DLP",
+        },
+        link: "/prototype/manufacture/add/lcddlp",
+        linkEn: "/en/prototype/manufacture/add/lcddlp",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "MJF",
+        link: "/prototype/manufacture/add/mjf",
+        linkEn: "/en/prototype/manufacture/add/mjf",
+        labelEn: "MJF",
+        translations: {
+          en: "MJF",
         },
         attrs: { id: "prototype" },
       },
       {
-        label: "减材制造",
-        labelEn: "cnc",
+        label: "SLS",
+        link: "/prototype/manufacture/add/sls",
+        linkEn: "/en/prototype/manufacture/add/sls",
+        labelEn: "SLS",
         translations: {
-          en: "cnc",
+          en: "SLS,",
         },
-        link: "/prototype/cnc",
-        linkEn: "/en/prototype/cnc",
         attrs: { id: "prototype" },
       },
+      //SLM
+      {
+        label: "SLM",
+        labelEn: "SLM",
+        translations: {
+          en: "SLM",
+        },
+        link: "/prototype/manufacture/add/SLM",
+        linkEn: "/en/prototype/manufacture/add/SLM",
+        attrs: { id: "prototype" },
+      },
+          //SLM
+      {
+        label: "SLM",
+        labelEn: "SLM",
+        translations: {
+          en: "SLM",
+        },
+        link: "/prototype/manufacture/add/SLM",
+        linkEn: "/en/prototype/manufacture/add/SLM",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "Polyjet",
+        link: "/prototype/manufacture/add/polyjet",
+        linkEn: "/en/prototype/manufacture/add/polyjet",
+        labelEn: "Polyjet",
+        translations: {
+          en: "Polyjet",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "其他增材制造",
+        link: "/prototype/manufacture/add/otheradd",
+        linkEn: "/en/prototype/manufacture/add/otheradd",
+        labelEn: "Other add manufacture",
+        translations: {
+          en: "Other add manufacture",
+        },
+        attrs: { id: "prototype" },
+      },
+
     ],
   },
   {
