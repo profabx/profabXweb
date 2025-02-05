@@ -1,6 +1,0 @@
----
-title: Grinding
-sidebar:
-  attrs: { id: prototype }
----
-打磨是后处理的一步操作，用于去除颗粒、毛刺和其他不规则形状。打磨通常使用磨床、研磨机或其他研磨工具进行。
