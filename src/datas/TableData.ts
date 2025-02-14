@@ -25,7 +25,9 @@ const TableData = [
   {
     title: "SLA",
     color: "#E7D109",
-    url: "/prototype/sla",  // 添加url字段
+    url: "/prototype/manufacture/add/sla",  // 添加url字段
+
+  
     // 直接用非金属「字典」中的 石英 / PC
     left: [
       polymersData["树脂"],
@@ -36,6 +38,7 @@ const TableData = [
   {
     title: "FDM",
     color: "#E7D109",
+    url: "/prototype/manufacture/add/fdm"
     left: [
       // 比如这里放 PC / PP / 树脂 ...
       polymersData["ABS"],polymersData["PP"],polymersData["尼龙"], polymersData["PEEK"],polymersData["TPU"],polymersData["PLA"],polymersData["ASA"],componsitesData["PACF"],componsitesData["PAGF"],componsitesData["ABSCF"],componsitesData["PLA+wood"],

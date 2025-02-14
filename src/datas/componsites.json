@@ -6,22 +6,17 @@
   },
   "PACF": {
     "label": "PA-CF",
-    "color": "#17F4DA",
+    "color": "#17F47D",
     "href": "/prototype/material/componsites/pacf"
   },
   "PAGF": {
     "label": "PA-GF",
-    "color": "#8CE21F",
+    "color": "#17F47D",
     "href": "/prototype/material/componsites/pagf"
   },
   "PLA+wood": {
     "label": "PLA-wood",
-    "color": "#2320A4",
+    "color": "#17F47D",
     "href": "/prototype/material/componsites/plawood"
-  },
-  "陶瓷": {
-    "label": "陶瓷",
-    "color": "#FF5733",
-    "href": "/prototype/material/ceramics/ceramics"
   }
 }
