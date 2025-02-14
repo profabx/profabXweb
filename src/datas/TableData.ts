@@ -1,7 +1,7 @@
 import NewtNonMetallicMaterialsData from "./NonMetallicMaterials.json";
 import metalData from "./Metal.json";
 import polymersData from "./polymers.json";
-import componsitesData from "./componsites.json";
+import componsitesData from "./composites.json";
 import ceramicsData from "./ceramics.json";
 import woodData from "./wood.json";
 interface TableItem {
@@ -41,13 +41,13 @@ const TableData = [
       polymersData["ABS"],polymersData["PP"],polymersData["尼龙"], polymersData["PEEK"],polymersData["TPU"],polymersData["PLA"],polymersData["ASA"],componsitesData["PACF"],componsitesData["PAGF"],componsitesData["ABSCF"],componsitesData["PLA+wood"],
      
     ],
-    right: [metalData["钢铁"], componsitesData[陶瓷],],
+    right: [metalData["铁/钢铁/钢"], componsitesData["陶瓷"],],
   },
   //lcd/dlp
   {
     title: "LCD/DLP",
     color: "#ffffff",
-    left: [NewtNonMetallicMaterialsData["石英"]],
+    left: [polymers["树脂"]],
     right: [],
   },
   //mjf
