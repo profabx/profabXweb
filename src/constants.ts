@@ -131,6 +131,26 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
       {
+        label: "镀锌板",
+        link: "/prototype/material/metal/galvanizedsteel",
+        linkEn: "/en/prototype/material/metal/galvanizedsteel",
+        labelEn: "Galvanized steel",
+        translations: {
+          en: "galvanizedsteel",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "冷扎板",
+        link: "/prototype/material/metal/coldrolled",
+        linkEn: "/en/prototype/material/metal/coldrolled",
+        labelEn: "Coldrolled",
+        translations: {
+          en: "coldrolled",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
         label: "其他金属",
         link: "/prototype/material/metal/metal",
         linkEn: "/en/prototype/material/metal/metal",
@@ -264,6 +284,36 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
       {
+        label: "亚克力",
+        link: "/prototype/material/polymers/acrylic",
+        linkEn: "/en/prototype/material/polymers/acrylic",
+        labelEn: "Acrylic",
+        translations: {
+          en: "Acrylic",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "ASA",
+        link: "/prototype/material/polymers/asa",
+        linkEn: "/en/prototype/material/polymers/asa",
+        labelEn: "ASA",
+        translations: {
+          en: "ASA",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "硅胶",
+        link: "/prototype/material/polymers/silicon",
+        linkEn: "/en/prototype/material/polymers/silicon",
+        labelEn: "Silicon",
+        translations: {
+          en: "Silicon",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
         label: "其他塑料",
         link: "/prototype/material/polymers/polymers",
         linkEn: "/en/prototype/material/polymers/polymers",
@@ -346,6 +396,36 @@ const PrototypeMenuItems = [
         },
         attrs: { id: "prototype" },
       },
+      {
+        label: "尼龙玻纤",
+        link: "/prototype/material/composites/pagf",
+        linkEn: "/en/prototype/material/composites/gb",
+        labelEn: "PA-GF",
+        translations: {
+          en: "PA-GF",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "尼龙碳纤维",
+        link: "/prototype/material/composites/pacf",
+        linkEn: "/en/prototype/material/composites/pacf",
+        labelEn: "PA-CF",
+        translations: {
+          en: "PA-CF",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "ABS-CF",
+        link: "/prototype/material/composites/abscf",
+        linkEn: "/en/prototype/material/composites/qbscf",
+        labelEn: "ABS-CF",
+        translations: {
+          en: "ABS-CF",
+        },
+        attrs: { id: "prototype" },
+      },
       
       {
         label: "其他复合材料",
@@ -359,7 +439,46 @@ const PrototypeMenuItems = [
       },
     ],
   },
-
+  {
+    label: "木",
+    labelEn: "Wood",
+    translations: {
+      en: "wood",
+    },
+  collapsed: true,
+  items: [
+      {
+        label: "胡桃木",
+        link: "/prototype/material/wood/walnut",
+        linkEn: "/en/prototype/material/composites/walnut",
+        labelEn: "Walnut",
+        translations: {
+          en: "Walnut",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "樱桃木",
+        link: "/prototype/material/wood/cherry",
+        linkEn: "/en/prototype/material/composites/cherry",
+        labelEn: "cherry",
+        translations: {
+          en: "Cherry",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "胶合板",
+        link: "/prototype/material/wood/plywood",
+        linkEn: "/en/prototype/material/composites/plywood",
+        labelEn: "plywood",
+        translations: {
+          en: "Cherry",
+        },
+        attrs: { id: "prototype" },
+      },
+    ]
+  }
 //制造工艺
   {
     label: "↓--------制造工艺--------↓",
