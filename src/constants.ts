@@ -478,7 +478,8 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
     ]
-  }
+  },
+]
 //制造工艺
   {
     label: "↓--------制造工艺--------↓",
