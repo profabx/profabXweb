@@ -62,7 +62,7 @@ const TableData = [
   {
     title: "SLS",
     color: "#E7D109",
-    left: [polymersData["TPU"],polymersData["PA"],componsitesData["PACF"],componsitesData["PAGF"]],
+    left: [polymersData["TPU"],polymersData["尼龙"],componsitesData["PACF"],componsitesData["PAGF"]],
     right: [],
 
   },
@@ -71,7 +71,7 @@ const TableData = [
     title: "SLM",
     color: "#E7D109",
     left: [],
-    right: [metalData["铁/钢"], metalData["铝/合金"],metalData["钛合金"],metalData["钨合金"]],
+    right: [metalData["铁/钢"], metalData["铝/合金"],metalData["钛/合金"],metalData["钨/合金"]],
   },
   //polyjet
   {

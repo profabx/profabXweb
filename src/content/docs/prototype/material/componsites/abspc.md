@@ -3,7 +3,7 @@ title: ABS+PC
 sidebar:
   attrs: { id: prototype }
 ---
-# ABS + PC 合金材料
+
 
 ABS + PC 合金是一种将丙烯腈-丁二烯-苯乙烯（ABS）与聚碳酸酯（PC）按特定比例混合而成的热塑性塑料。该合金结合了两者的优异特性，广泛应用于汽车、电子电器、家用电器等领域。
 

@@ -1,8 +1,13 @@
 {
-  "ABSGF": {
+  "ABS+GF": {
     "label": "ABS-GF",
     "color": "#17F47D",
     "href": "/prototype/material/componsites/absgf"
+  },
+  "ABS+PC": {
+    "label": "ABS+PC",
+    "color": "#17F47D",
+    "href": "/prototype/material/componsites/abspc"
   },
   "PACF": {
     "label": "PA-CF",
