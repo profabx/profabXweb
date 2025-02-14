@@ -136,12 +136,13 @@ const TableData = [
     right: [metalData["铁/钢"],metalData["铝/合金"],metalData["铜/合金"],metalData["钛/合金"],ceramicsData["玻璃"],woodData[“cherry”],woodData[“walnut”]],
   },
   {
-    title: "",
+    title: "激光切割",
     color: "#0000FF",
-    // 原先是 left: [], right: metalData.slice(0,2)
-    // 即只包含 金属数组的前2项 => “铁/钢” & “铝/合金”
-    left: [polymersData["亚克力"],polymersData["ABS"]],
-    right: [metalData["铁/钢"], metalData["铝/合金"],metalData["冷轧板"], metalData["镀锌板"]],
+    left: [polymersData["亚克力"], polymersData["ABS"]],
+    right: [metalData["铁/钢"], metalData["铝/合金"], metalData["冷轧板"], metalData["镀锌板"]]
   },
+  
+];
 
+// 确保导出语句在数组定义后面
 export default TableData;
