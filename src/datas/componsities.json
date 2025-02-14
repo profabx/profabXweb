@@ -2,22 +2,22 @@
   "ABS-CF": {
     "label": "ABS-CF",
     "color": "#17F47D",
-    "href": "/prototype/material/composites/abscf"
+    "href": "/prototype/material/componsites/abscf"
   },
   "PA-CF": {
     "label": "PA-CF",
     "color": "#17F4DA",
-    "href": "/prototype/material/composites/pacf
+    "href": "/prototype/material/componsites/pacf
     "
   },
   "PA-GF": {
     "label": "树脂",
     "color": "#8CE21F",
-    "href": "/prototype/material/composites/pagf"
+    "href": "/prototype/material/componsites/pagf"
   },
   "PLA-wood": {
     "label": "PLA-wood",
     "color": "#2320A4",
-    "href": "/prototype/material/composites/plawood"
+    "href": "/prototype/material/componsites/plawood"
   } 
 }

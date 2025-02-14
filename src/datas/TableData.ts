@@ -41,13 +41,13 @@ const TableData = [
       polymersData["ABS"],polymersData["PP"],polymersData["尼龙"], polymersData["PEEK"],polymersData["TPU"],polymersData["PLA"],polymersData["ASA"],componsitesData["PACF"],componsitesData["PAGF"],componsitesData["ABSCF"],componsitesData["PLA+wood"],
      
     ],
-    right: [metalData["铁/钢"], compositesData["陶瓷"],],
+    right: [metalData["铁/钢"], componsitesData["陶瓷"],],
   },
   //lcd/dlp
   {
     title: "LCD/DLP",
     color: "#ffffff",
-    left: [polymers["树脂"]],
+    left: [polymersData["树脂"]],
     right: [],
   },
   //mjf
