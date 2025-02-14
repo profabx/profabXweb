@@ -1,5 +1,5 @@
 ---
-title: PLA-WOOD
+title: 胶合板
 sidebar:
   attrs: { id: prototype }
 ---

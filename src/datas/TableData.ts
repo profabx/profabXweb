@@ -1,6 +1,9 @@
 import NewtNonMetallicMaterialsData from "./NonMetallicMaterials.json";
 import metalData from "./Metal.json";
 import polymersData from "./polymers.json";
+import componsitesData from "./componsites.json";
+import ceramicsData from "./ceramics.json";
+import woodData from "./wood.json";
 interface TableItem {
   title: string;
   color: string;
@@ -25,22 +28,20 @@ const TableData = [
     url: "/prototype/sla",  // 添加url字段
     // 直接用非金属「字典」中的 石英 / PC
     left: [
-      NewtNonMetallicMaterialsData["石英"],
-      polymersData["PC"],
+      polymersData["树脂"],
     ],
     right: [],
   },
   //fdm
   {
     title: "FDM",
-    color: "#ffffff",
+    color: "#E7D109",
     left: [
       // 比如这里放 PC / PP / 树脂 ...
-      polymersData["PC"],
-      polymersData["PP"],
-      polymersData["树脂"],
+      polymersData["ABS"],polymersData["PP"],polymersData["尼龙"], polymersData["PEEK"],polymersData["TPU"],polymersData["PLA"],polymersData["ASA"],componsitesData["PACF"],componsitesData["PAGF"],componsitesData["ABSCF"],componsitesData["PLA+wood"],
+     
     ],
-    right: [metalData["铁/钢"]],
+    right: [metalData["钢铁"], componsitesData[陶瓷],],
   },
   //lcd/dlp
   {

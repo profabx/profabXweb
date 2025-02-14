@@ -1,0 +1,13 @@
+{
+  "PC": {
+    "label": "陶瓷",
+    "color": "#17F47D",
+    "href": "/prototype/material/ceramics/ceramics"
+  },
+  "玻璃": {
+    "label": "玻璃",
+    "color": "#17F4DA",
+    "href": "/prototype/material/ceramics/glass"
+  }
+
+}

@@ -23,5 +23,15 @@
     "label": "钨/合金",
     "color": "#E7D109",
     "href": "/prototype/material/metal/tungsten"
+  },
+  "镀锌板": {
+    "label": "镀锌板",
+    "color": "#E7D109",
+    "href": "/prototype/material/metal/galvanizedsteel"
+  },
+  "冷轧板": {
+    "label": "冷轧板",
+    "color": "#E7D109",
+    "href": "/prototype/material/metal/coldrolled"
   }
 }

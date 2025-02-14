@@ -1,4 +1,9 @@
 {
+  "ABS": {
+    "label": "ABS",
+    "color": "#A5A3AE",
+    "href": "/prototype/material/polymers/abs"
+  },
   "PC": {
     "label": "PC",
     "color": "#17F47D",
@@ -24,21 +29,6 @@
     "color": "#0C0B13",
     "href": "/prototype/material/polymers/nylon"
   },
-  "尼龙玻纤": {
-    "label": "尼龙玻纤",
-    "color": "#0C0B13",
-    "href": "/prototype/material/polymers/nylongf"
-  },
-  "尼龙碳纤": {
-    "label": "尼龙碳纤",
-    "color": "#0C0B13",
-    "href": "/prototype/material/polymers/nyloncf"
-  },
-  "ABS": {
-    "label": "ABS",
-    "color": "#A5A3AE",
-    "href": "/prototype/material/polymers/abs"
-  },
   "PLA": {
     "label": "PLA",
     "color": "#A5A3AE",
@@ -53,5 +43,20 @@
     "label": "PEEK",
     "color": "#A5A3AE",
     "href": "/prototype/material/polymers/PEEK"
+  },
+  "亚克力": {
+    "label": "亚克力",
+    "color": "#A5A3AE",
+    "href": "/prototype/material/polymers/acrylic"
+  },
+  "ASA": {
+    "label": "ASA",
+    "color": "#A5A3AE",
+    "href": "/prototype/material/polymers/asa"
+  },
+  "硅胶": {
+    "label": "硅胶",
+    "color": "#A5A3AE",
+    "href": "/prototype/material/polymers/silicone"
   }
 }
