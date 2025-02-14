@@ -1,8 +1,8 @@
 {
-  "ABSCF": {
-    "label": "ABS-CF",
+  "ABSGF": {
+    "label": "ABS-GF",
     "color": "#17F47D",
-    "href": "/prototype/material/componsites/abscf"
+    "href": "/prototype/material/componsites/absgf"
   },
   "PACF": {
     "label": "PA-CF",

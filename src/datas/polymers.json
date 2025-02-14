@@ -58,5 +58,10 @@
     "label": "硅胶",
     "color": "#2320A4",
     "href": "/prototype/material/polymers/silicone"
+  },
+  "PU": {
+    "label": "PU",
+    "color": "#2320A4",
+    "href": "/prototype/material/polymers/pu"
   }
 }

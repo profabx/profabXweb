@@ -397,12 +397,22 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
       {
-        label: "ABS-CF",
-        link: "/prototype/material/composites/abscf",
-        linkEn: "/en/prototype/material/composites/qbscf",
-        labelEn: "ABS-CF",
+        label: "ABS-GF",
+        link: "/prototype/material/composites/absgf",
+        linkEn: "/en/prototype/material/composites/absgf",
+        labelEn: "ABS-GF",
         translations: {
-          en: "ABS-CF",
+          en: "ABS-GF",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "ABS-PC",
+        link: "/prototype/material/composites/abspc",
+        linkEn: "/en/prototype/material/composites/abspc",
+        labelEn: "ABS-PC",
+        translations: {
+          en: "ABS-PC",
         },
         attrs: { id: "prototype" },
       },

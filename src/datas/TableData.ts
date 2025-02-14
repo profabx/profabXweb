@@ -41,161 +41,107 @@ const TableData = [
     url: "/prototype/manufacture/add/fdm",
     left: [
       // 比如这里放 PC / PP / 树脂 ...
-      polymersData["ABS"],polymersData["PP"],polymersData["尼龙"], polymersData["PEEK"],polymersData["TPU"],polymersData["PLA"],polymersData["ASA"],componsitesData["PACF"],componsitesData["PAGF"],componsitesData["ABSCF"],componsitesData["PLA+wood"],
-     
-    ],
+      polymersData["ABS"],polymersData["PP"],polymersData["尼龙"], polymersData["PEEK"],polymersData["TPU"],polymersData["PLA"],polymersData["ASA"],componsitesData["PACF"],componsitesData["PAGF"],componsitesData["ABSCF"],componsitesData["PLA+wood"]],
     right: [metalData["铁/钢"], ceramicsData["陶瓷"]],
   },
   //lcd/dlp
   {
     title: "LCD/DLP",
-    color: "#ffffff",
-    left: [polymersData["树脂"]],
-    right: [],
+    color: "#E7D109",
+    left: [polymersData["树脂"],polymersData["TPU"]],
+    right: [ceramicsData["陶瓷"]],
   },
   //mjf
   {
     title: "MJF",
-    color: "#ffffff",
-    left: [
-      NewtNonMetallicMaterialsData["石英"],
-      polymersData["PC"],
-    ],
-    right: [metalData["铁/钢"], metalData["铝/合金"]],
+    color: "#E7D109",
+    left: [polymersData["PP"],polymersData["TPU"],polymersData["PA"]],
+    right: [],
   },
   //sls
   {
     title: "SLS",
-    color: "#ffffff",
-    left: [
-      NewtNonMetallicMaterialsData["石英"],
-      polymersData["PC"],
-      polymersData["PP"],
-    ],
+    color: "#E7D109",
+    left: [polymersData["TPU"],polymersData["PA"],componsitesData["PACF"],componsitesData["PAGF"]],
     right: [],
+
   },
   //slm
   {
     title: "SLM",
-    color: "#ffffff",
+    color: "#E7D109",
     left: [],
-    right: [metalData["铁/钢"], metalData["铝/合金"]],
+    right: [metalData["铁/钢"], metalData["铝/合金"],metalData["钛合金"],metalData["钨合金"]],
   },
   //polyjet
   {
     title: "PolyJet",
-    color: "#ffffff",
+    color: "#E7D109",
     left: [ polymersData["树脂"]],
     right: [],
   },
+
+//等材
+
+{
+  title: "注塑",
+  color: "#FF0000",
+  // 原先 left: NewtNonMetallicMaterialsData, right: []
+  // 这里假设你想用全部非金属
+  left: [polymersData["PC"],polymersData["PP"],polymersData["PEEK"],polymersData["ABS"],polymersData["尼龙"],
+  polymersData["POM"],polymersData["TPU"],componsitesData["PACF"],componsitesData["PAGF"],componsitesData["ABS+GF"],componsitesData["ABS+PC"]],
+  right: [],
+},
+{
+  title: "硅胶覆膜",
+  color: "#ffffff",
+  // 原先 left: NewtNonMetallicMaterialsData.slice(0,2), right: []
+  // slice(0,2) 表示非金属前2项 => “石英” & “PC”
+  left: [polymersData["硅胶"],polymersData["PU"]],
+  right: [],
+},
+{
+  title: "钣金",
+  color: "#ffffff",
+  left: [],
+  // 原先 right: metalData.slice(0,2)
+  // => “铁/钢”、“铝/合金”
+  right: [metalData["铁/钢"], metalData["铝/合金"],metalData["镀锌板"], metalData["冷轧板"]],
+},
+];
+
+
+
+
   // ...
   {
     title: "数控加工",
-    color: "#ffffff",
-    left: [
-      NewtNonMetallicMaterialsData["石英"],
-      polymersData["PC"],
-      polymersData["PP"],
-      polymersData["PEEK"],
-      polymersData["树脂"],
-      polymersData["TPU"],
-      polymersData["尼龙"],
-      polymersData["ABS"],
-    ],
-    right: [
-      metalData["铁/钢"],
-      metalData["铝/合金"],
-      metalData["铜/合金"],
-      metalData["钛/合金"],
-    ],
+    color: "#0000FF",
+    left: [polymersData["PC"],polymersData["PP"],polymersData["ABS"],polymersData["亚克力"],polymersData["PEEK"],polymersData["POM"],polymersData["尼龙"],componsitesData["PACF"],componsitesData["PAGF"]],
+    right: [metalData["铁/钢"],metalData["铝/合金"],metalData["铜/合金"],metalData["钛/合金"],ceramicsData["玻璃"],woodData[“cherry”],woodData[“walnut”]],
   },
 
   {
     title: "铣",
-    color: "#ffffff",
+    color: "#0000FF",
     // 原先写法: left: NewtNonMetallicMaterialsData, right: metalData
     // 现在改为：手动列出所有需要的非金属、金属（逐个写键名）
-    left: [
-      NewtNonMetallicMaterialsData["石英"],
-      polymersData["PC"],
-      polymersData["PP"],
-      polymersData["PEEK"],
-      polymersData["树脂"],
-      polymersData["TPU"],
-      polymersData["尼龙"],
-      polymersData["ABS"],
-    ],
-    right: [
-      metalData["铁/钢"],
-      metalData["铝/合金"],
-      metalData["铜/合金"],
-      metalData["钛/合金"],
-    ],
+    left: [polymersData["PC"],polymersData["PP"],polymersData["ABS"],polymersData["亚克力"],polymersData["PEEK"],polymersData["POM"],polymersData["尼龙"],componsitesData["PACF"],componsitesData["PAGF"]],
+    right: [metalData["铁/钢"],metalData["铝/合金"],metalData["铜/合金"],metalData["钛/合金"],ceramicsData["玻璃"],woodData[“cherry”],woodData[“walnut”]],
   },
   {
     title: "车",
-    color: "#ffffff",
-    left: [
-      NewtNonMetallicMaterialsData["石英"],
-      polymersData["PC"],
-      polymersData["PP"],
-      polymersData["PEEK"],
-      polymersData["树脂"],
-      polymersData["TPU"],
-      polymersData["尼龙"],
-      polymersData["ABS"],
-    ],
-    right: [
-      metalData["铁/钢"],
-      metalData["铝/合金"],
-      metalData["铜/合金"],
-      metalData["钛/合金"],
-    ],
+    color: "#0000FF",
+    left: [polymersData["PC"],polymersData["PP"],polymersData["ABS"],polymersData["亚克力"],polymersData["PEEK"],polymersData["POM"],polymersData["尼龙"],componsitesData["PACF"],componsitesData["PAGF"]],
+    right: [metalData["铁/钢"],metalData["铝/合金"],metalData["铜/合金"],metalData["钛/合金"],ceramicsData["玻璃"],woodData[“cherry”],woodData[“walnut”]],
   },
   {
-    title: "激光切割",
-    color: "#ffffff",
+    title: "",
+    color: "#0000FF",
     // 原先是 left: [], right: metalData.slice(0,2)
     // 即只包含 金属数组的前2项 => “铁/钢” & “铝/合金”
-    left: [],
-    right: [metalData["铁/钢"], metalData["铝/合金"]],
+    left: [polymersData["亚克力"],polymersData["ABS"]],
+    right: [metalData["铁/钢"], metalData["铝/合金"],metalData["冷轧板"], metalData["镀锌板"]],
   },
-  {
-    title: "注塑",
-    color: "#ffffff",
-    // 原先 left: NewtNonMetallicMaterialsData, right: []
-    // 这里假设你想用全部非金属
-    left: [
-      polymersData["PC"],
-      polymersData["PP"],
-      polymersData["PEEK"],
-      polymersData["树脂"],
-      polymersData["TPU"],
-      polymersData["尼龙"],
-      polymersData["ABS"],
-    ],
-    right: [],
-  },
-  {
-    title: "硅胶覆膜",
-    color: "#ffffff",
-    // 原先 left: NewtNonMetallicMaterialsData.slice(0,2), right: []
-    // slice(0,2) 表示非金属前2项 => “石英” & “PC”
-    left: [
-
-      polymersData["PC"],
-    ],
-    right: [],
-  },
-  {
-    title: "钣金",
-    color: "#ffffff",
-    left: [],
-    // 原先 right: metalData.slice(0,2)
-    // => “铁/钢”、“铝/合金”
-    right: [metalData["铁/钢"], metalData["铝/合金"]],
-  },
-];
-
 
 export default TableData;

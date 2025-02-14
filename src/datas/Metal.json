@@ -1,6 +1,6 @@
 {
   "铁/钢": {
-    "label": "铁钢",
+    "label": "钢",
     "color": "#A5A3AE",
     "href": "/prototype/material/metal/ss"
   },
@@ -15,12 +15,12 @@
     "href": "/prototype/material/metal/cu"
   },
   "钛/合金": {
-    "label": "钛/合金",
+    "label": "钛合金",
     "color": "#A5A3AE",
     "href": "/prototype/material/metal/ti"
   },
   "钨/合金": {
-    "label": "钨/合金",
+    "label": "钨合金",
     "color": "#A5A3AE",
     "href": "/prototype/material/metal/tungsten"
   },
