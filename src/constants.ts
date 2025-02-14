@@ -479,7 +479,6 @@ const PrototypeMenuItems = [
       },
     ]
   },
-]
 //制造工艺
   {
     label: "↓--------制造工艺--------↓",
