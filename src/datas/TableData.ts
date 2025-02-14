@@ -41,7 +41,7 @@ const TableData = [
     url: "/prototype/manufacture/add/fdm",
     left: [
       // 比如这里放 PC / PP / 树脂 ...
-      polymersData["ABS"],polymersData["PP"],polymersData["尼龙"], polymersData["PEEK"],polymersData["TPU"],polymersData["PLA"],polymersData["ASA"],componsitesData["PACF"],componsitesData["PAGF"],componsitesData["ABSGF"],componsitesData["PLA+wood"]],
+      polymersData["ABS"],polymersData["PP"],polymersData["尼龙"], polymersData["PEEK"],polymersData["TPU"],polymersData["PLA"],polymersData["ASA"],componsitesData["PACF"],componsitesData["PAGF"],componsitesData["ABS+GF"],componsitesData["PLA+wood"]],
     right: [metalData["铁/钢"], ceramicsData["陶瓷"]],
   },
   //lcd/dlp
