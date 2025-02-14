@@ -1,7 +1,7 @@
 import NewtNonMetallicMaterialsData from "./NonMetallicMaterials.json";
 import metalData from "./Metal.json";
 import polymersData from "./polymers.json";
-import componsitesData from "./composites.json";
+import componsitesData from "./componsites.json";
 import ceramicsData from "./ceramics.json";
 import woodData from "./wood.json";
 interface TableItem {
