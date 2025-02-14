@@ -117,7 +117,7 @@ const TableData = [
   {
     title: "数控加工",
     color: "#87CEFA",
-    url: "/prototype/manufacture/substractive/cnc"
+    url: "/prototype/manufacture/substractive/cnc",
     left: [polymersData["PC"], polymersData["PP"], polymersData["ABS"], polymersData["亚克力"], 
           polymersData["PEEK"], polymersData["POM"], polymersData["尼龙"], 
           componsitesData["PACF"], componsitesData["PAGF"]],
@@ -129,7 +129,7 @@ const TableData = [
   {
     title: "铣",
     color: "#87CEFA",
-    url: "/prototype/manufacture/substractive/milling"
+    url: "/prototype/manufacture/substractive/milling",
     left: [polymersData["PC"], polymersData["PP"], polymersData["ABS"], polymersData["亚克力"], 
           polymersData["PEEK"], polymersData["POM"], polymersData["尼龙"], 
           componsitesData["PACF"], componsitesData["PAGF"]],
@@ -141,7 +141,7 @@ const TableData = [
   {
     title: "车",
     color: "#87CEFA",
-    url: "/prototype/manufacture/substractive/lathing"
+    url: "/prototype/manufacture/substractive/lathing",
     left: [polymersData["PC"], polymersData["PP"], polymersData["ABS"], polymersData["亚克力"], 
           polymersData["PEEK"], polymersData["POM"], polymersData["尼龙"], 
           componsitesData["PACF"], componsitesData["PAGF"]],
@@ -153,7 +153,7 @@ const TableData = [
   {
     title: "激光切割",
     color: "#87CEFA",
-     url: "/prototype/manufacture/substractive/lasercutter"
+    url: "/prototype/manufacture/substractive/lasercutter",
     left: [polymersData["亚克力"], polymersData["ABS"]],
     right: [metalData["铁/钢"], metalData["铝/合金"], metalData["冷轧板"], metalData["镀锌板"]]
   }
