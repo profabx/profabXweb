@@ -108,41 +108,70 @@ const TableData = [
   // => “铁/钢”、“铝/合金”
   right: [metalData["铁/钢"], metalData["铝/合金"],metalData["镀锌板"], metalData["冷轧板"]],
 },
-];
 
+  // 修复等材制造部分的数组结构
+  {
+    title: "注塑",
+    color: "#FF0000",
+    left: [polymersData["PC"], polymersData["PP"], polymersData["PEEK"], polymersData["ABS"], 
+          polymersData["尼龙"], polymersData["POM"], polymersData["TPU"], 
+          componsitesData["PACF"], componsitesData["PAGF"]],
+    right: []
+  },
+  {
+    title: "硅胶覆膜",
+    color: "#ffffff",
+    left: [polymersData["硅胶"], polymersData["PU"]],
+    right: []
+  },
+  {
+    title: "钣金",
+    color: "#ffffff",
+    left: [],
+    right: [metalData["铁/钢"], metalData["铝/合金"], metalData["镀锌板"], metalData["冷轧板"]]
+  },
+  // 移除多余的数组结束符号和空行
 
-
-
-  // ...
+  // 添加减材制造部分
   {
     title: "数控加工",
     color: "#0000FF",
-    left: [polymersData["PC"],polymersData["PP"],polymersData["ABS"],polymersData["亚克力"],polymersData["PEEK"],polymersData["POM"],polymersData["尼龙"],componsitesData["PACF"],componsitesData["PAGF"]],
-    right: [metalData["铁/钢"],metalData["铝/合金"],metalData["铜/合金"],metalData["钛/合金"],ceramicsData["玻璃"],woodData[“cherry”],woodData[“walnut”]],
+    left: [polymersData["PC"], polymersData["PP"], polymersData["ABS"], polymersData["亚克力"], 
+          polymersData["PEEK"], polymersData["POM"], polymersData["尼龙"], 
+          componsitesData["PACF"], componsitesData["PAGF"]],
+    right: [metalData["铁/钢"], metalData["铝/合金"], metalData["铜/合金"], 
+           metalData["钛/合金"], ceramicsData["玻璃"], 
+           woodData["胡桃木"], woodData["樱桃木"]]
   },
 
   {
     title: "铣",
     color: "#0000FF",
-    // 原先写法: left: NewtNonMetallicMaterialsData, right: metalData
-    // 现在改为：手动列出所有需要的非金属、金属（逐个写键名）
-    left: [polymersData["PC"],polymersData["PP"],polymersData["ABS"],polymersData["亚克力"],polymersData["PEEK"],polymersData["POM"],polymersData["尼龙"],componsitesData["PACF"],componsitesData["PAGF"]],
-    right: [metalData["铁/钢"],metalData["铝/合金"],metalData["铜/合金"],metalData["钛/合金"],ceramicsData["玻璃"],woodData[“cherry”],woodData[“walnut”]],
+    left: [polymersData["PC"], polymersData["PP"], polymersData["ABS"], polymersData["亚克力"], 
+          polymersData["PEEK"], polymersData["POM"], polymersData["尼龙"], 
+          componsitesData["PACF"], componsitesData["PAGF"]],
+    right: [metalData["铁/钢"], metalData["铝/合金"], metalData["铜/合金"], 
+           metalData["钛/合金"], ceramicsData["玻璃"], 
+           woodData["胡桃木"], woodData["樱桃木"]]
   },
+
   {
     title: "车",
     color: "#0000FF",
-    left: [polymersData["PC"],polymersData["PP"],polymersData["ABS"],polymersData["亚克力"],polymersData["PEEK"],polymersData["POM"],polymersData["尼龙"],componsitesData["PACF"],componsitesData["PAGF"]],
-    right: [metalData["铁/钢"],metalData["铝/合金"],metalData["铜/合金"],metalData["钛/合金"],ceramicsData["玻璃"],woodData[“cherry”],woodData[“walnut”]],
+    left: [polymersData["PC"], polymersData["PP"], polymersData["ABS"], polymersData["亚克力"], 
+          polymersData["PEEK"], polymersData["POM"], polymersData["尼龙"], 
+          componsitesData["PACF"], componsitesData["PAGF"]],
+    right: [metalData["铁/钢"], metalData["铝/合金"], metalData["铜/合金"], 
+           metalData["钛/合金"], ceramicsData["玻璃"], 
+           woodData["胡桃木"], woodData["樱桃木"]]
   },
+
   {
     title: "激光切割",
     color: "#0000FF",
     left: [polymersData["亚克力"], polymersData["ABS"]],
     right: [metalData["铁/钢"], metalData["铝/合金"], metalData["冷轧板"], metalData["镀锌板"]]
-  },
-  
+  }
 ];
 
-// 确保导出语句在数组定义后面
 export default TableData;
