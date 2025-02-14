@@ -1,5 +1,5 @@
 ---
-title: 玻璃
+title: 石英玻璃
 sidebar:
   attrs: { id: prototype }
 ---
