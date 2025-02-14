@@ -38,7 +38,7 @@ const TableData = [
   {
     title: "FDM",
     color: "#E7D109",
-    url: "/prototype/manufacture/add/fdm"
+    url: "/prototype/manufacture/add/fdm",
     left: [
       // 比如这里放 PC / PP / 树脂 ...
       polymersData["ABS"],polymersData["PP"],polymersData["尼龙"], polymersData["PEEK"],polymersData["TPU"],polymersData["PLA"],polymersData["ASA"],componsitesData["PACF"],componsitesData["PAGF"],componsitesData["ABSCF"],componsitesData["PLA+wood"],
