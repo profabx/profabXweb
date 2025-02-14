@@ -48,6 +48,7 @@ const TableData = [
   {
     title: "LCD/DLP",
     color: "#E7D109",
+    url: "/prototype/manufacture/add/lcddlp",
     left: [polymersData["树脂"],polymersData["TPU"]],
     right: [ceramicsData["陶瓷"]],
   },
@@ -55,6 +56,7 @@ const TableData = [
   {
     title: "MJF",
     color: "#E7D109",
+    url: "/prototype/manufacture/add/mjf",
     left: [polymersData["PP"], polymersData["TPU"], polymersData["尼龙"]], // 使用"尼龙"替代"PA"
     right: [],
   },
@@ -62,6 +64,7 @@ const TableData = [
   {
     title: "SLS",
     color: "#E7D109",
+    url: "/prototype/manufacture/add/sls",
     left: [polymersData["TPU"],polymersData["尼龙"],componsitesData["PACF"],componsitesData["PAGF"]],
     right: [],
 
@@ -70,6 +73,7 @@ const TableData = [
   {
     title: "SLM",
     color: "#E7D109",
+    url: "/prototype/manufacture/add/slm",
     left: [],
     right: [metalData["铁/钢"], metalData["铝/合金"],metalData["钛/合金"],metalData["钨/合金"]],
   },
@@ -77,42 +81,17 @@ const TableData = [
   {
     title: "PolyJet",
     color: "#E7D109",
+    url: "/prototype/manufacture/add/polyjet",
     left: [ polymersData["树脂"]],
     right: [],
   },
 
 //等材
 
-{
-  title: "注塑",
-  color: "#FF0000",
-  // 原先 left: NewtNonMetallicMaterialsData, right: []
-  // 这里假设你想用全部非金属
-  left: [polymersData["PC"],polymersData["PP"],polymersData["PEEK"],polymersData["ABS"],polymersData["尼龙"],
-  polymersData["POM"],polymersData["TPU"],componsitesData["PACF"],componsitesData["PAGF"],componsitesData["ABS+GF"],componsitesData["ABS+PC"]],
-  right: [],
-},
-{
-  title: "硅胶覆膜",
-  color: "#ffffff",
-  // 原先 left: NewtNonMetallicMaterialsData.slice(0,2), right: []
-  // slice(0,2) 表示非金属前2项 => “石英” & “PC”
-  left: [polymersData["硅胶"],polymersData["PU"]],
-  right: [],
-},
-{
-  title: "钣金",
-  color: "#ffffff",
-  left: [],
-  // 原先 right: metalData.slice(0,2)
-  // => “铁/钢”、“铝/合金”
-  right: [metalData["铁/钢"], metalData["铝/合金"],metalData["镀锌板"], metalData["冷轧板"]],
-},
-
-  // 修复等材制造部分的数组结构
   {
     title: "注塑",
     color: "#FF0000",
+    url: "/prototype/manufacture/equal/injection",
     left: [polymersData["PC"], polymersData["PP"], polymersData["PEEK"], polymersData["ABS"], 
           polymersData["尼龙"], polymersData["POM"], polymersData["TPU"], 
           componsitesData["PACF"], componsitesData["PAGF"]],
@@ -120,13 +99,15 @@ const TableData = [
   },
   {
     title: "硅胶覆膜",
-    color: "#ffffff",
+    color: "#FF0000",
+    url: "/prototype/manufacture/equal/siliconemold",
     left: [polymersData["硅胶"], polymersData["PU"]],
     right: []
   },
   {
     title: "钣金",
-    color: "#ffffff",
+    color: "#FF0000",
+    url: "/prototype/manufacture/equal/sheetmetal",
     left: [],
     right: [metalData["铁/钢"], metalData["铝/合金"], metalData["镀锌板"], metalData["冷轧板"]]
   },
@@ -135,7 +116,8 @@ const TableData = [
   // 添加减材制造部分
   {
     title: "数控加工",
-    color: "#0000FF",
+    color: "#87CEFA",
+    url: "/prototype/manufacture/substractive/cnc"
     left: [polymersData["PC"], polymersData["PP"], polymersData["ABS"], polymersData["亚克力"], 
           polymersData["PEEK"], polymersData["POM"], polymersData["尼龙"], 
           componsitesData["PACF"], componsitesData["PAGF"]],
@@ -146,7 +128,8 @@ const TableData = [
 
   {
     title: "铣",
-    color: "#0000FF",
+    color: "#87CEFA",
+    url: "/prototype/manufacture/substractive/milling"
     left: [polymersData["PC"], polymersData["PP"], polymersData["ABS"], polymersData["亚克力"], 
           polymersData["PEEK"], polymersData["POM"], polymersData["尼龙"], 
           componsitesData["PACF"], componsitesData["PAGF"]],
@@ -157,7 +140,8 @@ const TableData = [
 
   {
     title: "车",
-    color: "#0000FF",
+    color: "#87CEFA",
+    url: "/prototype/manufacture/substractive/lathing"
     left: [polymersData["PC"], polymersData["PP"], polymersData["ABS"], polymersData["亚克力"], 
           polymersData["PEEK"], polymersData["POM"], polymersData["尼龙"], 
           componsitesData["PACF"], componsitesData["PAGF"]],
@@ -168,7 +152,8 @@ const TableData = [
 
   {
     title: "激光切割",
-    color: "#0000FF",
+    color: "#87CEFA",
+     url: "/prototype/manufacture/substractive/lasercutter"
     left: [polymersData["亚克力"], polymersData["ABS"]],
     right: [metalData["铁/钢"], metalData["铝/合金"], metalData["冷轧板"], metalData["镀锌板"]]
   }
