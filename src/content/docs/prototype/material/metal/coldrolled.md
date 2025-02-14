@@ -1,5 +1,5 @@
 ---
-title: 冷扎板
+title: 冷轧板
 sidebar:
   attrs: { id: prototype }
 ---

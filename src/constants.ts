@@ -141,7 +141,7 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
       {
-        label: "冷扎板",
+        label: "冷轧板",
         link: "/prototype/material/metal/coldrolled",
         linkEn: "/en/prototype/material/metal/coldrolled",
         labelEn: "Coldrolled",
@@ -189,26 +189,6 @@ const PrototypeMenuItems = [
         labelEn: "PA",
         translations: {
           en: "PA",
-        },
-        attrs: { id: "prototype" },
-      },
-      {
-        label: "尼龙玻纤",
-        link: "/prototype/material/polymers/pagf",
-        linkEn: "/en/prototype/material/polymers/gb",
-        labelEn: "PA-GF",
-        translations: {
-          en: "PA-GF",
-        },
-        attrs: { id: "prototype" },
-      },
-      {
-        label: "尼龙碳纤维",
-        link: "/prototype/material/polymers/pacf",
-        linkEn: "/en/prototype/material/polymers/pacf",
-        labelEn: "PA-CF",
-        translations: {
-          en: "PA-CF",
         },
         attrs: { id: "prototype" },
       },
