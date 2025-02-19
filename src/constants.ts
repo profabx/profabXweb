@@ -1134,13 +1134,54 @@ const AGVMenuItems = [
   },
 
   {
-    label: "小车平台",
+    label: "车辆参数化生成工具",
     link: "/agvedu/agvplatform",
     labelEn: "AGV edu",
     translations: {
       en: "eee",
     },
     linkEn: "/en/agvedu/agvplatform",
+    attrs: { id: "agv" },
+  },
+
+  {
+    label: "智能小车教育套件",
+    link: "/agvedu/agvkit",
+    labelEn: "AGVkit",
+    translations: {
+      en: "eee",
+    },
+    linkEn: "/en/agvedu/agvkit",
+    attrs: { id: "agv" },
+  },
+  {
+    label: "CMF实验",
+    link: "/agvedu/cmf",
+    labelEn: "CMF",
+    translations: {
+      en: "eee",
+    },
+    linkEn: "/en/agvedu/cmf",
+    attrs: { id: "agv" },
+  },
+  {
+    label: "仿真套件",
+    link: "/agvedu/simulatorlab",
+    labelEn: "Simulator Lab",
+    translations: {
+      en: "eee",
+    },
+    linkEn: "/en/agvedu/simulatorlab",
+    attrs: { id: "agv" },
+  },
+
+  {
+    label: "滑板底盘",
+    link: "/agvedu/henosv",
+    translations: {
+      en: "henosv",
+    },
+    linkEn: "/en/agvedu/henosv",
     attrs: { id: "agv" },
   },
   {
@@ -1153,15 +1194,7 @@ const AGVMenuItems = [
     linkEn: "/en/agvedu/simulator",
     attrs: { id: "agv" },
   },
-  {
-    label: "HenOSV",
-    link: "/agvedu/henosv",
-    translations: {
-      en: "henosv",
-    },
-    linkEn: "/en/agvedu/henosv",
-    attrs: { id: "agv" },
-  },
+
   {
     label: "AGV Case",
     link: "/agvedu/agvcase",
