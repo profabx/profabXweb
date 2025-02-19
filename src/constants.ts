@@ -1056,64 +1056,10 @@ const PrototypeMenuItems = [
   },
 ];
 
-// 侧边菜单项 - Sandtable
-const SandtableMenuItems = [
-  {
-    label: "效果",
-    link: "/sandtable/sandtable",
-    labelEn: "effect",
-    translations: {
-      en: "effect",
-    },
-    linkEn: "/en/sandtable/sandtable",
-    attrs: { id: "sandtable" },
-  },
-  {
-    label: "加工",
-    link: "/sandtable/manufacure",
-    labelEn: "processing",
-    translations: {
-      en: "processing",
-    },
-    linkEn: "/en/sandtable/manufacure",
-    attrs: { id: "sandtable" },
-  },
-  {
-    label: "电控",
-    link: "/sandtable/control",
-    labelEn: "control",
-    translations: {
-      en: "control",
-    },
-    linkEn: "/en/sandtable/control",
-    attrs: { id: "sandtable" },
-  },
-  {
-    label: "数字化",
-    link: "/sandtable/digital",
-    labelEn: "digital",
-    translations: {
-      en: "digital",
-    },
-    linkEn: "/en/sandtable/digital",
-    attrs: { id: "sandtable" },
-  },
-  {
-    label: "维护与升级",
-    link: "/sandtable/maintain",
-    labelEn: "maintain",
-    translations: {
-      en: "maintain",
-    },
-    linkEn: "/en/sandtable/maintain",
-    attrs: { id: "sandtable" },
-  },
-];
-
 // 侧边菜单项 - AGV
 const AGVMenuItems = [
   {
-    label: "汽车场景实验室概况",
+    label: "汽车场景实验室",
     link: "/agvedu/agv",
     labelEn: "AGV edu",
     translations: {
@@ -1122,17 +1068,6 @@ const AGVMenuItems = [
     linkEn: "/en/agvedu/agv",
     attrs: { id: "agv" },
   },
-  {
-    label: "概念与趋势",
-    link: "/agvedu/basic",
-    labelEn: "basic",
-    translations: {
-      en: "basic",
-    },
-    linkEn: "/en/agvedu/basic",
-    attrs: { id: "agv" },
-  },
-
   {
     label: "车辆参数化生成工具",
     link: "/agvedu/agvplatform",
