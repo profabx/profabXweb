@@ -1,5 +1,5 @@
 ---
-title: Manufacture
+title: 制造工艺
 sidebar:
   attrs: { id: sandtable }
 ---

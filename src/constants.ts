@@ -1380,19 +1380,19 @@ const MenuData: NavItemProps[] = [
     items: [
       {
         label: "材料",
-        link: "/prototype/metal",
+        link: "/prototype/about",
         labelEn: "Metal",
         translations: {
           en: "Metall",
         },
-        linkEn: "/en/prototype/metal",
+        linkEn: "/en/prototype/about",
         attrs: { id: "prototype" },
       },
       {
         label: "制造工艺",
         labelEn: "manufacture",
-        link: "/prototype/add",
-        linkEn: "/en/prototype/add",
+        link: "/prototype/manufactur",
+        linkEn: "/en/prototype/manufactur",
         translations: {
           en: "manufacture",
         },
@@ -1400,8 +1400,8 @@ const MenuData: NavItemProps[] = [
       {
         label: "后处理",
         labelEn: "Post-processing",
-        link: "/prototype/polishing",
-        linkEn: "/en/prototype/polishing",
+        link: "/prototype/postprocess/postprocess",
+        linkEn: "/en/prototype/postprocess/postprocess",
         translations: {
           en: "Post-processing",
         },
@@ -1409,8 +1409,8 @@ const MenuData: NavItemProps[] = [
       {
         label: "测试",
         labelEn: "Test",
-        link: "/prototype/hardness",
-        linkEn: "/en/prototype/hardness",
+        link: "/prototype/test/test",
+        linkEn: "/en/prototype/test/test",
         translations: {
           en: "test",
         },
