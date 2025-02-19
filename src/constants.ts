@@ -1291,14 +1291,6 @@ const SideBarData = [
     items: [...PrototypeMenuItems],
   },
   {
-    id: "sandtable",
-    label: "沙盘",
-    translations: {
-      en: "sandtable",
-    },
-    items: [...SandtableMenuItems],
-  },
-  {
     id: "agv",
     label: "未来交通",
     translations: {
