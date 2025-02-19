@@ -1417,7 +1417,7 @@ const MenuData: NavItemProps[] = [
       },
       {
         label: "数字沙盘",
-        labelEn: "digital sandtable",
+        labelEn: "Digital sandtable",
         link: "/prototype/sandtable",
         linkEn: "/en/prototype/sandtable",
         translations: {
