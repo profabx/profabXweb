@@ -1381,9 +1381,9 @@ const MenuData: NavItemProps[] = [
       {
         label: "材料",
         link: "/prototype/about",
-        labelEn: "Metal",
+        labelEn: "Material",  
         translations: {
-          en: "Metall",
+          en: "material",
         },
         linkEn: "/en/prototype/about",
         attrs: { id: "prototype" },
@@ -1391,8 +1391,8 @@ const MenuData: NavItemProps[] = [
       {
         label: "制造工艺",
         labelEn: "manufacture",
-        link: "/prototype/manufactur",
-        linkEn: "/en/prototype/manufactur",
+        link: "/prototype/manufacture",
+        linkEn: "/en/prototype/manufacture",
         translations: {
           en: "manufacture",
         },
