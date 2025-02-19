@@ -1196,7 +1196,7 @@ const AGVMenuItems = [
   },
 
   {
-    label: "AGV Case",
+    label: "实训平台",
     link: "/agvedu/agvcase",
     translations: {
       en: "agvcase",
@@ -1342,14 +1342,14 @@ const AboutItems = [
 const SideBarData = [
   {
     key: "fab",
-    label: "Fab 课程方案",
+    label: "Fab 方案",
     translations: {
       en: "fab",
     },
     items: [...FabMenuItems],
   },
   {
-    label: "工程样机开发",
+    label: "数字制造",
     translations: {
       en: "prototype",
     },
@@ -1365,7 +1365,7 @@ const SideBarData = [
   },
   {
     id: "agv",
-    label: "agv",
+    label: "未来交通",
     translations: {
       en: "agv",
     },
@@ -1524,10 +1524,34 @@ const MenuData: NavItemProps[] = [
         linkEn: "/en/agvedu/agv",
       },
       {
-        label: "小车平台",
-        labelEn: "AGV edu",
+        label: "车辆参数化生成工具",
+        labelEn: "AGV design platform",
         link: "/agvedu/agvplatform",
         linkEn: "/en/agvedu/agvplatform",
+      },
+      {
+        label: "智能小车教育套件",
+        labelEn: "AGV education kit",
+        link: "/agvedu/agvkit",
+        linkEn: "/en/agvedu/agvkit",
+      },
+      {
+        label: "CMF实验室",
+        labelEn: "CMF lab",
+        link: "/agvedu/cmf",
+        linkEn: "/en/agvedu/cmf",
+      },
+      {
+        label: "仿真实验室",
+        labelEn: "Simulator lab",
+        link: "/agvedu/simulatorlab",
+        linkEn: "/en/agvedu/simulatorlab",
+      },
+      {
+        label: "滑板底盘",
+        labelEn: "HenOSV",
+        link: "/agvedu/henosv",
+        linkEn: "/en/agvedu/henosv",
       },
       {
         label: "模拟器",
@@ -1536,11 +1560,12 @@ const MenuData: NavItemProps[] = [
         linkEn: "/en/agvedu/simulator",
       },
       {
-        label: "HenOSV",
-        labelEn: "HenOSV",
-        link: "/agvedu/henosv",
-        linkEn: "/en/agvedu/henosv",
+        label: "实训平台",
+        labelEn: "Practice platform",
+        link: "/agvedu/agvcase",
+        linkEn: "/en/agvedu/agvcase",
       },
+
       {
         label: "探索未来出行",
         labelEn: "Explore future traffic",
