@@ -1,7 +1,7 @@
 ---
 title: 数字沙盘
 sidebar:
-  attrs: { id:prototype }
+  attrs: { id: prototype }
 ---
 
 # 效果
