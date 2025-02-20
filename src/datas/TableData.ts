@@ -24,7 +24,7 @@ const TableData = [
   //sla
   {
     title: "SLA",
-    color: "#F4B400",
+    color: "#A5A3AE",
     url: "/prototype/manufacture/add/sla",  // 添加url字段
 
   
@@ -37,7 +37,7 @@ const TableData = [
   //fdm
   {
     title: "FDM",
-    color: "#F4B400",
+    color: "#A5A3AE",
     url: "/prototype/manufacture/add/fdm",
     left: [
       // 比如这里放 PC / PP / 树脂 ...
@@ -47,7 +47,7 @@ const TableData = [
   //lcd/dlp
   {
     title: "LCD/DLP",
-    color: "#F4B400",
+    color: "#A5A3AE",
     url: "/prototype/manufacture/add/lcddlp",
     left: [polymersData["树脂"],polymersData["TPU"]],
     right: [ceramicsData["陶瓷"]],
@@ -55,7 +55,7 @@ const TableData = [
   //mjf
   {
     title: "MJF",
-    color: "#F4B400",
+    color: "#A5A3AE",
     url: "/prototype/manufacture/add/mjf",
     left: [polymersData["PP"], polymersData["TPU"], polymersData["尼龙"]], // 使用"尼龙"替代"PA"
     right: [],
@@ -63,7 +63,7 @@ const TableData = [
   //sls
   {
     title: "SLS",
-    color: "#F4B400",
+    color: "#A5A3AE",
     url: "/prototype/manufacture/add/sls",
     left: [polymersData["TPU"],polymersData["尼龙"],componsitesData["PACF"],componsitesData["PAGF"]],
     right: [],
@@ -72,7 +72,7 @@ const TableData = [
   //slm
   {
     title: "SLM",
-    color: "#F4B400",
+    color: "#A5A3AE",
     url: "/prototype/manufacture/add/slm",
     left: [],
     right: [metalData["铁/钢"], metalData["铝/合金"],metalData["钛/合金"],metalData["钨/合金"]],
@@ -80,7 +80,7 @@ const TableData = [
   //polyjet
   {
     title: "PolyJet",
-    color: "#F4B400",
+    color: "#A5A3AE",
     url: "/prototype/manufacture/add/polyjet",
     left: [ polymersData["树脂"]],
     right: [],
@@ -90,7 +90,7 @@ const TableData = [
 
   {
     title: "注塑",
-    color: "#DB4437",
+    color: "#EA4335",
     url: "/prototype/manufacture/equal/injection",
     left: [polymersData["PC"], polymersData["PP"], polymersData["PEEK"], polymersData["ABS"], 
           polymersData["尼龙"], polymersData["POM"], polymersData["TPU"], 
@@ -99,14 +99,14 @@ const TableData = [
   },
   {
     title: "硅胶覆膜",
-    color: "#DB4437",
+    color: "#EA4335",
     url: "/prototype/manufacture/equal/siliconemold",
     left: [polymersData["硅胶"], polymersData["PU"]],
     right: []
   },
   {
     title: "钣金",
-    color: "#DB4437",
+    color: "#EA4335",
     url: "/prototype/manufacture/equal/sheetmetal",
     left: [],
     right: [metalData["铁/钢"], metalData["铝/合金"], metalData["镀锌板"], metalData["冷轧板"]]
@@ -116,7 +116,7 @@ const TableData = [
   // 添加减材制造部分
   {
     title: "数控加工",
-    color: "#4285F4",
+    color: "#A5A3AE",
     url: "/prototype/manufacture/substractive/cnc",
     left: [polymersData["PC"], polymersData["PP"], polymersData["ABS"], polymersData["亚克力"], 
           polymersData["PEEK"], polymersData["POM"], polymersData["尼龙"], 
@@ -128,7 +128,7 @@ const TableData = [
 
   {
     title: "铣",
-    color: "#4285F4",
+    color: "#A5A3AE",
     url: "/prototype/manufacture/substractive/milling",
     left: [polymersData["PC"], polymersData["PP"], polymersData["ABS"], polymersData["亚克力"], 
           polymersData["PEEK"], polymersData["POM"], polymersData["尼龙"], 
@@ -140,7 +140,7 @@ const TableData = [
 
   {
     title: "车",
-    color: "#4285F4",
+    color: "#A5A3AE",
     url: "/prototype/manufacture/substractive/lathing",
     left: [polymersData["PC"], polymersData["PP"], polymersData["ABS"], polymersData["亚克力"], 
           polymersData["PEEK"], polymersData["POM"], polymersData["尼龙"], 
@@ -152,7 +152,7 @@ const TableData = [
 
   {
     title: "激光切割",
-    color: "#4285F4",
+    color: "#A5A3AE",
     url: "/prototype/manufacture/substractive/lasercutter",
     left: [polymersData["亚克力"], polymersData["ABS"]],
     right: [metalData["铁/钢"], metalData["铝/合金"], metalData["冷轧板"], metalData["镀锌板"]]
