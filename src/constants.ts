@@ -1120,7 +1120,7 @@ const AGVMenuItems = [
     attrs: { id: "agv" },
   },
   {
-    label: "模拟器",
+    label: "交通工具模拟器",
     link: "/agvedu/simulator",
     labelEn: "agvsimulator",
     translations: {
@@ -1481,7 +1481,7 @@ const MenuData: NavItemProps[] = [
         linkEn: "/en/agvedu/henosv",
       },
       {
-        label: "模拟器",
+        label: "交通工具模拟器",
         labelEn: "agvsimulator",
         link: "/agvedu/simulator",
         linkEn: "/en/agvedu/simulator",
