@@ -1,67 +1,67 @@
 {
   "ABS": {
     "label": "ABS",
-    "color": "#2320A4",
+    "color": "#3F51B5",
     "href": "/prototype/material/polymers/abs"
   },
   "PC": {
     "label": "PC",
-    "color": "#2320A4",
+    "color": "#3F51B5",
     "href": "/prototype/material/polymers/pc"
   },
   "PP": {
     "label": "PP",
-    "color": "#2320A4",
+    "color": "#3F51B5",
     "href": "/prototype/material/polymers/pp"
   },
   "树脂": {
     "label": "树脂",
-    "color": "#2320A4",
+    "color": "#3F51B5",
     "href": "/prototype/material/polymers/resin"
   },
   "TPU": {
     "label": "TPU",
-    "color": "#2320A4",
+    "color": "#3F51B5",
     "href": "/prototype/material/polymers/tpu"
   },
   "尼龙": {
     "label": "尼龙",
-    "color": "#2320A4",
+    "color": "#3F51B5",
     "href": "/prototype/material/polymers/nylon"
   },
   "PLA": {
     "label": "PLA",
-    "color": "#2320A4",
+    "color": "#3F51B5",
     "href": "/prototypematerial/polymers/PLA"
   },
   "POM": {
     "label": "POM",
-    "color": "#2320A4",
+    "color": "#3F51B5",
     "href": "/prototype/material/polymers/POM"
   },
   "PEEK": {
     "label": "PEEK",
-    "color": "#2320A4",
+    "color": "#3F51B5",
     "href": "/prototype/material/polymers/PEEK"
   },
   "亚克力": {
     "label": "亚克力",
-    "color": "#2320A4",
+    "color": "#3F51B5",
     "href": "/prototype/material/polymers/acrylic"
   },
   "ASA": {
     "label": "ASA",
-    "color": "#2320A4",
+    "color": "#3F51B5",
     "href": "/prototype/material/polymers/asa"
   },
   "硅胶": {
     "label": "硅胶",
-    "color": "#2320A4",
+    "color": "#3F51B5",
     "href": "/prototype/material/polymers/silicone"
   },
   "PU": {
     "label": "PU",
-    "color": "#2320A4",
+    "color": "#3F51B5",
     "href": "/prototype/material/polymers/pu"
   }
 }
