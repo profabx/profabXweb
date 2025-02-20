@@ -1,12 +1,12 @@
 {
   "陶瓷": {
     "label": "陶瓷",
-    "color": "#17F47D",
+    "color": "#34A853",
     "href": "/prototype/material/ceramics/ceramics"
   },
   "玻璃": {
     "label": "玻璃",
-    "color": "#17F47D",
+    "color": "#34A853",
     "href": "/prototype/material/ceramics/glass"
   }
 

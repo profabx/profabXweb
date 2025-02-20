@@ -2,17 +2,17 @@
   
   "胡桃木": {
     "label": "胡桃木",
-    "color": "#E3E709",
+    "color": "#F2A600",
     "href": "/prototype/material/wood/walnut"
   },
   "樱桃木": {
     "label": "樱桃木",
-    "color": "#E3E709",
+    "color": "#F2A600",
     "href": "/prototype/material/wood/cherry"
   },
   "胶合板": {
     "label": "胶合板",
-    "color": "#E3E709",
+    "color": "#F2A600",
     "href": "/prototype/material/wood/plywood"
   }
 

@@ -1,37 +1,37 @@
 {
   "铁/钢": {
     "label": "钢",
-    "color": "#A5A3AE",
+    "color": "#9E9E9E",
     "href": "/prototype/material/metal/ss"
   },
   "铝/合金": {
     "label": "铝合金",
-    "color": "#A5A3AE",
+    "color": "#9E9E9E",
     "href": "/prototype/material/metal/al"
   },
   "铜/合金": {
     "label": "铜合金",
-    "color": "#A5A3AE",
+    "color": "#9E9E9E",
     "href": "/prototype/material/metal/cu"
   },
   "钛/合金": {
     "label": "钛合金",
-    "color": "#A5A3AE",
+    "color": "#9E9E9E",
     "href": "/prototype/material/metal/ti"
   },
   "钨/合金": {
     "label": "钨合金",
-    "color": "#A5A3AE",
+    "color": "#9E9E9E",
     "href": "/prototype/material/metal/tungsten"
   },
   "镀锌板": {
     "label": "镀锌板",
-    "color": "#A5A3AE",
+    "color": "#9E9E9E",
     "href": "/prototype/material/metal/galvanizedsteel"
   },
   "冷轧板": {
     "label": "冷轧板",
-    "color": "#A5A3AE",
+    "color": "#9E9E9E",
     "href": "/prototype/material/metal/coldrolled"
   }
 }

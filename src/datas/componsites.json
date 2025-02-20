@@ -1,27 +1,27 @@
 {
   "ABS+GF": {
     "label": "ABS-GF",
-    "color": "#17F47D",
+    "color": "#0F9D58",
     "href": "/prototype/material/componsites/absgf"
   },
   "ABS+PC": {
     "label": "ABS+PC",
-    "color": "#17F47D",
+    "color": "#0F9D58",
     "href": "/prototype/material/componsites/abspc"
   },
   "PACF": {
     "label": "PA-CF",
-    "color": "#17F47D",
+    "color": "#0F9D58",
     "href": "/prototype/material/componsites/pacf"
   },
   "PAGF": {
     "label": "PA-GF",
-    "color": "#17F47D",
+    "color": "#0F9D58",
     "href": "/prototype/material/componsites/pagf"
   },
   "PLA+wood": {
     "label": "PLA-wood",
-    "color": "#17F47D",
+    "color": "#0F9D58",
     "href": "/prototype/material/componsites/plawood"
   }
 }
