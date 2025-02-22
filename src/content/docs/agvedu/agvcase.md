@@ -1,5 +1,5 @@
 ---
-title: AGV Case
+title: 实训平台
 sidebar:
   attrs: { id: agv }
 ---

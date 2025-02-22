@@ -1131,16 +1131,6 @@ const AGVMenuItems = [
   },
 
   {
-    label: "实训平台",
-    link: "/agvedu/agvcase",
-    translations: {
-      en: "agvcase",
-    },
-    linkEn: "/en/agvedu/agvcase",
-    attrs: { id: "agv" },
-  },
-
-  {
     label: "行业标准",
     link: "/agvedu/authentication",
     labelEn: "authentication",
