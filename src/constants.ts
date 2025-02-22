@@ -1059,7 +1059,7 @@ const PrototypeMenuItems = [
 // 侧边菜单项 - AGV
 const AGVMenuItems = [
   {
-    label: "汽车场景实验室",
+    label: "汽车场景实验室概况",
     link: "/agvedu/agv",
     labelEn: "AGV edu",
     translations: {
@@ -1263,7 +1263,7 @@ const AboutItems = [
   },
 ];
 
-// 侧边栏菜单
+// 侧边栏菜单-
 const SideBarData = [
   {
     key: "fab",
@@ -1282,7 +1282,7 @@ const SideBarData = [
   },
   {
     id: "agv",
-    label: "未来交通",
+    label: "汽车场景实验室",
     translations: {
       en: "agv",
     },
@@ -1429,17 +1429,12 @@ const MenuData: NavItemProps[] = [
   //nav-traffic
   {
     key: "traffic",
-    label: "未来交通",
+    label: "汽车场景实验室",
     labelEn: "futuretraffic",
     link: "/agvedu/agv",
     linkEn: "/en/agvedu/agv",
     items: [
-      {
-        label: "汽车场景实验室",
-        labelEn: "AGV edu",
-        link: "/agvedu/agv",
-        linkEn: "/en/agvedu/agv",
-      },
+  
       {
         label: "车辆参数化生成工具",
         labelEn: "AGV design platform",
@@ -1475,12 +1470,6 @@ const MenuData: NavItemProps[] = [
         labelEn: "agvsimulator",
         link: "/agvedu/simulator",
         linkEn: "/en/agvedu/simulator",
-      },
-      {
-        label: "实训平台",
-        labelEn: "Practice platform",
-        link: "/agvedu/agvcase",
-        linkEn: "/en/agvedu/agvcase",
       },
 
       {

@@ -1,5 +1,5 @@
 ---
-title: Contact
+title: 联系方式
 sidebar:
   attrs: { id: about }
 ---
