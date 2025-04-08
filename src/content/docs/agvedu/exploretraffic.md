@@ -28,7 +28,7 @@ sidebar:
   * [APS](https://aps.autodesk.com/)和Autodesk CAD软件的API在应用和开发端的联系与区别，数据是否能共享；
   * [APS](https://aps.autodesk.com/)和Autodesk CAD软件的API，如何和AI算法、数据库等高效连接；
   * 在Inventory/Fusion 360的API开发过程中，对应的优劣势。同时对比c#和python在参数化建模上面的效率差别，是否有更好的方法提升效率；
-5. OpensCAD系列对参数化设计交通工具的探索；
+5. [OpensCAD](https://openscad.org/)系列对参数化设计交通工具的探索；
   * OpensCAD是否能做带曲面的零件，相关参数化操作的复杂程度；
   * OpensCAD在做复杂的装配体期间的效率如何；
   * [Zoo](https://text-to-cad.zoo.dev/)与opensCAD的关系是什么；
