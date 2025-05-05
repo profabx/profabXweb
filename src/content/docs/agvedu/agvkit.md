@@ -7,7 +7,7 @@ sidebar:
 使用参数化生成工具快速生成车辆的同时，利用fablab的数字制造快速生成底盘。开发者可以高效开发上层功能平台。此项目将在3月21日正式发布公开版本。
 
 
-
+![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img/WechatIMG2321.jpg)
 智能小车教育套件配套的实训平台是引导职业教育学生入门无人驾驶的首选实训设备，小车实训平台具备环境感知模块、决策模块、ROS Auto驾驶系统、控制模块、嵌入式车载控制开发板。小车使用模块化设计，学生可以组装单模块功能实训，也可以集合模块进行功能实训。
 
 ![](https://raw.githubusercontent.com/bobwu0214/imageuploadservice/main/img/202210112008158.png)
