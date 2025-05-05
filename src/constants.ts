@@ -1055,16 +1055,16 @@ const PrototypeMenuItems = [
   },
 
 //沙盘
-  {
-    label: "--------数字沙盘--------",
-    labelEn: "digital sandtable",
-    link: "/prototype/sandtable",
-    linkEn: "/en/prototype/sandtable",
-    translations: {
-      en: "digital sandtabl",
-    },
-    attrs: { id: "prototype" },
-  },
+//  {
+//    label: "--------数字沙盘--------",
+//    labelEn: "digital sandtable",
+//    link: "/prototype/sandtable",
+//    linkEn: "/en/prototype/sandtable",
+//    translations: {
+//      en: "digital sandtabl",
+//    },
+//    attrs: { id: "prototype" },
+//  },
 ];
 
 // 侧边菜单项 - AGV
@@ -1471,16 +1471,16 @@ const MenuData: NavItemProps[] = [
           en: "test",
         },
       },
-      {
-        label: "数字沙盘",
-        labelEn: "Digital sandtable",
-        link: "/prototype/sandtable",
-        linkEn: "/en/prototype/sandtable",
-        translations: {
-          en: "digital sandtabl",
-        },
-        attrs: { id: "prototype" },
-      },
+   //   {
+   //     label: "数字沙盘",
+   //     labelEn: "Digital sandtable",
+   //     link: "/prototype/sandtable",
+   //     linkEn: "/en/prototype/sandtable",
+   //     translations: {
+   //       en: "digital sandtabl",
+   //     },
+   //     attrs: { id: "prototype" },
+   //   },
       {
         label: "探索数字制造",
         labelEn: "explore digital fabrication",
