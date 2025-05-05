@@ -42,6 +42,17 @@ const FabMenuItems = [
     linkEn: "https://www.fablabs.io/",
     attrs: { id: "fab" },
   },
+  {
+    label: "探索Fab",
+    link: "/fab/explorefab",
+    labelEn: "Explore Fab",
+    translations: {
+      en: "Explore Fab",
+    },
+    linkEn: "/en/fab/explorefab",
+    attrs: { id: "fab" },
+  },
+  
 ];
 
 // 侧边栏菜单项 - Prototype
