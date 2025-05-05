@@ -1572,8 +1572,8 @@ const MenuData: NavItemProps[] = [
       {
         label: "后处理",
         labelEn: "Post-processing",
-        link: "/sandtable/postprocess",
-        linkEn: "/en/sandtable/postprocess",
+        link: "/sandtable/postprocessing",
+        linkEn: "/en/sandtable/postprocessing",
       
       },
       {
