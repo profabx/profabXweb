@@ -1,5 +1,5 @@
 ---
-title: Control
+title: 控制
 sidebar:
   attrs: { id: sandtable }
 ---

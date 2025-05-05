@@ -1308,6 +1308,61 @@ const SideBarData = [
     items: [...AboutItems],
   },
 ];
+//侧边栏-沙盘
+const sandtableMenuItems = [
+  {
+    label: "数字沙盘",
+    link: "/sandtable/basic",
+    labelEn: "digital sandtable",
+    translations: {
+      en: "sandtalbe",
+    },
+    linkEn: "/en/sandtable/basic",
+    attrs: { id: "sandtable" },
+  },
+  {
+    label: "加工工艺",
+    link: "/sandtable/manufacture",
+    labelEn: "Manufacture processing",
+    translations: {
+      en: "sandtable",
+    },
+    linkEn: "/en/sandtable/manufacture",
+    attrs: { id: "sandtable" },
+  },
+  {
+    label: "控制",
+    link: "/sandtable/control",
+    labelEn: "Control",
+  
+    translations: {
+      en: "sandtable",
+    },
+    linkEn: "/en/sandtable/control",
+    attrs: { id: "sandtable" },
+  },
+  {
+    label: "后处理",
+    link: "/sandtable/postprocessing",
+    labelEn: "Post-processing",
+    translations: {
+      en: "sandtable",
+    },
+    linkEn: "/en/sandtable/postprocessing",
+    attrs: { id: "sandtable" },
+  },
+  {
+    label: "维护",
+    link: "/sandtable/maintain",
+    labelEn: "Maintain",
+    translations: {
+      en: "sandtable",
+    },
+    linkEn: "/en/sandtable/maintain",
+    attrs: { id: "sandtable" },
+  },
+
+];
 
 // 顶部菜单
 const MenuData: NavItemProps[] = [
@@ -1361,9 +1416,9 @@ const MenuData: NavItemProps[] = [
       },
       {
         label: "探索 Fab",
-        link: "/lab/explorefab",
+        link: "/fab/explorefab",
         labelEn: "Explore Fab",
-        linkEn: "/en/lab/explorefab",
+        linkEn: "/en/fab/explorefab",
         translations: {
           en: "Explore Fab",
         },
@@ -1488,6 +1543,44 @@ const MenuData: NavItemProps[] = [
         labelEn: "Explore future traffic",
         link: "/agvedu/exploretraffic",
         linkEn: "/en/agvedu/exploretraffic",
+      },
+    ],
+  },
+//nav- sand table model 
+
+  {
+    key: "sandtable",
+    label: "数字沙盘",
+    labelEn: "digital sandtable",
+    link: "/sandtable/basic",
+    linkEn: "/en/sandtable/basic",
+    items: [
+  
+      {
+        label: "加工工艺",
+        labelEn: "Manufacturing process",
+        link: "/sandtable/manufacture",
+        linkEn: "/en/sandtable/manufacture",
+      },
+      {
+        label: "控制",
+        labelEn: "digital control",
+        link: "/sandtable/control",
+        linkEn: "/en/sandtable/control",
+        
+      },
+      {
+        label: "后处理",
+        labelEn: "Post-processing",
+        link: "/sandtable/postprocess",
+        linkEn: "/en/sandtable/postprocess",
+      
+      },
+      {
+        label: "维护",
+        labelEn: "Maintenance",
+        link: "/sandtable/maintain",
+        linkEn: "/en/sandtable/maintain",
       },
     ],
   },
