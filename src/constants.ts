@@ -1497,8 +1497,8 @@ const MenuData: NavItemProps[] = [
     key: "traffic",
     label: "汽车场景实验室",
     labelEn: "futuretraffic",
-    link: "/agvedu/agv",
-    linkEn: "/en/agvedu/agv",
+    link: "http://sophicar.com/",
+    linkEn: "http://sophicar.com/",
     items: [
   
       {
