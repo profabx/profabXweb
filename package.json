@@ -9,7 +9,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "gen:fabmenu:dry": "node scripts/generate-fab-menu-from-summary.js --section=1projectmanage --mode=dry-run --route-prefix=/tutorials --id=fab",
-    "gen:fabmenu:apply": "node scripts/generate-fab-menu-from-summary.js --section=1projectmanage --mode=apply --route-prefix=/tutorials --id=fab --target=src/constants.ts"
+    "gen:fabmenu:apply": "node scripts/generate-fab-menu-from-summary.js --section=1projectmanage --mode=apply --route-prefix=/tutorials --id=fab --target=src/constants.ts",
+    "gen:fabmenu:apply:tutorials": "node scripts/generate-fab-menu-from-summary.js --section=tutorials --mode=apply --route-prefix=/tutorials --id=fab --target=src/constants.ts",
+    "gen:fabmenu:apply:2-14": "node scripts/generate-fab-menu-from-summary.js --section=2-14 --mode=apply --route-prefix=/tutorials --id=fab --target=src/constants.ts"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",

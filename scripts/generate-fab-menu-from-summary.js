@@ -132,6 +132,44 @@ function findSection(entries, sectionKey) {
   return section;
 }
 
+function parseTopLevelNumber(label) {
+  const m = String(label || "").trim().match(/^(\d+)\s*\./);
+  return m ? Number(m[1]) : null;
+}
+
+function findNumberedSections(entries, minNo, maxNo) {
+  const result = [];
+
+  for (let i = 0; i < entries.length; i++) {
+    const entry = entries[i];
+    if (entry.depth !== 1) continue;
+
+    const no = parseTopLevelNumber(entry.label);
+    if (no === null || no < minNo || no > maxNo) continue;
+
+    result.push(entry);
+    for (let j = i + 1; j < entries.length; j++) {
+      const child = entries[j];
+      if (child.depth === 1) break;
+      result.push(child);
+      i = j;
+    }
+  }
+
+  return result;
+}
+
+function pickSectionEntries(entries, sectionArg) {
+  const key = normalizeKey(sectionArg);
+  if (key === "tutorials") {
+    return findNumberedSections(entries, 1, 14);
+  }
+  if (key === "214") {
+    return findNumberedSections(entries, 2, 14);
+  }
+  return findSection(entries, sectionArg);
+}
+
 function buildTree(flatEntries) {
   const roots = [];
   const stack = [];
@@ -272,7 +310,7 @@ async function main() {
   const text = await fs.readFile(summaryAbsPath, "utf8");
 
   const allEntries = parseSummaryList(text);
-  const sectionEntries = findSection(allEntries, options.section);
+  const sectionEntries = pickSectionEntries(allEntries, options.section);
 
   if (!sectionEntries.length) {
     throw new Error(`未在 SUMMARY 中找到 section: ${options.section}`);

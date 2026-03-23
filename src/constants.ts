@@ -53,7 +53,7 @@ const FabMenuItems = [
     attrs: { id: "fab" },
   },
   // AUTO-GENERATED FROM SUMMARY START
-  // section=1projectmanage; routePrefix=/tutorials; id=fab
+  // section=tutorials; routePrefix=/tutorials; id=fab
   {
     "label": "1.Project manage",
     "labelEn": "1.Project manage",
@@ -330,6 +330,943 @@ const FabMenuItems = [
             "linkEn": "/en/tutorials/1projectmanage/aigc"
           }
         ]
+      }
+    ]
+  },
+  {
+    "label": "2. CAD design",
+    "labelEn": "2. CAD design",
+    "translations": {
+      "en": "2. CAD design"
+    },
+    "attrs": {
+      "id": "fab"
+    },
+    "collapsed": true,
+    "items": [
+      {
+        "label": "Assessment",
+        "labelEn": "Assessment",
+        "translations": {
+          "en": "Assessment"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/2cad/assessment",
+        "linkEn": "/en/tutorials/2cad/assessment"
+      },
+      {
+        "label": "Fusion 360 prepare",
+        "labelEn": "Fusion 360 prepare",
+        "translations": {
+          "en": "Fusion 360 prepare"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/2cad/fusion360prepare",
+        "linkEn": "/en/tutorials/2cad/fusion360prepare"
+      },
+      {
+        "label": "Fusion 360-Guidebook",
+        "labelEn": "Fusion 360-Guidebook",
+        "translations": {
+          "en": "Fusion 360-Guidebook"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/2cad/3ddesignfusion360",
+        "linkEn": "/en/tutorials/2cad/3ddesignfusion360"
+      },
+      {
+        "label": "Solidworks-guidebook",
+        "labelEn": "Solidworks-guidebook",
+        "translations": {
+          "en": "Solidworks-guidebook"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/2cad/solidworks",
+        "linkEn": "/en/tutorials/2cad/solidworks"
+      },
+      {
+        "label": "Parameter design",
+        "labelEn": "Parameter design",
+        "translations": {
+          "en": "Parameter design"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/2cad/parameterdesign",
+        "linkEn": "/en/tutorials/2cad/parameterdesign"
+      },
+      {
+        "label": "Sheet metal",
+        "labelEn": "Sheet metal",
+        "translations": {
+          "en": "Sheet metal"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/2cad/fusion360-sheetmetal",
+        "linkEn": "/en/tutorials/2cad/fusion360-sheetmetal"
+      },
+      {
+        "label": "AI design",
+        "labelEn": "AI design",
+        "translations": {
+          "en": "AI design"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/2cad/newdesign",
+        "linkEn": "/en/tutorials/2cad/newdesign"
+      },
+      {
+        "label": "practice",
+        "labelEn": "practice",
+        "translations": {
+          "en": "practice"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/2cad/practice",
+        "linkEn": "/en/tutorials/2cad/practice"
+      }
+    ]
+  },
+  {
+    "label": "3. 3D printer",
+    "labelEn": "3. 3D printer",
+    "translations": {
+      "en": "3. 3D printer"
+    },
+    "attrs": {
+      "id": "fab"
+    },
+    "collapsed": true,
+    "items": [
+      {
+        "label": "Assessnment",
+        "labelEn": "Assessnment",
+        "translations": {
+          "en": "Assessnment"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/33dprinter/assessment",
+        "linkEn": "/en/tutorials/33dprinter/assessment"
+      },
+      {
+        "label": "FDM practice",
+        "labelEn": "FDM practice",
+        "translations": {
+          "en": "FDM practice"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/33dprinter/3dprintingdesign",
+        "linkEn": "/en/tutorials/33dprinter/3dprintingdesign"
+      },
+      {
+        "label": "3D printer background",
+        "labelEn": "3D printer background",
+        "translations": {
+          "en": "3D printer background"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/33dprinter/13dprintingbackground",
+        "linkEn": "/en/tutorials/33dprinter/13dprintingbackground"
+      },
+      {
+        "label": "FDM background",
+        "labelEn": "FDM background",
+        "translations": {
+          "en": "FDM background"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/33dprinter/2fdm3dprintingbackground",
+        "linkEn": "/en/tutorials/33dprinter/2fdm3dprintingbackground"
+      },
+      {
+        "label": "FDM design guide",
+        "labelEn": "FDM design guide",
+        "translations": {
+          "en": "FDM design guide"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/33dprinter/3fdm-designguide",
+        "linkEn": "/en/tutorials/33dprinter/3fdm-designguide"
+      },
+      {
+        "label": "FDM machine operation",
+        "labelEn": "FDM machine operation",
+        "translations": {
+          "en": "FDM machine operation"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/33dprinter/4fdm-machineoperation",
+        "linkEn": "/en/tutorials/33dprinter/4fdm-machineoperation"
+      },
+      {
+        "label": "SLA background",
+        "labelEn": "SLA background",
+        "translations": {
+          "en": "SLA background"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/33dprinter/5slabackground",
+        "linkEn": "/en/tutorials/33dprinter/5slabackground"
+      },
+      {
+        "label": "SLA design guide",
+        "labelEn": "SLA design guide",
+        "translations": {
+          "en": "SLA design guide"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/33dprinter/6sladesignguide",
+        "linkEn": "/en/tutorials/33dprinter/6sladesignguide"
+      },
+      {
+        "label": "HP-MJF",
+        "labelEn": "HP-MJF",
+        "translations": {
+          "en": "HP-MJF"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/33dprinter/7hpmjf",
+        "linkEn": "/en/tutorials/33dprinter/7hpmjf"
+      },
+      {
+        "label": "Post process",
+        "labelEn": "Post process",
+        "translations": {
+          "en": "Post process"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/33dprinter/8postprocess",
+        "linkEn": "/en/tutorials/33dprinter/8postprocess"
+      },
+      {
+        "label": "Slice software",
+        "labelEn": "Slice software",
+        "translations": {
+          "en": "Slice software"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/33dprinter/93dslicesoftware",
+        "linkEn": "/en/tutorials/33dprinter/93dslicesoftware"
+      }
+    ]
+  },
+  {
+    "label": "4. Electric design",
+    "labelEn": "4. Electric design",
+    "translations": {
+      "en": "4. Electric design"
+    },
+    "attrs": {
+      "id": "fab"
+    },
+    "collapsed": true,
+    "items": [
+      {
+        "label": "Assessment",
+        "labelEn": "Assessment",
+        "translations": {
+          "en": "Assessment"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/4electricdesign/assessment",
+        "linkEn": "/en/tutorials/4electricdesign/assessment"
+      },
+      {
+        "label": "Electric component",
+        "labelEn": "Electric component",
+        "translations": {
+          "en": "Electric component"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/4electricdesign/electricparametercomponent",
+        "linkEn": "/en/tutorials/4electricdesign/electricparametercomponent"
+      },
+      {
+        "label": "EDA",
+        "labelEn": "EDA",
+        "translations": {
+          "en": "EDA"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/4electricdesign/tool",
+        "linkEn": "/en/tutorials/4electricdesign/tool"
+      }
+    ]
+  },
+  {
+    "label": "5. Arduino application",
+    "labelEn": "5. Arduino application",
+    "translations": {
+      "en": "5. Arduino application"
+    },
+    "attrs": {
+      "id": "fab"
+    },
+    "collapsed": true,
+    "items": [
+      {
+        "label": "Assessment",
+        "labelEn": "Assessment",
+        "translations": {
+          "en": "Assessment"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/5arduino/assessment",
+        "linkEn": "/en/tutorials/5arduino/assessment"
+      },
+      {
+        "label": "Open source",
+        "labelEn": "Open source",
+        "translations": {
+          "en": "Open source"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/5arduino/opensource",
+        "linkEn": "/en/tutorials/5arduino/opensource"
+      },
+      {
+        "label": "Arduino Basic",
+        "labelEn": "Arduino Basic",
+        "translations": {
+          "en": "Arduino Basic"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/5arduino/arduinobasic",
+        "linkEn": "/en/tutorials/5arduino/arduinobasic"
+      },
+      {
+        "label": "Arduino Code",
+        "labelEn": "Arduino Code",
+        "translations": {
+          "en": "Arduino Code"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/5arduino/arduinocode",
+        "linkEn": "/en/tutorials/5arduino/arduinocode"
+      },
+      {
+        "label": "Arduino Input",
+        "labelEn": "Arduino Input",
+        "translations": {
+          "en": "Arduino Input"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/5arduino/arduinoinput",
+        "linkEn": "/en/tutorials/5arduino/arduinoinput"
+      },
+      {
+        "label": "Arduino Output",
+        "labelEn": "Arduino Output",
+        "translations": {
+          "en": "Arduino Output"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/5arduino/arduinooutput",
+        "linkEn": "/en/tutorials/5arduino/arduinooutput"
+      },
+      {
+        "label": "Arduino IOT",
+        "labelEn": "Arduino IOT",
+        "translations": {
+          "en": "Arduino IOT"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/9iot/nodemcuesp8266aliyun",
+        "linkEn": "/en/tutorials/9iot/nodemcuesp8266aliyun"
+      },
+      {
+        "label": "Library",
+        "labelEn": "Library",
+        "translations": {
+          "en": "Library"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "https://www.arduino.cc/en/Tutorial/LibraryExamples",
+        "linkEn": "https://www.arduino.cc/en/Tutorial/LibraryExamples"
+      },
+      {
+        "label": "Processing",
+        "labelEn": "Processing",
+        "translations": {
+          "en": "Processing"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/5arduino/processing",
+        "linkEn": "/en/tutorials/5arduino/processing"
+      },
+      {
+        "label": "Mechancial arm",
+        "labelEn": "Mechancial arm",
+        "translations": {
+          "en": "Mechancial arm"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/5arduino/robot-mycobot",
+        "linkEn": "/en/tutorials/5arduino/robot-mycobot"
+      }
+    ]
+  },
+  {
+    "label": "6. Laser cutting",
+    "labelEn": "6. Laser cutting",
+    "translations": {
+      "en": "6. Laser cutting"
+    },
+    "attrs": {
+      "id": "fab"
+    },
+    "collapsed": true,
+    "items": [
+      {
+        "label": "Assessment",
+        "labelEn": "Assessment",
+        "translations": {
+          "en": "Assessment"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/6lasercutter/assessment",
+        "linkEn": "/en/tutorials/6lasercutter/assessment"
+      },
+      {
+        "label": "Safety",
+        "labelEn": "Safety",
+        "translations": {
+          "en": "Safety"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/6lasercutter/safety",
+        "linkEn": "/en/tutorials/6lasercutter/safety"
+      },
+      {
+        "label": "AutoCAD",
+        "labelEn": "AutoCAD",
+        "translations": {
+          "en": "AutoCAD"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/6lasercutter/autocad",
+        "linkEn": "/en/tutorials/6lasercutter/autocad"
+      },
+      {
+        "label": "Design guide",
+        "labelEn": "Design guide",
+        "translations": {
+          "en": "Design guide"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/6lasercutter/designguide",
+        "linkEn": "/en/tutorials/6lasercutter/designguide"
+      },
+      {
+        "label": "Machine practice",
+        "labelEn": "Machine practice",
+        "translations": {
+          "en": "Machine practice"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/6lasercutter/machinepractice",
+        "linkEn": "/en/tutorials/6lasercutter/machinepractice"
+      }
+    ]
+  },
+  {
+    "label": "7. PCB manufacture",
+    "labelEn": "7. PCB manufacture",
+    "translations": {
+      "en": "7. PCB manufacture"
+    },
+    "attrs": {
+      "id": "fab"
+    },
+    "collapsed": true,
+    "items": [
+      {
+        "label": "Assessment",
+        "labelEn": "Assessment",
+        "translations": {
+          "en": "Assessment"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/8cncmanufacture/assessment",
+        "linkEn": "/en/tutorials/8cncmanufacture/assessment"
+      },
+      {
+        "label": "PCB",
+        "labelEn": "PCB",
+        "translations": {
+          "en": "PCB"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/4electricdesign/basicknowledge",
+        "linkEn": "/en/tutorials/4electricdesign/basicknowledge"
+      },
+      {
+        "label": "SMT",
+        "labelEn": "SMT",
+        "translations": {
+          "en": "SMT"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/7pcbmanufacture/smt",
+        "linkEn": "/en/tutorials/7pcbmanufacture/smt"
+      },
+      {
+        "label": "Manual Soldering",
+        "labelEn": "Manual Soldering",
+        "translations": {
+          "en": "Manual Soldering"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/7pcbmanufacture/manual",
+        "linkEn": "/en/tutorials/7pcbmanufacture/manual"
+      }
+    ]
+  },
+  {
+    "label": "8. CNC manufacture",
+    "labelEn": "8. CNC manufacture",
+    "translations": {
+      "en": "8. CNC manufacture"
+    },
+    "attrs": {
+      "id": "fab"
+    },
+    "collapsed": true,
+    "items": [
+      {
+        "label": "Assessment",
+        "labelEn": "Assessment",
+        "translations": {
+          "en": "Assessment"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/8cncmanufacture/assessment",
+        "linkEn": "/en/tutorials/8cncmanufacture/assessment"
+      },
+      {
+        "label": "Types of CNC Machines",
+        "labelEn": "Types of CNC Machines",
+        "translations": {
+          "en": "Types of CNC Machines"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/8cncmanufacture/cnctype",
+        "linkEn": "/en/tutorials/8cncmanufacture/cnctype"
+      },
+      {
+        "label": "Desktop Tool",
+        "labelEn": "Desktop Tool",
+        "translations": {
+          "en": "Desktop Tool"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/8cncmanufacture/tool",
+        "linkEn": "/en/tutorials/8cncmanufacture/tool"
+      },
+      {
+        "label": "Desktop 3xis CNC Program",
+        "labelEn": "Desktop 3xis CNC Program",
+        "translations": {
+          "en": "Desktop 3xis CNC Program"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/8cncmanufacture/cncprogram",
+        "linkEn": "/en/tutorials/8cncmanufacture/cncprogram"
+      },
+      {
+        "label": "Desktop 3xis CNC Manufacture",
+        "labelEn": "Desktop 3xis CNC Manufacture",
+        "translations": {
+          "en": "Desktop 3xis CNC Manufacture"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/8cncmanufacture/cncmanufacture",
+        "linkEn": "/en/tutorials/8cncmanufacture/cncmanufacture"
+      }
+    ]
+  },
+  {
+    "label": "9.Mold",
+    "labelEn": "9.Mold",
+    "translations": {
+      "en": "9.Mold"
+    },
+    "attrs": {
+      "id": "fab"
+    },
+    "collapsed": true,
+    "items": [
+      {
+        "label": "Assessment",
+        "labelEn": "Assessment",
+        "translations": {
+          "en": "Assessment"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/9mold/assessment",
+        "linkEn": "/en/tutorials/9mold/assessment"
+      },
+      {
+        "label": "Material",
+        "labelEn": "Material",
+        "translations": {
+          "en": "Material"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/9mold/material",
+        "linkEn": "/en/tutorials/9mold/material"
+      },
+      {
+        "label": "Tool",
+        "labelEn": "Tool",
+        "translations": {
+          "en": "Tool"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/9mold/tool",
+        "linkEn": "/en/tutorials/9mold/tool"
+      },
+      {
+        "label": "Method",
+        "labelEn": "Method",
+        "translations": {
+          "en": "Method"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/9mold/method",
+        "linkEn": "/en/tutorials/9mold/method"
+      }
+    ]
+  },
+  {
+    "label": "10. IOT and Interaction",
+    "labelEn": "10. IOT and Interaction",
+    "translations": {
+      "en": "10. IOT and Interaction"
+    },
+    "attrs": {
+      "id": "fab"
+    },
+    "collapsed": true,
+    "items": [
+      {
+        "label": "Assessment",
+        "labelEn": "Assessment",
+        "translations": {
+          "en": "Assessment"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/10iot/assessment",
+        "linkEn": "/en/tutorials/10iot/assessment"
+      },
+      {
+        "label": "IOT basic introduce",
+        "labelEn": "IOT basic introduce",
+        "translations": {
+          "en": "IOT basic introduce"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/10iot/iotbasic",
+        "linkEn": "/en/tutorials/10iot/iotbasic"
+      },
+      {
+        "label": "NodeMCU-Aliyun Cloud",
+        "labelEn": "NodeMCU-Aliyun Cloud",
+        "translations": {
+          "en": "NodeMCU-Aliyun Cloud"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/10iot/nodemcuesp8266aliyun",
+        "linkEn": "/en/tutorials/10iot/nodemcuesp8266aliyun"
+      }
+    ]
+  },
+  {
+    "label": "11. Interface Application Programming",
+    "labelEn": "11. Interface Application Programming",
+    "translations": {
+      "en": "11. Interface Application Programming"
+    },
+    "attrs": {
+      "id": "fab"
+    },
+    "collapsed": true,
+    "items": [
+      {
+        "label": "Assessment",
+        "labelEn": "Assessment",
+        "translations": {
+          "en": "Assessment"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/11interface-application-programming/assessment",
+        "linkEn": "/en/tutorials/11interface-application-programming/assessment"
+      },
+      {
+        "label": "Processing",
+        "labelEn": "Processing",
+        "translations": {
+          "en": "Processing"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/11interface-application-programming/processing",
+        "linkEn": "/en/tutorials/11interface-application-programming/processing"
+      },
+      {
+        "label": "Processing with Arduino",
+        "labelEn": "Processing with Arduino",
+        "translations": {
+          "en": "Processing with Arduino"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/11interface-application-programming/processingwitharduino",
+        "linkEn": "/en/tutorials/11interface-application-programming/processingwitharduino"
+      },
+      {
+        "label": "example",
+        "labelEn": "example",
+        "translations": {
+          "en": "example"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/11interface-application-programming/piying",
+        "linkEn": "/en/tutorials/11interface-application-programming/piying"
+      },
+      {
+        "label": "Other tool",
+        "labelEn": "Other tool",
+        "translations": {
+          "en": "Other tool"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/11interface-application-programming/tool",
+        "linkEn": "/en/tutorials/11interface-application-programming/tool"
+      }
+    ]
+  },
+  {
+    "label": "12.Material and tool",
+    "labelEn": "12.Material and tool",
+    "translations": {
+      "en": "12.Material and tool"
+    },
+    "attrs": {
+      "id": "fab"
+    },
+    "collapsed": true,
+    "items": [
+      {
+        "label": "Assessment",
+        "labelEn": "Assessment",
+        "translations": {
+          "en": "Assessment"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/12materialtool/assessment",
+        "linkEn": "/en/tutorials/12materialtool/assessment"
+      },
+      {
+        "label": "Material",
+        "labelEn": "Material",
+        "translations": {
+          "en": "Material"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/12materialtool/material",
+        "linkEn": "/en/tutorials/12materialtool/material"
+      },
+      {
+        "label": "ME standard component and tools",
+        "labelEn": "ME standard component and tools",
+        "translations": {
+          "en": "ME standard component and tools"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "http://www.misumi.com.cn/",
+        "linkEn": "http://www.misumi.com.cn/"
+      }
+    ]
+  },
+  {
+    "label": "13.Business plan basic",
+    "labelEn": "13.Business plan basic",
+    "translations": {
+      "en": "13.Business plan basic"
+    },
+    "attrs": {
+      "id": "fab"
+    },
+    "collapsed": true,
+    "items": [
+      {
+        "label": "Assessment",
+        "labelEn": "Assessment",
+        "translations": {
+          "en": "Assessment"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/13bp/assessment",
+        "linkEn": "/en/tutorials/13bp/assessment"
+      }
+    ]
+  },
+  {
+    "label": "14.AI vehicle",
+    "labelEn": "14.AI vehicle",
+    "translations": {
+      "en": "14.AI vehicle"
+    },
+    "attrs": {
+      "id": "fab"
+    },
+    "collapsed": true,
+    "items": [
+      {
+        "label": "Assessment",
+        "labelEn": "Assessment",
+        "translations": {
+          "en": "Assessment"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/14aivehicle/assessment",
+        "linkEn": "/en/tutorials/14aivehicle/assessment"
+      },
+      {
+        "label": "AI platform",
+        "labelEn": "AI platform",
+        "translations": {
+          "en": "AI platform"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/14aivehicle/aiplatform",
+        "linkEn": "/en/tutorials/14aivehicle/aiplatform"
       }
     ]
   },
