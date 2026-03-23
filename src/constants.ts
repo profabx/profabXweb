@@ -52,7 +52,294 @@ const FabMenuItems = [
     linkEn: "/en/fab/explorefab",
     attrs: { id: "fab" },
   },
-  
+  // AUTO-GENERATED FROM SUMMARY START
+  // section=1projectmanage; routePrefix=/tutorials; id=fab
+  {
+    "label": "1.Project manage",
+    "labelEn": "1.Project manage",
+    "translations": {
+      "en": "1.Project manage"
+    },
+    "attrs": {
+      "id": "fab"
+    },
+    "link": "https://git-scm.com/",
+    "linkEn": "https://git-scm.com/",
+    "collapsed": true,
+    "items": [
+      {
+        "label": "Assessment",
+        "labelEn": "Assessment",
+        "translations": {
+          "en": "Assessment"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/1projectmanage/assessment1",
+        "linkEn": "/en/tutorials/1projectmanage/assessment1"
+      },
+      {
+        "label": "Github page&docsify",
+        "labelEn": "Github page&docsify",
+        "translations": {
+          "en": "Github page&docsify"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/1projectmanage/github&docsify",
+        "linkEn": "/en/tutorials/1projectmanage/github&docsify"
+      },
+      {
+        "label": "Web build method",
+        "labelEn": "Web build method",
+        "translations": {
+          "en": "Web build method"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/1projectmanage/webmethod",
+        "linkEn": "/en/tutorials/1projectmanage/webmethod",
+        "collapsed": true,
+        "items": [
+          {
+            "label": "Gitlab-html",
+            "labelEn": "Gitlab-html",
+            "translations": {
+              "en": "Gitlab-html"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://pages.gitlab.io/plain-html/",
+            "linkEn": "https://pages.gitlab.io/plain-html/"
+          },
+          {
+            "label": "Gitlab & gitgbook",
+            "labelEn": "Gitlab & gitgbook",
+            "translations": {
+              "en": "Gitlab & gitgbook"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/1projectmanage/gitbook",
+            "linkEn": "/en/tutorials/1projectmanage/gitbook"
+          },
+          {
+            "label": "VuePress",
+            "labelEn": "VuePress",
+            "translations": {
+              "en": "VuePress"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://vuepress.vuejs.org/",
+            "linkEn": "https://vuepress.vuejs.org/"
+          },
+          {
+            "label": "vitepress",
+            "labelEn": "vitepress",
+            "translations": {
+              "en": "vitepress"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/1projectmanage/vitepress",
+            "linkEn": "/en/tutorials/1projectmanage/vitepress"
+          },
+          {
+            "label": "Wordpress web servier",
+            "labelEn": "Wordpress web servier",
+            "translations": {
+              "en": "Wordpress web servier"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/1projectmanage/wordpresswebservier",
+            "linkEn": "/en/tutorials/1projectmanage/wordpresswebservier"
+          },
+          {
+            "label": "Tech Stack - HTML+CSS+Github",
+            "labelEn": "Tech Stack - HTML+CSS+Github",
+            "translations": {
+              "en": "Tech Stack - HTML+CSS+Github"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/1projectmanage/htmlcssgithub",
+            "linkEn": "/en/tutorials/1projectmanage/htmlcssgithub"
+          },
+          {
+            "label": "Wix",
+            "labelEn": "Wix",
+            "translations": {
+              "en": "Wix"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/1projectmanage/wix",
+            "linkEn": "/en/tutorials/1projectmanage/wix"
+          },
+          {
+            "label": "Tencent Cloud & Next.js",
+            "labelEn": "Tencent Cloud & Next.js",
+            "translations": {
+              "en": "Tencent Cloud & Next.js"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://design-engineering.littleor.cn/docs/projects/website",
+            "linkEn": "https://design-engineering.littleor.cn/docs/projects/website"
+          },
+          {
+            "label": "Github & Hexo",
+            "labelEn": "Github & Hexo",
+            "translations": {
+              "en": "Github & Hexo"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://mengcye.github.io/2023/10/16/WebPageBuild/",
+            "linkEn": "https://mengcye.github.io/2023/10/16/WebPageBuild/"
+          },
+          {
+            "label": "Figma with github",
+            "labelEn": "Figma with github",
+            "translations": {
+              "en": "Figma with github"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjudem-Tomorrow-s-Wonder-Team/PM.html",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjudem-Tomorrow-s-Wonder-Team/PM.html"
+          }
+        ]
+      },
+      {
+        "label": "Tool",
+        "labelEn": "Tool",
+        "translations": {
+          "en": "Tool"
+        },
+        "attrs": {
+          "id": "fab"
+        },
+        "link": "/tutorials/1projectmanage/tool",
+        "linkEn": "/en/tutorials/1projectmanage/tool",
+        "collapsed": true,
+        "items": [
+          {
+            "label": "Git",
+            "labelEn": "Git",
+            "translations": {
+              "en": "Git"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/1projectmanage/git",
+            "linkEn": "/en/tutorials/1projectmanage/git"
+          },
+          {
+            "label": "Gitlab",
+            "labelEn": "Gitlab",
+            "translations": {
+              "en": "Gitlab"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://gitlab.com/",
+            "linkEn": "https://gitlab.com/"
+          },
+          {
+            "label": "Github",
+            "labelEn": "Github",
+            "translations": {
+              "en": "Github"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://github.com/",
+            "linkEn": "https://github.com/"
+          },
+          {
+            "label": "Markdown",
+            "labelEn": "Markdown",
+            "translations": {
+              "en": "Markdown"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/1projectmanage/markdown",
+            "linkEn": "/en/tutorials/1projectmanage/markdown"
+          },
+          {
+            "label": "Image uploader service",
+            "labelEn": "Image uploader service",
+            "translations": {
+              "en": "Image uploader service"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/1projectmanage/imageuploadservice",
+            "linkEn": "/en/tutorials/1projectmanage/imageuploadservice"
+          },
+          {
+            "label": "HTML",
+            "labelEn": "HTML",
+            "translations": {
+              "en": "HTML"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://www.w3school.com.cn/html/index.asp",
+            "linkEn": "https://www.w3school.com.cn/html/index.asp"
+          },
+          {
+            "label": "CSS",
+            "labelEn": "CSS",
+            "translations": {
+              "en": "CSS"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://www.w3school.com.cn/css/index.asp",
+            "linkEn": "https://www.w3school.com.cn/css/index.asp"
+          },
+          {
+            "label": "AIGC",
+            "labelEn": "AIGC",
+            "translations": {
+              "en": "AIGC"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/1projectmanage/aigc",
+            "linkEn": "/en/tutorials/1projectmanage/aigc"
+          }
+        ]
+      }
+    ]
+  },
+  // AUTO-GENERATED FROM SUMMARY END
 ];
 
 // 侧边栏菜单项 - Prototype
@@ -1277,7 +1564,7 @@ const AboutItems = [
 // 侧边栏菜单-
 const SideBarData = [
   {
-    key: "fab",
+    // id: "fab",
     label: "Fab 方案",
     translations: {
       en: "fab",

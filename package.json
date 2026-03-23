@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "gen:fabmenu:dry": "node scripts/generate-fab-menu-from-summary.js --section=1projectmanage --mode=dry-run --route-prefix=/tutorials --id=fab",
+    "gen:fabmenu:apply": "node scripts/generate-fab-menu-from-summary.js --section=1projectmanage --mode=apply --route-prefix=/tutorials --id=fab --target=src/constants.ts"
   },
   "dependencies": {
     "@astrojs/check": "^0.3.1",
