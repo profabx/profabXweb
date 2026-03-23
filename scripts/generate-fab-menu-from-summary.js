@@ -70,6 +70,14 @@ function mapInternalLink(rawLink, routePrefix) {
   normalized = normalized.replace(/\.mdx?$/i, "");
   normalized = normalized.toLowerCase();
 
+  // Keep folder separators, and normalize each path segment to URL-safe slug.
+  // This aligns generated links with Starlight slugs (e.g. github&docsify -> githubdocsify).
+  normalized = normalized
+    .split("/")
+    .map((segment) => segment.replace(/[^a-z0-9-]/g, ""))
+    .filter(Boolean)
+    .join("/");
+
   return `${cleanPrefix}/${normalized}`.replace(/\/+/g, "/");
 }
 
@@ -171,12 +179,13 @@ function toFabMenuItem(node, options) {
     attrs: { id: options.id },
   };
 
-  if (link) {
+  if (link && !hasChildren) {
     item.link = link;
     item.linkEn = external ? rawLink : `/en${link}`;
   }
 
   if (hasChildren) {
+    // Group nodes should not carry a link and default to collapsed.
     item.collapsed = true;
     item.items = node.children.map((child) => toFabMenuItem(child, options));
   }

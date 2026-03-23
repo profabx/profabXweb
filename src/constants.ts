@@ -63,8 +63,6 @@ const FabMenuItems = [
     "attrs": {
       "id": "fab"
     },
-    "link": "https://git-scm.com/",
-    "linkEn": "https://git-scm.com/",
     "collapsed": true,
     "items": [
       {
@@ -88,8 +86,8 @@ const FabMenuItems = [
         "attrs": {
           "id": "fab"
         },
-        "link": "/tutorials/1projectmanage/github&docsify",
-        "linkEn": "/en/tutorials/1projectmanage/github&docsify"
+        "link": "/tutorials/1projectmanage/githubdocsify",
+        "linkEn": "/en/tutorials/1projectmanage/githubdocsify"
       },
       {
         "label": "Web build method",
@@ -100,8 +98,6 @@ const FabMenuItems = [
         "attrs": {
           "id": "fab"
         },
-        "link": "/tutorials/1projectmanage/webmethod",
-        "linkEn": "/en/tutorials/1projectmanage/webmethod",
         "collapsed": true,
         "items": [
           {
@@ -235,8 +231,6 @@ const FabMenuItems = [
         "attrs": {
           "id": "fab"
         },
-        "link": "/tutorials/1projectmanage/tool",
-        "linkEn": "/en/tutorials/1projectmanage/tool",
         "collapsed": true,
         "items": [
           {
@@ -1564,7 +1558,7 @@ const AboutItems = [
 // 侧边栏菜单-
 const SideBarData = [
   {
-    // id: "fab",
+    id: "fab",
     label: "Fab 方案",
     translations: {
       en: "fab",
