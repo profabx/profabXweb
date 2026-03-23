@@ -255,7 +255,7 @@ sidebar:
 
 * [Fab Academy 2025-UNNC](doc/Fab/fab2023.md)
   * [Xu Sun](https://fabacademy.org/2025/labs/unnc/students/xu-sun/)
-  * [Yaolun Zhang](https://fabacademy.org/2023/labs/ningbo/students/yaorun-zhang/)
+  * [Yaorun Zhang](https://fabacademy.org/2023/labs/ningbo/students/yaorun-zhang/)
 
 * [UNNC-FabLab-2025-1](class/fab-2025-UNNC.md)
   * [Fengyi zhao](https://nexmaker-fab.github.io/2025UNNCFAB-ZHAO/)

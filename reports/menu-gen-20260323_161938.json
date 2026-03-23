@@ -1,0 +1,2694 @@
+{
+  "mode": "apply",
+  "sourceFile": "src/content/docs/tutorials/SUMMARY.md",
+  "section": "tutorials+fabs",
+  "routePrefix": "/tutorials",
+  "id": "fab",
+  "stats": {
+    "totalItems": 219,
+    "externalLinks": 109,
+    "internalLinks": 110,
+    "maxDepth": 3
+  },
+  "generatedItemCount": 220,
+  "parsedPreview": [
+    {
+      "depth": 1,
+      "label": "1.Project manage",
+      "link": "https://git-scm.com/",
+      "trailing": ""
+    },
+    {
+      "depth": 2,
+      "label": "Assessment",
+      "link": "doc/1projectmanage/Assessment1.md",
+      "trailing": ""
+    },
+    {
+      "depth": 2,
+      "label": "Github page&docsify",
+      "link": "doc/1projectmanage/github&docsify.md",
+      "trailing": ""
+    },
+    {
+      "depth": 2,
+      "label": "Web build method",
+      "link": "doc/1projectmanage/webmethod.md",
+      "trailing": ""
+    },
+    {
+      "depth": 3,
+      "label": "Gitlab-html",
+      "link": "https://pages.gitlab.io/plain-html/",
+      "trailing": ":gitlab to  build static website"
+    },
+    {
+      "depth": 3,
+      "label": "Gitlab & gitgbook",
+      "link": "doc/1projectmanage/gitbook.md",
+      "trailing": ""
+    },
+    {
+      "depth": 3,
+      "label": "VuePress",
+      "link": "https://vuepress.vuejs.org/",
+      "trailing": ""
+    },
+    {
+      "depth": 3,
+      "label": "vitepress",
+      "link": "doc/1projectmanage/vitepress.md",
+      "trailing": ""
+    },
+    {
+      "depth": 3,
+      "label": "Wordpress web servier",
+      "link": "doc/1projectmanage/wordpresswebservier.md",
+      "trailing": "use wordpress to build website"
+    },
+    {
+      "depth": 3,
+      "label": "Tech Stack - HTML+CSS+Github",
+      "link": "doc/1projectmanage/htmlcssgithub.md",
+      "trailing": ""
+    },
+    {
+      "depth": 1,
+      "label": "NexMaker academy-1",
+      "link": "class/fab-01.md",
+      "trailing": ""
+    },
+    {
+      "depth": 2,
+      "label": "Jiahao Liu",
+      "link": "https://nex-fab.gitlab.io/fab-01/jiahaoliu/",
+      "trailing": ""
+    },
+    {
+      "depth": 2,
+      "label": "Qihao Bao",
+      "link": "https://nex-fab.gitlab.io/fab-01/qihaobao/",
+      "trailing": ""
+    },
+    {
+      "depth": 2,
+      "label": "Jocelin",
+      "link": "https://nex-fab.gitlab.io/fab-01/jocelin/",
+      "trailing": ""
+    },
+    {
+      "depth": 2,
+      "label": "Lei chen",
+      "link": "https://nex-fab.gitlab.io/fab-01/chenlei/",
+      "trailing": ""
+    },
+    {
+      "depth": 2,
+      "label": "Yijun Wang",
+      "link": "https://nex-fab.gitlab.io/fab-01/yijunwang/",
+      "trailing": ""
+    },
+    {
+      "depth": 2,
+      "label": "luis Li",
+      "link": "https://nex-fab.gitlab.io/fab-01/luis/",
+      "trailing": ""
+    },
+    {
+      "depth": 2,
+      "label": "Liang Guo",
+      "link": "https://nex-fab.gitlab.io/fab-01/gl/",
+      "trailing": ""
+    },
+    {
+      "depth": 2,
+      "label": "Jacen Wang",
+      "link": "https://nex-fab.gitlab.io/fab-01/jacen/",
+      "trailing": ""
+    },
+    {
+      "depth": 2,
+      "label": "Mars Ma",
+      "link": "https://nex-fab.gitlab.io/fab-01/marsma/",
+      "trailing": ""
+    }
+  ],
+  "generated": [
+    {
+      "label": "Tutorials",
+      "labelEn": "Tutorials",
+      "translations": {
+        "en": "Tutorials"
+      },
+      "collapsed": true,
+      "items": [
+        {
+          "label": "1.Project manage",
+          "labelEn": "1.Project manage",
+          "translations": {
+            "en": "1.Project manage"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Assessment",
+              "labelEn": "Assessment",
+              "translations": {
+                "en": "Assessment"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/1projectmanage/assessment1",
+              "linkEn": "/en/tutorials/1projectmanage/assessment1"
+            },
+            {
+              "label": "Github page&docsify",
+              "labelEn": "Github page&docsify",
+              "translations": {
+                "en": "Github page&docsify"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/1projectmanage/githubdocsify",
+              "linkEn": "/en/tutorials/1projectmanage/githubdocsify"
+            },
+            {
+              "label": "Web build method",
+              "labelEn": "Web build method",
+              "translations": {
+                "en": "Web build method"
+              },
+              "collapsed": true,
+              "items": [
+                {
+                  "label": "Gitlab-html",
+                  "labelEn": "Gitlab-html",
+                  "translations": {
+                    "en": "Gitlab-html"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "https://pages.gitlab.io/plain-html/",
+                  "linkEn": "https://pages.gitlab.io/plain-html/"
+                },
+                {
+                  "label": "Gitlab & gitgbook",
+                  "labelEn": "Gitlab & gitgbook",
+                  "translations": {
+                    "en": "Gitlab & gitgbook"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/tutorials/1projectmanage/gitbook",
+                  "linkEn": "/en/tutorials/1projectmanage/gitbook"
+                },
+                {
+                  "label": "VuePress",
+                  "labelEn": "VuePress",
+                  "translations": {
+                    "en": "VuePress"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "https://vuepress.vuejs.org/",
+                  "linkEn": "https://vuepress.vuejs.org/"
+                },
+                {
+                  "label": "vitepress",
+                  "labelEn": "vitepress",
+                  "translations": {
+                    "en": "vitepress"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/tutorials/1projectmanage/vitepress",
+                  "linkEn": "/en/tutorials/1projectmanage/vitepress"
+                },
+                {
+                  "label": "Wordpress web servier",
+                  "labelEn": "Wordpress web servier",
+                  "translations": {
+                    "en": "Wordpress web servier"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/tutorials/1projectmanage/wordpresswebservier",
+                  "linkEn": "/en/tutorials/1projectmanage/wordpresswebservier"
+                },
+                {
+                  "label": "Tech Stack - HTML+CSS+Github",
+                  "labelEn": "Tech Stack - HTML+CSS+Github",
+                  "translations": {
+                    "en": "Tech Stack - HTML+CSS+Github"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/tutorials/1projectmanage/htmlcssgithub",
+                  "linkEn": "/en/tutorials/1projectmanage/htmlcssgithub"
+                },
+                {
+                  "label": "Wix",
+                  "labelEn": "Wix",
+                  "translations": {
+                    "en": "Wix"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/tutorials/1projectmanage/wix",
+                  "linkEn": "/en/tutorials/1projectmanage/wix"
+                },
+                {
+                  "label": "Tencent Cloud & Next.js",
+                  "labelEn": "Tencent Cloud & Next.js",
+                  "translations": {
+                    "en": "Tencent Cloud & Next.js"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "https://design-engineering.littleor.cn/docs/projects/website",
+                  "linkEn": "https://design-engineering.littleor.cn/docs/projects/website"
+                },
+                {
+                  "label": "Github & Hexo",
+                  "labelEn": "Github & Hexo",
+                  "translations": {
+                    "en": "Github & Hexo"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "https://mengcye.github.io/2023/10/16/WebPageBuild/",
+                  "linkEn": "https://mengcye.github.io/2023/10/16/WebPageBuild/"
+                },
+                {
+                  "label": "Figma with github",
+                  "labelEn": "Figma with github",
+                  "translations": {
+                    "en": "Figma with github"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "https://nexmaker-fab.github.io/2023zjudem-Tomorrow-s-Wonder-Team/PM.html",
+                  "linkEn": "https://nexmaker-fab.github.io/2023zjudem-Tomorrow-s-Wonder-Team/PM.html"
+                }
+              ]
+            },
+            {
+              "label": "Tool",
+              "labelEn": "Tool",
+              "translations": {
+                "en": "Tool"
+              },
+              "collapsed": true,
+              "items": [
+                {
+                  "label": "Git",
+                  "labelEn": "Git",
+                  "translations": {
+                    "en": "Git"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/tutorials/1projectmanage/git",
+                  "linkEn": "/en/tutorials/1projectmanage/git"
+                },
+                {
+                  "label": "Gitlab",
+                  "labelEn": "Gitlab",
+                  "translations": {
+                    "en": "Gitlab"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "https://gitlab.com/",
+                  "linkEn": "https://gitlab.com/"
+                },
+                {
+                  "label": "Github",
+                  "labelEn": "Github",
+                  "translations": {
+                    "en": "Github"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "https://github.com/",
+                  "linkEn": "https://github.com/"
+                },
+                {
+                  "label": "Markdown",
+                  "labelEn": "Markdown",
+                  "translations": {
+                    "en": "Markdown"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/tutorials/1projectmanage/markdown",
+                  "linkEn": "/en/tutorials/1projectmanage/markdown"
+                },
+                {
+                  "label": "Image uploader service",
+                  "labelEn": "Image uploader service",
+                  "translations": {
+                    "en": "Image uploader service"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/tutorials/1projectmanage/imageuploadservice",
+                  "linkEn": "/en/tutorials/1projectmanage/imageuploadservice"
+                },
+                {
+                  "label": "HTML",
+                  "labelEn": "HTML",
+                  "translations": {
+                    "en": "HTML"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "https://www.w3school.com.cn/html/index.asp",
+                  "linkEn": "https://www.w3school.com.cn/html/index.asp"
+                },
+                {
+                  "label": "CSS",
+                  "labelEn": "CSS",
+                  "translations": {
+                    "en": "CSS"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "https://www.w3school.com.cn/css/index.asp",
+                  "linkEn": "https://www.w3school.com.cn/css/index.asp"
+                },
+                {
+                  "label": "AIGC",
+                  "labelEn": "AIGC",
+                  "translations": {
+                    "en": "AIGC"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/tutorials/1projectmanage/aigc",
+                  "linkEn": "/en/tutorials/1projectmanage/aigc"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "2. CAD design",
+          "labelEn": "2. CAD design",
+          "translations": {
+            "en": "2. CAD design"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Assessment",
+              "labelEn": "Assessment",
+              "translations": {
+                "en": "Assessment"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/2cad/assessment",
+              "linkEn": "/en/tutorials/2cad/assessment"
+            },
+            {
+              "label": "Fusion 360 prepare",
+              "labelEn": "Fusion 360 prepare",
+              "translations": {
+                "en": "Fusion 360 prepare"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/2cad/fusion360prepare",
+              "linkEn": "/en/tutorials/2cad/fusion360prepare"
+            },
+            {
+              "label": "Fusion 360-Guidebook",
+              "labelEn": "Fusion 360-Guidebook",
+              "translations": {
+                "en": "Fusion 360-Guidebook"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/2cad/3ddesignfusion360",
+              "linkEn": "/en/tutorials/2cad/3ddesignfusion360"
+            },
+            {
+              "label": "Solidworks-guidebook",
+              "labelEn": "Solidworks-guidebook",
+              "translations": {
+                "en": "Solidworks-guidebook"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/2cad/solidworks",
+              "linkEn": "/en/tutorials/2cad/solidworks"
+            },
+            {
+              "label": "Parameter design",
+              "labelEn": "Parameter design",
+              "translations": {
+                "en": "Parameter design"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/2cad/parameterdesign",
+              "linkEn": "/en/tutorials/2cad/parameterdesign"
+            },
+            {
+              "label": "Sheet metal",
+              "labelEn": "Sheet metal",
+              "translations": {
+                "en": "Sheet metal"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/2cad/fusion360-sheetmetal",
+              "linkEn": "/en/tutorials/2cad/fusion360-sheetmetal"
+            },
+            {
+              "label": "AI design",
+              "labelEn": "AI design",
+              "translations": {
+                "en": "AI design"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/2cad/newdesign",
+              "linkEn": "/en/tutorials/2cad/newdesign"
+            },
+            {
+              "label": "practice",
+              "labelEn": "practice",
+              "translations": {
+                "en": "practice"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/2cad/practice",
+              "linkEn": "/en/tutorials/2cad/practice"
+            }
+          ]
+        },
+        {
+          "label": "3. 3D printer",
+          "labelEn": "3. 3D printer",
+          "translations": {
+            "en": "3. 3D printer"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Assessnment",
+              "labelEn": "Assessnment",
+              "translations": {
+                "en": "Assessnment"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/33dprinter/assessment",
+              "linkEn": "/en/tutorials/33dprinter/assessment"
+            },
+            {
+              "label": "FDM practice",
+              "labelEn": "FDM practice",
+              "translations": {
+                "en": "FDM practice"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/33dprinter/3dprintingdesign",
+              "linkEn": "/en/tutorials/33dprinter/3dprintingdesign"
+            },
+            {
+              "label": "3D printer background",
+              "labelEn": "3D printer background",
+              "translations": {
+                "en": "3D printer background"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/33dprinter/13dprintingbackground",
+              "linkEn": "/en/tutorials/33dprinter/13dprintingbackground"
+            },
+            {
+              "label": "FDM background",
+              "labelEn": "FDM background",
+              "translations": {
+                "en": "FDM background"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/33dprinter/2fdm3dprintingbackground",
+              "linkEn": "/en/tutorials/33dprinter/2fdm3dprintingbackground"
+            },
+            {
+              "label": "FDM design guide",
+              "labelEn": "FDM design guide",
+              "translations": {
+                "en": "FDM design guide"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/33dprinter/3fdm-designguide",
+              "linkEn": "/en/tutorials/33dprinter/3fdm-designguide"
+            },
+            {
+              "label": "FDM machine operation",
+              "labelEn": "FDM machine operation",
+              "translations": {
+                "en": "FDM machine operation"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/33dprinter/4fdm-machineoperation",
+              "linkEn": "/en/tutorials/33dprinter/4fdm-machineoperation"
+            },
+            {
+              "label": "SLA background",
+              "labelEn": "SLA background",
+              "translations": {
+                "en": "SLA background"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/33dprinter/5slabackground",
+              "linkEn": "/en/tutorials/33dprinter/5slabackground"
+            },
+            {
+              "label": "SLA design guide",
+              "labelEn": "SLA design guide",
+              "translations": {
+                "en": "SLA design guide"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/33dprinter/6sladesignguide",
+              "linkEn": "/en/tutorials/33dprinter/6sladesignguide"
+            },
+            {
+              "label": "HP-MJF",
+              "labelEn": "HP-MJF",
+              "translations": {
+                "en": "HP-MJF"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/33dprinter/7hpmjf",
+              "linkEn": "/en/tutorials/33dprinter/7hpmjf"
+            },
+            {
+              "label": "Post process",
+              "labelEn": "Post process",
+              "translations": {
+                "en": "Post process"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/33dprinter/8postprocess",
+              "linkEn": "/en/tutorials/33dprinter/8postprocess"
+            },
+            {
+              "label": "Slice software",
+              "labelEn": "Slice software",
+              "translations": {
+                "en": "Slice software"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/33dprinter/93dslicesoftware",
+              "linkEn": "/en/tutorials/33dprinter/93dslicesoftware"
+            }
+          ]
+        },
+        {
+          "label": "4. Electric design",
+          "labelEn": "4. Electric design",
+          "translations": {
+            "en": "4. Electric design"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Assessment",
+              "labelEn": "Assessment",
+              "translations": {
+                "en": "Assessment"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/4electricdesign/assessment",
+              "linkEn": "/en/tutorials/4electricdesign/assessment"
+            },
+            {
+              "label": "Electric component",
+              "labelEn": "Electric component",
+              "translations": {
+                "en": "Electric component"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/4electricdesign/electricparametercomponent",
+              "linkEn": "/en/tutorials/4electricdesign/electricparametercomponent"
+            },
+            {
+              "label": "EDA",
+              "labelEn": "EDA",
+              "translations": {
+                "en": "EDA"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/4electricdesign/tool",
+              "linkEn": "/en/tutorials/4electricdesign/tool"
+            }
+          ]
+        },
+        {
+          "label": "5. Arduino application",
+          "labelEn": "5. Arduino application",
+          "translations": {
+            "en": "5. Arduino application"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Assessment",
+              "labelEn": "Assessment",
+              "translations": {
+                "en": "Assessment"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/5arduino/assessment",
+              "linkEn": "/en/tutorials/5arduino/assessment"
+            },
+            {
+              "label": "Open source",
+              "labelEn": "Open source",
+              "translations": {
+                "en": "Open source"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/5arduino/opensource",
+              "linkEn": "/en/tutorials/5arduino/opensource"
+            },
+            {
+              "label": "Arduino Basic",
+              "labelEn": "Arduino Basic",
+              "translations": {
+                "en": "Arduino Basic"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/5arduino/arduinobasic",
+              "linkEn": "/en/tutorials/5arduino/arduinobasic"
+            },
+            {
+              "label": "Arduino Code",
+              "labelEn": "Arduino Code",
+              "translations": {
+                "en": "Arduino Code"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/5arduino/arduinocode",
+              "linkEn": "/en/tutorials/5arduino/arduinocode"
+            },
+            {
+              "label": "Arduino Input",
+              "labelEn": "Arduino Input",
+              "translations": {
+                "en": "Arduino Input"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/5arduino/arduinoinput",
+              "linkEn": "/en/tutorials/5arduino/arduinoinput"
+            },
+            {
+              "label": "Arduino Output",
+              "labelEn": "Arduino Output",
+              "translations": {
+                "en": "Arduino Output"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/5arduino/arduinooutput",
+              "linkEn": "/en/tutorials/5arduino/arduinooutput"
+            },
+            {
+              "label": "Arduino IOT",
+              "labelEn": "Arduino IOT",
+              "translations": {
+                "en": "Arduino IOT"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/9iot/nodemcuesp8266aliyun",
+              "linkEn": "/en/tutorials/9iot/nodemcuesp8266aliyun"
+            },
+            {
+              "label": "Library",
+              "labelEn": "Library",
+              "translations": {
+                "en": "Library"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://www.arduino.cc/en/Tutorial/LibraryExamples",
+              "linkEn": "https://www.arduino.cc/en/Tutorial/LibraryExamples"
+            },
+            {
+              "label": "Processing",
+              "labelEn": "Processing",
+              "translations": {
+                "en": "Processing"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/5arduino/processing",
+              "linkEn": "/en/tutorials/5arduino/processing"
+            },
+            {
+              "label": "Mechancial arm",
+              "labelEn": "Mechancial arm",
+              "translations": {
+                "en": "Mechancial arm"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/5arduino/robot-mycobot",
+              "linkEn": "/en/tutorials/5arduino/robot-mycobot"
+            }
+          ]
+        },
+        {
+          "label": "6. Laser cutting",
+          "labelEn": "6. Laser cutting",
+          "translations": {
+            "en": "6. Laser cutting"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Assessment",
+              "labelEn": "Assessment",
+              "translations": {
+                "en": "Assessment"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/6lasercutter/assessment",
+              "linkEn": "/en/tutorials/6lasercutter/assessment"
+            },
+            {
+              "label": "Safety",
+              "labelEn": "Safety",
+              "translations": {
+                "en": "Safety"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/6lasercutter/safety",
+              "linkEn": "/en/tutorials/6lasercutter/safety"
+            },
+            {
+              "label": "AutoCAD",
+              "labelEn": "AutoCAD",
+              "translations": {
+                "en": "AutoCAD"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/6lasercutter/autocad",
+              "linkEn": "/en/tutorials/6lasercutter/autocad"
+            },
+            {
+              "label": "Design guide",
+              "labelEn": "Design guide",
+              "translations": {
+                "en": "Design guide"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/6lasercutter/designguide",
+              "linkEn": "/en/tutorials/6lasercutter/designguide"
+            },
+            {
+              "label": "Machine practice",
+              "labelEn": "Machine practice",
+              "translations": {
+                "en": "Machine practice"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/6lasercutter/machinepractice",
+              "linkEn": "/en/tutorials/6lasercutter/machinepractice"
+            }
+          ]
+        },
+        {
+          "label": "7. PCB manufacture",
+          "labelEn": "7. PCB manufacture",
+          "translations": {
+            "en": "7. PCB manufacture"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Assessment",
+              "labelEn": "Assessment",
+              "translations": {
+                "en": "Assessment"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/8cncmanufacture/assessment",
+              "linkEn": "/en/tutorials/8cncmanufacture/assessment"
+            },
+            {
+              "label": "PCB",
+              "labelEn": "PCB",
+              "translations": {
+                "en": "PCB"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/4electricdesign/basicknowledge",
+              "linkEn": "/en/tutorials/4electricdesign/basicknowledge"
+            },
+            {
+              "label": "SMT",
+              "labelEn": "SMT",
+              "translations": {
+                "en": "SMT"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/7pcbmanufacture/smt",
+              "linkEn": "/en/tutorials/7pcbmanufacture/smt"
+            },
+            {
+              "label": "Manual Soldering",
+              "labelEn": "Manual Soldering",
+              "translations": {
+                "en": "Manual Soldering"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/7pcbmanufacture/manual",
+              "linkEn": "/en/tutorials/7pcbmanufacture/manual"
+            }
+          ]
+        },
+        {
+          "label": "8. CNC manufacture",
+          "labelEn": "8. CNC manufacture",
+          "translations": {
+            "en": "8. CNC manufacture"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Assessment",
+              "labelEn": "Assessment",
+              "translations": {
+                "en": "Assessment"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/8cncmanufacture/assessment",
+              "linkEn": "/en/tutorials/8cncmanufacture/assessment"
+            },
+            {
+              "label": "Types of CNC Machines",
+              "labelEn": "Types of CNC Machines",
+              "translations": {
+                "en": "Types of CNC Machines"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/8cncmanufacture/cnctype",
+              "linkEn": "/en/tutorials/8cncmanufacture/cnctype"
+            },
+            {
+              "label": "Desktop Tool",
+              "labelEn": "Desktop Tool",
+              "translations": {
+                "en": "Desktop Tool"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/8cncmanufacture/tool",
+              "linkEn": "/en/tutorials/8cncmanufacture/tool"
+            },
+            {
+              "label": "Desktop 3xis CNC Program",
+              "labelEn": "Desktop 3xis CNC Program",
+              "translations": {
+                "en": "Desktop 3xis CNC Program"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/8cncmanufacture/cncprogram",
+              "linkEn": "/en/tutorials/8cncmanufacture/cncprogram"
+            },
+            {
+              "label": "Desktop 3xis CNC Manufacture",
+              "labelEn": "Desktop 3xis CNC Manufacture",
+              "translations": {
+                "en": "Desktop 3xis CNC Manufacture"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/8cncmanufacture/cncmanufacture",
+              "linkEn": "/en/tutorials/8cncmanufacture/cncmanufacture"
+            }
+          ]
+        },
+        {
+          "label": "9.Mold",
+          "labelEn": "9.Mold",
+          "translations": {
+            "en": "9.Mold"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Assessment",
+              "labelEn": "Assessment",
+              "translations": {
+                "en": "Assessment"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/9mold/assessment",
+              "linkEn": "/en/tutorials/9mold/assessment"
+            },
+            {
+              "label": "Material",
+              "labelEn": "Material",
+              "translations": {
+                "en": "Material"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/9mold/material",
+              "linkEn": "/en/tutorials/9mold/material"
+            },
+            {
+              "label": "Tool",
+              "labelEn": "Tool",
+              "translations": {
+                "en": "Tool"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/9mold/tool",
+              "linkEn": "/en/tutorials/9mold/tool"
+            },
+            {
+              "label": "Method",
+              "labelEn": "Method",
+              "translations": {
+                "en": "Method"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/9mold/method",
+              "linkEn": "/en/tutorials/9mold/method"
+            }
+          ]
+        },
+        {
+          "label": "10. IOT and Interaction",
+          "labelEn": "10. IOT and Interaction",
+          "translations": {
+            "en": "10. IOT and Interaction"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Assessment",
+              "labelEn": "Assessment",
+              "translations": {
+                "en": "Assessment"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/10iot/assessment",
+              "linkEn": "/en/tutorials/10iot/assessment"
+            },
+            {
+              "label": "IOT basic introduce",
+              "labelEn": "IOT basic introduce",
+              "translations": {
+                "en": "IOT basic introduce"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/10iot/iotbasic",
+              "linkEn": "/en/tutorials/10iot/iotbasic"
+            },
+            {
+              "label": "NodeMCU-Aliyun Cloud",
+              "labelEn": "NodeMCU-Aliyun Cloud",
+              "translations": {
+                "en": "NodeMCU-Aliyun Cloud"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/10iot/nodemcuesp8266aliyun",
+              "linkEn": "/en/tutorials/10iot/nodemcuesp8266aliyun"
+            }
+          ]
+        },
+        {
+          "label": "11. Interface Application Programming",
+          "labelEn": "11. Interface Application Programming",
+          "translations": {
+            "en": "11. Interface Application Programming"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Assessment",
+              "labelEn": "Assessment",
+              "translations": {
+                "en": "Assessment"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/11interface-application-programming/assessment",
+              "linkEn": "/en/tutorials/11interface-application-programming/assessment"
+            },
+            {
+              "label": "Processing",
+              "labelEn": "Processing",
+              "translations": {
+                "en": "Processing"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/11interface-application-programming/processing",
+              "linkEn": "/en/tutorials/11interface-application-programming/processing"
+            },
+            {
+              "label": "Processing with Arduino",
+              "labelEn": "Processing with Arduino",
+              "translations": {
+                "en": "Processing with Arduino"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/11interface-application-programming/processingwitharduino",
+              "linkEn": "/en/tutorials/11interface-application-programming/processingwitharduino"
+            },
+            {
+              "label": "example",
+              "labelEn": "example",
+              "translations": {
+                "en": "example"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/11interface-application-programming/piying",
+              "linkEn": "/en/tutorials/11interface-application-programming/piying"
+            },
+            {
+              "label": "Other tool",
+              "labelEn": "Other tool",
+              "translations": {
+                "en": "Other tool"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/11interface-application-programming/tool",
+              "linkEn": "/en/tutorials/11interface-application-programming/tool"
+            }
+          ]
+        },
+        {
+          "label": "12.Material and tool",
+          "labelEn": "12.Material and tool",
+          "translations": {
+            "en": "12.Material and tool"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Assessment",
+              "labelEn": "Assessment",
+              "translations": {
+                "en": "Assessment"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/12materialtool/assessment",
+              "linkEn": "/en/tutorials/12materialtool/assessment"
+            },
+            {
+              "label": "Material",
+              "labelEn": "Material",
+              "translations": {
+                "en": "Material"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/12materialtool/material",
+              "linkEn": "/en/tutorials/12materialtool/material"
+            },
+            {
+              "label": "ME standard component and tools",
+              "labelEn": "ME standard component and tools",
+              "translations": {
+                "en": "ME standard component and tools"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "http://www.misumi.com.cn/",
+              "linkEn": "http://www.misumi.com.cn/"
+            }
+          ]
+        },
+        {
+          "label": "13.Business plan basic",
+          "labelEn": "13.Business plan basic",
+          "translations": {
+            "en": "13.Business plan basic"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Assessment",
+              "labelEn": "Assessment",
+              "translations": {
+                "en": "Assessment"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/13bp/assessment",
+              "linkEn": "/en/tutorials/13bp/assessment"
+            }
+          ]
+        },
+        {
+          "label": "14.AI vehicle",
+          "labelEn": "14.AI vehicle",
+          "translations": {
+            "en": "14.AI vehicle"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Assessment",
+              "labelEn": "Assessment",
+              "translations": {
+                "en": "Assessment"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/14aivehicle/assessment",
+              "linkEn": "/en/tutorials/14aivehicle/assessment"
+            },
+            {
+              "label": "AI platform",
+              "labelEn": "AI platform",
+              "translations": {
+                "en": "AI platform"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/tutorials/14aivehicle/aiplatform",
+              "linkEn": "/en/tutorials/14aivehicle/aiplatform"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "FABS",
+      "labelEn": "FABS",
+      "translations": {
+        "en": "FABS"
+      },
+      "collapsed": true,
+      "items": [
+        {
+          "label": "NexMaker academy-1",
+          "labelEn": "NexMaker academy-1",
+          "translations": {
+            "en": "NexMaker academy-1"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Jiahao Liu",
+              "labelEn": "Jiahao Liu",
+              "translations": {
+                "en": "Jiahao Liu"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-01/jiahaoliu/",
+              "linkEn": "https://nex-fab.gitlab.io/fab-01/jiahaoliu/"
+            },
+            {
+              "label": "Qihao Bao",
+              "labelEn": "Qihao Bao",
+              "translations": {
+                "en": "Qihao Bao"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-01/qihaobao/",
+              "linkEn": "https://nex-fab.gitlab.io/fab-01/qihaobao/"
+            },
+            {
+              "label": "Jocelin",
+              "labelEn": "Jocelin",
+              "translations": {
+                "en": "Jocelin"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-01/jocelin/",
+              "linkEn": "https://nex-fab.gitlab.io/fab-01/jocelin/"
+            },
+            {
+              "label": "Lei chen",
+              "labelEn": "Lei chen",
+              "translations": {
+                "en": "Lei chen"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-01/chenlei/",
+              "linkEn": "https://nex-fab.gitlab.io/fab-01/chenlei/"
+            },
+            {
+              "label": "Yijun Wang",
+              "labelEn": "Yijun Wang",
+              "translations": {
+                "en": "Yijun Wang"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-01/yijunwang/",
+              "linkEn": "https://nex-fab.gitlab.io/fab-01/yijunwang/"
+            },
+            {
+              "label": "luis Li",
+              "labelEn": "luis Li",
+              "translations": {
+                "en": "luis Li"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-01/luis/",
+              "linkEn": "https://nex-fab.gitlab.io/fab-01/luis/"
+            },
+            {
+              "label": "Liang Guo",
+              "labelEn": "Liang Guo",
+              "translations": {
+                "en": "Liang Guo"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-01/gl/",
+              "linkEn": "https://nex-fab.gitlab.io/fab-01/gl/"
+            },
+            {
+              "label": "Jacen Wang",
+              "labelEn": "Jacen Wang",
+              "translations": {
+                "en": "Jacen Wang"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-01/jacen/",
+              "linkEn": "https://nex-fab.gitlab.io/fab-01/jacen/"
+            },
+            {
+              "label": "Mars Ma",
+              "labelEn": "Mars Ma",
+              "translations": {
+                "en": "Mars Ma"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-01/marsma/",
+              "linkEn": "https://nex-fab.gitlab.io/fab-01/marsma/"
+            },
+            {
+              "label": "Bo Li",
+              "labelEn": "Bo Li",
+              "translations": {
+                "en": "Bo Li"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-01/bo-li/",
+              "linkEn": "https://nex-fab.gitlab.io/fab-01/bo-li/"
+            },
+            {
+              "label": "Bob Wu",
+              "labelEn": "Bob Wu",
+              "translations": {
+                "en": "Bob Wu"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-01/bobstudent/",
+              "linkEn": "https://nex-fab.gitlab.io/fab-01/bobstudent/"
+            }
+          ]
+        },
+        {
+          "label": "NexMaker academy-2",
+          "labelEn": "NexMaker academy-2",
+          "translations": {
+            "en": "NexMaker academy-2"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "June",
+              "labelEn": "June",
+              "translations": {
+                "en": "June"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-02/june/",
+              "linkEn": "https://nex-fab.gitlab.io/fab-02/june/"
+            },
+            {
+              "label": "Otto",
+              "labelEn": "Otto",
+              "translations": {
+                "en": "Otto"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-02/otto",
+              "linkEn": "https://nex-fab.gitlab.io/fab-02/otto"
+            },
+            {
+              "label": "Ciel",
+              "labelEn": "Ciel",
+              "translations": {
+                "en": "Ciel"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-02/ciel",
+              "linkEn": "https://nex-fab.gitlab.io/fab-02/ciel"
+            },
+            {
+              "label": "Jenny",
+              "labelEn": "Jenny",
+              "translations": {
+                "en": "Jenny"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-02/jenny",
+              "linkEn": "https://nex-fab.gitlab.io/fab-02/jenny"
+            },
+            {
+              "label": "Orkun",
+              "labelEn": "Orkun",
+              "translations": {
+                "en": "Orkun"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-02/orkun",
+              "linkEn": "https://nex-fab.gitlab.io/fab-02/orkun"
+            },
+            {
+              "label": "Candy",
+              "labelEn": "Candy",
+              "translations": {
+                "en": "Candy"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nex-fab.gitlab.io/fab-02/candy/",
+              "linkEn": "https://nex-fab.gitlab.io/fab-02/candy/"
+            }
+          ]
+        },
+        {
+          "label": "Design Engineering2020",
+          "labelEn": "Design Engineering2020",
+          "translations": {
+            "en": "Design Engineering2020"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "924",
+              "labelEn": "924",
+              "translations": {
+                "en": "924"
+              },
+              "collapsed": true,
+              "items": [
+                {
+                  "label": "924 Final project",
+                  "labelEn": "924 Final project",
+                  "translations": {
+                    "en": "924 Final project"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/class/zju2020/924",
+                  "linkEn": "/en/class/zju2020/924"
+                }
+              ]
+            },
+            {
+              "label": "Duck Dog",
+              "labelEn": "Duck Dog",
+              "translations": {
+                "en": "Duck Dog"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://1909097669.wixsite.com/duck-dog",
+              "linkEn": "https://1909097669.wixsite.com/duck-dog"
+            },
+            {
+              "label": "Terminus",
+              "labelEn": "Terminus",
+              "translations": {
+                "en": "Terminus"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "http://www.0xing.cn/home/blog/",
+              "linkEn": "http://www.0xing.cn/home/blog/"
+            },
+            {
+              "label": "D&L",
+              "labelEn": "D&L",
+              "translations": {
+                "en": "D&L"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "/class/zju2020/dlight",
+              "linkEn": "/en/class/zju2020/dlight"
+            },
+            {
+              "label": "Happyplanet",
+              "labelEn": "Happyplanet",
+              "translations": {
+                "en": "Happyplanet"
+              },
+              "collapsed": true,
+              "items": [
+                {
+                  "label": "happly planet Final project",
+                  "labelEn": "happly planet Final project",
+                  "translations": {
+                    "en": "happly planet Final project"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/class/zju2020/happlyplanet",
+                  "linkEn": "/en/class/zju2020/happlyplanet"
+                }
+              ]
+            },
+            {
+              "label": "2.4GHZ",
+              "labelEn": "2.4GHZ",
+              "translations": {
+                "en": "2.4GHZ"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "http://49.235.203.145",
+              "linkEn": "http://49.235.203.145"
+            },
+            {
+              "label": "Coffe Bit",
+              "labelEn": "Coffe Bit",
+              "translations": {
+                "en": "Coffe Bit"
+              },
+              "collapsed": true,
+              "items": [
+                {
+                  "label": "Coffe Bit Final project",
+                  "labelEn": "Coffe Bit Final project",
+                  "translations": {
+                    "en": "Coffe Bit Final project"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/class/zju2020/cb",
+                  "linkEn": "/en/class/zju2020/cb"
+                }
+              ]
+            },
+            {
+              "label": "33Designer",
+              "labelEn": "33Designer",
+              "translations": {
+                "en": "33Designer"
+              },
+              "collapsed": true,
+              "items": [
+                {
+                  "label": "Final project",
+                  "labelEn": "Final project",
+                  "translations": {
+                    "en": "Final project"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/class/zju2020/33design",
+                  "linkEn": "/en/class/zju2020/33design"
+                },
+                {
+                  "label": "Video",
+                  "labelEn": "Video",
+                  "translations": {
+                    "en": "Video"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "https://gitlab.com/nexmaker/zjunb-fab-01/video/-/raw/main/33designer.mp4",
+                  "linkEn": "https://gitlab.com/nexmaker/zjunb-fab-01/video/-/raw/main/33designer.mp4"
+                }
+              ]
+            },
+            {
+              "label": "YYclub",
+              "labelEn": "YYclub",
+              "translations": {
+                "en": "YYclub"
+              },
+              "collapsed": true,
+              "items": [
+                {
+                  "label": "YYclub Final project",
+                  "labelEn": "YYclub Final project",
+                  "translations": {
+                    "en": "YYclub Final project"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/class/zju2020/yyclub",
+                  "linkEn": "/en/class/zju2020/yyclub"
+                }
+              ]
+            },
+            {
+              "label": "Morning",
+              "labelEn": "Morning",
+              "translations": {
+                "en": "Morning"
+              },
+              "collapsed": true,
+              "items": [
+                {
+                  "label": "Final project &vidoe",
+                  "labelEn": "Final project &vidoe",
+                  "translations": {
+                    "en": "Final project &vidoe"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/class/zju2020/morning",
+                  "linkEn": "/en/class/zju2020/morning"
+                }
+              ]
+            },
+            {
+              "label": "Natural",
+              "labelEn": "Natural",
+              "translations": {
+                "en": "Natural"
+              },
+              "collapsed": true,
+              "items": [
+                {
+                  "label": "Natural Final project",
+                  "labelEn": "Natural Final project",
+                  "translations": {
+                    "en": "Natural Final project"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/class/zju2020/natural",
+                  "linkEn": "/en/class/zju2020/natural"
+                },
+                {
+                  "label": "video test",
+                  "labelEn": "video test",
+                  "translations": {
+                    "en": "video test"
+                  },
+                  "attrs": {
+                    "id": "fab"
+                  },
+                  "link": "/class/zju2020/video",
+                  "linkEn": "/en/class/zju2020/video"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Design Engineering2021",
+          "labelEn": "Design Engineering2021",
+          "translations": {
+            "en": "Design Engineering2021"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "CNFD",
+              "labelEn": "CNFD",
+              "translations": {
+                "en": "CNFD"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://374737390.wixsite.com/my-site",
+              "linkEn": "https://374737390.wixsite.com/my-site"
+            },
+            {
+              "label": "NBD",
+              "labelEn": "NBD",
+              "translations": {
+                "en": "NBD"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://notblinddesign.wixsite.com/nbdesign",
+              "linkEn": "https://notblinddesign.wixsite.com/nbdesign"
+            },
+            {
+              "label": "UNDEFINED",
+              "labelEn": "UNDEFINED",
+              "translations": {
+                "en": "UNDEFINED"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://xxzzxh.github.io/",
+              "linkEn": "https://xxzzxh.github.io/"
+            },
+            {
+              "label": "2021toast",
+              "labelEn": "2021toast",
+              "translations": {
+                "en": "2021toast"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://perfect-anger-34c.notion.site/2021-Toast-9d52603d5d39409b8337738a551b5df1",
+              "linkEn": "https://perfect-anger-34c.notion.site/2021-Toast-9d52603d5d39409b8337738a551b5df1"
+            },
+            {
+              "label": "X-Lab",
+              "labelEn": "X-Lab",
+              "translations": {
+                "en": "X-Lab"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://x-labby.webflow.io/",
+              "linkEn": "https://x-labby.webflow.io/"
+            },
+            {
+              "label": "Get1688",
+              "labelEn": "Get1688",
+              "translations": {
+                "en": "Get1688"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://1175138076.wixsite.com/get1688",
+              "linkEn": "https://1175138076.wixsite.com/get1688"
+            },
+            {
+              "label": "WooHoo",
+              "labelEn": "WooHoo",
+              "translations": {
+                "en": "WooHoo"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://richengaa.wixsite.com/woohoo",
+              "linkEn": "https://richengaa.wixsite.com/woohoo"
+            },
+            {
+              "label": "OUTLAST Zone",
+              "labelEn": "OUTLAST Zone",
+              "translations": {
+                "en": "OUTLAST Zone"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "http://121.41.45.236:8001/",
+              "linkEn": "http://121.41.45.236:8001/"
+            }
+          ]
+        },
+        {
+          "label": "Design Manufacture2021",
+          "labelEn": "Design Manufacture2021",
+          "translations": {
+            "en": "Design Manufacture2021"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "The Flash team",
+              "labelEn": "The Flash team",
+              "translations": {
+                "en": "The Flash team"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://turatsinzecmu2020.wixsite.com/theflash",
+              "linkEn": "https://turatsinzecmu2020.wixsite.com/theflash"
+            },
+            {
+              "label": "The Crescent",
+              "labelEn": "The Crescent",
+              "translations": {
+                "en": "The Crescent"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://bitenotes.wixsite.com/thecrescent",
+              "linkEn": "https://bitenotes.wixsite.com/thecrescent"
+            },
+            {
+              "label": "Estimate",
+              "labelEn": "Estimate",
+              "translations": {
+                "en": "Estimate"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://lushomo19.wixsite.com/estimate",
+              "linkEn": "https://lushomo19.wixsite.com/estimate"
+            },
+            {
+              "label": "Kltkawsar",
+              "labelEn": "Kltkawsar",
+              "translations": {
+                "en": "Kltkawsar"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://kltkawsar.wixsite.com/website",
+              "linkEn": "https://kltkawsar.wixsite.com/website"
+            },
+            {
+              "label": "Rahmansezad",
+              "labelEn": "Rahmansezad",
+              "translations": {
+                "en": "Rahmansezad"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://rahmansezad.wixsite.com/astro",
+              "linkEn": "https://rahmansezad.wixsite.com/astro"
+            }
+          ]
+        },
+        {
+          "label": "Design Engineering2022",
+          "labelEn": "Design Engineering2022",
+          "translations": {
+            "en": "Design Engineering2022"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "the Red Gang Tailor's",
+              "labelEn": "the Red Gang Tailor's",
+              "translations": {
+                "en": "the Red Gang Tailor's"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2022zjude1-team5/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2022zjude1-team5/#/"
+            },
+            {
+              "label": "doubleQ",
+              "labelEn": "doubleQ",
+              "translations": {
+                "en": "doubleQ"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2022zjude1-doubleQ/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2022zjude1-doubleQ/#/"
+            },
+            {
+              "label": "BIG5",
+              "labelEn": "BIG5",
+              "translations": {
+                "en": "BIG5"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2022zjude1-BIG5/",
+              "linkEn": "https://nexmaker-fab.github.io/2022zjude1-BIG5/"
+            },
+            {
+              "label": "SixGod",
+              "labelEn": "SixGod",
+              "translations": {
+                "en": "SixGod"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2022zjude1-SixGod/",
+              "linkEn": "https://nexmaker-fab.github.io/2022zjude1-SixGod/"
+            },
+            {
+              "label": "ALL RIGHT",
+              "labelEn": "ALL RIGHT",
+              "translations": {
+                "en": "ALL RIGHT"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://markshaw1234.github.io/2022zjudem-team4.github.io/",
+              "linkEn": "https://markshaw1234.github.io/2022zjudem-team4.github.io/"
+            },
+            {
+              "label": "Peopl3 Drag Per2on",
+              "labelEn": "Peopl3 Drag Per2on",
+              "translations": {
+                "en": "Peopl3 Drag Per2on"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2022zjude1-peopl3-drag-per2on/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2022zjude1-peopl3-drag-per2on/#/"
+            },
+            {
+              "label": "SoFarSoGood",
+              "labelEn": "SoFarSoGood",
+              "translations": {
+                "en": "SoFarSoGood"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2022zjude1-SoFarSoGood/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2022zjude1-SoFarSoGood/#/"
+            }
+          ]
+        },
+        {
+          "label": "Design Manufacture2022",
+          "labelEn": "Design Manufacture2022",
+          "translations": {
+            "en": "Design Manufacture2022"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "TECviz",
+              "labelEn": "TECviz",
+              "translations": {
+                "en": "TECviz"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/TECviz/#/",
+              "linkEn": "https://nexmaker-fab.github.io/TECviz/#/"
+            },
+            {
+              "label": "BRAINII MAKERS",
+              "labelEn": "BRAINII MAKERS",
+              "translations": {
+                "en": "BRAINII MAKERS"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2022zjudem-team2/",
+              "linkEn": "https://nexmaker-fab.github.io/2022zjudem-team2/"
+            },
+            {
+              "label": "NEXEERO",
+              "labelEn": "NEXEERO",
+              "translations": {
+                "en": "NEXEERO"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://sesebak.github.io/NEXEERO_TEAM/#/",
+              "linkEn": "https://sesebak.github.io/NEXEERO_TEAM/#/"
+            },
+            {
+              "label": "Mavericks",
+              "labelEn": "Mavericks",
+              "translations": {
+                "en": "Mavericks"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2022zjudem-team4/",
+              "linkEn": "https://nexmaker-fab.github.io/2022zjudem-team4/"
+            }
+          ]
+        },
+        {
+          "label": "Design Engineering mini 2022",
+          "labelEn": "Design Engineering mini 2022",
+          "translations": {
+            "en": "Design Engineering mini 2022"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Four Esigners",
+              "labelEn": "Four Esigners",
+              "translations": {
+                "en": "Four Esigners"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2022zjudemini-team1boy/",
+              "linkEn": "https://nexmaker-fab.github.io/2022zjudemini-team1boy/"
+            },
+            {
+              "label": "Four Vegetables",
+              "labelEn": "Four Vegetables",
+              "translations": {
+                "en": "Four Vegetables"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2022zjudemini-team2/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2022zjudemini-team2/#/"
+            }
+          ]
+        },
+        {
+          "label": "Fab Academy 2023  UNNC- NexMaker",
+          "labelEn": "Fab Academy 2023  UNNC- NexMaker",
+          "translations": {
+            "en": "Fab Academy 2023  UNNC- NexMaker"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Yaolun Zhang",
+              "labelEn": "Yaolun Zhang",
+              "translations": {
+                "en": "Yaolun Zhang"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://fabacademy.org/2023/labs/ningbo/students/yaorun-zhang/",
+              "linkEn": "https://fabacademy.org/2023/labs/ningbo/students/yaorun-zhang/"
+            }
+          ]
+        },
+        {
+          "label": "Design Engineering2023",
+          "labelEn": "Design Engineering2023",
+          "translations": {
+            "en": "Design Engineering2023"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "InnoWarm",
+              "labelEn": "InnoWarm",
+              "translations": {
+                "en": "InnoWarm"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2023zjude-InnoWarm/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2023zjude-InnoWarm/#/"
+            },
+            {
+              "label": "YSD",
+              "labelEn": "YSD",
+              "translations": {
+                "en": "YSD"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2023zjude-YSD/",
+              "linkEn": "https://nexmaker-fab.github.io/2023zjude-YSD/"
+            },
+            {
+              "label": "NOBRAINNOPAIN",
+              "labelEn": "NOBRAINNOPAIN",
+              "translations": {
+                "en": "NOBRAINNOPAIN"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2023zjude-NOBRAINNOPAIN/",
+              "linkEn": "https://nexmaker-fab.github.io/2023zjude-NOBRAINNOPAIN/"
+            },
+            {
+              "label": "Keyidu",
+              "labelEn": "Keyidu",
+              "translations": {
+                "en": "Keyidu"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2023zjude-keyidu/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2023zjude-keyidu/#/"
+            },
+            {
+              "label": "10:36",
+              "labelEn": "10:36",
+              "translations": {
+                "en": "10:36"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2023zjude-10-36/",
+              "linkEn": "https://nexmaker-fab.github.io/2023zjude-10-36/"
+            },
+            {
+              "label": "Woodman123",
+              "labelEn": "Woodman123",
+              "translations": {
+                "en": "Woodman123"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://design-engineering.littleor.cn/",
+              "linkEn": "https://design-engineering.littleor.cn/"
+            },
+            {
+              "label": "FiveTigers",
+              "labelEn": "FiveTigers",
+              "translations": {
+                "en": "FiveTigers"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2023zjude-FiveTigers/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2023zjude-FiveTigers/#/"
+            },
+            {
+              "label": "ORG030",
+              "labelEn": "ORG030",
+              "translations": {
+                "en": "ORG030"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2023zjude-ORG030/",
+              "linkEn": "https://nexmaker-fab.github.io/2023zjude-ORG030/"
+            }
+          ]
+        },
+        {
+          "label": "Design Manufacture2023",
+          "labelEn": "Design Manufacture2023",
+          "translations": {
+            "en": "Design Manufacture2023"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "The-Dynamic-Seven",
+              "labelEn": "The-Dynamic-Seven",
+              "translations": {
+                "en": "The-Dynamic-Seven"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2023zjudem-The-Dynamic-Seven/",
+              "linkEn": "https://nexmaker-fab.github.io/2023zjudem-The-Dynamic-Seven/"
+            },
+            {
+              "label": "7DE",
+              "labelEn": "7DE",
+              "translations": {
+                "en": "7DE"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2023zjudem-7DE/",
+              "linkEn": "https://nexmaker-fab.github.io/2023zjudem-7DE/"
+            },
+            {
+              "label": "Tomorrow-s-Wonder-Team",
+              "labelEn": "Tomorrow-s-Wonder-Team",
+              "translations": {
+                "en": "Tomorrow-s-Wonder-Team"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2023zjudem-Tomorrow-s-Wonder-Team/",
+              "linkEn": "https://nexmaker-fab.github.io/2023zjudem-Tomorrow-s-Wonder-Team/"
+            },
+            {
+              "label": "Team-novva",
+              "labelEn": "Team-novva",
+              "translations": {
+                "en": "Team-novva"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2023zjudem-teamnovva/",
+              "linkEn": "https://nexmaker-fab.github.io/2023zjudem-teamnovva/"
+            },
+            {
+              "label": "INNOGENIUSES",
+              "labelEn": "INNOGENIUSES",
+              "translations": {
+                "en": "INNOGENIUSES"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2023zjudem-INNOGENIUSES/",
+              "linkEn": "https://nexmaker-fab.github.io/2023zjudem-INNOGENIUSES/"
+            },
+            {
+              "label": "Gladiators",
+              "labelEn": "Gladiators",
+              "translations": {
+                "en": "Gladiators"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2023zjudem-Team-Gladiators/",
+              "linkEn": "https://nexmaker-fab.github.io/2023zjudem-Team-Gladiators/"
+            }
+          ]
+        },
+        {
+          "label": "Design Engineering mini 2023",
+          "labelEn": "Design Engineering mini 2023",
+          "translations": {
+            "en": "Design Engineering mini 2023"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Fivevolution",
+              "labelEn": "Fivevolution",
+              "translations": {
+                "en": "Fivevolution"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2023zjudemini-hi1/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2023zjudemini-hi1/#/"
+            },
+            {
+              "label": "Fivist",
+              "labelEn": "Fivist",
+              "translations": {
+                "en": "Fivist"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2023zjudemini-hi2/",
+              "linkEn": "https://nexmaker-fab.github.io/2023zjudemini-hi2/"
+            }
+          ]
+        },
+        {
+          "label": "ZWU-interactivesystem 2024",
+          "labelEn": "ZWU-interactivesystem 2024",
+          "translations": {
+            "en": "ZWU-interactivesystem 2024"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "SZPJNF",
+              "labelEn": "SZPJNF",
+              "translations": {
+                "en": "SZPJNF"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2024ZWU-IS-1/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-1/#/"
+            },
+            {
+              "label": "Ecobloom",
+              "labelEn": "Ecobloom",
+              "translations": {
+                "en": "Ecobloom"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2024ZWU-IS-2-Ecobloom/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-2-Ecobloom/#/"
+            },
+            {
+              "label": "Yes or Yes",
+              "labelEn": "Yes or Yes",
+              "translations": {
+                "en": "Yes or Yes"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2024ZWU-IS-3-Yes-or-yes/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-3-Yes-or-yes/#/"
+            },
+            {
+              "label": "watermelon sugar",
+              "labelEn": "watermelon sugar",
+              "translations": {
+                "en": "watermelon sugar"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2024ZWU-IS-4/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-4/#/"
+            },
+            {
+              "label": "BCZG",
+              "labelEn": "BCZG",
+              "translations": {
+                "en": "BCZG"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2024ZWU-IS-5/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-5/#/"
+            },
+            {
+              "label": "None group",
+              "labelEn": "None group",
+              "translations": {
+                "en": "None group"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2024ZWU-IS-6/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-6/#/"
+            }
+          ]
+        },
+        {
+          "label": "ZWU-interactivesystem2+2 2024",
+          "labelEn": "ZWU-interactivesystem2+2 2024",
+          "translations": {
+            "en": "ZWU-interactivesystem2+2 2024"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Mars",
+              "labelEn": "Mars",
+              "translations": {
+                "en": "Mars"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2024ZWU-IS-7/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-7/#/"
+            },
+            {
+              "label": "Bunbun",
+              "labelEn": "Bunbun",
+              "translations": {
+                "en": "Bunbun"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2024ZWU-IS-8-BUNBUN/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-8-BUNBUN/#/"
+            },
+            {
+              "label": "BSST",
+              "labelEn": "BSST",
+              "translations": {
+                "en": "BSST"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2024ZWU-IS-9-BSST/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-9-BSST/#/"
+            },
+            {
+              "label": "4AOL",
+              "labelEn": "4AOL",
+              "translations": {
+                "en": "4AOL"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2024ZWU-IS-10-4AOL/#/",
+              "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-10-4AOL/#/"
+            }
+          ]
+        },
+        {
+          "label": "Fab Academy 2025-UNNC",
+          "labelEn": "Fab Academy 2025-UNNC",
+          "translations": {
+            "en": "Fab Academy 2025-UNNC"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Xu Sun",
+              "labelEn": "Xu Sun",
+              "translations": {
+                "en": "Xu Sun"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://fabacademy.org/2025/labs/unnc/students/xu-sun/",
+              "linkEn": "https://fabacademy.org/2025/labs/unnc/students/xu-sun/"
+            },
+            {
+              "label": "Yaorun Zhang",
+              "labelEn": "Yaorun Zhang",
+              "translations": {
+                "en": "Yaorun Zhang"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://fabacademy.org/2023/labs/ningbo/students/yaorun-zhang/",
+              "linkEn": "https://fabacademy.org/2023/labs/ningbo/students/yaorun-zhang/"
+            }
+          ]
+        },
+        {
+          "label": "UNNC-FabLab-2025-1",
+          "labelEn": "UNNC-FabLab-2025-1",
+          "translations": {
+            "en": "UNNC-FabLab-2025-1"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Fengyi zhao",
+              "labelEn": "Fengyi zhao",
+              "translations": {
+                "en": "Fengyi zhao"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2025UNNCFAB-ZHAO/",
+              "linkEn": "https://nexmaker-fab.github.io/2025UNNCFAB-ZHAO/"
+            },
+            {
+              "label": "Yan bing",
+              "labelEn": "Yan bing",
+              "translations": {
+                "en": "Yan bing"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2025UNNCFAB-yan/",
+              "linkEn": "https://nexmaker-fab.github.io/2025UNNCFAB-yan/"
+            },
+            {
+              "label": "Ao Liu",
+              "labelEn": "Ao Liu",
+              "translations": {
+                "en": "Ao Liu"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://nexmaker-fab.github.io/2025UNNCFAB-AO/",
+              "linkEn": "https://nexmaker-fab.github.io/2025UNNCFAB-AO/"
+            },
+            {
+              "label": "Yi shan tong",
+              "labelEn": "Yi shan tong",
+              "translations": {
+                "en": "Yi shan tong"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://unnc-fab.github.io/2025-1-ty/",
+              "linkEn": "https://unnc-fab.github.io/2025-1-ty/"
+            }
+          ]
+        },
+        {
+          "label": "UNNC-FabLab-2025-2",
+          "labelEn": "UNNC-FabLab-2025-2",
+          "translations": {
+            "en": "UNNC-FabLab-2025-2"
+          },
+          "collapsed": true,
+          "items": [
+            {
+              "label": "Wenqing zhong",
+              "labelEn": "Wenqing zhong",
+              "translations": {
+                "en": "Wenqing zhong"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://unnc-fab.github.io/2025-2-wenqing/",
+              "linkEn": "https://unnc-fab.github.io/2025-2-wenqing/"
+            },
+            {
+              "label": "Simon",
+              "labelEn": "Simon",
+              "translations": {
+                "en": "Simon"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://unnc-fab.github.io/2025-2-simon/",
+              "linkEn": "https://unnc-fab.github.io/2025-2-simon/"
+            },
+            {
+              "label": "Xiangdong Huang",
+              "labelEn": "Xiangdong Huang",
+              "translations": {
+                "en": "Xiangdong Huang"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://unnc-fab.github.io/2025-2-xiangdong/",
+              "linkEn": "https://unnc-fab.github.io/2025-2-xiangdong/"
+            },
+            {
+              "label": "Mingzhao Xi",
+              "labelEn": "Mingzhao Xi",
+              "translations": {
+                "en": "Mingzhao Xi"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://unnc-fab.github.io/2025-2-mingzhao/",
+              "linkEn": "https://unnc-fab.github.io/2025-2-mingzhao/"
+            },
+            {
+              "label": "Jiawei",
+              "labelEn": "Jiawei",
+              "translations": {
+                "en": "Jiawei"
+              },
+              "attrs": {
+                "id": "fab"
+              },
+              "link": "https://unnc-fab.github.io/2025-2-jiawei/",
+              "linkEn": "https://unnc-fab.github.io/2025-2-jiawei/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

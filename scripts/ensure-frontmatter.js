@@ -1,7 +1,10 @@
 import fs from "fs/promises";
 import path from "path";
 
-const root = path.resolve("src/content/docs/tutorials");
+const roots = [
+  path.resolve("src/content/docs/tutorials"),
+  path.resolve("src/content/docs/class"),
+];
 
 const walk = async (dir) => {
   const entries = await fs.readdir(dir, { withFileTypes: true });
@@ -42,7 +45,7 @@ const walk = async (dir) => {
   }
 };
 
-walk(root)
+Promise.all(roots.map((root) => walk(root)))
   .then(() => console.log("all done"))
   .catch((err) => {
     console.error(err);

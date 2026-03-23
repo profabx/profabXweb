@@ -62,29 +62,36 @@ function isExternalLink(link) {
 }
 
 function mapInternalLink(rawLink, routePrefix) {
-  const cleanPrefix = ensureSlashPrefix(routePrefix).replace(/\/$/, "");
+  const defaultPrefix = ensureSlashPrefix(routePrefix).replace(/\/$/, "");
 
   let normalized = rawLink.trim().replace(/\\/g, "/");
   normalized = normalized.replace(/^\.\//, "");
-  normalized = normalized.replace(/^doc\//i, "");
+
+  let prefix = defaultPrefix;
+  if (/^doc\//i.test(normalized)) {
+    normalized = normalized.replace(/^doc\//i, "");
+    prefix = "/tutorials";
+  } else if (/^class\//i.test(normalized)) {
+    normalized = normalized.replace(/^class\//i, "");
+    prefix = "/class";
+  }
+
   normalized = normalized.replace(/\.mdx?$/i, "");
   normalized = normalized.toLowerCase();
 
-  // Keep folder separators, and normalize each path segment to URL-safe slug.
-  // This aligns generated links with Starlight slugs (e.g. github&docsify -> githubdocsify).
+  // Keep folder separators and normalize each path segment to URL-safe slug.
   normalized = normalized
     .split("/")
     .map((segment) => segment.replace(/[^a-z0-9-]/g, ""))
     .filter(Boolean)
     .join("/");
 
-  return `${cleanPrefix}/${normalized}`.replace(/\/+/g, "/");
+  return `${prefix}/${normalized}`.replace(/\/+/g, "/");
 }
 
-function parseSummaryList(content) {
-  const lines = content.split(/\r?\n/);
+function parseMarkdownList(lines) {
   const entries = [];
-  const listItemRegex = /^(\s*)\*\s+\[([^\]]+)\]\(([^)]+)\)(.*)$/;
+  const listItemRegex = /^(\s*)\*\s+\[([^\]]+)\]\(([^)]*)\)(.*)$/;
 
   for (const line of lines) {
     const match = line.match(listItemRegex);
@@ -100,6 +107,33 @@ function parseSummaryList(content) {
   }
 
   return entries;
+}
+
+function getSectionLinesByHeading(content, headingText) {
+  const lines = content.split(/\r?\n/);
+  const headingKey = normalizeKey(headingText);
+
+  let start = -1;
+  for (let i = 0; i < lines.length; i++) {
+    const m = lines[i].match(/^##\s+(.+)$/);
+    if (!m) continue;
+    if (normalizeKey(m[1]) === headingKey) {
+      start = i + 1;
+      break;
+    }
+  }
+
+  if (start === -1) return [];
+
+  let end = lines.length;
+  for (let i = start; i < lines.length; i++) {
+    if (/^##\s+/.test(lines[i])) {
+      end = i;
+      break;
+    }
+  }
+
+  return lines.slice(start, end);
 }
 
 function findSection(entries, sectionKey) {
@@ -170,6 +204,18 @@ function pickSectionEntries(entries, sectionArg) {
   return findSection(entries, sectionArg);
 }
 
+function makeGroupItem(label, items, id) {
+  const validItems = (items || []).filter(Boolean);
+  if (!validItems.length) return null;
+  return {
+    label,
+    labelEn: label,
+    translations: { en: label },
+    collapsed: true,
+    items: validItems,
+  };
+}
+
 function buildTree(flatEntries) {
   const roots = [];
   const stack = [];
@@ -214,8 +260,11 @@ function toFabMenuItem(node, options) {
     label: node.label,
     labelEn: node.label,
     translations: { en: node.label },
-    attrs: { id: options.id },
   };
+
+  if (!hasChildren) {
+    item.attrs = { id: options.id };
+  }
 
   if (link && !hasChildren) {
     item.link = link;
@@ -225,7 +274,14 @@ function toFabMenuItem(node, options) {
   if (hasChildren) {
     // Group nodes should not carry a link and default to collapsed.
     item.collapsed = true;
-    item.items = node.children.map((child) => toFabMenuItem(child, options));
+    item.items = node.children
+      .map((child) => toFabMenuItem(child, options))
+      .filter(Boolean);
+  }
+
+  // Drop invalid sidebar entries that have neither link nor children.
+  if (!item.link && (!item.items || item.items.length === 0)) {
+    return null;
   }
 
   return item;
@@ -309,16 +365,63 @@ async function main() {
   const summaryAbsPath = path.resolve(options.summaryPath);
   const text = await fs.readFile(summaryAbsPath, "utf8");
 
-  const allEntries = parseSummaryList(text);
-  const sectionEntries = pickSectionEntries(allEntries, options.section);
+  const sectionKey = normalizeKey(options.section);
+  let generated = [];
+  let stats = { totalItems: 0, externalLinks: 0, internalLinks: 0, maxDepth: 0 };
+  let parsedPreview = [];
 
-  if (!sectionEntries.length) {
-    throw new Error(`未在 SUMMARY 中找到 section: ${options.section}`);
+  if (sectionKey === "tutorialsfabs") {
+    const tutorialsLines = getSectionLinesByHeading(text, "Tutorials");
+    const fabsLines = getSectionLinesByHeading(text, "FABS");
+
+    const tutorialsEntriesAll = parseMarkdownList(tutorialsLines);
+    const tutorialsEntries = findNumberedSections(tutorialsEntriesAll, 1, 14);
+    const fabsEntries = parseMarkdownList(fabsLines);
+
+    if (!tutorialsEntries.length) {
+      throw new Error("未在 SUMMARY 的 Tutorials 下找到 1-14 目录项");
+    }
+    if (!fabsEntries.length) {
+      throw new Error("未在 SUMMARY 的 FABS 下找到目录项");
+    }
+
+    const tutorialsTree = buildTree(tutorialsEntries);
+    const fabsTree = buildTree(fabsEntries);
+
+    const tutorialsItems = tutorialsTree
+      .map((node) => toFabMenuItem(node, options))
+      .filter(Boolean);
+    const fabsItems = fabsTree
+      .map((node) => toFabMenuItem(node, options))
+      .filter(Boolean);
+
+    generated = [
+      makeGroupItem("Tutorials", tutorialsItems, options.id),
+      makeGroupItem("FABS", fabsItems, options.id),
+    ].filter(Boolean);
+
+    const tutorialsStats = collectStats(tutorialsEntries);
+    const fabsStats = collectStats(fabsEntries);
+    stats = {
+      totalItems: tutorialsStats.totalItems + fabsStats.totalItems,
+      externalLinks: tutorialsStats.externalLinks + fabsStats.externalLinks,
+      internalLinks: tutorialsStats.internalLinks + fabsStats.internalLinks,
+      maxDepth: Math.max(tutorialsStats.maxDepth, fabsStats.maxDepth),
+    };
+    parsedPreview = [...tutorialsEntries.slice(0, 10), ...fabsEntries.slice(0, 10)];
+  } else {
+    const allEntries = parseMarkdownList(text.split(/\r?\n/));
+    const sectionEntries = pickSectionEntries(allEntries, options.section);
+
+    if (!sectionEntries.length) {
+      throw new Error(`未在 SUMMARY 中找到 section: ${options.section}`);
+    }
+
+    const tree = buildTree(sectionEntries);
+    generated = tree.map((node) => toFabMenuItem(node, options)).filter(Boolean);
+    stats = collectStats(sectionEntries);
+    parsedPreview = sectionEntries.slice(0, 20);
   }
-
-  const tree = buildTree(sectionEntries);
-  const generated = tree.map((node) => toFabMenuItem(node, options));
-  const stats = collectStats(sectionEntries);
 
   const now = new Date();
   const ts = `${now.getFullYear()}${String(now.getMonth() + 1).padStart(2, "0")}${String(now.getDate()).padStart(2, "0")}_${String(now.getHours()).padStart(2, "0")}${String(now.getMinutes()).padStart(2, "0")}${String(now.getSeconds()).padStart(2, "0")}`;
@@ -334,7 +437,7 @@ async function main() {
     id: options.id,
     stats,
     generatedItemCount: countTreeItems(generated),
-    parsedPreview: sectionEntries.slice(0, 20),
+    parsedPreview,
     generated,
   };
 
