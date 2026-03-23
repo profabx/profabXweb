@@ -43,17 +43,16 @@ const FabMenuItems = [
     attrs: { id: "fab" },
   },
   {
-    label: "探索Fab",
-    link: "/fab/explorefab",
-    labelEn: "Explore Fab",
-    translations: {
-      en: "Explore Fab",
-    },
-    linkEn: "/en/fab/explorefab",
-    attrs: { id: "fab" },
-  },
-  
-];
+        label: "教程",
+        link: "/tutorials/1Projectmanage/Assessment1",
+        labelEn: "Tutorials",
+        translations: {
+          en: "Tutorials",
+        },
+        linkEn: "/en/tutorials/1Projectmanage/Assessment1",
+        attrs: { id: "tutorials" },
+      },
+      {
 
 // 侧边栏菜单项 - Prototype
 const PrototypeMenuItems = [
@@ -1283,6 +1282,55 @@ const SideBarData = [
       en: "fab",
     },
     items: [...FabMenuItems],
+  },
+  {
+    key: "tutorials",
+    label: "教程",
+    translations: {
+      en: "tutorials",
+    },
+    items: [
+      {
+        label: "1. Project manage",
+        link: "/tutorials/1Projectmanage/Assessment1",
+        linkEn: "/en/tutorials/1Projectmanage/Assessment1",
+        labelEn: "Project manage",
+        translations: {
+          en: "Project manage",
+        },
+        attrs: { id: "tutorials" },
+      },
+      {
+        label: "Github page & docsify",
+        link: "/tutorials/1Projectmanage/github&docsify",
+        linkEn: "/en/tutorials/1Projectmanage/github&docsify",
+        labelEn: "Github page & docsify",
+        translations: {
+          en: "Github page & docsify",
+        },
+        attrs: { id: "tutorials" },
+      },
+      {
+        label: "Web build method",
+        link: "/tutorials/1Projectmanage/webmethod",
+        linkEn: "/en/tutorials/1Projectmanage/webmethod",
+        labelEn: "Web build method",
+        translations: {
+          en: "Web build method",
+        },
+        attrs: { id: "tutorials" },
+      },
+      {
+        label: "工具",
+        link: "/tutorials/1Projectmanage/Tool",
+        linkEn: "/en/tutorials/1Projectmanage/Tool",
+        labelEn: "Tool",
+        translations: {
+          en: "Tool",
+        },
+        attrs: { id: "tutorials" },
+      },
+    ],
   },
   {
     label: "数字制造",
