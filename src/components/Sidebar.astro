@@ -7,16 +7,33 @@ import SidebarSublist from "./SidebarSublist.astro";
 const { sidebar } = Astro.props;
 const { slug } = Astro.params;
 
-const filterSidebar = sidebar.filter((item: any) => {
-  if (
-    item?.entries?.[0]?.attrs?.id ===
-    Astro.props.entry?.data?.sidebar?.attrs?.id
-  ) {
-    return slug;
-  }
+const currentId = Astro.props.entry?.data?.sidebar?.attrs?.id;
+const normalizedSlug = String(slug || "");
 
-  return null;
-});
+function hasEntryId(entries: any[], id: string): boolean {
+  if (!entries?.length) return false;
+  return entries.some((entry) => {
+    if (entry?.attrs?.id === id) return true;
+    if (entry?.entries?.length) return hasEntryId(entry.entries, id);
+    return false;
+  });
+}
+
+let filterSidebar = sidebar;
+const fabSidebar = sidebar.filter((item: any) => hasEntryId(item?.entries || [], "fab"));
+
+const effectiveId = currentId === "tutorial" ? "fab" : currentId;
+
+if (effectiveId) {
+  const matched = sidebar.filter((item: any) => hasEntryId(item?.entries || [], effectiveId));
+  if (matched.length) {
+    filterSidebar = matched;
+  } else if (/(^|\/)(fab|tutorials)(\/|$)/.test(normalizedSlug) && fabSidebar.length) {
+    filterSidebar = fabSidebar;
+  }
+} else if (/(^|\/)(fab|tutorials)(\/|$)/.test(normalizedSlug) && fabSidebar.length) {
+  filterSidebar = fabSidebar;
+}
 ---
 
 <SidebarSublist sublist={filterSidebar} />

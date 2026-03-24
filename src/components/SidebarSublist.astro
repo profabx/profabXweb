@@ -26,6 +26,8 @@ interface Props {
 }
 
 const { sublist, nested } = Astro.props;
+const isExternalLink = (url: string) => /^https?:\/\//i.test(url);
+
 export function flattenSidebar(sidebar: SidebarEntry[]): Link[] {
   return sidebar.flatMap((entry) =>
     entry.type === "group" ? flattenSidebar(entry.entries) : entry
@@ -43,6 +45,8 @@ export function flattenSidebar(sidebar: SidebarEntry[]): Link[] {
             aria-current={entry.isCurrent && "page"}
             class:list={[{ large: !nested }, entry.attrs.class]}
             {...entry.attrs}
+            target={isExternalLink(entry.href) ? "_blank" : undefined}
+            rel={isExternalLink(entry.href) ? "noopener noreferrer" : undefined}
           >
             <span>{entry.label}</span>
             {entry.badge && (
