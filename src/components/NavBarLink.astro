@@ -21,6 +21,7 @@ const getCurrrentLanguageParam = (type = "label") => {
 
 const currentLanguageLabel: string = getCurrrentLanguageParam("label");
 const currentLanguageLink: string = getCurrrentLanguageParam("link");
+const isExternalLink = (url?: string) => !!url && /^https?:\/\//i.test(url);
 ---
 
 <section>
@@ -36,7 +37,12 @@ const currentLanguageLink: string = getCurrrentLanguageParam("link");
           <div class="dropdown">
             <button class="dropdown-button">
               {menu?.link ? (
-                <a href={menuLink} class="no-underline">
+                <a
+                  href={menuLink}
+                  class="no-underline"
+                  target={isExternalLink(menuLink) ? "_blank" : undefined}
+                  rel={isExternalLink(menuLink) ? "noopener noreferrer" : undefined}
+                >
                   {menuLabel}
                 </a>
               ) : (
@@ -55,7 +61,15 @@ const currentLanguageLink: string = getCurrrentLanguageParam("link");
                     currentLanguageLink === "linkEn"
                       ? item.linkEn
                       : item.link;
-                  return <a href={itemLink}>{itemLabel}</a>;
+                  return (
+                    <a
+                      href={itemLink}
+                      target={isExternalLink(itemLink) ? "_blank" : undefined}
+                      rel={isExternalLink(itemLink) ? "noopener noreferrer" : undefined}
+                    >
+                      {itemLabel}
+                    </a>
+                  );
                 })}
               </div>
             )}
