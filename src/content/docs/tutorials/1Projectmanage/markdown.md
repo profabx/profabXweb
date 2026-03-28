@@ -111,11 +111,11 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 4.Image
 
 ```
-Add image link  and you can update image use [Image uploader service](doc/1git/imageuploadservice.md)
+Add image link  and you can update image use [Image uploader service](/tutorials/1git/imageuploadservice)
 
 ![](https://gitlab.com/picbed/bed/uploads/75985eac80cb11269120d0283ce6a8a5/logo.png)
 ```
-Add image link  and you can update image use [Image uploader service](doc/1git/imageuploadservice.md)
+Add image link  and you can update image use [Image uploader service](/tutorials/1git/imageuploadservice)
 
 ![](https://gitlab.com/picbed/bed/uploads/75985eac80cb11269120d0283ce6a8a5/logo.png)
 

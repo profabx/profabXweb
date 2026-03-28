@@ -17,7 +17,7 @@ https://gitlab.com/nexmaker/zjunb-fab-01/video/-/raw/main/33designer.mp4
 
 
 
-[Coffe Bit Final project](class/zju2020/cb.md)
+[Coffe Bit Final project](/class/zju2020/cb)
 
 
 

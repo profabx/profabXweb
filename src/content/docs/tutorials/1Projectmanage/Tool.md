@@ -21,10 +21,10 @@ sidebar:
 ## Reference tool
 
 * Blogs, wikis, documentation, content management systems
-  * [WorldPress](https://wordpress.org/), [Wordpress web servier](doc/1projectmanage/wordpresswebservier.md)
+  * [WorldPress](https://wordpress.org/), [Wordpress web servier](/tutorials/1projectmanage/wordpresswebservier)
   * [Wix](https://www.wix.com/)
   * [Webflow](https://webflow.com/)
-  * [Gitlab-html](https://pages.gitlab.io/plain-html/),[Tech Stack - HTML+CSS+Github](doc/1projectmanage/htmlcssgithub.md)
+  * [Gitlab-html](https://pages.gitlab.io/plain-html/),[Tech Stack - HTML+CSS+Github](/tutorials/1projectmanage/htmlcssgithub)
   * [GitBook](https://www.gitbook.com)
   * [VuePress](https://vuepress.vuejs.org/)
   * [Yuque](https://www.yuque.com/) 
