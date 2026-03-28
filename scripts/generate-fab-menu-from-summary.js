@@ -82,7 +82,8 @@ function mapInternalLink(rawLink, routePrefix) {
   // Keep folder separators and normalize each path segment to URL-safe slug.
   normalized = normalized
     .split("/")
-    .map((segment) => segment.replace(/[^a-z0-9-]/g, ""))
+    // Keep underscores because Astro routes preserve them in many tutorial paths.
+    .map((segment) => segment.replace(/[^a-z0-9_-]/g, ""))
     .filter(Boolean)
     .join("/");
 

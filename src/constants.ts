@@ -373,8 +373,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/2cad/3ddesignfusion360",
-            "linkEn": "/en/tutorials/2cad/3ddesignfusion360"
+            "link": "/tutorials/2cad/3d_design_fusion360",
+            "linkEn": "/en/tutorials/2cad/3d_design_fusion360"
           },
           {
             "label": "Solidworks-guidebook",
@@ -455,8 +455,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/33dprinter/assessment",
-            "linkEn": "/en/tutorials/33dprinter/assessment"
+            "link": "/tutorials/3_3dprinter/assessment",
+            "linkEn": "/en/tutorials/3_3dprinter/assessment"
           },
           {
             "label": "FDM practice",
@@ -467,8 +467,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/33dprinter/3dprintingdesign",
-            "linkEn": "/en/tutorials/33dprinter/3dprintingdesign"
+            "link": "/tutorials/3_3dprinter/3dprintingdesign",
+            "linkEn": "/en/tutorials/3_3dprinter/3dprintingdesign"
           },
           {
             "label": "3D printer background",
@@ -479,8 +479,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/33dprinter/13dprintingbackground",
-            "linkEn": "/en/tutorials/33dprinter/13dprintingbackground"
+            "link": "/tutorials/3_3dprinter/13dprintingbackground",
+            "linkEn": "/en/tutorials/3_3dprinter/13dprintingbackground"
           },
           {
             "label": "FDM background",
@@ -491,8 +491,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/33dprinter/2fdm3dprintingbackground",
-            "linkEn": "/en/tutorials/33dprinter/2fdm3dprintingbackground"
+            "link": "/tutorials/3_3dprinter/2fdm3dprintingbackground",
+            "linkEn": "/en/tutorials/3_3dprinter/2fdm3dprintingbackground"
           },
           {
             "label": "FDM design guide",
@@ -503,8 +503,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/33dprinter/3fdm-designguide",
-            "linkEn": "/en/tutorials/33dprinter/3fdm-designguide"
+            "link": "/tutorials/3_3dprinter/3fdm-designguide",
+            "linkEn": "/en/tutorials/3_3dprinter/3fdm-designguide"
           },
           {
             "label": "FDM machine operation",
@@ -515,8 +515,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/33dprinter/4fdm-machineoperation",
-            "linkEn": "/en/tutorials/33dprinter/4fdm-machineoperation"
+            "link": "/tutorials/3_3dprinter/4fdm-machineoperation",
+            "linkEn": "/en/tutorials/3_3dprinter/4fdm-machineoperation"
           },
           {
             "label": "SLA background",
@@ -527,8 +527,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/33dprinter/5slabackground",
-            "linkEn": "/en/tutorials/33dprinter/5slabackground"
+            "link": "/tutorials/3_3dprinter/5slabackground",
+            "linkEn": "/en/tutorials/3_3dprinter/5slabackground"
           },
           {
             "label": "SLA design guide",
@@ -539,8 +539,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/33dprinter/6sladesignguide",
-            "linkEn": "/en/tutorials/33dprinter/6sladesignguide"
+            "link": "/tutorials/3_3dprinter/6sladesignguide",
+            "linkEn": "/en/tutorials/3_3dprinter/6sladesignguide"
           },
           {
             "label": "HP-MJF",
@@ -551,8 +551,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/33dprinter/7hpmjf",
-            "linkEn": "/en/tutorials/33dprinter/7hpmjf"
+            "link": "/tutorials/3_3dprinter/7hpmjf",
+            "linkEn": "/en/tutorials/3_3dprinter/7hpmjf"
           },
           {
             "label": "Post process",
@@ -563,8 +563,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/33dprinter/8postprocess",
-            "linkEn": "/en/tutorials/33dprinter/8postprocess"
+            "link": "/tutorials/3_3dprinter/8postprocess",
+            "linkEn": "/en/tutorials/3_3dprinter/8postprocess"
           },
           {
             "label": "Slice software",
@@ -575,8 +575,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/33dprinter/93dslicesoftware",
-            "linkEn": "/en/tutorials/33dprinter/93dslicesoftware"
+            "link": "/tutorials/3_3dprinter/93dslicesoftware",
+            "linkEn": "/en/tutorials/3_3dprinter/93dslicesoftware"
           }
         ]
       },
@@ -597,8 +597,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/4electricdesign/assessment",
-            "linkEn": "/en/tutorials/4electricdesign/assessment"
+            "link": "/tutorials/4electric_design/assessment",
+            "linkEn": "/en/tutorials/4electric_design/assessment"
           },
           {
             "label": "Electric component",
@@ -609,8 +609,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/4electricdesign/electricparametercomponent",
-            "linkEn": "/en/tutorials/4electricdesign/electricparametercomponent"
+            "link": "/tutorials/4electric_design/electricparameter_component",
+            "linkEn": "/en/tutorials/4electric_design/electricparameter_component"
           },
           {
             "label": "EDA",
@@ -621,8 +621,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/4electricdesign/tool",
-            "linkEn": "/en/tutorials/4electricdesign/tool"
+            "link": "/tutorials/4electric_design/tool",
+            "linkEn": "/en/tutorials/4electric_design/tool"
           }
         ]
       },
@@ -655,8 +655,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/5arduino/opensource",
-            "linkEn": "/en/tutorials/5arduino/opensource"
+            "link": "/tutorials/5arduino/open_source",
+            "linkEn": "/en/tutorials/5arduino/open_source"
           },
           {
             "label": "Arduino Basic",
@@ -667,8 +667,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/5arduino/arduinobasic",
-            "linkEn": "/en/tutorials/5arduino/arduinobasic"
+            "link": "/tutorials/5arduino/arduino_basic",
+            "linkEn": "/en/tutorials/5arduino/arduino_basic"
           },
           {
             "label": "Arduino Code",
@@ -679,8 +679,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/5arduino/arduinocode",
-            "linkEn": "/en/tutorials/5arduino/arduinocode"
+            "link": "/tutorials/5arduino/arduino_code",
+            "linkEn": "/en/tutorials/5arduino/arduino_code"
           },
           {
             "label": "Arduino Input",
@@ -691,8 +691,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/5arduino/arduinoinput",
-            "linkEn": "/en/tutorials/5arduino/arduinoinput"
+            "link": "/tutorials/5arduino/arduino_input",
+            "linkEn": "/en/tutorials/5arduino/arduino_input"
           },
           {
             "label": "Arduino Output",
@@ -703,8 +703,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/5arduino/arduinooutput",
-            "linkEn": "/en/tutorials/5arduino/arduinooutput"
+            "link": "/tutorials/5arduino/arduino_output",
+            "linkEn": "/en/tutorials/5arduino/arduino_output"
           },
           {
             "label": "Arduino IOT",
@@ -715,8 +715,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/9iot/nodemcuesp8266aliyun",
-            "linkEn": "/en/tutorials/9iot/nodemcuesp8266aliyun"
+            "link": "/tutorials/9iot/nodemcuesp8266_aliyun",
+            "linkEn": "/en/tutorials/9iot/nodemcuesp8266_aliyun"
           },
           {
             "label": "Library",
@@ -773,8 +773,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/6lasercutter/assessment",
-            "linkEn": "/en/tutorials/6lasercutter/assessment"
+            "link": "/tutorials/6laser_cutter/assessment",
+            "linkEn": "/en/tutorials/6laser_cutter/assessment"
           },
           {
             "label": "Safety",
@@ -785,8 +785,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/6lasercutter/safety",
-            "linkEn": "/en/tutorials/6lasercutter/safety"
+            "link": "/tutorials/6laser_cutter/safety",
+            "linkEn": "/en/tutorials/6laser_cutter/safety"
           },
           {
             "label": "AutoCAD",
@@ -797,8 +797,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/6lasercutter/autocad",
-            "linkEn": "/en/tutorials/6lasercutter/autocad"
+            "link": "/tutorials/6laser_cutter/autocad",
+            "linkEn": "/en/tutorials/6laser_cutter/autocad"
           },
           {
             "label": "Design guide",
@@ -809,8 +809,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/6lasercutter/designguide",
-            "linkEn": "/en/tutorials/6lasercutter/designguide"
+            "link": "/tutorials/6laser_cutter/design_guide",
+            "linkEn": "/en/tutorials/6laser_cutter/design_guide"
           },
           {
             "label": "Machine practice",
@@ -821,8 +821,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/6lasercutter/machinepractice",
-            "linkEn": "/en/tutorials/6lasercutter/machinepractice"
+            "link": "/tutorials/6laser_cutter/machine_practice",
+            "linkEn": "/en/tutorials/6laser_cutter/machine_practice"
           }
         ]
       },
@@ -843,8 +843,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/8cncmanufacture/assessment",
-            "linkEn": "/en/tutorials/8cncmanufacture/assessment"
+            "link": "/tutorials/8cnc_manufacture/assessment",
+            "linkEn": "/en/tutorials/8cnc_manufacture/assessment"
           },
           {
             "label": "PCB",
@@ -855,8 +855,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/4electricdesign/basicknowledge",
-            "linkEn": "/en/tutorials/4electricdesign/basicknowledge"
+            "link": "/tutorials/4electric_design/basicknowledge",
+            "linkEn": "/en/tutorials/4electric_design/basicknowledge"
           },
           {
             "label": "SMT",
@@ -867,8 +867,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/7pcbmanufacture/smt",
-            "linkEn": "/en/tutorials/7pcbmanufacture/smt"
+            "link": "/tutorials/7pcb_manufacture/smt",
+            "linkEn": "/en/tutorials/7pcb_manufacture/smt"
           },
           {
             "label": "Manual Soldering",
@@ -879,8 +879,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/7pcbmanufacture/manual",
-            "linkEn": "/en/tutorials/7pcbmanufacture/manual"
+            "link": "/tutorials/7pcb_manufacture/manual",
+            "linkEn": "/en/tutorials/7pcb_manufacture/manual"
           }
         ]
       },
@@ -901,8 +901,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/8cncmanufacture/assessment",
-            "linkEn": "/en/tutorials/8cncmanufacture/assessment"
+            "link": "/tutorials/8cnc_manufacture/assessment",
+            "linkEn": "/en/tutorials/8cnc_manufacture/assessment"
           },
           {
             "label": "Types of CNC Machines",
@@ -913,8 +913,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/8cncmanufacture/cnctype",
-            "linkEn": "/en/tutorials/8cncmanufacture/cnctype"
+            "link": "/tutorials/8cnc_manufacture/cnctype",
+            "linkEn": "/en/tutorials/8cnc_manufacture/cnctype"
           },
           {
             "label": "Desktop Tool",
@@ -925,8 +925,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/8cncmanufacture/tool",
-            "linkEn": "/en/tutorials/8cncmanufacture/tool"
+            "link": "/tutorials/8cnc_manufacture/tool",
+            "linkEn": "/en/tutorials/8cnc_manufacture/tool"
           },
           {
             "label": "Desktop 3xis CNC Program",
@@ -937,8 +937,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/8cncmanufacture/cncprogram",
-            "linkEn": "/en/tutorials/8cncmanufacture/cncprogram"
+            "link": "/tutorials/8cnc_manufacture/cncprogram",
+            "linkEn": "/en/tutorials/8cnc_manufacture/cncprogram"
           },
           {
             "label": "Desktop 3xis CNC Manufacture",
@@ -949,8 +949,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/8cncmanufacture/cncmanufacture",
-            "linkEn": "/en/tutorials/8cncmanufacture/cncmanufacture"
+            "link": "/tutorials/8cnc_manufacture/cncmanufacture",
+            "linkEn": "/en/tutorials/8cnc_manufacture/cncmanufacture"
           }
         ]
       },
@@ -1041,8 +1041,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/10iot/iotbasic",
-            "linkEn": "/en/tutorials/10iot/iotbasic"
+            "link": "/tutorials/10iot/iot_basic",
+            "linkEn": "/en/tutorials/10iot/iot_basic"
           },
           {
             "label": "NodeMCU-Aliyun Cloud",
@@ -1053,8 +1053,8 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/tutorials/10iot/nodemcuesp8266aliyun",
-            "linkEn": "/en/tutorials/10iot/nodemcuesp8266aliyun"
+            "link": "/tutorials/10iot/nodemcuesp8266_aliyun",
+            "linkEn": "/en/tutorials/10iot/nodemcuesp8266_aliyun"
           }
         ]
       },
