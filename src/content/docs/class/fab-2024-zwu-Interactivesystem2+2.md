@@ -17,18 +17,18 @@ We have online guidebook [www.nexmaker.com](www.nexmaker.com) . We would try to 
 | Date | Course Content           |  
 | ------------- | :-----:|	
 | 0425 | Introduction of design engineering | 
-| 0428 | [Project management](doc/1projectmanage/Assessment1.md)      |  
-| 0509 | [Open-source hardware and Arduino output ](doc/5arduino/assessment.md) |   
+| 0428 | [Project management](/tutorials/1projectmanage/assessment1)      |  
+| 0509 | [Open-source hardware and Arduino output ](/tutorials/5arduino/assessment) |   
 | 0516 | pre presentation & QA     | 
-| 0521 | [Arduino input ](doc/5arduino/assessment.md)   | 
-| 0523 | [Processing(Interface application programming)](doc/11Interface-application-programming/Assessment.md)|  
-| 0528 | [Computer aided design](doc/2cad/Assessment.md)|
+| 0521 | [Arduino input ](/tutorials/5arduino/assessment)   | 
+| 0523 | [Processing(Interface application programming)](/tutorials/11interface-application-programming/assessment)|  
+| 0528 | [Computer aided design](/tutorials/2cad/assessment)|
 | 0530 | QA |
-| 0604 | [ Material](doc/12material&tool/assessment.md) | 
+| 0604 | [ Material](/tutorials/12materialtool/assessment) | 
 | 0606 | Midterm presentation    |  
-| 0611 | [3D printing](doc/3_3dprinter/assessment.md)  | 
-| 0613 | [Computer-controlled cutting](doc/6laser_cutter/Assessment.md)  |    
-| 0618 | [IOT](doc/10IOT/Assessment.md)     |  
+| 0611 | [3D printing](/tutorials/3_3dprinter/assessment)  | 
+| 0613 | [Computer-controlled cutting](/tutorials/6laser_cutter/assessment)  |    
+| 0618 | [IOT](/tutorials/10iot/assessment)     |  
 | 0620 | QA     |  
 | 0625 | QA     |  
 | 0627 | Final presentation  |  
@@ -40,15 +40,15 @@ Daily homework full score is 60
 
 | Course Content       | Full Score  |  
 | ------------- | :-----:|	
-| [Project management](doc/1projectmanage/Assessment1.md)             | 10   | 
-| [Arduino output](doc/5arduino/assessment.md)                        | 5    | 
-| [Arduino input](doc/5arduino/assessment.md)                         | 5    | 
-| [Processing](doc/11Interface-application-programming/Assessment.md) |  5   |  
-| [Material](doc/12material&tool/assessment.md)                       |  5   |  
-| [Computer aided design](doc/2cad/Assessment.md)                     |  10  |  
-| [3D printing ](doc/3_3dprinter/assessment.md)                       |  10  | 
-| [Computer-controlled cutting](doc/6laser_cutter/Assessment.md)      |  5   | 
-| [Arduino IOT](doc/10IOT/Assessment.md)                              |  5   |  
+| [Project management](/tutorials/1projectmanage/assessment1)             | 10   | 
+| [Arduino output](/tutorials/5arduino/assessment)                        | 5    | 
+| [Arduino input](/tutorials/5arduino/assessment)                         | 5    | 
+| [Processing](/tutorials/11interface-application-programming/assessment) |  5   |  
+| [Material](/tutorials/12materialtool/assessment)                       |  5   |  
+| [Computer aided design](/tutorials/2cad/assessment)                     |  10  |  
+| [3D printing ](/tutorials/3_3dprinter/assessment)                       |  10  | 
+| [Computer-controlled cutting](/tutorials/6laser_cutter/assessment)      |  5   | 
+| [Arduino IOT](/tutorials/10iot/assessment)                              |  5   |  
 
 
 
