@@ -3832,6 +3832,13 @@ const AboutItems = [
   },
 ];
 
+const TutorialSection = FabMenuItems.find(
+  (item: any) => item?.labelEn === "Tutorials",
+);
+const FabResultsSection = FabMenuItems.find(
+  (item: any) => item?.labelEn === "FABS",
+);
+
 // 侧边栏菜单-
 const SideBarData = [
   {
@@ -3840,7 +3847,23 @@ const SideBarData = [
     translations: {
       en: "fab",
     },
-    items: [...FabMenuItems],
+    items: FabMenuItems.slice(0, 5),
+  },
+  {
+    id: "tutorials",
+    label: "课程",
+    translations: {
+      en: "Tutorials",
+    },
+    items: TutorialSection?.items ?? [],
+  },
+  {
+    id: "fabs",
+    label: "结果",
+    translations: {
+      en: "FABS",
+    },
+    items: FabResultsSection?.items ?? [],
   },
   {
     label: "数字制造",
