@@ -341,6 +341,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "Overview",
+            "labelEn": "Overview",
+            "translations": {
+              "en": "Overview"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/2cad/cad",
+            "linkEn": "/en/tutorials/2cad/cad"
+          },
+          {
             "label": "Assessment",
             "labelEn": "Assessment",
             "translations": {
@@ -589,6 +601,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "Overview",
+            "labelEn": "Overview",
+            "translations": {
+              "en": "Overview"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/4electric_design/basicknowledge",
+            "linkEn": "/en/tutorials/4electric_design/basicknowledge"
+          },
+          {
             "label": "Assessment",
             "labelEn": "Assessment",
             "translations": {
@@ -764,6 +788,18 @@ const FabMenuItems = [
         },
         "collapsed": true,
         "items": [
+          {
+            "label": "Overview",
+            "labelEn": "Overview",
+            "translations": {
+              "en": "Overview"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/6laser_cutter/basic",
+            "linkEn": "/en/tutorials/6laser_cutter/basic"
+          },
           {
             "label": "Assessment",
             "labelEn": "Assessment",
@@ -963,6 +999,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "Overview",
+            "labelEn": "Overview",
+            "translations": {
+              "en": "Overview"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/9mold/mold",
+            "linkEn": "/en/tutorials/9mold/mold"
+          },
+          {
             "label": "Assessment",
             "labelEn": "Assessment",
             "translations": {
@@ -1137,6 +1185,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "Overview",
+            "labelEn": "Overview",
+            "translations": {
+              "en": "Overview"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/12materialtool/standardcomponentpart",
+            "linkEn": "/en/tutorials/12materialtool/standardcomponentpart"
+          },
+          {
             "label": "Assessment",
             "labelEn": "Assessment",
             "translations": {
@@ -1183,6 +1243,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "Overview",
+            "labelEn": "Overview",
+            "translations": {
+              "en": "Overview"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/13bp/readme",
+            "linkEn": "/en/tutorials/13bp/readme"
+          },
+          {
             "label": "Assessment",
             "labelEn": "Assessment",
             "translations": {
@@ -1204,6 +1276,18 @@ const FabMenuItems = [
         },
         "collapsed": true,
         "items": [
+          {
+            "label": "Overview",
+            "labelEn": "Overview",
+            "translations": {
+              "en": "Overview"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/14aivehicle/basic",
+            "linkEn": "/en/tutorials/14aivehicle/basic"
+          },
           {
             "label": "Assessment",
             "labelEn": "Assessment",

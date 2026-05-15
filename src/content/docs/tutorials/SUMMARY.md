@@ -43,6 +43,7 @@ sidebar:
     * [AIGC](doc/1projectmanage/aigc.md)
 
 *  [2. CAD design](doc/2cad/cad.md)
+  * [Overview](doc/2cad/cad.md)
   * [Assessment](doc/2cad/Assessment.md)
   * [Fusion 360 prepare](doc/2cad/Fusion360prepare.md)
   * [Fusion 360-Guidebook](doc/2cad/3D_Design_Fusion360.md)
@@ -66,6 +67,7 @@ sidebar:
   * [Slice software](doc/3_3dprinter/9.3Dslicesoftware.md)
 
 * [4. Electric design ](doc/4electric_design/basicknowledge.md)
+  * [Overview](doc/4electric_design/basicknowledge.md)
   * [Assessment](doc/4electric_design/Assessment.md)
   * [Electric component](doc/4electric_design/electricparameter_component.md)
   * [EDA](doc/4electric_design/tool.md)
@@ -83,6 +85,7 @@ sidebar:
   * [Mechancial arm](doc/5arduino/robot-mycobot.md)
       
 * [6. Laser cutting](doc/6laser_cutter/basic.md)
+  * [Overview](doc/6laser_cutter/basic.md)
   * [Assessment](doc/6laser_cutter/Assessment.md)
   * [Safety](doc/6laser_cutter/Safety.md)
   * [AutoCAD](doc/6laser_cutter/AutoCAD.md)
@@ -103,6 +106,7 @@ sidebar:
   * [Desktop 3xis CNC Manufacture](doc/8CNC_manufacture/cncmanufacture.md)
 
 * [9.Mold](doc/9MOLD/mold.md)
+  * [Overview](doc/9MOLD/mold.md)
   * [Assessment](doc/9MOLD/assessment.md)
   * [Material](doc/9MOLD/material.md)
   * [Tool](doc/9MOLD/tool.md)
@@ -121,15 +125,18 @@ sidebar:
   * [Other tool](doc/11Interface-application-programming/tool.md)
  
 * [12.Material and tool](doc/12material&tool/standardcomponentpart.md)
+  * [Overview](doc/12material&tool/standardcomponentpart.md)
   * [Assessment](doc/12material&tool/assessment.md)
   * [Material](doc/12material&tool/material.md)
   * [ME standard component and tools](http://www.misumi.com.cn/)
   * EE component:[Digi-Key](https://www.digikey.cn/),[Mouser](https://www.mouser.cn/)
   
 * [13.Business plan basic](doc/13BP/README.md)
+  * [Overview](doc/13BP/README.md)
   * [Assessment](doc/13BP/assessment.md)
 
 * [14.AI vehicle](doc/14AI&vehicle/basic.md)
+  * [Overview](doc/14AI&vehicle/basic.md)
   * [Assessment](doc/14AI&vehicle/assessment.md)
   * [AI platform](doc/14AI&vehicle/aiplatform.md)
 
