@@ -1,3 +1,7 @@
+---
+title: Design Engineering2022
+---
+
 As a part of Design Engineering 2022,This workshop was launched for ZJU industry design master.
 40 students form 8 groups.
 This project was launched in Sept 2022
@@ -5,9 +9,7 @@ We would list some key points every group need improve before final presentation
 The following is the schedule.
 
 ```
----
-title: Design Engineering2022
----
+
 
 Design Engineering2022
 40 students form 8 groups.

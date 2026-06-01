@@ -1,5 +1,6 @@
 ---
 title: piying
+---
 
 # 1.介绍
 此项目用[kinect V2](https://developer.microsoft.com/en-us/windows/kinect/)捕捉人体动作，在window10电脑上用[Processing3.5.4 ](https://processing.org/download)处理Kinect的骨骼数据（此处用到[Kinect PV2](https://github.com/ThomasLengeling/KinectPV2)的库）并显示在电脑屏幕上.后续有两种方案。

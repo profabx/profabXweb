@@ -1,5 +1,6 @@
 ---
 title: Machine practice
+---
 
 ## 1. Powercut(laser cutter software) install
 

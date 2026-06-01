@@ -1,5 +1,6 @@
 ---
 title: tool
+---
 
  we call electrical design software is EDA（Electronic Design Automation）
  ![](https://nexmaker-profabx.oss-cn-hangzhou.aliyuncs.com/img/EDA.png)

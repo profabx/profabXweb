@@ -1,5 +1,6 @@
 ---
 title: cncprogram
+---
 
 After design in fusion electronics,we can switch to 3D PCB in the command of "Switch/view 3D PCB"
 ![](https://gitlab.com/picbed/bed/uploads/e4bb6bbd94d1481963d0a4cba4b02990/pcbto3d.png)

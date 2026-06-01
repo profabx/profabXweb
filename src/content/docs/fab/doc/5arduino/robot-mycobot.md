@@ -1,5 +1,6 @@
 ---
 title: robot-mycobot
+---
 
 # Robot-mycobot
 ![](https://gitlab.com/picbed/bed/uploads/56bd868a8f7d50786eec25c898852ec7/WX20210122-085106_2x.png)

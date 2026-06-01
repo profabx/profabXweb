@@ -1,5 +1,6 @@
 ---
 title: electricparameter component
+---
 
 ## Calculation
 *  U=I*R

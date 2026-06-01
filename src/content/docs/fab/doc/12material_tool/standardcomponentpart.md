@@ -1,5 +1,6 @@
 ---
 title: standardcomponentpart
+---
 
 # Standard component
 We would introduce some standard component which is used in daily industry.

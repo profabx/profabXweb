@@ -1,5 +1,6 @@
 ---
 title: webmethod
+---
 
 
 There are many diffferent kinds of web build  method, the following are some simple mehtod

@@ -1,5 +1,6 @@
 ---
 title: cncmanufacture
+---
 
 In this part ,we would use [Candle software](https://github.com/Denvi/Candle) to control the [DIY CNC machine](https://item.taobao.com/item.htm?spm=a230r.1.14.85.736a3286COaS7g&id=605504955634&ns=1&abbucket=18#detail)
  

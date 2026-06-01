@@ -1,5 +1,6 @@
 ---
 title: gitbook
+---
 
 Gitlab and github own similar function,in the following page,we just introduce how to build static websites with gitlab.
 With GitLab Pages, you can publish static websites directly from a repository in GitLab.

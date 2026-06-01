@@ -1,5 +1,6 @@
 ---
 title: ee
+---
 
 ## 电控
 ![](https://i0.wp.com/www.linuxlinks.com/wp-content/uploads/2019/05/electronic-design-automation-tools.jpg?resize=700%2C370&ssl=1)
@@ -36,7 +37,7 @@ title: ee
 ![](https://cdn0.careeraddict.com/uploads/article/62085/problem-solving-engineer.jpg)
 
 ![](https://www.milwaukeetool.jobs/-/media/HR-Site/Career-Areas/Engineering/eng-specialty-pgs/Intro-general2.jpg?h=330&w=447&la=en&hash=3A72FCA34D3B11EAB10C2CF635FBF4AE)
-![](![](https://raw.githubusercontent.com/bobwu0214/imageuploadservice/main/img/WX20230804-200046.png))
+![](https://raw.githubusercontent.com/bobwu0214/imageuploadservice/main/img/WX20230804-200046.png)
 ###### 1.5 单位
 测量单位mil（1mil=1/1000inch=0.0254mm，1mm=39.37mil）
 ###### 1.6 设计工具
