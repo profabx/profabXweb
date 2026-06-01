@@ -1,6 +1,6 @@
 ## 如何开始使用
 
-安装 astro
+安装 astro：
 
 ```
 npm create astro@latest
