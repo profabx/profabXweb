@@ -71,6 +71,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://git-scm.com/",
+            "linkEn": "https://git-scm.com/"
+          },
+          {
             "label": "Assessment",
             "labelEn": "Assessment",
             "translations": {
@@ -102,6 +114,18 @@ const FabMenuItems = [
             },
             "collapsed": true,
             "items": [
+              {
+                "label": "📋 课程排期",
+                "labelEn": "Schedule",
+                "translations": {
+                  "en": "Schedule"
+                },
+                "attrs": {
+                  "id": "fab"
+                },
+                "link": "/tutorials/1projectmanage/webmethod",
+                "linkEn": "/en/tutorials/1projectmanage/webmethod"
+              },
               {
                 "label": "Gitlab-html",
                 "labelEn": "Gitlab-html",
@@ -233,6 +257,18 @@ const FabMenuItems = [
             "collapsed": true,
             "items": [
               {
+                "label": "📋 课程排期",
+                "labelEn": "Schedule",
+                "translations": {
+                  "en": "Schedule"
+                },
+                "attrs": {
+                  "id": "fab"
+                },
+                "link": "/tutorials/1projectmanage/tool",
+                "linkEn": "/en/tutorials/1projectmanage/tool"
+              },
+              {
                 "label": "Git",
                 "labelEn": "Git",
                 "translations": {
@@ -340,6 +376,18 @@ const FabMenuItems = [
         },
         "collapsed": true,
         "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/2cad/cad",
+            "linkEn": "/en/tutorials/2cad/cad"
+          },
           {
             "label": "Overview",
             "labelEn": "Overview",
@@ -458,6 +506,18 @@ const FabMenuItems = [
         },
         "collapsed": true,
         "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/3_3dprinter/assessment",
+            "linkEn": "/en/tutorials/3_3dprinter/assessment"
+          },
           {
             "label": "Assessnment",
             "labelEn": "Assessnment",
@@ -601,6 +661,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/4electric_design/basicknowledge",
+            "linkEn": "/en/tutorials/4electric_design/basicknowledge"
+          },
+          {
             "label": "Overview",
             "labelEn": "Overview",
             "translations": {
@@ -658,6 +730,18 @@ const FabMenuItems = [
         },
         "collapsed": true,
         "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://www.arduino.cc/",
+            "linkEn": "https://www.arduino.cc/"
+          },
           {
             "label": "Assessment",
             "labelEn": "Assessment",
@@ -789,6 +873,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/6laser_cutter/basic",
+            "linkEn": "/en/tutorials/6laser_cutter/basic"
+          },
+          {
             "label": "Overview",
             "labelEn": "Overview",
             "translations": {
@@ -871,6 +967,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://www.nexpcb.com/blog/smt-pcb-puzzle",
+            "linkEn": "https://www.nexpcb.com/blog/smt-pcb-puzzle"
+          },
+          {
             "label": "Assessment",
             "labelEn": "Assessment",
             "translations": {
@@ -928,6 +1036,18 @@ const FabMenuItems = [
         },
         "collapsed": true,
         "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://astromachineworks.com/what-is-cnc-machining/",
+            "linkEn": "https://astromachineworks.com/what-is-cnc-machining/"
+          },
           {
             "label": "Assessment",
             "labelEn": "Assessment",
@@ -999,6 +1119,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/9mold/mold",
+            "linkEn": "/en/tutorials/9mold/mold"
+          },
+          {
             "label": "Overview",
             "labelEn": "Overview",
             "translations": {
@@ -1069,6 +1201,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://en.wikipedia.org/wiki/Internet_of_Things",
+            "linkEn": "https://en.wikipedia.org/wiki/Internet_of_Things"
+          },
+          {
             "label": "Assessment",
             "labelEn": "Assessment",
             "translations": {
@@ -1114,6 +1258,18 @@ const FabMenuItems = [
         },
         "collapsed": true,
         "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "http://fabacademy.org/2018/docs/FabAcademy-Tutorials/week16_interface_and_application_programming/processing_resources.html",
+            "linkEn": "http://fabacademy.org/2018/docs/FabAcademy-Tutorials/week16_interface_and_application_programming/processing_resources.html"
+          },
           {
             "label": "Assessment",
             "labelEn": "Assessment",
@@ -1185,6 +1341,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/12materialtool/standardcomponentpart",
+            "linkEn": "/en/tutorials/12materialtool/standardcomponentpart"
+          },
+          {
             "label": "Overview",
             "labelEn": "Overview",
             "translations": {
@@ -1243,6 +1411,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/13bp/readme",
+            "linkEn": "/en/tutorials/13bp/readme"
+          },
+          {
             "label": "Overview",
             "labelEn": "Overview",
             "translations": {
@@ -1276,6 +1456,18 @@ const FabMenuItems = [
         },
         "collapsed": true,
         "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/14aivehicle/basic",
+            "linkEn": "/en/tutorials/14aivehicle/basic"
+          },
           {
             "label": "Overview",
             "labelEn": "Overview",
@@ -1332,6 +1524,18 @@ const FabMenuItems = [
         },
         "collapsed": true,
         "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-01",
+            "linkEn": "/en/class/fab-01"
+          },
           {
             "label": "Jiahao Liu",
             "labelEn": "Jiahao Liu",
@@ -1475,6 +1679,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-02",
+            "linkEn": "/en/class/fab-02"
+          },
+          {
             "label": "June",
             "labelEn": "June",
             "translations": {
@@ -1557,6 +1773,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2020-zju-de",
+            "linkEn": "/en/class/fab-2020-zju-de"
+          },
+          {
             "label": "924",
             "labelEn": "924",
             "translations": {
@@ -1564,6 +1792,18 @@ const FabMenuItems = [
             },
             "collapsed": true,
             "items": [
+              {
+                "label": "📋 课程排期",
+                "labelEn": "Schedule",
+                "translations": {
+                  "en": "Schedule"
+                },
+                "attrs": {
+                  "id": "fab"
+                },
+                "link": "http://team-924.gitlab.io/zjucst924/",
+                "linkEn": "http://team-924.gitlab.io/zjucst924/"
+              },
               {
                 "label": "924 Final project",
                 "labelEn": "924 Final project",
@@ -1623,6 +1863,18 @@ const FabMenuItems = [
             "collapsed": true,
             "items": [
               {
+                "label": "📋 课程排期",
+                "labelEn": "Schedule",
+                "translations": {
+                  "en": "Schedule"
+                },
+                "attrs": {
+                  "id": "fab"
+                },
+                "link": "https://happyplanet196.wixsite.com/happyplanet",
+                "linkEn": "https://happyplanet196.wixsite.com/happyplanet"
+              },
+              {
                 "label": "happly planet Final project",
                 "labelEn": "happly planet Final project",
                 "translations": {
@@ -1657,6 +1909,18 @@ const FabMenuItems = [
             "collapsed": true,
             "items": [
               {
+                "label": "📋 课程排期",
+                "labelEn": "Schedule",
+                "translations": {
+                  "en": "Schedule"
+                },
+                "attrs": {
+                  "id": "fab"
+                },
+                "link": "https://manatee257.github.io",
+                "linkEn": "https://manatee257.github.io"
+              },
+              {
                 "label": "Coffe Bit Final project",
                 "labelEn": "Coffe Bit Final project",
                 "translations": {
@@ -1678,6 +1942,18 @@ const FabMenuItems = [
             },
             "collapsed": true,
             "items": [
+              {
+                "label": "📋 课程排期",
+                "labelEn": "Schedule",
+                "translations": {
+                  "en": "Schedule"
+                },
+                "attrs": {
+                  "id": "fab"
+                },
+                "link": "https://yyniao.github.io",
+                "linkEn": "https://yyniao.github.io"
+              },
               {
                 "label": "Final project",
                 "labelEn": "Final project",
@@ -1713,6 +1989,18 @@ const FabMenuItems = [
             "collapsed": true,
             "items": [
               {
+                "label": "📋 课程排期",
+                "labelEn": "Schedule",
+                "translations": {
+                  "en": "Schedule"
+                },
+                "attrs": {
+                  "id": "fab"
+                },
+                "link": "http://yyclub.designist.cn",
+                "linkEn": "http://yyclub.designist.cn"
+              },
+              {
                 "label": "YYclub Final project",
                 "labelEn": "YYclub Final project",
                 "translations": {
@@ -1735,6 +2023,18 @@ const FabMenuItems = [
             "collapsed": true,
             "items": [
               {
+                "label": "📋 课程排期",
+                "labelEn": "Schedule",
+                "translations": {
+                  "en": "Schedule"
+                },
+                "attrs": {
+                  "id": "fab"
+                },
+                "link": "https://1348328828.wixsite.com/mysite-2",
+                "linkEn": "https://1348328828.wixsite.com/mysite-2"
+              },
+              {
                 "label": "Final project &vidoe",
                 "labelEn": "Final project &vidoe",
                 "translations": {
@@ -1756,6 +2056,18 @@ const FabMenuItems = [
             },
             "collapsed": true,
             "items": [
+              {
+                "label": "📋 课程排期",
+                "labelEn": "Schedule",
+                "translations": {
+                  "en": "Schedule"
+                },
+                "attrs": {
+                  "id": "fab"
+                },
+                "link": "http://natural.designist.cn",
+                "linkEn": "http://natural.designist.cn"
+              },
               {
                 "label": "Natural Final project",
                 "labelEn": "Natural Final project",
@@ -1792,6 +2104,18 @@ const FabMenuItems = [
         },
         "collapsed": true,
         "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2021-zju-de",
+            "linkEn": "/en/class/fab-2021-zju-de"
+          },
           {
             "label": "CNFD",
             "labelEn": "CNFD",
@@ -1899,6 +2223,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2021-zju-dm",
+            "linkEn": "/en/class/fab-2021-zju-dm"
+          },
+          {
             "label": "The Flash team",
             "labelEn": "The Flash team",
             "translations": {
@@ -1968,6 +2304,18 @@ const FabMenuItems = [
         },
         "collapsed": true,
         "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2022-zju-de",
+            "linkEn": "/en/class/fab-2022-zju-de"
+          },
           {
             "label": "the Red Gang Tailor's",
             "labelEn": "the Red Gang Tailor's",
@@ -2063,6 +2411,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2022-zju-dm",
+            "linkEn": "/en/class/fab-2022-zju-dm"
+          },
+          {
             "label": "TECviz",
             "labelEn": "TECviz",
             "translations": {
@@ -2121,6 +2481,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2022-zju-mini",
+            "linkEn": "/en/class/fab-2022-zju-mini"
+          },
+          {
             "label": "Four Esigners",
             "labelEn": "Four Esigners",
             "translations": {
@@ -2155,6 +2527,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/fab/fab2023",
+            "linkEn": "/en/tutorials/fab/fab2023"
+          },
+          {
             "label": "Yaolun Zhang",
             "labelEn": "Yaolun Zhang",
             "translations": {
@@ -2176,6 +2560,18 @@ const FabMenuItems = [
         },
         "collapsed": true,
         "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2023-zju-de",
+            "linkEn": "/en/class/fab-2023-zju-de"
+          },
           {
             "label": "InnoWarm",
             "labelEn": "InnoWarm",
@@ -2283,6 +2679,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2023-zju-dm",
+            "linkEn": "/en/class/fab-2023-zju-dm"
+          },
+          {
             "label": "The-Dynamic-Seven",
             "labelEn": "The-Dynamic-Seven",
             "translations": {
@@ -2365,6 +2773,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2023-zju-mini",
+            "linkEn": "/en/class/fab-2023-zju-mini"
+          },
+          {
             "label": "Fivevolution",
             "labelEn": "Fivevolution",
             "translations": {
@@ -2398,6 +2818,18 @@ const FabMenuItems = [
         },
         "collapsed": true,
         "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2024-zwu-interactivesystem",
+            "linkEn": "/en/class/fab-2024-zwu-interactivesystem"
+          },
           {
             "label": "SZPJNF",
             "labelEn": "SZPJNF",
@@ -2481,6 +2913,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2024-zwu-interactivesystem22",
+            "linkEn": "/en/class/fab-2024-zwu-interactivesystem22"
+          },
+          {
             "label": "Mars",
             "labelEn": "Mars",
             "translations": {
@@ -2539,6 +2983,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/fab/fab2023",
+            "linkEn": "/en/tutorials/fab/fab2023"
+          },
+          {
             "label": "Xu Sun",
             "labelEn": "Xu Sun",
             "translations": {
@@ -2572,6 +3028,18 @@ const FabMenuItems = [
         },
         "collapsed": true,
         "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2025-unnc",
+            "linkEn": "/en/class/fab-2025-unnc"
+          },
           {
             "label": "Fengyi zhao",
             "labelEn": "Fengyi zhao",
@@ -2631,6 +3099,18 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2025-unnc-2",
+            "linkEn": "/en/class/fab-2025-unnc-2"
+          },
+          {
             "label": "Wenqing zhong",
             "labelEn": "Wenqing zhong",
             "translations": {
@@ -2689,6 +3169,146 @@ const FabMenuItems = [
             },
             "link": "https://unnc-fab.github.io/2025-2-jiawei/",
             "linkEn": "https://unnc-fab.github.io/2025-2-jiawei/"
+          }
+        ]
+      },
+      {
+        "label": "ZWU-interactivesystem 2026A1",
+        "labelEn": "ZWU-interactivesystem 2026A1",
+        "translations": {
+          "en": "ZWU-interactivesystem 2026A1"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2026-zwu-01",
+            "linkEn": "/en/class/fab-2026-zwu-01"
+          },
+          {
+            "label": "zwu2026-1-001",
+            "labelEn": "zwu2026-1-001",
+            "translations": {
+              "en": "zwu2026-1-001"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/zwu2026-1-001/",
+            "linkEn": "https://nexmaker-fab.github.io/zwu2026-1-001/"
+          },
+          {
+            "label": "Jowywlz",
+            "labelEn": "Jowywlz",
+            "translations": {
+              "en": "Jowywlz"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/zwu-2026-1-002/",
+            "linkEn": "https://nexmaker-fab.github.io/zwu-2026-1-002/"
+          },
+          {
+            "label": "ZwU-2026-1-003",
+            "labelEn": "ZwU-2026-1-003",
+            "translations": {
+              "en": "ZwU-2026-1-003"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/ZwU-2026-1-003/",
+            "linkEn": "https://nexmaker-fab.github.io/ZwU-2026-1-003/"
+          },
+          {
+            "label": "AETHER STUDIO",
+            "labelEn": "AETHER STUDIO",
+            "translations": {
+              "en": "AETHER STUDIO"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/zwu-2026-1-004/",
+            "linkEn": "https://nexmaker-fab.github.io/zwu-2026-1-004/"
+          }
+        ]
+      },
+      {
+        "label": "ZWU-interactivesystem 2026A2",
+        "labelEn": "ZWU-interactivesystem 2026A2",
+        "translations": {
+          "en": "ZWU-interactivesystem 2026A2"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2026-zwu-01",
+            "linkEn": "/en/class/fab-2026-zwu-01"
+          },
+          {
+            "label": "ZWU-2026-2-001",
+            "labelEn": "ZWU-2026-2-001",
+            "translations": {
+              "en": "ZWU-2026-2-001"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/ZWU-2026-2-001/",
+            "linkEn": "https://nexmaker-fab.github.io/ZWU-2026-2-001/"
+          },
+          {
+            "label": "V-JESH",
+            "labelEn": "V-JESH",
+            "translations": {
+              "en": "V-JESH"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/ZWU-2026-2-002/",
+            "linkEn": "https://nexmaker-fab.github.io/ZWU-2026-2-002/"
+          },
+          {
+            "label": "ZWU-2026-2-003",
+            "labelEn": "ZWU-2026-2-003",
+            "translations": {
+              "en": "ZWU-2026-2-003"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/ZWU-2026-2-003/",
+            "linkEn": "https://nexmaker-fab.github.io/ZWU-2026-2-003/"
+          },
+          {
+            "label": "ZWU-2026-2-004",
+            "labelEn": "ZWU-2026-2-004",
+            "translations": {
+              "en": "ZWU-2026-2-004"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/ZWU-2026-2-004/",
+            "linkEn": "https://nexmaker-fab.github.io/ZWU-2026-2-004/"
           }
         ]
       }

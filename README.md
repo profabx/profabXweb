@@ -1,5 +1,19 @@
 ## 如何开始使用
-test
+
+1. 0608在UNNC- FabLab-2025-2后面增量两类（UNNC- FabLab-2025-2和ZWU-interactivesystem 2026A1，ZWU-interactivesystem 2026A2同一级）
+* [ZWU-interactivesystem 2026A1](class/FAB-2026-ZWU-01.md)
+  * [zwu2026-1-001](https://nexmaker-fab.github.io/zwu2026-1-001/)
+  * [Jowywlz](https://nexmaker-fab.github.io/zwu-2026-1-002/)
+  * [ZwU-2026-1-003](https://nexmaker-fab.github.io/ZwU-2026-1-003/)
+  * [AETHER STUDIO](https://nexmaker-fab.github.io/zwu-2026-1-004/) 
+* [ZWU-interactivesystem 2026A2](class/FAB-2026-ZWU-01.md)
+  * [ZWU-2026-2-001](https://nexmaker-fab.github.io/ZWU-2026-2-001/)
+  * [V-JESH](https://nexmaker-fab.github.io/ZWU-2026-2-002/)
+  * [ZWU-2026-2-003](https://nexmaker-fab.github.io/ZWU-2026-2-003/)
+  * [ZWU-2026-2-004](https://nexmaker-fab.github.io/ZWU-2026-2-004/)
+  
+
+
 
 安装 astro：
 

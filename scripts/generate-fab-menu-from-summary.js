@@ -275,9 +275,24 @@ function toFabMenuItem(node, options) {
   if (hasChildren) {
     // Group nodes should not carry a link and default to collapsed.
     item.collapsed = true;
-    item.items = node.children
+    const childItems = node.children
       .map((child) => toFabMenuItem(child, options))
       .filter(Boolean);
+
+    if (link) {
+      // Prepend the schedule/course page as a child item
+      const scheduleItem = {
+        label: "📋 课程排期",
+        labelEn: "Schedule",
+        translations: { en: "Schedule" },
+        attrs: { id: options.id },
+        link: link,
+        linkEn: external ? rawLink : `/en${link}`
+      };
+      childItems.unshift(scheduleItem);
+    }
+
+    item.items = childItems;
   }
 
   // Drop invalid sidebar entries that have neither link nor children.

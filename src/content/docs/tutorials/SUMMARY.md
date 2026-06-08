@@ -275,6 +275,16 @@ sidebar:
   * [Xiangdong Huang](https://unnc-fab.github.io/2025-2-xiangdong/)
   * [Mingzhao Xi](https://unnc-fab.github.io/2025-2-mingzhao/)
   * [Jiawei](https://unnc-fab.github.io/2025-2-jiawei/)
+* [ZWU-interactivesystem 2026A1](class/FAB-2026-ZWU-01.md)
+  * [zwu2026-1-001](https://nexmaker-fab.github.io/zwu2026-1-001/)
+  * [Jowywlz](https://nexmaker-fab.github.io/zwu-2026-1-002/)
+  * [ZwU-2026-1-003](https://nexmaker-fab.github.io/ZwU-2026-1-003/)
+  * [AETHER STUDIO](https://nexmaker-fab.github.io/zwu-2026-1-004/) 
+* [ZWU-interactivesystem 2026A2](class/FAB-2026-ZWU-01.md)
+  * [ZWU-2026-2-001](https://nexmaker-fab.github.io/ZWU-2026-2-001/)
+  * [V-JESH](https://nexmaker-fab.github.io/ZWU-2026-2-002/)
+  * [ZWU-2026-2-003](https://nexmaker-fab.github.io/ZWU-2026-2-003/)
+  * [ZWU-2026-2-004](https://nexmaker-fab.github.io/ZWU-2026-2-004/)
 * [Design engineering 2025]()
 ## OTHERS
 

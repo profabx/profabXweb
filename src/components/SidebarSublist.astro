@@ -56,28 +56,42 @@ export function flattenSidebar(sidebar: SidebarEntry[]): Link[] {
               />
             )}
           </a>
-        ) : (
-          <details
-            open={
-              flattenSidebar(entry.entries).some((i) => i.isCurrent) ||
-              !entry.collapsed
-            }
-          >
-            <summary>
-              <div class="group-label">
-                <span class="large">{entry.label}</span>
-                {entry.badge && (
-                  <Badge
-                    text={entry.badge.text}
-                    variant={entry.badge.variant}
-                  />
-                )}
-              </div>
-              <Icon name="right-caret" class="caret" size="1.25rem" />
-            </summary>
-            <Astro.self sublist={entry.entries} nested />
-          </details>
-        )}
+        ) : (() => {
+          const isCurrentGroup = entry.entries.some(
+            (i) => i.type === "link" && (i.label === "📋 课程排期" || i.label === "Schedule") && i.isCurrent
+          );
+          const firstLink = flattenSidebar(entry.entries).find((i) => i.type === "link");
+          const targetHref = firstLink && !isExternalLink(firstLink.href) ? firstLink.href : undefined;
+
+          return (
+            <details
+              open={
+                isCurrentGroup ||
+                flattenSidebar(entry.entries).some((i) => i.isCurrent) ||
+                !entry.collapsed
+              }
+            >
+              <summary
+                data-target-href={targetHref}
+                onclick="if (this.dataset.targetHref && !this.parentElement.hasAttribute('open')) { window.location.href = this.dataset.targetHref; }"
+              >
+                <div class="group-label">
+                  <span class:list={[{ large: !nested }, { "active-group": isCurrentGroup }]}>
+                    {entry.label}
+                  </span>
+                  {entry.badge && (
+                    <Badge
+                      text={entry.badge.text}
+                      variant={entry.badge.variant}
+                    />
+                  )}
+                </div>
+                <Icon name="right-caret" class="caret" size="1.25rem" />
+              </summary>
+              <Astro.self sublist={entry.entries} nested />
+            </details>
+          );
+        })()}
       </li>
     ))
   }
@@ -161,6 +175,10 @@ export function flattenSidebar(sidebar: SidebarEntry[]): Link[] {
   a > *:not(:last-child),
   .group-label > *:not(:last-child) {
     margin-inline-end: 0.25em;
+  }
+
+  .active-group {
+    color: var(--sl-color-accent) !important;
   }
 
   @media (min-width: 50rem) {
