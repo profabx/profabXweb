@@ -377,7 +377,7 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
-            "label": "📋 课程排期",
+            "label": "📋 课程排期1",
             "labelEn": "Schedule",
             "translations": {
               "en": "Schedule"
@@ -3181,8 +3181,8 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
-            "label": "📋 课程排期",
-            "labelEn": "Schedule",
+            "label": "📋 Schedule2026",
+            "labelEn": "Schedule2026",
             "translations": {
               "en": "Schedule"
             },
@@ -3251,16 +3251,16 @@ const FabMenuItems = [
         "collapsed": true,
         "items": [
           {
-            "label": "📋 课程排期",
-            "labelEn": "Schedule",
+            "label": "📋 Schedule202602",
+            "labelEn": "Schedule202602",
             "translations": {
               "en": "Schedule"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "/class/fab-2026-zwu-01",
-            "linkEn": "/en/class/fab-2026-zwu-01"
+            "link": "/class/fab-2026-zwu-02",
+            "linkEn": "/en/class/fab-2026-zwu-02"
           },
           {
             "label": "ZWU-2026-2-001",
