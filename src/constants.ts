@@ -1516,11 +1516,156 @@ const FabMenuItems = [
     },
     "collapsed": true,
     "items": [
+
+       //ZWU-interactivesystem 2026A1
       {
-        "label": "NexMaker academy-1",
-        "labelEn": "NexMaker academy-1",
+        "label": "ZWU-interactivesystem 2026A1",
+        "labelEn": "ZWU-interactivesystem 2026A1",
         "translations": {
-          "en": "NexMaker academy-1"
+          "en": "ZWU-interactivesystem 2026A1"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 Schedule2026",
+            "labelEn": "Schedule2026",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/zwu-2026-interactivesystem-1",
+            "linkEn": "/en/class/zwu-2026-interactivesystem-1"
+          },
+          {
+            "label": "zwu2026-1-001",
+            "labelEn": "zwu2026-1-001",
+            "translations": {
+              "en": "zwu2026-1-001"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/zwu2026-1-001/",
+            "linkEn": "https://nexmaker-fab.github.io/zwu2026-1-001/"
+          },
+          {
+            "label": "Jowywlz",
+            "labelEn": "Jowywlz",
+            "translations": {
+              "en": "Jowywlz"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/zwu-2026-1-002/",
+            "linkEn": "https://nexmaker-fab.github.io/zwu-2026-1-002/"
+          },
+          {
+            "label": "ZwU-2026-1-003",
+            "labelEn": "ZwU-2026-1-003",
+            "translations": {
+              "en": "ZwU-2026-1-003"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/ZwU-2026-1-003/",
+            "linkEn": "https://nexmaker-fab.github.io/ZwU-2026-1-003/"
+          },
+          {
+            "label": "AETHER STUDIO",
+            "labelEn": "AETHER STUDIO",
+            "translations": {
+              "en": "AETHER STUDIO"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/zwu-2026-1-004/",
+            "linkEn": "https://nexmaker-fab.github.io/zwu-2026-1-004/"
+          }
+        ]
+      },
+      //ZWU-interactivesystem 2026A2
+      {
+        "label": "ZWU-interactivesystem 2026A2",
+        "labelEn": "ZWU-interactivesystem 2026A2",
+        "translations": {
+          "en": "ZWU-interactivesystem 2026A2"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 Schedule202602",
+            "labelEn": "Schedule202602",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/zwu-2026-interactivesystem-2",
+            "linkEn": "/en/class/zwu-2026-interactivesystem-2"
+          },
+          {
+            "label": "ZWU-2026-2-001",
+            "labelEn": "ZWU-2026-2-001",
+            "translations": {
+              "en": "ZWU-2026-2-001"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/ZWU-2026-2-001/",
+            "linkEn": "https://nexmaker-fab.github.io/ZWU-2026-2-001/"
+          },
+          {
+            "label": "V-JESH",
+            "labelEn": "V-JESH",
+            "translations": {
+              "en": "V-JESH"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/ZWU-2026-2-002/",
+            "linkEn": "https://nexmaker-fab.github.io/ZWU-2026-2-002/"
+          },
+          {
+            "label": "ZWU-2026-2-003",
+            "labelEn": "ZWU-2026-2-003",
+            "translations": {
+              "en": "ZWU-2026-2-003"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/ZWU-2026-2-003/",
+            "linkEn": "https://nexmaker-fab.github.io/ZWU-2026-2-003/"
+          },
+          {
+            "label": "ZWU-2026-2-004",
+            "labelEn": "ZWU-2026-2-004",
+            "translations": {
+              "en": "ZWU-2026-2-004"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/ZWU-2026-2-004/",
+            "linkEn": "https://nexmaker-fab.github.io/ZWU-2026-2-004/"
+          }
+        ]
+      },
+
+          //Fab Academy 2025-UNNC
+      {
+        "label": "Fab Academy 2025-UNNC",
+        "labelEn": "Fab Academy 2025-UNNC",
+        "translations": {
+          "en": "Fab Academy 2025-UNNC"
         },
         "collapsed": true,
         "items": [
@@ -1533,148 +1678,41 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/class/fab-01",
-            "linkEn": "/en/class/fab-01"
+            "link": "/tutorials/fab/fab2023",
+            "linkEn": "/en/tutorials/fab/fab2023"
           },
           {
-            "label": "Jiahao Liu",
-            "labelEn": "Jiahao Liu",
+            "label": "Xu Sun",
+            "labelEn": "Xu Sun",
             "translations": {
-              "en": "Jiahao Liu"
+              "en": "Xu Sun"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://nex-fab.gitlab.io/fab-01/jiahaoliu/",
-            "linkEn": "https://nex-fab.gitlab.io/fab-01/jiahaoliu/"
+            "link": "https://fabacademy.org/2025/labs/unnc/students/xu-sun/",
+            "linkEn": "https://fabacademy.org/2025/labs/unnc/students/xu-sun/"
           },
           {
-            "label": "Qihao Bao",
-            "labelEn": "Qihao Bao",
+            "label": "Yaorun Zhang",
+            "labelEn": "Yaorun Zhang",
             "translations": {
-              "en": "Qihao Bao"
+              "en": "Yaorun Zhang"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://nex-fab.gitlab.io/fab-01/qihaobao/",
-            "linkEn": "https://nex-fab.gitlab.io/fab-01/qihaobao/"
-          },
-          {
-            "label": "Jocelin",
-            "labelEn": "Jocelin",
-            "translations": {
-              "en": "Jocelin"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nex-fab.gitlab.io/fab-01/jocelin/",
-            "linkEn": "https://nex-fab.gitlab.io/fab-01/jocelin/"
-          },
-          {
-            "label": "Lei chen",
-            "labelEn": "Lei chen",
-            "translations": {
-              "en": "Lei chen"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nex-fab.gitlab.io/fab-01/chenlei/",
-            "linkEn": "https://nex-fab.gitlab.io/fab-01/chenlei/"
-          },
-          {
-            "label": "Yijun Wang",
-            "labelEn": "Yijun Wang",
-            "translations": {
-              "en": "Yijun Wang"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nex-fab.gitlab.io/fab-01/yijunwang/",
-            "linkEn": "https://nex-fab.gitlab.io/fab-01/yijunwang/"
-          },
-          {
-            "label": "luis Li",
-            "labelEn": "luis Li",
-            "translations": {
-              "en": "luis Li"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nex-fab.gitlab.io/fab-01/luis/",
-            "linkEn": "https://nex-fab.gitlab.io/fab-01/luis/"
-          },
-          {
-            "label": "Liang Guo",
-            "labelEn": "Liang Guo",
-            "translations": {
-              "en": "Liang Guo"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nex-fab.gitlab.io/fab-01/gl/",
-            "linkEn": "https://nex-fab.gitlab.io/fab-01/gl/"
-          },
-          {
-            "label": "Jacen Wang",
-            "labelEn": "Jacen Wang",
-            "translations": {
-              "en": "Jacen Wang"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nex-fab.gitlab.io/fab-01/jacen/",
-            "linkEn": "https://nex-fab.gitlab.io/fab-01/jacen/"
-          },
-          {
-            "label": "Mars Ma",
-            "labelEn": "Mars Ma",
-            "translations": {
-              "en": "Mars Ma"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nex-fab.gitlab.io/fab-01/marsma/",
-            "linkEn": "https://nex-fab.gitlab.io/fab-01/marsma/"
-          },
-          {
-            "label": "Bo Li",
-            "labelEn": "Bo Li",
-            "translations": {
-              "en": "Bo Li"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nex-fab.gitlab.io/fab-01/bo-li/",
-            "linkEn": "https://nex-fab.gitlab.io/fab-01/bo-li/"
-          },
-          {
-            "label": "Bob Wu",
-            "labelEn": "Bob Wu",
-            "translations": {
-              "en": "Bob Wu"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nex-fab.gitlab.io/fab-01/bobstudent/",
-            "linkEn": "https://nex-fab.gitlab.io/fab-01/bobstudent/"
+            "link": "https://fabacademy.org/2023/labs/ningbo/students/yaorun-zhang/",
+            "linkEn": "https://fabacademy.org/2023/labs/ningbo/students/yaorun-zhang/"
           }
         ]
       },
+      //UNNC-FabLab-2025-1
       {
-        "label": "NexMaker academy-2",
-        "labelEn": "NexMaker academy-2",
+        "label": "UNNC-FabLab-2025-1",
+        "labelEn": "UNNC-FabLab-2025-1",
         "translations": {
-          "en": "NexMaker academy-2"
+          "en": "UNNC-FabLab-2025-1"
         },
         "collapsed": true,
         "items": [
@@ -1687,83 +1725,1040 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/class/fab-02",
-            "linkEn": "/en/class/fab-02"
+            "link": "/class/fab-2025-unnc",
+            "linkEn": "/en/class/fab-2025-unnc"
           },
           {
-            "label": "June",
-            "labelEn": "June",
+            "label": "Fengyi zhao",
+            "labelEn": "Fengyi zhao",
             "translations": {
-              "en": "June"
+              "en": "Fengyi zhao"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://nex-fab.gitlab.io/fab-02/june/",
-            "linkEn": "https://nex-fab.gitlab.io/fab-02/june/"
+            "link": "https://nexmaker-fab.github.io/2025UNNCFAB-ZHAO/",
+            "linkEn": "https://nexmaker-fab.github.io/2025UNNCFAB-ZHAO/"
           },
           {
-            "label": "Otto",
-            "labelEn": "Otto",
+            "label": "Yan bing",
+            "labelEn": "Yan bing",
             "translations": {
-              "en": "Otto"
+              "en": "Yan bing"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://nex-fab.gitlab.io/fab-02/otto",
-            "linkEn": "https://nex-fab.gitlab.io/fab-02/otto"
+            "link": "https://nexmaker-fab.github.io/2025UNNCFAB-yan/",
+            "linkEn": "https://nexmaker-fab.github.io/2025UNNCFAB-yan/"
           },
           {
-            "label": "Ciel",
-            "labelEn": "Ciel",
+            "label": "Ao Liu",
+            "labelEn": "Ao Liu",
             "translations": {
-              "en": "Ciel"
+              "en": "Ao Liu"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://nex-fab.gitlab.io/fab-02/ciel",
-            "linkEn": "https://nex-fab.gitlab.io/fab-02/ciel"
+            "link": "https://nexmaker-fab.github.io/2025UNNCFAB-AO/",
+            "linkEn": "https://nexmaker-fab.github.io/2025UNNCFAB-AO/"
           },
           {
-            "label": "Jenny",
-            "labelEn": "Jenny",
+            "label": "Yi shan tong",
+            "labelEn": "Yi shan tong",
             "translations": {
-              "en": "Jenny"
+              "en": "Yi shan tong"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://nex-fab.gitlab.io/fab-02/jenny",
-            "linkEn": "https://nex-fab.gitlab.io/fab-02/jenny"
-          },
-          {
-            "label": "Orkun",
-            "labelEn": "Orkun",
-            "translations": {
-              "en": "Orkun"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nex-fab.gitlab.io/fab-02/orkun",
-            "linkEn": "https://nex-fab.gitlab.io/fab-02/orkun"
-          },
-          {
-            "label": "Candy",
-            "labelEn": "Candy",
-            "translations": {
-              "en": "Candy"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nex-fab.gitlab.io/fab-02/candy/",
-            "linkEn": "https://nex-fab.gitlab.io/fab-02/candy/"
+            "link": "https://unnc-fab.github.io/2025-1-ty/",
+            "linkEn": "https://unnc-fab.github.io/2025-1-ty/"
           }
         ]
       },
+      //UNNC-FabLab-2025-2
+      {
+        "label": "UNNC-FabLab-2025-2",
+        "labelEn": "UNNC-FabLab-2025-2",
+        "translations": {
+          "en": "UNNC-FabLab-2025-2"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2025-unnc-2",
+            "linkEn": "/en/class/fab-2025-unnc-2"
+          },
+          {
+            "label": "Wenqing zhong",
+            "labelEn": "Wenqing zhong",
+            "translations": {
+              "en": "Wenqing zhong"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://unnc-fab.github.io/2025-2-wenqing/",
+            "linkEn": "https://unnc-fab.github.io/2025-2-wenqing/"
+          },
+          {
+            "label": "Simon",
+            "labelEn": "Simon",
+            "translations": {
+              "en": "Simon"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://unnc-fab.github.io/2025-2-simon/",
+            "linkEn": "https://unnc-fab.github.io/2025-2-simon/"
+          },
+          {
+            "label": "Xiangdong Huang",
+            "labelEn": "Xiangdong Huang",
+            "translations": {
+              "en": "Xiangdong Huang"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://unnc-fab.github.io/2025-2-xiangdong/",
+            "linkEn": "https://unnc-fab.github.io/2025-2-xiangdong/"
+          },
+          {
+            "label": "Mingzhao Xi",
+            "labelEn": "Mingzhao Xi",
+            "translations": {
+              "en": "Mingzhao Xi"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://unnc-fab.github.io/2025-2-mingzhao/",
+            "linkEn": "https://unnc-fab.github.io/2025-2-mingzhao/"
+          },
+          {
+            "label": "Jiawei",
+            "labelEn": "Jiawei",
+            "translations": {
+              "en": "Jiawei"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://unnc-fab.github.io/2025-2-jiawei/",
+            "linkEn": "https://unnc-fab.github.io/2025-2-jiawei/"
+          }
+        ]
+      },
+            //ZWU-interactivesystem 2024
+      {
+        "label": "ZWU-interactivesystem 2024",
+        "labelEn": "ZWU-interactivesystem 2024",
+        "translations": {
+          "en": "ZWU-interactivesystem 2024"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2024-zwu-interactivesystem",
+            "linkEn": "/en/class/fab-2024-zwu-interactivesystem"
+          },
+          {
+            "label": "SZPJNF",
+            "labelEn": "SZPJNF",
+            "translations": {
+              "en": "SZPJNF"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-1/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-1/#/"
+          },
+          {
+            "label": "Ecobloom",
+            "labelEn": "Ecobloom",
+            "translations": {
+              "en": "Ecobloom"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-2-Ecobloom/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-2-Ecobloom/#/"
+          },
+          {
+            "label": "Yes or Yes",
+            "labelEn": "Yes or Yes",
+            "translations": {
+              "en": "Yes or Yes"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-3-Yes-or-yes/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-3-Yes-or-yes/#/"
+          },
+          {
+            "label": "watermelon sugar",
+            "labelEn": "watermelon sugar",
+            "translations": {
+              "en": "watermelon sugar"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-4/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-4/#/"
+          },
+          {
+            "label": "BCZG",
+            "labelEn": "BCZG",
+            "translations": {
+              "en": "BCZG"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-5/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-5/#/"
+          },
+          {
+            "label": "None group",
+            "labelEn": "None group",
+            "translations": {
+              "en": "None group"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-6/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-6/#/"
+          }
+        ]
+      },
+
+      //ZWU-interactivesystem2+2 2024
+      {
+        "label": "ZWU-interactivesystem2+2 2024",
+        "labelEn": "ZWU-interactivesystem2+2 2024",
+        "translations": {
+          "en": "ZWU-interactivesystem2+2 2024"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2024-zwu-interactivesystem22",
+            "linkEn": "/en/class/fab-2024-zwu-interactivesystem22"
+          },
+          {
+            "label": "Mars",
+            "labelEn": "Mars",
+            "translations": {
+              "en": "Mars"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-7/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-7/#/"
+          },
+          {
+            "label": "Bunbun",
+            "labelEn": "Bunbun",
+            "translations": {
+              "en": "Bunbun"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-8-BUNBUN/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-8-BUNBUN/#/"
+          },
+          {
+            "label": "BSST",
+            "labelEn": "BSST",
+            "translations": {
+              "en": "BSST"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-9-BSST/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-9-BSST/#/"
+          },
+          {
+            "label": "4AOL",
+            "labelEn": "4AOL",
+            "translations": {
+              "en": "4AOL"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-10-4AOL/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-10-4AOL/#/"
+          }
+        ]
+      },
+
+      //Fab Academy 2023  UNNC- NexMaker
+      {
+        "label": "Fab Academy 2023  UNNC- NexMaker",
+        "labelEn": "Fab Academy 2023  UNNC- NexMaker",
+        "translations": {
+          "en": "Fab Academy 2023  UNNC- NexMaker"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/tutorials/fab/fab2023",
+            "linkEn": "/en/tutorials/fab/fab2023"
+          },
+          {
+            "label": "Yaolun Zhang",
+            "labelEn": "Yaolun Zhang",
+            "translations": {
+              "en": "Yaolun Zhang"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://fabacademy.org/2023/labs/ningbo/students/yaorun-zhang/",
+            "linkEn": "https://fabacademy.org/2023/labs/ningbo/students/yaorun-zhang/"
+          }
+        ]
+      },
+      //Design Engineering2023
+      {
+        "label": "Design Engineering2023",
+        "labelEn": "Design Engineering2023",
+        "translations": {
+          "en": "Design Engineering2023"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2023-zju-de",
+            "linkEn": "/en/class/fab-2023-zju-de"
+          },
+          {
+            "label": "InnoWarm",
+            "labelEn": "InnoWarm",
+            "translations": {
+              "en": "InnoWarm"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjude-InnoWarm/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjude-InnoWarm/#/"
+          },
+          {
+            "label": "YSD",
+            "labelEn": "YSD",
+            "translations": {
+              "en": "YSD"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjude-YSD/",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjude-YSD/"
+          },
+          {
+            "label": "NOBRAINNOPAIN",
+            "labelEn": "NOBRAINNOPAIN",
+            "translations": {
+              "en": "NOBRAINNOPAIN"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjude-NOBRAINNOPAIN/",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjude-NOBRAINNOPAIN/"
+          },
+          {
+            "label": "Keyidu",
+            "labelEn": "Keyidu",
+            "translations": {
+              "en": "Keyidu"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjude-keyidu/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjude-keyidu/#/"
+          },
+          {
+            "label": "10:36",
+            "labelEn": "10:36",
+            "translations": {
+              "en": "10:36"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjude-10-36/",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjude-10-36/"
+          },
+          {
+            "label": "Woodman123",
+            "labelEn": "Woodman123",
+            "translations": {
+              "en": "Woodman123"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://design-engineering.littleor.cn/",
+            "linkEn": "https://design-engineering.littleor.cn/"
+          },
+          {
+            "label": "FiveTigers",
+            "labelEn": "FiveTigers",
+            "translations": {
+              "en": "FiveTigers"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjude-FiveTigers/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjude-FiveTigers/#/"
+          },
+          {
+            "label": "ORG030",
+            "labelEn": "ORG030",
+            "translations": {
+              "en": "ORG030"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjude-ORG030/",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjude-ORG030/"
+          }
+        ]
+      },
+
+      //Design Manufacture2023
+      {
+        "label": "Design Manufacture2023",
+        "labelEn": "Design Manufacture2023",
+        "translations": {
+          "en": "Design Manufacture2023"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2023-zju-dm",
+            "linkEn": "/en/class/fab-2023-zju-dm"
+          },
+          {
+            "label": "The-Dynamic-Seven",
+            "labelEn": "The-Dynamic-Seven",
+            "translations": {
+              "en": "The-Dynamic-Seven"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjudem-The-Dynamic-Seven/",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjudem-The-Dynamic-Seven/"
+          },
+          {
+            "label": "7DE",
+            "labelEn": "7DE",
+            "translations": {
+              "en": "7DE"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjudem-7DE/",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjudem-7DE/"
+          },
+          {
+            "label": "Tomorrow-s-Wonder-Team",
+            "labelEn": "Tomorrow-s-Wonder-Team",
+            "translations": {
+              "en": "Tomorrow-s-Wonder-Team"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjudem-Tomorrow-s-Wonder-Team/",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjudem-Tomorrow-s-Wonder-Team/"
+          },
+          {
+            "label": "Team-novva",
+            "labelEn": "Team-novva",
+            "translations": {
+              "en": "Team-novva"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjudem-teamnovva/",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjudem-teamnovva/"
+          },
+          {
+            "label": "INNOGENIUSES",
+            "labelEn": "INNOGENIUSES",
+            "translations": {
+              "en": "INNOGENIUSES"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjudem-INNOGENIUSES/",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjudem-INNOGENIUSES/"
+          },
+          {
+            "label": "Gladiators",
+            "labelEn": "Gladiators",
+            "translations": {
+              "en": "Gladiators"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjudem-Team-Gladiators/",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjudem-Team-Gladiators/"
+          }
+        ]
+      },
+
+      // Design Engineering mini 2023
+      {
+        "label": "Design Engineering mini 2023",
+        "labelEn": "Design Engineering mini 2023",
+        "translations": {
+          "en": "Design Engineering mini 2023"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2023-zju-mini",
+            "linkEn": "/en/class/fab-2023-zju-mini"
+          },
+          {
+            "label": "Fivevolution",
+            "labelEn": "Fivevolution",
+            "translations": {
+              "en": "Fivevolution"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjudemini-hi1/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjudemini-hi1/#/"
+          },
+          {
+            "label": "Fivist",
+            "labelEn": "Fivist",
+            "translations": {
+              "en": "Fivist"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2023zjudemini-hi2/",
+            "linkEn": "https://nexmaker-fab.github.io/2023zjudemini-hi2/"
+          }
+        ]
+      },
+
+
+            //Design Engineering2022
+      {
+        "label": "Design Engineering2022",
+        "labelEn": "Design Engineering2022",
+        "translations": {
+          "en": "Design Engineering2022"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2022-zju-de",
+            "linkEn": "/en/class/fab-2022-zju-de"
+          },
+          {
+            "label": "the Red Gang Tailor's",
+            "labelEn": "the Red Gang Tailor's",
+            "translations": {
+              "en": "the Red Gang Tailor's"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2022zjude1-team5/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2022zjude1-team5/#/"
+          },
+          {
+            "label": "doubleQ",
+            "labelEn": "doubleQ",
+            "translations": {
+              "en": "doubleQ"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2022zjude1-doubleQ/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2022zjude1-doubleQ/#/"
+          },
+          {
+            "label": "BIG5",
+            "labelEn": "BIG5",
+            "translations": {
+              "en": "BIG5"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2022zjude1-BIG5/",
+            "linkEn": "https://nexmaker-fab.github.io/2022zjude1-BIG5/"
+          },
+          {
+            "label": "SixGod",
+            "labelEn": "SixGod",
+            "translations": {
+              "en": "SixGod"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2022zjude1-SixGod/",
+            "linkEn": "https://nexmaker-fab.github.io/2022zjude1-SixGod/"
+          },
+          {
+            "label": "ALL RIGHT",
+            "labelEn": "ALL RIGHT",
+            "translations": {
+              "en": "ALL RIGHT"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://markshaw1234.github.io/2022zjudem-team4.github.io/",
+            "linkEn": "https://markshaw1234.github.io/2022zjudem-team4.github.io/"
+          },
+          {
+            "label": "Peopl3 Drag Per2on",
+            "labelEn": "Peopl3 Drag Per2on",
+            "translations": {
+              "en": "Peopl3 Drag Per2on"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2022zjude1-peopl3-drag-per2on/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2022zjude1-peopl3-drag-per2on/#/"
+          },
+          {
+            "label": "SoFarSoGood",
+            "labelEn": "SoFarSoGood",
+            "translations": {
+              "en": "SoFarSoGood"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2022zjude1-SoFarSoGood/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2022zjude1-SoFarSoGood/#/"
+          }
+        ]
+      },
+      //Design Manufacture2022
+      {
+        "label": "Design Manufacture2022",
+        "labelEn": "Design Manufacture2022",
+        "translations": {
+          "en": "Design Manufacture2022"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2022-zju-dm",
+            "linkEn": "/en/class/fab-2022-zju-dm"
+          },
+          {
+            "label": "TECviz",
+            "labelEn": "TECviz",
+            "translations": {
+              "en": "TECviz"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/TECviz/#/",
+            "linkEn": "https://nexmaker-fab.github.io/TECviz/#/"
+          },
+          {
+            "label": "BRAINII MAKERS",
+            "labelEn": "BRAINII MAKERS",
+            "translations": {
+              "en": "BRAINII MAKERS"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2022zjudem-team2/",
+            "linkEn": "https://nexmaker-fab.github.io/2022zjudem-team2/"
+          },
+          {
+            "label": "NEXEERO",
+            "labelEn": "NEXEERO",
+            "translations": {
+              "en": "NEXEERO"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://sesebak.github.io/NEXEERO_TEAM/#/",
+            "linkEn": "https://sesebak.github.io/NEXEERO_TEAM/#/"
+          },
+          {
+            "label": "Mavericks",
+            "labelEn": "Mavericks",
+            "translations": {
+              "en": "Mavericks"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2022zjudem-team4/",
+            "linkEn": "https://nexmaker-fab.github.io/2022zjudem-team4/"
+          }
+        ]
+      },
+      //Design Engineering mini 2022
+      {
+        "label": "Design Engineering mini 2022",
+        "labelEn": "Design Engineering mini 2022",
+        "translations": {
+          "en": "Design Engineering mini 2022"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2022-zju-mini",
+            "linkEn": "/en/class/fab-2022-zju-mini"
+          },
+          {
+            "label": "Four Esigners",
+            "labelEn": "Four Esigners",
+            "translations": {
+              "en": "Four Esigners"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2022zjudemini-team1boy/",
+            "linkEn": "https://nexmaker-fab.github.io/2022zjudemini-team1boy/"
+          },
+          {
+            "label": "Four Vegetables",
+            "labelEn": "Four Vegetables",
+            "translations": {
+              "en": "Four Vegetables"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/2022zjudemini-team2/#/",
+            "linkEn": "https://nexmaker-fab.github.io/2022zjudemini-team2/#/"
+          }
+        ]
+      },
+
+
+        //Design Engineering2021
+      {
+        "label": "Design Engineering2021",
+        "labelEn": "Design Engineering2021",
+        "translations": {
+          "en": "Design Engineering2021"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2021-zju-de",
+            "linkEn": "/en/class/fab-2021-zju-de"
+          },
+          {
+            "label": "CNFD",
+            "labelEn": "CNFD",
+            "translations": {
+              "en": "CNFD"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://374737390.wixsite.com/my-site",
+            "linkEn": "https://374737390.wixsite.com/my-site"
+          },
+          {
+            "label": "NBD",
+            "labelEn": "NBD",
+            "translations": {
+              "en": "NBD"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://notblinddesign.wixsite.com/nbdesign",
+            "linkEn": "https://notblinddesign.wixsite.com/nbdesign"
+          },
+          {
+            "label": "UNDEFINED",
+            "labelEn": "UNDEFINED",
+            "translations": {
+              "en": "UNDEFINED"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://xxzzxh.github.io/",
+            "linkEn": "https://xxzzxh.github.io/"
+          },
+          {
+            "label": "2021toast",
+            "labelEn": "2021toast",
+            "translations": {
+              "en": "2021toast"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://perfect-anger-34c.notion.site/2021-Toast-9d52603d5d39409b8337738a551b5df1",
+            "linkEn": "https://perfect-anger-34c.notion.site/2021-Toast-9d52603d5d39409b8337738a551b5df1"
+          },
+          {
+            "label": "X-Lab",
+            "labelEn": "X-Lab",
+            "translations": {
+              "en": "X-Lab"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://x-labby.webflow.io/",
+            "linkEn": "https://x-labby.webflow.io/"
+          },
+          {
+            "label": "Get1688",
+            "labelEn": "Get1688",
+            "translations": {
+              "en": "Get1688"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://1175138076.wixsite.com/get1688",
+            "linkEn": "https://1175138076.wixsite.com/get1688"
+          },
+          {
+            "label": "WooHoo",
+            "labelEn": "WooHoo",
+            "translations": {
+              "en": "WooHoo"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://richengaa.wixsite.com/woohoo",
+            "linkEn": "https://richengaa.wixsite.com/woohoo"
+          },
+          {
+            "label": "OUTLAST Zone",
+            "labelEn": "OUTLAST Zone",
+            "translations": {
+              "en": "OUTLAST Zone"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "http://121.41.45.236:8001/",
+            "linkEn": "http://121.41.45.236:8001/"
+          }
+        ]
+      },
+      //"Design Manufacture2021
+      {
+        "label": "Design Manufacture2021",
+        "labelEn": "Design Manufacture2021",
+        "translations": {
+          "en": "Design Manufacture2021"
+        },
+        "collapsed": true,
+        "items": [
+          {
+            "label": "📋 课程排期",
+            "labelEn": "Schedule",
+            "translations": {
+              "en": "Schedule"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "/class/fab-2021-zju-dm",
+            "linkEn": "/en/class/fab-2021-zju-dm"
+          },
+          {
+            "label": "The Flash team",
+            "labelEn": "The Flash team",
+            "translations": {
+              "en": "The Flash team"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://turatsinzecmu2020.wixsite.com/theflash",
+            "linkEn": "https://turatsinzecmu2020.wixsite.com/theflash"
+          },
+          {
+            "label": "The Crescent",
+            "labelEn": "The Crescent",
+            "translations": {
+              "en": "The Crescent"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://bitenotes.wixsite.com/thecrescent",
+            "linkEn": "https://bitenotes.wixsite.com/thecrescent"
+          },
+          {
+            "label": "Estimate",
+            "labelEn": "Estimate",
+            "translations": {
+              "en": "Estimate"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://lushomo19.wixsite.com/estimate",
+            "linkEn": "https://lushomo19.wixsite.com/estimate"
+          },
+          {
+            "label": "Kltkawsar",
+            "labelEn": "Kltkawsar",
+            "translations": {
+              "en": "Kltkawsar"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://kltkawsar.wixsite.com/website",
+            "linkEn": "https://kltkawsar.wixsite.com/website"
+          },
+          {
+            "label": "Rahmansezad",
+            "labelEn": "Rahmansezad",
+            "translations": {
+              "en": "Rahmansezad"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://rahmansezad.wixsite.com/astro",
+            "linkEn": "https://rahmansezad.wixsite.com/astro"
+          }
+        ]
+      },
+            //Design Engineering2020
       {
         "label": "Design Engineering2020",
         "labelEn": "Design Engineering2020",
@@ -2096,11 +3091,12 @@ const FabMenuItems = [
           }
         ]
       },
+          // NexMaker academy-1
       {
-        "label": "Design Engineering2021",
-        "labelEn": "Design Engineering2021",
+        "label": "NexMaker academy-1",
+        "labelEn": "NexMaker academy-1",
         "translations": {
-          "en": "Design Engineering2021"
+          "en": "NexMaker academy-1"
         },
         "collapsed": true,
         "items": [
@@ -2113,112 +3109,149 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/class/fab-2021-zju-de",
-            "linkEn": "/en/class/fab-2021-zju-de"
+            "link": "/class/fab-01",
+            "linkEn": "/en/class/fab-01"
           },
           {
-            "label": "CNFD",
-            "labelEn": "CNFD",
+            "label": "Jiahao Liu",
+            "labelEn": "Jiahao Liu",
             "translations": {
-              "en": "CNFD"
+              "en": "Jiahao Liu"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://374737390.wixsite.com/my-site",
-            "linkEn": "https://374737390.wixsite.com/my-site"
+            "link": "https://nex-fab.gitlab.io/fab-01/jiahaoliu/",
+            "linkEn": "https://nex-fab.gitlab.io/fab-01/jiahaoliu/"
           },
           {
-            "label": "NBD",
-            "labelEn": "NBD",
+            "label": "Qihao Bao",
+            "labelEn": "Qihao Bao",
             "translations": {
-              "en": "NBD"
+              "en": "Qihao Bao"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://notblinddesign.wixsite.com/nbdesign",
-            "linkEn": "https://notblinddesign.wixsite.com/nbdesign"
+            "link": "https://nex-fab.gitlab.io/fab-01/qihaobao/",
+            "linkEn": "https://nex-fab.gitlab.io/fab-01/qihaobao/"
           },
           {
-            "label": "UNDEFINED",
-            "labelEn": "UNDEFINED",
+            "label": "Jocelin",
+            "labelEn": "Jocelin",
             "translations": {
-              "en": "UNDEFINED"
+              "en": "Jocelin"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://xxzzxh.github.io/",
-            "linkEn": "https://xxzzxh.github.io/"
+            "link": "https://nex-fab.gitlab.io/fab-01/jocelin/",
+            "linkEn": "https://nex-fab.gitlab.io/fab-01/jocelin/"
           },
           {
-            "label": "2021toast",
-            "labelEn": "2021toast",
+            "label": "Lei chen",
+            "labelEn": "Lei chen",
             "translations": {
-              "en": "2021toast"
+              "en": "Lei chen"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://perfect-anger-34c.notion.site/2021-Toast-9d52603d5d39409b8337738a551b5df1",
-            "linkEn": "https://perfect-anger-34c.notion.site/2021-Toast-9d52603d5d39409b8337738a551b5df1"
+            "link": "https://nex-fab.gitlab.io/fab-01/chenlei/",
+            "linkEn": "https://nex-fab.gitlab.io/fab-01/chenlei/"
           },
           {
-            "label": "X-Lab",
-            "labelEn": "X-Lab",
+            "label": "Yijun Wang",
+            "labelEn": "Yijun Wang",
             "translations": {
-              "en": "X-Lab"
+              "en": "Yijun Wang"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://x-labby.webflow.io/",
-            "linkEn": "https://x-labby.webflow.io/"
+            "link": "https://nex-fab.gitlab.io/fab-01/yijunwang/",
+            "linkEn": "https://nex-fab.gitlab.io/fab-01/yijunwang/"
           },
           {
-            "label": "Get1688",
-            "labelEn": "Get1688",
+            "label": "luis Li",
+            "labelEn": "luis Li",
             "translations": {
-              "en": "Get1688"
+              "en": "luis Li"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://1175138076.wixsite.com/get1688",
-            "linkEn": "https://1175138076.wixsite.com/get1688"
+            "link": "https://nex-fab.gitlab.io/fab-01/luis/",
+            "linkEn": "https://nex-fab.gitlab.io/fab-01/luis/"
           },
           {
-            "label": "WooHoo",
-            "labelEn": "WooHoo",
+            "label": "Liang Guo",
+            "labelEn": "Liang Guo",
             "translations": {
-              "en": "WooHoo"
+              "en": "Liang Guo"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://richengaa.wixsite.com/woohoo",
-            "linkEn": "https://richengaa.wixsite.com/woohoo"
+            "link": "https://nex-fab.gitlab.io/fab-01/gl/",
+            "linkEn": "https://nex-fab.gitlab.io/fab-01/gl/"
           },
           {
-            "label": "OUTLAST Zone",
-            "labelEn": "OUTLAST Zone",
+            "label": "Jacen Wang",
+            "labelEn": "Jacen Wang",
             "translations": {
-              "en": "OUTLAST Zone"
+              "en": "Jacen Wang"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "http://121.41.45.236:8001/",
-            "linkEn": "http://121.41.45.236:8001/"
+            "link": "https://nex-fab.gitlab.io/fab-01/jacen/",
+            "linkEn": "https://nex-fab.gitlab.io/fab-01/jacen/"
+          },
+          {
+            "label": "Mars Ma",
+            "labelEn": "Mars Ma",
+            "translations": {
+              "en": "Mars Ma"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nex-fab.gitlab.io/fab-01/marsma/",
+            "linkEn": "https://nex-fab.gitlab.io/fab-01/marsma/"
+          },
+          {
+            "label": "Bo Li",
+            "labelEn": "Bo Li",
+            "translations": {
+              "en": "Bo Li"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nex-fab.gitlab.io/fab-01/bo-li/",
+            "linkEn": "https://nex-fab.gitlab.io/fab-01/bo-li/"
+          },
+          {
+            "label": "Bob Wu",
+            "labelEn": "Bob Wu",
+            "translations": {
+              "en": "Bob Wu"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nex-fab.gitlab.io/fab-01/bobstudent/",
+            "linkEn": "https://nex-fab.gitlab.io/fab-01/bobstudent/"
           }
         ]
       },
+//NexMaker academy-2
       {
-        "label": "Design Manufacture2021",
-        "labelEn": "Design Manufacture2021",
+        "label": "NexMaker academy-2",
+        "labelEn": "NexMaker academy-2",
         "translations": {
-          "en": "Design Manufacture2021"
+          "en": "NexMaker academy-2"
         },
         "collapsed": true,
         "items": [
@@ -2231,1087 +3264,83 @@ const FabMenuItems = [
             "attrs": {
               "id": "fab"
             },
-            "link": "/class/fab-2021-zju-dm",
-            "linkEn": "/en/class/fab-2021-zju-dm"
+            "link": "/class/fab-02",
+            "linkEn": "/en/class/fab-02"
           },
           {
-            "label": "The Flash team",
-            "labelEn": "The Flash team",
+            "label": "June",
+            "labelEn": "June",
             "translations": {
-              "en": "The Flash team"
+              "en": "June"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://turatsinzecmu2020.wixsite.com/theflash",
-            "linkEn": "https://turatsinzecmu2020.wixsite.com/theflash"
+            "link": "https://nex-fab.gitlab.io/fab-02/june/",
+            "linkEn": "https://nex-fab.gitlab.io/fab-02/june/"
           },
           {
-            "label": "The Crescent",
-            "labelEn": "The Crescent",
+            "label": "Otto",
+            "labelEn": "Otto",
             "translations": {
-              "en": "The Crescent"
+              "en": "Otto"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://bitenotes.wixsite.com/thecrescent",
-            "linkEn": "https://bitenotes.wixsite.com/thecrescent"
+            "link": "https://nex-fab.gitlab.io/fab-02/otto",
+            "linkEn": "https://nex-fab.gitlab.io/fab-02/otto"
           },
           {
-            "label": "Estimate",
-            "labelEn": "Estimate",
+            "label": "Ciel",
+            "labelEn": "Ciel",
             "translations": {
-              "en": "Estimate"
+              "en": "Ciel"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://lushomo19.wixsite.com/estimate",
-            "linkEn": "https://lushomo19.wixsite.com/estimate"
+            "link": "https://nex-fab.gitlab.io/fab-02/ciel",
+            "linkEn": "https://nex-fab.gitlab.io/fab-02/ciel"
           },
           {
-            "label": "Kltkawsar",
-            "labelEn": "Kltkawsar",
+            "label": "Jenny",
+            "labelEn": "Jenny",
             "translations": {
-              "en": "Kltkawsar"
+              "en": "Jenny"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://kltkawsar.wixsite.com/website",
-            "linkEn": "https://kltkawsar.wixsite.com/website"
+            "link": "https://nex-fab.gitlab.io/fab-02/jenny",
+            "linkEn": "https://nex-fab.gitlab.io/fab-02/jenny"
           },
           {
-            "label": "Rahmansezad",
-            "labelEn": "Rahmansezad",
+            "label": "Orkun",
+            "labelEn": "Orkun",
             "translations": {
-              "en": "Rahmansezad"
+              "en": "Orkun"
             },
             "attrs": {
               "id": "fab"
             },
-            "link": "https://rahmansezad.wixsite.com/astro",
-            "linkEn": "https://rahmansezad.wixsite.com/astro"
+            "link": "https://nex-fab.gitlab.io/fab-02/orkun",
+            "linkEn": "https://nex-fab.gitlab.io/fab-02/orkun"
+          },
+          {
+            "label": "Candy",
+            "labelEn": "Candy",
+            "translations": {
+              "en": "Candy"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nex-fab.gitlab.io/fab-02/candy/",
+            "linkEn": "https://nex-fab.gitlab.io/fab-02/candy/"
           }
         ]
       },
-      {
-        "label": "Design Engineering2022",
-        "labelEn": "Design Engineering2022",
-        "translations": {
-          "en": "Design Engineering2022"
-        },
-        "collapsed": true,
-        "items": [
-          {
-            "label": "📋 课程排期",
-            "labelEn": "Schedule",
-            "translations": {
-              "en": "Schedule"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "/class/fab-2022-zju-de",
-            "linkEn": "/en/class/fab-2022-zju-de"
-          },
-          {
-            "label": "the Red Gang Tailor's",
-            "labelEn": "the Red Gang Tailor's",
-            "translations": {
-              "en": "the Red Gang Tailor's"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2022zjude1-team5/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2022zjude1-team5/#/"
-          },
-          {
-            "label": "doubleQ",
-            "labelEn": "doubleQ",
-            "translations": {
-              "en": "doubleQ"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2022zjude1-doubleQ/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2022zjude1-doubleQ/#/"
-          },
-          {
-            "label": "BIG5",
-            "labelEn": "BIG5",
-            "translations": {
-              "en": "BIG5"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2022zjude1-BIG5/",
-            "linkEn": "https://nexmaker-fab.github.io/2022zjude1-BIG5/"
-          },
-          {
-            "label": "SixGod",
-            "labelEn": "SixGod",
-            "translations": {
-              "en": "SixGod"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2022zjude1-SixGod/",
-            "linkEn": "https://nexmaker-fab.github.io/2022zjude1-SixGod/"
-          },
-          {
-            "label": "ALL RIGHT",
-            "labelEn": "ALL RIGHT",
-            "translations": {
-              "en": "ALL RIGHT"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://markshaw1234.github.io/2022zjudem-team4.github.io/",
-            "linkEn": "https://markshaw1234.github.io/2022zjudem-team4.github.io/"
-          },
-          {
-            "label": "Peopl3 Drag Per2on",
-            "labelEn": "Peopl3 Drag Per2on",
-            "translations": {
-              "en": "Peopl3 Drag Per2on"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2022zjude1-peopl3-drag-per2on/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2022zjude1-peopl3-drag-per2on/#/"
-          },
-          {
-            "label": "SoFarSoGood",
-            "labelEn": "SoFarSoGood",
-            "translations": {
-              "en": "SoFarSoGood"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2022zjude1-SoFarSoGood/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2022zjude1-SoFarSoGood/#/"
-          }
-        ]
-      },
-      {
-        "label": "Design Manufacture2022",
-        "labelEn": "Design Manufacture2022",
-        "translations": {
-          "en": "Design Manufacture2022"
-        },
-        "collapsed": true,
-        "items": [
-          {
-            "label": "📋 课程排期",
-            "labelEn": "Schedule",
-            "translations": {
-              "en": "Schedule"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "/class/fab-2022-zju-dm",
-            "linkEn": "/en/class/fab-2022-zju-dm"
-          },
-          {
-            "label": "TECviz",
-            "labelEn": "TECviz",
-            "translations": {
-              "en": "TECviz"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/TECviz/#/",
-            "linkEn": "https://nexmaker-fab.github.io/TECviz/#/"
-          },
-          {
-            "label": "BRAINII MAKERS",
-            "labelEn": "BRAINII MAKERS",
-            "translations": {
-              "en": "BRAINII MAKERS"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2022zjudem-team2/",
-            "linkEn": "https://nexmaker-fab.github.io/2022zjudem-team2/"
-          },
-          {
-            "label": "NEXEERO",
-            "labelEn": "NEXEERO",
-            "translations": {
-              "en": "NEXEERO"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://sesebak.github.io/NEXEERO_TEAM/#/",
-            "linkEn": "https://sesebak.github.io/NEXEERO_TEAM/#/"
-          },
-          {
-            "label": "Mavericks",
-            "labelEn": "Mavericks",
-            "translations": {
-              "en": "Mavericks"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2022zjudem-team4/",
-            "linkEn": "https://nexmaker-fab.github.io/2022zjudem-team4/"
-          }
-        ]
-      },
-      {
-        "label": "Design Engineering mini 2022",
-        "labelEn": "Design Engineering mini 2022",
-        "translations": {
-          "en": "Design Engineering mini 2022"
-        },
-        "collapsed": true,
-        "items": [
-          {
-            "label": "📋 课程排期",
-            "labelEn": "Schedule",
-            "translations": {
-              "en": "Schedule"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "/class/fab-2022-zju-mini",
-            "linkEn": "/en/class/fab-2022-zju-mini"
-          },
-          {
-            "label": "Four Esigners",
-            "labelEn": "Four Esigners",
-            "translations": {
-              "en": "Four Esigners"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2022zjudemini-team1boy/",
-            "linkEn": "https://nexmaker-fab.github.io/2022zjudemini-team1boy/"
-          },
-          {
-            "label": "Four Vegetables",
-            "labelEn": "Four Vegetables",
-            "translations": {
-              "en": "Four Vegetables"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2022zjudemini-team2/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2022zjudemini-team2/#/"
-          }
-        ]
-      },
-      {
-        "label": "Fab Academy 2023  UNNC- NexMaker",
-        "labelEn": "Fab Academy 2023  UNNC- NexMaker",
-        "translations": {
-          "en": "Fab Academy 2023  UNNC- NexMaker"
-        },
-        "collapsed": true,
-        "items": [
-          {
-            "label": "📋 课程排期",
-            "labelEn": "Schedule",
-            "translations": {
-              "en": "Schedule"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "/tutorials/fab/fab2023",
-            "linkEn": "/en/tutorials/fab/fab2023"
-          },
-          {
-            "label": "Yaolun Zhang",
-            "labelEn": "Yaolun Zhang",
-            "translations": {
-              "en": "Yaolun Zhang"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://fabacademy.org/2023/labs/ningbo/students/yaorun-zhang/",
-            "linkEn": "https://fabacademy.org/2023/labs/ningbo/students/yaorun-zhang/"
-          }
-        ]
-      },
-      {
-        "label": "Design Engineering2023",
-        "labelEn": "Design Engineering2023",
-        "translations": {
-          "en": "Design Engineering2023"
-        },
-        "collapsed": true,
-        "items": [
-          {
-            "label": "📋 课程排期",
-            "labelEn": "Schedule",
-            "translations": {
-              "en": "Schedule"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "/class/fab-2023-zju-de",
-            "linkEn": "/en/class/fab-2023-zju-de"
-          },
-          {
-            "label": "InnoWarm",
-            "labelEn": "InnoWarm",
-            "translations": {
-              "en": "InnoWarm"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2023zjude-InnoWarm/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2023zjude-InnoWarm/#/"
-          },
-          {
-            "label": "YSD",
-            "labelEn": "YSD",
-            "translations": {
-              "en": "YSD"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2023zjude-YSD/",
-            "linkEn": "https://nexmaker-fab.github.io/2023zjude-YSD/"
-          },
-          {
-            "label": "NOBRAINNOPAIN",
-            "labelEn": "NOBRAINNOPAIN",
-            "translations": {
-              "en": "NOBRAINNOPAIN"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2023zjude-NOBRAINNOPAIN/",
-            "linkEn": "https://nexmaker-fab.github.io/2023zjude-NOBRAINNOPAIN/"
-          },
-          {
-            "label": "Keyidu",
-            "labelEn": "Keyidu",
-            "translations": {
-              "en": "Keyidu"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2023zjude-keyidu/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2023zjude-keyidu/#/"
-          },
-          {
-            "label": "10:36",
-            "labelEn": "10:36",
-            "translations": {
-              "en": "10:36"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2023zjude-10-36/",
-            "linkEn": "https://nexmaker-fab.github.io/2023zjude-10-36/"
-          },
-          {
-            "label": "Woodman123",
-            "labelEn": "Woodman123",
-            "translations": {
-              "en": "Woodman123"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://design-engineering.littleor.cn/",
-            "linkEn": "https://design-engineering.littleor.cn/"
-          },
-          {
-            "label": "FiveTigers",
-            "labelEn": "FiveTigers",
-            "translations": {
-              "en": "FiveTigers"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2023zjude-FiveTigers/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2023zjude-FiveTigers/#/"
-          },
-          {
-            "label": "ORG030",
-            "labelEn": "ORG030",
-            "translations": {
-              "en": "ORG030"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2023zjude-ORG030/",
-            "linkEn": "https://nexmaker-fab.github.io/2023zjude-ORG030/"
-          }
-        ]
-      },
-      {
-        "label": "Design Manufacture2023",
-        "labelEn": "Design Manufacture2023",
-        "translations": {
-          "en": "Design Manufacture2023"
-        },
-        "collapsed": true,
-        "items": [
-          {
-            "label": "📋 课程排期",
-            "labelEn": "Schedule",
-            "translations": {
-              "en": "Schedule"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "/class/fab-2023-zju-dm",
-            "linkEn": "/en/class/fab-2023-zju-dm"
-          },
-          {
-            "label": "The-Dynamic-Seven",
-            "labelEn": "The-Dynamic-Seven",
-            "translations": {
-              "en": "The-Dynamic-Seven"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2023zjudem-The-Dynamic-Seven/",
-            "linkEn": "https://nexmaker-fab.github.io/2023zjudem-The-Dynamic-Seven/"
-          },
-          {
-            "label": "7DE",
-            "labelEn": "7DE",
-            "translations": {
-              "en": "7DE"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2023zjudem-7DE/",
-            "linkEn": "https://nexmaker-fab.github.io/2023zjudem-7DE/"
-          },
-          {
-            "label": "Tomorrow-s-Wonder-Team",
-            "labelEn": "Tomorrow-s-Wonder-Team",
-            "translations": {
-              "en": "Tomorrow-s-Wonder-Team"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2023zjudem-Tomorrow-s-Wonder-Team/",
-            "linkEn": "https://nexmaker-fab.github.io/2023zjudem-Tomorrow-s-Wonder-Team/"
-          },
-          {
-            "label": "Team-novva",
-            "labelEn": "Team-novva",
-            "translations": {
-              "en": "Team-novva"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2023zjudem-teamnovva/",
-            "linkEn": "https://nexmaker-fab.github.io/2023zjudem-teamnovva/"
-          },
-          {
-            "label": "INNOGENIUSES",
-            "labelEn": "INNOGENIUSES",
-            "translations": {
-              "en": "INNOGENIUSES"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2023zjudem-INNOGENIUSES/",
-            "linkEn": "https://nexmaker-fab.github.io/2023zjudem-INNOGENIUSES/"
-          },
-          {
-            "label": "Gladiators",
-            "labelEn": "Gladiators",
-            "translations": {
-              "en": "Gladiators"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2023zjudem-Team-Gladiators/",
-            "linkEn": "https://nexmaker-fab.github.io/2023zjudem-Team-Gladiators/"
-          }
-        ]
-      },
-      {
-        "label": "Design Engineering mini 2023",
-        "labelEn": "Design Engineering mini 2023",
-        "translations": {
-          "en": "Design Engineering mini 2023"
-        },
-        "collapsed": true,
-        "items": [
-          {
-            "label": "📋 课程排期",
-            "labelEn": "Schedule",
-            "translations": {
-              "en": "Schedule"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "/class/fab-2023-zju-mini",
-            "linkEn": "/en/class/fab-2023-zju-mini"
-          },
-          {
-            "label": "Fivevolution",
-            "labelEn": "Fivevolution",
-            "translations": {
-              "en": "Fivevolution"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2023zjudemini-hi1/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2023zjudemini-hi1/#/"
-          },
-          {
-            "label": "Fivist",
-            "labelEn": "Fivist",
-            "translations": {
-              "en": "Fivist"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2023zjudemini-hi2/",
-            "linkEn": "https://nexmaker-fab.github.io/2023zjudemini-hi2/"
-          }
-        ]
-      },
-      {
-        "label": "ZWU-interactivesystem 2024",
-        "labelEn": "ZWU-interactivesystem 2024",
-        "translations": {
-          "en": "ZWU-interactivesystem 2024"
-        },
-        "collapsed": true,
-        "items": [
-          {
-            "label": "📋 课程排期",
-            "labelEn": "Schedule",
-            "translations": {
-              "en": "Schedule"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "/class/fab-2024-zwu-interactivesystem",
-            "linkEn": "/en/class/fab-2024-zwu-interactivesystem"
-          },
-          {
-            "label": "SZPJNF",
-            "labelEn": "SZPJNF",
-            "translations": {
-              "en": "SZPJNF"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-1/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-1/#/"
-          },
-          {
-            "label": "Ecobloom",
-            "labelEn": "Ecobloom",
-            "translations": {
-              "en": "Ecobloom"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-2-Ecobloom/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-2-Ecobloom/#/"
-          },
-          {
-            "label": "Yes or Yes",
-            "labelEn": "Yes or Yes",
-            "translations": {
-              "en": "Yes or Yes"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-3-Yes-or-yes/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-3-Yes-or-yes/#/"
-          },
-          {
-            "label": "watermelon sugar",
-            "labelEn": "watermelon sugar",
-            "translations": {
-              "en": "watermelon sugar"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-4/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-4/#/"
-          },
-          {
-            "label": "BCZG",
-            "labelEn": "BCZG",
-            "translations": {
-              "en": "BCZG"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-5/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-5/#/"
-          },
-          {
-            "label": "None group",
-            "labelEn": "None group",
-            "translations": {
-              "en": "None group"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-6/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-6/#/"
-          }
-        ]
-      },
-      {
-        "label": "ZWU-interactivesystem2+2 2024",
-        "labelEn": "ZWU-interactivesystem2+2 2024",
-        "translations": {
-          "en": "ZWU-interactivesystem2+2 2024"
-        },
-        "collapsed": true,
-        "items": [
-          {
-            "label": "📋 课程排期",
-            "labelEn": "Schedule",
-            "translations": {
-              "en": "Schedule"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "/class/fab-2024-zwu-interactivesystem22",
-            "linkEn": "/en/class/fab-2024-zwu-interactivesystem22"
-          },
-          {
-            "label": "Mars",
-            "labelEn": "Mars",
-            "translations": {
-              "en": "Mars"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-7/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-7/#/"
-          },
-          {
-            "label": "Bunbun",
-            "labelEn": "Bunbun",
-            "translations": {
-              "en": "Bunbun"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-8-BUNBUN/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-8-BUNBUN/#/"
-          },
-          {
-            "label": "BSST",
-            "labelEn": "BSST",
-            "translations": {
-              "en": "BSST"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-9-BSST/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-9-BSST/#/"
-          },
-          {
-            "label": "4AOL",
-            "labelEn": "4AOL",
-            "translations": {
-              "en": "4AOL"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2024ZWU-IS-10-4AOL/#/",
-            "linkEn": "https://nexmaker-fab.github.io/2024ZWU-IS-10-4AOL/#/"
-          }
-        ]
-      },
-      {
-        "label": "Fab Academy 2025-UNNC",
-        "labelEn": "Fab Academy 2025-UNNC",
-        "translations": {
-          "en": "Fab Academy 2025-UNNC"
-        },
-        "collapsed": true,
-        "items": [
-          {
-            "label": "📋 课程排期",
-            "labelEn": "Schedule",
-            "translations": {
-              "en": "Schedule"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "/tutorials/fab/fab2023",
-            "linkEn": "/en/tutorials/fab/fab2023"
-          },
-          {
-            "label": "Xu Sun",
-            "labelEn": "Xu Sun",
-            "translations": {
-              "en": "Xu Sun"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://fabacademy.org/2025/labs/unnc/students/xu-sun/",
-            "linkEn": "https://fabacademy.org/2025/labs/unnc/students/xu-sun/"
-          },
-          {
-            "label": "Yaorun Zhang",
-            "labelEn": "Yaorun Zhang",
-            "translations": {
-              "en": "Yaorun Zhang"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://fabacademy.org/2023/labs/ningbo/students/yaorun-zhang/",
-            "linkEn": "https://fabacademy.org/2023/labs/ningbo/students/yaorun-zhang/"
-          }
-        ]
-      },
-      {
-        "label": "UNNC-FabLab-2025-1",
-        "labelEn": "UNNC-FabLab-2025-1",
-        "translations": {
-          "en": "UNNC-FabLab-2025-1"
-        },
-        "collapsed": true,
-        "items": [
-          {
-            "label": "📋 课程排期",
-            "labelEn": "Schedule",
-            "translations": {
-              "en": "Schedule"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "/class/fab-2025-unnc",
-            "linkEn": "/en/class/fab-2025-unnc"
-          },
-          {
-            "label": "Fengyi zhao",
-            "labelEn": "Fengyi zhao",
-            "translations": {
-              "en": "Fengyi zhao"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2025UNNCFAB-ZHAO/",
-            "linkEn": "https://nexmaker-fab.github.io/2025UNNCFAB-ZHAO/"
-          },
-          {
-            "label": "Yan bing",
-            "labelEn": "Yan bing",
-            "translations": {
-              "en": "Yan bing"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2025UNNCFAB-yan/",
-            "linkEn": "https://nexmaker-fab.github.io/2025UNNCFAB-yan/"
-          },
-          {
-            "label": "Ao Liu",
-            "labelEn": "Ao Liu",
-            "translations": {
-              "en": "Ao Liu"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/2025UNNCFAB-AO/",
-            "linkEn": "https://nexmaker-fab.github.io/2025UNNCFAB-AO/"
-          },
-          {
-            "label": "Yi shan tong",
-            "labelEn": "Yi shan tong",
-            "translations": {
-              "en": "Yi shan tong"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://unnc-fab.github.io/2025-1-ty/",
-            "linkEn": "https://unnc-fab.github.io/2025-1-ty/"
-          }
-        ]
-      },
-      {
-        "label": "UNNC-FabLab-2025-2",
-        "labelEn": "UNNC-FabLab-2025-2",
-        "translations": {
-          "en": "UNNC-FabLab-2025-2"
-        },
-        "collapsed": true,
-        "items": [
-          {
-            "label": "📋 课程排期",
-            "labelEn": "Schedule",
-            "translations": {
-              "en": "Schedule"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "/class/fab-2025-unnc-2",
-            "linkEn": "/en/class/fab-2025-unnc-2"
-          },
-          {
-            "label": "Wenqing zhong",
-            "labelEn": "Wenqing zhong",
-            "translations": {
-              "en": "Wenqing zhong"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://unnc-fab.github.io/2025-2-wenqing/",
-            "linkEn": "https://unnc-fab.github.io/2025-2-wenqing/"
-          },
-          {
-            "label": "Simon",
-            "labelEn": "Simon",
-            "translations": {
-              "en": "Simon"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://unnc-fab.github.io/2025-2-simon/",
-            "linkEn": "https://unnc-fab.github.io/2025-2-simon/"
-          },
-          {
-            "label": "Xiangdong Huang",
-            "labelEn": "Xiangdong Huang",
-            "translations": {
-              "en": "Xiangdong Huang"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://unnc-fab.github.io/2025-2-xiangdong/",
-            "linkEn": "https://unnc-fab.github.io/2025-2-xiangdong/"
-          },
-          {
-            "label": "Mingzhao Xi",
-            "labelEn": "Mingzhao Xi",
-            "translations": {
-              "en": "Mingzhao Xi"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://unnc-fab.github.io/2025-2-mingzhao/",
-            "linkEn": "https://unnc-fab.github.io/2025-2-mingzhao/"
-          },
-          {
-            "label": "Jiawei",
-            "labelEn": "Jiawei",
-            "translations": {
-              "en": "Jiawei"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://unnc-fab.github.io/2025-2-jiawei/",
-            "linkEn": "https://unnc-fab.github.io/2025-2-jiawei/"
-          }
-        ]
-      },
-      {
-        "label": "ZWU-interactivesystem 2026A1",
-        "labelEn": "ZWU-interactivesystem 2026A1",
-        "translations": {
-          "en": "ZWU-interactivesystem 2026A1"
-        },
-        "collapsed": true,
-        "items": [
-          {
-            "label": "📋 Schedule2026",
-            "labelEn": "Schedule2026",
-            "translations": {
-              "en": "Schedule"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "/class/fab-2026-zwu-01",
-            "linkEn": "/en/class/fab-2026-zwu-01"
-          },
-          {
-            "label": "zwu2026-1-001",
-            "labelEn": "zwu2026-1-001",
-            "translations": {
-              "en": "zwu2026-1-001"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/zwu2026-1-001/",
-            "linkEn": "https://nexmaker-fab.github.io/zwu2026-1-001/"
-          },
-          {
-            "label": "Jowywlz",
-            "labelEn": "Jowywlz",
-            "translations": {
-              "en": "Jowywlz"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/zwu-2026-1-002/",
-            "linkEn": "https://nexmaker-fab.github.io/zwu-2026-1-002/"
-          },
-          {
-            "label": "ZwU-2026-1-003",
-            "labelEn": "ZwU-2026-1-003",
-            "translations": {
-              "en": "ZwU-2026-1-003"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/ZwU-2026-1-003/",
-            "linkEn": "https://nexmaker-fab.github.io/ZwU-2026-1-003/"
-          },
-          {
-            "label": "AETHER STUDIO",
-            "labelEn": "AETHER STUDIO",
-            "translations": {
-              "en": "AETHER STUDIO"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/zwu-2026-1-004/",
-            "linkEn": "https://nexmaker-fab.github.io/zwu-2026-1-004/"
-          }
-        ]
-      },
-      {
-        "label": "ZWU-interactivesystem 2026A2",
-        "labelEn": "ZWU-interactivesystem 2026A2",
-        "translations": {
-          "en": "ZWU-interactivesystem 2026A2"
-        },
-        "collapsed": true,
-        "items": [
-          {
-            "label": "📋 Schedule202602",
-            "labelEn": "Schedule202602",
-            "translations": {
-              "en": "Schedule"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "/class/fab-2026-zwu-02",
-            "linkEn": "/en/class/fab-2026-zwu-02"
-          },
-          {
-            "label": "ZWU-2026-2-001",
-            "labelEn": "ZWU-2026-2-001",
-            "translations": {
-              "en": "ZWU-2026-2-001"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/ZWU-2026-2-001/",
-            "linkEn": "https://nexmaker-fab.github.io/ZWU-2026-2-001/"
-          },
-          {
-            "label": "V-JESH",
-            "labelEn": "V-JESH",
-            "translations": {
-              "en": "V-JESH"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/ZWU-2026-2-002/",
-            "linkEn": "https://nexmaker-fab.github.io/ZWU-2026-2-002/"
-          },
-          {
-            "label": "ZWU-2026-2-003",
-            "labelEn": "ZWU-2026-2-003",
-            "translations": {
-              "en": "ZWU-2026-2-003"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/ZWU-2026-2-003/",
-            "linkEn": "https://nexmaker-fab.github.io/ZWU-2026-2-003/"
-          },
-          {
-            "label": "ZWU-2026-2-004",
-            "labelEn": "ZWU-2026-2-004",
-            "translations": {
-              "en": "ZWU-2026-2-004"
-            },
-            "attrs": {
-              "id": "fab"
-            },
-            "link": "https://nexmaker-fab.github.io/ZWU-2026-2-004/",
-            "linkEn": "https://nexmaker-fab.github.io/ZWU-2026-2-004/"
-          }
-        ]
-      }
     ]
   },
   // AUTO-GENERATED FROM SUMMARY END

@@ -1,6 +1,12 @@
 ---
-title: FAB-2026-ZWU-01 Interactivesystem
+title: "ZWU 2026 interactivesystem-1"
+sidebar:
+  attrs: { id: tutorial }
 ---
+
+
+
+
 
 # Basic introduce
 Hi everyone ,this semester we would learn interactivesystem together.
@@ -88,8 +94,8 @@ Final presentation full socre is  40
 
 ******
 #### update
-* 20240420:build page;
-* 20240625:finish
+* 20240420 - build page;
+* 20240625 - finish
 
 
 
