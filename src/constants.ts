@@ -4555,7 +4555,7 @@ const SideBarData = [
   },
   {
     id: "tutorials",
-    label: "课程",
+    label: "Fab tutorials",
     translations: {
       en: "Tutorials",
     },
@@ -4563,7 +4563,7 @@ const SideBarData = [
   },
   {
     id: "fabs",
-    label: "结果",
+    label: "Class",
     translations: {
       en: "FABS",
     },
