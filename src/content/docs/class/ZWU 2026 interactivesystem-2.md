@@ -79,10 +79,10 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage |1. need personal link|20260605||
-| Arduino |  |20260605||
+| Project manage |1. need personal link<br>2. navbar optimize<br>3.optimize homepage layout|20260605||
+| Arduino | 1. change sensor<br>2. add lcd screen <br>3.coding need highlight<br>4.gif for result<br>5.connection picture<br>arduino introduce<br>7. similar case with finial project|202606012|10|
 | [Material](doc/12material&tool/assessment.md)                       |    |   |   |   |  
-| [Computer aided design](doc/2cad/Assessment.md)                     | |   |   |  
+| [Computer aided design](doc/2cad/Assessment.md)                     |1.show prompt; <br> <br>2. how to get model from sophicar<br>3. design one model detail|  202606012 |  8 |  
 | [3D printing ](doc/3_3dprinter/assessment.md)                       |  |  |  |   
 | [Arduino IOT](doc/10IOT/Assessment.md)                              |     |   |   |   |  
 
