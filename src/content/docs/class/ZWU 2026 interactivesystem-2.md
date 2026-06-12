@@ -66,8 +66,8 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage |1. tool need link；2.set page need step number;3 prompt need text ;4.show lingma ui and fold relationship; 5.build css file;6 need index.html,show how to build navbar and sidebar|20260605|6|
-| Arduino | 1.need picture link;show own case for detail |20260605|4|
+| Project manage |1. tool need link；<br>2.set page need step number;<br>3 prompt need text ;<br>4.show lingma ui and fold relationship;<br>5.build css file;<br>6 need index.html,show how to build navbar and sidebar|20260605|6|
+| Arduino | 1.need picture link;<br>show own case for detail |20260605|4|
 | [ Interface application programming ](doc/11Interface-application-programming/Assessment.md) |   |   |   |  
 | [Material](doc/12material&tool/assessment.md)                       |  5   |   |   |   |  
 | [Computer aided design](doc/2cad/Assessment.md)                     |  1.need sophicar method; <br> 2,gallery data; <br> 3 neeed hand working |  20260605 |   |  6 |  

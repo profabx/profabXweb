@@ -36,3 +36,11 @@
 .page-title {
   @apply text-center text-[#0057f1] text-3xl font-bold;
 }
+
+/* 统一 Markdown 表格宽度为页面内容区域的 80%，水平居中 */
+.sl-markdown-content table {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: table;
+}

@@ -70,7 +70,7 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage |1. NEW_FILE_CODE  2. link to personal webpage 3. recommand personal icon 3.how to build webpage  4.final project introduce |20260601|5|
+| Project manage |1. NEW_FILE_CODE <br> 2. link to personal webpage <br> 3. recommand personal icon <br> 4.how to build webpage  <br> 5.final project introduce |20260601|5|
 
 
 
@@ -79,8 +79,8 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage |1. need teammember link; 2.all english;3.delete github picture;4.update Fill in repository information 5. add github desktop clone ;6.**how to build webpage**;6 prompt; 7lingma link;8 change gitclone to git push with github desktop |20260601|7|
-| Arduino | 1. change to uno r4；2 Arduino ide update ； 3 gif for Arduino example ；4 wire update |20260601|7|
+| Project manage |1. need teammember link; <br>2.all english; <br>3.delete github picture;<br>4.update Fill in repository information <br>5. add github desktop clone ;<br>6.**how to build webpage**;<br>6 prompt;<br>7lingma link;<br>8 change gitclone to git push with github desktop |20260601|7|
+| Arduino | 1. change to uno r4；<br>2 Arduino ide update ； <br>3 gif for Arduino example ；<br>4 wire update |20260601|7|
 
 #### [003](https://nexmaker-fab.github.io/zwu-2026-1-003/)
 
@@ -94,7 +94,7 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage | 1. link to tool;2 need high quality picture;3,how to build web|20260601|5|
+| Project manage | 1. link to tool;<br>2 need high quality picture;<br>3,how to build web|20260601|5|
 | arduino | 1. update arduino picture|20260601||
 
 
