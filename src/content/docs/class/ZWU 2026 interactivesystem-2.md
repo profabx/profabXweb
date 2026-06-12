@@ -68,11 +68,9 @@ Final presentation full socre is  40
 | ------------- | :-----:|:-----:|-----:|
 | Project manage |1. tool need link；<br>2.set page need step number;<br>3 prompt need text ;<br>4.show lingma ui and fold relationship;<br>5.build css file;<br>6 need index.html,show how to build navbar and sidebar|20260605|6|
 | Arduino | 1.need picture link;<br>show own case for detail |20260605|4|
-| [ Interface application programming ](doc/11Interface-application-programming/Assessment.md) |   |   |   |  
 | [Material](doc/12material&tool/assessment.md)                       |  5   |   |   |   |  
 | [Computer aided design](doc/2cad/Assessment.md)                     |  1.need sophicar method; <br> 2,gallery data; <br> 3 neeed hand working |  20260605 |   |  6 |  
 | [3D printing ](doc/3_3dprinter/assessment.md)                       |  1.how to get model <br>2;explain setting;  <br> 3 need high quality pciture  | 20260605  |8   |  
-| [Computer-controlled cutting](doc/6laser_cutter/Assessment.md)      |  5   |  |   |   |  
 | [Arduino IOT](doc/10IOT/Assessment.md)                              |  5   |   |   |   |  
 
 
@@ -83,11 +81,9 @@ Final presentation full socre is  40
 | ------------- | :-----:|:-----:|-----:|
 | Project manage |1. need personal link|20260605||
 | Arduino |  |20260605||
-| [ Interface application programming ](doc/11Interface-application-programming/Assessment.md) |   |   |   |  
 | [Material](doc/12material&tool/assessment.md)                       |    |   |   |   |  
 | [Computer aided design](doc/2cad/Assessment.md)                     | |   |   |  
-| [3D printing ](doc/3_3dprinter/assessment.md)                       |  |  |  |  
-| [Computer-controlled cutting](doc/6laser_cutter/Assessment.md)      |    |  |   |   |  
+| [3D printing ](doc/3_3dprinter/assessment.md)                       |  |  |  |   
 | [Arduino IOT](doc/10IOT/Assessment.md)                              |     |   |   |   |  
 
 
@@ -114,11 +110,9 @@ Final presentation full socre is  40
 | ------------- | :-----:|:-----:|-----:|
 | Project manage ||20260605||
 | Arduino |  |20260605||
-| [ Interface application programming ](doc/11Interface-application-programming/Assessment.md) |   |   |   |  
 | [Material](doc/12material&tool/assessment.md)                       |    |   |   |   |  
 | [Computer aided design](doc/2cad/Assessment.md)                     | |   |   |  
 | [3D printing ](doc/3_3dprinter/assessment.md)                       |  |  |  |  
-| [Computer-controlled cutting](doc/6laser_cutter/Assessment.md)      |    |  |   |   |  
 | [Arduino IOT](doc/10IOT/Assessment.md)                              |     |   |   |   |  
 
 
@@ -130,9 +124,7 @@ Final presentation full socre is  40
 | ------------- | :-----:|:-----:|-----:|
 | Project manage ||20260605||
 | Arduino |  |20260605||
-| [ Interface application programming ](doc/11Interface-application-programming/Assessment.md) |   |   |   |  
 | [Material](doc/12material&tool/assessment.md)                       |    |   |   |   |  
 | [Computer aided design](doc/2cad/Assessment.md)                     | |   |   |  
 | [3D printing ](doc/3_3dprinter/assessment.md)                       |  |  |  |  
-| [Computer-controlled cutting](doc/6laser_cutter/Assessment.md)      |    |  |   |   |  
 | [Arduino IOT](doc/10IOT/Assessment.md)                              |     |   |   |   |  
