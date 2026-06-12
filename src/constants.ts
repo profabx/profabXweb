@@ -1517,7 +1517,7 @@ const FabMenuItems = [
     "collapsed": true,
     "items": [
 
-       //ZWU-interactivesystem 2026A1
+      //ZWU-interactivesystem 2026A1
       {
         "label": "ZWU-interactivesystem 2026A1",
         "labelEn": "ZWU-interactivesystem 2026A1",
@@ -1656,11 +1656,23 @@ const FabMenuItems = [
             },
             "link": "https://nexmaker-fab.github.io/ZWU-2026-2-004/",
             "linkEn": "https://nexmaker-fab.github.io/ZWU-2026-2-004/"
+          },
+          {
+            "label": "ZWU-2026-2-005",
+            "labelEn": "ZWU-2026-2-005",
+            "translations": {
+              "en": "ZWU-2026-2-005"
+            },
+            "attrs": {
+              "id": "fab"
+            },
+            "link": "https://nexmaker-fab.github.io/ZWU-2026-2-005/",
+            "linkEn": "https://nexmaker-fab.github.io/ZWU-2026-2-005/"
           }
         ]
       },
 
-          //Fab Academy 2025-UNNC
+      //Fab Academy 2025-UNNC
       {
         "label": "Fab Academy 2025-UNNC",
         "labelEn": "Fab Academy 2025-UNNC",
@@ -1861,7 +1873,7 @@ const FabMenuItems = [
           }
         ]
       },
-            //ZWU-interactivesystem 2024
+      //ZWU-interactivesystem 2024
       {
         "label": "ZWU-interactivesystem 2024",
         "labelEn": "ZWU-interactivesystem 2024",
@@ -2329,7 +2341,7 @@ const FabMenuItems = [
       },
 
 
-            //Design Engineering2022
+      //Design Engineering2022
       {
         "label": "Design Engineering2022",
         "labelEn": "Design Engineering2022",
@@ -2556,7 +2568,7 @@ const FabMenuItems = [
       },
 
 
-        //Design Engineering2021
+      //Design Engineering2021
       {
         "label": "Design Engineering2021",
         "labelEn": "Design Engineering2021",
@@ -2758,7 +2770,7 @@ const FabMenuItems = [
           }
         ]
       },
-            //Design Engineering2020
+      //Design Engineering2020
       {
         "label": "Design Engineering2020",
         "labelEn": "Design Engineering2020",
@@ -3091,7 +3103,7 @@ const FabMenuItems = [
           }
         ]
       },
-          // NexMaker academy-1
+      // NexMaker academy-1
       {
         "label": "NexMaker academy-1",
         "labelEn": "NexMaker academy-1",
@@ -3246,7 +3258,7 @@ const FabMenuItems = [
           }
         ]
       },
-//NexMaker academy-2
+      //NexMaker academy-2
       {
         "label": "NexMaker academy-2",
         "labelEn": "NexMaker academy-2",
@@ -3348,19 +3360,19 @@ const FabMenuItems = [
 
 // 侧边栏菜单项 - Prototype
 const PrototypeMenuItems = [
-//颜色
-{
-  label: "↓--------颜色--------↓",
-  link: "/prototype/colour/colour",
-  labelEn: "Colour",
-  translations: {
-    en: "colour",
+  //颜色
+  {
+    label: "↓--------颜色--------↓",
+    link: "/prototype/colour/colour",
+    labelEn: "Colour",
+    translations: {
+      en: "colour",
+    },
+    linkEn: "/en/prototype/clour/colour",
+    attrs: { id: "prototype" },
   },
-  linkEn: "/en/prototype/clour/colour",
-  attrs: { id: "prototype" },
-},
 
-//材料
+  //材料
   {
     label: "↓--------材料--------↓",
     link: "/prototype/about",
@@ -3371,7 +3383,7 @@ const PrototypeMenuItems = [
     linkEn: "/en/prototype/about",
     attrs: { id: "prototype" },
   },
-//金属
+  //金属
   {
     label: "金属",
     //link: "/prototype/metal",
@@ -3464,7 +3476,7 @@ const PrototypeMenuItems = [
       },
     ],
   },
-//塑料
+  //塑料
   {
     label: "塑料",
     labelEn: "Polymers",
@@ -3607,7 +3619,7 @@ const PrototypeMenuItems = [
       },
     ],
   },
-//ceramics
+  //ceramics
   {
     label: "陶瓷材料",
     labelEn: "Ceramics",
@@ -3649,15 +3661,15 @@ const PrototypeMenuItems = [
       },
     ],
   },
-//componsites
+  //componsites
   {
     label: "复合材料",
     labelEn: "Composites",
     translations: {
       en: "composites",
     },
-  collapsed: true,
-  items: [
+    collapsed: true,
+    items: [
       {
         label: "碳纤维",
         link: "/prototype/material/composites/cf",
@@ -3718,7 +3730,7 @@ const PrototypeMenuItems = [
         },
         attrs: { id: "prototype" },
       },
-      
+
       {
         label: "其他复合材料",
         labelEn: "Composites",
@@ -3737,8 +3749,8 @@ const PrototypeMenuItems = [
     translations: {
       en: "wood",
     },
-  collapsed: true,
-  items: [
+    collapsed: true,
+    items: [
       {
         label: "胡桃木",
         link: "/prototype/material/wood/walnut",
@@ -3771,7 +3783,7 @@ const PrototypeMenuItems = [
       },
     ]
   },
-//制造工艺
+  //制造工艺
   {
     label: "↓--------制造工艺--------↓",
     link: "/prototype/manufacture",
@@ -3782,7 +3794,7 @@ const PrototypeMenuItems = [
     linkEn: "/en/prototype/manufacture",
     attrs: { id: "prototype" },
   },
-//增材制造 
+  //增材制造 
   {
     label: "增材制造",
     labelEn: "Additive manufature",
@@ -3790,7 +3802,7 @@ const PrototypeMenuItems = [
       en: "add manufacture",
     },
     collapsed: true,
-    items: [ 
+    items: [
       {
         label: "增材制造概况",
         link: "/prototype/manufacture/add/add",
@@ -3863,7 +3875,7 @@ const PrototypeMenuItems = [
         linkEn: "/en/prototype/manufacture/add/slm",
         attrs: { id: "prototype" },
       },
-        
+
       {
         label: "Polyjet",
         link: "/prototype/manufacture/add/polyjet",
@@ -3887,255 +3899,255 @@ const PrototypeMenuItems = [
 
     ],
   },
- //等材制造
- {
-  label: "等材制造",
-  labelEn: "Equal manufature",
-  translations: {
-    en: "equal manufacture",
+  //等材制造
+  {
+    label: "等材制造",
+    labelEn: "Equal manufature",
+    translations: {
+      en: "equal manufacture",
+    },
+    collapsed: true,
+    items: [
+      {
+        label: "等材制造概况",
+        link: "/prototype/manufacture/equal/equal",
+        linkEn: "/en/prototype/manufacture/equal/equal",
+        labelEn: "The condition of equal manufacture",
+        translations: {
+          en: "equal manufacture",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "注塑",
+        link: "/prototype/manufacture/equal/injection",
+        linkEn: "/en/prototype/manufacture/equal/injection",
+        labelEn: "Injection molding",
+        translations: {
+          en: "injection molding",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "硅胶覆膜",
+        link: "/prototype/manufacture/equal/siliconemold",
+        linkEn: "/en/prototype/manufacture/equal/siliconemold",
+        labelEn: "Silicone molding process",
+        translations: {
+          en: "Silicone molding proces",
+        },
+        attrs: { id: "prototype" },
+      },
+
+      {
+        label: "钣金工艺",
+        labelEn: "Sheet metal process",
+        translations: {
+          en: "sheet metal",
+        },
+        link: "/prototype/manufacture/equal/sheetmetal",
+        linkEn: "/en/prototype/manufacture/equal/sheetmetal",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "其他等材制造工艺",
+        link: "/prototype/manufacture/equal/otherequal",
+        linkEn: "/en/prototype/manufacture/equal/otherequal",
+        labelEn: "Other equal manufacture",
+        translations: {
+          en: "otherequal",
+        },
+        attrs: { id: "prototype" },
+      },
+    ],
   },
-  collapsed: true,
-  items: [ 
-    {
-      label: "等材制造概况",
-      link: "/prototype/manufacture/equal/equal",
-      linkEn: "/en/prototype/manufacture/equal/equal",
-      labelEn: "The condition of equal manufacture",
-      translations: {
-        en: "equal manufacture",
-      },
-      attrs: { id: "prototype" },
+  //减材制造
+  {
+    label: "减材制造",
+    labelEn: "Substractive manufature",
+    translations: {
+      en: "Substractive manufature",
     },
-    {
-      label: "注塑",
-      link: "/prototype/manufacture/equal/injection",
-      linkEn: "/en/prototype/manufacture/equal/injection",
-      labelEn: "Injection molding",
-      translations: {
-        en: "injection molding",
+    collapsed: true,
+    items: [
+      {
+        label: "减材制造概况",
+        link: "/prototype/manufacture/substractive/substractive",
+        linkEn: "/en/prototype/manufacture/substractive/substractive",
+        labelEn: "The condition of substractive manufacture",
+        translations: {
+          en: "substractive manufacture",
+        },
+        attrs: { id: "prototype" },
       },
-      attrs: { id: "prototype" },
-    },
-    {
-      label: "硅胶覆膜",
-      link: "/prototype/manufacture/equal/siliconemold",
-      linkEn: "/en/prototype/manufacture/equal/siliconemold",
-      labelEn: "Silicone molding process",
-      translations: {
-        en: "Silicone molding proces",
+      {
+        label: "CNC",
+        link: "/prototype/manufacture/substractive/cnc",
+        linkEn: "/en/prototype/manufacture/substractive/cnc",
+        labelEn: "CNC",
+        translations: {
+          en: "CNC",
+        },
+        attrs: { id: "prototype" },
       },
-      attrs: { id: "prototype" },
-    },
-    
-    {
-      label: "钣金工艺",
-      labelEn: "Sheet metal process",
-      translations: {
-        en: "sheet metal",
+      {
+        label: "车",
+        link: "/prototype/manufacture/substractive/lathing",
+        linkEn: "/en/prototype/manufacture/substractive/lathing",
+        labelEn: "lathiing",
+        translations: {
+          en: "lathing",
+        },
+        attrs: { id: "prototype" },
       },
-      link: "/prototype/manufacture/equal/sheetmetal",
-      linkEn: "/en/prototype/manufacture/equal/sheetmetal",
-      attrs: { id: "prototype" },
-    },
-    {
-      label: "其他等材制造工艺",
-      link: "/prototype/manufacture/equal/otherequal",
-      linkEn: "/en/prototype/manufacture/equal/otherequal",
-      labelEn: "Other equal manufacture",
-      translations: {
-        en: "otherequal",
+
+      {
+        label: "铣",
+        labelEn: "milling",
+        translations: {
+          en: "milling",
+        },
+        link: "/prototype/manufacture/substractive/milling",
+        linkEn: "/en/prototype/manufacture/substractive/milling",
+        attrs: { id: "prototype" },
       },
-      attrs: { id: "prototype" },
-    },
-  ],
-},
-//减材制造
-{
-  label: "减材制造",
-  labelEn: "Substractive manufature",
-  translations: {
-    en: "Substractive manufature",
+      {
+        label: "激光切割",
+        labelEn: "lasercutter",
+        translations: {
+          en: "lasercutter",
+        },
+        link: "/prototype/manufacture/substractive/lasercutter",
+        linkEn: "/en/prototype/manufacture/substractive/lasercutter",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "其他减材制造工艺",
+        link: "/prototype/manufacture/substractive/othersubstractive",
+        linkEn: "/en/prototype/manufacture/substractive/othersubstractive",
+        labelEn: "Other substractive manufacture",
+        translations: {
+          en: "other substractive",
+        },
+        attrs: { id: "prototype" },
+      },
+    ],
   },
-  collapsed: true,
-  items: [ 
-    {
-      label: "减材制造概况",
-      link: "/prototype/manufacture/substractive/substractive",
-      linkEn: "/en/prototype/manufacture/substractive/substractive",
-      labelEn: "The condition of substractive manufacture",
-      translations: {
-        en: "substractive manufacture",
-      },
-      attrs: { id: "prototype" },
+  //后处理
+  {
+    label: "↓--------后处理--------↓",
+    link: "/prototype/postprocess/postprocess",
+    labelEn: "Post process",
+    translations: {
+      en: "post process",
     },
-    {
-      label: "CNC",
-      link: "/prototype/manufacture/substractive/cnc",
-      linkEn: "/en/prototype/manufacture/substractive/cnc",
-      labelEn: "CNC",
-      translations: {
-        en: "CNC",
-      },
-      attrs: { id: "prototype" },
-    },
-    {
-      label: "车",
-      link: "/prototype/manufacture/substractive/lathing",
-      linkEn: "/en/prototype/manufacture/substractive/lathing",
-      labelEn: "lathiing",
-      translations: {
-        en: "lathing",
-      },
-      attrs: { id: "prototype" },
-    },
-    
-    {
-      label: "铣",
-      labelEn: "milling",
-      translations: {
-        en: "milling",
-      },
-      link: "/prototype/manufacture/substractive/milling",
-      linkEn: "/en/prototype/manufacture/substractive/milling",
-      attrs: { id: "prototype" },
-    },
-    {
-      label: "激光切割",
-      labelEn: "lasercutter",
-      translations: {
-        en: "lasercutter",
-      },
-      link: "/prototype/manufacture/substractive/lasercutter",
-      linkEn: "/en/prototype/manufacture/substractive/lasercutter",
-      attrs: { id: "prototype" },
-    },
-    {
-      label: "其他减材制造工艺",
-      link: "/prototype/manufacture/substractive/othersubstractive",
-      linkEn: "/en/prototype/manufacture/substractive/othersubstractive",
-      labelEn: "Other substractive manufacture",
-      translations: {
-        en: "other substractive",
-      },
-      attrs: { id: "prototype" },
-    },
-  ],
-},
-//后处理
-{
-  label: "↓--------后处理--------↓",
-  link: "/prototype/postprocess/postprocess",
-  labelEn: "Post process",
-  translations: {
-    en: "post process",
+    linkEn: "/en/prototype/postprocess/postprocess",
+    attrs: { id: "prototype" },
   },
-  linkEn: "/en/prototype/postprocess/postprocess",
-  attrs: { id: "prototype" },
-},
-//表面处理：   - **电镀（Electroplating,阳极氧化（Anodizing）喷涂（Spray Coating）**：如喷漆、喷粉（粉末涂层）。
-{
-  label: "表面处理",
-  labelEn: "Surface treamtment",
-  translations: {
-    en: "Surface treamtment",
+  //表面处理：   - **电镀（Electroplating,阳极氧化（Anodizing）喷涂（Spray Coating）**：如喷漆、喷粉（粉末涂层）。
+  {
+    label: "表面处理",
+    labelEn: "Surface treamtment",
+    translations: {
+      en: "Surface treamtment",
+    },
+    collapsed: true,
+    items: [
+      {
+        label: "喷涂",
+        link: "/prototype/postprocess/surface/coating",
+        linkEn: "/en/prototype/postprocess/surface/coating",
+        labelEn: "Coat",
+        translations: {
+          en: "Coat",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "电镀",
+        link: "/prototype/postprocess/surface/electroplating",
+        linkEn: "/en/prototype/postprocess/surface/electroplating",
+        labelEn: "Electroplating",
+        translations: {
+          en: "electroplating",
+        },
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "阳极氧化",
+        labelEn: "Anodizing",
+        translations: {
+          en: "Anodizing",
+        },
+        link: "/prototype/postprocess/surface/anodizing",
+        linkEn: "/en/prototype/postprocess/surface/anodizing",
+        attrs: { id: "prototype" },
+      },
+
+    ],
   },
-  collapsed: true,
-  items: [
-    {
-      label: "喷涂",
-      link: "/prototype/postprocess/surface/coating",
-      linkEn: "/en/prototype/postprocess/surface/coating",
-      labelEn: "Coat",
-      translations: {
-        en: "Coat",
-      },
-      attrs: { id: "prototype" },
+  //热处理（Heat Treatment）.淬火（Quenching）,回火（Tempering）,退火（Annealing）,正火（Normalizing）,表面硬化
+  {
+    label: "热处理",
+    labelEn: "Heat treamtment",
+    translations: {
+      en: "Heat treamtment",
     },
-    {
-      label: "电镀",
-      link: "/prototype/postprocess/surface/electroplating",
-      linkEn: "/en/prototype/postprocess/surface/electroplating",
-      labelEn: "Electroplating",
-      translations: {
-        en: "electroplating",
+    collapsed: true,
+    items: [
+      {
+        label: "淬火",
+        link: "/prototype/postprocess/heat/quenching",
+        linkEn: "/en/prototype/postprocess/heat/quenching",
+        labelEn: "Quenching",
+        translations: {
+          en: "Quenching",
+        },
+        attrs: { id: "prototype" },
       },
-      attrs: { id: "prototype" },
-    },
-    {
-      label: "阳极氧化",
-      labelEn: "Anodizing",
-      translations: {
-        en: "Anodizing",
+      {
+        label: "回火",
+        link: "/prototype/postprocess/heat/tempering",
+        linkEn: "/en/prototype/postprocess/heat/tempering",
+        labelEn: "Tempering",
+        translations: {
+          en: "Tempering",
+        },
+        attrs: { id: "prototype" },
       },
-      link: "/prototype/postprocess/surface/anodizing",
-      linkEn: "/en/prototype/postprocess/surface/anodizing",
-      attrs: { id: "prototype" },
-    },
-    
-  ],
-},
-//热处理（Heat Treatment）.淬火（Quenching）,回火（Tempering）,退火（Annealing）,正火（Normalizing）,表面硬化
-{
-  label: "热处理",
-  labelEn: "Heat treamtment",
-  translations: {
-    en: "Heat treamtment",
+      {
+        label: "退火",
+        labelEn: "Annealing",
+        translations: {
+          en: "Annealing",
+        },
+        link: "/prototype/postprocess/heat/annealing",
+        linkEn: "/en/prototype/postprocess/heat/annealing",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "正火",
+        labelEn: "Normalizing",
+        translations: {
+          en: "Normalizing",
+        },
+        link: "/prototype/postprocess/heat/normalizing",
+        linkEn: "/en/prototype/postprocess/heat/normalizing",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "表面硬化",
+        labelEn: "Surface Hardening",
+        translations: {
+          en: "Surface Hardening",
+        },
+        link: "/prototype/postprocess/heat/Surface Hardening",
+        linkEn: "/en/prototype/postprocess/heat/Surface Hardening",
+        attrs: { id: "prototype" },
+      },
+    ],
   },
-  collapsed: true,
-  items: [
-    {
-      label: "淬火",
-      link: "/prototype/postprocess/heat/quenching",
-      linkEn: "/en/prototype/postprocess/heat/quenching",
-      labelEn: "Quenching",
-      translations: {
-        en: "Quenching",
-      },
-      attrs: { id: "prototype" },
-    },
-    {
-      label: "回火",
-      link: "/prototype/postprocess/heat/tempering",
-      linkEn: "/en/prototype/postprocess/heat/tempering",
-      labelEn: "Tempering",
-      translations: {
-        en: "Tempering",
-      },
-      attrs: { id: "prototype" },
-    },
-    {
-      label: "退火",
-      labelEn: "Annealing",
-      translations: {
-        en: "Annealing",
-      },
-      link: "/prototype/postprocess/heat/annealing",
-      linkEn: "/en/prototype/postprocess/heat/annealing",
-      attrs: { id: "prototype" },
-    },
-    {
-      label: "正火",
-      labelEn: "Normalizing",
-      translations: {
-        en: "Normalizing",
-      },
-      link: "/prototype/postprocess/heat/normalizing",
-      linkEn: "/en/prototype/postprocess/heat/normalizing",
-      attrs: { id: "prototype" },
-    },
-    {
-      label: "表面硬化",
-      labelEn: "Surface Hardening",
-      translations: {
-        en: "Surface Hardening",
-      },
-      link: "/prototype/postprocess/heat/Surface Hardening",
-      linkEn: "/en/prototype/postprocess/heat/Surface Hardening",
-      attrs: { id: "prototype" },
-    },
-  ],
-},
-//机械处理
+  //机械处理
   {
     label: "机械处理",
     labelEn: "Mechanical treamtment",
@@ -4187,89 +4199,89 @@ const PrototypeMenuItems = [
 
     ],
   },
-//化学处理
- {
-  label: "化学处理",
-  labelEn: "Chemical treamtment",
-  translations: {
-    en: "Chemical treamtment",
+  //化学处理
+  {
+    label: "化学处理",
+    labelEn: "Chemical treamtment",
+    translations: {
+      en: "Chemical treamtment",
+    },
+    collapsed: true,
+    items: [
+      {
+        label: "酸洗",
+        labelEn: "Pickling",
+        translations: {
+          en: "Pickling",
+        },
+        link: "/prototype/postprocess/chemical/pickling",
+        linkEn: "/en/prototype/postprocess/chemical/pickling",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "化学清洗",
+        labelEn: "Chemical cleaning",
+        translations: {
+          en: "Chemical cleaning",
+        },
+        link: "/prototype/postprocess/chemical/cleaning",
+        linkEn: "/en/prototype/postprocess/chemical/cleaning",
+        attrs: { id: "prototype" },
+      },
+      {
+        label: "化学抛光",
+        link: "/prototype/postprocess/chemical/polish",
+        linkEn: "/en/prototype/postprocess/chemical/polish",
+        labelEn: "Chemical polish",
+        translations: {
+          en: "Chemical polis",
+        },
+        attrs: { id: "prototype" },
+      },
+    ],
   },
-  collapsed: true,
-  items: [
-    {
-      label: "酸洗",
-      labelEn: "Pickling",
-      translations: {
-        en: "Pickling",
-      },
-      link: "/prototype/postprocess/chemical/pickling",
-      linkEn: "/en/prototype/postprocess/chemical/pickling",
-      attrs: { id: "prototype" },
+  //功能性处理（Functional Treatment）**涂覆润滑层（Lubrication Coating），导电涂层（Conductive Coating），防锈处理（Rust Prevention）
+  {
+    label: "功能性处理",
+    labelEn: "Functional Treatment",
+    translations: {
+      en: "Functional Treatment",
     },
-    {
-      label: "化学清洗",
-      labelEn: "Chemical cleaning",
-      translations: {
-        en: "Chemical cleaning",
+    collapsed: true,
+    items: [
+      {
+        label: "涂覆润滑层",
+        labelEn: "Lubrication Coating",
+        translations: {
+          en: "Lubrication Coating",
+        },
+        link: "/prototype/postprocess/functional/lubrication",
+        linkEn: "/en/prototype/postprocess/functional/lubrication",
+        attrs: { id: "prototype" },
       },
-      link: "/prototype/postprocess/chemical/cleaning",
-      linkEn: "/en/prototype/postprocess/chemical/cleaning",
-      attrs: { id: "prototype" },
-    },
-    {
-      label: "化学抛光",
-      link: "/prototype/postprocess/chemical/polish",
-      linkEn: "/en/prototype/postprocess/chemical/polish",
-      labelEn: "Chemical polish",
-      translations: {
-        en: "Chemical polis",
+      {
+        label: "导电涂层",
+        labelEn: "Conductive Coating",
+        translations: {
+          en: "Conductive Coating",
+        },
+        link: "/prototype/postprocess/functional/conductive",
+        linkEn: "/en/prototype/postprocess/functional/conductive",
+        attrs: { id: "prototype" },
       },
-      attrs: { id: "prototype" },
-    },
-  ],
-},
-//功能性处理（Functional Treatment）**涂覆润滑层（Lubrication Coating），导电涂层（Conductive Coating），防锈处理（Rust Prevention）
- {
-  label: "功能性处理",
-  labelEn: "Functional Treatment",
-  translations: {
-    en: "Functional Treatment",
+      {
+        label: "防锈处理",
+        link: "/prototype/postprocess/functional/rustprevention",
+        linkEn: "/en/prototype/postprocess/functional/rustprevention",
+        labelEn: "Rust Prevention",
+        translations: {
+          en: "Rust Prevention",
+        },
+        attrs: { id: "prototype" },
+      },
+    ],
   },
-  collapsed: true,
-  items: [
-    {
-      label: "涂覆润滑层",
-      labelEn: "Lubrication Coating",
-      translations: {
-        en: "Lubrication Coating",
-      },
-      link: "/prototype/postprocess/functional/lubrication",
-      linkEn: "/en/prototype/postprocess/functional/lubrication",
-      attrs: { id: "prototype" },
-    },
-    {
-      label: "导电涂层",
-      labelEn: "Conductive Coating",
-      translations: {
-        en: "Conductive Coating",
-      },
-      link: "/prototype/postprocess/functional/conductive",
-      linkEn: "/en/prototype/postprocess/functional/conductive",
-      attrs: { id: "prototype" },
-    },
-    {
-      label: "防锈处理",
-      link: "/prototype/postprocess/functional/rustprevention",
-      linkEn: "/en/prototype/postprocess/functional/rustprevention",
-      labelEn: "Rust Prevention",
-      translations: {
-        en: "Rust Prevention",
-      },
-      attrs: { id: "prototype" },
-    },
-  ],
-},
-//6other 
+  //6other 
   {
     label: "其他特殊处理",
     labelEn: "Other special Treatment",
@@ -4299,7 +4311,7 @@ const PrototypeMenuItems = [
         attrs: { id: "prototype" },
       },
     ],
-  },    
+  },
 
   {
     label: "--------测试--------",
@@ -4345,17 +4357,17 @@ const PrototypeMenuItems = [
     ],
   },
 
-//沙盘
-//  {
-//    label: "--------数字沙盘--------",
-//    labelEn: "digital sandtable",
-//    link: "/prototype/sandtable",
-//    linkEn: "/en/prototype/sandtable",
-//    translations: {
-//      en: "digital sandtabl",
-//    },
-//    attrs: { id: "prototype" },
-//  },
+  //沙盘
+  //  {
+  //    label: "--------数字沙盘--------",
+  //    labelEn: "digital sandtable",
+  //    link: "/prototype/sandtable",
+  //    linkEn: "/en/prototype/sandtable",
+  //    translations: {
+  //      en: "digital sandtabl",
+  //    },
+  //    attrs: { id: "prototype" },
+  //  },
 ];
 
 // 侧边菜单项 - AGV
@@ -4648,7 +4660,7 @@ const sandtableMenuItems = [
     label: "控制",
     link: "/sandtable/control",
     labelEn: "Control",
-  
+
     translations: {
       en: "sandtable",
     },
@@ -4751,7 +4763,7 @@ const MenuData: NavItemProps[] = [
       {
         label: "材料",
         link: "/prototype/about",
-        labelEn: "Material",  
+        labelEn: "Material",
         translations: {
           en: "material",
         },
@@ -4785,16 +4797,16 @@ const MenuData: NavItemProps[] = [
           en: "test",
         },
       },
-   //   {
-   //     label: "数字沙盘",
-   //     labelEn: "Digital sandtable",
-   //     link: "/prototype/sandtable",
-   //     linkEn: "/en/prototype/sandtable",
-   //     translations: {
-   //       en: "digital sandtabl",
-   //     },
-   //     attrs: { id: "prototype" },
-   //   },
+      //   {
+      //     label: "数字沙盘",
+      //     labelEn: "Digital sandtable",
+      //     link: "/prototype/sandtable",
+      //     linkEn: "/en/prototype/sandtable",
+      //     translations: {
+      //       en: "digital sandtabl",
+      //     },
+      //     attrs: { id: "prototype" },
+      //   },
       {
         label: "探索数字制造",
         labelEn: "explore digital fabrication",
@@ -4814,7 +4826,7 @@ const MenuData: NavItemProps[] = [
     link: "http://sophicar.com/",
     linkEn: "http://sophicar.com/",
     items: [
-  
+
       {
         label: "车辆参数化生成工具",
         labelEn: "AGV design platform",
@@ -4860,7 +4872,7 @@ const MenuData: NavItemProps[] = [
       },
     ],
   },
-//nav- sand table model 
+  //nav- sand table model 
 
   {
     key: "sandtable",
@@ -4869,7 +4881,7 @@ const MenuData: NavItemProps[] = [
     link: "/sandtable/basic",
     linkEn: "/en/sandtable/basic",
     items: [
-  
+
       {
         label: "加工工艺",
         labelEn: "Manufacturing process",
@@ -4881,14 +4893,14 @@ const MenuData: NavItemProps[] = [
         labelEn: "digital control",
         link: "/sandtable/control",
         linkEn: "/en/sandtable/control",
-        
+
       },
       {
         label: "后处理",
         labelEn: "Post-processing",
         link: "/sandtable/postprocessing",
         linkEn: "/en/sandtable/postprocessing",
-      
+
       },
       {
         label: "维护",

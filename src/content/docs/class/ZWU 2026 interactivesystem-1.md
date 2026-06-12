@@ -46,16 +46,22 @@ Daily homework full score is 60
 | Course Content       | Full Score  |  
 | ------------- | :-----:|	
 | [Project management](doc/1projectmanage/Assessment1.md)             | 10   | 
-| [Arduino ](doc/5arduino/assessment.md)                        | 10   | 
-| [ Interface application programming ](doc/11Interface-application-programming/Assessment.md) |  5   |  
+| [Arduino ](doc/5arduino/assessment.md)                        | 15  |  
 | [Material](doc/12material&tool/assessment.md)                       |  5   |  
-| [Computer aided design](doc/2cad/Assessment.md)                     |  10  |  
+| [Computer aided design](doc/2cad/Assessment.md)                     |  15 |  
 | [3D printing ](doc/3_3dprinter/assessment.md)                       |  10  | 
-| [Computer-controlled cutting](doc/6laser_cutter/Assessment.md)      |  5   | 
 | [Arduino IOT](doc/10IOT/Assessment.md)                              |  5   |  
 
-
 Final presentation full socre is  40
+
+* Topic;
+* Solve which problem for your customer；
+* Innovation;
+* Market(similar product,price ,market channel);
+* Key tech analyse,and Potential tech problem；
+* Material and how to make it;
+* Solve some problem in SDG
+
 
 
 

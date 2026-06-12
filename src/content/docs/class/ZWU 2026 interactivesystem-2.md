@@ -25,14 +25,14 @@ We have online guidebook [www.nexmaker.com](www.nexmaker.com) . We would try to 
 | 04-10 | [Open-source hardware and Arduino output](doc/5arduino/assessment.md)  |   
 |04-17 | [Arduino input](doc/5arduino/assessment.md)    | 
 | 04-24 | [Processing(Interface application programming)](doc/11Interface-application-programming/Assessment.md)|  
-| 05-1| [Computer aided design](doc/2cad/Assessment.md)|
-| 05-8 | [ Material](doc/12material&tool/assessment.md） |
-| 05-25 |[3D printing](doc/3_3dprinter/assessment.md) | 
-| 06-01 | AI &Midterm presentation    |  
-| 06-08 | [IOT ](doc/10IOT/Assessment.md) | 
-| 06-15 | [Computer-controlled cutting](doc/6laser_cutter/Assessment.md) |    
-| 06-22 |   QA |  
-| 06-29 | Final presentation  |  
+| 05-15| [Computer aided design](doc/2cad/Assessment.md)|
+| 05-22 | [ Material](doc/12material&tool/assessment.md) |
+| 05-29 |[3D printing](doc/3_3dprinter/assessment.md) | 
+| 06-5 | AI &Midterm presentation    |  
+| 06-12 | [IOT ](doc/10IOT/Assessment.md) | 
+| 06-19 | [Computer-controlled cutting](doc/6laser_cutter/Assessment.md) |    
+| 06-26 |   QA |  
+| 07-03 | Final presentation  |  
 
 
 # Evolution
@@ -44,17 +44,21 @@ Daily homework full score is 60
 | Course Content       | Full Score  |  
 | ------------- | :-----:|	
 | [Project management](doc/1projectmanage/Assessment1.md)             | 10   | 
-| [Arduino ](doc/5arduino/assessment.md)                        | 10   | 
-| [ Interface application programming ](doc/11Interface-application-programming/Assessment.md) |  5   |  
+| [Arduino ](doc/5arduino/assessment.md)                        | 15  |  
 | [Material](doc/12material&tool/assessment.md)                       |  5   |  
-| [Computer aided design](doc/2cad/Assessment.md)                     |  10  |  
+| [Computer aided design](doc/2cad/Assessment.md)                     |  15 |  
 | [3D printing ](doc/3_3dprinter/assessment.md)                       |  10  | 
-| [Computer-controlled cutting](doc/6laser_cutter/Assessment.md)      |  5   | 
 | [Arduino IOT](doc/10IOT/Assessment.md)                              |  5   |  
-
 
 Final presentation full socre is  40
 
+* Topic;
+* Solve which problem for your customer；
+* Innovation;
+* Market(similar product,price ,market channel);
+* Key tech analyse,and Potential tech problem；
+* Material and how to make it;
+* Solve some problem in SDG
 
 
 #### [what the dog doing](https://nexmaker-fab.github.io/ZWU-2026-2-001/#home)
@@ -66,8 +70,8 @@ Final presentation full socre is  40
 | Arduino | 1.need picture link;show own case for detail |20260605|4|
 | [ Interface application programming ](doc/11Interface-application-programming/Assessment.md) |   |   |   |  
 | [Material](doc/12material&tool/assessment.md)                       |  5   |   |   |   |  
-| [Computer aided design](doc/2cad/Assessment.md)                     |  1.need sophicar method;2,gallery data;3 neeed hand working |  20260605 |   |  6 |  
-| [3D printing ](doc/3_3dprinter/assessment.md)                       |  how to get model2;explain setting;3 need high quality pciture  | 20260605  |8   |  
+| [Computer aided design](doc/2cad/Assessment.md)                     |  1.need sophicar method; <br> 2,gallery data; <br> 3 neeed hand working |  20260605 |   |  6 |  
+| [3D printing ](doc/3_3dprinter/assessment.md)                       |  1.how to get model <br>2;explain setting;  <br> 3 need high quality pciture  | 20260605  |8   |  
 | [Computer-controlled cutting](doc/6laser_cutter/Assessment.md)      |  5   |  |   |   |  
 | [Arduino IOT](doc/10IOT/Assessment.md)                              |  5   |   |   |   |  
 
