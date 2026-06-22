@@ -115,12 +115,12 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage | 1. link to tool;<br>2 need high quality picture;<br>3,how to build web|20260601|5|
-| arduino | 1. update arduino picture|20260601||
-| [Material](doc/12material&tool/assessment.md)                       |    |   |   |   |  
-| [Computer aided design](doc/2cad/Assessment.md)                     | |   |   |  
-| [3D printing ](doc/3_3dprinter/assessment.md)                       |  |  |  |  
-| [Arduino IOT](doc/10IOT/Assessment.md)                              |     |   |   |   |  
+| Project manage | 1. link to tool;<br>2 need high quality picture;<br>3,how to build web<br>4.prompt highlight<br>show how to use p5js|20260622|8|
+| arduino | 1. update arduino picture<br>2.need pic link<br>3.more picture for arduino q<br>4. arduino connect|20260622|7|
+| [Material](doc/12material&tool/assessment.md)                       |   1. 物理与机械性能<br>2.r<br>3.pppa introduce<br>4. battery | 20260622  |   3|
+| [Computer aided design](doc/2cad/Assessment.md)                     |ai result<br>2.cad design | 20260622  |   10|  
+| [3D printing ](doc/3_3dprinter/assessment.md)                       | 1. optimize pic<br>2. add patamenter setting |20260622  |5  |  
+| [Arduino IOT](doc/10IOT/Assessment.md)                              |  1.introduce key how to do    |   20260622|2   |  
 
 
 
