@@ -88,11 +88,11 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage |1. need teammember link; <br>2.all english; <br>3.delete github picture;<br>4.update Fill in repository information <br>5. add github desktop clone ;<br>6.**how to build webpage**;<br>6 prompt;<br>7lingma link;<br>8 change gitclone to git push with github desktop |20260601|7|
-| Arduino | 1. change to uno r4；<br>2 Arduino ide update ； <br>3 gif for Arduino example ；<br>4 wire update |20260601|7|
-| [Material](doc/12material&tool/assessment.md)                       |    |   |   |   |  
-| [Computer aided design](doc/2cad/Assessment.md)                     | |   |   |  
-| [3D printing ](doc/3_3dprinter/assessment.md)                       |  |  |  |  
+| Project manage |~~1. need teammember link;~~ <br>~~2.all english;~~ <br>~~3.delete github picture;~~<br>4.update Fill in repository information <br>~~5. add github desktop clone ;~~<br>~~6.**how to build webpage**;~~<br>6 prompt;<br>7lingma link;<br>8 change gitclone to git push with github desktop<br>9.how to open terminal<br>10.css  |2026060228|
+| Arduino | ~~1. change to uno r4~~ need link；<br>2 Arduino ide update ； <br>~~3 gif for Arduino example ；~~<br>4 wire update |20260622|10|
+| [Material](doc/12material&tool/assessment.md)                       |  1.AB epoxy resin glue and 502 glue <br>2.AB Two-Component Crystal Drop Glue<br>3. delete Material 5<br>4. add pic for final result | 20260622  |  3 |  
+| [Computer aided design](doc/2cad/Assessment.md)                     |1.add sophicar link<br>2.import data<br>3.hight prompt<br>4.change stl to f3d<br>5.change the screenshot of chair<br>6. need your own design with eevery step | 20260622  | 8  |  
+| [3D printing ](doc/3_3dprinter/assessment.md)                       |  | 20260622 | 8 |  
 | [Arduino IOT](doc/10IOT/Assessment.md)                              |     |   |   |   |  
 
 
