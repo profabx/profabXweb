@@ -70,12 +70,12 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage |1. NEW_FILE_CODE <br> 2. link to personal webpage <br> 3. recommand personal icon <br> 4.how to build webpage  <br> 5.final project introduce |20260601|5|
-| Arduino |  |||
-| [Material](doc/12material&tool/assessment.md)                       |    |   |   |   |  
-| [Computer aided design](doc/2cad/Assessment.md)                     | |   |   |  
-| [3D printing ](doc/3_3dprinter/assessment.md)                       |  |  |  |  
-| [Arduino IOT](doc/10IOT/Assessment.md)                              |     |   |   |   |  
+| Project manage |~~1. NEW_FILE_CODE ~~<br> ~~2. link to personal webpage~~ <br>~~ 3. recommand personal icon ~~<br> ~~4.how to build webpage ~~ <br> ~~5.final project introduce~~ |20260622|10|
+| Arduino | 1. delete tool with github<br>2.aruino detail<br>3.coding highligth <br>3.arduino connect<br>4arduino input|20260622|10|
+| [Material](doc/12material&tool/assessment.md)                       |  post process  |  20260622|  3 | 
+| [Computer aided design](doc/2cad/Assessment.md)                     | 1.ai prompt<br>2gallery assemblt<br>own design | 20260622  |  10 |  
+| [3D printing ](doc/3_3dprinter/assessment.md)                       | need own model and pic<br>need test data |20260622  |  6|  
+| [Arduino IOT](doc/10IOT/Assessment.md)                              |     |   |   |  
 
 
 
