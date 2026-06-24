@@ -93,14 +93,12 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage ||20260605||
+| Project manage |1. github. before lingma<br>2.tool<br>3. github web page<br>4.highligh prompt<br>5. how to set nvabar<br>file and fold relationship|20260624|6|
 | Arduino | 1. need link for fastled and isntall,;2 coding highlight; 3gif for result |20260605|5|
-| [ Interface application programming ](doc/11Interface-application-programming/Assessment.md) |   |   |   |  
 | [Material](doc/12material&tool/assessment.md)                       |    |   |   |   |  
-| [Computer aided design](doc/2cad/Assessment.md)                     | |   |   |  
-| [3D printing ](doc/3_3dprinter/assessment.md)                       |  |  |  |  
-| [Computer-controlled cutting](doc/6laser_cutter/Assessment.md)      |    |  |   |   |  
-| [Arduino IOT](doc/10IOT/Assessment.md)                              |     |   |   |   |  
+| [Computer aided design](doc/2cad/Assessment.md)                     |1. how to get car model<br>2.import to fusion<br>3. commnad with sketch<br>4. assemble<br>5. AI <br>gallery|  20260624 | 10  |  
+| [3D printing ](doc/3_3dprinter/assessment.md)                       |  1. need own design <br>2.how to use software<br>3. how to run machine with screen|  20260624|6  |  
+| [Arduino IOT](doc/10IOT/Assessment.md)                              |  how to control   |  20260624 | 4 |  
 
 
 #### [004](https://nexmaker-fab.github.io/ZWU-2026-2-004/)
