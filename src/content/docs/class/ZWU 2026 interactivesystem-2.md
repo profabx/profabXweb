@@ -66,12 +66,12 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage |  ~~1. tool need link；~~<br>~~2.set page need step number;~~<br>3 prompt need text ;<br>4.show lingma ui and fold relationship;<br>~~5.build css file;~~<br>6 need index.html,show how to build navbar and sidebar|20260612|7|
-| Arduino | 1.need picture link;<br>show own case for detail |20260605|4|
-| [Material](doc/12material&tool/assessment.md)                       |    |   |   |   |  
-| [Computer aided design](doc/2cad/Assessment.md)                     |  1.need sophicar method; <br> 2,gallery data; <br> 3 neeed hand working |  20260605 |   |  6 |  
-| [3D printing ](doc/3_3dprinter/assessment.md)                       |  1.how to get model <br>2;explain setting;  <br> 3 need high quality pciture  | 20260605  |8   |  
-| [Arduino IOT](doc/10IOT/Assessment.md)                              |    |   |   |   |  
+| Project manage |  ~~1. tool need link；~~<br>~~2.set page need step number;~~<br>~~3 prompt need text ;~~<br>~~4.show lingma ui and fold relationship;~~<br>~~5.build css file;~~<br>~~6 need index.html,show how to build navbar and sidebar~~|20260624|9|
+| Arduino | ~~1.need picture link;~~<br>~~show own case for detail ~~<br>3.optimize|20260605|11|
+| [Material](doc/12material&tool/assessment.md)                       |    |   |   |  
+| [Computer aided design](doc/2cad/Assessment.md)  | ~~ 1.need sophicar method;~~ <br> 2,gallery data; <br> ~~3 neeed hand working~~<br>4. need assemble |  20260624 |   12 |  
+| [3D printing ](doc/3_3dprinter/assessment.md)  | ~~ 1.how to get model ~~<br>~~2;explain setting;~~  <br> ~~3 need high quality pciture ~~ | 20260624 |10   |  
+| [Arduino IOT](doc/10IOT/Assessment.md)                              |    need detail for one function| 2026064  | 3  |   
 
 
 #### [002](https://nexmaker-fab.github.io/ZWU-2026-2-002/)
@@ -79,12 +79,12 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage |1. need personal link<br>2. navbar optimize<br>3.optimize homepage layout|20260605||
+| Project manage |~~1. need personal link~~<br>~~2. navbar optimize~~<br>3.optimize homepage layout<br>how to buil web|20260624|5|
 | Arduino | 1. change sensor<br>2. add lcd screen <br>3.coding need highlight<br>4.gif for result<br>5.connection picture<br>arduino introduce<br>7. similar case with finial project|202606012|10|
-| [Material](doc/12material&tool/assessment.md)                       |    |   |   |   |  
-| [Computer aided design](doc/2cad/Assessment.md)                     |1.show prompt; <br> <br>2. how to get model from sophicar<br>3. design one model detail|  202606012 |  8 |  
+| [Material](doc/12material&tool/assessment.md)                       |    |   |   |  
+| [Computer aided design](doc/2cad/Assessment.md)  |~~1.show prompt;~~ <br> ~~2. how to get model from sophicar~~<br>3. design one model detail|  202606024 |  11 |  
 | [3D printing ](doc/3_3dprinter/assessment.md)                       |  |  |  |   
-| [Arduino IOT](doc/10IOT/Assessment.md)                              |     |   |   |   |  
+| [Arduino IOT](doc/10IOT/Assessment.md)                              |     |   |   |  
 
 
 
@@ -106,7 +106,7 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage ||20260605||
+| Project manage |1.need personal introduce<br>2. device control introduce|20260624|5|
 | Arduino |  |20260605||
 | [Material](doc/12material&tool/assessment.md)                       |    |   |   |   |  
 | [Computer aided design](doc/2cad/Assessment.md)                     | |   |   |  
