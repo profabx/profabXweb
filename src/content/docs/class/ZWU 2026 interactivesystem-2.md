@@ -106,12 +106,12 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage |1.need personal introduce<br>2. device control introduce|20260624|5|
-| Arduino |  |20260605||
-| [Material](doc/12material&tool/assessment.md)                       |    |   |   |   |  
-| [Computer aided design](doc/2cad/Assessment.md)                     | |   |   |  
-| [3D printing ](doc/3_3dprinter/assessment.md)                       |  |  |  |  
-| [Arduino IOT](doc/10IOT/Assessment.md)                              |     |   |   |   |  
+| Project manage |~~1.need personal introduce~~<br>2. device control introduce<br>3.check nexmaker tate<br>4. file and fold relationship<br>how to connect github|20260624|6|
+| Arduino |1. wire color <br>2.introduce osh <br>3.physical result|20260626|5|
+| [Material](doc/12material&tool/assessment.md) |  need more detail (picture)  |  20260626 |  3 | 
+| [Computer aided design](doc/2cad/Assessment.md)|parameter screenshot |   |   |  
+| [3D printing ](doc/3_3dprinter/assessment.md)  | software and hardware setting |20260626  | 7 |  
+| [Arduino IOT](doc/10IOT/Assessment.md)    |     |   |   |   |  
 
 
 
