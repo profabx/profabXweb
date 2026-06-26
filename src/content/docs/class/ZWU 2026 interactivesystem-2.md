@@ -67,10 +67,10 @@ Final presentation full socre is  40
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
 | Project manage |  ~~1. tool need link；~~<br>~~2.set page need step number;~~<br>~~3 prompt need text ;~~<br>~~4.show lingma ui and fold relationship;~~<br>~~5.build css file;~~<br>~~6 need index.html,show how to build navbar and sidebar~~|20260624|9|
-| Arduino | ~~1.need picture link;~~<br>~~show own case for detail ~~<br>~~3.optimize~~|20260626|15|
+| Arduino | ~~1.need picture link;~~<br>~~show own case for detail~~<br>~~3.optimize~~|20260626|15|
 | [Material](doc/12material&tool/assessment.md)   |  pic update,plastic spay |  20260626 | 4  |  
-| [Computer aided design](doc/2cad/Assessment.md)  | ~~ 1.need sophicar method;~~ <br>~~ 2,gallery data;~~ <br> ~~3 neeed hand working~~<br>~~4. need assemble~~ |  20260626 |   13 |  
-| [3D printing ](doc/3_3dprinter/assessment.md)  | ~~ 1.how to get model ~~<br>~~2;explain setting;~~  <br> ~~3 need high quality pciture ~~ | 20260624 |10   |  
+| [Computer aided design](doc/2cad/Assessment.md)  | ~~1.need sophicar method;~~ <br>~~2,gallery data;~~ <br> ~~3 neeed hand working~~<br>~~4. need assemble~~ |  20260626 |   13 |  
+| [3D printing ](doc/3_3dprinter/assessment.md)  | ~~1.how to get model ~~<br>~~2;explain setting;~~  <br> ~~3 need high quality pciture~~ | 20260624 |10   |  
 | [Arduino IOT](doc/10IOT/Assessment.md)   |    need detail for one function| 2026064  | 3  |   
 
 
@@ -94,11 +94,11 @@ Final presentation full socre is  40
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
 | Project manage |~~1. github. before lingma~~<br>~~2.tool~~<br>~~3. github web page~~<br>~~4.highligh prompt~~<br>~~5. how to set nvabar~~<br>~~file and fold relationship~~|20260626|10|
-| Arduino | ~~1. need link for fastled and install;~~<br>~~2 coding highlight;~~<br>~~ 3gif for result~~<br> 4. introduce osh|20260626|13|
-| [Material](doc/12material&tool/assessment.md)  |    |   |   | 
-| [Computer aided design](doc/2cad/Assessment.md)  |1. how to get car model<br>2.import to fusion<br>~~3. commnad with sketch~~<br>4. assemble<br>5. AI <br>gallery|  20260626 | 12  |  
+| Arduino | ~~1. need link for fastled and install;~~<br>~~2 coding highlight;~~<br>~~ 3gif for result~~<br>~~4. introduce osh~~|20260626|14|
+| [Material](doc/12material&tool/assessment.md)  |    |  20260626 | 2  | 
+| [Computer aided design](doc/2cad/Assessment.md)  |~~1. how to get car model~~<br>2.import to fusion<br>~~3. commnad with sketch~~<br>4. assemble<br>~~5. AI~~ <br>~~gallery~~|  20260626 | 13  |  
 | [3D printing ](doc/3_3dprinter/assessment.md) |  1. need own design <br>2.how to use software<br>3. how to run machine with screen|  20260624|6  |  
-| [Arduino IOT](doc/10IOT/Assessment.md)   |  how to control   |  20260626 | 4 |  
+| [Arduino IOT](doc/10IOT/Assessment.md)   |  ~~how to control~~   |  20260626 | 5   |  
 
 
 #### [004](https://nexmaker-fab.github.io/ZWU-2026-2-004/)
