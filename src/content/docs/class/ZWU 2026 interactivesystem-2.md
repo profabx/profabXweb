@@ -79,12 +79,12 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage |~~1. need personal link~~<br>~~2. navbar optimize~~<br>3.optimize homepage layout<br>4.how to buil web<br>5. link for tool<br>6.highlight prompt<br>7.fabacademy doc link<br>8. file and fold relationship(pic)|20260626|7|
-| Arduino | ~~1. change sensor~~<br>sensor link <br>~~2. add lcd screen~~ <br>~~3.coding need highlight~~<br>4.gif for result<br>~~5.connection picture~~<br>arduino introduce<br>7. similar case with finial project<br>osh introduce|202606026|10|
-| [Material](doc/12material&tool/assessment.md)   |    |   |   |  
-| [Computer aided design](doc/2cad/Assessment.md)  |~~1.show prompt;~~ <br> ~~2. how to get model from sophicar~~<br>3. design one model detail(sketch)<br>4.gallery data|  202606026|  11 |  
-| [3D printing ](doc/3_3dprinter/assessment.md)  |  software setting and hadrware setting<br> own design|20260626  |  |   
-| [Arduino IOT](doc/10IOT/Assessment.md)    |     |   |   |  
+| Project manage |~~1. need personal link~~<br>~~2. navbar optimize~~<br>~~3.optimize homepage layout~~<br>~~4.how to buil web~~<br>~~5. link for tool~~<br>~~6.highlight prompt~~<br>~~7.fabacademy doc link~~<br>~~8. file and fold relationship(pic)~~|20260626|8|
+| Arduino | ~~1. change sensor~~<br>~~sensor link~~ <br>~~2. add lcd screen~~ <br>~~3.coding need highlight~~<br>~~4.gif for result~~<br>~~5.connection picture~~<br>arduino introduce<br>~~7. similar case with finial project~~<br>osh introduce|202606026|12|
+| [Material](doc/12material&tool/assessment.md)   |    | 20260626  | 3  |  
+| [Computer aided design](doc/2cad/Assessment.md)  |~~1.show prompt;~~ <br> ~~2. how to get model from sophicar~~<br>~~3. design one model detail(sketch)~~<br>~~4.gallery data~~|  202606026|  13 |  
+| [3D printing ](doc/3_3dprinter/assessment.md)  |  software setting and hadrware setting<br> own design|20260626  | 6 |   
+| [Arduino IOT](doc/10IOT/Assessment.md)    |     |  20260626 |  4 |  
 
 
 
@@ -95,9 +95,9 @@ Final presentation full socre is  40
 | ------------- | :-----:|:-----:|-----:|
 | Project manage |~~1. github. before lingma~~<br>~~2.tool~~<br>~~3. github web page~~<br>~~4.highligh prompt~~<br>~~5. how to set nvabar~~<br>~~file and fold relationship~~|20260626|10|
 | Arduino | ~~1. need link for fastled and install;~~<br>~~2 coding highlight;~~<br>~~ 3gif for result~~<br>~~4. introduce osh~~|20260626|14|
-| [Material](doc/12material&tool/assessment.md)  |    |  20260626 | 2  | 
-| [Computer aided design](doc/2cad/Assessment.md)  |~~1. how to get car model~~<br>2.import to fusion<br>~~3. commnad with sketch~~<br>4. assemble<br>~~5. AI~~ <br>~~gallery~~|  20260626 | 13  |  
-| [3D printing ](doc/3_3dprinter/assessment.md) |  1. need own design <br>2.how to use software<br>3. how to run machine with screen|  20260624|6  |  
+| [Material](doc/12material&tool/assessment.md)  |    |  20260626 | 3  | 
+| [Computer aided design](doc/2cad/Assessment.md)  |~~1. how to get car model~~<br>~~2.import to fusion~~<br>~~3. commnad with sketch~~<br>~~4. assemble~~<br>~~5. AI~~ <br>~~gallery~~|  20260626 | 14 |  
+| [3D printing ](doc/3_3dprinter/assessment.md) |  ~~1. need own design~~ <br>2.how to use software<br>~~3. how to run machine with screen~~|  20260626|8  |  
 | [Arduino IOT](doc/10IOT/Assessment.md)   |  ~~how to control~~   |  20260626 | 5   |  
 
 
@@ -106,12 +106,12 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage |~~1.need personal introduce~~<br>2. device control introduce<br>3.check nexmaker tate<br>4. file and fold relationship<br>how to connect github|20260624|6|
-| Arduino |1. wire color <br>2.introduce osh <br>3.physical result|20260626|5|
+| Project manage |~~1.need personal introduce~~<br>2. device control introduce<br>3.check nexmaker tate<br>~~4.file and fold relationship~~<br>5.how to connect github|20260626|7|
+| Arduino |1. wire color <br>2.introduce osh <br>3.physical result|20260626|7|
 | [Material](doc/12material&tool/assessment.md) |  need more detail (picture)  |  20260626 |  3 | 
-| [Computer aided design](doc/2cad/Assessment.md)|parameter screenshot |   |   |  
-| [3D printing ](doc/3_3dprinter/assessment.md)  | software and hardware setting |20260626  | 7 |  
-| [Arduino IOT](doc/10IOT/Assessment.md)    |     |   |   |   |  
+| [Computer aided design](doc/2cad/Assessment.md)|parameter screenshot |  20260626 |  5 |  
+| [3D printing ](doc/3_3dprinter/assessment.md)  | software and hardware setting |20260626  | 8|  
+| [Arduino IOT](doc/10IOT/Assessment.md)    |     |   20260626|  2 | 
 
 
 
@@ -122,7 +122,7 @@ Final presentation full socre is  40
 | ------------- | :-----:|:-----:|-----:|
 | Project manage |need detail|20260626|6|
 | Arduino | 1. detail introduce for case<br>2.introduce opensource hardware |20260626|8|
-| [Material](doc/12material&tool/assessment.md)                       |    |   |   |  
+| [Material](doc/12material&tool/assessment.md)  |    |  20260626 |3   |  
 | [Computer aided design](doc/2cad/Assessment.md)  |1.detail for one model<br>2.how to import data<br>3.gallery data<br> ai data join in design|20260626   | 8  |  
-| [3D printing ](doc/3_3dprinter/assessment.md) | 1.picture layout <br>2.own design and 3d printing<br>3.how to use the software and machine |20260626  | 5 |  
+| [3D printing ](doc/3_3dprinter/assessment.md) | 1.picture layout <br>~~2.own design and 3d printing~~<br>3.how to use the software and machine |20260626  | 7|  
 | [Arduino IOT](doc/10IOT/Assessment.md)  |   tech analysis | 20260626   |  3 |  
