@@ -120,9 +120,9 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage ||20260605||
-| Arduino |  |20260605||
-| [Material](doc/12material&tool/assessment.md)                       |    |   |   |   |  
-| [Computer aided design](doc/2cad/Assessment.md)                     | |   |   |  
-| [3D printing ](doc/3_3dprinter/assessment.md)                       |  |  |  |  
-| [Arduino IOT](doc/10IOT/Assessment.md)                              |     |   |   |   |  
+| Project manage |need detail|20260626|6|
+| Arduino | 1. detail introduce for case<br>2.introduce opensource hardware |20260626|8|
+| [Material](doc/12material&tool/assessment.md)                       |    |   |   |  
+| [Computer aided design](doc/2cad/Assessment.md)  |1.detail for one model<br>2.how to import data<br>3.gallery data<br> ai data join in design|20260626   | 8  |  
+| [3D printing ](doc/3_3dprinter/assessment.md) | 1.picture layout <br>2.own design and 3d printing<br>3.how to use the software and machine |20260626  | 5 |  
+| [Arduino IOT](doc/10IOT/Assessment.md)  |     |   |   |  
