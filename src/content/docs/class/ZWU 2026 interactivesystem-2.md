@@ -68,10 +68,10 @@ Final presentation full socre is  40
 | ------------- | :-----:|:-----:|-----:|
 | Project manage |  ~~1. tool need link；~~<br>~~2.set page need step number;~~<br>~~3 prompt need text ;~~<br>~~4.show lingma ui and fold relationship;~~<br>~~5.build css file;~~<br>~~6 need index.html,show how to build navbar and sidebar~~|20260624|9|
 | Arduino | ~~1.need picture link;~~<br>~~show own case for detail~~<br>~~3.optimize~~|20260626|15|
-| [Material](doc/12material&tool/assessment.md)   |  pic update,plastic spay |  20260626 | 4  |  
+| [Material](doc/12material&tool/assessment.md)   | ~~pic update,plastic spay~~ |  20260626 |5  |  
 | [Computer aided design](doc/2cad/Assessment.md)  | ~~1.need sophicar method;~~ <br>~~2,gallery data;~~ <br> ~~3 neeed hand working~~<br>~~4. need assemble~~ |  20260626 |   13 |  
-| [3D printing ](doc/3_3dprinter/assessment.md)  | ~~1.how to get model ~~<br>~~2;explain setting;~~  <br> ~~3 need high quality pciture~~ | 20260624 |10   |  
-| [Arduino IOT](doc/10IOT/Assessment.md)   |    need detail for one function| 2026064  | 3  |   
+| [3D printing ](doc/3_3dprinter/assessment.md)  | ~~1.how to get model~~<br>~~2;explain setting;~~  <br> ~~3 need high quality pciture~~ | 20260624 |10   |  
+| [Arduino IOT](doc/10IOT/Assessment.md)   |    ~~need detail for one function~~| 20260626  | 5  |   
 
 
 #### [002](https://nexmaker-fab.github.io/ZWU-2026-2-002/)
