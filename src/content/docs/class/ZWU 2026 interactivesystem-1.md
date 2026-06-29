@@ -55,12 +55,12 @@ Daily homework full score is 60
 Final presentation full socre is  40
 
 * Topic;
-* Solve which problem for your customer；
-* Innovation;
-* Market(similar product,price ,market channel);
-* Key tech analyse,and Potential tech problem；
-* Material and how to make it;
-* Solve some problem in SDG
+* Solve which problem for your customer（5）；
+* Innovation（5）;
+* Market(similar product,price ,market channel)（5）;
+* Key tech analyse,and Potential tech problem（5）；
+* Material and how to make it（15）;
+* Solve some problem in SDG（5）
 
 
 
