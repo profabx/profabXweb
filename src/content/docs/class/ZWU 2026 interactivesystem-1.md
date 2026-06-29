@@ -60,7 +60,7 @@ Final presentation full socre is  40
 * Market(similar product,price ,market channel)（5）;
 * Key tech analyse,and Potential tech problem（5）；
 * Material and how to make it（15）;
-* Solve some problem in SDG（5）
+* Solve some problem in SDGs（5）
 
 
 
@@ -70,10 +70,10 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage |~~1. NEW_FILE_CODE ~~<br> ~~2. link to personal webpage~~ <br>~~ 3. recommand personal icon ~~<br> ~~4.how to build webpage ~~ <br> ~~5.final project introduce~~ |20260622|10|
+| Project manage |~~1. NEW_FILE_CODE ~~<br> ~~2. link to personal webpage~~ <br>~~ 3. recommand personal icon~~<br> ~~4.how to build webpage~~ <br> ~~5.final project introduce~~ |20260622|10|
 | Arduino | ~~1. delete tool with github~~<br>~~2.aruino detail~~<br>~~3.coding highligth~~ <br>~~3.arduino connect~~<br>~~4arduino input~~|20260622|13|
 | [Material](doc/12material&tool/assessment.md)                       |  post process  |  20260622|  4 | 
-| [Computer aided design](doc/2cad/Assessment.md)                     | ~~1.ai prompt~~<br>~~2gallery assemble<br>own design | 20260622  |  13 |  
+| [Computer aided design](doc/2cad/Assessment.md)                     | ~~1.ai prompt~~<br>~~2gallery assemble~~<br>own design | 20260622  |  13 |  
 | [3D printing ](doc/3_3dprinter/assessment.md)                       | need own model and pic<br>~~need test data~~ |20260622  |  8|  
 | [Arduino IOT](doc/10IOT/Assessment.md)                              |     |  20260622 | 3  |  
 
@@ -89,7 +89,7 @@ Final presentation full socre is  40
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
 | Project manage |~~1. need teammember link;~~ <br>~~2.all english;~~ <br>~~3.delete github picture;~~<br>4.update Fill in repository information <br>~~5. add github desktop clone ;~~<br>~~6.**how to build webpage**;~~<br>~~6 prompt;~~<br>~~7lingma link~~<br>~~8 change gitclone to git push with github desktop~~<br>~~9.how to open terminal~~<br>~~10.css~~  |202606022|10|
-| Arduino | ~~1. change to uno r4~~ ~~need link；~~<br>~~2 Arduino ide update ； ~~<br>~~3 gif for Arduino example ；~~<br>4 wire update |20260622|13|
+| Arduino | ~~1. change to uno r4~~ ~~need link；~~<br>~~2 Arduino ide update~~<br>~~3 gif for Arduino example ；~~<br>4 wire update |20260622|13|
 | [Material](doc/12material&tool/assessment.md)                       |  1.AB epoxy resin glue and 502 glue <br>2.AB Two-Component Crystal Drop Glue<br>3. delete Material 5<br>4. add pic for final result | 20260622  |  3 |  
 | [Computer aided design](doc/2cad/Assessment.md)                     |1.add sophicar link<br>2.import data<br>3.hight prompt<br>4.change stl to f3d<br>5.change the screenshot of chair<br>~~6. need your own design with eevery step~~ | 20260622  | 12  |  
 | [3D printing ](doc/3_3dprinter/assessment.md)                       |  | 20260622 | 10 |  
@@ -116,12 +116,12 @@ Final presentation full socre is  40
 
 | Topic       | Question        |  Update time   | Condation | 
 | ------------- | :-----:|:-----:|-----:|
-| Project manage |~~ 1. link to tool;~~<br>~~2 need high quality picture;~~<br>~~3,how to build web~~<br>~~4.prompt highlight~~<br>~~show how to use p5js~~|20260622|10|
+| Project manage |~~1. link to tool;~~<br>~~2 need high quality picture;~~<br>~~3,how to build web~~<br>~~4.prompt highlight~~<br>~~show how to use p5js~~|20260622|10|
 | arduino | ~~1. update arduino picture~~<br>~~2.need pic link~~<br>3.more picture for arduino q<br>~~4. arduino connect~~|20260622|12|
-| [Material](doc/12material&tool/assessment.md)                       |  ~~ 1. 物理与机械性能~~<br>2.r<br>3.ppma introduce<br>4. battery | 20260622  |   4|
+| [Material](doc/12material&tool/assessment.md)                       |  ~~1. 物理与机械性能~~<br>2.r<br>3.ppma introduce<br>4. battery | 20260622  |   4|
 | [Computer aided design](doc/2cad/Assessment.md)                     |ai result<br>2.cad design | 20260622  |   10|  
-| [3D printing ](doc/3_3dprinter/assessment.md)                       |~~ 1. optimize pic~~<br>~~2. add patamenter setting ~~|20260622  |7  |  
-| [Arduino IOT](doc/10IOT/Assessment.md)                              |  1.introduce key how to do    |   20260622|2   |  
+| [3D printing ](doc/3_3dprinter/assessment.md)                       |~~1. optimize pic~~<br>~~2. add patamenter setting~~|20260622  |7  |  
+| [Arduino IOT](doc/10IOT/assessment.md)                              |  1.introduce key how to do    |   20260622|2   |  
 
 
 

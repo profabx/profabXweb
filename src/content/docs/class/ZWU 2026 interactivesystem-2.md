@@ -58,7 +58,7 @@ Final presentation full socre is  40
 * Market(similar product,price ,market channel)（5）;
 * Key tech analyse,and Potential tech problem（5）；
 * Material and how to make it（15）;
-* Solve some problem in SDG（5）
+* Solve some problem in SDGs（5）
 
 
 
