@@ -108,8 +108,8 @@ Final presentation full socre is  40
 | Arduino |1.arduino coding and connect<br>2.real case<br>3.input  |20260622|10|
 | [Material](doc/12material&tool/assessment.md)                       |    | 20260622  | 3  |  
 | [Computer aided design](doc/2cad/Assessment.md)                     | |  20260622 | 12  |  
-| [3D printing ](doc/3_3dprinter/assessment.md)                       |  |  20260622| 6 |  
-| [Arduino IOT](doc/10IOT/Assessment.md)                              |     |   | 20260622  |3   |  
+| [3D printing ](doc/3_3dprinter/assessment.md)        |  |  20260622| 6 |  
+| [Arduino IOT](doc/10IOT/Assessment.md)             |       | 20260622  |3   |  
 
 #### [AETHER STUDIO](https://nexmaker-fab.github.io/zwu2026-1-004/)
 
