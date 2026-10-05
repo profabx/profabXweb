@@ -1,0 +1,64 @@
+---
+interface Props {
+  src: string;
+  title: string;
+  openLabel?: string;
+}
+
+const { src, title, openLabel = "在独立窗口打开" } = Astro.props;
+---
+
+<section class="tool-embed not-content" aria-label={title}>
+  <div class="tool-actions">
+    <a href={src} target="_blank" rel="noopener noreferrer">
+      {openLabel} <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+  <iframe src={src} title={title} data-tool-frame loading="lazy"></iframe>
+</section>
+
+<script>
+  for (const frame of document.querySelectorAll<HTMLIFrameElement>("[data-tool-frame]")) {
+    let observer: ResizeObserver | undefined;
+    const observeContent = () => {
+      observer?.disconnect();
+      const body = frame.contentDocument?.body;
+      if (!body) return;
+      body.dataset.embedded = "true";
+      const resize = () => {
+        frame.style.height = `${Math.max(780, Math.ceil(body.getBoundingClientRect().height))}px`;
+      };
+      observer = new ResizeObserver(resize);
+      observer.observe(body);
+      resize();
+    };
+    frame.addEventListener("load", observeContent);
+    if (frame.contentDocument?.readyState === "complete") observeContent();
+  }
+</script>
+
+<style>
+  .tool-embed {
+    width: 100%;
+  }
+
+  .tool-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-block: 0.75rem;
+  }
+
+  a {
+    color: var(--sl-color-text-accent);
+    text-underline-offset: 0.2em;
+  }
+
+  iframe {
+    display: block;
+    width: 100%;
+    min-height: 780px;
+    border: 1px solid var(--sl-color-hairline-light);
+    border-radius: 0.5rem;
+    background: #f6f8fc;
+  }
+</style>

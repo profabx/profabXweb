@@ -1,0 +1,2150 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>自动报价 · ProFabX</title>
+    <link rel="icon" href="/favicon.ico" />
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "./vendor/three/three.module.js",
+          "three/addons/": "./vendor/three/addons/"
+        }
+      }
+    </script>
+    <script src="./vendor/xlsx/xlsx.full.min.js"></script>
+
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f8fc;
+        --surface: #ffffff;
+        --surface-soft: #f8fafd;
+        --panel: rgba(255, 255, 255, 0.9);
+        --ink: #202124;
+        --muted: #5f6368;
+        --line: #dfe3ea;
+        --line-strong: #c7ced9;
+        --blue: #4285f4;
+        --red: #ea4335;
+        --yellow: #fbbc04;
+        --green: #34a853;
+        --purple: #a142f4;
+        --cyan: #00acc1;
+        --orange: #ff6d00;
+        --shadow: 0 18px 44px rgba(32, 33, 36, 0.12);
+        --grid-dot: rgba(66, 133, 244, 0.12);
+      }
+
+      [data-theme="dark"] {
+        color-scheme: dark;
+        --bg: #0f1117;
+        --surface: #171a21;
+        --surface-soft: #11141b;
+        --panel: rgba(23, 26, 33, 0.9);
+        --ink: #f1f3f4;
+        --muted: #aeb4bd;
+        --line: rgba(255, 255, 255, 0.1);
+        --line-strong: rgba(255, 255, 255, 0.18);
+        --shadow: 0 18px 44px rgba(0, 0, 0, 0.38);
+        --grid-dot: rgba(255, 255, 255, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        min-width: 320px;
+      }
+
+      body {
+        margin: 0;
+        min-width: 320px;
+        background:
+          radial-gradient(var(--grid-dot) 1px, transparent 1px),
+          var(--bg);
+        background-size: 24px 24px;
+        color: var(--ink);
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+          sans-serif;
+      }
+
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+
+      button {
+        cursor: pointer;
+      }
+
+      .app-shell {
+        min-height: 100dvh;
+      }
+
+      [data-embedded] .app-shell {
+        min-height: 0;
+      }
+
+      .app-header {
+        position: sticky;
+        top: 0;
+        z-index: 20;
+        border-bottom: 1px solid var(--line);
+        background: color-mix(in srgb, var(--surface) 88%, transparent);
+        backdrop-filter: blur(18px);
+      }
+
+      .header-inner {
+        display: grid;
+        grid-template-columns: minmax(260px, 1fr) auto;
+        gap: 18px;
+        align-items: center;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 14px 18px;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        min-width: 0;
+      }
+
+      .brand-logo {
+        display: grid;
+        place-items: center;
+        width: 54px;
+        height: 54px;
+        flex: 0 0 auto;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface);
+        box-shadow: 0 10px 24px rgba(66, 133, 244, 0.16);
+        overflow: hidden;
+      }
+
+      .brand-logo img {
+        width: 43px;
+        height: 43px;
+        object-fit: contain;
+      }
+
+      .eyebrow,
+      .section-label,
+      .field label,
+      .metric-label {
+        margin: 0;
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 760;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 2px 0 3px;
+        font-size: 28px;
+        line-height: 1.08;
+        letter-spacing: 0;
+      }
+
+      .subtitle {
+        margin: 0;
+        color: var(--muted);
+        font-size: 13px;
+        line-height: 1.45;
+      }
+
+      .header-actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 8px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 38px;
+        border-radius: 7px;
+        border: 1px solid var(--line);
+        padding: 8px 12px;
+        background: var(--surface);
+        color: var(--ink);
+        font-weight: 760;
+        text-decoration: none;
+        transition:
+          transform 140ms ease,
+          border-color 140ms ease,
+          background 140ms ease;
+      }
+
+      .button:hover {
+        border-color: var(--line-strong);
+      }
+
+      .button:active {
+        transform: translateY(1px);
+      }
+
+      .button.primary {
+        border-color: var(--blue);
+        background: var(--blue);
+        color: #ffffff;
+      }
+
+      .button.green {
+        border-color: var(--green);
+        background: var(--green);
+        color: #ffffff;
+      }
+
+      .button.danger {
+        border-color: rgba(234, 67, 53, 0.35);
+        background: color-mix(in srgb, var(--red) 12%, var(--surface));
+        color: var(--red);
+      }
+
+      .button.icon {
+        width: 38px;
+        padding: 8px;
+      }
+
+      .dashboard {
+        display: grid;
+        gap: 16px;
+        max-width: 1500px;
+        margin: 0 auto;
+        padding: 16px 18px 26px;
+      }
+
+      .workbench {
+        display: grid;
+        grid-template-columns: 320px minmax(420px, 1fr) 350px;
+        gap: 16px;
+        min-height: 640px;
+      }
+
+      .panel,
+      .viewer-card,
+      .results-card {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        box-shadow: var(--shadow);
+        backdrop-filter: blur(16px);
+      }
+
+      .panel {
+        display: flex;
+        flex-direction: column;
+        min-height: 0;
+        overflow: hidden;
+      }
+
+      .panel-header,
+      .viewer-toolbar,
+      .results-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 13px 14px;
+        border-bottom: 1px solid var(--line);
+        background: color-mix(in srgb, var(--surface) 76%, transparent);
+      }
+
+      .panel-body {
+        display: grid;
+        gap: 14px;
+        min-height: 0;
+        overflow: auto;
+        padding: 14px;
+      }
+
+      .cardlet {
+        display: grid;
+        gap: 11px;
+        padding: 12px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: color-mix(in srgb, var(--surface) 84%, transparent);
+      }
+
+      .format-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6px;
+      }
+
+      .chip {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 25px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 4px 8px;
+        background: var(--surface);
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 760;
+      }
+
+      .chip.hot {
+        border-color: rgba(66, 133, 244, 0.34);
+        background: color-mix(in srgb, var(--blue) 10%, var(--surface));
+        color: var(--blue);
+      }
+
+      .dropzone {
+        display: grid;
+        gap: 9px;
+        border: 1px dashed var(--line-strong);
+        border-radius: 8px;
+        padding: 12px;
+        background: color-mix(in srgb, var(--surface-soft) 74%, transparent);
+      }
+
+      .file-input {
+        width: 100%;
+        min-height: 40px;
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        padding: 8px;
+        background: var(--surface);
+        color: var(--muted);
+      }
+
+      .field-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .field {
+        display: grid;
+        gap: 6px;
+      }
+
+      .field.full {
+        grid-column: 1 / -1;
+      }
+
+      select,
+      input[type="number"],
+      input[type="range"] {
+        width: 100%;
+      }
+
+      select,
+      input[type="number"] {
+        min-height: 38px;
+        border: 1px solid var(--line);
+        border-radius: 7px;
+        background: var(--surface);
+        color: var(--ink);
+        padding: 7px 9px;
+      }
+
+      .part-list,
+      .relation-list {
+        display: grid;
+        gap: 8px;
+      }
+
+      .part-row,
+      .relation-row {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        gap: 9px;
+        align-items: center;
+        width: 100%;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 9px;
+        background: var(--surface);
+        color: var(--ink);
+        text-align: left;
+      }
+
+      .part-row.active,
+      .relation-row.active {
+        border-color: rgba(66, 133, 244, 0.62);
+        background: color-mix(in srgb, var(--blue) 11%, var(--surface));
+      }
+
+      .swatch {
+        width: 14px;
+        height: 34px;
+        border-radius: 999px;
+        background: var(--part-color, var(--blue));
+      }
+
+      .part-name,
+      .relation-name {
+        overflow: hidden;
+        font-size: 13px;
+        font-weight: 760;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .part-meta,
+      .relation-meta,
+      .note {
+        color: var(--muted);
+        font-size: 12px;
+        line-height: 1.45;
+      }
+
+      .viewer-card {
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        min-width: 0;
+        min-height: 640px;
+        overflow: hidden;
+      }
+
+      .viewer-toolbar {
+        flex-wrap: wrap;
+      }
+
+      .workflow {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 7px;
+        min-width: 0;
+        flex: 1 1 260px;
+        padding: 4px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface-soft);
+      }
+
+      .step-button {
+        min-height: 36px;
+        border: 0;
+        border-radius: 6px;
+        background: transparent;
+        color: var(--muted);
+        font-weight: 800;
+      }
+
+      .step-button.active {
+        background: var(--surface);
+        color: var(--blue);
+        box-shadow: 0 6px 15px rgba(66, 133, 244, 0.13);
+      }
+
+      .viewer-wrap {
+        position: relative;
+        min-height: 420px;
+        background:
+          linear-gradient(90deg, color-mix(in srgb, var(--blue) 7%, transparent) 1px, transparent 1px),
+          linear-gradient(180deg, color-mix(in srgb, var(--blue) 7%, transparent) 1px, transparent 1px),
+          var(--surface-soft);
+        background-size: 34px 34px;
+      }
+
+      #viewer {
+        position: absolute;
+        inset: 0;
+      }
+
+      #viewer canvas {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .viewer-overlay {
+        position: absolute;
+        left: 14px;
+        bottom: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        max-width: calc(100% - 28px);
+      }
+
+      .pill {
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 7px 10px;
+        background: color-mix(in srgb, var(--surface) 90%, transparent);
+        color: var(--muted);
+        font-size: 12px;
+        font-weight: 760;
+        box-shadow: 0 8px 18px rgba(32, 33, 36, 0.08);
+      }
+
+      .viewer-footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        padding: 12px 14px;
+        border-top: 1px solid var(--line);
+        background: color-mix(in srgb, var(--surface) 76%, transparent);
+      }
+
+      .segmented {
+        display: flex;
+        flex-shrink: 0;
+        gap: 5px;
+        padding: 4px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface-soft);
+      }
+
+      .segment {
+        min-height: 32px;
+        border: 0;
+        border-radius: 6px;
+        padding: 6px 9px;
+        background: transparent;
+        color: var(--muted);
+        font-weight: 760;
+      }
+
+      .segment.active {
+        background: var(--surface);
+        color: var(--blue);
+      }
+
+      .tabs {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 6px;
+        padding: 4px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface-soft);
+      }
+
+      .tab-button {
+        min-height: 34px;
+        border: 0;
+        border-radius: 6px;
+        padding: 6px 8px;
+        background: transparent;
+        color: var(--muted);
+        font-weight: 760;
+      }
+
+      .tab-button.active {
+        background: var(--surface);
+        color: var(--blue);
+      }
+
+      .tab-panel {
+        display: none;
+      }
+
+      .tab-panel.active {
+        display: grid;
+        gap: 14px;
+      }
+
+      .metric-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+      }
+
+      .metric {
+        padding: 11px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--surface);
+      }
+
+      .metric strong {
+        display: block;
+        margin-top: 3px;
+        font-size: 20px;
+      }
+
+      .risk-band {
+        position: relative;
+        height: 42px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: linear-gradient(90deg, #ea4335 0%, #ff6d00 28%, #fbbc04 48%, #34a853 70%, #4285f4 100%);
+        overflow: hidden;
+      }
+
+      .risk-marker {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        left: var(--risk-left, 50%);
+        background: #ffffff;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.18), 0 0 18px rgba(255, 255, 255, 0.75);
+      }
+
+      .risk-labels {
+        display: flex;
+        justify-content: space-between;
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 760;
+      }
+
+      .range {
+        accent-color: var(--blue);
+      }
+
+      .relation-editor {
+        display: grid;
+        gap: 10px;
+      }
+
+      .results-card {
+        overflow: hidden;
+      }
+
+      .results-header {
+        flex-wrap: wrap;
+      }
+
+      .stats {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+
+      .stat-chip {
+        min-width: 120px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 8px 10px;
+        background: var(--surface);
+      }
+
+      .stat-chip span {
+        display: block;
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 760;
+      }
+
+      .stat-chip strong {
+        display: block;
+        margin-top: 2px;
+        font-size: 16px;
+      }
+
+      .table-wrap {
+        overflow: auto;
+        max-height: 380px;
+      }
+
+      table {
+        width: 100%;
+        min-width: 980px;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        border-bottom: 1px solid var(--line);
+        padding: 10px 12px;
+        text-align: left;
+        vertical-align: middle;
+        font-size: 13px;
+      }
+
+      thead th {
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        background: var(--surface-soft);
+        color: var(--muted);
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+
+      tbody tr:hover {
+        background: color-mix(in srgb, var(--blue) 6%, transparent);
+      }
+
+      .thumb {
+        display: grid;
+        place-items: center;
+        width: 54px;
+        height: 38px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        background: var(--surface);
+        overflow: hidden;
+      }
+
+      .thumb img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      .empty {
+        padding: 34px;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      .status-toast {
+        position: fixed;
+        left: 50%;
+        bottom: 18px;
+        z-index: 30;
+        max-width: min(680px, calc(100vw - 32px));
+        transform: translateX(-50%);
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 9px 13px;
+        background: color-mix(in srgb, var(--surface) 94%, transparent);
+        color: var(--muted);
+        box-shadow: var(--shadow);
+        font-size: 13px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .hidden {
+        display: none !important;
+      }
+
+      @media (max-width: 1180px) {
+        .workbench {
+          grid-template-columns: 300px minmax(380px, 1fr);
+        }
+
+        .right-panel {
+          grid-column: 1 / -1;
+        }
+      }
+
+      @media (max-width: 820px) {
+        .header-inner,
+        .workbench {
+          grid-template-columns: 1fr;
+        }
+
+        .header-actions {
+          justify-content: stretch;
+        }
+
+        .header-actions .button {
+          flex: 1;
+        }
+
+        .viewer-card,
+        .workbench {
+          min-height: auto;
+        }
+
+        .viewer-wrap {
+          min-height: 430px;
+        }
+
+        .viewer-toolbar,
+        .viewer-footer {
+          align-items: stretch;
+          flex-direction: column;
+        }
+
+        .workflow,
+        .tabs {
+          width: 100%;
+        }
+
+        .status-toast {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body data-theme="light">
+    <div class="app-shell">
+      <header class="app-header">
+        <div class="header-inner">
+          <div class="brand">
+            <div class="brand-logo">
+              <img src="logo-optimized.png" alt="ProFabX logo" />
+            </div>
+            <div>
+              <p class="eyebrow">ProFabX Quote Lab</p>
+              <h1>自动报价</h1>
+              <p class="subtitle">多格式导入、装配关系编辑、壁厚风险与报价分析一体化工作台。</p>
+            </div>
+          </div>
+          <div class="header-actions">
+            <button class="button" id="theme-toggle" type="button" title="切换深色/浅色模式">浅色模式</button>
+            <button class="button" id="fit-view" type="button">适配视图</button>
+            <button class="button danger" id="clear-session" type="button">清空会话</button>
+          </div>
+        </div>
+      </header>
+
+      <main class="dashboard">
+        <section class="workbench">
+          <aside class="panel">
+            <div class="panel-header">
+              <p class="section-label">载入与报价配置</p>
+              <span class="chip hot" id="file-count">0 files</span>
+            </div>
+            <div class="panel-body">
+              <div class="cardlet">
+                <p class="section-label">支持格式</p>
+                <div class="format-grid" id="format-list"></div>
+                <p class="note">STL/OBJ 在前端解析；STP/STEP/IGES/F3D/F3Z 先生成分析占位，后续接 CAD 转换服务。</p>
+              </div>
+
+              <div class="dropzone">
+                <label class="section-label" for="file-input">批量导入</label>
+                <input
+                  class="file-input"
+                  id="file-input"
+                  type="file"
+                  multiple
+                  accept=".stl,.obj,.stp,.step,.igs,.iges,.urdf,.f3d,.f3z"
+                />
+                <div class="field-grid">
+                  <div class="field">
+                    <label for="material-select">材质</label>
+                    <select id="material-select"></select>
+                  </div>
+                  <div class="field">
+                    <label for="density-input">密度 g/cm³</label>
+                    <input id="density-input" type="number" min="0.01" step="0.01" value="1.3" />
+                  </div>
+                  <div class="field">
+                    <label for="process-select">工艺</label>
+                    <select id="process-select">
+                      <option>SLA</option>
+                      <option>FDM</option>
+                      <option>SLM</option>
+                      <option>CNC</option>
+                      <option>注塑</option>
+                      <option>硅胶复模</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="post-select">后处理</label>
+                    <select id="post-select">
+                      <option>无</option>
+                      <option>打磨</option>
+                      <option>喷砂</option>
+                      <option>喷漆</option>
+                      <option>阳极氧化</option>
+                      <option>电镀</option>
+                    </select>
+                  </div>
+                </div>
+                <button class="button primary" id="import-files" type="button">载入并分析</button>
+              </div>
+
+              <div class="cardlet">
+                <div class="panel-header" style="padding: 0; border: 0; background: transparent;">
+                  <p class="section-label">零件 / 装配体</p>
+                  <span class="chip" id="part-count">0 parts</span>
+                </div>
+                <div class="part-list" id="part-list"></div>
+              </div>
+            </div>
+          </aside>
+
+          <section class="viewer-card">
+            <div class="viewer-toolbar">
+              <div class="workflow" aria-label="工作流">
+                <button class="step-button active" data-step="load" type="button">载入</button>
+                <button class="step-button" data-step="edit" type="button">编辑</button>
+                <button class="step-button" data-step="complete" type="button">完成</button>
+              </div>
+              <div class="segmented" aria-label="变换模式">
+                <button class="segment active" data-transform="translate" type="button">移动</button>
+                <button class="segment" data-transform="rotate" type="button">旋转</button>
+                <button class="segment" data-transform="scale" type="button">缩放</button>
+              </div>
+            </div>
+            <div class="viewer-wrap">
+              <div id="viewer" aria-label="3D 预览视窗"></div>
+              <div class="viewer-overlay">
+                <span class="pill" id="status-pill">演示装配已就绪</span>
+                <span class="pill" id="selected-pill">未选择零件</span>
+              </div>
+            </div>
+            <div class="viewer-footer">
+              <p class="note">拖拽视图旋转，滚轮缩放；点击零件后可用变换轴编辑其装配位置。</p>
+              <div class="header-actions">
+                <button class="button" id="demo-assembly" type="button">演示装配</button>
+                <button class="button green" id="finish-session" type="button">生成分析快照</button>
+              </div>
+            </div>
+          </section>
+
+          <aside class="panel right-panel">
+            <div class="panel-header">
+              <p class="section-label">分析分页</p>
+              <span class="chip">默认浅色</span>
+            </div>
+            <div class="panel-body">
+              <div class="tabs">
+                <button class="tab-button active" data-tab="quote" type="button">报价分析</button>
+                <button class="tab-button" data-tab="wall" type="button">壁厚分析</button>
+                <button class="tab-button" data-tab="assembly" type="button">装配编辑</button>
+              </div>
+
+              <section class="tab-panel active" id="tab-quote">
+                <div class="metric-grid">
+                  <div class="metric">
+                    <p class="metric-label">总重量</p>
+                    <strong id="metric-weight">0.00 g</strong>
+                  </div>
+                  <div class="metric">
+                    <p class="metric-label">预估费用</p>
+                    <strong id="metric-cost">¥0.00</strong>
+                  </div>
+                  <div class="metric">
+                    <p class="metric-label">解析零件</p>
+                    <strong id="metric-parts">0</strong>
+                  </div>
+                  <div class="metric">
+                    <p class="metric-label">风险项</p>
+                    <strong id="metric-risk">0</strong>
+                  </div>
+                </div>
+                <p class="note">模型单位按 mm 计算，费用按体积、密度和材质预设单价估算；工艺与后处理暂作记录，不单独计价。CAD 原生格式需转换后报价，文件不上传。</p>
+              </section>
+
+              <section class="tab-panel" id="tab-wall">
+                <div class="cardlet">
+                  <p class="section-label">壁厚分析</p>
+                  <p class="note">当前为前端启发式分析：使用选中零件包围盒最小尺寸估计风险，后续可接网格射线厚度场。</p>
+                  <div class="field">
+                    <label for="thickness-threshold">最小壁厚阈值 mm</label>
+                    <input class="range" id="thickness-threshold" type="range" min="0.2" max="8" step="0.1" value="1.2" />
+                  </div>
+                  <div class="risk-band" id="risk-band">
+                    <div class="risk-marker" id="risk-marker"></div>
+                  </div>
+                  <div class="risk-labels">
+                    <span>红色 高风险</span>
+                    <span>蓝色 低风险</span>
+                  </div>
+                  <div class="metric">
+                    <p class="metric-label">当前判断</p>
+                    <strong id="wall-risk-text">请选择零件</strong>
+                  </div>
+                </div>
+              </section>
+
+              <section class="tab-panel" id="tab-assembly">
+                <div class="relation-editor">
+                  <div class="field-grid">
+                    <div class="field full">
+                      <label for="parent-select">父级零件</label>
+                      <select id="parent-select"></select>
+                    </div>
+                    <div class="field full">
+                      <label for="child-select">子级零件</label>
+                      <select id="child-select"></select>
+                    </div>
+                    <div class="field">
+                      <label for="relation-type">运动关系</label>
+                      <select id="relation-type">
+                        <option value="fixed">固定</option>
+                        <option value="revolute">转动</option>
+                        <option value="prismatic">直线</option>
+                        <option value="planar">平面</option>
+                        <option value="ball">球铰</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label for="relation-axis">轴向</label>
+                      <select id="relation-axis">
+                        <option>X</option>
+                        <option selected>Y</option>
+                        <option>Z</option>
+                      </select>
+                    </div>
+                    <div class="field">
+                      <label for="relation-min">下限</label>
+                      <input id="relation-min" type="number" value="-90" />
+                    </div>
+                    <div class="field">
+                      <label for="relation-max">上限</label>
+                      <input id="relation-max" type="number" value="90" />
+                    </div>
+                  </div>
+                  <div class="header-actions">
+                    <button class="button primary" id="save-relation" type="button">新增关系</button>
+                    <button class="button" id="update-relation" type="button">更新关系</button>
+                    <button class="button danger" id="delete-relation" type="button">删除关系</button>
+                  </div>
+                  <div class="relation-list" id="relation-list"></div>
+                </div>
+              </section>
+            </div>
+          </aside>
+        </section>
+
+        <section class="results-card">
+          <div class="results-header">
+            <div>
+              <p class="section-label">报价结果</p>
+              <p class="note">支持单零件、装配体与批量导入，多个零件按 Google 色系区分。</p>
+            </div>
+            <div class="header-actions">
+              <button class="button" id="clear-results" type="button">清空结果</button>
+              <button class="button" id="export-json" type="button" disabled>导出 JSON</button>
+              <button class="button green" id="export-excel" type="button" disabled>导出 Excel</button>
+            </div>
+          </div>
+          <div class="stats">
+            <div class="stat-chip">
+              <span>项目总重</span>
+              <strong id="stat-weight">0.00 g</strong>
+            </div>
+            <div class="stat-chip">
+              <span>总预估费用</span>
+              <strong id="stat-cost">¥0.00</strong>
+            </div>
+            <div class="stat-chip">
+              <span>已解析文件</span>
+              <strong id="stat-files">0</strong>
+            </div>
+            <div class="stat-chip">
+              <span>待 CAD 转换</span>
+              <strong id="stat-pending">0</strong>
+            </div>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>文件名</th>
+                  <th>格式</th>
+                  <th>预览</th>
+                  <th>材质</th>
+                  <th>工艺</th>
+                  <th>后处理</th>
+                  <th>体积(cm³)</th>
+                  <th>重量(g)</th>
+                  <th>费用(¥)</th>
+                  <th>状态</th>
+                </tr>
+              </thead>
+              <tbody id="quote-body">
+                <tr>
+                  <td colspan="11" class="empty">请导入 STL / OBJ / STP / STEP / IGES / URDF / F3D / F3Z 文件开始分析</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+
+      <div class="status-toast" id="toast">演示装配已就绪</div>
+    </div>
+
+    <script type="module">
+      import * as THREE from "three";
+      import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+      import { TransformControls } from "three/addons/controls/TransformControls.js";
+      import { STLLoader } from "three/addons/loaders/STLLoader.js";
+      import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
+
+      const FORMAT_LIST = ["STL", "OBJ", "STP", "STEP", "IGES", "URDF", "F3D", "F3Z"];
+      const CAD_FORMATS = new Set(["stp", "step", "igs", "iges", "f3d", "f3z"]);
+      const GOOGLE_COLORS = [0x4285f4, 0xea4335, 0xfbbc04, 0x34a853, 0xa142f4, 0x00acc1, 0xff6d00];
+      const GOOGLE_CSS = ["#4285f4", "#ea4335", "#fbbc04", "#34a853", "#a142f4", "#00acc1", "#ff6d00"];
+
+      const MATERIALS = {
+        plastic: { name: "塑料", density: 1.3, price: 0.9 },
+        aluminum: { name: "铝合金", density: 2.7, price: 1.2 },
+        steel: { name: "不锈钢", density: 8.0, price: 1.6 },
+        resin: { name: "树脂", density: 1.15, price: 1.05 },
+        custom: { name: "自定义", density: 1.0, price: 0.9 }
+      };
+
+      const state = {
+        step: "load",
+        tab: "quote",
+        theme: "light",
+        parts: [],
+        relations: [],
+        quoteRows: [],
+        selectedPartId: "",
+        selectedRelationId: "",
+        transformMode: "translate",
+        fileCount: 0,
+        cadPending: 0
+      };
+
+      const els = {
+        body: document.body,
+        formatList: document.querySelector("#format-list"),
+        fileInput: document.querySelector("#file-input"),
+        importFiles: document.querySelector("#import-files"),
+        fileCount: document.querySelector("#file-count"),
+        materialSelect: document.querySelector("#material-select"),
+        densityInput: document.querySelector("#density-input"),
+        processSelect: document.querySelector("#process-select"),
+        postSelect: document.querySelector("#post-select"),
+        partList: document.querySelector("#part-list"),
+        partCount: document.querySelector("#part-count"),
+        relationList: document.querySelector("#relation-list"),
+        parentSelect: document.querySelector("#parent-select"),
+        childSelect: document.querySelector("#child-select"),
+        relationType: document.querySelector("#relation-type"),
+        relationAxis: document.querySelector("#relation-axis"),
+        relationMin: document.querySelector("#relation-min"),
+        relationMax: document.querySelector("#relation-max"),
+        saveRelation: document.querySelector("#save-relation"),
+        updateRelation: document.querySelector("#update-relation"),
+        deleteRelation: document.querySelector("#delete-relation"),
+        quoteBody: document.querySelector("#quote-body"),
+        exportJson: document.querySelector("#export-json"),
+        exportExcel: document.querySelector("#export-excel"),
+        toast: document.querySelector("#toast"),
+        statusPill: document.querySelector("#status-pill"),
+        selectedPill: document.querySelector("#selected-pill"),
+        wallSlider: document.querySelector("#thickness-threshold"),
+        riskMarker: document.querySelector("#risk-marker"),
+        wallRiskText: document.querySelector("#wall-risk-text"),
+        metricWeight: document.querySelector("#metric-weight"),
+        metricCost: document.querySelector("#metric-cost"),
+        metricParts: document.querySelector("#metric-parts"),
+        metricRisk: document.querySelector("#metric-risk"),
+        statWeight: document.querySelector("#stat-weight"),
+        statCost: document.querySelector("#stat-cost"),
+        statFiles: document.querySelector("#stat-files"),
+        statPending: document.querySelector("#stat-pending")
+      };
+
+      const viewer = createViewer(document.querySelector("#viewer"));
+      const stlLoader = new STLLoader();
+      const objLoader = new OBJLoader();
+
+      init();
+
+      function init() {
+        renderFormatChips();
+        renderMaterialOptions();
+        bindEvents();
+        createDemoAssembly();
+        updateAll();
+      }
+
+      function bindEvents() {
+        els.materialSelect.addEventListener("change", () => {
+          const preset = MATERIALS[els.materialSelect.value];
+          if (preset) els.densityInput.value = preset.density;
+        });
+
+        els.fileInput.addEventListener("change", () => {
+          state.fileCount = els.fileInput.files.length;
+          els.fileCount.textContent = `${state.fileCount} files`;
+        });
+
+        els.importFiles.addEventListener("click", importSelectedFiles);
+        document.querySelector("#fit-view").addEventListener("click", () => viewer.fit());
+        document.querySelector("#demo-assembly").addEventListener("click", createDemoAssembly);
+        document.querySelector("#finish-session").addEventListener("click", finishSession);
+        document.querySelector("#clear-session").addEventListener("click", clearSession);
+        document.querySelector("#clear-results").addEventListener("click", clearResults);
+        document.querySelector("#export-json").addEventListener("click", exportJson);
+        document.querySelector("#export-excel").addEventListener("click", exportExcel);
+        document.querySelector("#theme-toggle").addEventListener("click", toggleTheme);
+
+        document.querySelectorAll(".step-button").forEach((button) => {
+          button.addEventListener("click", () => setStep(button.dataset.step));
+        });
+
+        document.querySelectorAll(".segment").forEach((button) => {
+          button.addEventListener("click", () => setTransformMode(button.dataset.transform));
+        });
+
+        document.querySelectorAll(".tab-button").forEach((button) => {
+          button.addEventListener("click", () => setTab(button.dataset.tab));
+        });
+
+        els.saveRelation.addEventListener("click", addRelation);
+        els.updateRelation.addEventListener("click", updateSelectedRelation);
+        els.deleteRelation.addEventListener("click", deleteSelectedRelation);
+        els.wallSlider.addEventListener("input", updateWallAnalysis);
+      }
+
+      function renderFormatChips() {
+        els.formatList.innerHTML = FORMAT_LIST.map((format) => `<span class="chip">${format}</span>`).join("");
+      }
+
+      function renderMaterialOptions() {
+        els.materialSelect.innerHTML = Object.entries(MATERIALS)
+          .map(([key, material]) => `<option value="${key}">${material.name}</option>`)
+          .join("");
+      }
+
+      function setStep(step) {
+        state.step = step;
+        document.querySelectorAll(".step-button").forEach((button) => {
+          button.classList.toggle("active", button.dataset.step === step);
+        });
+        showStatus(step === "complete" ? "分析快照已生成，本地会话未写入存储" : `已切换到${buttonLabel(step)}流程`);
+      }
+
+      function setTab(tab) {
+        state.tab = tab;
+        document.querySelectorAll(".tab-button").forEach((button) => {
+          button.classList.toggle("active", button.dataset.tab === tab);
+        });
+        document.querySelectorAll(".tab-panel").forEach((panel) => {
+          panel.classList.toggle("active", panel.id === `tab-${tab}`);
+        });
+        if (tab === "wall") updateWallAnalysis();
+      }
+
+      function setTransformMode(mode) {
+        state.transformMode = mode;
+        viewer.setTransformMode(mode);
+        document.querySelectorAll(".segment").forEach((button) => {
+          button.classList.toggle("active", button.dataset.transform === mode);
+        });
+      }
+
+      function buttonLabel(step) {
+        return { load: "载入", edit: "编辑", complete: "完成" }[step] || step;
+      }
+
+      function toggleTheme() {
+        state.theme = state.theme === "light" ? "dark" : "light";
+        els.body.dataset.theme = state.theme;
+        document.querySelector("#theme-toggle").textContent = state.theme === "light" ? "浅色模式" : "深色模式";
+        viewer.setTheme(state.theme);
+      }
+
+      async function importSelectedFiles() {
+        const files = Array.from(els.fileInput.files || []);
+        if (!files.length) {
+          showStatus("请先选择文件");
+          return;
+        }
+
+        const density = Number(els.densityInput.value);
+        if (!Number.isFinite(density) || density <= 0) {
+          showStatus("密度必须大于 0");
+          return;
+        }
+
+        setStep("load");
+        showStatus(`正在处理 ${files.length} 个文件...`);
+
+        const config = {
+          materialKey: els.materialSelect.value,
+          material: MATERIALS[els.materialSelect.value].name,
+          density,
+          price: MATERIALS[els.materialSelect.value].price,
+          process: els.processSelect.value,
+          post: els.postSelect.value
+        };
+
+        for (const file of files) {
+          await loadFile(file, config);
+        }
+
+        els.fileInput.value = "";
+        state.fileCount = 0;
+        setStep("edit");
+        viewer.fit();
+        updateAll();
+        showStatus("文件已载入，可编辑零件和装配关系");
+      }
+
+      async function loadFile(file, config) {
+        const ext = fileExt(file.name);
+        const colorIndexBase = state.parts.length;
+
+        try {
+          if (ext === "stl") {
+            const buffer = await file.arrayBuffer();
+            const geometry = stlLoader.parse(buffer);
+            geometry.computeVertexNormals();
+            const root = createPartFromGeometry(file.name, "STL mesh", geometry, colorIndexBase);
+            // Quote physical millimetre geometry before normalizing it for display.
+            const volume = calculateObjectVolume(root);
+            addImportedRoot(root, file.name);
+            addQuoteRow(file, "STL", root, volume, config, "已解析");
+            return;
+          }
+
+          if (ext === "obj") {
+            const text = await file.text();
+            const root = objLoader.parse(text);
+            root.name = file.name;
+            styleAndRegisterObject(root, "OBJ mesh", colorIndexBase);
+            const volume = calculateObjectVolume(root);
+            addImportedRoot(root, file.name);
+            addQuoteRow(file, "OBJ", root, volume, config, "已解析");
+            return;
+          }
+
+          if (ext === "urdf") {
+            const text = await file.text();
+            const { root, relations } = createUrdfPreview(text, file.name);
+            addImportedRoot(root, file.name);
+            state.relations.push(...relations);
+            // URDF preview uses placeholder geometry, not manufacturable meshes.
+            addQuoteRow(file, "URDF", root, null, config, "结构预览（不报价）");
+            return;
+          }
+
+          if (CAD_FORMATS.has(ext)) {
+            const root = createCadPlaceholder(file.name, ext.toUpperCase(), colorIndexBase);
+            addImportedRoot(root, file.name);
+            state.cadPending += 1;
+            addQuoteRow(file, ext.toUpperCase(), root, null, config, "需 CAD 转换");
+            return;
+          }
+
+          showStatus(`${file.name} 格式暂不支持`);
+        } catch (error) {
+          console.error(error);
+          addQuoteRow(file, ext.toUpperCase(), null, null, config, "解析失败");
+          showStatus(`${file.name} 解析失败`);
+        }
+      }
+
+      function addImportedRoot(root, fileName) {
+        const offsetIndex = viewer.world.children.length;
+        root.position.x += (offsetIndex % 4) * 2.8 - 3.8;
+        root.position.z += Math.floor(offsetIndex / 4) * 2.4;
+        root.userData.sourceFile = fileName;
+        viewer.world.add(root);
+        normalizeRoot(root);
+        viewer.drawRelations(state.relations);
+      }
+
+      function createPartFromGeometry(name, type, geometry, colorIndex) {
+        const group = new THREE.Group();
+        group.name = name;
+        const material = makeMaterial(GOOGLE_COLORS[colorIndex % GOOGLE_COLORS.length]);
+        const mesh = new THREE.Mesh(geometry, material);
+        mesh.castShadow = true;
+        mesh.receiveShadow = true;
+        group.add(mesh);
+        addEdges(mesh, geometry);
+        registerPart(group, name, type, colorIndex);
+        return group;
+      }
+
+      function createCadPlaceholder(name, format, colorIndex) {
+        // 中文: CAD 原生格式后续建议接 OpenCascade.js 或服务端转换。
+        // English: Native CAD formats should later connect to OpenCascade.js or a server converter.
+        const root = new THREE.Group();
+        root.name = name;
+        const body = createPartFromGeometry(`${format} body`, "CAD placeholder", new THREE.BoxGeometry(1.7, 0.72, 1), colorIndex);
+        const boss = createPartFromGeometry(`${format} feature`, "CAD placeholder", new THREE.CylinderGeometry(0.34, 0.34, 0.82, 40), colorIndex + 1);
+        const rail = createPartFromGeometry(`${format} rail`, "CAD placeholder", new THREE.BoxGeometry(1.9, 0.16, 0.22), colorIndex + 2);
+        boss.rotation.x = Math.PI / 2;
+        boss.position.set(-0.34, 0.56, 0);
+        rail.position.set(0.1, 0.84, 0.44);
+        root.add(body, boss, rail);
+        return root;
+      }
+
+      function createUrdfPreview(text, fileName) {
+        // 中文: 先解析 link/joint 拓扑，mesh package:// 解析后续接 urdf-loader。
+        // English: Parse link/joint topology first; package:// mesh loading can later use urdf-loader.
+        const doc = new DOMParser().parseFromString(text, "application/xml");
+        if (doc.querySelector("parsererror")) throw new Error("URDF XML parse failed");
+        const robot = doc.querySelector("robot");
+        if (!robot) throw new Error("URDF missing robot node");
+
+        const root = new THREE.Group();
+        root.name = robot.getAttribute("name") || fileName;
+        const links = Array.from(robot.children).filter((node) => node.tagName === "link");
+        const joints = Array.from(robot.children).filter((node) => node.tagName === "joint");
+        const linkIdMap = new Map();
+        const count = Math.max(links.length, 1);
+        const radius = Math.max(1.5, count * 0.32);
+        const colorBase = state.parts.length;
+
+        links.forEach((link, index) => {
+          const name = link.getAttribute("name") || `link_${index + 1}`;
+          const part = createPartFromGeometry(name, "URDF link", new THREE.BoxGeometry(0.64, 0.38, 0.64), colorBase + index);
+          const angle = (index / count) * Math.PI * 2;
+          part.position.set(Math.cos(angle) * radius, 0.45 + (index % 3) * 0.24, Math.sin(angle) * radius);
+          root.add(part);
+          linkIdMap.set(name, part.userData.partId);
+        });
+
+        const relations = joints
+          .map((joint) => {
+            const parent = joint.querySelector("parent")?.getAttribute("link");
+            const child = joint.querySelector("child")?.getAttribute("link");
+            if (!parent || !child || !linkIdMap.has(parent) || !linkIdMap.has(child)) return null;
+            const axisText = joint.querySelector("axis")?.getAttribute("xyz") || "0 1 0";
+            const axis = axisFromText(axisText);
+            const limit = joint.querySelector("limit");
+            return {
+              id: id("rel"),
+              parent: linkIdMap.get(parent),
+              child: linkIdMap.get(child),
+              type: joint.getAttribute("type") || "fixed",
+              axis,
+              min: Number(limit?.getAttribute("lower") ?? -90),
+              max: Number(limit?.getAttribute("upper") ?? 90)
+            };
+          })
+          .filter(Boolean);
+
+        return { root, relations };
+      }
+
+      function axisFromText(text) {
+        const values = text.split(/\s+/).map(Number);
+        const abs = values.map((value) => Math.abs(value || 0));
+        if (abs[0] >= abs[1] && abs[0] >= abs[2]) return "X";
+        if (abs[1] >= abs[2]) return "Y";
+        return "Z";
+      }
+
+      function styleAndRegisterObject(root, type, colorBase) {
+        let index = 0;
+        root.traverse((child) => {
+          if (!child.isMesh) return;
+          const colorIndex = colorBase + index;
+          child.material = makeMaterial(GOOGLE_COLORS[colorIndex % GOOGLE_COLORS.length]);
+          child.castShadow = true;
+          child.receiveShadow = true;
+          registerPart(child, child.name || `${type} ${index + 1}`, type, colorIndex);
+          addEdges(child, child.geometry);
+          index += 1;
+        });
+      }
+
+      function addEdges(object, geometry) {
+        if (!geometry?.attributes?.position) return;
+        const edges = new THREE.LineSegments(
+          new THREE.EdgesGeometry(geometry, 25),
+          new THREE.LineBasicMaterial({ color: 0x202124, transparent: true, opacity: 0.16 })
+        );
+        object.add(edges);
+      }
+
+      function registerPart(object, name, type, colorIndex) {
+        const partId = id("part");
+        object.userData.partId = partId;
+        object.userData.partName = name;
+        object.userData.partType = type;
+        object.userData.color = GOOGLE_CSS[colorIndex % GOOGLE_CSS.length];
+        state.parts.push({
+          id: partId,
+          name,
+          type,
+          color: GOOGLE_CSS[colorIndex % GOOGLE_CSS.length],
+          object
+        });
+        object.traverse((child) => {
+          if (child.isMesh) {
+            child.userData.partId = partId;
+            viewer.selectable.add(child);
+          }
+        });
+        return partId;
+      }
+
+      function makeMaterial(color) {
+        return new THREE.MeshPhysicalMaterial({
+          color,
+          roughness: 0.56,
+          metalness: 0.18,
+          clearcoat: 0.25,
+          clearcoatRoughness: 0.45,
+          side: THREE.DoubleSide
+        });
+      }
+
+      function normalizeRoot(root) {
+        root.updateMatrixWorld(true);
+        const box = new THREE.Box3().setFromObject(root);
+        if (box.isEmpty()) return;
+        const center = box.getCenter(new THREE.Vector3());
+        const size = box.getSize(new THREE.Vector3());
+        const maxDim = Math.max(size.x, size.y, size.z) || 1;
+        const scale = Math.min(2.6 / maxDim, 8);
+        root.scale.multiplyScalar(scale);
+        root.position.x -= center.x * scale;
+        root.position.y -= center.y * scale;
+        root.position.z -= center.z * scale;
+        root.position.y += 0.72;
+      }
+
+      function addQuoteRow(file, format, root, volume, config, status) {
+        const weight = volume ? volume * config.density : 0;
+        const cost = volume ? weight * config.price : 0;
+        state.quoteRows.push({
+          id: id("quote"),
+          filename: file.name,
+          format,
+          thumb: root ? viewer.thumbnail(root) : "",
+          material: config.material,
+          density: config.density,
+          process: config.process,
+          post: config.post,
+          volume,
+          weight,
+          cost,
+          status
+        });
+      }
+
+      function calculateObjectVolume(root) {
+        root.updateMatrixWorld(true);
+        let volume = 0;
+        root.traverse((child) => {
+          if (!child.isMesh || !child.geometry?.attributes?.position) return;
+          volume += calculateGeometryVolume(child.geometry, child.matrixWorld);
+        });
+        return Math.abs(volume) / 1000;
+      }
+
+      function calculateGeometryVolume(geometry, matrixWorld) {
+        const position = geometry.attributes.position;
+        const index = geometry.index;
+        const a = new THREE.Vector3();
+        const b = new THREE.Vector3();
+        const c = new THREE.Vector3();
+        let volume = 0;
+
+        const read = (target, vertexIndex) => {
+          target.fromBufferAttribute(position, vertexIndex).applyMatrix4(matrixWorld);
+        };
+
+        if (index) {
+          for (let i = 0; i < index.count; i += 3) {
+            read(a, index.getX(i));
+            read(b, index.getX(i + 1));
+            read(c, index.getX(i + 2));
+            volume += signedTriangleVolume(a, b, c);
+          }
+        } else {
+          for (let i = 0; i < position.count; i += 3) {
+            read(a, i);
+            read(b, i + 1);
+            read(c, i + 2);
+            volume += signedTriangleVolume(a, b, c);
+          }
+        }
+
+        return volume;
+      }
+
+      function signedTriangleVolume(a, b, c) {
+        return a.dot(b.clone().cross(c)) / 6;
+      }
+
+      function createDemoAssembly() {
+        clearSceneOnly();
+        const base = createPartFromGeometry("Base Rail", "demo/base", new THREE.BoxGeometry(2.7, 0.34, 1.14), 0);
+        const pivot = createPartFromGeometry("Rotary Joint", "demo/revolute", new THREE.CylinderGeometry(0.38, 0.38, 0.72, 36), 1);
+        const arm = createPartFromGeometry("Lift Arm", "demo/link", new THREE.BoxGeometry(1.9, 0.32, 0.42), 2);
+        const carriage = createPartFromGeometry("Linear Carriage", "demo/prismatic", new THREE.BoxGeometry(0.72, 0.52, 0.64), 3);
+        const tool = createPartFromGeometry("Tool Head", "demo/end-effector", new THREE.ConeGeometry(0.26, 0.72, 32), 4);
+
+        base.position.set(0, 0.2, 0);
+        pivot.rotation.z = Math.PI / 2;
+        pivot.position.set(-0.82, 0.72, 0);
+        arm.rotation.z = 0.32;
+        arm.position.set(0.16, 1.1, 0);
+        carriage.position.set(1.2, 1.34, 0);
+        tool.rotation.x = Math.PI;
+        tool.position.set(1.85, 0.94, 0);
+        viewer.world.add(base, pivot, arm, carriage, tool);
+
+        state.relations = [
+          { id: id("rel"), parent: base.userData.partId, child: pivot.userData.partId, type: "revolute", axis: "X", min: -180, max: 180 },
+          { id: id("rel"), parent: pivot.userData.partId, child: arm.userData.partId, type: "revolute", axis: "Z", min: -90, max: 90 },
+          { id: id("rel"), parent: arm.userData.partId, child: carriage.userData.partId, type: "prismatic", axis: "X", min: 0, max: 120 }
+        ];
+
+        viewer.fit();
+        setStep("load");
+        updateAll();
+        showStatus("演示装配已就绪");
+      }
+
+      function clearSceneOnly() {
+        viewer.detach();
+        viewer.clearWorld();
+        state.parts = [];
+        state.relations = [];
+        state.selectedPartId = "";
+        state.selectedRelationId = "";
+      }
+
+      function clearSession() {
+        clearSceneOnly();
+        state.quoteRows = [];
+        state.cadPending = 0;
+        updateAll();
+        showStatus("会话已清空");
+      }
+
+      function clearResults() {
+        state.quoteRows = [];
+        state.cadPending = 0;
+        updateAll();
+        showStatus("报价结果已清空");
+      }
+
+      function finishSession() {
+        setStep("complete");
+        const snapshot = {
+          schema: "profabx-3d-preview/session-draft",
+          version: "0.2.0",
+          storage: "ephemeral",
+          createdAt: new Date().toISOString(),
+          parts: state.parts.length,
+          relations: state.relations.length,
+          quotes: state.quoteRows.length
+        };
+        console.info("Local analysis snapshot", snapshot);
+        showStatus("分析快照已生成：当前不写入 GitHub 或远端存储");
+      }
+
+      function addRelation() {
+        const relation = readRelationForm();
+        if (!relation) return;
+        state.relations.push({ ...relation, id: id("rel") });
+        state.selectedRelationId = "";
+        updateAll();
+        viewer.drawRelations(state.relations);
+        showStatus("装配关系已新增");
+      }
+
+      function updateSelectedRelation() {
+        if (!state.selectedRelationId) {
+          showStatus("请选择要更新的关系");
+          return;
+        }
+        const relation = readRelationForm();
+        if (!relation) return;
+        const index = state.relations.findIndex((item) => item.id === state.selectedRelationId);
+        if (index >= 0) state.relations[index] = { ...relation, id: state.selectedRelationId };
+        updateAll();
+        viewer.drawRelations(state.relations);
+        showStatus("装配关系已更新");
+      }
+
+      function deleteSelectedRelation() {
+        if (!state.selectedRelationId) {
+          showStatus("请选择要删除的关系");
+          return;
+        }
+        state.relations = state.relations.filter((relation) => relation.id !== state.selectedRelationId);
+        state.selectedRelationId = "";
+        updateAll();
+        viewer.drawRelations(state.relations);
+        showStatus("装配关系已删除");
+      }
+
+      function readRelationForm() {
+        const parent = els.parentSelect.value;
+        const child = els.childSelect.value;
+        if (!parent || !child) {
+          showStatus("需要选择父级和子级零件");
+          return null;
+        }
+        if (parent === child) {
+          showStatus("父级和子级不能相同");
+          return null;
+        }
+        return {
+          parent,
+          child,
+          type: els.relationType.value,
+          axis: els.relationAxis.value,
+          min: Number(els.relationMin.value),
+          max: Number(els.relationMax.value)
+        };
+      }
+
+      function selectRelation(idValue) {
+        const relation = state.relations.find((item) => item.id === idValue);
+        if (!relation) return;
+        state.selectedRelationId = idValue;
+        els.parentSelect.value = relation.parent;
+        els.childSelect.value = relation.child;
+        els.relationType.value = relation.type;
+        els.relationAxis.value = relation.axis;
+        els.relationMin.value = relation.min;
+        els.relationMax.value = relation.max;
+        renderRelations();
+      }
+
+      function selectPart(partId) {
+        state.selectedPartId = partId;
+        const part = state.parts.find((item) => item.id === partId);
+        els.selectedPill.textContent = part ? part.name : "未选择零件";
+        viewer.select(part?.object || null);
+        updateWallAnalysis();
+        renderParts();
+      }
+
+      function updateAll() {
+        renderParts();
+        renderRelationSelects();
+        renderRelations();
+        renderQuoteTable();
+        updateStats();
+        updateWallAnalysis();
+        viewer.drawRelations(state.relations);
+      }
+
+      function renderParts() {
+        els.partCount.textContent = `${state.parts.length} parts`;
+        if (!state.parts.length) {
+          els.partList.innerHTML = `<p class="note">暂无零件</p>`;
+          return;
+        }
+        els.partList.innerHTML = state.parts
+          .map(
+            (part) => `
+              <button class="part-row ${part.id === state.selectedPartId ? "active" : ""}" data-part-id="${part.id}" type="button">
+                <span class="swatch" style="--part-color:${part.color}"></span>
+                <span>
+                  <span class="part-name">${escapeHtml(part.name)}</span>
+                  <span class="part-meta">${escapeHtml(part.type)}</span>
+                </span>
+                <span class="chip">选中</span>
+              </button>
+            `
+          )
+          .join("");
+        els.partList.querySelectorAll("[data-part-id]").forEach((button) => {
+          button.addEventListener("click", () => {
+            setStep("edit");
+            selectPart(button.dataset.partId);
+          });
+        });
+      }
+
+      function renderRelationSelects() {
+        const options = state.parts.map((part) => `<option value="${part.id}">${escapeHtml(part.name)}</option>`).join("");
+        els.parentSelect.innerHTML = options;
+        els.childSelect.innerHTML = options;
+        if (state.parts[0]) els.parentSelect.value = state.parts[0].id;
+        if (state.parts[1]) els.childSelect.value = state.parts[1].id;
+      }
+
+      function renderRelations() {
+        if (!state.relations.length) {
+          els.relationList.innerHTML = `<p class="note">暂无装配关系</p>`;
+          return;
+        }
+        els.relationList.innerHTML = state.relations
+          .map((relation) => {
+            const parent = partName(relation.parent);
+            const child = partName(relation.child);
+            return `
+              <button class="relation-row ${relation.id === state.selectedRelationId ? "active" : ""}" data-relation-id="${relation.id}" type="button">
+                <span class="swatch" style="--part-color:${relationColor(relation.type)}"></span>
+                <span>
+                  <span class="relation-name">${escapeHtml(parent)} -> ${escapeHtml(child)}</span>
+                  <span class="relation-meta">${relation.type} / ${relation.axis} / ${relation.min}..${relation.max}</span>
+                </span>
+                <span class="chip">编辑</span>
+              </button>
+            `;
+          })
+          .join("");
+        els.relationList.querySelectorAll("[data-relation-id]").forEach((button) => {
+          button.addEventListener("click", () => selectRelation(button.dataset.relationId));
+        });
+      }
+
+      function renderQuoteTable() {
+        els.exportJson.disabled = state.quoteRows.length === 0;
+        els.exportExcel.disabled = state.quoteRows.length === 0;
+        if (!state.quoteRows.length) {
+          els.quoteBody.innerHTML = `<tr><td colspan="11" class="empty">请导入 STL / OBJ / STP / STEP / IGES / URDF / F3D / F3Z 文件开始分析</td></tr>`;
+          return;
+        }
+
+        els.quoteBody.innerHTML = state.quoteRows
+          .map(
+            (row, index) => `
+              <tr>
+                <td>${index + 1}</td>
+                <td title="${escapeHtml(row.filename)}">${escapeHtml(row.filename)}</td>
+                <td><span class="chip">${row.format}</span></td>
+                <td><span class="thumb">${row.thumb ? `<img src="${row.thumb}" alt="">` : row.format}</span></td>
+                <td>${escapeHtml(row.material)}</td>
+                <td>${escapeHtml(row.process)}</td>
+                <td>${escapeHtml(row.post)}</td>
+                <td>${row.volume ? row.volume.toFixed(2) : "-"}</td>
+                <td>${row.volume ? row.weight.toFixed(2) : "-"}</td>
+                <td>${row.volume ? `¥${row.cost.toFixed(2)}` : "-"}</td>
+                <td>${escapeHtml(row.status)}</td>
+              </tr>
+            `
+          )
+          .join("");
+      }
+
+      function updateStats() {
+        const totalWeight = state.quoteRows.reduce((sum, row) => sum + row.weight, 0);
+        const totalCost = state.quoteRows.reduce((sum, row) => sum + row.cost, 0);
+        const riskCount = state.parts.filter((part) => wallRiskForPart(part).score < 45).length;
+        els.metricWeight.textContent = `${totalWeight.toFixed(2)} g`;
+        els.metricCost.textContent = `¥${totalCost.toFixed(2)}`;
+        els.metricParts.textContent = state.parts.length;
+        els.metricRisk.textContent = riskCount;
+        els.statWeight.textContent = `${totalWeight.toFixed(2)} g`;
+        els.statCost.textContent = `¥${totalCost.toFixed(2)}`;
+        els.statFiles.textContent = state.quoteRows.length;
+        els.statPending.textContent = state.cadPending;
+      }
+
+      function updateWallAnalysis() {
+        const part = state.parts.find((item) => item.id === state.selectedPartId);
+        if (!part) {
+          els.riskMarker.style.setProperty("--risk-left", "0%");
+          els.wallRiskText.textContent = "请选择零件";
+          return;
+        }
+        const result = wallRiskForPart(part);
+        els.riskMarker.style.setProperty("--risk-left", `${result.score}%`);
+        els.wallRiskText.textContent = `${result.label} · 最小尺寸 ${result.minDim.toFixed(2)} mm · 阈值 ${result.threshold.toFixed(1)} mm`;
+      }
+
+      function wallRiskForPart(part) {
+        const threshold = Number(els.wallSlider.value || 1.2);
+        const box = new THREE.Box3().setFromObject(part.object);
+        const size = box.getSize(new THREE.Vector3());
+        const minDim = Math.max(0, Math.min(size.x, size.y, size.z));
+        const ratio = Math.min(1, minDim / Math.max(threshold, 0.1));
+        const score = Math.round(ratio * 100);
+        const label = score < 30 ? "高风险" : score < 55 ? "中风险" : score < 80 ? "低风险" : "安全";
+        return { threshold, minDim, score, label };
+      }
+
+      function exportExcel() {
+        if (!state.quoteRows.length || !window.XLSX) return;
+        const rows = [
+          ["ID", "文件名", "格式", "材质", "密度", "加工方式", "后处理", "体积(cm3)", "重量(g)", "费用(¥)", "状态"]
+        ];
+        state.quoteRows.forEach((row, index) => {
+          rows.push([
+            index + 1,
+            row.filename,
+            row.format,
+            row.material,
+            row.density,
+            row.process,
+            row.post,
+            row.volume ? row.volume.toFixed(2) : "",
+            row.volume ? row.weight.toFixed(2) : "",
+            row.volume ? row.cost.toFixed(2) : "",
+            row.status
+          ]);
+        });
+        const ws = XLSX.utils.aoa_to_sheet(rows);
+        ws["!cols"] = [{ wch: 5 }, { wch: 32 }, { wch: 10 }, { wch: 12 }, { wch: 8 }, { wch: 12 }, { wch: 12 }, { wch: 12 }, { wch: 12 }, { wch: 12 }, { wch: 14 }];
+        const wb = XLSX.utils.book_new();
+        XLSX.utils.book_append_sheet(wb, ws, "3D报价分析");
+        XLSX.writeFile(wb, `3D报价分析_${new Date().toISOString().slice(0, 10)}.xlsx`);
+      }
+
+      function exportJson() {
+        if (!state.quoteRows.length) return;
+        const payload = {
+          schema: "profabx-3d-preview/quote-rows",
+          version: "0.1.0",
+          session_id: `stlquote-${new Date().toISOString()}`,
+          createdAt: Date.now(),
+          quotes: state.quoteRows.map((row) => ({
+            id: row.id,
+            filename: row.filename,
+            format: row.format,
+            material: row.material,
+            density: row.density,
+            process: row.process,
+            post: row.post,
+            volume: row.volume,
+            weight: row.weight,
+            cost: row.cost,
+            status: row.status
+          }))
+        };
+        const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+        const link = document.createElement("a");
+        link.href = URL.createObjectURL(blob);
+        link.download = `profabx_quote_rows_${new Date().toISOString().slice(0, 10)}.json`;
+        link.click();
+        URL.revokeObjectURL(link.href);
+        showStatus("报价 JSON 已导出，可用 profabx-feishu sync-quotes 同步到飞书");
+      }
+
+      function createViewer(mount) {
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xf6f8fc);
+        const camera = new THREE.PerspectiveCamera(42, 1, 0.05, 1000);
+        camera.position.set(5.6, 4.8, 6.6);
+        const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        renderer.outputColorSpace = THREE.SRGBColorSpace;
+        renderer.shadowMap.enabled = true;
+        renderer.shadowMap.type = THREE.PCFShadowMap;
+        mount.appendChild(renderer.domElement);
+
+        const controls = new OrbitControls(camera, renderer.domElement);
+        controls.enableDamping = true;
+        controls.dampingFactor = 0.08;
+        controls.target.set(0, 0.6, 0);
+
+        const transform = new TransformControls(camera, renderer.domElement);
+        transform.setSize(0.76);
+        scene.add(transform.getHelper());
+
+        const world = new THREE.Group();
+        scene.add(world);
+        const relationLines = new THREE.Group();
+        scene.add(relationLines);
+        const selectable = new Set();
+        const raycaster = new THREE.Raycaster();
+        const pointer = new THREE.Vector2();
+        let selected = null;
+
+        const selectionBox = new THREE.BoxHelper(new THREE.Object3D(), 0x4285f4);
+        selectionBox.visible = false;
+        scene.add(selectionBox);
+
+        scene.add(new THREE.HemisphereLight(0xffffff, 0xd8dde8, 1.9));
+        const keyLight = new THREE.DirectionalLight(0xffffff, 2.3);
+        keyLight.position.set(6, 9, 5);
+        keyLight.castShadow = true;
+        keyLight.shadow.mapSize.set(1024, 1024);
+        scene.add(keyLight);
+
+        const floor = new THREE.Mesh(
+          new THREE.PlaneGeometry(30, 30),
+          new THREE.ShadowMaterial({ color: 0x1f2a3d, opacity: 0.09 })
+        );
+        floor.rotation.x = -Math.PI / 2;
+        floor.receiveShadow = true;
+        scene.add(floor);
+        const grid = new THREE.GridHelper(20, 40, 0xd7dce6, 0xebeff6);
+        grid.position.y = 0.004;
+        scene.add(grid);
+
+        transform.addEventListener("dragging-changed", (event) => {
+          controls.enabled = !event.value;
+        });
+        transform.addEventListener("objectChange", () => {
+          if (selected) selectionBox.setFromObject(selected);
+          drawRelations(state.relations);
+          updateWallAnalysis();
+        });
+
+        renderer.domElement.addEventListener("pointerdown", (event) => {
+          if (transform.dragging) return;
+          const rect = renderer.domElement.getBoundingClientRect();
+          pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
+          pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
+          raycaster.setFromCamera(pointer, camera);
+          const hits = raycaster.intersectObjects(Array.from(selectable), true);
+          if (!hits.length) {
+            selectPart("");
+            return;
+          }
+          let object = hits[0].object;
+          while (object && !object.userData.partId) object = object.parent;
+          selectPart(object?.userData.partId || "");
+        });
+
+        const resizeObserver = new ResizeObserver(resize);
+        resizeObserver.observe(mount);
+        resize();
+        animate();
+
+        function resize() {
+          const rect = mount.getBoundingClientRect();
+          const width = Math.max(1, rect.width);
+          const height = Math.max(1, rect.height);
+          renderer.setSize(width, height, false);
+          camera.aspect = width / height;
+          camera.updateProjectionMatrix();
+        }
+
+        function animate() {
+          controls.update();
+          if (selected) selectionBox.setFromObject(selected);
+          renderer.render(scene, camera);
+          requestAnimationFrame(animate);
+        }
+
+        function fit() {
+          world.updateMatrixWorld(true);
+          const box = new THREE.Box3().setFromObject(world);
+          if (box.isEmpty()) return;
+          const center = box.getCenter(new THREE.Vector3());
+          const size = box.getSize(new THREE.Vector3());
+          const radius = Math.max(size.x, size.y, size.z, 2.5);
+          controls.target.copy(center);
+          camera.position.copy(center).add(new THREE.Vector3(radius * 1.25, radius * 0.95, radius * 1.45));
+          camera.near = Math.max(radius / 100, 0.02);
+          camera.far = Math.max(radius * 12, 100);
+          camera.updateProjectionMatrix();
+          controls.update();
+        }
+
+        function select(object) {
+          selected = object;
+          if (selected) {
+            transform.attach(selected);
+            selectionBox.setFromObject(selected);
+            selectionBox.visible = true;
+          } else {
+            transform.detach();
+            selectionBox.visible = false;
+          }
+        }
+
+        function clearWorld() {
+          transform.detach();
+          selectionBox.visible = false;
+          selected = null;
+          selectable.clear();
+          while (world.children.length) {
+            const child = world.children[0];
+            world.remove(child);
+            disposeObject(child);
+          }
+          drawRelations([]);
+        }
+
+        function drawRelations(relations) {
+          relationLines.children.forEach((child) => {
+            child.geometry?.dispose();
+            child.material?.dispose?.();
+          });
+          relationLines.clear();
+          relations.forEach((relation, index) => {
+            const parent = state.parts.find((part) => part.id === relation.parent)?.object;
+            const child = state.parts.find((part) => part.id === relation.child)?.object;
+            if (!parent || !child) return;
+            const a = new THREE.Vector3();
+            const b = new THREE.Vector3();
+            parent.getWorldPosition(a);
+            child.getWorldPosition(b);
+            const color = GOOGLE_COLORS[index % GOOGLE_COLORS.length];
+            const line = new THREE.Line(
+              new THREE.BufferGeometry().setFromPoints([a, b]),
+              new THREE.LineBasicMaterial({ color, transparent: true, opacity: 0.9 })
+            );
+            relationLines.add(line);
+            const marker = new THREE.Mesh(new THREE.SphereGeometry(0.045, 14, 14), new THREE.MeshBasicMaterial({ color }));
+            marker.position.copy(a).lerp(b, 0.5);
+            relationLines.add(marker);
+          });
+        }
+
+        function thumbnail(root) {
+          const previousVisible = transform.getHelper().visible;
+          transform.getHelper().visible = false;
+          const oldPosition = camera.position.clone();
+          const oldTarget = controls.target.clone();
+          fit();
+          renderer.render(scene, camera);
+          const data = renderer.domElement.toDataURL("image/png");
+          camera.position.copy(oldPosition);
+          controls.target.copy(oldTarget);
+          controls.update();
+          transform.getHelper().visible = previousVisible;
+          return data;
+        }
+
+        function setTheme(theme) {
+          scene.background = new THREE.Color(theme === "dark" ? 0x0f1117 : 0xf6f8fc);
+        }
+
+        return {
+          world,
+          selectable,
+          fit,
+          select,
+          detach: () => transform.detach(),
+          setTransformMode: (mode) => transform.setMode(mode),
+          drawRelations,
+          clearWorld,
+          thumbnail,
+          setTheme
+        };
+      }
+
+      function disposeObject(object) {
+        object.traverse((child) => {
+          child.geometry?.dispose?.();
+          if (child.material) {
+            const materials = Array.isArray(child.material) ? child.material : [child.material];
+            materials.forEach((material) => material.dispose?.());
+          }
+        });
+      }
+
+      function partName(partId) {
+        return state.parts.find((part) => part.id === partId)?.name || partId;
+      }
+
+      function relationColor(type) {
+        return {
+          fixed: "#5f6368",
+          revolute: "#4285f4",
+          prismatic: "#34a853",
+          planar: "#fbbc04",
+          ball: "#a142f4"
+        }[type] || "#4285f4";
+      }
+
+      function fileExt(name) {
+        return (name.split(".").pop() || "").toLowerCase();
+      }
+
+      function id(prefix) {
+        return `${prefix}-${Math.random().toString(36).slice(2, 9)}`;
+      }
+
+      function escapeHtml(value) {
+        return String(value)
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#039;");
+      }
+
+      function showStatus(text) {
+        els.toast.textContent = text;
+        els.statusPill.textContent = text;
+      }
+    </script>
+  </body>
+</html>

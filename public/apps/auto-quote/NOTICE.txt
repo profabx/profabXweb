@@ -1,0 +1,10 @@
+ProFabX automatic quotation tool
+
+Application and logo: supplied in stlquote.zip.
+Only runtime assets are included; screenshots and example models are not published.
+
+Third-party libraries are hosted locally at the versions used by the attachment:
+- Three.js 0.183.2 (MIT): vendor/three/LICENSE
+  Source: https://cdn.jsdelivr.net/npm/three@0.183.2/
+- SheetJS xlsx 0.18.5 (Apache-2.0): vendor/xlsx/LICENSE
+  Source: https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js

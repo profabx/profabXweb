@@ -1,5 +1,16 @@
 ## 如何开始使用
 你好
+
+## 工具程序
+
+- 导航中的“工具 → 自动报价”对应 `/tools/auto-quote/`（英文入口 `/en/tools/auto-quote/`）。
+- 应用位于 `public/apps/auto-quote/`，运行时依赖固定版本并随网站托管；无需后端，用户模型不会上传。
+- STL / OBJ 按毫米单位估算体积、重量和费用；STEP 等 CAD 文件需要转换，URDF 仅作结构预览，不生成虚构报价。
+- 新增工具时，在 `src/constants.ts` 的 `ToolMenuItems` 添加入口，并添加相应的中英文工具页面。独立网页程序可放在 `public/apps/<工具名>/`，通过 `src/components/ToolEmbed.astro` 嵌入；顶部与侧边栏共用同一份工具列表。
+- 报价回归检查：导入边长 20 mm 的闭合立方体 STL，默认塑料密度 1.3 g/cm³、单价 0.9 元/g 时，结果应为 8.00 cm³、10.40 g、9.36 元；预览缩放不能改变这些数值。检查 Excel / JSON 导出数值一致。
+
+## 课程记录
+
 1. 0608在UNNC- FabLab-2025-2后面增量两类（UNNC- FabLab-2025-2和ZWU-interactivesystem 2026A1，ZWU-interactivesystem 2026A2同一级）
 * [ZWU-interactivesystem 2026A1](class/ZWU%202026%20interactivesystem-1.md)
   * [zwu2026-1-001](https://nexmaker-fab.github.io/zwu2026-1-001/)
@@ -471,5 +482,3 @@ const TableData = [
       NewtMetallicMaterialsData["铝/合金"],
     ],
   },
-
-  

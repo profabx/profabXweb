@@ -4584,6 +4584,17 @@ const FabResultsSection = FabMenuItems.find(
   (item: any) => item?.labelEn === "FABS",
 );
 
+// 新工具统一在这里添加，同时出现在顶部导航和工具侧边栏。
+const ToolMenuItems: NavItemProps[] = [
+  {
+    key: "auto-quote",
+    label: "自动报价",
+    labelEn: "Auto Quote",
+    link: "/tools/auto-quote/",
+    linkEn: "/en/tools/auto-quote/",
+  },
+];
+
 // 侧边栏菜单-
 const SideBarData = [
   {
@@ -4616,6 +4627,16 @@ const SideBarData = [
       en: "prototype",
     },
     items: [...PrototypeMenuItems],
+  },
+  {
+    id: "tools",
+    label: "工具",
+    translations: { en: "Tools" },
+    items: ToolMenuItems.map((item) => ({
+      ...item,
+      translations: { en: item.labelEn },
+      attrs: { id: "tools" },
+    })),
   },
   {
     id: "agv",
@@ -4913,7 +4934,7 @@ const NavigationSections: NavItemProps[] = [
 
   //nav-about
   {
-    key: "prototype",
+    key: "about",
     label: "关于 ProFabX",
     labelEn: "About ProFabX",
     link: "/about/introduce",
@@ -4924,13 +4945,20 @@ const NavigationSections: NavItemProps[] = [
 const partnerKeys = new Set(["fab", "traffic", "sandtable"]);
 
 const MenuData: NavItemProps[] = [
+  ...NavigationSections.filter((item) => item.key === "prototype"),
+  {
+    key: "tools",
+    label: "工具",
+    labelEn: "Tools",
+    items: ToolMenuItems,
+  },
   {
     key: "partners",
     label: "合作伙伴",
     labelEn: "Partners",
     items: NavigationSections.filter((item) => partnerKeys.has(item.key)),
   },
-  ...NavigationSections.filter((item) => !partnerKeys.has(item.key)),
+  ...NavigationSections.filter((item) => item.key === "about"),
 ];
 
 export { MenuData, SideBarData };

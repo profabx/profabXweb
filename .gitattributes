@@ -1,0 +1,2 @@
+# Preserve upstream libraries verbatim and collapse them in GitHub reviews.
+public/apps/**/vendor/** linguist-vendored -whitespace
