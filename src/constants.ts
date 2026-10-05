@@ -4690,8 +4690,8 @@ const sandtableMenuItems = [
 
 ];
 
-// 顶部菜单
-const MenuData: NavItemProps[] = [
+// 顶部导航栏目（保留各栏目的原链接和子菜单）
+const NavigationSections: NavItemProps[] = [
   //nav-fab
   {
     key: "fab",
@@ -4919,6 +4919,18 @@ const MenuData: NavItemProps[] = [
     link: "/about/introduce",
     linkEn: "/en/about/introduce",
   },
+];
+
+const partnerKeys = new Set(["fab", "traffic", "sandtable"]);
+
+const MenuData: NavItemProps[] = [
+  {
+    key: "partners",
+    label: "合作伙伴",
+    labelEn: "Partners",
+    items: NavigationSections.filter((item) => partnerKeys.has(item.key)),
+  },
+  ...NavigationSections.filter((item) => !partnerKeys.has(item.key)),
 ];
 
 export { MenuData, SideBarData };
