@@ -4458,6 +4458,14 @@ const AGVMenuItems = [
 
 // 侧边菜单项 - About
 const AboutItems = [
+  {
+    label: "关于 ProFabX",
+    link: "/about/introduce",
+    labelEn: "About ProFabX",
+    translations: { en: "About ProFabX" },
+    linkEn: "/en/about/introduce",
+    attrs: { id: "about" },
+  },
   // /about/aim
   {
     label: "目标",
