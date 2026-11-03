@@ -1,0 +1,14 @@
+import {materialById,processLabel} from '../quote/catalog.js';
+import {pricingWeight} from '../quote/pricing.js';
+export const company={name:'宁波微星硬创科技有限公司',contact:'金亚玲',phone:'+86 13345987462',website:'www.profabx.com',email:'bobwu@profabx.com',address:'浙江省宁波市高新区智造港D3幢5楼'};
+export const quoteColumns=['序号','商品名称','图片','加工方式','材料','后处理方式','单件重量 g','原材料单价 元/g','数量','单价 元/件','总价 元','备注'];
+export const quoteColumnWidths=[4,12,7,7,8,9,7,8,5,8,9,16];
+export const paymentPresets=['全款预付','50%定金，发货前付清尾款','月末结账，下月15日前付全款','货到付款'];
+export function paymentChoice(details){return details.paymentMode==='custom'||!paymentPresets.includes(details.paymentTerms)?'custom':details.paymentTerms;}
+export const documentFields=[['buyer','甲方 / 客户名称','text'],['buyerContact','甲方联系人','text'],['buyerPhone','甲方联系电话','tel'],['orderDate','下单时间','date'],['deliveryDate','计划交付时间','date'],['paymentTerms','付款方式','text'],['notes','报价备注','text']];
+export function documentDetails(project){return {buyer:'',buyerContact:'',buyerPhone:'',orderDate:new Date().toLocaleDateString('sv-SE',{timeZone:'Asia/Shanghai'}),deliveryDate:'',paymentTerms:'月末结账，下月15日前付全款',notes:'',...project.quoteDocument,validDays:3};}
+export function quoteWeight(part,pricing){if(Number.isFinite(pricing?.weight)&&pricing.weight>0)return {weight:pricing.weight,source:pricing.weightSource};try{const w=pricingWeight(part,pricing?.rule);return {weight:w.weight,source:w.weightSource};}catch{return {weight:null,source:'未提供重量'};}}
+export function quoteDocument(project,quote){
+ const details=documentDetails(project),rows=project.parts.map((p,i)=>{const line=quote.lines.find(l=>l.partId===p.id),d=line?.pricing||{},w=quoteWeight(p,d),c=p.config;return {id:p.id,index:i+1,name:p.name,process:processLabel(c.process),material:materialById(c.materialId).name,finishing:[c.postProcess&&c.postProcess!=='无'?c.postProcess:d.rule?.finishing,c.pricingTransparent?'透明处理':''].filter(Boolean).join('；')||'—',weight:w.weight,weightSource:w.source,rate:d.rate??null,quantity:Number(c.quantity),unit:line?.unitFen/100,amount:(line?.amountFen||0)/100,remarks:[d.label,w.source,line?.minimumTopupFen>0?`含组起步补差 ${(line.minimumTopupFen/100).toFixed(2)} 元`:'',line?.postTotalFen>0?`后处理 ${(line.postTotalFen/100).toFixed(2)} 元`:'',line?.setupFen>0?`设置费 ${(line.setupFen/100).toFixed(2)} 元`:'',d.review?'按难度 / 项目核价，需人工复核':'',c.toleranceRequirements?`公差：${c.toleranceRequirements}`:'',c.reviewNote].filter(Boolean).join('；')};});
+ return {details,rows,quantity:rows.reduce((n,r)=>n+r.quantity,0),total:quote.totalFen/100,net:quote.netFen/100,tax:quote.taxFen/100,discount:quote.discountFen/100,base:quote.baseFen/100,terms:[`以上报价价格和时间三天内有效。税率 ${project.quoteSettings.taxPercent}%，增值税发票。${quote.taxIncluded?'以上单价为含税价，不重复加税。':'以上单价为未税价，税额另计。'}`,`交期由收到客户报价回执、定金的第二天计时，节假日不算。`,`保密责任：本公司对客户提供的资料负有绝对保密的义务。`,`付款方式：${details.paymentTerms||'待约定'}。`]};
+}

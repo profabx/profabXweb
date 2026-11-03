@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {BoxGeometry,Matrix4,Vector3} from 'three';
+import {paintMesh,localPaintSample} from '../src/support-paint/geometry.js';
+import {poseQuaternion} from '../src/placement/geometry.js';
+test('paint_source_identity_and_transformed_hit',()=>{const part={id:'a',unit:'mm',geometry:new BoxGeometry(10,10,10),originalTransform:new Matrix4().makeTranslation(90,10,80)};const a=paintMesh(part),b=paintMesh({...part,id:'b'});assert.equal(a.meshDigest,b.meshDigest);const matrix=new Matrix4().compose(new Vector3(25,65,17),poseQuaternion([12,37,28]),new Vector3(1,1,1)),source=new Vector3(1,2,3),world=source.clone().applyMatrix4(matrix);const sample=localPaintSample(world,[0,0,1],matrix,0);assert.ok(new Vector3(...sample.localPoint).distanceTo(source)<.00001);assert.equal(sample.faceIndex,0);part.geometry.dispose();});

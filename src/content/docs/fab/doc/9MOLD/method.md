@@ -1,5 +1,0 @@
----
-title: method
----
-
-coming soon

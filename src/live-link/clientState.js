@@ -1,0 +1,1 @@
+export function initialClientState(result,fallbackBaseline,key){return {...result,baseline:result.baseline||fallbackBaseline,key,seq:0,states:result.parts,matrices:Object.fromEntries(Object.entries(result.parts).map(([id,p])=>[id,[...p.matrix]])),dirtyAt:{},release:new Set()};}

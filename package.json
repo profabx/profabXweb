@@ -1,42 +1,29 @@
 {
-  "name": "electrical-escape",
+  "name": "profabxweb",
+  "version": "1.0.0",
+  "private": true,
   "type": "module",
-  "version": "0.0.1",
-  "packageManager": "pnpm@10.32.1",
   "scripts": {
-    "dev": "astro dev",
-    "start": "astro dev",
-    "build": "astro check && astro build",
-    "preview": "astro preview",
-    "astro": "astro",
-    "gen:fabmenu:dry": "node scripts/generate-fab-menu-from-summary.js --section=1projectmanage --mode=dry-run --route-prefix=/tutorials --id=fab",
-    "gen:fabmenu:apply": "node scripts/generate-fab-menu-from-summary.js --section=1projectmanage --mode=apply --route-prefix=/tutorials --id=fab --target=src/constants.ts",
-    "gen:fabmenu:apply:tutorials": "node scripts/generate-fab-menu-from-summary.js --section=tutorials --mode=apply --route-prefix=/tutorials --id=fab --target=src/constants.ts",
-    "gen:fabmenu:apply:2-14": "node scripts/generate-fab-menu-from-summary.js --section=2-14 --mode=apply --route-prefix=/tutorials --id=fab --target=src/constants.ts",
-    "gen:fabmenu:apply:tutorials-fabs": "node scripts/generate-fab-menu-from-summary.js --section=tutorials+fabs --mode=apply --route-prefix=/tutorials --id=fab --target=src/constants.ts"
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "node scripts/start-preview.cjs",
+    "test": "node --test tests/*.test.js",
+    "prepare:cad": "node scripts/prepare-cad.cjs",
+    "postinstall": "node scripts/prepare-cad.cjs",
+    "preview:server": "node scripts/serve.cjs"
   },
   "dependencies": {
-    "@astrojs/check": "^0.3.1",
-    "@astrojs/react": "^3.0.4",
-    "@astrojs/starlight": "^0.12.0",
-    "@astrojs/starlight-tailwind": "^2.0.1",
-    "@astrojs/tailwind": "^5.0.2",
-    "@tanstack/match-sorter-utils": "^8.8.4",
-    "@tanstack/react-table": "^8.10.7",
-    "astro": "^3.4.3",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
-    "tailwind-merge": "^2.2.1",
-    "tailwindcss": "^3.0.24",
-    "typescript": "^5.2.2"
-  },
-  "pnpm": {
-    "overrides": {
-      "@astrojs/sitemap": "3.2.1"
-    }
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "three": "0.180.0",
+    "lucide-react": "0.468.0",
+    "occt-import-js": "0.0.23",
+    "pdfjs-dist": "4.10.38",
+    "jszip": "3.10.1",
+    "exceljs": "4.4.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.21",
-    "@types/react-dom": "^18.0.6"
+    "vite": "6.4.1",
+    "@vitejs/plugin-react": "4.7.0"
   }
 }

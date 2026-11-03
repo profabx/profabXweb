@@ -1,0 +1,4 @@
+import {useEffect,useState} from 'react';
+import './cmf-reference.css';
+function articleHash(){try{const hash=location.hash;if(!hash.startsWith('#read='))return '';const path=decodeURIComponent(hash.slice(6)),url=new URL(path,'https://profabx.com');return url.origin==='https://profabx.com'&&url.pathname.startsWith('/prototype/')?'#read='+encodeURIComponent(url.pathname+url.search+url.hash):'';}catch{return '';}}
+export default function CmfReference(){const [hash,setHash]=useState(articleHash);useEffect(()=>{const change=()=>setHash(articleHash());window.addEventListener('hashchange',change);return()=>window.removeEventListener('hashchange',change);},[]);return <main className="cmf-reference-page"><iframe title="CMF 数字制造资料" src={'./cmf-reference/index.html'+hash} sandbox="allow-scripts allow-popups allow-popups-to-escape-sandbox" referrerPolicy="no-referrer"/></main>;}

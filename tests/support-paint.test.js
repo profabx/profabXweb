@@ -1,0 +1,10 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {createPaintState,applyStroke,undoPaint,redoPaint,clearPaint,paintTriangles} from '../src/support-paint/model.js';
+const mesh={vertices:[0,0,0,100,0,0,0,100,0],triangles:[0,1,2],meshDigest:'large-face'};
+const stroke={mode:'enforce',shape:'circle',radiusMm:2,samples:[{faceIndex:0,localPoint:[20,20,0],localNormal:[0,0,1],viewDirection:[0,0,-1]}]};
+test('small_brush_splits_large_face',()=>{const state=applyStroke(createPaintState(mesh.meshDigest),stroke,mesh);const tris=paintTriangles(state,mesh);assert.ok(tris.length>1);const area=tris.reduce((sum,t)=>{const [a,b,c]=t.vertices;return sum+Math.abs((b[0]-a[0])*(c[1]-a[1])-(b[1]-a[1])*(c[0]-a[0]))/2;},0);assert.ok(area>5&&area<25,area);assert.equal(state.revision,1);});
+test('erase_and_undo_restore_mask',()=>{const state=applyStroke(createPaintState(mesh.meshDigest),stroke,mesh),erased=applyStroke(state,{...stroke,mode:'erase',radiusMm:4},mesh);assert.equal(paintTriangles(erased,mesh).length,0);assert.deepEqual(undoPaint(erased).facets,state.facets);assert.deepEqual(redoPaint(undoPaint(erased)).facets,erased.facets);assert.deepEqual(clearPaint(state).facets,{});});
+test('geometry_replacement_rejects_old_mask',()=>{assert.throws(()=>applyStroke(createPaintState('old'),stroke,mesh),/geometry/i);assert.throws(()=>applyStroke(createPaintState(mesh.meshDigest),{...stroke,radiusMm:NaN},mesh),/brush/i);});
+test('circle_does_not_paint_backface',()=>{const s=applyStroke(createPaintState(mesh.meshDigest),{...stroke,samples:[{...stroke.samples[0],viewDirection:[0,0,1]}]},mesh);assert.equal(paintTriangles(s,mesh).length,0);});
+test('visible_brush_area_survives_occluded_parent_centroid',()=>{const visibleMesh={...mesh,isVisible:vertices=>vertices.reduce((sum,v)=>sum+v[0],0)/3<30};const s=applyStroke(createPaintState(mesh.meshDigest),stroke,visibleMesh);assert.ok(paintTriangles(s,mesh).length>0);});

@@ -1,0 +1,15 @@
+{
+  "created": "2026-11-01",
+  "method": "Built-in image_gen; generated concept images, not company project photographs",
+  "sources": {
+    "color": "exec-1ab95b62-ef0f-4a39-8718-4f1119ad566d.png",
+    "material": "exec-fde13434-37e7-4f06-a205-61cf20253418.png",
+    "finishing": "exec-8521ceb5-aa5b-4507-b15c-6983eedfd9eb.png"
+  },
+  "promptSet": {
+    "shared": "Editorial product photography concept for a premium industrial design CMF laboratory website card. Off-white studio surface, soft directional daylight, realistic tactile materials, vertical 4:5, subjects in upper two thirds, bottom space for text, no writing, brands, UI or people.",
+    "color": "Fan of painted physical color swatches and rounded polymer sample chips in cobalt blue, terracotta, warm gray, cream and muted sage.",
+    "material": "Brushed aluminum, matte white polymer, carbon fiber composite, translucent resin puck and wood material samples.",
+    "finishing": "Identical rounded metal blocks with bead-blasted, brushed and polished finishes plus a small cobalt blue anodized machined part."
+  }
+}

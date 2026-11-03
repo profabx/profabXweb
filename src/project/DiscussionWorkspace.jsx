@@ -1,0 +1,3 @@
+import Collaboration from './Collaboration.jsx';
+import {stages} from './schema.js';
+export default function DiscussionWorkspace({project,setProject,t,onStageChange,viewedStage}){return <section className="discussion-workspace"><header><div><span className="treatment-eyebrow">PROJECT COLLABORATION</span><h2>{t(viewedStage||project.stage)} · {t('讨论协作')}</h2></div><label>{t('设置当前阶段')}<select aria-label={t('设置当前阶段')} value={project.stage} onChange={e=>onStageChange(e.target.value)}>{stages.slice(2).map(stage=><option key={stage} value={stage}>{t(stage)}</option>)}</select></label></header><Collaboration project={project} setProject={setProject} t={t}/></section>;}

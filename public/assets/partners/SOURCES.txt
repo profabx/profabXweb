@@ -1,0 +1,8 @@
+Logo assets obtained from the partners' official websites on 2026-10-22:
+- sophigo.png: https://sophigo.com/logo.png (official site navigation brand image)
+- sophicar-icon.ico: https://sophicar.com/favicon.ico?v=1 (official site brand icon)
+Brand marks remain the property of their respective owners. Local copies are used to identify the corresponding partner and link to its official website.
+
+Background sources, extracted 2026-10-22:
+- sophigo-assembly.svg: robot assembly illustration from https://sophigo.com/ homepage Featured Areas. Vector geometry retained; adapted to a light blue palette, background and text labels removed for use as a decorative card backdrop.
+- sophicar-home.webp: original homepage hero poster from https://sophicar.com/images/home-hero-poster.webp. Unmodified image; displayed using CSS overlays and cropping.

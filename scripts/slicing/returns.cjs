@@ -1,0 +1,15 @@
+const fs=require('node:fs/promises'),path=require('node:path');
+const {parseSupportGcode}=require('./gcode.cjs');
+async function readSlicedResult(bytes,format,{allowProject=false}={}){
+ if(bytes.length>32*1024*1024)throw Error('切片结果超过32MB。');let code,archive;
+ if(format==='3mf'){archive=await require('../vendor/jszip.cjs').loadAsync(bytes);const entries=Object.values(archive.files).filter(f=>!f.dir&&/\.gcode$/i.test(f.name));if(entries.length>1)throw Error('请只导出一个打印平台的切片结果。');if(!entries.length){if(allowProject&&archive.file('3D/3dmodel.model'))return {code:null,archive,preview:null};throw Error('3MF中没有G-code，请先在切片软件中切片并导出切片结果。');}const entry=entries[0];if(entry._data?.uncompressedSize>32*1024*1024)throw Error('G-code超过32MB。');code=await entry.async('string');}else code=bytes.toString('utf8');
+ if(code.length>32*1024*1024||!/^G0?[0123]\s+[^\n]*[XYIJ]/m.test(code))throw Error('文件不包含有效的运动G-code。');return {code,archive,preview:parseSupportGcode(code)};
+}
+function resultSettings(code,config={}){const value=key=>{const found=config[key]??code.match(new RegExp('^;\\s*'+key+'\\s*=\\s*(.+)$','m'))?.[1];return Array.isArray(found)?found[0]:found;};const angle=Number(value('support_threshold_angle'));return {threshold:Number.isFinite(angle)&&angle>=1&&angle<=90?angle:null,type:value('support_type')||null,enabled:['1','true'].includes(String(value('enable_support'))),layerHeight:Number(value('layer_height'))||null};}
+async function ingestResult(job,bytes,format,persist){
+ const generation=require('node:crypto').randomUUID(),prefix='returned-'+generation;const {code,archive,preview}=await readSlicedResult(bytes,format,{allowProject:true});let config={};if(archive?.file('Metadata/project_settings.config')){try{config=JSON.parse(await archive.file('Metadata/project_settings.config').async('string'));}catch{}}
+ job.resultSettings=resultSettings(code||'',config);if(code){const filename=prefix+'.gcode';await fs.writeFile(path.join(job.directory,filename),code);job.files.gcode=filename;}else delete job.files.gcode;
+ if(archive){const filename=prefix+(code?'.gcode.3mf':'.3mf');await fs.writeFile(path.join(job.directory,filename),bytes);if(code)job.files.result=filename;else delete job.files.result;if(archive.file('3D/3dmodel.model')){job.files.project=filename;job.files.layout=filename;}job.ignoredStamps=job.ignoredStamps||{};const stat=await fs.stat(path.join(job.directory,filename));job.ignoredStamps[filename]=filename+':'+stat.size+':'+stat.mtimeMs;}else{delete job.files.result;delete job.files.layout;}
+ if(preview){job.files.preview=prefix+'-preview.json';await fs.writeFile(path.join(job.directory,job.files.preview),JSON.stringify(preview));}else delete job.files.preview;job.supportSegmentCount=preview?.count||0;job.supportPreviewTruncated=preview?.truncated||false;job.previewParserVersion=preview?.parserVersion;job.imported=true;job.layoutOnly=!code;job.finished=new Date().toISOString();if(job.handoff)job.handoff.state='received';await persist(job);return job;
+}
+module.exports={readSlicedResult,ingestResult,resultSettings};

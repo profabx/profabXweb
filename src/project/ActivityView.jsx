@@ -1,0 +1,9 @@
+import {useState} from 'react';
+import Icon from '../ui/Icon.jsx';
+import {downloadBlob} from '../export/quotation.js';
+import {activityMarkdown} from './activity.js';
+import './activity.css';
+export default function ActivityView({project,t,locale}){
+ const [query,setQuery]=useState('');const all=project.history||[],rows=all.slice().reverse().filter(row=>JSON.stringify(row).toLowerCase().includes(query.toLowerCase()));
+ return <section className="activity-view" aria-labelledby="activity-title"><header><div><h3 id="activity-title">{t('操作记录')} <span>{all.length}</span></h3><p>{t('查看本项目的导入、修改与保存记录。')}</p></div><button className="button secondary small" disabled={!all.length} onClick={()=>downloadBlob(new Blob([`# ${project.name}\n\n${activityMarkdown(all)}`],{type:'text/markdown;charset=utf-8'}),`${project.id}-log.md`)}><Icon name="Download"/>{t('导出操作记录')}</button></header><label className="activity-search"><Icon name="Search" size={16}/><input aria-label={t('搜索操作记录')} placeholder={t('搜索操作记录')} value={query} onChange={e=>setQuery(e.target.value)}/></label><div className="activity-timeline">{rows.length?rows.map((row,i)=><article key={row.time+i}><span className="activity-node"><Icon name={row.kind==='placement'?'Move3D':row.kind==='analysis'?'ShieldCheck':row.kind?'Settings':'Clock'} size={17}/></span><div><div className="activity-entry-heading"><strong>{t(row.message)}</strong><time dateTime={row.time}>{new Date(row.time).toLocaleString(locale==='en'?'en-US':locale==='ja'?'ja-JP':'zh-CN',{timeZone:'Asia/Shanghai'})}</time></div>{row.changes?.length>0&&<details><summary>{t('变更明细')} · {row.changes.length}</summary><ul>{row.changes.map((change,j)=><li key={j}><span>{change.subject} · {t(change.field)}</span><div><del>{t(change.before)}</del><Icon name="ArrowRight" size={13}/><ins>{t(change.after)}</ins></div></li>)}</ul></details>}</div></article>):<p className="empty-text">{t(query?'搜索无结果':'暂无记录')}</p>}</div></section>;
+}

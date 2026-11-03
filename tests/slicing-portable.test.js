@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import os from 'node:os';
+import {createRequire} from 'node:module';
+test('the packaged bridge reads and writes 3MF without node_modules',async t=>{
+ const root=await fs.mkdtemp(path.join(os.tmpdir(),'ProFabX-portable-'));
+ t.after(()=>fs.rm(root,{recursive:true,force:true}));
+ await fs.cp(new URL('../scripts',import.meta.url),path.join(root,'scripts'),{recursive:true});
+ const load=createRequire(path.join(root,'entry.cjs'));
+ const {make3mf}=load('./scripts/slicing/core.cjs');
+ const {bindingsFromProject}=load('./scripts/live-link/service.cjs');
+ const file=path.join(root,'project.3mf'),part={id:'part-a',name:'PFXLIVE:part-a:Cube',vertices:[0,0,0,10,0,0,0,10,0],triangles:[0,1,2]};
+ await fs.writeFile(file,await make3mf({parts:[part]}, {machine:{},process:{},filament:{}}));
+ const bindings=await bindingsFromProject(file);
+ assert.equal(bindings[0].id,'part-a');
+ assert.deepEqual(bindings[0].max,[10,10,0]);
+ await assert.rejects(fs.stat(path.join(root,'node_modules')),{code:'ENOENT'});
+});

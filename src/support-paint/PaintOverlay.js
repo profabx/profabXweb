@@ -1,0 +1,3 @@
+import {BufferGeometry,Float32BufferAttribute,Mesh,MeshBasicMaterial,DoubleSide} from 'three';
+import {paintTriangles} from './model.js';
+export function buildPaintOverlay(state,mesh){const triangles=paintTriangles(state,mesh),position=[],colors=[];for(const t of triangles)for(const v of t.vertices){position.push(...v);colors.push(...(t.state===1?[.05,.8,.36]:[1,.16,.12]));}const g=new BufferGeometry();g.setAttribute('position',new Float32BufferAttribute(position,3));g.setAttribute('color',new Float32BufferAttribute(colors,3));return new Mesh(g,new MeshBasicMaterial({vertexColors:true,side:DoubleSide,transparent:true,opacity:.8,depthWrite:false,polygonOffset:true,polygonOffsetFactor:-2,polygonOffsetUnits:-2}));}

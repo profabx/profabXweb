@@ -1,0 +1,2 @@
+overrides:
+  esbuild: npm:esbuild-wasm@0.25.12

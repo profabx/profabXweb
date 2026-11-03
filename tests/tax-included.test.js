@@ -1,0 +1,4 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {calculateQuote} from '../src/quote/calculate.js';
+const p={id:'history',name:'历史含税零件',config:{process:'FDM',materialId:'petg',pricingMode:'manual',pricingScheme:'material',quantity:12,unitBaseYuan:55,postUnitYuan:0,setupYuan:0}};
+test('historical included tax is extracted rather than charged twice',()=>{const q=calculateQuote([p],{discountPercent:0,taxPercent:3,taxIncluded:true});assert.equal(q.totalFen,66000);assert.equal(q.netFen+q.taxFen,q.totalFen);assert.equal(q.taxFen,1922);});
+test('included tax discounts total before extracting tax and exclusive default is unchanged',()=>{const q=calculateQuote([p],{discountPercent:10,taxPercent:3,taxIncluded:true});assert.equal(q.totalFen,59400);assert.equal(q.netFen+q.taxFen,q.totalFen);assert.equal(calculateQuote([p],{discountPercent:0,taxPercent:3}).totalFen,67980);});

@@ -1,5 +1,0 @@
----
-title: manual
----
-
-coming soon

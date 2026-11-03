@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {readFile} from 'node:fs/promises';import {importModels} from '../src/model/import.js';
+for(const name of ['cube.step','cube.igs'])test('real CAD import '+name,async()=>{const b=await readFile(new URL('./fixtures/'+name,import.meta.url));const r=await importModels([{name,arrayBuffer:async()=>b.buffer.slice(b.byteOffset,b.byteOffset+b.byteLength)}]);assert.equal(r.errors.length,0);assert.ok(r.parts.length>0);assert.ok(r.parts[0].measurement.sizeMm.every(x=>Math.abs(x-10)<0.01));});

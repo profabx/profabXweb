@@ -1,0 +1,12 @@
+import {useState} from 'react';
+import {Matrix4} from 'three';
+import Icon from '../ui/Icon.jsx';
+import {arrangeOnPlate,checkPlacement,canPlaceIndividually,originalPose,placedGeometry,validPlate} from '../placement/geometry.js';
+import {plateForPrinter,normalizePrinterPlate} from '../placement/printers.js';
+import {exportPart} from './models.js';
+import {downloadBlob} from './quotation.js';
+export default function ExportTools({project,quote,busy,selected,onQuote,onModels,onRisk,notify,t}){
+ const parts=project.parts,[exporting,setExporting]=useState(false),initialPlate=plateForPrinter(parts[0]?.config.deviceId||''),independent=canPlaceIndividually(parts),layout=project.placement||{plate:initialPlate,poses:independent?arrangeOnPlate(parts,{},initialPlate).poses:Object.fromEntries(parts.map(p=>[p.id,originalPose(p)]))},plate=normalizePrinterPlate(layout.plate),poses=independent?(layout.poses||{}):Object.fromEntries(parts.map(p=>[p.id,originalPose(p)])),findings=checkPlacement(parts,poses,plate);
+ async function exportLayout(){setExporting(true);try{const {default:JSZip}=await import('jszip'),zip=new JSZip();for(const [i,p]of parts.entries()){const geometry=placedGeometry(p,poses[p.id]);try{zip.file(`${i+1}-${p.name.replace(/[<>:"/\\|?*]/g,'_')}.stl`,exportPart({...p,geometry,originalTransform:new Matrix4(),unit:'mm'},'stl'));}finally{geometry.dispose();}}zip.file('placement.json',JSON.stringify({projectId:project.id,unit:'mm',...layout,plate,poses,findings,scope:'one instance per part; trial placement, not sliced output'},null,2));downloadBlob(await zip.generateAsync({type:'blob'}),`${project.id}-placement.zip`);}catch(e){notify(e.message);}finally{setExporting(false);}}
+ return <section className="confirmation-export-tools" aria-label={t('导出工具')}><h3><Icon name="Download" size={18}/>{t('导出工具')}</h3><div className="confirmation-export-buttons"><button className="button primary" disabled={!quote||!parts.length||busy||exporting} onClick={onQuote}><Icon name="Download"/>{t('导出报价')}</button><button className="button secondary" disabled={!parts.length||busy||exporting} onClick={onModels}><Icon name="Download"/>{t('批量导出')} STL</button><button className="button secondary" disabled={!selected||busy||exporting} onClick={onRisk}><Icon name="FileText"/>{t('导出风险建议')}</button><button className="button secondary" disabled={!parts.length||!independent||busy||exporting||!validPlate(plate)||parts.some(p=>!p.unitConfirmed)} onClick={exportLayout}><Icon name="Download"/>{t('导出摆放STL')}</button></div></section>;
+}

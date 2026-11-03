@@ -1,0 +1,18 @@
+.home-divider{height:1px;background:var(--line);margin:20px 0 40px}
+.home .hero-art{min-width:0}
+.home .hero-art img{width:100%;max-width:100%}
+.home .home-footer{border-top:1px solid var(--line);margin-top:16px}
+.partner-nav{position:relative;height:100%;display:flex;align-items:center;gap:6px}
+.partner-nav-toggle{display:flex;align-items:center;gap:6px;height:100%;padding:0;white-space:nowrap;position:relative}
+.partner-nav-toggle.active{color:var(--blue);font-weight:600}
+.partner-nav-toggle.active:after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;background:var(--blue)}
+.partner-subnav{position:absolute;top:100%;left:-16px;min-width:176px;padding:8px;background:#fff;border:1px solid var(--line);border-radius:5px;box-shadow:0 12px 32px #182e5014;z-index:30}
+.nav .partner-subnav a{height:auto;min-height:42px;padding:10px 12px;justify-content:space-between;gap:18px;border-radius:3px;font-size:13px}
+.nav .partner-subnav a:hover{color:var(--blue);background:#f2f6ff}
+.partner-nav-toggle{width:26px;justify-content:center}.partner-nav-toggle:focus-visible{outline:2px solid var(--blue);outline-offset:2px}
+@media(max-width:700px){.nav .partner-nav{display:grid;grid-template-columns:1fr 36px}.nav .partner-nav>a{width:100%}.nav .partner-nav>.partner-nav-toggle{width:36px;justify-content:center}.partner-nav .partner-subnav{grid-column:1/-1}}
+.partner-tabs{display:flex;gap:32px;border-bottom:1px solid var(--line);padding-top:24px}
+.partner-tabs button{padding:16px 0;font-size:17px;color:var(--muted);border-bottom:2px solid transparent}
+.partner-tabs button[aria-selected=true]{color:var(--blue);border-color:var(--blue);font-weight:600}
+@media(max-width:700px){.home-divider{margin:18px 0 24px}.nav .partner-nav{height:auto;display:block;width:100%}.partner-nav-toggle{width:100%;height:auto;min-height:44px;justify-content:space-between}.partner-nav-toggle.active:after{display:none}.partner-subnav{position:static;box-shadow:none;border:0;border-left:2px solid var(--line);border-radius:0;margin:0 0 8px 4px;padding:0 6px}.nav .partner-subnav a{font-size:13px;min-height:40px}.partner-tabs{gap:28px;padding-top:10px}.partner-tabs button{font-size:16px}}
+@media(max-width:700px){.nav .partner-nav{display:grid;grid-template-columns:1fr 36px}.nav .partner-nav>.partner-nav-toggle{width:36px;justify-content:center}.partner-nav .partner-subnav{grid-column:1/-1}}

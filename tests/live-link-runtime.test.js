@@ -1,0 +1,28 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import os from 'node:os';
+import crypto from 'node:crypto';
+import {createRequire} from 'node:module';
+const {linkedRuntime}=createRequire(import.meta.url)('../scripts/live-link/service.cjs');
+test('an unverified native build cannot enable production linking',async t=>{
+ const root=await fs.mkdtemp(path.join(os.tmpdir(),'ProFabX-runtime-gate-'));
+ t.after(()=>fs.rm(root,{recursive:true,force:true}));
+ const app=path.join(root,'ProFabXweb'),runtime=path.join(root,'ProFabXLink/runtime');
+ await fs.mkdir(runtime,{recursive:true});
+ const bytes=Buffer.from('test-only Windows launcher fixture');
+ const library=Buffer.from('test-only native library fixture PROFABX_LIVE_PROTOCOL_1');
+ await fs.writeFile(path.join(runtime,'bambu-studio.exe'),bytes);
+ await fs.writeFile(path.join(runtime,'BambuStudio.dll'),library);
+ const file=path.join(runtime,'profabx-link-build.json'),manifest={protocol:1,sourceCommit:'926a7192574bcb9b3a732e1ec59a46d79cb45466',sha256:crypto.createHash('sha256').update(bytes).digest('hex'),librarySha256:crypto.createHash('sha256').update(library).digest('hex')};
+ await fs.writeFile(file,JSON.stringify(manifest));
+ assert.equal((await linkedRuntime(app)).available,false);
+ await fs.writeFile(file,JSON.stringify({...manifest,integrationVerified:true}));
+ assert.equal((await linkedRuntime(app)).available,true);
+ await fs.appendFile(path.join(runtime,'BambuStudio.dll'),'changed');
+ assert.equal((await linkedRuntime(app)).available,false);
+ await fs.writeFile(path.join(runtime,'BambuStudio.dll'),library);
+ await fs.appendFile(path.join(runtime,'bambu-studio.exe'),'changed');
+ assert.equal((await linkedRuntime(app)).available,false);
+});

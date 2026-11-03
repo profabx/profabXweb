@@ -1,0 +1,5 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {createRequire} from 'node:module';
+const require=createRequire(import.meta.url),{paintCommand,resultMatches}=require('../scripts/live-link/slice-result.cjs');
+const parts=[{id:'p',meshDigest:'mesh',triangles:[0,1,2],paint:{version:1,meshDigest:'mesh',revision:3,triangles:['4']}}];
+test('paint_command_validates_geometry_and_revision',()=>{const cmd=paintCommand(parts,['p']);assert.deepEqual(cmd,[{id:'p',triangles:['4']}]);assert.throws(()=>paintCommand(parts,['other']),/identit/i);assert.throws(()=>paintCommand([{...parts[0],meshDigest:'changed'}],['p']),/mismatch/);assert.throws(()=>paintCommand([{...parts[0],paint:{...parts[0].paint,triangles:['3']}}],['p']),/tree/);});
+test('stale_slice_result_cannot_replace_current_revision',()=>{assert.equal(resultMatches({inputDigest:'a',revision:3},{inputDigest:'b',revision:3}),false);assert.equal(resultMatches({inputDigest:'a',revision:3},{inputDigest:'a',revision:4}),false);assert.equal(resultMatches({inputDigest:'a',revision:3},{inputDigest:'a',revision:3}),true);});

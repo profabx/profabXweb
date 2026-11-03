@@ -1,0 +1,3 @@
+import {fingerprint} from '../risk/fingerprint.js';
+const identities=new WeakMap();
+export function geometryIdentity(part){const g=part.geometry;if(!g)return fingerprint(JSON.stringify({source:part.sourcePath,matrix:part.matrix,measurement:part.measurement}));const pos=g.getAttribute('position'),idx=g.index,key=[pos?.version,idx?.version,pos?.array,idx?.array],old=identities.get(g);if(old&&old.key.every((v,i)=>v===key[i]))return old.digest;const digest=[pos?.count,idx?.count,...[pos,idx].filter(Boolean).map(attr=>fingerprint(new Uint8Array(attr.array.buffer,attr.array.byteOffset,attr.array.byteLength)))].join(':');identities.set(g,{key,digest});return digest;}

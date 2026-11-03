@@ -1,0 +1,3 @@
+import {wallInfo} from '../thickness/model.js';import {simpleRisk,geometryRiskKey} from '../simple-risk/state.js';
+export function analysisSignature(part,context={}){const r=simpleRisk(part,context);return JSON.stringify({version:2,id:part.id,unit:part.unit,unitConfirmed:part.unitConfirmed,config:part.config,wall:wallInfo(part),settings:part.riskReview,geometryKey:geometryRiskKey(part,context.pose),issues:r.issues,checks:r.checks,unknown:r.unknown});}
+export function runRuleAnalysis(part,context={}){const r=simpleRisk(part,context);return {type:'simple-risk',version:2,time:new Date().toISOString(),signature:analysisSignature(part,context),risks:r.issues,checks:r.checks,unknown:r.unknown,treatmentIds:[],solverExecuted:false,geometryScreened:r.geometryCurrent===true};}
