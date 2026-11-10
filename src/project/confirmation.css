@@ -5,3 +5,5 @@
 .confirmation-stage-root{margin-top:20px;scroll-margin-top:20px}.confirmation-stage-root>.confirmation-panel{padding:28px 0 0}.confirmation-stage-root .detail-panel{margin-bottom:10px}
 
 .confirmation-export-tools{padding:20px 24px;border:1px solid var(--line);border-radius:7px;background:#fff;margin-bottom:20px}.confirmation-export-tools h3{display:flex;align-items:center;gap:8px;font-size:16px;margin:0 0 16px;color:var(--blue,#0054ff)}.confirmation-export-buttons{display:flex;gap:12px;flex-wrap:wrap}.confirmation-export-buttons .button{min-height:42px}@media(max-width:600px){.confirmation-export-tools{padding:16px}.confirmation-export-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}.confirmation-export-buttons .button{font-size:11px;padding:10px 8px;white-space:normal}}
+
+.confirmation-heading-actions{display:flex;align-items:center;gap:10px}.confirmation-settings-toggle{padding:10px;min-width:40px;min-height:40px}.confirmation-settings-toggle[aria-expanded=true]{background:#edf3ff;color:var(--blue)}.confirmation-columns:not(.settings-open){grid-template-columns:1fr}
