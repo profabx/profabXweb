@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import {createProject,serializeProject} from '../src/project/schema.js';
+test('new projects start with zero tax and serialized existing rates are retained',()=>{assert.equal(createProject().quoteSettings.taxPercent,0);const p=createProject();p.quoteSettings.taxPercent=3;assert.equal(serializeProject(p).quoteSettings.taxPercent,3);});
