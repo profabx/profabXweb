@@ -8,3 +8,6 @@ dist/
 work/
 *.log
 .pnpm-store/
+
+dist-admin/
+.rule-drafts/

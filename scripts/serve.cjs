@@ -9,16 +9,16 @@ const pages=['index','prototype','cmf','partners','about'];
 const types={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.wasm':'application/wasm','.svg':'image/svg+xml','.png':'image/png','.webp':'image/webp'};
 
 function projectKey(projectRoot){let resolved=path.resolve(projectRoot);if(process.platform==='win32')resolved=resolved.toLowerCase();return crypto.createHash('sha256').update(resolved).digest('hex').slice(0,20);}
-function validateBuild(projectRoot){
- const root=path.resolve(projectRoot,'dist');
+function validateBuild(projectRoot,buildDir='dist'){
+ const root=path.resolve(projectRoot,buildDir);
  const required=[...pages.map(p=>p+'.html'),'assets/hero.png','cad/occt-import-js.js','cad/occt-import-js.wasm'];
  const check=relative=>{const file=path.resolve(root,relative);if(!file.startsWith(root+path.sep)||!fs.existsSync(file)||!fs.statSync(file).isFile())throw new Error(`缺少预览文件：${relative}。请恢复完整项目，或运行 pnpm install 与 pnpm build。`);};
  for(const relative of required)check(relative);
  for(const page of pages){const html=fs.readFileSync(path.join(root,page+'.html'),'utf8');for(const match of html.matchAll(/(?:src|href)="([^"#]+)"/g)){const resource=match[1];if(/^(?:[a-z]+:|\/\/)/i.test(resource))continue;check(resource.replace(/^\//,'').split('?')[0]);}}
  return root;
 }
-function createPreviewServer(projectRoot,{prefix='/'}={}){
- const root=validateBuild(projectRoot),key=projectKey(projectRoot),slicing=createSlicingHandler(projectRoot),live=createLiveHandler(projectRoot);
+function createPreviewServer(projectRoot,{prefix='/',buildDir='dist'}={}){
+ const root=validateBuild(projectRoot,buildDir),key=projectKey(projectRoot),slicing=createSlicingHandler(projectRoot),live=createLiveHandler(projectRoot);
  prefix=('/'+String(prefix).replace(/^\/+|\/+$/g,'')+'/').replace(/\/+/g,'/');
  return http.createServer((req,res)=>{
   if(req.url?.startsWith('/api/live-link/')){void live(req,res,new URL(req.url,'http://localhost').pathname);return;}

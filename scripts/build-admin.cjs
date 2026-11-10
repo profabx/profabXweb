@@ -1,0 +1,1 @@
+const {spawnSync}=require('child_process'),path=require('path');const root=path.resolve(__dirname,'..');const r=spawnSync(process.execPath,[path.join(root,'node_modules/vite/bin/vite.js'),'build'],{cwd:root,env:{...process.env,PROFABX_ADMIN:'1'},stdio:'inherit'});process.exitCode=r.status??1;
