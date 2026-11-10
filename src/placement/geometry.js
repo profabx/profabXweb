@@ -3,7 +3,7 @@ import {unitScale} from '../model/measure.js';
 const finite=(value,fallback=0)=>Number.isFinite(Number(value))?Number(value):fallback;
 export function normalizePose(pose={}){return {position:[0,1,2].map(i=>finite(pose.position?.[i])),rotation:[0,1,2].map(i=>finite(pose.rotation?.[i]))};}
 export function constrainEditPose(pose={}){const normalized=normalizePose(pose);normalized.position[2]=Math.max(0,normalized.position[2]);return normalized;}
-export function canPlaceIndividually(parts){if(!parts.length)return false;const counts=new Map();for(const p of parts){if(!p.sourcePath||p.sourceObjectCount>1)return false;counts.set(p.sourcePath,(counts.get(p.sourcePath)||0)+1);}return [...counts.values()].every(n=>n===1);}
+export function canPlaceIndividually(parts){if(!parts.length)return false;const counts=new Map();for(const p of parts){if(!p.sourcePath)return false;if(/\.3mf$/i.test(p.sourcePath))continue;if(p.sourceObjectCount>1)return false;counts.set(p.sourcePath,(counts.get(p.sourcePath)||0)+1);}return [...counts.values()].every(n=>n===1);}
 export function centeredGeometry(part){
  const geometry=part.geometry.clone().applyMatrix4(part.originalTransform||new Matrix4()),scale=unitScale[part.unit];if(!scale){geometry.dispose();throw new Error('Unknown model unit');}
  geometry.scale(scale,scale,scale);geometry.computeBoundingBox();const center=geometry.boundingBox.getCenter(new Vector3());geometry.translate(-center.x,-center.y,-center.z);return geometry;

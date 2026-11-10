@@ -30,3 +30,5 @@ test('changing placement invalidates a quote confirmation but recording analysis
  const changed=withValidConfirmation({...project,placement:{plate:{size:[200,200,200]},poses:{}}});assert.equal(changed.confirmation,null);assert.equal(changed.stage,'报价');
 });
 test('manual position edits stop at the platform while source poses remain unrestricted',()=>{const p=part('floor'),source={position:[30,40,-8],rotation:[25,50,10]};assert.equal(normalizePose(source).position[2],-8);const edited=constrainEditPose(source);assert.deepEqual(edited.position,[30,40,0]);assert.ok(Math.abs(placementBounds(p,edited).min.z)<1e-5);assert.deepEqual(source.position,[30,40,-8]);assert.equal(constrainEditPose({position:[1,2,7]}).position[2],7);});
+
+test('3MF build instances remain independently placeable within the same source archive',()=>{const a=part('a'),b=part('b');a.sourcePath=b.sourcePath='models/assembly.3mf';a.sourceObjectCount=b.sourceObjectCount=2;assert.equal(canPlaceIndividually([a,b]),true);b.sourcePath='models/assembly.stl';assert.equal(canPlaceIndividually([a,b]),false);a.geometry.dispose();b.geometry.dispose();});

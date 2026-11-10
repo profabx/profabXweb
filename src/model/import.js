@@ -1,3 +1,4 @@
+import {readThreeMF} from './threeMF.js';
 import {BufferGeometry,Float32BufferAttribute,Matrix4} from 'three';
 import {STLLoader} from 'three/examples/jsm/loaders/STLLoader.js';
 import {OBJLoader} from 'three/examples/jsm/loaders/OBJLoader.js';
@@ -18,9 +19,10 @@ export function makePart(name,path,geometry,matrix=new Matrix4(),unit='mm',assem
 export async function importModels(files,onProgress=()=>{}){
  const parts=[],errors=[],sourceFiles=[];let done=0;
  for(const file of files){const path=file.webkitRelativePath||file.name,ext=file.name.split('.').pop().toLowerCase();
- if(!['stl','obj','step','stp','iges','igs'].includes(ext))continue;
+ if(!['stl','obj','3mf','step','stp','iges','igs'].includes(ext))continue;
  try{if(file.size>150*1024*1024)throw new Error('文件超过本版 150 MB 单文件限制，请简化或拆分');const data=await file.arrayBuffer(),added=[];
  if(ext==='stl')added.push(makePart(file.name,path,new STLLoader().parse(data)));
+ else if(ext==='3mf'){const models=await readThreeMF(data);for(const model of models){const part=makePart(model.name,path,model.geometry,model.matrix,'mm',model.name);part.unitConfirmed=true;part.sourceFormat='3mf';added.push(part);}}
  else if(ext==='obj'){const object=new OBJLoader().parse(new TextDecoder().decode(data));object.updateMatrixWorld(true);object.traverse(child=>{if(child.isMesh)added.push(makePart(child.name||file.name,path,child.geometry.clone(),child.matrixWorld));});}
  else {const occt=await cadKernel(),result=ext==='stp'||ext==='step'?occt.ReadStepFile(new Uint8Array(data),{linearUnit:'millimeter'}):occt.ReadIgesFile(new Uint8Array(data),{linearUnit:'millimeter'});if(!result.success||!result.meshes?.length)throw new Error('CAD 转换失败：未找到可三角化实体');
  const paths=new Map();function walk(node,parents=[]){const here=[...parents,node.name||'Assembly'];for(const i of node.meshes||[])paths.set(i,here.join(' / '));for(const c of node.children||[])walk(c,here);}if(result.root)walk(result.root);
