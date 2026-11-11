@@ -1,3 +1,4 @@
+import {withPreviewNormals} from './model/previewNormals.js';
 import {memo,useEffect,useRef,useState} from 'react';
 import * as THREE from 'three';
 import {centeredGeometry,poseQuaternion} from './placement/geometry.js';
@@ -16,7 +17,7 @@ function schedule(task){
 function snapshot(part,rotation,color,key){
  let images=cache.get(part.geometry);if(images?.has(key))return images.get(key);
  if(!renderer){renderer=new THREE.WebGLRenderer({antialias:true,alpha:true});renderer.setSize(128,128,false);renderer.setPixelRatio(1);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.2;}
- const geometry=centeredGeometry(part),material=new THREE.MeshStandardMaterial({color,metalness:.15,roughness:.55,side:THREE.DoubleSide});
+ const geometry=withPreviewNormals(part,centeredGeometry(part)),material=new THREE.MeshStandardMaterial({color,metalness:.15,roughness:.55,side:THREE.DoubleSide});
  try{
   geometry.applyQuaternion(poseQuaternion(rotation));geometry.computeBoundingBox();const box=geometry.boundingBox,center=box.getCenter(new THREE.Vector3()),span=box.getSize(new THREE.Vector3()).length();
   if(!Number.isFinite(span)||span<=0)throw new Error('Empty part geometry');
