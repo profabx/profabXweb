@@ -10,15 +10,50 @@ export async function readThreeMF(bytes){
  const zip=await JSZip.loadAsync(bytes),entries=Object.values(zip.files).filter(e=>!e.dir),names=new Map(entries.map(e=>[e.name.toLowerCase(),e.name]));
  if(entries.length>5000||entries.reduce((sum,e)=>sum+(e._data?.uncompressedSize||0),0)>220*1024*1024)throw Error('3MF 解压内容过大，请简化模型');
  const entry=name=>zip.file(names.get(name.toLowerCase())||name),documents=new Map();
- async function load(file){if(documents.has(file))return documents.get(file);const e=entry(file);if(!e||e._data?.uncompressedSize>100*1024*1024)throw Error('3MF 模型文件缺失或过大');const root=xml(await e.async('string')),scale=scales[root.getAttribute('unit')||'millimeter'];if(root.localName!=='model'||!scale)throw Error('3MF 模型或单位不受支持');const objects=new Map(children(one(root,'resources'),'object').map(o=>[o.getAttribute('id'),o]));const model={root,scale,objects};documents.set(file,model);return model;}
+ async function load(file,rootRequired=false){
+  if(documents.has(file))return documents.get(file);
+  const e=entry(file);
+  if(!e)throw Error(`3MF 内部模型缺失：${file}`);
+  const bytes=e._data?.uncompressedSize||0;
+  if(bytes>160*1024*1024)throw Error(`3MF 内部模型 ${file} 解压后超过 160 MiB`);
+  let model;
+  if(bytes>32*1024*1024&&!rootRequired){
+   const {streamLargeModel}=await import('./largeThreeMF.js');
+   const streamed=await streamLargeModel(e);
+   model={...streamed,scale:scales[streamed.unit]};
+  }else{
+   if(bytes>100*1024*1024)throw Error(`3MF 主模型 ${file} 解压后超过 100 MiB，请拆分组件`);
+   const root=xml(await e.async('string'));
+   if(root.localName!=='model')throw Error('3MF 模型不受支持');
+   model={root,scale:scales[root.getAttribute('unit')||'millimeter'],objects:new Map(children(one(root,'resources'),'object').map(o=>[o.getAttribute('id'),o]))};
+  }
+  if(!model.scale)throw Error('3MF 单位不受支持');
+  documents.set(file,model);return model;
+ }
  let rootFile='3D/3dmodel.model';const rels=entry('_rels/.rels');if(rels){const rel=children(xml(await rels.async('string')),'Relationship').find(n=>(n.getAttribute('Type')||'').endsWith('/3dmodel'));if(rel){if(rel.getAttribute('TargetMode')==='External')throw Error('3MF 不支持外部模型链接');rootFile=resolvePath(rel.getAttribute('Target'));}}
- const root=await load(rootFile),labels=new Map(),settings=entry('Metadata/model_settings.config');if(settings){const cfg=xml(await settings.async('string'));if(Array.from(cfg.querySelectorAll('part')).some(p=>['negative_part','modifier_part'].includes(p.getAttribute('subtype'))))throw Error('3MF 含负体积或修改器，请在切片软件中导出应用布尔运算后的实体模型');for(const object of children(cfg,'object')){const name=children(object,'metadata').find(n=>n.getAttribute('key')==='name')?.getAttribute('value');if(name)labels.set(object.getAttribute('id'),name);}}
+ const root=await load(rootFile,true),labels=new Map(),settings=entry('Metadata/model_settings.config');if(settings){const cfg=xml(await settings.async('string'));if(Array.from(cfg.querySelectorAll('part')).some(p=>['negative_part','modifier_part'].includes(p.getAttribute('subtype'))))throw Error('3MF 含负体积或修改器，请在切片软件中导出应用布尔运算后的实体模型');for(const object of children(cfg,'object')){const name=children(object,'metadata').find(n=>n.getAttribute('key')==='name')?.getAttribute('value');if(name)labels.set(object.getAttribute('id'),name);}}
  const items=children(one(root.root,'build'),'item').filter(n=>!['0','false'].includes(n.getAttribute('printable'))),results=[];let totalVertices=0,totalTriangles=0;
  if(!items.length||items.length>200)throw Error('3MF 无可打印模型或零件超过 200 个');
  try{for(const [i,item]of items.entries()){
   const vertices=[],indices=[];const rootId=item.getAttribute('objectid'),ref=refPath(item),file=ref?resolvePath(ref,rootFile):rootFile;
-  async function append(file,id,world,stack=[]){const key=file+'#'+id;if(stack.includes(key)||stack.length>32)throw Error('3MF 组件循环引用或层级过深');const model=await load(file),object=model.objects.get(id);if(!object)throw Error('3MF 引用了不存在的零件');const mesh=one(object,'mesh');if(mesh){const vs=children(one(mesh,'vertices'),'vertex'),ts=children(one(mesh,'triangles'),'triangle'),offset=vertices.length/3;if((totalVertices+=vs.length)>2000000||(totalTriangles+=ts.length)>2000000)throw Error('3MF 网格过大，请拆分导入');for(const v of vs){const coords=['x','y','z'].map(k=>v.hasAttribute(k)?Number(v.getAttribute(k)):NaN);if(!coords.every(Number.isFinite))throw Error('3MF 顶点无效');const point=new Vector3(...coords).multiplyScalar(model.scale).applyMatrix4(world);if(![point.x,point.y,point.z].every(n=>Number.isFinite(n)&&Math.abs(n)<1e8))throw Error('3MF 坐标超出范围');vertices.push(point.x,point.y,point.z);}for(const t of ts){const a=['v1','v2','v3'].map(k=>t.hasAttribute(k)?Number(t.getAttribute(k)):NaN);if(!a.every(n=>Number.isInteger(n)&&n>=0&&n<vs.length))throw Error('3MF 三角面索引无效');indices.push(...a.map(n=>n+offset));}return;}
+  async function append(file,id,world,stack=[]){const key=file+'#'+id;if(stack.includes(key)||stack.length>32)throw Error('3MF 组件循环引用或层级过深');const model=await load(file),object=model.objects.get(id);if(!object)throw Error('3MF 引用了不存在的零件');if(object.vertices){
+   if(object.triangles.length){
+    const offset=vertices.length/3,point=new Vector3();
+    if((totalVertices+=object.vertices.length/3)>2000000||(totalTriangles+=object.triangles.length/3)>2000000)throw Error('3MF 网格过大，请拆分导入');
+    for(let i=0;i<object.vertices.length;i+=3){
+     point.fromArray(object.vertices,i).multiplyScalar(model.scale).applyMatrix4(world);
+     if(![point.x,point.y,point.z].every(n=>Number.isFinite(n)&&Math.abs(n)<1e8))throw Error('3MF 坐标超出范围');
+     vertices.push(point.x,point.y,point.z);
+    }
+    for(const index of object.triangles)indices.push(index+offset);
+    return;
+   }
+   if(!object.components.length)throw Error('3MF 零件没有有效网格');
+   for(const comp of object.components)await append(comp.ref?resolvePath(comp.ref,file):file,comp.id,world.clone().multiply(transform(comp.transform,model.scale)),[...stack,key]);
+   return;
+  }
+  const mesh=one(object,'mesh');if(mesh){const vs=children(one(mesh,'vertices'),'vertex'),ts=children(one(mesh,'triangles'),'triangle'),offset=vertices.length/3;if((totalVertices+=vs.length)>2000000||(totalTriangles+=ts.length)>2000000)throw Error('3MF 网格过大，请拆分导入');for(const v of vs){const coords=['x','y','z'].map(k=>v.hasAttribute(k)?Number(v.getAttribute(k)):NaN);if(!coords.every(Number.isFinite))throw Error('3MF 顶点无效');const point=new Vector3(...coords).multiplyScalar(model.scale).applyMatrix4(world);if(![point.x,point.y,point.z].every(n=>Number.isFinite(n)&&Math.abs(n)<1e8))throw Error('3MF 坐标超出范围');vertices.push(point.x,point.y,point.z);}for(const t of ts){const a=['v1','v2','v3'].map(k=>t.hasAttribute(k)?Number(t.getAttribute(k)):NaN);if(!a.every(n=>Number.isInteger(n)&&n>=0&&n<vs.length))throw Error('3MF 三角面索引无效');indices.push(...a.map(n=>n+offset));}return;}
    const comps=children(one(object,'components'),'component');if(!comps.length)throw Error('3MF 零件没有有效网格');for(const comp of comps){const ref=refPath(comp);await append(ref?resolvePath(ref,file):file,comp.getAttribute('objectid'),world.clone().multiply(transform(comp.getAttribute('transform'),model.scale)),[...stack,key]);}}
-  await append(file,rootId,new Matrix4());if(!vertices.length||!indices.length)throw Error('3MF 零件没有有效三角面');const geometry=new BufferGeometry();geometry.setAttribute('position',new Float32BufferAttribute(vertices,3));geometry.setIndex(indices);const model=await load(file);results.push({name:labels.get(rootId)||model.objects.get(rootId)?.getAttribute('name')||`零件 ${i+1}`,geometry,matrix:transform(item.getAttribute('transform'),root.scale)});
+  await append(file,rootId,new Matrix4());if(!vertices.length||!indices.length)throw Error('3MF 零件没有有效三角面');const geometry=new BufferGeometry();geometry.setAttribute('position',new Float32BufferAttribute(vertices,3));geometry.setIndex(indices);const model=await load(file);results.push({name:labels.get(rootId)||(model.objects.get(rootId)?.name||model.objects.get(rootId)?.getAttribute?.('name'))||`零件 ${i+1}`,geometry,matrix:transform(item.getAttribute('transform'),root.scale)});
  }return results;}catch(error){for(const part of results)part.geometry.dispose();throw error;}
 }

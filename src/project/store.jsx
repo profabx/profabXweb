@@ -1,3 +1,4 @@
+import {invalidateDyeingPrice} from '../quote/dyeing.js';
 import {refreshPartMeasurement} from '../model/measure.js';
 import {recordActivity} from './activity.js';
 import {useEffect,useState,useRef,useCallback} from 'react';
@@ -23,7 +24,7 @@ export function useProject(){
    }catch{if(currentRevision===revision.current)setStorageStatus('浏览器保存失败，请导出本地归档');}
   },600);return()=>clearTimeout(timeout);
  },[project,sourceFiles,loaded]);
- const updatePart=(id,change)=>setProject(p=>({...p,parts:p.parts.map(part=>part.id===id?{...part,config:{...part.config,...change}}:part)}));
+ const updatePart=(id,change)=>setProject(p=>({...p,parts:p.parts.map(part=>part.id===id?{...part,config:invalidateDyeingPrice(part.config,{...part.config,...change})}:part)}));
  const log=message=>({time:new Date().toISOString(),message});
  return {project,setProject,sourceFiles,setSourceFiles,updatePart,storageStatus,loaded,log};
 }

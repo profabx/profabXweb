@@ -32,6 +32,9 @@ importers:
       react-dom:
         specifier: 19.2.0
         version: 19.2.0(react@19.2.0)
+      saxes:
+        specifier: 5.0.1
+        version: 5.0.1
       three:
         specifier: 0.180.0
         version: 0.180.0

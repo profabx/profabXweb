@@ -18,3 +18,4 @@
 .quote-part-cell .part-thumbnail{display:grid;place-items:center;width:48px;height:48px;flex:none;overflow:hidden}
 .quote-part-cell > span:last-child{min-width:0;overflow-wrap:anywhere}
 @media(max-width:700px){.quote-part-cell .part-thumbnail{width:40px;height:40px}}
+.dye-review{margin:12px 0;padding:12px 16px;border:1px solid #d9e5f7;border-radius:6px;background:#f5f8ff}.dye-review p{margin:0 0 8px}.dye-review-actions{display:flex;gap:8px;flex-wrap:wrap}

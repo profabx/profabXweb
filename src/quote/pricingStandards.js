@@ -1,7 +1,9 @@
 const rule=(process,materialId,name,sampleRate,batchRate,pieceMin,orderMin,lead,extra={})=>({process,materialId,name,sampleRate,batchRate,pieceMin,orderMin,lead,...extra});
 export const pricingVersion='2026-10-26-screenshots-v1';
+const plaRule=rule('FDM','pla','PLA',.4,.25,8,50,'12小时');
 export const pricingRules=[
- rule('FDM','pla','PLA',.4,.25,8,50,'12小时'),
+ plaRule,
+ {...plaRule,materialId:'petg',name:'PETG'},
  rule('FDM','abs','ABS',.5,.3,8,50,'12小时'),
  rule('FDM','tpu','TPU',1.5,1.2,20,80,'12小时',{risk:true,note:'依项目风险评估上下浮动'}),
  rule('FDM','peba','PEBA',1.5,1.2,20,80,'12小时',{risk:true,note:'依项目风险评估上下浮动；未提供密度，需录入计价重量'}),

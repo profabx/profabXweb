@@ -9,7 +9,7 @@ export function processLabel(process,t=value=>value){return `${t(process)}${isEx
 export const finalProcesses=['注塑','CNC',...processes.filter(p=>p!=='CNC')];
 export const materials=[
  {id:'pla',name:'PLA',processes:['FDM'],density:1.24,priceG:0.45,note:'刚度较好，耐热性有限'},
- {id:'petg',name:'PETG',processes:['FDM'],density:1.27,priceG:0.6,note:'兼顾韧性，需关注表面拉丝'},
+ {id:'petg',name:'PETG',processes:['FDM'],density:1.27,priceG:0.45,note:'兼顾韧性，需关注表面拉丝'},
  {id:'abs',name:'ABS',processes:['FDM'],density:1.04,priceG:0.65,note:'关注收缩、翘曲与层间应力'},
  {id:'tpu',name:'TPU',processes:['FDM','MJF'],density:1.21,priceG:1.1,note:'柔性材料，尺寸与支撑需复核'},
  {id:'peba',name:'PEBA',processes:['FDM'],density:null,priceG:1.5,note:'弹性体；计价重量和风险需确认'},

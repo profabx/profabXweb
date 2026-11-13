@@ -5,7 +5,7 @@ const part=(id,materialId='pla',weight=100,quantity=1,process='FDM',extra={})=>(
 test('standard PLA applies sample/batch rates and group floor',()=>{assert.equal(calculateQuote([part('a')],settings).baseFen,5000);assert.equal(calculateQuote([part('a','pla',100,2)],settings).baseFen,8000);assert.equal(calculateQuote([part('a','pla',100,2)],{...settings,pricingProduction:'batch'}).baseFen,5000);});
 test('minimum is once per process/material, not once per model',()=>{const q=calculateQuote([part('a','pla',1),part('b','pla',1)],settings);assert.equal(q.baseFen,5000);assert.equal(q.lines.reduce((n,l)=>n+l.minimumTopupFen,0),4920);assert.equal(calculateQuote([part('a','pla',1),part('b','abs',1)],settings).baseFen,10000);});
 test('finishing/setup are additional to manufacturing floor, discount before tax',()=>{const q=calculateQuote([part('a','pla',1,1,'FDM',{postUnitYuan:2,setupYuan:5})],{discountPercent:10,taxPercent:1});assert.equal(q.baseFen,5700);assert.equal(q.netFen,5130);assert.equal(q.totalFen,5181);});
-test('range rates and project rates never receive fabricated prices',()=>{assert.throws(()=>calculateQuote([part('a','resin',100,1,'SLA')],{...settings,pricingProduction:'batch'}),/区间/);assert.equal(calculateQuote([part('a','resin',100,1,'SLA',{pricingRateYuan:.45})],{...settings,pricingProduction:'batch'}).baseFen,4500);assert.throws(()=>calculateQuote([part('a','resin',100,1,'SLA',{pricingRateYuan:.8})],{...settings,pricingProduction:'batch'}),/区间/);assert.throws(()=>calculateQuote([part('a','ppa_cf')],settings),/人工/);assert.throws(()=>calculateQuote([part('a','petg')],settings),/人工/);});
+test('range rates and project rates never receive fabricated prices',()=>{assert.throws(()=>calculateQuote([part('a','resin',100,1,'SLA')],{...settings,pricingProduction:'batch'}),/区间/);assert.equal(calculateQuote([part('a','resin',100,1,'SLA',{pricingRateYuan:.45})],{...settings,pricingProduction:'batch'}).baseFen,4500);assert.throws(()=>calculateQuote([part('a','resin',100,1,'SLA',{pricingRateYuan:.8})],{...settings,pricingProduction:'batch'}),/区间/);assert.throws(()=>calculateQuote([part('a','ppa_cf')],settings),/人工/);});
 test('LCD density and PAT10 transparent finishing follow source',()=>{const p=part('a','pat10',10,1,'LCD',{pricingTransparent:true});const q=calculateQuote([p],settings);assert.equal(q.baseFen,11000);assert.equal(q.lines[0].postFen,3000);});
 test('manual project prices retain stated order floor',()=>{assert.equal(calculateQuote([part('a','lcd_3280',10,1,'LCD',{pricingMode:'manual',unitBaseYuan:120})],settings).baseFen,40000);});
 test('handle numeric tiers, exact boundary and no double discount',()=>{for(const [n,unit]of [[1,320],[20,320],[21,308],[100,308],[101,304],[200,304],[201,300],[300,300],[301,290],[400,290],[401,280]]){assert.equal(calculateQuote([part('a','pla',165,n,'FDM',{pricingScheme:'handle'})],settings).baseFen,n*unit*100);}});
@@ -26,3 +26,18 @@ test('dedicated schedules are not offered for new quotations and are exported on
 
 import {billingWeightState} from '../src/quote/pricing.js';
 test('billing weight display automatically computes known net material mass and supports per-part manual override',()=>{const p=part('weight','pla','',1);p.measurement={volumeReliable:true,volumeMm3:2168,cavityCount:1};p.config.pricingWeightG='';const auto=billingWeightState(p);assert.equal(auto.manual,false);assert.equal(auto.autoAvailable,true);assert.equal(auto.value,2.688);assert.match(auto.source,/净体积/);p.config.pricingWeightG='5.5';const manual=billingWeightState(p);assert.equal(manual.manual,true);assert.equal(manual.value,'5.5');assert.equal(manual.autoAvailable,true);p.measurement.volumeReliable=false;assert.equal(billingWeightState(p).value,'5.5');p.config.pricingWeightG='';assert.equal(billingWeightState(p).available,false);assert.equal(billingWeightState(p).value,'');});
+
+test('PETG uses PLA rates and minimums for sample and batch',()=>{
+ for(const pricingProduction of ['sample','batch']){
+  for(const weight of [1,1000]){
+   const params={...settings,pricingProduction};
+   assert.equal(calculateQuote([part('a','petg',weight,2)],params).totalFen,calculateQuote([part('a','pla',weight,2)],params).totalFen);
+  }
+ }
+});
+
+test('outsourced dyeing excludes legacy finishing until reviewed and charges once per unit',()=>{
+ const p=part('a','pla',100,3,'FDM',{postProcess:'染色',postUnitYuan:80});
+ assert.equal(calculateQuote([p],settings).totalFen,12000);
+ assert.equal(calculateQuote([{...p,config:{...p.config,dyeUnitYuan:7.5}}],settings).totalFen,14250);
+});

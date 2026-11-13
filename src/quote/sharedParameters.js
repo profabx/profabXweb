@@ -1,3 +1,4 @@
+import {invalidateDyeingPrice} from './dyeing.js';
 import {standardPricingChange} from './pricing.js';
 import {materials,suggestUnitPrice,isExternalProcess} from './catalog.js';
 
@@ -18,6 +19,6 @@ export function applySharedManufacturing(parts,selectedIds,change,sourceConfig){
    config.deviceOverride=null;config.outsourced=isExternalProcess(config.process);
    config.unitBaseYuan=suggestUnitPrice(part.measurement,config.process,config.materialId);
   }
-  return {...part,config};
+  return {...part,config:invalidateDyeingPrice(part.config,config)};
  });
 }
