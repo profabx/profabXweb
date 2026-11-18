@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>网页入口 | ProFabX</title>
+  <style>
+    body { margin: 0; color: #202632; background: #f5f7fa; font: 1rem/1.6 system-ui, sans-serif; }
+    main { max-width: 34rem; margin: clamp(2rem, 10vh, 6rem) auto; padding: 2rem; border: 1px solid #e3e7ee; border-radius: 12px; background: white; }
+    h1 { margin: 0 0 1rem; font-size: 1.65rem; line-height: 1.25; }
+    p { margin: 1rem 0; }
+    a { color: #0048d9; }
+    .button { display: inline-block; padding: .65rem 1rem; border-radius: 6px; background: #0054ff; color: white; text-decoration: none; font-weight: 600; }
+    a:focus-visible { outline: 2px solid #0054ff; outline-offset: 4px; }
+    .help { color: #53647e; font-size: .9rem; }
+    @media (max-width: 40rem) { main { margin-inline: 1rem; padding: 1.25rem; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>ProFabX 网页入口</h1>
+    <p>选择需要使用的版本。</p>
+    <p><a class="button" href="https://profabx.com/prototype.html">打开公开版</a></p>
+    <a class="button" href="http://127.0.0.1:4185/prototype.html">打开本机管理版</a>
+    <p class="help">本机管理版在 Windows 登录后自动恢复。如果暂时无法连接，可运行「启动管理版.cmd」重试。</p>
+    <a href="../index.html">返回首页</a>
+  </main>
+</body>
+</html>
