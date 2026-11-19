@@ -2,13 +2,15 @@ import {useEffect,useRef,useState,useId} from 'react';
 import {iso} from '../scripts/anatomy/iso-kit.mjs';
 import './process-animations.css';
 import details from './process-details.json';
+import SiliconeCastingGif from './SiliconeCastingGif.jsx';
 const projection={origin:[280,226],scale:1.15,azimuth:45,elevation:28};
 const pt=(x,y,z)=>iso([x,y,z],projection).join(',');
 const poly=(points)=>points.map(p=>pt(...p)).join(' ');
 function Box({x=-65,y=-55,z=0,w=130,d=110,h=8,blue=false}){return <g className={blue?'pa-blue':'pa-solid'}><polygon points={poly([[x,y,z+h],[x+w,y,z+h],[x+w,y+d,z+h],[x,y+d,z+h]])}/><polygon className="pa-side" points={poly([[x,y+d,z+h],[x+w,y+d,z+h],[x+w,y+d,z],[x,y+d,z]])}/><polygon className="pa-edge" points={poly([[x+w,y,z+h],[x+w,y+d,z+h],[x+w,y+d,z],[x+w,y,z]])}/></g>;}
 function Ring({z=0,r=38,stroke='#0054ff',width=2,dash}){const points=Array.from({length:65},(_,i)=>pt(Math.cos(i*Math.PI/32)*r,Math.sin(i*Math.PI/32)*r,z)).join(' ');return <polyline points={points} fill="none" stroke={stroke} strokeWidth={width} strokeDasharray={dash}/>;}
-const processes=[['resin','SLA / LCD 光固化','液态树脂逐层曝光固化，平台抬升；动画展示 LCD 面曝光原理'],['fdm','FDM 熔融沉积','喷嘴沿轮廓移动并逐层挤出材料'],['mjf','MJF 多射流熔融','铺粉后喷射融合剂，再经热能作用融合'],['sls','SLS 激光烧结','铺粉后，激光选择性扫描粉末截面'],['slm','SLM 金属打印','金属粉床铺粉，激光熔化截面并逐层成形'],['cnc','CNC 精密加工','旋转刀具沿工件移动，去除多余材料'],['casting','硅胶复模','向已制成的硅胶模具注入树脂，固化后开模'],['finish','后处理 · 喷涂','喷枪均匀移动，在零件表面沉积涂层']];
-export function ProcessScene({type,label,replay=0}){
+const processes=[['resin','SLA / LCD 光固化','液态树脂逐层曝光固化，平台抬升；动画展示 LCD 面曝光原理'],['fdm','FDM 熔融沉积','喷嘴沿轮廓移动并逐层挤出材料'],['mjf','MJF 多射流熔融','铺粉后喷射融合剂，再经热能作用融合'],['sls','SLS 激光烧结','铺粉后，激光选择性扫描粉末截面'],['slm','SLM 金属打印','金属粉床铺粉，激光熔化截面并逐层成形'],['cnc','CNC 精密加工','旋转刀具沿工件移动，去除多余材料'],['casting','硅胶复模','通过原型制硅胶模，合模真空浇注树脂，固化后开模取件'],['finish','后处理 · 喷涂','喷枪均匀移动，在零件表面沉积涂层']];
+export function ProcessScene(props){return props.type==='casting'?<SiliconeCastingGif replay={props.replay}/>:<VectorProcessScene {...props}/>;}
+function VectorProcessScene({type,label,replay=0}){
  const ref=useRef(null),[t,setT]=useState(0),gridId=useId();
  useEffect(()=>{const el=ref.current,mq=matchMedia('(prefers-reduced-motion: reduce)');let frame=0,last=0,elapsed=0,previous=null,visible=false;
  setT(0);el.dataset.state='idle';el.dataset.cycle='0';
@@ -28,7 +30,6 @@ export function ProcessScene({type,label,replay=0}){
  {type==='mjf'&&<MjfScene t={t}/>}
  {powder&&<><Box x={-75} y={-65} w={150} d={130} h={8}/><polygon points={poly([[-70,-60,9],[70,-60,9],[70,60,9],[-70,60,9]])} fill="#eff4ff"/>{Array.from({length:90},(_,i)=><circle key={i} cx={iso([-67+(i*37%134),-57+(i*23%114),10],projection)[0]} cy={iso([-67+(i*37%134),-57+(i*23%114),10],projection)[1]} r=".8" fill="#9ab5dc"/>)}<Ring z={10} r={36} width={9} stroke={type==='slm'?'#4c6da2':'#4c82ea'}/>{phase<.3?<Box x={-65+phase/.3*130} y={-68} w={7} d={136} z={13} h={10}/>:laser?<><path d={`M${pt(-30,-12,122)}L${pt(Math.cos(angle)*36,Math.sin(angle)*36,11)}`} stroke="#0054ff" strokeWidth="1.8"/><circle cx={iso([Math.cos(angle)*36,Math.sin(angle)*36,11],projection)[0]} cy={iso([Math.cos(angle)*36,Math.sin(angle)*36,11],projection)[1]} r="6" fill="#72cfff" opacity=".7"/><Box x={-44} y={-25} w={28} d={25} z={122} h={10}/></>:<><Box x={x} y={-70} w={12} d={140} z={45} h={12}/><polygon points={poly([[x,-60,44],[x+12,-60,44],[x+12,60,11],[x,60,11]])} fill={phase<.65?'#0054ff':'#75c7ff'} opacity=".25"/>{phase>.65&&<path d={`M${pt(x,-60,24)}L${pt(x,60,24)}`} stroke="#64bfff" strokeWidth="8" opacity=".6"/>}</>}</>}
  {type==='cnc'&&<><Box x={-61} y={-48} w={122} d={96} h={30} blue/><path d={`M${pt(-45,-10,31)}L${pt(x,-10,31)}`} stroke="#fff" strokeWidth="14"/><g transform={`translate(${pt(x,-10,32)})`}><rect x="-13" y="-91" width="26" height="48" rx="4" fill="#e9f0fc" stroke="#88a5cf"/><path d="M-5 -43V0H5V-43" fill="#0054ff"/><path d={`M-5 -${6+phase*30}l10 -9 M-5 -${22+phase*20}l10 -9`} stroke="white" strokeWidth="2"/></g>{[0,1,2,3,4].map(i=><circle key={i} cx={iso([x+8+i*4,-10+Math.sin(phase*15+i)*20,30-i*3],projection)[0]} cy={iso([x+8+i*4,-10+Math.sin(phase*15+i)*20,30-i*3],projection)[1]} r="1.8" fill="#6a98ea"/>)}</>}
- {type==='casting'&&<><g transform={`translate(${-Math.max(0,t-.7)*100} 0)`}><Box x={-65} y={-48} w={65} d={96} h={40}/></g><g transform={`translate(${Math.max(0,t-.7)*100} 0)`}><Box x={0} y={-48} w={65} d={96} h={40}/></g>{Array.from({length:Math.max(1,Math.floor(Math.min(t/.65,1)*17))},(_,i)=><Ring key={i} z={i*2+5} r={23} width={2.5}/>)}{t<.7&&<><path d={`M${pt(0,0,103)}L${pt(0,0,39)}`} stroke="#0054ff" strokeWidth="4" strokeDasharray="5 5" strokeDashoffset={-phase*15}/><path d={`M${pt(-20,-15,115)}L${pt(20,-15,115)}L${pt(0,0,99)}Z`} fill="#dbe8ff" stroke="#83a7e2"/></>}</>}
  {type==='finish'&&<><Box x={-48} y={-39} w={96} d={78} h={46}/><polygon points={poly([[-48,39,46],[-48+96*t,39,46],[-48+96*t,39,0],[-48,39,0]])} fill="#0054ff"/><g transform={`translate(${pt(x,63,75)})`}><path d="M-8 -12H18V0H3L-8 -5Z" fill="#0054ff"/><path d="M3 0L8 18" stroke="#8ca4ca" strokeWidth="6"/>{Array.from({length:13},(_,i)=><path key={i} d={`M-8 -5l${-18-(i%3)*6} ${8+i*1.8}`} stroke="#74b6ff" opacity={.2+phase*.4} strokeDasharray="2 4"/>)}</g></>}
  </svg>;
 }
@@ -51,7 +52,7 @@ function MjfScene({t}){
  </g>;
 }
 const links={resin:'/prototype/manufacture/add/lcddlp/',fdm:'/prototype/manufacture/add/fdm/',mjf:'/prototype/manufacture/add/mjf/',sls:'/prototype/manufacture/add/sls/',slm:'/prototype/manufacture/add/slm/',cnc:'/prototype/manufacture/substractive/cnc/',casting:'/prototype/manufacture/equal/siliconemold/',finish:'/prototype/postprocess/surface/coating/'};
-const detailIndex={resin:0,fdm:1,mjf:2,sls:2,slm:3,cnc:4,casting:4,finish:5};
+const detailIndex={resin:0,fdm:1,mjf:2,sls:2,slm:3,cnc:4,casting:6,finish:5};
 function ProcessCard({id,title,label}){const [replay,setReplay]=useState(0),d=details[detailIndex[id]];return <article className="process-animation-card" data-process-card={id}>
  <a className="process-card-link" href={'./cmf.html#read='+encodeURIComponent(links[id])} aria-label={title+'，查看 CMF 工艺资料'}><h3>{title}</h3><div className="process-card-scene"><ProcessScene type={id} label={label} replay={replay}/></div><div className="process-card-details"><p>{d.summary}</p><ul>{d.items.map(item=><li key={item}>{item}</li>)}</ul><span className="process-card-more">查看工艺资料 ↗</span></div></a>
  <button type="button" className="process-replay" aria-label={'播放'+title+'动画'} onClick={e=>{e.stopPropagation();setReplay(v=>v+1);}}>↻ 重播</button>

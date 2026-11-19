@@ -1,0 +1,62 @@
+{
+  "format": "GIF89a",
+  "loop": 0,
+  "frameDurationMs": 80,
+  "width": 840,
+  "height": 510,
+  "stages": [
+    {
+      "title": "原型与浇道准备",
+      "description": "固定原型，规划浇口与排气通道",
+      "startTimeMs": 0,
+      "durationMs": 1920
+    },
+    {
+      "title": "制作硅胶模具",
+      "description": "浇注硅胶包覆原型，等待硅胶固化",
+      "startTimeMs": 1920,
+      "durationMs": 2560
+    },
+    {
+      "title": "分模并取出原型",
+      "description": "留下与原型形状一致的模腔",
+      "startTimeMs": 4480,
+      "durationMs": 2240
+    },
+    {
+      "title": "合模与真空浇注",
+      "description": "经浇口注入树脂，真空辅助排气",
+      "startTimeMs": 6720,
+      "durationMs": 3200
+    },
+    {
+      "title": "树脂固化",
+      "description": "模具保持合拢，按材料条件固化",
+      "startTimeMs": 9920,
+      "durationMs": 1920
+    },
+    {
+      "title": "开模取件与去浇口",
+      "description": "取出整体成型的复制件，修整浇口",
+      "startTimeMs": 11840,
+      "durationMs": 3200
+    }
+  ],
+  "references": [
+    {
+      "title": "WACKER – Vacuum casting with silicone molds",
+      "url": "https://www.wacker.com/h/medias/7869-EN.pdf",
+      "page": 1
+    },
+    {
+      "title": "Renishaw – Vacuum casting systems",
+      "url": "https://www.renishaw.com/resourcecentre/en/download/(9a351e67784c4e27992e5e3632434b1f)",
+      "page": 4
+    },
+    {
+      "title": "Smooth-On – Two-piece silicone mold tutorial (video)",
+      "url": "https://www.youtube.com/watch?v=SLtwKOorUDw"
+    }
+  ],
+  "note": "Original cross-section diagram. Silicone cure and casting-resin cure are separate stages. Resin fills a pre-existing cavity continuously; the cast is not built in printed layers. Times are illustrative, not process settings."
+}
