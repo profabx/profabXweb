@@ -1,0 +1,3 @@
+export default function DiscountControl({settings,onChange,editable}){
+ return <div className="headline-discount"><label><span>折扣减免</span><div><input aria-label="折扣减免（%）" type="number" min="0" max="100" step="0.1" readOnly={!editable} value={settings.discountPercent} onChange={e=>editable&&onChange({discountPercent:e.target.value})}/><span>%</span></div></label><label><span>折扣原因</span><input aria-label="折扣原因" type="text" maxLength={500} placeholder="填写折扣原因" readOnly={!editable} value={settings.discountReason||''} onChange={e=>editable&&onChange({discountReason:e.target.value})}/></label></div>;
+}

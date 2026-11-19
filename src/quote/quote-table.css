@@ -19,3 +19,20 @@
 .quote-part-cell > span:last-child{min-width:0;overflow-wrap:anywhere}
 @media(max-width:700px){.quote-part-cell .part-thumbnail{width:40px;height:40px}}
 .dye-review{margin:12px 0;padding:12px 16px;border:1px solid #d9e5f7;border-radius:6px;background:#f5f8ff}.dye-review p{margin:0 0 8px}.dye-review-actions{display:flex;gap:8px;flex-wrap:wrap}
+
+.parts-panel .part-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:5px 7px}
+.parts-panel .part-select{grid-column:1/-1}
+.parts-panel .part-copy{height:auto;min-height:48px}
+.parts-panel .part-copy strong{white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere}
+.parts-panel .part-copy small{white-space:normal;overflow:visible;text-overflow:clip}
+.part-list-quantity{justify-self:end}
+.part-list-quantity input{box-sizing:content-box;width:3ch;min-width:3ch;max-width:10ch;padding:2px 4px;font-size:12px;height:1.4em;appearance:textfield}
+.part-list-quantity input::-webkit-inner-spin-button,.part-list-quantity input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+.headline-discount{margin-left:auto;display:flex;gap:12px;align-items:flex-end;font-size:12px}
+.headline-discount label{display:flex;flex-direction:column;gap:5px;color:#637792}
+.headline-discount label>div{display:flex;gap:4px;align-items:center}
+.headline-discount input{width:170px;padding:6px 8px;font:inherit}
+.headline-discount input[type=number]{width:75px}
+.headline-discount input[readonly]{background:#f5f7fb;color:#637792}
+.headline-discount+.headline-quote{margin-left:20px}
+@media(max-width:700px){.headline-discount{margin-left:0;flex-wrap:wrap}.headline-discount+.headline-quote{margin-left:auto}}

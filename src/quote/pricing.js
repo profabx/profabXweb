@@ -1,4 +1,4 @@
-import {materialById,materials} from './catalog.js';
+import {materialById,materials,inHouseProcesses} from './catalog.js';
 import {pricingRule,projectSchedules,tierPrice,pricingVersion} from './pricingStandards.js';
 export function moneyFen(value,label='价格'){if(value===''||value===null||value===undefined||!Number.isFinite(Number(value))||Number(value)<0)throw Error(label+'必须为有限非负数');const result=Math.round(Number(value)*100);if(!Number.isSafeInteger(result))throw Error('金额超出精度范围');return result;}
 export function weightDiagnostics(part,rule){
@@ -18,6 +18,10 @@ function pricePart(part,settings,projectQuantities){
  if(!['sample','batch'].includes(production))throw Error('请选择打样或批量报价');
  const quantity=Number(c.quantity);if(!Number.isSafeInteger(quantity)||quantity<1)throw Error('数量必须为正整数');
  const common={version:pricingVersion,rule,legacy,quantity,scheme,production,minimumTopupFen:0,autoPostFen:0,pieceMinFen:0,orderMinFen:0,weight:null};
+ if(settings.automaticScope==='inhouse'&&!inHouseProcesses.includes(c.process)){
+  if(!legacy&&c.pricingMode!=='manual')throw Error('外包项目请由管理方录入基础报价，再填写折扣和原因');
+  return {...common,unitFen:moneyFen(c.unitBaseYuan),label:'外包基础报价 · 人工核价',review:true,groupKey:'outsourced:'+part.id};
+ }
  if(legacy)return {...common,unitFen:moneyFen(c.unitBaseYuan),label:'历史手工报价（未自动改价）',groupKey:'legacy:'+part.id};
  if(!['standard','manual'].includes(c.pricingMode))throw Error('未知报价模式');
  if(scheme!=='material'){
