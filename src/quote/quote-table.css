@@ -20,12 +20,14 @@
 @media(max-width:700px){.quote-part-cell .part-thumbnail{width:40px;height:40px}}
 .dye-review{margin:12px 0;padding:12px 16px;border:1px solid #d9e5f7;border-radius:6px;background:#f5f8ff}.dye-review p{margin:0 0 8px}.dye-review-actions{display:flex;gap:8px;flex-wrap:wrap}
 
-.parts-panel .part-row{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:5px 7px}
-.parts-panel .part-select{grid-column:1/-1}
-.parts-panel .part-copy{height:auto;min-height:48px}
+.parts-panel .part-row{display:grid;grid-template-columns:minmax(0,1fr) 14px;gap:0 7px}
+.parts-panel .part-select{grid-column:1;grid-row:1;align-items:flex-end;align-self:end}
+.parts-panel .part-select .part-thumbnail{align-self:flex-end}
+.parts-panel .part-copy{height:auto;min-height:48px;flex:1}
 .parts-panel .part-copy strong{white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:anywhere}
-.parts-panel .part-copy small{white-space:normal;overflow:visible;text-overflow:clip}
-.part-list-quantity{justify-self:end}
+.parts-panel .part-copy small{white-space:normal;overflow:visible;text-overflow:clip;min-height:26px;display:flex;align-items:center;padding-right:52px;box-sizing:border-box}
+.part-list-quantity{grid-column:1;grid-row:1;justify-self:end;align-self:end;height:26px;z-index:1}
+.parts-panel .part-row .delete-part{grid-column:2;grid-row:1;align-self:center}
 .part-list-quantity input{box-sizing:content-box;width:3ch;min-width:3ch;max-width:10ch;padding:2px 4px;font-size:12px;height:1.4em;appearance:textfield}
 .part-list-quantity input::-webkit-inner-spin-button,.part-list-quantity input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
 .headline-discount{margin-left:auto;display:flex;gap:12px;align-items:flex-end;font-size:12px}
