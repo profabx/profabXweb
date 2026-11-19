@@ -1,0 +1,18 @@
+{
+  "source": "https://b14zaacblx.feishu.cn/wiki/OysewTBKgihCFikJgJHcButHnBg",
+  "slide": 12,
+  "slideTitle": "工艺-FDM工业级",
+  "processing": "Original presentation case photographs used as references for AI-assisted background cleanup; white-background display images, not dimensional inspection references.",
+  "assets": [
+    {
+      "file": "pps-cf-ring.webp",
+      "material": "PPS-CF",
+      "prompt": "Extract only the CENTER PPS-CF circular printed component from slide 12. Preserve circular silhouette, central shallow cup, radial ribs, screw holes, printed texture, proportions and top-down camera angle. Remove wood, slide UI, text and other products. Center the same product on a pure white seamless background with subtle contact shadow; no new features or labels."
+    },
+    {
+      "file": "ppa-cf-bracket.webp",
+      "material": "PPA-CF",
+      "prompt": "Extract only the RIGHTMOST PPA-CF bracket from slide 12. Preserve geometry, bearing recess, screw holes, ribbed arm, tall rectangular support, base supports, charcoal material and three-quarter angle. Remove printer and build plate, slide UI and other photos. White seamless background, subtle contact shadow, no redesign, text or added parts."
+    }
+  ]
+}

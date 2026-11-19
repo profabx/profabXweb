@@ -1,4 +1,5 @@
 import Icon from './ui/Icon.jsx';
+import ProductShowcase from './ProductShowcase.jsx';
 
 const values=[
  ['01','Scan','更早发现问题','从结构、装配与使用场景出发，在制造前识别需要调整的设计。'],
@@ -16,7 +17,7 @@ export default function Home({t}){
  return <main className="home">
   <section className="hero">
    <div className="hero-copy"><span className="home-eyebrow">DIGITAL MANUFACTURING SERVICE</span><h1>{t('从设计概念，')}<br/><em>{t('到实体产品。')}</em></h1><p>{t('为研发与工业企业、高校科研及创新项目，提供设计优化、工程模型开发与小批量制造服务。')}</p><div className="hero-actions"><a className="button primary" href="./prototype.html">{t('开始工程报价')}<Icon name="ArrowRight" size={21}/></a><a className="button secondary" href="#manufacturing">{t('了解制造服务')}</a></div></div>
-   <div className="hero-art"><img src="./assets/hero.png" alt={t('数字制造零件与装配结构示意')} fetchPriority="high" width="1536" height="1024"/></div>
+   <ProductShowcase t={t}/>
   </section>
   <div className="home-divider" aria-hidden="true"/>
   <section id="manufacturing" className="manufacturing"><h2>{t('让产品验证，')}<em>{t('更早向前一步。')}</em></h2><div className="capabilities">{values.map(([n,icon,title,copy])=><div className="capability" key={n}><span className="cap-number">{n}</span><Icon name={icon} size={45}/><div><h3>{t(title)}</h3><p>{t(copy)}</p></div></div>)}</div></section>

@@ -1,4 +1,4 @@
-import {useEffect,useRef,useState} from 'react';
+import {useEffect,useRef,useState,useId} from 'react';
 import {iso} from '../scripts/anatomy/iso-kit.mjs';
 import './process-animations.css';
 import details from './process-details.json';
@@ -8,18 +8,18 @@ const poly=(points)=>points.map(p=>pt(...p)).join(' ');
 function Box({x=-65,y=-55,z=0,w=130,d=110,h=8,blue=false}){return <g className={blue?'pa-blue':'pa-solid'}><polygon points={poly([[x,y,z+h],[x+w,y,z+h],[x+w,y+d,z+h],[x,y+d,z+h]])}/><polygon className="pa-side" points={poly([[x,y+d,z+h],[x+w,y+d,z+h],[x+w,y+d,z],[x,y+d,z]])}/><polygon className="pa-edge" points={poly([[x+w,y,z+h],[x+w,y+d,z+h],[x+w,y+d,z],[x+w,y,z]])}/></g>;}
 function Ring({z=0,r=38,stroke='#0054ff',width=2,dash}){const points=Array.from({length:65},(_,i)=>pt(Math.cos(i*Math.PI/32)*r,Math.sin(i*Math.PI/32)*r,z)).join(' ');return <polyline points={points} fill="none" stroke={stroke} strokeWidth={width} strokeDasharray={dash}/>;}
 const processes=[['resin','SLA / LCD 光固化','液态树脂逐层曝光固化，平台抬升；动画展示 LCD 面曝光原理'],['fdm','FDM 熔融沉积','喷嘴沿轮廓移动并逐层挤出材料'],['mjf','MJF 多射流熔融','铺粉后喷射融合剂，再经热能作用融合'],['sls','SLS 激光烧结','铺粉后，激光选择性扫描粉末截面'],['slm','SLM 金属打印','金属粉床铺粉，激光熔化截面并逐层成形'],['cnc','CNC 精密加工','旋转刀具沿工件移动，去除多余材料'],['casting','硅胶复模','向已制成的硅胶模具注入树脂，固化后开模'],['finish','后处理 · 喷涂','喷枪均匀移动，在零件表面沉积涂层']];
-function Scene({type,label,replay}){
- const ref=useRef(null),[t,setT]=useState(0);
- useEffect(()=>{const el=ref.current,mq=matchMedia('(prefers-reduced-motion: reduce)');let frame=0,last=0,elapsed=0,previous=null,visible=false,done=false;
- setT(0);el.dataset.state='idle';
- const tick=now=>{if(!visible||document.hidden||done)return;if(previous!==null)elapsed+=Math.min(now-previous,100);previous=now;const progress=Math.min(elapsed/8000,1);if(now-last>33||progress===1){setT(progress);last=now;}if(progress===1){done=true;el.dataset.state='finished';el.dataset.playing='false';return;}frame=requestAnimationFrame(tick);};
- const sync=()=>{cancelAnimationFrame(frame);frame=0;previous=null;if(mq.matches&&replay===0){setT(1);done=true;el.dataset.state='finished';}if(visible&&!document.hidden&&!done){el.dataset.playing='true';el.dataset.state='playing';frame=requestAnimationFrame(tick);}else el.dataset.playing='false';};
- const obs=new IntersectionObserver(e=>{visible=e[0].isIntersecting;sync();},{threshold:.15});obs.observe(el);document.addEventListener('visibilitychange',sync);mq.addEventListener('change',sync);return()=>{cancelAnimationFrame(frame);obs.disconnect();document.removeEventListener('visibilitychange',sync);mq.removeEventListener('change',sync);};},[replay]);
+export function ProcessScene({type,label,replay=0}){
+ const ref=useRef(null),[t,setT]=useState(0),gridId=useId();
+ useEffect(()=>{const el=ref.current,mq=matchMedia('(prefers-reduced-motion: reduce)');let frame=0,last=0,elapsed=0,previous=null,visible=false;
+ setT(0);el.dataset.state='idle';el.dataset.cycle='0';
+ const tick=now=>{frame=0;if(!visible||document.hidden||mq.matches)return;if(previous!==null)elapsed+=Math.min(now-previous,100);previous=now;const progress=(elapsed%8000)/8000;if(now-last>33){setT(progress);last=now;el.dataset.cycle=String(Math.floor(elapsed/8000));}frame=requestAnimationFrame(tick);};
+ const sync=()=>{cancelAnimationFrame(frame);frame=0;previous=null;if(mq.matches){setT(1);el.dataset.state='reduced';el.dataset.playing='false';return;}if(visible&&!document.hidden){el.dataset.playing='true';el.dataset.state='playing';frame=requestAnimationFrame(tick);}else{el.dataset.playing='false';el.dataset.state='paused';}};
+ const obs=new IntersectionObserver(e=>{visible=e[e.length-1].isIntersecting;sync();},{threshold:.15});obs.observe(el);document.addEventListener('visibilitychange',sync);mq.addEventListener('change',sync);return()=>{cancelAnimationFrame(frame);obs.disconnect();document.removeEventListener('visibilitychange',sync);mq.removeEventListener('change',sync);};},[replay]);
  const phase=t===1?1:t*4%1,pass=(1-Math.cos(phase*Math.PI*2))/2,x=-49+98*pass,layers=3+Math.floor(t*23),height=layers*2;
  const powder=['sls','slm'].includes(type),laser=type==='sls'||type==='slm',angle=phase*Math.PI*2;
  return <svg ref={ref} viewBox="0 0 560 340" role="img" aria-label={label} data-process={type}>
- <defs><pattern id={'grid-'+type} width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#0054ff" strokeOpacity=".045"/></pattern></defs>
- <rect width="560" height="340" fill={'url(#grid-'+type+')'}/>
+ <defs><pattern id={gridId} width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#0054ff" strokeOpacity=".045"/></pattern></defs>
+ <rect width="560" height="340" fill={'url(#'+gridId+')'}/>
  <path d="M20 38V18H40 M520 18H540V38 M20 302V322H40 M520 322H540V302" fill="none" stroke="#b5caff"/>
  <Box x={-96} y={-80} w={192} d={160} z={-12} h={12}/>
  {Array.from({length:9},(_,i)=><path key={i} d={`M${pt(-88+i*22,-72,.2)} L${pt(-88+i*22,72,.2)} M${pt(-88,-72+i*18,.2)} L${pt(88,-72+i*18,.2)}`} stroke="#dce6f7" strokeWidth=".6"/>)}
@@ -53,7 +53,7 @@ function MjfScene({t}){
 const links={resin:'/prototype/manufacture/add/lcddlp/',fdm:'/prototype/manufacture/add/fdm/',mjf:'/prototype/manufacture/add/mjf/',sls:'/prototype/manufacture/add/sls/',slm:'/prototype/manufacture/add/slm/',cnc:'/prototype/manufacture/substractive/cnc/',casting:'/prototype/manufacture/equal/siliconemold/',finish:'/prototype/postprocess/surface/coating/'};
 const detailIndex={resin:0,fdm:1,mjf:2,sls:2,slm:3,cnc:4,casting:4,finish:5};
 function ProcessCard({id,title,label}){const [replay,setReplay]=useState(0),d=details[detailIndex[id]];return <article className="process-animation-card" data-process-card={id}>
- <a className="process-card-link" href={'./cmf.html#read='+encodeURIComponent(links[id])} aria-label={title+'，查看 CMF 工艺资料'}><h3>{title}</h3><div className="process-card-scene"><Scene type={id} label={label} replay={replay}/></div><div className="process-card-details"><p>{d.summary}</p><ul>{d.items.map(item=><li key={item}>{item}</li>)}</ul><span className="process-card-more">查看工艺资料 ↗</span></div></a>
- <button type="button" className="process-replay" aria-label={'播放'+title+'动画'} onClick={e=>{e.stopPropagation();setReplay(v=>v+1);}}>▷ 播放</button>
+ <a className="process-card-link" href={'./cmf.html#read='+encodeURIComponent(links[id])} aria-label={title+'，查看 CMF 工艺资料'}><h3>{title}</h3><div className="process-card-scene"><ProcessScene type={id} label={label} replay={replay}/></div><div className="process-card-details"><p>{d.summary}</p><ul>{d.items.map(item=><li key={item}>{item}</li>)}</ul><span className="process-card-more">查看工艺资料 ↗</span></div></a>
+ <button type="button" className="process-replay" aria-label={'播放'+title+'动画'} onClick={e=>{e.stopPropagation();setReplay(v=>v+1);}}>↻ 重播</button>
  </article>;}
 export default function ProcessAnimations(){return <div className="process-animation-section"><div className="sec-head"><h2>自主制造为核心，整合多工艺交付能力</h2></div><div className="process-animation-grid">{processes.map(([id,title,label])=><ProcessCard key={id} id={id} title={title} label={label}/>)}</div></div>;}

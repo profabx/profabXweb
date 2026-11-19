@@ -1,0 +1,13 @@
+import {useEffect,useRef,useState} from 'react';
+import Icon from './ui/Icon.jsx';
+import './product-showcase.css';
+const products=[
+ {id:'pps-cf',image:'pps-cf-ring.webp',title:'PPS-CF 圆形结构件',detail:'FDM · 碳纤维复合材料'},
+ {id:'ppa-cf',image:'ppa-cf-bracket.webp',title:'PPA-CF 工装支架',detail:'FDM · 加强筋与装配结构'}
+];
+export default function ProductShowcase({t}){
+ const root=useRef(null),[active,setActive]=useState(0),[paused,setPaused]=useState(false),[hovered,setHovered]=useState(false),[visible,setVisible]=useState(false),[reduced,setReduced]=useState(false),[background,setBackground]=useState(false);
+ useEffect(()=>{const mq=matchMedia('(prefers-reduced-motion: reduce)'),motion=()=>setReduced(mq.matches),visibility=()=>setBackground(document.hidden);motion();visibility();const observer=new IntersectionObserver(entries=>setVisible(entries[entries.length-1].isIntersecting),{threshold:.15});observer.observe(root.current);mq.addEventListener('change',motion);document.addEventListener('visibilitychange',visibility);return()=>{observer.disconnect();mq.removeEventListener('change',motion);document.removeEventListener('visibilitychange',visibility);};},[]);
+ useEffect(()=>{if(paused||hovered||!visible||reduced||background)return;const timer=setInterval(()=>setActive(i=>(i+1)%products.length),5500);return()=>clearInterval(timer);},[paused,hovered,visible,reduced,background]);
+ return <section ref={root} className="hero-art product-showcase" aria-label={t('产品案例展示')} aria-roledescription="carousel" data-active-case={products[active].id} onMouseEnter={()=>setHovered(true)} onMouseLeave={()=>setHovered(false)} onFocusCapture={()=>setHovered(true)} onBlurCapture={e=>{if(!e.currentTarget.contains(e.relatedTarget))setHovered(false);}}><div className="product-showcase-frame">{products.map((product,i)=><figure className={i===active?'product-slide active':'product-slide'} key={product.id} aria-hidden={i!==active}><img src={'./assets/cases/'+product.image} alt={t(product.title)} width="1448" height="1086" fetchPriority={i===0?'high':'auto'}/><figcaption><strong>{t(product.title)}</strong><span>{t(product.detail)}</span></figcaption></figure>)}</div><div className="product-showcase-controls"><span>{t('制造案例')}</span><div className="product-showcase-dots">{products.map((product,i)=><button type="button" key={product.id} aria-label={t('查看案例')+' '+(i+1)+' · '+t(product.title)} aria-pressed={i===active} onClick={()=>setActive(i)}/>)}</div><button type="button" className="product-showcase-toggle" aria-label={t(paused?'播放产品展示':'暂停产品展示')} aria-pressed={paused} onClick={()=>setPaused(v=>!v)}><Icon name={paused?'Play':'Pause'} size={14}/></button></div></section>;
+}

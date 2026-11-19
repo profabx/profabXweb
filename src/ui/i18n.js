@@ -1,5 +1,14 @@
 // Built-in UI copy; model names, uploaded text and customer notes remain in their original language.
 const rows=[
+["产品案例展示", "Product showcase", "製造事例の紹介"],
+["PPS-CF 圆形结构件", "PPS-CF circular component", "PPS-CF 円形構造部品"],
+["PPA-CF 工装支架", "PPA-CF fixture bracket", "PPA-CF 治具ブラケット"],
+["FDM · 碳纤维复合材料", "FDM · Carbon-fiber composite", "FDM · 炭素繊維複合材料"],
+["FDM · 加强筋与装配结构", "FDM · Reinforced assembly features", "FDM · 補強リブと組立構造"],
+["制造案例", "Manufacturing cases", "製造事例"],
+["查看案例", "View case", "事例を見る"],
+["播放产品展示", "Play product showcase", "製品展示を再生"],
+["暂停产品展示", "Pause product showcase", "製品展示を一時停止"],
 ["从设计概念，", "From concept,", "設計コンセプトから、"],
 ["到实体产品。", "to real products.", "実物の製品へ。"],
 ["为研发与工业企业、高校科研及创新项目，提供设计优化、工程模型开发与小批量制造服务。", "Design optimization, engineering prototypes and small-batch manufacturing for R&D teams, industrial businesses, universities and innovation projects.", "研究開発・産業分野、大学研究、イノベーションプロジェクトに、設計最適化、試作モデル開発、小ロット製造を提供します。"],
