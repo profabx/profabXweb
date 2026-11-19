@@ -1,8 +1,8 @@
 {
   "format": "GIF89a",
   "style": "Original 3D isometric engineering illustration, blue/white palette",
-  "encodedFrames": 105,
-  "durationMs": 15040,
+  "encodedFrames": 165,
+  "durationMs": 21760,
   "loop": 0,
   "width": 840,
   "height": 510,
@@ -24,25 +24,25 @@
       "title": "分模并取出原型",
       "description": "留下与原型形状一致的模腔",
       "startTimeMs": 4480,
-      "durationMs": 2240
+      "durationMs": 4480
     },
     {
       "title": "合模与真空浇注",
       "description": "经浇口注入树脂，真空辅助排气",
-      "startTimeMs": 6720,
+      "startTimeMs": 8960,
       "durationMs": 3200
     },
     {
       "title": "树脂固化",
       "description": "模具保持合拢，按材料条件固化",
-      "startTimeMs": 9920,
+      "startTimeMs": 12160,
       "durationMs": 1920
     },
     {
       "title": "开模取件与去浇口",
       "description": "取出整体成型的复制件，修整浇口",
-      "startTimeMs": 11840,
-      "durationMs": 3200
+      "startTimeMs": 14080,
+      "durationMs": 7680
     }
   ],
   "references": [
