@@ -16,7 +16,6 @@ export default function AboutIntroduction({t,footer,locale}){
  useEffect(()=>{setSlot({processes:article.current?.querySelector('[data-process-animations]'),business:article.current?.querySelector('[data-business-figure]'),capability:article.current?.querySelector('[data-capability-section]'),partners:article.current?.querySelector('[data-about-partners]'),cmf:article.current?.querySelector('[data-cmf-features]')});},[]);
  const body=useMemo(()=>(<article ref={article} className="about-introduction-article" lang="zh-CN" aria-label="ProFabX 介绍" dangerouslySetInnerHTML={{__html:html}}/>),[]);
  return <main className="company-page about-page about-introduction">
-  <header className="about-introduction-heading"><h1>{t('关于ProFabX')}</h1></header>
   {body}
   {slot?.processes&&createPortal(<ProcessAnimations/>,slot.processes)}
   {slot?.business&&createPortal(<BusinessFigure/>,slot.business)}

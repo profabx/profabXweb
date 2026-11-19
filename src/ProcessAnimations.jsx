@@ -53,8 +53,7 @@ function MjfScene({t}){
 }
 const links={resin:'/prototype/manufacture/add/lcddlp/',fdm:'/prototype/manufacture/add/fdm/',mjf:'/prototype/manufacture/add/mjf/',sls:'/prototype/manufacture/add/sls/',slm:'/prototype/manufacture/add/slm/',cnc:'/prototype/manufacture/substractive/cnc/',casting:'/prototype/manufacture/equal/siliconemold/',finish:'/prototype/postprocess/surface/coating/'};
 const detailIndex={resin:0,fdm:1,mjf:2,sls:2,slm:3,cnc:4,casting:6,finish:5};
-function ProcessCard({id,title,label}){const [replay,setReplay]=useState(0),d=details[detailIndex[id]];return <article className="process-animation-card" data-process-card={id}>
- <a className="process-card-link" href={'./cmf.html#read='+encodeURIComponent(links[id])} aria-label={title+'，查看 CMF 工艺资料'}><h3>{title}</h3><div className="process-card-scene"><ProcessScene type={id} label={label} replay={replay}/></div><div className="process-card-details"><p>{d.summary}</p><ul>{d.items.map(item=><li key={item}>{item}</li>)}</ul><span className="process-card-more">查看工艺资料 ↗</span></div></a>
- <button type="button" className="process-replay" aria-label={'播放'+title+'动画'} onClick={e=>{e.stopPropagation();setReplay(v=>v+1);}}>↻ 重播</button>
+function ProcessCard({id,title,label}){const d=details[detailIndex[id]];return <article className="process-animation-card" data-process-card={id}>
+ <a className="process-card-link" href={'./cmf.html#read='+encodeURIComponent(links[id])} aria-label={title+'，查看 CMF 工艺资料'}><h3>{title}</h3><div className="process-card-scene"><ProcessScene type={id} label={label}/></div><div className="process-card-details"><p>{d.summary}</p><ul>{d.items.map(item=><li key={item}>{item}</li>)}</ul><span className="process-card-more">查看工艺资料 ↗</span></div></a>
  </article>;}
 export default function ProcessAnimations(){return <div className="process-animation-section"><div className="sec-head"><h2>自主制造为核心，整合多工艺交付能力</h2></div><div className="process-animation-grid">{processes.map(([id,title,label])=><ProcessCard key={id} id={id} title={title} label={label}/>)}</div></div>;}
