@@ -1,9 +1,13 @@
-# 硅胶复模 GIF 修正
+# 硅胶复模立体 GIF 修正
 
-用户指出原硅胶复模动画错误，并要求联网查资料、使用 GIF。根因：原 casting 分支复用了逐层叠环图形，说明索引与 CNC 共用。
+用户要求联网核对工艺、使用 GIF，并与其他卡片统一立体风格。原 casting 分支把复模画成逐层叠环，且与 CNC 共用说明索引，需同时修正画面与说明。
 
-依据 WACKER Vacuum casting with silicone molds 六步流程、Renishaw Vacuum casting systems 第 4 页及 Smooth-On 两片硅胶模视频。原创剖面图使用完全相同的轮廓生成灰色原型、白色阴模模腔、蓝色树脂件；连续液面填充，单独呈现硅胶固化和树脂固化，模具张开后取件、修整浇口。GIF 时间压缩，不表示实际工艺参数。
+依据 WACKER Vacuum casting with silicone molds 六步流程、Renishaw Vacuum casting systems 第 4 页及 Smooth-On 两片硅胶模视频。蓝白等轴测立体画面包含：原型与浇道准备、浇注硅胶并固化、分模取出原型、合模真空浇注树脂、树脂固化、开模取件并去浇口。
 
-生成脚本 scripts/render-silicone-casting.py；188 个原始帧合并为 138 个 GIF 帧，总时长 15.04 秒、840×510、loop=0。配套末帧 PNG 用于减少动态效果及离屏情况。来源与阶段帧索引存于 public/assets/processes/silicone-casting-sources.json。
+三维阴模具有与阶梯圆柱原型一致的真实半圆模腔、浇道、排气道。开模旋转展示两片阴模；合模时透视显示连续树脂液面，避免错误的逐层打印表现。时间压缩，不表示实际工艺参数。
 
-验证文件格式、帧时长、循环信息、阶段图；双版本浏览器验证 GIF 加载、重播不跳转、CMF 链接、离屏与减少动态效果；构建并发布官网。
+生成：先运行 scripts/render-silicone-casting-3d.cjs，以 scripts/silicone-casting-render.html 离线渲染；再运行 scripts/render-silicone-casting.py 编码。188 个源画面合并为 105 个 GIF 帧，总时长 15.04 秒，840×510，loop=0。网站仅加载 GIF/PNG，不额外加载三维引擎。
+
+交付 public/assets/processes/silicone-vacuum-casting-3d.gif 和 -3d-poster.png。来源、阶段时间及编码信息存于 silicone-casting-sources.json。离屏、后台及减少动态效果时使用静态图；独立重播按钮不触发跳转。
+
+验证 GIF 格式、循环、时长与关键帧；双版本检查实际帧变化、独立重播、CMF 链接、离屏与减少动态效果、移动端排版；构建并发布官网。

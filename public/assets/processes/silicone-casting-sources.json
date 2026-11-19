@@ -1,9 +1,12 @@
 {
   "format": "GIF89a",
+  "style": "Original 3D isometric engineering illustration, blue/white palette",
+  "encodedFrames": 105,
+  "durationMs": 15040,
   "loop": 0,
-  "frameDurationMs": 80,
   "width": 840,
   "height": 510,
+  "file": "silicone-vacuum-casting-3d.gif",
   "stages": [
     {
       "title": "原型与浇道准备",
@@ -58,5 +61,5 @@
       "url": "https://www.youtube.com/watch?v=SLtwKOorUDw"
     }
   ],
-  "note": "Original cross-section diagram. Silicone cure and casting-resin cure are separate stages. Resin fills a pre-existing cavity continuously; the cast is not built in printed layers. Times are illustrative, not process settings."
+  "note": "The mold halves contain actual negative surfaces matching the stepped cylindrical master, with separate sprue and vent. Transparent silicone exposes continuous resin fill. Silicone curing and casting-resin curing are separate stages. Times are compressed, not manufacturing settings."
 }
