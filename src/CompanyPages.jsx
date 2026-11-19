@@ -1,10 +1,11 @@
 import Icon from './ui/Icon.jsx';
+import Brand from './ui/Brand.jsx';
 import CmfReference from './CmfReference.jsx';
 import AboutIntroduction from './AboutIntroduction.jsx';
 import './partner-backgrounds.css';
 
 function PageFooter({t}){
- return <footer className="company-footer"><a className="brand" href="./index.html">ProFab<span>X</span></a><p>{t('用数字化与工程能力，连接创意与制造。')}</p><a className="text-link" href="./prototype.html">{t('开始工程报价')}<Icon name="ArrowUpRight"/></a><small>© {new Date().getFullYear()} ProFabX</small></footer>;
+ return <footer className="company-footer"><Brand/><p>{t('用数字化与工程能力，连接创意与制造。')}</p><a className="text-link" href="./prototype.html">{t('开始工程报价')}<Icon name="ArrowUpRight"/></a><small>© {new Date().getFullYear()} ProFabX</small></footer>;
 }
 
 function CmfPage(){return <CmfReference/>;}

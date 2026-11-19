@@ -16,3 +16,38 @@
 .partner-tabs button[aria-selected=true]{color:var(--blue);border-color:var(--blue);font-weight:600}
 @media(max-width:700px){.home-divider{margin:18px 0 24px}.nav .partner-nav{height:auto;display:block;width:100%}.partner-nav-toggle{width:100%;height:auto;min-height:44px;justify-content:space-between}.partner-nav-toggle.active:after{display:none}.partner-subnav{position:static;box-shadow:none;border:0;border-left:2px solid var(--line);border-radius:0;margin:0 0 8px 4px;padding:0 6px}.nav .partner-subnav a{font-size:13px;min-height:40px}.partner-tabs{gap:28px;padding-top:10px}.partner-tabs button{font-size:16px}}
 @media(max-width:700px){.nav .partner-nav{display:grid;grid-template-columns:1fr 36px}.nav .partner-nav>.partner-nav-toggle{width:36px;justify-content:center}.partner-nav .partner-subnav{grid-column:1/-1}}
+
+/* Brand shape follows the supplied public introduction; blue sampled from the NexPCB cover. */
+:root{--brand-blue:#012ef7}
+.brand{display:inline-flex;align-items:center;flex-shrink:0;line-height:1}
+.brand img{display:block;width:226px;height:auto;max-width:100%}
+.home{--blue:var(--brand-blue);--blue-hover:#0025ca}
+.home .hero h1{font-size:clamp(42px,4.7vw,72px);line-height:1.35}
+.home-eyebrow{display:block;color:var(--brand-blue);font-size:11px;letter-spacing:.16em;font-weight:600;line-height:1.6}
+.hero-copy>.home-eyebrow{margin-bottom:19px}
+.home .hero p{max-width:35em;line-height:1.85}
+.home-workflow,.home-owned{padding:42px 0;border-top:1px solid var(--line)}
+.home-section-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;margin-bottom:30px}
+.home-section-heading h2{margin-top:10px;font-size:clamp(25px,2.5vw,36px);line-height:1.45;text-wrap:balance}
+.home-section-heading>p{font-size:13px;line-height:1.85;color:#738096;max-width:29em}
+.home-workflow ol{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
+.home-workflow li{position:relative;border-top:2px solid #dce3fa;padding-top:18px}
+.home-step-number{font-size:13px;color:var(--brand-blue);font-variant-numeric:tabular-nums}
+.home-workflow h3{font-size:17px;margin:13px 0 8px}
+.home-workflow li p,.home-owned-grid p,.home-partner-processes p{font-size:13px;line-height:1.9;color:#657186}
+.home-owned-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.home-owned-grid article{padding-left:20px;border-left:2px solid var(--brand-blue)}
+.home-owned-label{font-size:11px;color:var(--brand-blue)}
+.home-owned-grid h3{margin:10px 0 14px;font-size:25px;line-height:1.5}
+.home-owned-grid h3 span{font-size:17px;margin-left:8px;font-weight:500}
+.home-partner-processes{display:flex;align-items:center;justify-content:space-between;gap:32px;margin-top:32px;padding-top:24px;border-top:1px solid var(--line)}
+.home-partner-processes h3{font-size:18px;margin-bottom:9px}
+.home-partner-processes>div{max-width:70em}
+.home-partner-processes small{display:block;margin-top:8px;font-size:11px}
+.home-partner-processes>a{white-space:nowrap}
+.home:lang(en) .hero h1{font-size:clamp(40px,4.3vw,66px)}
+.home:lang(ja) .hero h1{font-size:clamp(34px,3.8vw,58px)}
+@media(max-width:1000px){.site-header{gap:20px}.brand img{width:190px}.nav{gap:20px}.home-section-heading{display:block}.home-section-heading>p{margin-top:12px;max-width:none}.home-workflow ol{gap:16px}.home-workflow h3{font-size:15px}.home-owned-grid{gap:26px}}
+@media(max-width:700px){.brand img{width:184px}.home .hero h1{font-size:44px}.home:lang(en) .hero h1{font-size:42px}.home:lang(ja) .hero h1{font-size:36px}.home-eyebrow{font-size:9px;letter-spacing:.12em}.hero-copy>.home-eyebrow{margin-bottom:14px}.home .hero p{font-size:13px}.home-workflow,.home-owned{padding:30px 0}.home-section-heading{margin-bottom:22px}.home-section-heading h2{font-size:25px}.home-section-heading>p{font-size:12px}.home-workflow ol{grid-template-columns:1fr;gap:0}.home-workflow li{display:grid;grid-template-columns:28px 1fr;gap:4px 12px;border-top:0;border-left:2px solid #dce3fa;padding:0 0 25px 16px}.home-workflow li:last-child{padding-bottom:0}.home-step-number{padding-top:1px}.home-workflow h3{margin:0;font-size:16px}.home-workflow li p{grid-column:2;font-size:12px}.home-owned-grid{grid-template-columns:1fr;gap:27px}.home-owned-grid p,.home-partner-processes p{font-size:12px}.home-partner-processes{display:block;margin-top:26px}.home-partner-processes>a{margin-top:15px}.company-footer .brand img{width:210px}}
+
+@media(max-width:380px){.brand img{width:148px}.site-header{gap:14px}}
